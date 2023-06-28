@@ -8,6 +8,13 @@ A toolkit for Text-Table Hybrid Question Answering
 3. 最新LLM的融合（检索能力，工具使用能力）
 4. 模块化设计便于下游用户针对性的定制
 
+## Flask框架简介
+- cli.py：用于定义 Flask 应用程序的命令行接口（CLI）。在 cli.py 文件中，你可以使用 Flask 的 click 库定义命令行命令和参数，并将它们与 Flask 应用程序的功能关联起来。例如，你可以定义一个命令行命令，用于初始化 Flask 应用程序的数据库或执行其他任务。cli.py 文件通常与 Flask 应用程序的工具集集成在一起，可以方便地使用命令行来管理和维护应用程序。
+- main.py：用于定义 Flask 应用程序的主要入口点。在 main.py 文件中，你可以定义 Flask 应用程序的路由和视图函数，并启动应用程序的服务器。这个文件通常是 Flask 应用程序的主要代码文件，用于实现应用程序的核心功能。
+- config.yaml：用于定义 Flask 应用程序的配置选项。在 config.yaml 文件中，你可以指定 Flask 应用程序的各种配置选项，如数据库连接、调试模式、密钥等。这个文件通常是 Flask 应用程序的配置文件，可以方便地修改和管理应用程序的配置选项。
+- static/：用于存储静态文件，如 CSS、JavaScript、图像等。Flask 应用程序会自动查找 static/ 文件夹，并将其中的静态文件提供给客户端。
+- templates/：用于存储模板文件，如 HTML 文件、Jinja2 模板等。Flask 应用程序会自动查找 templates/ 文件夹，并使用其中的模板文件进行渲染。
+
 
 ## QuickStart
 ```
