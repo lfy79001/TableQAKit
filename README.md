@@ -8,7 +8,32 @@ A toolkit for Text-Table Hybrid Question Answering
 3. 最新LLM的融合（检索能力，工具使用能力）
 4. 模块化设计便于下游用户针对性的定制
 
-# 如何往PyPI上提交
+
+## QuickStart
+```
+pip install ttqakit
+ttqakit run --host=127.0.0.1 --port 13000
+# 如果以上命令是在服务器上运行的，想在本地看网页，需要监听
+ssh -L 8000:127.0.0.1:13000 lfy@210.75.240.136
+# 在本地打开  http://127.0.0.1:8000
+```
+
+## Datasets
+| Dataset                                                                              | Source                                                                                                                                          | Data type      | # train | # dev  | # test | License     |
+| ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------- | ------ | ------ | ----------- |
+| **[TAT-QA](https://huggingface.co/datasets/kasnerz/cacapo)**                         | [van der Lee et al. (2020)](https://aclanthology.org/2020.inlg-1.10.pdf)                                                                        | Key-value      | 15,290  | 1,831  | 3,028  | CC BY       |
+| **[FinQA](https://huggingface.co/datasets/GEM/dart)**                                 | [Nan et al. (2021)](https://aclanthology.org/2021.naacl-main.37/)                                                                               | Graph          | 62,659  | 2,768  | 5,097  | MIT         |
+| **[Multihiertt](https://huggingface.co/datasets/GEM/dart)**                                 | [Nan et al. (2021)](https://aclanthology.org/2021.naacl-main.37/)                                                                               | Graph          | 62,659  | 2,768  | 5,097  | MIT         |
+| **[HiTab](https://huggingface.co/datasets/kasnerz/hitab)**                           | [Cheng et al. (2021)](https://aclanthology.org/2022.acl-long.78/)                                                                               | Table          | 7,417   | 1,671  | 1,584  | C-UDA       |
+| **[WikiSQL](https://huggingface.co/datasets/wikisql)**                               | [Zhong et al. (2017)](https://arxiv.org/abs/1709.00103)                                                                                         | Table + SQL    | 56,355  | 8,421  | 15,878 | BSD         |
+| **[WTQuestions](https://huggingface.co/datasets/wikisql)**                               | [Zhong et al. (2017)](https://arxiv.org/abs/1709.00103)                                                                                         | Table + SQL    | 56,355  | 8,421  | 15,878 | BSD         |
+| **[MultimodalQA](https://huggingface.co/datasets/wikisql)**                               | [Zhong et al. (2017)](https://arxiv.org/abs/1709.00103)                                                                                         | Table + SQL    | 56,355  | 8,421  | 15,878 | BSD         |
+| **[MultimodalQA](https://huggingface.co/datasets/wikisql)**                               | [Zhong et al. (2017)](https://arxiv.org/abs/1709.00103)                                                                                         | Table + SQL    | 56,355  | 8,421  | 15,878 | BSD         |
+
+
+
+
+## 如何往PyPI上提交
 0. 安装必要的工具
    ```bash
    pip install setuptools wheel twine
