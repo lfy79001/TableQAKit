@@ -23,12 +23,12 @@ A toolkit for Text-Table Hybrid Question Answering
     UserName: lfy79001
 
     PassWord: 20010213lfyLFY!
-4. 访问https://test.pypi.org/project/ttqakit
+4. 访问 https://test.pypi.org/project/ttqakit
 5. 上传到正式的
     ```bash
     twine upload dist/*
     ```
-    访问https://pypi.org/project/ttqakit
+    访问 https://pypi.org/project/ttqakit
 6. 完毕后可以安装
     ```bash
     # 正式版
