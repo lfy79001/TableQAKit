@@ -18,7 +18,7 @@ A toolkit for Text-Table Hybrid Question Answering
     python setup.py sdist bdist_wheel
 3. 使用twine上传到测试 PyPI。运行以下命令以将您的分发文件上传到测试 PyPI：
     ```bash 
-    twine upload --repository-url https://test.pypi.org/legacy/ dist/*
+    twine upload --repository-url https://test.pypi.org/legacy/dist/*
     ```
     UserName: lfy79001
 
@@ -34,7 +34,7 @@ A toolkit for Text-Table Hybrid Question Answering
     # 正式版
     pip install ttqakit
     # test版
-    pip install --index-url https://test.pypi.org/simple/ ttqakit
+    pip install --index-url https://test.pypi.org/simple/ttqakit
 
 
 
