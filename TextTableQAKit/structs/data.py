@@ -1,6 +1,11 @@
 import copy
 import logging
 
+import datasets
+from ..utils import export
+
+logger = logging.getLogger(__name__)
+
 
 class Cell:
     """
@@ -130,7 +135,7 @@ class Table:
 
     def __repr__(self):
         return str(self.__dict__)
-    
+
 
 class TabularDataset:
     """
@@ -164,7 +169,6 @@ class TabularDataset:
 
     def get_table(self, split, table_idx, edited_cells=None):
         table = self.tables[split].get(table_idx)
-
         if not table:
             entry = self.data[split][table_idx]
             table = self.prepare_table(entry)
@@ -418,4 +422,3 @@ class HFTabularDataset(TabularDataset):
         info.update(self.extra_info)
 
         return info
-
