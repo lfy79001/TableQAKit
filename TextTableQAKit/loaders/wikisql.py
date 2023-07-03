@@ -41,6 +41,7 @@ class WikiSQL(HFTabularDataset):
 
     def prepare_table(self, entry):
         t = Table()
+        t.type = "official"
         title = self._get_title(entry["table"])
         if title is not None:
             t.props["title"] = title
