@@ -1,4 +1,5 @@
 import logging
+import sys
 
 def create_logger(name, silent=False, to_disk=True, log_file=None):
     """Logger wrapper

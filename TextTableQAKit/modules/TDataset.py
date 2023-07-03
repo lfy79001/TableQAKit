@@ -29,22 +29,53 @@ class EncycDataset(Dataset):
         return len(self.data)
         
     def __getitem__(self, index):
-        
-        
-        return self.data[index]
+        data_i = self.data[index]
+        question_ids = self.tokenizer.tokenize(data_i['question'])
+
+        header = data_i['header']
+        content = data_i['content']  # content is a tuple list, each item is a tuple (cell list, links list)
+        row_tmp = '{} is {} '
+        input_ids = []
+        if isinstance(content[0], tuple):
+            for i, row in enumerate(content):
+                row_ids = []
+                for j, cell in enumerate(row[0]): # tokenize cell
+                    if cell != '':
+                        cell_desc = row_tmp.format(header[j], cell)
+                        cell_toks = self.tokenizer.tokenize(cell_desc)
+                        cell_ids = self.tokenizer.convert_tokens_to_ids(cell_toks)
+                        row_ids += cell_ids
+                for link in row[1]:               # tokenize links
+                    passage_toks = self.tokenizer.tokenize(link)
+                    passage_ids = self.tokenizer.convert_tokens_to_ids(passage_toks)
+                    row_ids += passage_ids
+                row_ids = question_ids + row_ids + [self.tokenizer.sep_token_id]
+                input_ids.append(row_ids)
+        else:
+            for i, row in enumerate(content):
+                row_ids = []
+                for j, cell in enumerate(row):
+                    if cell != '':
+                        cell_desc = row_tmp.format(header[j], cell)
+                        cell_toks = self.tokenizer.tokenize(cell_desc)
+                        cell_ids = self.tokenizer.convert_tokens_to_ids(cell_toks)
+                        row_ids += cell_ids
+                row_ids = question_ids + row_ids + [self.tokenizer.sep_token_id]
+                input_ids.append(row_ids)
+        return input_ids, data_i['label'], data_i
         
         
 
-class SpreadsheetDataset(Dataset):
-    def __init__(self):
-        pass
+# class SpreadsheetDataset(Dataset):
+#     def __init__(self):
+#         pass
         
     
-    def __len__(self):
-        return len(self.data)
+#     def __len__(self):
+#         return len(self.data)
     
-    def __getitem__(self, index):
-        return feature, label
+#     def __getitem__(self, index):
+#         return feature, label
     
 
 def hybridqa_content(data):
@@ -80,6 +111,7 @@ def hybridqa_label(data):
     
 class DatasetManager:
     def __init__(self, **kwargs):
+        self.kwargs = kwargs
         if kwargs['type'] == 'common': # 使用标准的数据集
             # get the path of the dataset
             dataset_path = dataset_download(kwargs['dataset_name'])
@@ -90,20 +122,30 @@ class DatasetManager:
                     kwargs['header_func'] = hybridqa_header
                     kwargs['content_func'] = hybridqa_content
                     kwargs['label_func'] = hybridqa_label
+                kwargs['logger'].info('Starting load dataset')
                 train_dataset = EncycDataset(dataset_data['train'], **kwargs)
                 dev_dataset = EncycDataset(dataset_data['dev'], **kwargs)
-                test_dataset = EncycDataset(dataset_data['test'], **kwargs)
-                print(f"train_dataset: {len(train_dataset)}")
-                print(f"dev_dataset: {len(dev_dataset)}")
-                print(f"test_dataset: {len(test_dataset)}")
+                # test_dataset = EncycDataset(dataset_data['test'], **kwargs)
+                kwargs['logger'].info(f"train_dataset: {len(train_dataset)}")
+                kwargs['logger'].info(f"dev_dataset: {len(dev_dataset)}")
+                # print(f"test_dataset: {len(test_dataset)}")
+                self.train_dataset = train_dataset
+                self.dev_dataset = dev_dataset
                 pass
             elif kwargs['table_type'] == 'spreadsheet':
                 pass
             elif kwargs['table_type'] == 'structured':
                 pass
+    
+    def collate(data, **kwargs):
+               
+    
     def train():
-        
-        pass
+        if kwargs['table_type'] == 'encyc':
+            train_loader = DataLoader(self.train_dataset, batch_size=kwargs['train_bs'], collate_fn=lambda x: collate(x, **self.kwargs))
+            dev_loader = DataLoader(self.dev_dataset, batch_size=kwargs['dev_bs'], collate_fn=lambda x: collate(x, **self.kwargs))
+        else:        
+            pass
     
     
     
@@ -118,7 +160,8 @@ if __name__ == '__main__':
     # need to write a function map the table to row
     
     # need to generate a logger for yourself
-    logger = create_logger()
+    logger = create_logger("Training", log_file=os.path.join('../outputs', 'try.txt'))
+    kwargs['logger'] = logger
 
     
     
