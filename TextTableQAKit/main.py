@@ -9,6 +9,7 @@ import shutil
 import logging
 
 from TextTableQAKit.loaders import DATASET_CLASSES
+from TextTableQAKit.utils.export import export_table
 
 
 def init_app():
@@ -65,13 +66,14 @@ def check_data_in_dataset(dataset_name, split):
     if not dataset_obj.has_split(split):
         logger.info(f"Loading {dataset_name} - {split}")
         dataset_obj.load(split=split)
+
 def check_table_in_dataset(dataset_name, split, table_idx):
     dataset_obj = app.database['dataset'][dataset_name]
     is_exist = table_idx in dataset_obj.tables[split]
     if not is_exist:
-        entry = dataset_obj.getData(split, table_idx)
+        entry = dataset_obj.get_data(split, table_idx)
         table = dataset_obj.prepare_table(entry)
-        dataset_obj.setTables(split, table_idx, table)
+        dataset_obj.set_table(split, table_idx, table)
 
 @app.route("/data", methods=["GET", "POST"])
 def fetch_table_data():
@@ -84,31 +86,28 @@ def fetch_table_data():
     dataset_name = "wikisql"
     split = "dev"
     table_idx = 1
-    propertie_name_list = ["reference"]
+    propertie_name_list = None
     try:
-
         check_data_integrity(dataset_name, split, table_idx)
-
-        # dataset = get_dataset(dataset_name=dataset_name, split=split)
-        # table = dataset.get_table(split=split, table_idx=table_idx)
-        # html = dataset.export_table(table=table, export_format="html", displayed_props=displayed_props)
-        # generated_outputs = get_generated_outputs(dataset_name=dataset_name, split=split, output_idx=table_idx)
-        # dataset_info = dataset.get_info()
-        #
-        # data =  {
-        #     "html": html,
-        #     "total_examples": dataset.get_example_count(split),
-        #     "dataset_info": dataset_info,
-        #     "generated_outputs": generated_outputs,
-        #     "session": get_session(),
-        # }
-        data = {}
+        dataset_obj = app.database["dataset"][dataset_name]
+        table_data = dataset_obj.get_table(split, table_idx)
+        table_html = export_table(table_data, export_format="html", displayed_props=propertie_name_list)
+        data =  {
+            "table_content": table_html,
+            "table_cnt": dataset_obj.get_example_count(split),
+            "dataset_info": dataset_obj.get_info(),
+            "session": {}
+        }
     except Exception as e:
         logger.error(f"Fetch Table Error: {e}")
         data = {}
-
     return jsonify(data)
 
+@app.route("/upload", methods=["GET", "POST"])
+def upload_table():
+
+
+    pass
 
 with app.app_context():
     app.database['dataset'] = {}

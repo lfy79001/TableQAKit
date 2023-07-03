@@ -3,6 +3,7 @@ import logging
 from google.cloud import storage
 import datasets
 from ..utils import export
+from ..utils.export import export_table
 
 logger = logging.getLogger(__name__)
 
@@ -157,14 +158,12 @@ class TabularDataset:
         """
         raise NotImplementedError
 
-    @staticmethod
-    def get_reference(table):
-        return table.props.get("reference")
 
-    def getData(self, split, table_idx):
+
+    def get_data(self, split, table_idx):
         return self.data[split][table_idx]
 
-    def setTables(self, split, table_idx, table):
+    def set_table(self, split, table_idx, table):
         self.tables[split][table_idx] = table
 
     def get_example_count(self, split):
@@ -175,21 +174,12 @@ class TabularDataset:
 
     def get_table(self, split, table_idx, edited_cells=None):
         table = self.tables[split].get(table_idx)
-        if not table:
-            entry = self.data[split][table_idx]
-            table = self.prepare_table(entry)
-            self.tables[split][table_idx] = table
-
         if edited_cells:
-            # make a temporary copy of the table with edited cells
             table_modif = copy.deepcopy(table)
-
             for cell_id, val in edited_cells.items():
                 cell = table_modif.get_cell_by_id(int(cell_id))
                 cell.value = val
-
             table = table_modif
-
         return table
 
     def prepare_table(self, entry):
@@ -197,42 +187,6 @@ class TabularDataset:
 
     def get_info(self):
         return self.dataset_info
-
-    def export_table(
-        self,
-        table,
-        export_format,
-        cell_ids=None,
-        displayed_props=None,
-        include_props=True,
-        linearization_style="2d",
-        html_format="web",  # 'web' or 'export'
-    ):
-        if export_format == "txt":
-            exported = self.table_to_linear(
-                table,
-                cell_ids=cell_ids,
-                props="all" if include_props else "none",
-                style=linearization_style,
-                highlighted_only=False,
-            )
-        elif export_format == "triples":
-            exported = self.table_to_triples(table, cell_ids=cell_ids)
-        elif export_format == "html":
-            exported = self.table_to_html(table, displayed_props, include_props, html_format)
-        elif export_format == "csv":
-            exported = self.table_to_csv(table)
-        elif export_format == "xlsx":
-            exported = self.table_to_excel(table, include_props)
-        elif export_format == "json":
-            exported = self.table_to_json(table, include_props)
-        elif export_format == "reference":
-            exported = self.get_reference(table)
-        else:
-            raise NotImplementedError(export_format)
-
-        return exported
-
     def export(self, split, table_cfg):
         exported = []
 
@@ -240,7 +194,7 @@ class TabularDataset:
             obj = {}
             for key, export_format in table_cfg["fields"].items():
                 table = self.get_table(split, i)
-                obj[key] = self.export_table(table, export_format=export_format)
+                obj[key] = export_table(table, export_format=export_format)
             exported.append(obj)
 
         return exported
@@ -323,39 +277,7 @@ class TabularDataset:
             },
         ]
 
-    # Export methods
-    def table_to_csv(self, table):
-        return export.table_to_csv(table)
 
-    def table_to_df(self, table):
-        return export.table_to_df(table)
-
-    def table_to_html(self, table, displayed_props, include_props, html_format):
-        return export.table_to_html(
-            table, displayed_props=displayed_props, include_props=include_props, html_format=html_format
-        )
-
-    def table_to_json(self, table, include_props=True):
-        return export.table_to_json(table, include_props=include_props)
-
-    def table_to_excel(self, table, include_props=True):
-        return export.table_to_excel(table, include_props=include_props)
-
-    def table_to_linear(
-        self,
-        table,
-        cell_ids=None,
-        props="factual",  # 'all', 'factual', 'none', or list of keys
-        style="2d",  # 'index', 'markers', '2d'
-        highlighted_only=False,
-    ):
-        return export.table_to_linear(
-            table,
-            cell_ids=cell_ids,
-            props=props,
-            style=style,
-            highlighted_only=highlighted_only,
-        )
 
     # End export methods
 
