@@ -1,6 +1,6 @@
 import copy
 import logging
-
+from google.cloud import storage
 import datasets
 from ..utils import export
 
@@ -150,7 +150,7 @@ class TabularDataset:
         self.dataset_info = {}
         self.name = None
 
-    def load(self, split, max_examples=None):
+    def load(self, split):
         """
         Load the dataset. Path can be specified for loading from a directory
         or omitted if the dataset is loaded from HF.
@@ -160,6 +160,12 @@ class TabularDataset:
     @staticmethod
     def get_reference(table):
         return table.props.get("reference")
+
+    def getData(self, split, table_idx):
+        return self.data[split][table_idx]
+
+    def setTables(self, split, table_idx, table):
+        self.tables[split][table_idx] = table
 
     def get_example_count(self, split):
         return len(self.data[split])
@@ -364,22 +370,9 @@ class HFTabularDataset(TabularDataset):
         self.extra_info = {}
 
     def _load_split(self, split):
-        hf_split = self.split_mapping[split]
+        return NotImplementedError
 
-        logger.info(f"Loading {self.hf_id}/{split}")
-        dataset = datasets.load_dataset(
-            self.hf_id,
-            name=self.hf_extra_config,
-            split=hf_split,
-            # num_proc=4,
-        )
-        self.dataset_info = dataset.info.__dict__
-        self.data[split] = dataset
-
-    def load(self, split=None, max_examples=None):
-        if max_examples is not None:
-            logger.warning("The `max_examples` parameter is not currently supported for HF datasets")
-
+    def load(self, split=None):
         if split is None:
             for split in self.split_mapping.keys():
                 self._load_split(split)

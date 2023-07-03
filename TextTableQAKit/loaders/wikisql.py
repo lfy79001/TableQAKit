@@ -1,4 +1,10 @@
+import datasets
+import logging
+
 from ..structs.data import Cell, Table, HFTabularDataset
+from google.cloud import storage
+
+logger = logging.getLogger(__name__)
 
 class WikiSQL(HFTabularDataset):
     def __init__(self, *args, **kwargs):
@@ -15,10 +21,26 @@ class WikiSQL(HFTabularDataset):
             value = table.get(key, "").strip()
             if value:
                 return value
-            
+
+    def _load_split(self, split):
+        hf_split = self.split_mapping[split]
+
+        logger.info(f"Loading {self.hf_id} - {split}")
+        '''
+        loading dataset
+        '''
+        dataset = datasets.load_dataset(
+            self.hf_id,
+            name=self.hf_extra_config,
+            split=hf_split,
+            # num_proc=4,
+        )
+
+        self.dataset_info = dataset.info.__dict__
+        self.data[split] = dataset
+
     def prepare_table(self, entry):
         t = Table()
-        import pdb; pdb.set_trace()
         title = self._get_title(entry["table"])
         if title is not None:
             t.props["title"] = title
