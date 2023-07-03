@@ -3,3 +3,404 @@
 07/03/2023 10:49:44 Starting load dataset
 07/03/2023 10:54:54 Starting load dataset
 07/03/2023 10:57:18 Starting load dataset
+07/03/2023 11:43:47 Starting load dataset
+07/03/2023 11:44:22 train_dataset: 62682
+07/03/2023 11:44:22 dev_dataset: 3466
+07/03/2023 11:44:37 Starting load dataset
+07/03/2023 11:45:12 train_dataset: 62682
+07/03/2023 11:45:12 dev_dataset: 3466
+07/03/2023 11:47:18 Starting load dataset
+07/03/2023 11:47:53 train_dataset: 62682
+07/03/2023 11:47:53 dev_dataset: 3466
+07/03/2023 12:24:05 Starting load dataset
+07/03/2023 12:24:40 train_dataset: 62682
+07/03/2023 12:24:40 dev_dataset: 3466
+07/03/2023 12:24:55 Starting load dataset
+07/03/2023 12:25:30 train_dataset: 62682
+07/03/2023 12:25:30 dev_dataset: 3466
+07/03/2023 12:26:48 Starting load dataset
+07/03/2023 12:27:23 train_dataset: 62682
+07/03/2023 12:27:23 dev_dataset: 3466
+07/03/2023 12:27:51 Starting load dataset
+07/03/2023 12:28:28 train_dataset: 62682
+07/03/2023 12:28:28 dev_dataset: 3466
+07/03/2023 12:29:26 Starting load dataset
+07/03/2023 12:30:00 train_dataset: 62682
+07/03/2023 12:30:00 dev_dataset: 3466
+07/03/2023 12:32:56 Starting load dataset
+07/03/2023 12:33:31 train_dataset: 62682
+07/03/2023 12:33:31 dev_dataset: 3466
+07/03/2023 12:33:37 Training epoch: 0
+07/03/2023 12:34:13 Starting load dataset
+07/03/2023 12:34:48 train_dataset: 62682
+07/03/2023 12:34:48 dev_dataset: 3466
+07/03/2023 12:34:54 Training epoch: 0
+07/03/2023 12:50:31 Starting load dataset
+07/03/2023 12:50:31 train_dataset: 100
+07/03/2023 12:50:31 dev_dataset: 100
+07/03/2023 12:50:36 Training epoch: 0
+07/03/2023 12:51:35 Starting load dataset
+07/03/2023 12:51:35 train_dataset: 100
+07/03/2023 12:51:35 dev_dataset: 100
+07/03/2023 12:51:40 Training epoch: 0
+07/03/2023 12:52:10 Starting load dataset
+07/03/2023 12:52:10 train_dataset: 100
+07/03/2023 12:52:10 dev_dataset: 100
+07/03/2023 12:52:15 Training epoch: 0
+07/03/2023 12:52:36 Starting load dataset
+07/03/2023 12:52:36 train_dataset: 100
+07/03/2023 12:52:36 dev_dataset: 100
+07/03/2023 12:52:41 Training epoch: 0
+07/03/2023 12:53:54 Starting load dataset
+07/03/2023 12:53:54 train_dataset: 100
+07/03/2023 12:53:54 dev_dataset: 100
+07/03/2023 12:53:59 Training epoch: 0
+07/03/2023 12:55:15 Starting load dataset
+07/03/2023 12:55:15 train_dataset: 100
+07/03/2023 12:55:15 dev_dataset: 100
+07/03/2023 12:58:12 Starting load dataset
+07/03/2023 12:58:13 train_dataset: 100
+07/03/2023 12:58:13 dev_dataset: 100
+07/03/2023 12:58:39 Starting load dataset
+07/03/2023 12:58:39 train_dataset: 100
+07/03/2023 12:58:39 dev_dataset: 100
+07/03/2023 01:02:25 Starting load dataset
+07/03/2023 01:02:25 train_dataset: 100
+07/03/2023 01:02:25 dev_dataset: 100
+07/03/2023 01:03:14 Starting load dataset
+07/03/2023 01:03:14 train_dataset: 100
+07/03/2023 01:03:14 dev_dataset: 100
+07/03/2023 01:03:21 Training epoch: 0
+07/03/2023 01:05:53 Starting load dataset
+07/03/2023 01:05:54 train_dataset: 100
+07/03/2023 01:05:54 dev_dataset: 100
+07/03/2023 01:06:00 Training epoch: 0
+07/03/2023 01:07:05 Starting load dataset
+07/03/2023 01:07:05 train_dataset: 100
+07/03/2023 01:07:05 dev_dataset: 100
+07/03/2023 01:07:12 Training epoch: 0
+07/03/2023 01:08:10 Starting load dataset
+07/03/2023 01:08:10 train_dataset: 100
+07/03/2023 01:08:10 dev_dataset: 100
+07/03/2023 01:08:17 Training epoch: 0
+07/03/2023 01:08:53 Starting load dataset
+07/03/2023 01:08:53 train_dataset: 100
+07/03/2023 01:08:53 dev_dataset: 100
+07/03/2023 01:09:00 Training epoch: 0
+07/03/2023 01:11:02 Starting load dataset
+07/03/2023 01:11:02 train_dataset: 100
+07/03/2023 01:11:02 dev_dataset: 100
+07/03/2023 01:11:09 Training epoch: 0
+07/03/2023 01:21:04 Starting load dataset
+07/03/2023 01:21:04 train_dataset: 100
+07/03/2023 01:21:04 dev_dataset: 100
+07/03/2023 01:21:11 Training epoch: 0
+07/03/2023 01:22:59 Starting load dataset
+07/03/2023 01:22:59 train_dataset: 100
+07/03/2023 01:22:59 dev_dataset: 100
+07/03/2023 01:23:06 Training epoch: 0
+07/03/2023 01:23:23 Training Loss [7.33099]
+07/03/2023 01:23:37 Starting load dataset
+07/03/2023 01:23:37 train_dataset: 100
+07/03/2023 01:23:37 dev_dataset: 100
+07/03/2023 01:23:44 Training epoch: 0
+07/03/2023 01:23:45 Training Loss [7.35652]
+07/03/2023 01:23:49 Training Loss [12.21824]
+07/03/2023 01:23:51 Training Loss [9.80241]
+07/03/2023 01:23:55 Training Loss [11.70528]
+07/03/2023 01:23:58 Training Loss [11.98519]
+07/03/2023 01:24:00 Training Loss [9.97470]
+07/03/2023 01:24:03 Training Loss [9.68587]
+07/03/2023 01:24:06 Training Loss [12.49441]
+07/03/2023 01:24:09 Training Loss [8.90058]
+07/03/2023 01:24:11 Training Loss [7.95554]
+07/03/2023 01:24:14 Training Loss [12.03234]
+07/03/2023 01:24:17 Training Loss [11.88651]
+07/03/2023 01:24:21 Training Loss [12.66845]
+07/03/2023 01:24:22 start eval....
+07/03/2023 01:25:07 Starting load dataset
+07/03/2023 01:25:07 train_dataset: 100
+07/03/2023 01:25:07 dev_dataset: 100
+07/03/2023 01:25:14 Training epoch: 0
+07/03/2023 01:25:15 Training Loss [7.34753]
+07/03/2023 01:25:18 Training Loss [12.23351]
+07/03/2023 01:25:21 Training Loss [9.79567]
+07/03/2023 01:25:24 Training Loss [11.70160]
+07/03/2023 01:25:27 Training Loss [11.97354]
+07/03/2023 01:25:30 Training Loss [9.96722]
+07/03/2023 01:25:32 Training Loss [9.71164]
+07/03/2023 01:25:36 Training Loss [12.49247]
+07/03/2023 01:25:38 Training Loss [8.92667]
+07/03/2023 01:25:40 Training Loss [7.94906]
+07/03/2023 01:25:43 Training Loss [12.05131]
+07/03/2023 01:25:47 Training Loss [11.87447]
+07/03/2023 01:25:50 Training Loss [12.66675]
+07/03/2023 01:25:51 start eval....
+07/03/2023 01:26:42 Starting load dataset
+07/03/2023 01:26:42 train_dataset: 100
+07/03/2023 01:26:42 dev_dataset: 100
+07/03/2023 01:26:49 Training epoch: 0
+07/03/2023 01:26:50 Training Loss [7.35106]
+07/03/2023 01:26:53 Training Loss [12.22465]
+07/03/2023 01:26:56 Training Loss [9.80210]
+07/03/2023 01:26:59 Training Loss [11.70461]
+07/03/2023 01:27:02 Training Loss [11.96468]
+07/03/2023 01:27:05 Training Loss [9.98196]
+07/03/2023 01:27:08 Training Loss [9.69440]
+07/03/2023 01:27:11 Training Loss [12.49020]
+07/03/2023 01:27:13 Training Loss [8.88513]
+07/03/2023 01:27:16 Training Loss [7.95264]
+07/03/2023 01:27:19 Training Loss [12.05130]
+07/03/2023 01:27:22 Training Loss [11.88742]
+07/03/2023 01:27:26 Training Loss [12.65559]
+07/03/2023 01:27:26 start eval....
+07/03/2023 01:27:40 Starting load dataset
+07/03/2023 01:27:40 train_dataset: 100
+07/03/2023 01:27:40 dev_dataset: 100
+07/03/2023 01:27:47 Training epoch: 0
+07/03/2023 01:27:49 Training Loss [7.32841]
+07/03/2023 01:27:52 Training Loss [12.21403]
+07/03/2023 01:27:55 Training Loss [9.78739]
+07/03/2023 01:27:58 Training Loss [11.72153]
+07/03/2023 01:28:01 Training Loss [11.96131]
+07/03/2023 01:28:04 Training Loss [9.96304]
+07/03/2023 01:28:06 Training Loss [9.70390]
+07/03/2023 01:28:09 Training Loss [12.48685]
+07/03/2023 01:28:12 Training Loss [8.92165]
+07/03/2023 01:28:14 Training Loss [7.95767]
+07/03/2023 01:28:17 Training Loss [12.05416]
+07/03/2023 01:28:21 Training Loss [11.88568]
+07/03/2023 01:28:24 Training Loss [12.66377]
+07/03/2023 01:28:25 start eval....
+07/03/2023 01:28:40 Total: 100
+07/03/2023 01:28:40 Training epoch: 1
+07/03/2023 01:28:40 Training Loss [7.32666]
+07/03/2023 01:31:25 Starting load dataset
+07/03/2023 01:31:25 train_dataset: 100
+07/03/2023 01:31:25 dev_dataset: 100
+07/03/2023 01:31:32 Training epoch: 0
+07/03/2023 01:31:34 Training Loss [7.34345]
+07/03/2023 01:31:37 Training Loss [12.24171]
+07/03/2023 01:31:39 Training Loss [9.78878]
+07/03/2023 01:31:43 Training Loss [11.69439]
+07/03/2023 01:31:46 Training Loss [11.95633]
+07/03/2023 01:31:48 Training Loss [9.98519]
+07/03/2023 01:31:51 Training Loss [9.69990]
+07/03/2023 01:31:54 Training Loss [12.48367]
+07/03/2023 01:31:57 Training Loss [8.92555]
+07/03/2023 01:31:59 Training Loss [7.97020]
+07/03/2023 01:32:02 Training Loss [12.05023]
+07/03/2023 01:32:05 Training Loss [11.88213]
+07/03/2023 01:32:09 Training Loss [12.65660]
+07/03/2023 01:32:10 start eval....
+07/03/2023 01:35:22 Starting load dataset
+07/03/2023 01:35:22 train_dataset: 100
+07/03/2023 01:35:22 dev_dataset: 100
+07/03/2023 01:35:29 Training epoch: 0
+07/03/2023 01:36:30 Starting load dataset
+07/03/2023 01:36:31 train_dataset: 100
+07/03/2023 01:36:31 dev_dataset: 100
+07/03/2023 01:36:38 Training epoch: 0
+07/03/2023 01:41:04 Training Loss [7.36211]
+07/03/2023 01:47:59 Starting load dataset
+07/03/2023 01:47:59 train_dataset: 100
+07/03/2023 01:47:59 dev_dataset: 100
+07/03/2023 01:48:07 Training epoch: 0
+07/03/2023 01:59:29 Starting load dataset
+07/03/2023 01:59:29 train_dataset: 100
+07/03/2023 01:59:29 dev_dataset: 100
+07/03/2023 01:59:37 Training epoch: 0
+07/03/2023 02:01:28 Training Loss [7.35368]
+07/03/2023 02:01:48 Starting load dataset
+07/03/2023 02:01:48 train_dataset: 100
+07/03/2023 02:01:48 dev_dataset: 100
+07/03/2023 02:01:55 Training epoch: 0
+07/03/2023 02:02:57 Training Loss [7.32922]
+07/03/2023 02:03:35 Starting load dataset
+07/03/2023 02:03:35 train_dataset: 100
+07/03/2023 02:03:35 dev_dataset: 100
+07/03/2023 02:03:42 Training epoch: 0
+07/03/2023 02:03:51 Training Loss [7.35448]
+07/03/2023 02:04:58 Starting load dataset
+07/03/2023 02:04:58 train_dataset: 100
+07/03/2023 02:04:58 dev_dataset: 100
+07/03/2023 02:05:06 Training epoch: 0
+07/03/2023 02:07:15 Starting load dataset
+07/03/2023 02:07:15 train_dataset: 100
+07/03/2023 02:07:15 dev_dataset: 100
+07/03/2023 02:07:23 Training epoch: 0
+07/03/2023 02:08:06 Training Loss [7.36254]
+07/03/2023 02:08:55 Starting load dataset
+07/03/2023 02:08:55 train_dataset: 100
+07/03/2023 02:08:55 dev_dataset: 100
+07/03/2023 02:09:03 Training epoch: 0
+07/03/2023 02:09:30 Training Loss [7.34246]
+07/03/2023 02:10:18 Starting load dataset
+07/03/2023 02:10:18 train_dataset: 100
+07/03/2023 02:10:18 dev_dataset: 100
+07/03/2023 02:10:25 Training epoch: 0
+07/03/2023 02:10:35 Training Loss [7.32604]
+07/03/2023 02:10:49 Starting load dataset
+07/03/2023 02:10:49 train_dataset: 100
+07/03/2023 02:10:49 dev_dataset: 100
+07/03/2023 02:10:56 Training epoch: 0
+07/03/2023 02:11:26 Training Loss [7.35282]
+07/03/2023 02:12:09 Starting load dataset
+07/03/2023 02:12:09 train_dataset: 100
+07/03/2023 02:12:09 dev_dataset: 100
+07/03/2023 02:12:16 Training epoch: 0
+07/03/2023 02:12:23 Training Loss [7.36689]
+07/03/2023 02:18:18 Starting load dataset
+07/03/2023 02:18:18 train_dataset: 100
+07/03/2023 02:18:18 dev_dataset: 100
+07/03/2023 02:18:25 Training epoch: 0
+07/03/2023 02:19:12 Training Loss [7.34027]
+07/03/2023 02:21:21 Training Loss [12.22521]
+07/03/2023 02:21:41 Starting load dataset
+07/03/2023 02:21:41 train_dataset: 100
+07/03/2023 02:21:41 dev_dataset: 100
+07/03/2023 02:21:49 Training epoch: 0
+07/03/2023 02:22:05 Starting load dataset
+07/03/2023 02:22:05 train_dataset: 100
+07/03/2023 02:22:05 dev_dataset: 100
+07/03/2023 02:22:12 Training epoch: 0
+07/03/2023 02:22:36 Starting load dataset
+07/03/2023 02:22:36 train_dataset: 100
+07/03/2023 02:22:36 dev_dataset: 100
+07/03/2023 02:22:43 Training epoch: 0
+07/03/2023 02:22:44 Training Loss [7.35837]
+07/03/2023 02:22:48 Training Loss [12.21381]
+07/03/2023 02:22:51 Training Loss [9.78101]
+07/03/2023 02:22:54 Training Loss [11.70585]
+07/03/2023 02:22:58 Training Loss [11.96775]
+07/03/2023 02:23:00 Training Loss [9.97801]
+07/03/2023 02:23:03 Training Loss [9.70600]
+07/03/2023 02:23:07 Training Loss [12.47255]
+07/03/2023 02:23:10 Training Loss [8.92868]
+07/03/2023 02:23:12 Training Loss [7.93639]
+07/03/2023 02:23:16 Training Loss [12.05105]
+07/03/2023 02:23:20 Training Loss [11.87380]
+07/03/2023 02:23:23 Training Loss [12.66235]
+07/03/2023 02:23:24 start eval....
+07/03/2023 02:23:41 Total: 100
+07/03/2023 02:23:41 Training epoch: 1
+07/03/2023 02:23:41 Training Loss [7.32610]
+07/03/2023 02:23:45 Training Loss [12.20277]
+07/03/2023 02:23:48 Training Loss [9.76701]
+07/03/2023 02:23:52 Training Loss [11.69252]
+07/03/2023 02:23:55 Training Loss [11.95227]
+07/03/2023 02:23:58 Training Loss [9.97456]
+07/03/2023 02:24:01 Training Loss [9.66669]
+07/03/2023 02:24:05 Training Loss [12.46224]
+07/03/2023 02:24:07 Training Loss [8.87283]
+07/03/2023 02:24:10 Training Loss [7.93861]
+07/03/2023 02:24:13 Training Loss [12.03604]
+07/03/2023 02:24:17 Training Loss [11.86395]
+07/03/2023 02:24:21 Training Loss [12.65717]
+07/03/2023 02:24:22 start eval....
+07/03/2023 02:24:38 Total: 100
+07/03/2023 02:24:38 Training epoch: 2
+07/03/2023 02:24:39 Training Loss [7.29977]
+07/03/2023 02:24:42 Training Loss [12.19402]
+07/03/2023 02:24:45 Training Loss [9.74810]
+07/03/2023 02:25:16 Starting load dataset
+07/03/2023 02:25:17 train_dataset: 50
+07/03/2023 02:25:17 dev_dataset: 50
+07/03/2023 02:25:24 Training epoch: 0
+07/03/2023 02:25:25 Training Loss [14.32107]
+07/03/2023 02:25:27 Training Loss [10.50036]
+07/03/2023 02:25:29 Training Loss [12.93412]
+07/03/2023 02:25:31 Training Loss [10.83092]
+07/03/2023 02:25:32 Training Loss [11.18352]
+07/03/2023 02:25:34 Training Loss [11.01996]
+07/03/2023 02:25:35 Training Loss [10.82347]
+07/03/2023 02:25:37 Training Loss [10.47804]
+07/03/2023 02:25:38 Training Loss [10.47206]
+07/03/2023 02:25:40 Training Loss [8.55092]
+07/03/2023 02:25:41 Training Loss [12.76027]
+07/03/2023 02:25:43 Training Loss [14.31906]
+07/03/2023 02:25:45 Training Loss [12.56777]
+07/03/2023 02:25:46 start eval....
+07/03/2023 02:25:53 Total: 50
+07/03/2023 02:25:53 Training epoch: 1
+07/03/2023 02:26:23 Starting load dataset
+07/03/2023 02:26:24 train_dataset: 100
+07/03/2023 02:26:24 dev_dataset: 100
+07/03/2023 02:26:31 Training epoch: 0
+07/03/2023 02:26:32 Training Loss [7.36135]
+07/03/2023 02:27:40 Starting load dataset
+07/03/2023 02:27:41 train_dataset: 100
+07/03/2023 02:27:41 dev_dataset: 100
+07/03/2023 02:27:48 Training epoch: 0
+07/03/2023 02:29:34 Starting load dataset
+07/03/2023 02:29:34 train_dataset: 100
+07/03/2023 02:29:34 dev_dataset: 100
+07/03/2023 02:29:41 Training epoch: 0
+07/03/2023 02:37:14 Training Loss [7.35918]
+07/03/2023 02:37:44 Starting load dataset
+07/03/2023 02:37:44 train_dataset: 100
+07/03/2023 02:37:44 dev_dataset: 100
+07/03/2023 02:37:51 Training epoch: 0
+07/03/2023 02:40:29 Training Loss [7.37208]
+07/03/2023 02:47:08 Starting load dataset
+07/03/2023 02:47:08 train_dataset: 100
+07/03/2023 02:47:08 dev_dataset: 100
+07/03/2023 02:47:15 Training epoch: 0
+07/03/2023 02:49:34 Starting load dataset
+07/03/2023 02:49:34 train_dataset: 99
+07/03/2023 02:49:34 dev_dataset: 99
+07/03/2023 02:49:41 Training epoch: 0
+07/03/2023 02:49:43 Training Loss [14.29281]
+07/03/2023 02:49:57 Starting load dataset
+07/03/2023 02:49:57 train_dataset: 98
+07/03/2023 02:49:57 dev_dataset: 98
+07/03/2023 02:50:04 Training epoch: 0
+07/03/2023 02:50:06 Training Loss [14.32478]
+07/03/2023 02:50:09 Training Loss [10.30749]
+07/03/2023 02:50:12 Training Loss [11.09067]
+07/03/2023 02:50:31 Starting load dataset
+07/03/2023 02:50:31 train_dataset: 95
+07/03/2023 02:50:31 dev_dataset: 95
+07/03/2023 02:50:39 Training epoch: 0
+07/03/2023 02:50:41 Training Loss [6.66435]
+07/03/2023 02:50:43 Training Loss [9.14926]
+07/03/2023 02:51:22 Starting load dataset
+07/03/2023 02:51:24 train_dataset: 94
+07/03/2023 02:51:24 dev_dataset: 3466
+07/03/2023 02:51:32 Training epoch: 0
+07/03/2023 02:51:33 Training Loss [14.33755]
+07/03/2023 02:51:36 Training Loss [9.16269]
+07/03/2023 02:51:55 Starting load dataset
+07/03/2023 02:51:55 train_dataset: 91
+07/03/2023 02:51:55 dev_dataset: 20
+07/03/2023 02:52:03 Training epoch: 0
+07/03/2023 02:52:05 Training Loss [6.66462]
+07/03/2023 02:52:17 Starting load dataset
+07/03/2023 02:52:17 train_dataset: 89
+07/03/2023 02:52:17 dev_dataset: 20
+07/03/2023 02:52:24 Training epoch: 0
+07/03/2023 02:52:25 Training Loss [5.91465]
+07/03/2023 02:52:46 Starting load dataset
+07/03/2023 02:52:46 train_dataset: 89
+07/03/2023 02:52:46 dev_dataset: 20
+07/03/2023 02:52:53 Training epoch: 0
+07/03/2023 02:53:17 Starting load dataset
+07/03/2023 02:53:17 train_dataset: 89
+07/03/2023 02:53:17 dev_dataset: 20
+07/03/2023 02:53:25 Training epoch: 0
+07/03/2023 02:53:54 Starting load dataset
+07/03/2023 02:53:54 train_dataset: 89
+07/03/2023 02:53:54 dev_dataset: 20
+07/03/2023 02:54:02 Training epoch: 0
+07/03/2023 02:55:02 Starting load dataset
+07/03/2023 02:55:02 train_dataset: 89
+07/03/2023 02:55:02 dev_dataset: 20
+07/03/2023 02:55:09 Training epoch: 0
+07/03/2023 03:00:48 Starting load dataset
+07/03/2023 03:00:49 train_dataset: 89
+07/03/2023 03:00:49 dev_dataset: 20
+07/03/2023 03:00:56 Training epoch: 0
+07/03/2023 03:00:57 Training Loss [5.93833]
+07/03/2023 03:01:00 Training Loss [11.82062]
+07/03/2023 03:01:03 Training Loss [12.04202]
+07/03/2023 03:01:06 Training Loss [11.62639]
