@@ -11,9 +11,45 @@ from .excel import write_html_table_to_excel
 """
 Default methods for exporting tables to various formats.
 """
+# Export methods
+def export_table(
+        table,
+        export_format,
+        cell_ids=None,
+        displayed_props=None,
+        include_props=True,
+        linearization_style="2d",
+        html_format="web",  # 'web' or 'export'
+):
+    if export_format == "txt":
+        exported = table_to_linear(
+            table,
+            cell_ids=cell_ids,
+            props="all" if include_props else "none",
+            style=linearization_style,
+            highlighted_only=False,
+        )
+    elif export_format == "triples":
+        exported = table_to_triples(table, cell_ids=cell_ids)
+    elif export_format == "html":
+        exported = table_to_html(table, displayed_props, include_props, html_format)
+    elif export_format == "csv":
+        exported = table_to_csv(table)
+    elif export_format == "xlsx":
+        exported = table_to_excel(table, include_props)
+    elif export_format == "json":
+        exported = table_to_json(table, include_props)
+    elif export_format == "reference":
+        exported = get_reference(table)
+    else:
+        raise NotImplementedError(export_format)
 
+    return exported
 
-def table_to_json(table, include_props):
+def get_reference(table):
+    return table.props.get("reference")
+
+def table_to_json(table, include_props=True):
     j = {"data": [[c.serializable_props() for c in row] for row in table.get_cells()]}
 
     if include_props and table.props is not None:
