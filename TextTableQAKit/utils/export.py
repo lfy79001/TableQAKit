@@ -224,7 +224,11 @@ def table_to_linear(
 def _meta_to_html(props, displayed_props):
     meta_tbodies = []
     meta_buttons = []
-
+    #########################################
+    # 后续对于自定义的表格，需要在此处加上表格标题 #
+    ######################################################
+    # 后续对于默认的数据集/表格，需要在此处加上default_question#
+    #####################################################
     for key, value in props.items():
         meta_row_cls = "collapse show" if key in displayed_props else "collapse"
         aria_expanded = "true" if key in displayed_props else "false"

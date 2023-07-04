@@ -22,6 +22,9 @@ def init_app():
 
     flask_app.database = dict()
     flask_app.config.update(SECRET_KEY=os.urandom(24))
+    with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "config.yml")) as f:
+        config = yaml.safe_load(f)
+    flask_app.config.update(config)
     return flask_app
 
 
@@ -38,6 +41,7 @@ def init_logging():
 
 app = init_app()
 logger = init_logging()
+
 
 '''
 check data integrity
@@ -76,8 +80,8 @@ def check_table_in_dataset(dataset_name, split, table_idx):
         table = dataset_obj.prepare_table(entry)
         dataset_obj.set_table(split, table_idx, table)
 
-@app.route("/data", methods=["GET", "POST"])
-def fetch_table_data():
+@app.route("/table/default", methods=["GET", "POST"])
+def fetch_default_table_data():
     '''
     dataset_name = request.args.get("dataset")
     split = request.args.get("split")
@@ -88,26 +92,76 @@ def fetch_table_data():
     split = "dev"
     table_idx = 1
     ################################################################
-    # 问题一： 此处propertie_name_list取值要什么格式，如果为空应该什么格式，才能在<html页面生成时>正确输出
-    # 问题三： 此模块数据集还未成功下载，因此还没有做全面测试
-    # 问题四： 在此处需要添加自定义表格的拉取
-    propertie_name_list = None
+    # 问题一： 此模块数据集还未成功下载，因此还没有做全面测试
+    propertie_name_list = []
     try:
+        if dataset_name not in app.config['datasets']:
+            raise Exception(f"datasets {dataset_name} not found")
+        elif split not in app.config['split']:
+            raise Exception(f"split {split} not found")
         check_data_integrity(dataset_name, split, table_idx)
         dataset_obj = app.database["dataset"][dataset_name]
         table_data = dataset_obj.get_table(split, table_idx)
         table_html = export_table(table_data, export_format="html", displayed_props=propertie_name_list)
+        generated_results = fetch_generated_outputs(dataset_name, split, table_idx)
         data =  {
-            "table_content": table_html,
+            "session": {},
             "table_cnt": dataset_obj.get_example_count(split),
+            "generated_results": generated_results,
             "dataset_info": dataset_obj.get_info(),
-            "session": {}
+            "table_content": table_html
         }
     except Exception as e:
         logger.error(f"Fetch Table Error: {e}")
         data = {}
     return jsonify(data)
 
+def fetch_generated_outputs(dataset_name, split, table_idx):
+    # outputs = {}
+    #
+    # out_dir = os.path.join(app.config["root_dir"], app.config["generated_outputs_dir"], dataset_name, split)
+    # if not os.path.isdir(out_dir):
+    #     return outputs
+    #
+    # for filename in glob.glob(out_dir + "/" + "*.jsonl"):
+    #     line = linecache.getline(filename, table_idx + 1)  # 1-based indexing
+    #     j = json.loads(line)
+    #     model_name = os.path.basename(filename).rsplit(".", 1)[0]
+    #     outputs[model_name] = j
+    '''
+        insert your code
+    '''
+    outputs = {'t5-base': {
+        'out': ['In riverside, near Raja Indian Cuisine, is Raja Indian Cuisine. It has an average customer rating.']},
+     't5-base_multi(e2e,webnlg)': {
+         'out': ['Near Raja Indian Cuisine in the riverside area has an average customer rating.']}}
+
+    return outputs
+
+
+@app.route("/table/custom", methods=["GET", "POST"])
+def fetch_custom_table_data():
+    try:
+        table_name = "我的自定义表格1"
+        propertie_name_list = ["overlap_subset"]
+        custom_tables = session.get("custom_tables", {})
+        if len(custom_tables) != 0 and table_name in custom_tables:
+            table_data = custom_tables[table_name]
+            table_html = export_table(table_data, export_format="html", displayed_props=propertie_name_list)
+            data = {
+                "table_content": table_html,
+                "table_cnt": 1,
+                "session": {}
+            }
+        else:
+            raise Exception("fetch non-existent tables in session")
+    except Exception as e:
+        logger.error(f"Fetch Table Error: {e}")
+        data = {}
+
+
+
+    return jsonify(data)
 
 @app.route("/custom/remove", methods=["GET", "POST"])
 def remove_custom_table():
@@ -126,12 +180,33 @@ def remove_custom_table():
         result = jsonify(success=False)
 
     return result
+@app.route("/session", methods=["GET", "POST"])
+def get_session():
+    try:
+        target = "all_key"
+        target = "custom_tables_name"
+        if target == "custom_tables_name":
+            data = jsonify(list(session.get("custom_tables",{}).keys()))
+        else:
+            raise Exception("Illegal Target")
+    except Exception as e:
+        logger.error(f"Get Session Error: {e}")
+        data = jsonify([])
+
+    return data
+
+@app.route("/pipeline", methods=["GET", "POST"])
+def fetch_pipeline_result():
+    pass
 
 @app.route("/custom/upload", methods=["GET", "POST"])
 def upload_custom_table():
     # 上传的表格名不能重复,前端校验+后端校验
     #############################################################
     # 问题二： 对于自定义表格上传，我将空白值直接设置为nan，对不对，如果错了可能会在pipeline和html页面生成时出错，要看官方数据集处理时设置为啥
+    # 问题三： 需要在创建默认数据集/表时加上default_question属性，在html输出时输出表名(custom表)和默认问题(default表)
+    # 问题四： 文件download功能
+    # 问题五： pipeline功能
     try:
         file = 'test.xlsx'
         properties = None  # 取值1
@@ -191,3 +266,4 @@ with app.app_context():
     # print(dataset_obj.tables)
     # session["custom_tables"] = {}
     pass
+

@@ -1,1 +1,19 @@
 ---
+datasets:
+- finqa
+- hitab
+- hybridqa
+- mmqa
+- multihiertt
+- tathqa
+- tatqa
+- wikisql
+- wtq
+split:
+- train
+- dev
+- test
+default_dataset: wikisql
+host_prefix: "."
+debug: false
+pipelines:

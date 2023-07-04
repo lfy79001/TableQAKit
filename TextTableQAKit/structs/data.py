@@ -61,7 +61,8 @@ class Table:
         self.cell_idx = 0
         self.current_row = []
         self.cell_by_ids = {}
-        self.type = "official" # official or custom
+        self.default_question = ""
+        self.type = "default" # default or custom
         self.custom_table_name = "" # for custom table
 
     def has_highlights(self):

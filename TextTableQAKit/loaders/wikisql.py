@@ -41,7 +41,11 @@ class WikiSQL(HFTabularDataset):
 
     def prepare_table(self, entry):
         t = Table()
-        t.type = "official"
+        t.type = "default"
+        ######################################
+        #需要补充default_QUESTION
+        ####################################
+        t.default_question = ""
         title = self._get_title(entry["table"])
         if title is not None:
             t.props["title"] = title
