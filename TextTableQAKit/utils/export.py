@@ -3,7 +3,7 @@ import pandas as pd
 import lxml.etree
 import lxml.html
 
-from tinyhtml import h
+from tinyhtml import *
 from xlsxwriter import Workbook
 from .excel import write_html_table_to_excel
 
@@ -123,6 +123,14 @@ def table_to_html(table, displayed_props, include_props, html_format):
         meta_el = None
 
     table_el = _get_main_table_html(table)
+
+    '''
+    test
+    meta_el = None,only display table
+    
+    '''
+    meta_el = None
+
     area_el = h("div")(meta_el, table_el)
 
     html = area_el.render()
@@ -270,6 +278,7 @@ def _meta_to_simple_html(props):
 
 
 def _get_main_table_html(table):
+
     trs = []
     for row in table.cells:
         tds = []
@@ -288,6 +297,10 @@ def _get_main_table_html(table):
 
     tbodies = [h("tr")(tds) for tds in trs]
     tbody_el = h("tbody", id="main-table-body")(tbodies)
-    table_el = h("table", klass="table table-sm table-bordered caption-top main-table")(h("caption")("data"), tbody_el)
+    table_el = h("table", klass="table dataTable table-sm no-footer table-bordered caption-top main-table",role="grid")(h("caption")("data"), tbody_el)
 
     return table_el
+
+
+
+

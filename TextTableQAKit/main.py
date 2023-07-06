@@ -88,11 +88,9 @@ def fetch_default_table_data():
     table_idx = int(request.args.get("table_idx"))
     displayed_props = json.loads(request.args.get("displayed_props"))
     '''
-    dataset_name = "wikisql"
+    dataset_name = "multimodalqa"
     split = "dev"
-    table_idx = 1
-    ################################################################
-    # 问题一： 此模块数据集还未成功下载，因此还没有做全面测试
+    table_idx = 20
     propertie_name_list = []
     try:
         if dataset_name not in app.config['datasets']:
@@ -108,9 +106,13 @@ def fetch_default_table_data():
             "session": {},
             "table_cnt": dataset_obj.get_example_count(split),
             "generated_results": generated_results,
-            "dataset_info": dataset_obj.get_info(),
+            "dataset_info":
+                "",
+                # dataset_obj.get_info(),
             "table_content": table_html
         }
+        with open("a.html", "w", encoding="utf-8") as file:
+            file.write(table_html)
     except Exception as e:
         logger.error(f"Fetch Table Error: {e}")
         data = {}
@@ -203,7 +205,7 @@ def fetch_pipeline_result():
 def upload_custom_table():
     # 上传的表格名不能重复,前端校验+后端校验
     #############################################################
-    # 问题二： 对于自定义表格上传，我将空白值直接设置为nan，对不对，如果错了可能会在pipeline和html页面生成时出错，要看官方数据集处理时设置为啥
+    # 问题二： 对于自定义表格上传，我将空白值直接设置为nan->错：要设置为空字符串，记得更改
     # 问题三： 需要在创建默认数据集/表时加上default_question属性，在html输出时输出表名(custom表)和默认问题(default表)
     # 问题四： 文件download功能
     # 问题五： pipeline功能
@@ -260,10 +262,11 @@ def prepare_custom_table(headers, data, properties, table_name):
     return t
 
 with app.app_context():
-    # app.database['dataset'] = {}
+    app.database['dataset'] = {}
     # fetch_table_data()
     # dataset_obj = app.database['dataset']["wikisql"]
     # print(dataset_obj.tables)
     # session["custom_tables"] = {}
+    fetch_default_table_data()
     pass
 

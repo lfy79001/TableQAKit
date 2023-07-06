@@ -64,6 +64,8 @@ class Table:
         self.default_question = ""
         self.type = "default" # default or custom
         self.custom_table_name = "" # for custom table
+        self.txt_info = {}
+        self.pic_info = {}
 
     def has_highlights(self):
         return any(cell.is_highlighted for row in self.cells for cell in row)
