@@ -2,395 +2,313 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-  <title>TableQAKit</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>TableQAKit</title>
 
-  <link rel="stylesheet" href="../static/css/materialdesignicons.min.css">
-  <link rel="stylesheet" href="../static/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="../static/css/materialdesignicons.min.css">
+    <link rel="stylesheet" href="../static/css/vendor.bundle.base.css">
+    <link rel="stylesheet" href="../static/css/dataTables.bootstrap4.css">
+    <link rel="stylesheet" href="../static/css/style.css">
+    <link rel="shortcut icon" href="../static/css/CASIA_logo.png" />
 
-
-  <link rel="stylesheet" href="../static/css/dataTables.bootstrap4.css">
-
-
-  <link rel="stylesheet" href="../static/css/style.css">
-
-  <link rel="shortcut icon" href="../static/css/CASIA_logo.png" />
+    <script src="../static/js/jquery.js"></script>
+    <script src="../static/js/index.js"></script>
 </head>
+
 <body>
-  <div class="container-scroller">
+    <div class="container-scroller">
 
-    <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
-      <div class="navbar-brand-wrapper d-flex justify-content-center">
-        <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">  
-          <img src="../static/img/CASIA_logo.png" width="45px" alt="logo"/><h4>TableQAKit</h4>
-        </div>  
-      </div>
-
-
-      <div class="navbar-menu-wrapper d-flex flex-row align-items-center justify-content-between">
-        <ul class="navbar-nav navbar-nav-right">
-          <li class="nav-item dropdown me-4">
-            <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center notification-dropdown" id="notificationDropdown" href="#" data-bs-toggle="dropdown">
-              <i class="mdi mdi-information mx-0"></i>
-            </a>
-          </li>
-        </ul>
-      </div>
-
-    </nav>
-    <div class="container-fluid page-body-wrapper">
-      <nav class="sidebar sidebar-offcanvas" id="sidebar">
-        <ul class="nav">
-          <li class="nav-item">
-            <a class="nav-link" href="index.html">
-              <i class="mdi mdi-home menu-icon"></i>
-              <span class="menu-title">Defalut DataSet QA Mode</span>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link" href="custom_mode.html">
-              <i class="mdi mdi-grid-large menu-icon"></i>
-              <span class="menu-title">Custom Table QA Mode</span>
-            </a>
-          </li>
-
-          <li class="nav-item">
-            <a class="nav-link">
-              <i class="mdi mdi-file-document-box-outline menu-icon"></i>
-              <span class="menu-title">Information</span>
-            </a>
-          </li>
-        </ul>
-      </nav>
-
-      <div class="main-panel">
-        <div class="content-wrapper">
-          
-          <div class="row">
-            <div class="col-md-12 grid-margin">
-              <div class="d-flex justify-content-between flex-wrap">
-                <div class="d-flex align-items-end flex-wrap">
-                  <div class="me-md-3 me-xl-5">
-                    <h2>Default DataSet QA Mode,</h2>
-                    <p class="mb-md-0">You will use common tabular datasets for QA.</p>
-                  </div>
+        <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+            <div class="navbar-brand-wrapper d-flex justify-content-center">
+                <div class="navbar-brand-inner-wrapper d-flex justify-content-between align-items-center w-100">
+                    <img src="../static/img/CASIA_logo.png" width="45px" alt="logo" />
+                    <h4>TableQAKit</h4>
                 </div>
-                <div class="d-flex justify-content-between align-items-end flex-wrap">
-                  <button type="button" class="btn btn-light bg-white btn-icon me-3 d-none d-md-block ">
+            </div>
+
+
+            <div class="navbar-menu-wrapper d-flex flex-row align-items-center justify-content-between">
+                <ul class="navbar-nav navbar-nav-right">
+                    <li class="nav-item dropdown me-4">
+                        <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center notification-dropdown" id="notificationDropdown" href="#" data-bs-toggle="dropdown">
+                            <i class="mdi mdi-information mx-0"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+
+        </nav>
+        <div class="container-fluid page-body-wrapper">
+            <nav class="sidebar sidebar-offcanvas" id="sidebar">
+                <ul class="nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">
+                            <i class="mdi mdi-home menu-icon"></i>
+                            <span class="menu-title">Defalut DataSet QA Mode</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="custom_mode.html">
+                            <i class="mdi mdi-grid-large menu-icon"></i>
+                            <span class="menu-title">Custom Table QA Mode</span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link">
+                            <i class="mdi mdi-file-document-box-outline menu-icon"></i>
+                            <span class="menu-title">Information</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="main-panel">
+                <div class="content-wrapper">
+
+                    <div class="row">
+                        <div class="col-md-12 grid-margin">
+                            <div class="d-flex justify-content-between flex-wrap">
+                                <div class="d-flex align-items-end flex-wrap">
+                                    <div class="me-md-3 me-xl-5">
+                                        <h2>Default DataSet QA Mode,</h2>
+                                        <p class="mb-md-0">You will use common tabular datasets for QA.</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-end flex-wrap">
+                                    <button type="button" class="btn btn-light bg-white btn-icon me-3 d-none d-md-block ">
                     <a title="download result">
                       <i class="mdi mdi-download text-muted"></i>
                     </a>
                   </button>
-                  <button type="button" class="btn btn-light bg-white btn-icon me-3 mt-2 mt-xl-0">
+                                    <button type="button" class="btn btn-light bg-white btn-icon me-3 mt-2 mt-xl-0">
                     <a title="favorites">
                       <i class="mdi mdi-heart text-muted"></i>
                     </a>
                   </button>
-                  <button type="button" class="btn btn-light bg-white btn-icon me-3 mt-2 mt-xl-0">
+                                    <button type="button" class="btn btn-light bg-white btn-icon me-3 mt-2 mt-xl-0">
                     <a title="dataset info">
                       <i class="mdi mdi-information text-muted"></i>
                     </a>
                   </button>
-                  <button class="btn btn-primary mt-2 mt-xl-0">
+                                    <button id="switchToCustomMode" class="btn btn-primary mt-2 mt-xl-0">
 <!--                      <a href="custom_mode.html">-->
                           Switch To Custom Table QA Mode
 <!--                      </a>-->
                   </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-md-12 grid-margin stretch-card">
-
-
-              <div class="card">
-                <div class="card-body dashboard-tabs">
-                  <p class="card-title">Step 1 : Choose Datasets</p>
-                  <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group row align-items-center">
-                          <label class="col-sm-2 mx-4 col-form-label"><b>DataSets</b></label>
-                          <div class="col-sm-8">
-                            <select class="form-control text-dark">
-                              <option selected>wikisql</option>
-                              <option>wikisql</option>
-                              <option>wikisql</option>
-                              <option>wikisql</option>
-                            </select>
-                          </div>
-                        </div>
-                      </div>
-                      <div class="col-md-6">
-                          <div class="form-group row align-items-center">
-                            <label class="col-sm-2 mx-4 col-form-label"><b>Splits</b></label>
-                            <div class="col-sm-8">
-                              <select class="form-control text-dark">
-                                <option selected>train</option>
-                                <option>dev</option>
-                                <option>test</option>
-                              </select>
+                                </div>
                             </div>
-                          </div>
-                      </div>
-                  </div>
-                </div>
-              </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 grid-margin stretch-card">
 
 
-            </div>
-          </div>
-          <div class="row">
+                            <div class="card">
+                                <div class="card-body dashboard-tabs">
+                                    <p class="card-title">Step 1 : Choose Datasets</p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <div class="form-group row align-items-center">
+                                                <label class="col-sm-2 mx-4 col-form-label"><b>DataSets</b></label>
+                                                <div class="col-sm-8">
+                                                    <select id="dataset-select" class="form-control text-dark">
+                              <option val="wikisql0" selected>wikisql0</option>
+                              <option va="wikisql1">wikisql1</option>
+                              <option val="wikisql2">wikisql2</option>
+                              <option value="wikisql3">wikisql3</option>
+                            </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="form-group row align-items-center">
+                                                <label class="col-sm-2 mx-4 col-form-label"><b>Splits</b></label>
+                                                <div class="col-sm-8">
+                                                    <select id="split-select" class="form-control text-dark">
+                                <option value="train">train</option>
+                                <option value="dev" selected>dev</option>
+                                <option value="test">test</option>
+                              </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
 
-              <div class="col-md-12 stretch-card grid-margin">
-                <div class="card">
-                  <div class="card-body">
-                    <p class="card-title">Step 2 : Choose Table</p>
 
-                    <div class="table-page-choose d-flex flex-row justify-content-between">
-                      <ul class="pagination" id="nav-example-cnt">
-                        <li class="page-item">
-                          <a class="page-link" id="start-btn" onclick="startbtn();">«</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" id="prev-btn" onclick="prevbtn();">‹</a>
-                        </li>
-                        <li class="page-item">
-                          <input class="form-control" id="page-input" onfocusout="gotobtn();">
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" id="total-examples" style="min-height: 28px;"></a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" id="next-btn" onclick="nextbtn();">›</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" id="end-btn" onclick="endbtn();">»</a>
-                        </li>
-                        <li class="page-item">
-                          <a class="page-link" id="random-btn" style="margin-left:12px; " onclick="randombtn();" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Go to a random example">
+                        </div>
+                    </div>
+                    <div class="row">
+
+                        <div class="col-md-12 stretch-card grid-margin">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="card-title">Step 2 : Choose Table</p>
+
+                                    <div class="table-page-choose d-flex flex-row justify-content-between">
+                                        <ul class="pagination" id="nav-example-cnt">
+                                            <li class="page-item">
+                                                <a class="page-link" id="start-btn" onclick="startbtn();">«</a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a class="page-link" id="prev-btn" onclick="prevbtn();">‹</a>
+                                            </li>
+                                            <li class="page-item">
+                                                <input class="form-control" id="page-input" onfocusout="gotobtn();">
+                                            </li>
+                                            <li class="page-item">
+                                                <a class="page-link" id="total-examples" style="min-height: 28px;"></a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a class="page-link" id="next-btn" onclick="nextbtn();">›</a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a class="page-link" id="end-btn" onclick="endbtn();">»</a>
+                                            </li>
+                                            <li class="page-item">
+                                                <a class="page-link" id="random-btn" style="margin-left:12px; " onclick="randombtn();" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Go to a random example">
                             🎲
                           </a>
-                        </li>
-                      </ul>
-                    </div>
-                    <h4>Question:</h4>
-                    <p class="text-muted">Today, many people rely on computers to do homework, work, and create or store useful information. Therefore, it is important </p>
-                    <div class="table-responsive">
-                      <table id="recent-purchases-listing" class="table">
-                        <thead>
-                          <tr>
-                              <th>Name</th>
-                              <th>Status report</th>
-                              <th>Office</th>
-                              <th>Price</th>
-                              <th>Date</th>
-                              <th>Gross amount</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                              <td>Jeremy Ortega</td>
-                              <td>Levelled up</td>
-                              <td>Catalinaborough</td>
-                              <td>$790</td>
-                              <td>06 Jan 2018</td>
-                              <td>$2274253</td>
-                          </tr>
-                          <tr>
-                              <td>Alvin Fisher</td>
-                              <td>Ui design completed</td>
-                              <td>East Mayra</td>
-                              <td>$23230</td>
-                              <td>18 Jul 2018</td>
-                              <td>$83127</td>
-                          </tr>
-                          <tr>
-                              <td>Emily Cunningham</td>
-                              <td>support</td>
-                              <td>Makennaton</td>
-                              <td>$939</td>
-                              <td>16 Jul 2018</td>
-                              <td>$29177</td>
-                          </tr>
-                          <tr>
-                              <td>Minnie Farmer</td>
-                              <td>support</td>
-                              <td>Agustinaborough</td>
-                              <td>$30</td>
-                              <td>30 Apr 2018</td>
-                              <td>$44617</td>
-                          </tr>
-                          <tr>
-                              <td>Betty Hunt</td>
-                              <td>Ui design not completed</td>
-                              <td>Lake Sandrafort</td>
-                              <td>$571</td>
-                              <td>25 Jun 2018</td>
-                              <td>$78952</td>
-                          </tr>
-                          <tr>
-                              <td>Myrtie Lambert</td>
-                              <td>Ui design completed</td>
-                              <td>Cassinbury</td>
-                              <td>$36</td>
-                              <td>05 Nov 2018</td>
-                              <td>$36422</td>
-                          </tr>
-                          <tr>
-                              <td>Jacob Kennedy</td>
-                              <td>New project</td>
-                              <td>Cletaborough</td>
-                              <td>$314</td>
-                              <td>12 Jul 2018</td>
-                              <td>$34167</td>
-                          </tr>
-                          <tr>
-                              <td>Ernest Wade</td>
-                              <td>Levelled up</td>
-                              <td>West Fidelmouth</td>
-                              <td>$484</td>
-                              <td>08 Sep 2018</td>
-                              <td>$50862</td>
-                          </tr>
-                        </tbody>
-                      </table>
-                    </div>
-                    <br>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <h4>Question:</h4>
+                                    <p class="text-muted">Today, many people rely on computers to do homework, work, and create or store useful information. Therefore, it is important </p>
+                                    <div class="table-responsive">
+                                        <table id="recent-purchases-listing" class="table">
+                                            <thead>
+                                                <tr>
+                                                    <th>Name</th>
+                                                    <th>Status report</th>
+                                                    <th>Office</th>
+                                                    <th>Price</th>
+                                                    <th>Date</th>
+                                                    <th>Gross amount</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>Jeremy Ortega</td>
+                                                    <td>Levelled up</td>
+                                                    <td>Catalinaborough</td>
+                                                    <td>$790</td>
+                                                    <td>06 Jan 2018</td>
+                                                    <td>$2274253</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Alvin Fisher</td>
+                                                    <td>Ui design completed</td>
+                                                    <td>East Mayra</td>
+                                                    <td>$23230</td>
+                                                    <td>18 Jul 2018</td>
+                                                    <td>$83127</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Emily Cunningham</td>
+                                                    <td>support</td>
+                                                    <td>Makennaton</td>
+                                                    <td>$939</td>
+                                                    <td>16 Jul 2018</td>
+                                                    <td>$29177</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Minnie Farmer</td>
+                                                    <td>support</td>
+                                                    <td>Agustinaborough</td>
+                                                    <td>$30</td>
+                                                    <td>30 Apr 2018</td>
+                                                    <td>$44617</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Betty Hunt</td>
+                                                    <td>Ui design not completed</td>
+                                                    <td>Lake Sandrafort</td>
+                                                    <td>$571</td>
+                                                    <td>25 Jun 2018</td>
+                                                    <td>$78952</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Myrtie Lambert</td>
+                                                    <td>Ui design completed</td>
+                                                    <td>Cassinbury</td>
+                                                    <td>$36</td>
+                                                    <td>05 Nov 2018</td>
+                                                    <td>$36422</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Jacob Kennedy</td>
+                                                    <td>New project</td>
+                                                    <td>Cletaborough</td>
+                                                    <td>$314</td>
+                                                    <td>12 Jul 2018</td>
+                                                    <td>$34167</td>
+                                                </tr>
+                                                <tr>
+                                                    <td>Ernest Wade</td>
+                                                    <td>Levelled up</td>
+                                                    <td>West Fidelmouth</td>
+                                                    <td>$484</td>
+                                                    <td>08 Sep 2018</td>
+                                                    <td>$50862</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                    <br>
 
 
 
-<!--                    <h4>Pictures:</h4>-->
-<!--                    <div class="row">-->
-<!--                        <div class="col-lg-12 grid-margin">-->
-<!--                          <div class="card">-->
-<!--                            <div class="card-body">-->
-<!--                              <div class="row icons-list">-->
+                                    <!--                    <h4>Pictures:</h4>-->
+                                    <!--                    <div class="row">-->
+                                    <!--                        <div class="col-lg-12 grid-margin">-->
+                                    <!--                          <div class="card">-->
+                                    <!--                            <div class="card-body">-->
+                                    <!--                              <div class="row icons-list">-->
 
-<!--                                <div class="col-sm-6 col-md-4 col-lg-3">-->
-<!--                                    <img src="../static/img/1.jpg"  style="max-width: 100%; height: auto;">-->
-<!--                                </div>-->
-<!--                                <div class="col-sm-6 col-md-4 col-lg-3">-->
-<!--                                    <img src="../static/img/2.jpg"  style="max-width: 100%; height: auto;">-->
-<!--                                </div>-->
-<!--                                <div class="col-sm-6 col-md-4 col-lg-3">-->
-<!--                                    <img src="../static/img/3.jpg"  style="max-width: 100%; height: auto;">-->
-<!--                                </div>-->
-<!--                                <div class="col-sm-6 col-md-4 col-lg-3">-->
-<!--                                    <img src="../static/img/4.jpg"  style="max-width: 100%; height: auto;">-->
-<!--                                </div>-->
-<!--                                <div class="col-sm-6 col-md-4 col-lg-3">-->
-<!--                                    <img src="../static/img/5.jpg"  style="max-width: 100%; height: auto;">-->
-<!--                                </div>-->
-<!--                                <div class="col-sm-6 col-md-4 col-lg-3">-->
-<!--                                    <img src="../static/img/6.jpg"  style="max-width: 100%; height: auto;">-->
-<!--                                </div>-->
-<!--                                <div class="col-sm-6 col-md-4 col-lg-3">-->
-<!--                                    <img src="../static/img/7.png"  style="max-width: 100%; height: auto;">-->
-<!--                                </div>-->
+                                    <!--                                <div class="col-sm-6 col-md-4 col-lg-3">-->
+                                    <!--                                    <img src="../static/img/1.jpg"  style="max-width: 100%; height: auto;">-->
+                                    <!--                                </div>-->
+                                    <!--                                <div class="col-sm-6 col-md-4 col-lg-3">-->
+                                    <!--                                    <img src="../static/img/2.jpg"  style="max-width: 100%; height: auto;">-->
+                                    <!--                                </div>-->
+                                    <!--                                <div class="col-sm-6 col-md-4 col-lg-3">-->
+                                    <!--                                    <img src="../static/img/3.jpg"  style="max-width: 100%; height: auto;">-->
+                                    <!--                                </div>-->
+                                    <!--                                <div class="col-sm-6 col-md-4 col-lg-3">-->
+                                    <!--                                    <img src="../static/img/4.jpg"  style="max-width: 100%; height: auto;">-->
+                                    <!--                                </div>-->
+                                    <!--                                <div class="col-sm-6 col-md-4 col-lg-3">-->
+                                    <!--                                    <img src="../static/img/5.jpg"  style="max-width: 100%; height: auto;">-->
+                                    <!--                                </div>-->
+                                    <!--                                <div class="col-sm-6 col-md-4 col-lg-3">-->
+                                    <!--                                    <img src="../static/img/6.jpg"  style="max-width: 100%; height: auto;">-->
+                                    <!--                                </div>-->
+                                    <!--                                <div class="col-sm-6 col-md-4 col-lg-3">-->
+                                    <!--                                    <img src="../static/img/7.png"  style="max-width: 100%; height: auto;">-->
+                                    <!--                                </div>-->
 
-<!--                                <div class="col-sm-6 col-md-4 col-lg-3">-->
-<!--                                    <img src="../static/img/8.jpg"  style="max-width: 100%; height: auto;">-->
-<!--                                </div>-->
-<!--                                <div class="col-sm-6 col-md-4 col-lg-3">-->
-<!--                                    <img src="../static/img/9.jpg"  style="max-width: 100%; height: auto;">-->
-<!--                                </div>-->
-<!--                                <div class="col-sm-6 col-md-4 col-lg-3">-->
-<!--                                    <img src="../static/img/10.jpg"  style="max-width: 100%; height: auto;">-->
-<!--                                </div>-->
-<!--                                <div class="col-sm-6 col-md-4 col-lg-3">-->
-<!--                                    <img src="../static/img/11.jpg"  style="max-width: 100%; height: auto;">-->
-<!--                                </div>-->
+                                    <!--                                <div class="col-sm-6 col-md-4 col-lg-3">-->
+                                    <!--                                    <img src="../static/img/8.jpg"  style="max-width: 100%; height: auto;">-->
+                                    <!--                                </div>-->
+                                    <!--                                <div class="col-sm-6 col-md-4 col-lg-3">-->
+                                    <!--                                    <img src="../static/img/9.jpg"  style="max-width: 100%; height: auto;">-->
+                                    <!--                                </div>-->
+                                    <!--                                <div class="col-sm-6 col-md-4 col-lg-3">-->
+                                    <!--                                    <img src="../static/img/10.jpg"  style="max-width: 100%; height: auto;">-->
+                                    <!--                                </div>-->
+                                    <!--                                <div class="col-sm-6 col-md-4 col-lg-3">-->
+                                    <!--                                    <img src="../static/img/11.jpg"  style="max-width: 100%; height: auto;">-->
+                                    <!--                                </div>-->
 
-<!--                              </div>-->
-<!--                            </div>-->
-<!--                          </div>-->
-<!--                        </div>-->
-<!--                    </div>-->
-
-
-
-
-
-
-
-
-
-<!--                    <h4>Text:</h4>-->
-<!--                    <div class="table-responsive pt-3">-->
-<!--                        <table class="table table-bordered">-->
-<!--                          <thead>-->
-<!--                            <tr>-->
-<!--                              <th>-->
-<!--                                No.-->
-<!--                              </th>-->
-<!--                              <th>-->
-<!--                                Content-->
-<!--                              </th>-->
-<!--                            </tr>-->
-<!--                          </thead>-->
-<!--                          <tbody>-->
-<!--                            <tr>-->
-<!--                              <td>-->
-<!--                                1-->
-<!--                              </td>-->
-<!--                              <td>-->
-<!--                                Monica Samille Lewinsky (born July 23, 1973) is an American activist, television personality, fashion designer, and former White House intern. President Bill Clinton admitted to having had what he called an "inappropriate relationship" with Lewinsky while she worked at the White House in 1995–1996. The affair and its repercussions (which included Clinton's impeachment) became known later as the Clinton–Lewinsky scandal.-->
-<!--                              </td>-->
-<!--                            </tr>-->
-<!--                            <tr>-->
-<!--                              <td>-->
-<!--                                2-->
-<!--                              </td>-->
-<!--                              <td>-->
-<!--                                Hillaryland was the self-designated name of a group of core advisors to Hillary Clinton, when she was First Lady of the United States and again when, as United States Senator, she was one of the Democratic Party candidates for President in the 2008 U.S. election.-->
-<!--                              </td>-->
-<!--                            </tr>-->
-<!--                            <tr>-->
-<!--                              <td>-->
-<!--                                3-->
-<!--                              </td>-->
-<!--                              <td>-->
-<!--                                Maya Lakshmi Harris (born January 30, 1967) is an American lawyer, public policy advocate, and television commentator. She is a political analyst for MSNBC and in 2015 was appointed as one of three senior policy advisors to lead the development of an agenda for Hillary Clinton's 2016 presidential campaign. She was formerly a senior fellow at the Center for American Progress. From 2008 until she took her current position, she was Vice President for Democracy, Rights and Justice at the Ford Foundation. Prior to joining the Ford Foundation, she served as the Executive Director of the American Civil Liberties Union (ACLU) of Northern California. Before joining the ACLU, the former law school dean (Lincoln Law School of San Jose) was a Senior Associate at PolicyLink. She has authored two publications which include a report highlighting community-centered policing practices nationwide and an advocacy manual for police reform.-->
-<!--                              </td>-->
-<!--                            </tr>-->
-<!--                            <tr>-->
-<!--                              <td>-->
-<!--                                4-->
-<!--                              </td>-->
-<!--                              <td>-->
-<!--                                Linda Lou Chavez (born June 17, 1947) is an American author, commentator, and radio talk show host. She is also a Fox News analyst, Chairman of the Center for Equal Opportunity, has a syndicated column that appears in newspapers nationwide each week, and sits on the board of directors of two Fortune 1000 companies: Pilgrim's Pride and ABM Industries. Chavez was the highest-ranking woman in President Ronald Reagan's White House, and was the first Latina ever nominated to the United States Cabinet, when President George W. Bush nominated her Secretary of Labor. She withdrew from consideration for the position when the media published allegations that she had employed an illegal immigrant a decade earlier. In 2000, Chavez was named a Living Legend by the Library of Congress.-->
-<!--                              </td>-->
-<!--                            </tr>-->
-<!--                            <tr>-->
-<!--                              <td>-->
-<!--                                5-->
-<!--                              </td>-->
-<!--                              <td>-->
-<!--                                Debbie Willhite (born December 28, 1951) is an American Democratic political consultant and activist who has worked on six presidential campaigns, served as Policy Director for the Speaker of the House in Connecticut, and served as the National Coordinated Campaign Director for both the 1992 and 1996 Presidential campaigns of Bill Clinton. In addition, she has worked for every Democratic National Convention from 1980 until 2008.-->
-<!--                              </td>-->
-<!--                            </tr>-->
-<!--                            <tr>-->
-<!--                              <td>-->
-<!--                                6-->
-<!--                              </td>-->
-<!--                              <td>-->
-<!--                                Juleanna R. Glover is an American corporate public affairs consultant, lobbyist, entrepreneur, and former Republican political strategist]. Glover is widely considered one of the most powerful lobbyists in Washington. She is founder and CEO of Ridgely Walsh, a public and governmental affairs agency that advises Silicon Valley companies, including Google, Snap, Oracle, eBay, First Solar, Uber, and SpaceX.-->
-<!--                              </td>-->
-<!--                            </tr>-->
-<!--                            <tr>-->
-<!--                              <td>-->
-<!--                                7-->
-<!--                              </td>-->
-<!--                              <td>-->
-<!--                                Constance of Austria (; ; 24 December 1588 – 10 July 1631) was queen of Poland as the second wife of King Sigismund III Vasa and the mother of King John II Casimir.-->
-<!--                              </td>-->
-<!--                            </tr>-->
-<!--                          </tbody>-->
-<!--                        </table>-->
-<!--                    </div>-->
+                                    <!--                              </div>-->
+                                    <!--                            </div>-->
+                                    <!--                          </div>-->
+                                    <!--                        </div>-->
+                                    <!--                    </div>-->
 
 
 
@@ -400,330 +318,424 @@
 
 
 
-                  </div>
-                </div>
-            </div>
-<!--            <div class="col-md-5 grid-margin stretch-card">-->
-<!--              <div class="card">-->
-<!--                <div class="card-body">-->
-<!--                  <p class="card-title">Step3 : TableQA Playground</p>-->
-<!--                  <h4>Default Question:</h4>-->
-<!--                  <p class="text-muted">Today, many people rely on computers to do homework, work, and create or store useful information. Therefore, it is important </p>-->
+                                    <!--                    <h4>Text:</h4>-->
+                                    <!--                    <div class="table-responsive pt-3">-->
+                                    <!--                        <table class="table table-bordered">-->
+                                    <!--                          <thead>-->
+                                    <!--                            <tr>-->
+                                    <!--                              <th>-->
+                                    <!--                                No.-->
+                                    <!--                              </th>-->
+                                    <!--                              <th>-->
+                                    <!--                                Content-->
+                                    <!--                              </th>-->
+                                    <!--                            </tr>-->
+                                    <!--                          </thead>-->
+                                    <!--                          <tbody>-->
+                                    <!--                            <tr>-->
+                                    <!--                              <td>-->
+                                    <!--                                1-->
+                                    <!--                              </td>-->
+                                    <!--                              <td>-->
+                                    <!--                                Monica Samille Lewinsky (born July 23, 1973) is an American activist, television personality, fashion designer, and former White House intern. President Bill Clinton admitted to having had what he called an "inappropriate relationship" with Lewinsky while she worked at the White House in 1995–1996. The affair and its repercussions (which included Clinton's impeachment) became known later as the Clinton–Lewinsky scandal.-->
+                                    <!--                              </td>-->
+                                    <!--                            </tr>-->
+                                    <!--                            <tr>-->
+                                    <!--                              <td>-->
+                                    <!--                                2-->
+                                    <!--                              </td>-->
+                                    <!--                              <td>-->
+                                    <!--                                Hillaryland was the self-designated name of a group of core advisors to Hillary Clinton, when she was First Lady of the United States and again when, as United States Senator, she was one of the Democratic Party candidates for President in the 2008 U.S. election.-->
+                                    <!--                              </td>-->
+                                    <!--                            </tr>-->
+                                    <!--                            <tr>-->
+                                    <!--                              <td>-->
+                                    <!--                                3-->
+                                    <!--                              </td>-->
+                                    <!--                              <td>-->
+                                    <!--                                Maya Lakshmi Harris (born January 30, 1967) is an American lawyer, public policy advocate, and television commentator. She is a political analyst for MSNBC and in 2015 was appointed as one of three senior policy advisors to lead the development of an agenda for Hillary Clinton's 2016 presidential campaign. She was formerly a senior fellow at the Center for American Progress. From 2008 until she took her current position, she was Vice President for Democracy, Rights and Justice at the Ford Foundation. Prior to joining the Ford Foundation, she served as the Executive Director of the American Civil Liberties Union (ACLU) of Northern California. Before joining the ACLU, the former law school dean (Lincoln Law School of San Jose) was a Senior Associate at PolicyLink. She has authored two publications which include a report highlighting community-centered policing practices nationwide and an advocacy manual for police reform.-->
+                                    <!--                              </td>-->
+                                    <!--                            </tr>-->
+                                    <!--                            <tr>-->
+                                    <!--                              <td>-->
+                                    <!--                                4-->
+                                    <!--                              </td>-->
+                                    <!--                              <td>-->
+                                    <!--                                Linda Lou Chavez (born June 17, 1947) is an American author, commentator, and radio talk show host. She is also a Fox News analyst, Chairman of the Center for Equal Opportunity, has a syndicated column that appears in newspapers nationwide each week, and sits on the board of directors of two Fortune 1000 companies: Pilgrim's Pride and ABM Industries. Chavez was the highest-ranking woman in President Ronald Reagan's White House, and was the first Latina ever nominated to the United States Cabinet, when President George W. Bush nominated her Secretary of Labor. She withdrew from consideration for the position when the media published allegations that she had employed an illegal immigrant a decade earlier. In 2000, Chavez was named a Living Legend by the Library of Congress.-->
+                                    <!--                              </td>-->
+                                    <!--                            </tr>-->
+                                    <!--                            <tr>-->
+                                    <!--                              <td>-->
+                                    <!--                                5-->
+                                    <!--                              </td>-->
+                                    <!--                              <td>-->
+                                    <!--                                Debbie Willhite (born December 28, 1951) is an American Democratic political consultant and activist who has worked on six presidential campaigns, served as Policy Director for the Speaker of the House in Connecticut, and served as the National Coordinated Campaign Director for both the 1992 and 1996 Presidential campaigns of Bill Clinton. In addition, she has worked for every Democratic National Convention from 1980 until 2008.-->
+                                    <!--                              </td>-->
+                                    <!--                            </tr>-->
+                                    <!--                            <tr>-->
+                                    <!--                              <td>-->
+                                    <!--                                6-->
+                                    <!--                              </td>-->
+                                    <!--                              <td>-->
+                                    <!--                                Juleanna R. Glover is an American corporate public affairs consultant, lobbyist, entrepreneur, and former Republican political strategist]. Glover is widely considered one of the most powerful lobbyists in Washington. She is founder and CEO of Ridgely Walsh, a public and governmental affairs agency that advises Silicon Valley companies, including Google, Snap, Oracle, eBay, First Solar, Uber, and SpaceX.-->
+                                    <!--                              </td>-->
+                                    <!--                            </tr>-->
+                                    <!--                            <tr>-->
+                                    <!--                              <td>-->
+                                    <!--                                7-->
+                                    <!--                              </td>-->
+                                    <!--                              <td>-->
+                                    <!--                                Constance of Austria (; ; 24 December 1588 – 10 July 1631) was queen of Poland as the second wife of King Sigismund III Vasa and the mother of King John II Casimir.-->
+                                    <!--                              </td>-->
+                                    <!--                            </tr>-->
+                                    <!--                          </tbody>-->
+                                    <!--                        </table>-->
+                                    <!--                    </div>-->
 
 
-<!--                  <div class="row">-->
-<!--                      <div class="col-md-12 p-0">-->
-<!--                        <div class="form-group row align-items-center">-->
-<!--                          <label class="col-sm-2 mx-4 col-form-label"><b>Model</b></label>-->
-<!--                          <div class="col-sm-8">-->
-<!--                            <select class="form-control text-dark">-->
-<!--                              <option selected>T5-small Answer</option>-->
-<!--                              <option>LLAMA-Lora Answer</option>-->
-<!--                              <option>SQL</option>-->
-<!--                              <option>Gold Answer</option>-->
-<!--                              <option>Bloom-Lora Answer</option>-->
-<!--                            </select>-->
-<!--                          </div>-->
-<!--                        </div>-->
-<!--                      </div>-->
-<!--                  </div>-->
-<!--                  <div class="alert alert-warning mt-4 d-flex align-items-center" role="alert">-->
-<!--                    <i class="ti-info-alt me-4"></i>-->
-<!--                    <p>Institute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of Automation</p>-->
-<!--                  </div>-->
-
-<!--                  <br/>-->
-
-
-<!--                  <h4>Input your Question:</h4>-->
-
-<!--                  <textarea class="form-control" id="input-question" placeholder="question" rows="5"></textarea>-->
 
 
 
-<!--                  <div class="row">-->
-<!--                      <div class="col-md-12 p-0">-->
-<!--                        <div class="form-group row align-items-center">-->
-<!--                          <label class="col-sm-2 mx-4 col-form-label"><b>Model</b></label>-->
-<!--                          <div class="col-sm-8">-->
-<!--                            <select class="form-control text-dark">-->
-<!--                              <option selected>T5-small Answer</option>-->
-<!--                              <option>LLAMA-Lora Answer</option>-->
-<!--                              <option>SQL</option>-->
-<!--                              <option>Gold Answer</option>-->
-<!--                              <option>Bloom-Lora Answer</option>-->
-<!--                            </select>-->
-<!--                          </div>-->
-<!--                        </div>-->
-<!--                      </div>-->
-<!--                  </div>-->
-<!--                  <div class="d-flex justify-content-end">-->
-<!--                    <button type="button" class="btn btn-success btn-rounded btn-fw my-2">Run</button>-->
-<!--                  </div>-->
-
-<!--                  <div class="alert alert-success mt-4 d-flex align-items-center" role="alert">-->
-<!--                    <i class="ti-info-alt me-4"></i>-->
-<!--                    <p>Institute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of Automation</p>-->
-<!--                  </div>-->
-
-<!--                  <div id="total-sales-chart-legend"></div>-->
-<!--                </div>-->
-<!--              </div>-->
-<!--            </div>-->
-          </div>
 
 
-          <div class="row">
-              <div class="col-md-7 stretch-card grid-margin">
-                <div class="card">
-                  <div class="card-body">
-                    <p class="card-title">Pictures</p>
-<!--                      <h4>Pictures:</h4>-->
-                      <div class="row">
-                        <div class="col-lg-12 grid-margin">
-                          <div class="card">
-                            <div class="card-body">
-                              <div class="row icons-list">
 
-                                <div class="col-sm-6 col-md-4 col-lg-3">
-                                    <img src="../static/img/1.jpg"  style="max-width: 100%; height: auto;">
+
                                 </div>
-                                <div class="col-sm-6 col-md-4 col-lg-3">
-                                    <img src="../static/img/2.jpg"  style="max-width: 100%; height: auto;">
-                                </div>
-                                <div class="col-sm-6 col-md-4 col-lg-3">
-                                    <img src="../static/img/3.jpg"  style="max-width: 100%; height: auto;">
-                                </div>
-                                <div class="col-sm-6 col-md-4 col-lg-3">
-                                    <img src="../static/img/4.jpg"  style="max-width: 100%; height: auto;">
-                                </div>
-                                <div class="col-sm-6 col-md-4 col-lg-3">
-                                    <img src="../static/img/5.jpg"  style="max-width: 100%; height: auto;">
-                                </div>
-                                <div class="col-sm-6 col-md-4 col-lg-3">
-                                    <img src="../static/img/6.jpg"  style="max-width: 100%; height: auto;">
-                                </div>
-                                <div class="col-sm-6 col-md-4 col-lg-3">
-                                    <img src="../static/img/7.png"  style="max-width: 100%; height: auto;">
-                                </div>
-
-                                <div class="col-sm-6 col-md-4 col-lg-3">
-                                    <img src="../static/img/8.jpg"  style="max-width: 100%; height: auto;">
-                                </div>
-                                <div class="col-sm-6 col-md-4 col-lg-3">
-                                    <img src="../static/img/9.jpg"  style="max-width: 100%; height: auto;">
-                                </div>
-                                <div class="col-sm-6 col-md-4 col-lg-3">
-                                    <img src="../static/img/10.jpg"  style="max-width: 100%; height: auto;">
-                                </div>
-                                <div class="col-sm-6 col-md-4 col-lg-3">
-                                    <img src="../static/img/11.jpg"  style="max-width: 100%; height: auto;">
-                                </div>
-
-                              </div>
                             </div>
-                          </div>
                         </div>
-                      </div>
-                  </div>
-                </div>
-              </div>
-              <div class="col-md-5 stretch-card grid-margin">
-                <div class="card">
-                  <div class="card-body">
-                    <p class="card-title">Text</p>
-<!--                    <h4>Text:</h4>-->
-                    <div class="table-responsive pt-3">
-                        <table class="table table-bordered">
-                          <thead>
-                            <tr>
-                              <th>
-                                No.
-                              </th>
-                              <th>
-                                Content
-                              </th>
-                            </tr>
-                          </thead>
-                          <tbody>
-                            <tr>
-                              <td>
-                                1
-                              </td>
-                              <td>
-                                Monica Samille Lewinsky (born July 23, 1973) is an American activist, television personality, fashion designer, and former White House intern. President Bill Clinton admitted to having had what he called an "inappropriate relationship" with Lewinsky while she worked at the White House in 1995–1996. The affair and its repercussions (which included Clinton's impeachment) became known later as the Clinton–Lewinsky scandal.
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                2
-                              </td>
-                              <td>
-                                Hillaryland was the self-designated name of a group of core advisors to Hillary Clinton, when she was First Lady of the United States and again when, as United States Senator, she was one of the Democratic Party candidates for President in the 2008 U.S. election.
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                3
-                              </td>
-                              <td>
-                                Maya Lakshmi Harris (born January 30, 1967) is an American lawyer, public policy advocate, and television commentator. She is a political analyst for MSNBC and in 2015 was appointed as one of three senior policy advisors to lead the development of an agenda for Hillary Clinton's 2016 presidential campaign. She was formerly a senior fellow at the Center for American Progress. From 2008 until she took her current position, she was Vice President for Democracy, Rights and Justice at the Ford Foundation. Prior to joining the Ford Foundation, she served as the Executive Director of the American Civil Liberties Union (ACLU) of Northern California. Before joining the ACLU, the former law school dean (Lincoln Law School of San Jose) was a Senior Associate at PolicyLink. She has authored two publications which include a report highlighting community-centered policing practices nationwide and an advocacy manual for police reform.
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                4
-                              </td>
-                              <td>
-                                Linda Lou Chavez (born June 17, 1947) is an American author, commentator, and radio talk show host. She is also a Fox News analyst, Chairman of the Center for Equal Opportunity, has a syndicated column that appears in newspapers nationwide each week, and sits on the board of directors of two Fortune 1000 companies: Pilgrim's Pride and ABM Industries. Chavez was the highest-ranking woman in President Ronald Reagan's White House, and was the first Latina ever nominated to the United States Cabinet, when President George W. Bush nominated her Secretary of Labor. She withdrew from consideration for the position when the media published allegations that she had employed an illegal immigrant a decade earlier. In 2000, Chavez was named a Living Legend by the Library of Congress.
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                5
-                              </td>
-                              <td>
-                                Debbie Willhite (born December 28, 1951) is an American Democratic political consultant and activist who has worked on six presidential campaigns, served as Policy Director for the Speaker of the House in Connecticut, and served as the National Coordinated Campaign Director for both the 1992 and 1996 Presidential campaigns of Bill Clinton. In addition, she has worked for every Democratic National Convention from 1980 until 2008.
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                6
-                              </td>
-                              <td>
-                                Juleanna R. Glover is an American corporate public affairs consultant, lobbyist, entrepreneur, and former Republican political strategist]. Glover is widely considered one of the most powerful lobbyists in Washington. She is founder and CEO of Ridgely Walsh, a public and governmental affairs agency that advises Silicon Valley companies, including Google, Snap, Oracle, eBay, First Solar, Uber, and SpaceX.
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                7
-                              </td>
-                              <td>
-                                Constance of Austria (; ; 24 December 1588 – 10 July 1631) was queen of Poland as the second wife of King Sigismund III Vasa and the mother of King John II Casimir.
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
+                        <!--            <div class="col-md-5 grid-margin stretch-card">-->
+                        <!--              <div class="card">-->
+                        <!--                <div class="card-body">-->
+                        <!--                  <p class="card-title">Step3 : TableQA Playground</p>-->
+                        <!--                  <h4>Default Question:</h4>-->
+                        <!--                  <p class="text-muted">Today, many people rely on computers to do homework, work, and create or store useful information. Therefore, it is important </p>-->
+
+
+                        <!--                  <div class="row">-->
+                        <!--                      <div class="col-md-12 p-0">-->
+                        <!--                        <div class="form-group row align-items-center">-->
+                        <!--                          <label class="col-sm-2 mx-4 col-form-label"><b>Model</b></label>-->
+                        <!--                          <div class="col-sm-8">-->
+                        <!--                            <select class="form-control text-dark">-->
+                        <!--                              <option selected>T5-small Answer</option>-->
+                        <!--                              <option>LLAMA-Lora Answer</option>-->
+                        <!--                              <option>SQL</option>-->
+                        <!--                              <option>Gold Answer</option>-->
+                        <!--                              <option>Bloom-Lora Answer</option>-->
+                        <!--                            </select>-->
+                        <!--                          </div>-->
+                        <!--                        </div>-->
+                        <!--                      </div>-->
+                        <!--                  </div>-->
+                        <!--                  <div class="alert alert-warning mt-4 d-flex align-items-center" role="alert">-->
+                        <!--                    <i class="ti-info-alt me-4"></i>-->
+                        <!--                    <p>Institute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of Automation</p>-->
+                        <!--                  </div>-->
+
+                        <!--                  <br/>-->
+
+
+                        <!--                  <h4>Input your Question:</h4>-->
+
+                        <!--                  <textarea class="form-control" id="input-question" placeholder="question" rows="5"></textarea>-->
+
+
+
+                        <!--                  <div class="row">-->
+                        <!--                      <div class="col-md-12 p-0">-->
+                        <!--                        <div class="form-group row align-items-center">-->
+                        <!--                          <label class="col-sm-2 mx-4 col-form-label"><b>Model</b></label>-->
+                        <!--                          <div class="col-sm-8">-->
+                        <!--                            <select class="form-control text-dark">-->
+                        <!--                              <option selected>T5-small Answer</option>-->
+                        <!--                              <option>LLAMA-Lora Answer</option>-->
+                        <!--                              <option>SQL</option>-->
+                        <!--                              <option>Gold Answer</option>-->
+                        <!--                              <option>Bloom-Lora Answer</option>-->
+                        <!--                            </select>-->
+                        <!--                          </div>-->
+                        <!--                        </div>-->
+                        <!--                      </div>-->
+                        <!--                  </div>-->
+                        <!--                  <div class="d-flex justify-content-end">-->
+                        <!--                    <button type="button" class="btn btn-success btn-rounded btn-fw my-2">Run</button>-->
+                        <!--                  </div>-->
+
+                        <!--                  <div class="alert alert-success mt-4 d-flex align-items-center" role="alert">-->
+                        <!--                    <i class="ti-info-alt me-4"></i>-->
+                        <!--                    <p>Institute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of AutomationInstitute of Automation</p>-->
+                        <!--                  </div>-->
+
+                        <!--                  <div id="total-sales-chart-legend"></div>-->
+                        <!--                </div>-->
+                        <!--              </div>-->
+                        <!--            </div>-->
                     </div>
-                  </div>
-                </div>
-              </div>
-          </div>
-          <div class="row">
-              <div class="col-md-12 stretch-card grid-margin">
-                <div class="card">
-                  <div class="card-body">
-                      <p class="card-title">Step3 : TableQA Playground</p>
-                      <h4>Default Question:</h4>
-                      <p class="text-muted">Today, many people rely on computers to do homework, work, and create or store useful information. Therefore, it is important </p>
 
 
-                      <div class="row">
-                          <div class="col-md-12 p-0">
-                            <div class="row align-items-center">
-                              <label class="col-sm-2 mx-4 col-form-label"><b>Model</b></label>
-                              <div class="col-sm-8">
-                                <select class="form-control text-dark">
+                    <div class="row">
+                        <div class="col-md-7 stretch-card grid-margin">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="card-title">Pictures</p>
+                                    <!--                      <h4>Pictures:</h4>-->
+                                    <div class="row">
+                                        <div class="col-lg-12 grid-margin">
+                                            <div class="card">
+                                                <div class="card-body">
+                                                    <div class="row icons-list">
+
+                                                        <div class="col-sm-6 col-md-4 col-lg-3">
+                                                            <img src="../static/img/1.jpg" style="max-width: 100%; height: auto;">
+                                                        </div>
+                                                        <div class="col-sm-6 col-md-4 col-lg-3">
+                                                            <img src="../static/img/2.jpg" style="max-width: 100%; height: auto;">
+                                                        </div>
+                                                        <div class="col-sm-6 col-md-4 col-lg-3">
+                                                            <img src="../static/img/3.jpg" style="max-width: 100%; height: auto;">
+                                                        </div>
+                                                        <div class="col-sm-6 col-md-4 col-lg-3">
+                                                            <img src="../static/img/4.jpg" style="max-width: 100%; height: auto;">
+                                                        </div>
+                                                        <div class="col-sm-6 col-md-4 col-lg-3">
+                                                            <img src="../static/img/5.jpg" style="max-width: 100%; height: auto;">
+                                                        </div>
+                                                        <div class="col-sm-6 col-md-4 col-lg-3">
+                                                            <img src="../static/img/6.jpg" style="max-width: 100%; height: auto;">
+                                                        </div>
+                                                        <div class="col-sm-6 col-md-4 col-lg-3">
+                                                            <img src="../static/img/7.png" style="max-width: 100%; height: auto;">
+                                                        </div>
+
+                                                        <div class="col-sm-6 col-md-4 col-lg-3">
+                                                            <img src="../static/img/8.jpg" style="max-width: 100%; height: auto;">
+                                                        </div>
+                                                        <div class="col-sm-6 col-md-4 col-lg-3">
+                                                            <img src="../static/img/9.jpg" style="max-width: 100%; height: auto;">
+                                                        </div>
+                                                        <div class="col-sm-6 col-md-4 col-lg-3">
+                                                            <img src="../static/img/10.jpg" style="max-width: 100%; height: auto;">
+                                                        </div>
+                                                        <div class="col-sm-6 col-md-4 col-lg-3">
+                                                            <img src="../static/img/11.jpg" style="max-width: 100%; height: auto;">
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-5 stretch-card grid-margin">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="card-title">Text</p>
+                                    <!--                    <h4>Text:</h4>-->
+                                    <div class="table-responsive pt-3">
+                                        <table class="table table-bordered">
+                                            <thead>
+                                                <tr>
+                                                    <th>
+                                                        No.
+                                                    </th>
+                                                    <th>
+                                                        Content
+                                                    </th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td>
+                                                        1
+                                                    </td>
+                                                    <td>
+                                                        Monica Samille Lewinsky (born July 23, 1973) is an American activist, television personality, fashion designer, and former White House intern. President Bill Clinton admitted to having had what he called an "inappropriate relationship" with Lewinsky while
+                                                        she worked at the White House in 1995–1996. The affair and its repercussions (which included Clinton's impeachment) became known later as the Clinton–Lewinsky scandal.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        2
+                                                    </td>
+                                                    <td>
+                                                        Hillaryland was the self-designated name of a group of core advisors to Hillary Clinton, when she was First Lady of the United States and again when, as United States Senator, she was one of the Democratic Party candidates for President in the 2008 U.S.
+                                                        election.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        3
+                                                    </td>
+                                                    <td>
+                                                        Maya Lakshmi Harris (born January 30, 1967) is an American lawyer, public policy advocate, and television commentator. She is a political analyst for MSNBC and in 2015 was appointed as one of three senior policy advisors to lead the development of an
+                                                        agenda for Hillary Clinton's 2016 presidential campaign. She was formerly a senior fellow at the Center for American Progress. From 2008 until she took her current position, she was Vice President
+                                                        for Democracy, Rights and Justice at the Ford Foundation. Prior to joining the Ford Foundation, she served as the Executive Director of the American Civil Liberties Union (ACLU) of Northern California.
+                                                        Before joining the ACLU, the former law school dean (Lincoln Law School of San Jose) was a Senior Associate at PolicyLink. She has authored two publications which include a report highlighting community-centered
+                                                        policing practices nationwide and an advocacy manual for police reform.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        4
+                                                    </td>
+                                                    <td>
+                                                        Linda Lou Chavez (born June 17, 1947) is an American author, commentator, and radio talk show host. She is also a Fox News analyst, Chairman of the Center for Equal Opportunity, has a syndicated column that appears in newspapers nationwide each week,
+                                                        and sits on the board of directors of two Fortune 1000 companies: Pilgrim's Pride and ABM Industries. Chavez was the highest-ranking woman in President Ronald Reagan's White House, and was the first
+                                                        Latina ever nominated to the United States Cabinet, when President George W. Bush nominated her Secretary of Labor. She withdrew from consideration for the position when the media published allegations
+                                                        that she had employed an illegal immigrant a decade earlier. In 2000, Chavez was named a Living Legend by the Library of Congress.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        5
+                                                    </td>
+                                                    <td>
+                                                        Debbie Willhite (born December 28, 1951) is an American Democratic political consultant and activist who has worked on six presidential campaigns, served as Policy Director for the Speaker of the House in Connecticut, and served as the National Coordinated
+                                                        Campaign Director for both the 1992 and 1996 Presidential campaigns of Bill Clinton. In addition, she has worked for every Democratic National Convention from 1980 until 2008.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        6
+                                                    </td>
+                                                    <td>
+                                                        Juleanna R. Glover is an American corporate public affairs consultant, lobbyist, entrepreneur, and former Republican political strategist]. Glover is widely considered one of the most powerful lobbyists in Washington. She is founder and CEO of Ridgely
+                                                        Walsh, a public and governmental affairs agency that advises Silicon Valley companies, including Google, Snap, Oracle, eBay, First Solar, Uber, and SpaceX.
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td>
+                                                        7
+                                                    </td>
+                                                    <td>
+                                                        Constance of Austria (; ; 24 December 1588 – 10 July 1631) was queen of Poland as the second wife of King Sigismund III Vasa and the mother of King John II Casimir.
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12 stretch-card grid-margin">
+                            <div class="card">
+                                <div class="card-body">
+                                    <p class="card-title">Step3 : TableQA Playground</p>
+                                    <h4>Default Question:</h4>
+                                    <p class="text-muted">Today, many people rely on computers to do homework, work, and create or store useful information. Therefore, it is important </p>
+
+
+                                    <div class="row">
+                                        <div class="col-md-12 p-0">
+                                            <div class="row align-items-center">
+                                                <label class="col-sm-2 mx-4 col-form-label"><b>Model</b></label>
+                                                <div class="col-sm-8">
+                                                    <select id="model-select" class="form-control text-dark">
+                                  <option value="T5-small" selected>T5-small Answer</option>
+                                  <option value="LLAMA-Lora">LLAMA-Lora Answer</option>
+                                  <option value="SQL">SQL</option>
+                                  <option value="Gold">Gold Answer</option>
+                                  <option value="Bloom-Lora">Bloom-Lora Answer</option>
+                                </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="alert alert-warning mt-4 d-flex align-items-center" role="alert">
+                                        <i class="ti-info-alt me-4"></i>
+                                        <p>Hillaryland was the self-designated name of a group of core advisors to Hillary Clinton, when she was First Lady of the United States and again when, as United States Senator, she was one of the Democratic Party
+                                            candidates for President in the 2008 U.S. election.</p>
+                                    </div>
+
+                                    <br/>
+
+
+                                    <h4>Input your Question:</h4>
+
+                                    <textarea class="form-control" id="input-question" placeholder="question" rows="5"></textarea>
+
+
+
+                                    <div class="row">
+                                        <div class="col-md-12 p-0">
+                                            <div class="row align-items-center">
+                                                <label class="col-sm-2 mx-4 col-form-label"><b>Model</b></label>
+                                                <div class="col-sm-8">
+                                                    <select class="form-control text-dark">
                                   <option selected>T5-small Answer</option>
                                   <option>LLAMA-Lora Answer</option>
                                   <option>SQL</option>
                                   <option>Gold Answer</option>
                                   <option>Bloom-Lora Answer</option>
                                 </select>
-                              </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="d-flex justify-content-end">
+                                        <button id="get-question-button" type="button" class="btn btn-success btn-rounded btn-fw my-2">Run</button>
+                                    </div>
+
+                                    <div class="alert alert-success mt-4 d-flex align-items-center" role="alert">
+                                        <i class="ti-info-alt me-4"></i>
+                                        <p>Monica Samille Lewinsky (born July 23, 1973) is an American activist, television personality, fashion designer, and former White House intern. President Bill Clinton admitted to having had what he called an "inappropriate
+                                            relationship" with Lewinsky while she worked at the White House in 1995–1996. The affair and its repercussions (which included Clinton's impeachment) became known later as the Clinton–Lewinsky scandal.</p>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
-                      </div>
-                      <div class="alert alert-warning mt-4 d-flex align-items-center" role="alert">
-                        <i class="ti-info-alt me-4"></i>
-                        <p>Hillaryland was the self-designated name of a group of core advisors to Hillary Clinton, when she was First Lady of the United States and again when, as United States Senator, she was one of the Democratic Party candidates for President in the 2008 U.S. election.</p>
-                      </div>
-
-                      <br/>
-
-
-                      <h4>Input your Question:</h4>
-
-                      <textarea class="form-control" id="input-question" placeholder="question" rows="5"></textarea>
+                        </div>
+                    </div>
 
 
 
-                      <div class="row">
-                          <div class="col-md-12 p-0">
-                            <div class="row align-items-center">
-                              <label class="col-sm-2 mx-4 col-form-label"><b>Model</b></label>
-                              <div class="col-sm-8">
-                                <select class="form-control text-dark">
-                                  <option selected>T5-small Answer</option>
-                                  <option>LLAMA-Lora Answer</option>
-                                  <option>SQL</option>
-                                  <option>Gold Answer</option>
-                                  <option>Bloom-Lora Answer</option>
-                                </select>
-                              </div>
-                            </div>
-                          </div>
-                      </div>
-                      <div class="d-flex justify-content-end">
-                        <button type="button" class="btn btn-success btn-rounded btn-fw my-2">Run</button>
-                      </div>
 
-                      <div class="alert alert-success mt-4 d-flex align-items-center" role="alert">
-                        <i class="ti-info-alt me-4"></i>
-                        <p>Monica Samille Lewinsky (born July 23, 1973) is an American activist, television personality, fashion designer, and former White House intern. President Bill Clinton admitted to having had what he called an "inappropriate relationship" with Lewinsky while she worked at the White House in 1995–1996. The affair and its repercussions (which included Clinton's impeachment) became known later as the Clinton–Lewinsky scandal.</p>
-                      </div>
-                  </div>
+
+
+
+
                 </div>
-              </div>
-          </div>
 
 
+                <footer class="footer">
+                    <div class="d-sm-flex justify-content-center justify-content-sm-between">
+                        <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">xxxxxx <a href="https:" target="_blank">xxxxxxx </a>xxxxx</span>
+                        <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">xxxxxx <a href="https:" target="_blank"> xxxxxxx  </a> xxxxx</span>
+                    </div>
+                </footer>
 
-
-
-
-
+            </div>
 
         </div>
-
-
-        <footer class="footer">
-        <div class="d-sm-flex justify-content-center justify-content-sm-between">
-          <span class="text-muted text-center text-sm-left d-block d-sm-inline-block">xxxxxx <a href="https:" target="_blank">xxxxxxx </a>xxxxx</span>
-          <span class="float-none float-sm-right d-block mt-1 mt-sm-0 text-center">xxxxxx <a href="https:" target="_blank"> xxxxxxx  </a> xxxxx</span>
-        </div>
-        </footer>
-
-      </div>
 
     </div>
 
-  </div>
+
+
+    <script src="../static/js/vendor.bundle.base.js"></script>
+
+
+    <script src="../static/js/Chart.min.js"></script>
+    <script src="../static/js/jquery.dataTables.js"></script>
+    <script src="../static/js/dataTables.bootstrap4.js"></script>
+
+
+    <script src="../static/js/off-canvas.js"></script>
+    <script src="../static/js/hoverable-collapse.js"></script>
+    <script src="../static/js/template.js"></script>
+
+
+    <script src="../static/js/dashboard.js"></script>
+    <script src="../static/js/data-table.js"></script>
+    <script src="../static/js/js.jquery.dataTables.js"></script>
+    <script src="../static/js/js.dataTables.bootstrap4.js"></script>
 
 
 
-  <script src="../static/js/vendor.bundle.base.js"></script>
-
-
-  <script src="../static/js/Chart.min.js"></script>
-  <script src="../static/js/jquery.dataTables.js"></script>
-  <script src="../static/js/dataTables.bootstrap4.js"></script>
-
-
-  <script src="../static/js/off-canvas.js"></script>
-  <script src="../static/js/hoverable-collapse.js"></script>
-  <script src="../static/js/template.js"></script>
-
-
-  <script src="../static/js/dashboard.js"></script>
-  <script src="../static/js/data-table.js"></script>
-  <script src="../static/js/js.jquery.dataTables.js"></script>
-  <script src="../static/js/js.dataTables.bootstrap4.js"></script>
-
-
-
-  <script src="../static/js/jquery.cookie.js" type="text/javascript"></script>
+    <script src="../static/js/jquery.cookie.js" type="text/javascript"></script>
 </body>
 
 </html>
-
