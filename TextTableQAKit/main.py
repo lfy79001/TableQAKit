@@ -42,7 +42,6 @@ def init_logging():
 app = init_app()
 logger = init_logging()
 
-
 '''
 check data integrity
 '''
@@ -72,6 +71,7 @@ def check_data_in_dataset(dataset_name, split):
         logger.info(f"Loading {dataset_name} - {split}")
         dataset_obj.load(split=split)
 
+
 def check_table_in_dataset(dataset_name, split, table_idx):
     dataset_obj = app.database['dataset'][dataset_name]
     is_exist = table_idx in dataset_obj.tables[split]
@@ -79,6 +79,7 @@ def check_table_in_dataset(dataset_name, split, table_idx):
         entry = dataset_obj.get_data(split, table_idx)
         table = dataset_obj.prepare_table(entry)
         dataset_obj.set_table(split, table_idx, table)
+
 
 @app.route("/table/default", methods=["GET", "POST"])
 def fetch_default_table_data():
@@ -102,13 +103,13 @@ def fetch_default_table_data():
         table_data = dataset_obj.get_table(split, table_idx)
         table_html = export_table(table_data, export_format="html", displayed_props=propertie_name_list)
         generated_results = fetch_generated_outputs(dataset_name, split, table_idx)
-        data =  {
+        data = {
             "session": {},
             "table_cnt": dataset_obj.get_example_count(split),
             "generated_results": generated_results,
             "dataset_info":
                 "",
-                # dataset_obj.get_info(),
+            # dataset_obj.get_info(),
             "table_content": table_html
         }
         with open("a.html", "w", encoding="utf-8") as file:
@@ -117,6 +118,7 @@ def fetch_default_table_data():
         logger.error(f"Fetch Table Error: {e}")
         data = {}
     return jsonify(data)
+
 
 def fetch_generated_outputs(dataset_name, split, table_idx):
     # outputs = {}
@@ -135,8 +137,8 @@ def fetch_generated_outputs(dataset_name, split, table_idx):
     '''
     outputs = {'t5-base': {
         'out': ['In riverside, near Raja Indian Cuisine, is Raja Indian Cuisine. It has an average customer rating.']},
-     't5-base_multi(e2e,webnlg)': {
-         'out': ['Near Raja Indian Cuisine in the riverside area has an average customer rating.']}}
+        't5-base_multi(e2e,webnlg)': {
+            'out': ['Near Raja Indian Cuisine in the riverside area has an average customer rating.']}}
 
     return outputs
 
@@ -161,9 +163,8 @@ def fetch_custom_table_data():
         logger.error(f"Fetch Table Error: {e}")
         data = {}
 
-
-
     return jsonify(data)
+
 
 @app.route("/custom/remove", methods=["GET", "POST"])
 def remove_custom_table():
@@ -182,13 +183,15 @@ def remove_custom_table():
         result = jsonify(success=False)
 
     return result
+
+
 @app.route("/session", methods=["GET", "POST"])
 def get_session():
     try:
         target = "all_key"
         target = "custom_tables_name"
         if target == "custom_tables_name":
-            data = jsonify(list(session.get("custom_tables",{}).keys()))
+            data = jsonify(list(session.get("custom_tables", {}).keys()))
         else:
             raise Exception("Illegal Target")
     except Exception as e:
@@ -197,9 +200,11 @@ def get_session():
 
     return data
 
+
 @app.route("/pipeline", methods=["GET", "POST"])
 def fetch_pipeline_result():
     pass
+
 
 @app.route("/custom/upload", methods=["GET", "POST"])
 def upload_custom_table():
@@ -220,7 +225,6 @@ def upload_custom_table():
         headers = df.columns.tolist()
         data = df.values.tolist()
 
-
         custom_tables = session.get("custom_tables", {})
         if table_name in custom_tables:
             raise Exception("add duplicate names to tables in session")
@@ -236,6 +240,7 @@ def upload_custom_table():
         result = jsonify(success=False)
 
     return result
+
 
 def prepare_custom_table(headers, data, properties, table_name):
     t = Table()
@@ -261,6 +266,7 @@ def prepare_custom_table(headers, data, properties, table_name):
 
     return t
 
+
 with app.app_context():
     app.database['dataset'] = {}
     # fetch_table_data()
@@ -269,4 +275,3 @@ with app.app_context():
     # session["custom_tables"] = {}
     fetch_default_table_data()
     pass
-
