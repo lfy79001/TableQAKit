@@ -89,9 +89,13 @@ def fetch_default_table_data():
     table_idx = int(request.args.get("table_idx"))
     displayed_props = json.loads(request.args.get("displayed_props"))
     '''
-    dataset_name = "multimodalqa"
-    split = "dev"
-    table_idx = 20
+    content = request.json
+    dataset_name = content.get("dataset_name")
+    split = content.get("split")
+    table_idx = content.get("table_idx")
+    # dataset_name = "multimodalqa"
+    # split = "dev"
+    # table_idx = 20
     propertie_name_list = []
     try:
         if dataset_name not in app.config['datasets']:
@@ -104,16 +108,19 @@ def fetch_default_table_data():
         table_html = export_table(table_data, export_format="html", displayed_props=propertie_name_list)
         generated_results = fetch_generated_outputs(dataset_name, split, table_idx)
         data = {
-            "session": {},
+            # "session": {},
             "table_cnt": dataset_obj.get_example_count(split),
             "generated_results": generated_results,
             "dataset_info":
-                "",
+                "MultiModalQA is a dataset designed for multimodal question-answering tasks. It aims to provide a diverse range of questions that require both textual and visual understanding to answer accurately. The dataset contains questions related to images, where each question is accompanied by both text and visual information.",
             # dataset_obj.get_info(),
-            "table_content": table_html
+            "table_question": table_data.default_question,
+            "table_content": table_html, # 包括properties
+            "pictures": table_data.pic_info,
+            "text": table_data.txt_info,
         }
         with open("a.html", "w", encoding="utf-8") as file:
-            file.write(table_html)
+            file.write(data)
     except Exception as e:
         logger.error(f"Fetch Table Error: {e}")
         data = {}
@@ -135,10 +142,8 @@ def fetch_generated_outputs(dataset_name, split, table_idx):
     '''
         insert your code
     '''
-    outputs = {'t5-base': {
-        'out': ['In riverside, near Raja Indian Cuisine, is Raja Indian Cuisine. It has an average customer rating.']},
-        't5-base_multi(e2e,webnlg)': {
-            'out': ['Near Raja Indian Cuisine in the riverside area has an average customer rating.']}}
+    outputs = {'T5-small': 'Daniel Henry Chamberlain was the 76th Governor of South Carolina in 1874.',
+    'LLAMA-Lora': 'Daniel Henry Chamberlain was the 76th Governor of South Carolina in 1874.'}
 
     return outputs
 

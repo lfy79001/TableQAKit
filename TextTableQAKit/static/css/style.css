@@ -23126,5 +23126,22 @@ dl li {
   background-color: darkgrey;
   outline: 1px solid slategrey;
 }
+.prop-btn {
+    margin-bottom: 5px;
+}
+
+.prop-btn[aria-expanded="false"] {
+    background-color: #fff;
+    border-color: #0175ac;
+    color: #0175ac;
+}
+
+.prop-btn[aria-expanded="true"] {
+    color: #fff;
+    background-color: #0175ac;
+    border-color: #0175ac;
+}
+
+
 
 

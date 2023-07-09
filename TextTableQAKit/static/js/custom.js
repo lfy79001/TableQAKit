@@ -32,3 +32,6 @@ $(document).ready(function() {
     });
     $('#get-question-button').click(getAnswer);
 });
+
+
+
