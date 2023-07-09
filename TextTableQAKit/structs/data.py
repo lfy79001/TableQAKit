@@ -315,31 +315,32 @@ class HFTabularDataset(TabularDataset):
         self.data[split] = datasets.load_dataset(filepath)
 
     def get_info(self):
-        info = {key: self.dataset_info.get(key) for key in ["citation", "description", "version", "license"]}
-        info["examples"] = {}
-        info["links"] = {}
-
-        for split_name, split_info in self.dataset_info.get("splits").items():
-            if split_name.startswith("val"):
-                split_name = "dev"
-
-            if split_name not in ["train", "dev", "test"]:
-                continue
-
-            info["examples"][split_name] = split_info.num_examples
-
-        if info["version"] is not None:
-            info["version"] = str(info["version"])
-
-        if self.dataset_info.get("homepage"):
-            info["links"]["homepage"] = self.dataset_info["homepage"]
-        elif self.extra_info.get("homepage"):
-            info["links"]["homepage"] = self.extra_info["homepage"]
-
-        info["links"]["source"] = "https://huggingface.co/datasets/" + self.hf_id
-        info["name"] = self.name
-
-        # some info may not be present on HF, set it manually
-        info.update(self.extra_info)
+        # info = {key: self.dataset_info.get(key) for key in ["citation", "description", "version", "license"]}
+        # info["examples"] = {}
+        # info["links"] = {}
+        #
+        # for split_name, split_info in self.dataset_info.get("splits").items():
+        #     if split_name.startswith("val"):
+        #         split_name = "dev"
+        #
+        #     if split_name not in ["train", "dev", "test"]:
+        #         continue
+        #
+        #     info["examples"][split_name] = split_info.num_examples
+        #
+        # if info["version"] is not None:
+        #     info["version"] = str(info["version"])
+        #
+        # if self.dataset_info.get("homepage"):
+        #     info["links"]["homepage"] = self.dataset_info["homepage"]
+        # elif self.extra_info.get("homepage"):
+        #     info["links"]["homepage"] = self.extra_info["homepage"]
+        #
+        # info["links"]["source"] = "https://huggingface.co/datasets/" + self.hf_id
+        # info["name"] = self.name
+        #
+        # # some info may not be present on HF, set it manually
+        # info.update(self.extra_info)
+        info = super().get_info()
 
         return info

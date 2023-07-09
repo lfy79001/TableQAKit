@@ -26,6 +26,10 @@ class MultiModalQA(HFTabularDataset):
             "test" : "multimodalqa_final_dataset_pipeline_camera_ready_MMQA_test.jsonl"
         }
         logger.info(f"Loading multimodalqa - {split}")
+
+
+
+
         '''
         loading dataset
         '''
@@ -58,6 +62,7 @@ class MultiModalQA(HFTabularDataset):
         #loading table
         table_file_path = "datasets/mmqa/multimodalqa_final_dataset_pipeline_camera_ready_MMQA_tables.jsonl"
         table_info = {}
+        table_meta_info = {}
 
         with open(table_file_path, 'r', encoding='utf-8') as file:
             for line in file:
@@ -76,8 +81,15 @@ class MultiModalQA(HFTabularDataset):
                 for row in header_value:
                     header_text_value.append(row["column_name"])
                 table_info[id_value] = {}
+                table_meta_info[id_value] = {}
                 table_info[id_value]["table_rows_text"] = table_rows_text_value
                 table_info[id_value]["header_text"] = header_text_value
+                if 'title' in json_data:
+                    table_meta_info[id_value]["title"] = json_data['title']
+                if 'url' in json_data:
+                    table_meta_info[id_value]["url"] = json_data['url']
+                if 'table_name' in json_data['table']:
+                    table_meta_info[id_value]["table_name"] = json_data['table']['table_name']
         # print(table_info)
 
         # loading question
@@ -88,25 +100,38 @@ class MultiModalQA(HFTabularDataset):
 
         with open(question_file_path, 'r', encoding='utf-8') as file:
             for line in file:
+                properties_info = {}
                 json_data = json.loads(line)
                 # qid_value = json_data['qid']
                 question_value = json_data['question']
                 image_ids_value = json_data['metadata']['image_doc_ids']
                 txt_ids_value = json_data['metadata']['text_doc_ids']
                 table_id_value = json_data['metadata']["table_id"]
+                if 'type' in json_data['metadata']:
+                    properties_info['question_type'] = str(json_data['metadata']['type'])
+                if 'modalities' in json_data['metadata']:
+                    properties_info['question_modalities'] = str(json_data['metadata']['modalities'])
+                if 'wiki_entities_in_answers' in json_data['metadata']:
+                    properties_info['question_wiki_entities_in_answers'] = str(json_data['metadata']['wiki_entities_in_answers'])
+                if 'wiki_entities_in_question' in json_data['metadata']:
+                    properties_info['question_wiki_entities_in_question'] = str(json_data['metadata']['wiki_entities_in_question'])
+                if 'pseudo_language_question' in json_data['metadata']:
+                    properties_info['question_pseudo_language_question'] = str(json_data['metadata']['pseudo_language_question'])
+                for key in table_meta_info[table_id_value]:
+                    properties_info[f'table_{key}'] = str(table_meta_info[table_id_value][key])
                 question_info.append({
                     "question" : question_value,
                     "image" : [pic_info[i] for i in image_ids_value],
                     "txt" : [txt_info[i] for i in txt_ids_value],
                     "table": table_info[table_id_value],
-                    "properties" : {}
+                    "properties" : properties_info
                 })
 
         self.dataset_info = {
-            # "citation" : "",
-            # "description" : "",
-            # "version" : "",
-            # "license" : ""
+            "citation" : "111",
+            "description" : "111",
+            "version" : "111",
+            "license" : "111"
         }
         self.data[split] = question_info
 
@@ -120,7 +145,7 @@ class MultiModalQA(HFTabularDataset):
         t.pic_info = entry["image"]
         t.txt_info = entry["txt"]
 
-        t.props = {}
+        t.props = entry['properties']
 
         for header_cell in entry["table"]["header_text"]:
             c = Cell()

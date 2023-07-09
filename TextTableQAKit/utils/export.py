@@ -124,17 +124,11 @@ def table_to_html(table, displayed_props, include_props, html_format):
 
     table_el = _get_main_table_html(table)
 
-    '''
-    test
-    meta_el = None,only display table
-    
-    '''
-    meta_el = None
+    table_html = h('div')(table_el).render()
+    meta_html = meta_el.render()
+    return (lxml.etree.tostring(lxml.html.fromstring(meta_html), encoding="unicode", pretty_print=True),
+    lxml.etree.tostring(lxml.html.fromstring(table_html), encoding="unicode", pretty_print=True))
 
-    area_el = h("div")(meta_el, table_el)
-
-    html = area_el.render()
-    return lxml.etree.tostring(lxml.html.fromstring(html), encoding="unicode", pretty_print=True)
 
 
 def select_props(table, props):
@@ -232,37 +226,34 @@ def table_to_linear(
 def _meta_to_html(props, displayed_props):
     meta_tbodies = []
     meta_buttons = []
-    #########################################
-    # 后续对于自定义的表格，需要在此处加上表格标题 #
-    ######################################################
-    # 后续对于默认的数据集/表格，需要在此处加上default_question#
-    #####################################################
+
     for key, value in props.items():
         meta_row_cls = "collapse show" if key in displayed_props else "collapse"
         aria_expanded = "true" if key in displayed_props else "false"
 
         # two wrappers around text required for collapsing
-        wrapper = h("div", klass=[meta_row_cls, f"row_{key}", "collapsible"])
+        wrapper = h("div")
         cells = [h("th")(wrapper(h("div")(key))), h("td")(wrapper(h("div")(value)))]
 
-        meta_tbodies.append(h("tr")(cells))
+        meta_tbodies.append(h("tr", klass=[meta_row_cls, f"row_{key}", "collapsible"])(cells))
         meta_buttons.append(
             h(
                 "button",
                 type_="button",
-                klass="prop-btn btn btn-outline-primary btn-sm",
+                klass="prop-btn btn btn-fw",
                 data_bs_toggle="collapse",
                 data_bs_target=f".row_{key}",
                 aria_expanded=aria_expanded,
                 aria_controls=f"row_{key}",
+                style="margin-right:8px; margin-top:5px"
             )(key)
         )
 
-    prop_caption = h("div", id_="prop-caption")("properties")
+
     meta_buttons_div = h("div", klass="prop-buttons")(meta_buttons)
     meta_tbody_el = h("tbody")(meta_tbodies)
-    meta_table_el = h("table", klass="table table-sm table-borderless caption-top meta-table")(meta_tbody_el)
-    meta_el = h("div")(prop_caption, meta_buttons_div, meta_table_el)
+    meta_table_el = h("table", klass="table table-sm caption-top meta-table")(meta_tbody_el)
+    meta_el = h("div")(meta_buttons_div, meta_table_el)
     return meta_el
 
 
