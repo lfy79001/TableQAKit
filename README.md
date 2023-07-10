@@ -71,6 +71,8 @@ ssh -L 8000:127.0.0.1:13000 lfy@210.75.240.136
 ## HybridQA数据处理
 首先需要从google drive上下载这个数据
 
+https://drive.google.com/file/d/1MGfxoOIyoUVQEBnFXWf_jVfFiXMifXbu/view?usp=share_link
+
 将数据集解压后放在 TextTableQAKit/modules/ 中，但是挺大的，之后git push的时候数据集得删掉，放到你本地就行
 数据包括 train.json, dev.json, test.json, 还有一个文件夹包括table和passage的实际信息。
 
