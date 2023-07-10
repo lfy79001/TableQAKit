@@ -1,0 +1,7 @@
+07/10/2023 04:49:32 is_train=1, lr=7e-06, epoch_num=5
+07/10/2023 04:49:32 is_train=1, lr=7e-06, epoch_num=5
+07/10/2023 04:49:32 load_dir: ./retrieve_new   output_dir: ./retrieve_new
+07/10/2023 04:49:32 loading data......from ./Hybridqa_data/train.json and ./Hybridqa_data/dev.json
+07/10/2023 04:49:33 train data: 62682, dev data: 3466
+07/10/2023 04:49:40 train dataset: 19
+07/10/2023 04:49:40 dev dataset: 18

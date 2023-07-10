@@ -1,3 +1,4 @@
-from datasets import load_dataset
+from abc import ABC
 
-dataset = load_dataset("hybrid_qa")
+
+class 
