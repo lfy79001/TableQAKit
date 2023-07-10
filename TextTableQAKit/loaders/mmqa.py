@@ -108,17 +108,17 @@ class MultiModalQA(HFTabularDataset):
                 txt_ids_value = json_data['metadata']['text_doc_ids']
                 table_id_value = json_data['metadata']["table_id"]
                 if 'type' in json_data['metadata']:
-                    properties_info['question_type'] = str(json_data['metadata']['type'])
+                    properties_info['question--type'] = str(json_data['metadata']['type'])
                 if 'modalities' in json_data['metadata']:
-                    properties_info['question_modalities'] = str(json_data['metadata']['modalities'])
+                    properties_info['question--modalities'] = str(json_data['metadata']['modalities'])
                 if 'wiki_entities_in_answers' in json_data['metadata']:
-                    properties_info['question_wiki_entities_in_answers'] = str(json_data['metadata']['wiki_entities_in_answers'])
+                    properties_info['question--wiki_entities_in_answers'] = str(json_data['metadata']['wiki_entities_in_answers'])
                 if 'wiki_entities_in_question' in json_data['metadata']:
-                    properties_info['question_wiki_entities_in_question'] = str(json_data['metadata']['wiki_entities_in_question'])
+                    properties_info['question--wiki_entities_in_question'] = str(json_data['metadata']['wiki_entities_in_question'])
                 if 'pseudo_language_question' in json_data['metadata']:
-                    properties_info['question_pseudo_language_question'] = str(json_data['metadata']['pseudo_language_question'])
+                    properties_info['question--pseudo_language_question'] = str(json_data['metadata']['pseudo_language_question'])
                 for key in table_meta_info[table_id_value]:
-                    properties_info[f'table_{key}'] = str(table_meta_info[table_id_value][key])
+                    properties_info[f'table--{key}'] = str(table_meta_info[table_id_value][key])
                 question_info.append({
                     "question" : question_value,
                     "image" : [pic_info[i] for i in image_ids_value],

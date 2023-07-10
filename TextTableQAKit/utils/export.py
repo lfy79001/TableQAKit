@@ -288,7 +288,7 @@ def _get_main_table_html(table):
 
     tbodies = [h("tr")(tds) for tds in trs]
     tbody_el = h("tbody", id="main-table-body")(tbodies)
-    table_el = h("table", klass="table dataTable table-sm no-footer table-bordered caption-top main-table",role="grid")(tbody_el)
+    table_el = h("table", klass="table table-sm no-footer table-bordered caption-top main-table",role="grid")(tbody_el)
 
     return table_el
 

@@ -1,3 +1,15 @@
+'''
+### Linux工程迁移
+1.hybridqa.py windows不支持linux的文件命名 视为非法命名
+   ```
+   if platform.system() == 'Windows':
+       illegal_chars = r'[\\/:\*\?"<>|]'
+       table_id = re.sub(illegal_chars, '_', table_id)
+   ```
+'''
+
+
+
 import math
 import os
 from flask import Flask, render_template, jsonify, request, send_file, session
@@ -97,12 +109,15 @@ def fetch_default_table_data():
         # dataset_name = content.get("dataset_name")
         # split = content.get("split")
         # table_idx = content.get("table_idx")
-        dataset_name = "multimodalqa"
+        dataset_name = "hybridqa"
         split = "dev"
         table_idx = 20
         propertie_name_list = []
         # testing
-        if dataset_name != "multimodalqa":
+        if dataset_name not in [
+            "multimodalqa",
+            "hybridqa"
+        ]:
             data = {
                 "table_cnt": 0,
                 "generated_results": {},
@@ -325,6 +340,6 @@ with app.app_context():
     # upload_custom_table()
     # fetch_custom_table_data()
     # session["custom_tables"] = {}
-    # fetch_default_table_data()
+    fetch_default_table_data()
     # pass
 

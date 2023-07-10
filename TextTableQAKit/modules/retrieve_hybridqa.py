@@ -274,7 +274,7 @@ def main():
     
     ptm_path = 'bert-base-uncased'
     tokenizer = BertTokenizer.from_pretrained(ptm_path)
-    
+    tokenizer = None
     if is_train:
         train_dataset = MyDataset(tokenizer, train_data[:20])
     dev_dataset = MyDataset(tokenizer, dev_data[:20])
