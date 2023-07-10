@@ -247,7 +247,7 @@ def fetch_pipeline_result():
 # done
 @app.route("/custom/upload", methods=["GET", "POST"])
 def upload_custom_table():
-    # 上传的表格名不能重复,前端校验+后端校验
+    # 上传的表格名不能重复,前端校验+后端校验 限制文件大小
     #############################################################
     # 问题四： 文件download功能
     # 问题五： pipeline功能
