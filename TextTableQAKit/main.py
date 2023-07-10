@@ -1,3 +1,4 @@
+import math
 import os
 from flask import Flask, render_template, jsonify, request, send_file, session
 import pandas as pd
@@ -80,7 +81,7 @@ def check_table_in_dataset(dataset_name, split, table_idx):
         table = dataset_obj.prepare_table(entry)
         dataset_obj.set_table(split, table_idx, table)
 
-
+# done
 @app.route("/table/default", methods=["GET", "POST"])
 def fetch_default_table_data():
     '''
@@ -89,16 +90,17 @@ def fetch_default_table_data():
     table_idx = int(request.args.get("table_idx"))
     displayed_props = json.loads(request.args.get("displayed_props"))
     '''
-    # content = request.json
-    # dataset_name = content.get("dataset_name")
-    # split = content.get("split")
-    # table_idx = content.get("table_idx")
-    dataset_name = "multimodalqa"
-    split = "dev"
-    table_idx = 20
-    propertie_name_list = []
+
 
     try:
+        # content = request.json
+        # dataset_name = content.get("dataset_name")
+        # split = content.get("split")
+        # table_idx = content.get("table_idx")
+        dataset_name = "multimodalqa"
+        split = "dev"
+        table_idx = 20
+        propertie_name_list = []
         # testing
         if dataset_name != "multimodalqa":
             data = {
@@ -130,21 +132,21 @@ def fetch_default_table_data():
                     #"MultiModalQA is a dataset designed for multimodal question-answering tasks. It aims to provide a diverse range of questions that require both textual and visual understanding to answer accurately. The dataset contains questions related to images, where each question is accompanied by both text and visual information.",
                 "table_question": table_data.default_question,
                 "properties_html":properties_html,
-                "table_html": table_html, # 包括properties
-                "pictures": table_data.pic_info,
-                "text": {(index+1): value for index, value in enumerate(table_data.txt_info)},
+                "table_html": table_html,
+                "pictures": table_data.pic_info, #如果无，返回[]
+                "text": {(index+1): value for index, value in enumerate(table_data.txt_info)}, #如果无，返回{}
                 "success": True
             }
-        # print("table_cnt\n",dataset_obj.get_example_count(split))
-        # print("generated_results\n", generated_results)
-        # print("dataset_info\n", dataset_obj.get_info())
-        # print("table_question\n", table_data.default_question)
-        # with open("properties.html", "w", encoding="utf-8") as file:
-        #     file.write(properties_html)
-        # with open("table.html", "w", encoding="utf-8") as file:
-        #     file.write(table_html)
-        # print("pictures\n",table_data.pic_info)
-        # print("text\n", {(index+1): value for index, value in enumerate(table_data.txt_info)})
+        print("table_cnt\n",dataset_obj.get_example_count(split))
+        print("generated_results\n", generated_results)
+        print("dataset_info\n", dataset_obj.get_info())
+        print("table_question\n", table_data.default_question)
+        with open("properties.html", "w", encoding="utf-8") as file:
+            file.write(properties_html)
+        with open("table.html", "w", encoding="utf-8") as file:
+            file.write(table_html)
+        print("pictures\n",table_data.pic_info)
+        print("text\n", {(index+1): value for index, value in enumerate(table_data.txt_info)})
     except Exception as e:
         logger.error(f"Fetch Table Error: {e}")
         data = {"success": False}
@@ -171,33 +173,40 @@ def fetch_generated_outputs(dataset_name, split, table_idx):
 
     return outputs
 
-
+# done
 @app.route("/table/custom", methods=["GET", "POST"])
 def fetch_custom_table_data():
     try:
+        # json_file = request.json
+        # table_name = json_file.get("table_name")
         table_name = "我的自定义表格1"
-        propertie_name_list = ["overlap_subset"]
+        properties_name_list = []
         custom_tables = session.get("custom_tables", {})
         if len(custom_tables) != 0 and table_name in custom_tables:
             table_data = custom_tables[table_name]
-            table_html = export_table(table_data, export_format="html", displayed_props=propertie_name_list)
+            properties_html,table_html = export_table(table_data, export_format="html", displayed_props=properties_name_list)
             data = {
-                "table_content": table_html,
-                "table_cnt": 1,
-                "session": {}
+                "table_html": table_html,
+                "properties_html": properties_html,
+                "success": True
             }
+            with open("properties.html", "w", encoding="utf-8") as file:
+                file.write(properties_html)
+            with open("table.html", "w", encoding="utf-8") as file:
+                file.write(table_html)
         else:
             raise Exception("fetch non-existent tables in session")
     except Exception as e:
         logger.error(f"Fetch Table Error: {e}")
-        data = {}
+        data = {"success": False}
 
     return jsonify(data)
 
-
+# done
 @app.route("/custom/remove", methods=["GET", "POST"])
 def remove_custom_table():
     try:
+        # table_name = request.json.get("table_name")
         table_name = "我的自定义表格1"
         custom_tables = session.get("custom_tables", {})
         if len(custom_tables) != 0 and table_name in custom_tables:
@@ -213,10 +222,11 @@ def remove_custom_table():
 
     return result
 
-
+# done
 @app.route("/session", methods=["GET", "POST"])
 def get_session():
     try:
+        # target = request.json.get("target")
         target = "all_key"
         target = "custom_tables_name"
         if target == "custom_tables_name":
@@ -234,30 +244,32 @@ def get_session():
 def fetch_pipeline_result():
     pass
 
-
+# done
 @app.route("/custom/upload", methods=["GET", "POST"])
 def upload_custom_table():
     # 上传的表格名不能重复,前端校验+后端校验
     #############################################################
-    # 问题二： 对于自定义表格上传，我将空白值直接设置为nan->错：要设置为空字符串，记得更改
-    # 问题三： 需要在创建默认数据集/表时加上default_question属性，在html输出时输出表名(custom表)和默认问题(default表)
     # 问题四： 文件download功能
     # 问题五： pipeline功能
     try:
+        # file = request.files['excel_file']
+        # json_file = request.json
+        # properties = json_file.get('properties')
+        # table_name = json_file.get('table_name')
+
         file = 'test.xlsx'
-        properties = None  # 取值1
+        properties = {}  # 取值1
         properties = {"title": "List of Governors of South Carolina", "overlap_subset": "True"}  # 取值2
 
         table_name = "我的自定义表格1"
-
-        df = pd.read_excel(file)
-        headers = df.columns.tolist()
-        data = df.values.tolist()
 
         custom_tables = session.get("custom_tables", {})
         if table_name in custom_tables:
             raise Exception("add duplicate names to tables in session")
         else:
+            df = pd.read_excel(file, dtype=str)
+            headers = df.columns.tolist()
+            data = df.values.tolist()
             table_data = prepare_custom_table(headers, data, properties, table_name)
             custom_tables[table_name] = table_data
         session["custom_tables"] = custom_tables
@@ -275,12 +287,16 @@ def prepare_custom_table(headers, data, properties, table_name):
     t = Table()
     t.type = "custom"
     t.custom_table_name = table_name
-    if properties is not None:
-        for key in properties:
-            t.props[key] = properties[key]
+
+    for key in properties:
+        t.props[key] = properties[key]
 
     for header_cell in headers:
         c = Cell()
+        # if math.isnan(header_cell):
+        #     header_cell = ""
+        if isinstance(header_cell, float) and math.isnan(header_cell):
+            header_cell = ""
         c.value = header_cell
         c.is_col_header = True
         t.add_cell(c)
@@ -289,6 +305,10 @@ def prepare_custom_table(headers, data, properties, table_name):
     for row in data:
         for cell in row:
             c = Cell()
+            # if math.isnan(cell):
+            #     cell = ""
+            if isinstance(cell, float) and math.isnan(cell):
+                cell = ""
             c.value = cell
             t.add_cell(c)
         t.save_row()
@@ -301,6 +321,10 @@ with app.app_context():
     # fetch_table_data()
     # dataset_obj = app.database['dataset']["wikisql"]
     # print(dataset_obj.tables)
+    # session1 = {}
+    # upload_custom_table()
+    # fetch_custom_table_data()
     # session["custom_tables"] = {}
-    fetch_default_table_data()
-    pass
+    # fetch_default_table_data()
+    # pass
+
