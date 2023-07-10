@@ -269,7 +269,7 @@ def _meta_to_simple_html(props):
 
 
 def _get_main_table_html(table):
-
+    is_linked = table.is_linked
     trs = []
     for row in table.cells:
         tds = []
@@ -278,10 +278,21 @@ def _get_main_table_html(table):
                 continue
 
             eltype = "th" if c.is_header else "td"
-            td_el = h(eltype, colspan=c.colspan, rowspan=c.rowspan, cell_idx=c.idx)(c.value)
 
-            if c.is_highlighted:
-                td_el.tag.attrs["class"] = "table-active"
+            if is_linked and '##[HERE STARTS THE HYPERLINKED PASSAGE]##' in c.value:
+                begin_idx = c.value.find('##[HERE STARTS THE HYPERLINKED PASSAGE]##')
+                hyperlined_begin_idx = begin_idx+len('##[HERE STARTS THE HYPERLINKED PASSAGE]##')
+                display_cell_value = c.value[:begin_idx]
+                hyperlined_cell_value = c.value[hyperlined_begin_idx:]
+                hyperlined_cell_value = add_dropdown_html(hyperlined_cell_value, c.idx)
+                display_cell_value = [display_cell_value, hyperlined_cell_value]
+            else:
+                display_cell_value = c.value
+
+            td_el = h(eltype, colspan=c.colspan, rowspan=c.rowspan, cell_idx=c.idx)(display_cell_value)
+
+            # if c.is_highlighted:
+            #     td_el.tag.attrs["class"] = "table-active"
 
             tds.append(td_el)
         trs.append(tds)
@@ -291,6 +302,27 @@ def _get_main_table_html(table):
     table_el = h("table", klass="table table-sm no-footer table-bordered caption-top main-table",role="grid")(tbody_el)
 
     return table_el
+
+def add_dropdown_html(text, idx):
+    link_head = h(
+        "a",
+        klass="dropdown-toggle",
+        id=f"messageDropdown-{idx}",
+        href="#",
+        data_bs_toggle="dropdown",
+        aria_expanded="false"
+    )(h("i", klass="mdi mdi-link mx-0")(""))
+    link_body = h(
+        "div",
+        klass ="dropdown-menu",
+        aria_labelledby=f"messageDropdown-{idx}"
+    )(h("p", klass="drop-txt")(text))
+    dropdowm_html = h("span")([link_head,link_body])
+
+    return dropdowm_html
+
+
+
 
 
 

@@ -66,6 +66,7 @@ class Table:
         self.custom_table_name = "" # for custom table
         self.txt_info = []
         self.pic_info = []
+        self.is_linked = False
 
     def has_highlights(self):
         return any(cell.is_highlighted for row in self.cells for cell in row)

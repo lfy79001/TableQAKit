@@ -49,8 +49,8 @@ class HybridQA(HFTabularDataset):
             with open(f'{file_base_path}/tables_tok/{table_id}.json', 'r') as f:
                 table_data = json.load(f)
 
-            # with open('{}/request_tok/{}.json'.format(file_base_path, table_id), 'r') as f:
-            #     requested_document = json.load(f)
+            with open('{}/request_tok/{}.json'.format(file_base_path, table_id), 'r') as f:
+                requested_document = json.load(f)
 
             table_data_headers = [aa[0] for aa in table_data['header']]
 
@@ -60,8 +60,10 @@ class HybridQA(HFTabularDataset):
                 table_data_row_contents = []
                 for cell in row:
                     table_data_cell_content = cell[0]
-                    # for link_data in cell[1]:
-                    #     table_data_cell_content += ("##[HERE STARTS THE HYPERLINKED PASSAGE]##"+requested_document[link_data])
+                    for i, link_data in enumerate(cell[1]):
+                        if i == 0:
+                            table_data_cell_content += '##[HERE STARTS THE HYPERLINKED PASSAGE]##'
+                        table_data_cell_content += ("[HYPERLINKED PASSAGE "+str(i+1)+"]: "+requested_document[link_data])
                     table_data_row_contents.append(table_data_cell_content)
                 table_data_contents.append(table_data_row_contents)
 
@@ -98,6 +100,7 @@ class HybridQA(HFTabularDataset):
 
     def prepare_table(self, entry):
         t = Table()
+        t.is_linked = True
         t.type = "default"
         t.default_question = entry["question"]
 

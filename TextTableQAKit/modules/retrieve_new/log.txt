@@ -19,3 +19,8 @@
 07/10/2023 03:07:24 load_dir: ./retrieve_new   output_dir: ./retrieve_new
 07/10/2023 03:07:24 loading data......from ./Hybridqa_data/train.json and ./Hybridqa_data/dev.json
 07/10/2023 03:07:25 train data: 62682, dev data: 3466
+07/10/2023 03:21:06 is_train=1, lr=7e-06, epoch_num=5
+07/10/2023 03:21:06 is_train=1, lr=7e-06, epoch_num=5
+07/10/2023 03:21:06 load_dir: ./retrieve_new   output_dir: ./retrieve_new
+07/10/2023 03:21:06 loading data......from ./Hybridqa_data/train.json and ./Hybridqa_data/dev.json
+07/10/2023 03:21:07 train data: 62682, dev data: 3466

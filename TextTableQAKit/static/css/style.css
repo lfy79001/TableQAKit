@@ -23141,6 +23141,13 @@ dl li {
     background-color: #0175ac;
     border-color: #0175ac;
 }
+.drop-txt {
+  white-space: normal;
+  width: 450px;
+  padding-left:15px;
+  padding-right:15px;
+}
+
 
 
 
