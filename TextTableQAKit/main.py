@@ -7,6 +7,7 @@ import json
 import glob
 import shutil
 import logging
+import sys
 
 from TextTableQAKit.loaders import DATASET_CLASSES
 from TextTableQAKit.structs.data import Table, Cell
@@ -135,16 +136,16 @@ def fetch_default_table_data():
                 "text": {(index+1): value for index, value in enumerate(table_data.txt_info)},
                 "success": True
             }
-        # print("table_cnt\n",dataset_obj.get_example_count(split))
-        # print("generated_results\n", generated_results)
-        # print("dataset_info\n", dataset_obj.get_info())
-        # print("table_question\n", table_data.default_question)
-        # with open("properties.html", "w", encoding="utf-8") as file:
-        #     file.write(properties_html)
-        # with open("table.html", "w", encoding="utf-8") as file:
-        #     file.write(table_html)
-        # print("pictures\n",table_data.pic_info)
-        # print("text\n", {(index+1): value for index, value in enumerate(table_data.txt_info)})
+        print("table_cnt\n",dataset_obj.get_example_count(split))
+        print("generated_results\n", generated_results)
+        print("dataset_info\n", dataset_obj.get_info())
+        print("table_question\n", table_data.default_question)
+        with open("properties.html", "w", encoding="utf-8") as file:
+            file.write(properties_html)
+        with open("table.html", "w", encoding="utf-8") as file:
+            file.write(table_html)
+        print("pictures\n",table_data.pic_info)
+        print("text\n", {(index+1): value for index, value in enumerate(table_data.txt_info)})
     except Exception as e:
         logger.error(f"Fetch Table Error: {e}")
         data = {"success": False}

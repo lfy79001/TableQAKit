@@ -1,0 +1,7 @@
+Flask>=2.2.2
+datasets>=2.9.0
+requests
+lxml
+tinyhtml
+xlsxwriter
+coloredlogs
