@@ -48,11 +48,27 @@ def export_table(
 
 def get_reference(table):
     return table.props.get("reference")
-
 def table_to_json(table, include_props=True):
-    j = {"data": [[c.serializable_props() for c in row] for row in table.get_cells()]}
+    is_linked = table.is_linked
+    data = []
+    for row in table.cells:
+        row_data = []
+        for c in row:
+            cell_data = c.serializable_props()
+            if is_linked and '##[HERE STARTS THE HYPERLINKED PASSAGE]##' in cell_data["value"]:
+                begin_idx = cell_data["value"].find('##[HERE STARTS THE HYPERLINKED PASSAGE]##')
+                hyperlined_begin_idx = begin_idx + len('##[HERE STARTS THE HYPERLINKED PASSAGE]##')
+                display_cell_value = cell_data["value"][:begin_idx]
+                hyperlined_cell_value = cell_data["value"][hyperlined_begin_idx:]
+                cell_data["value"] = display_cell_value
+                cell_data["hyperlinked_passage"] = hyperlined_cell_value
+            elif is_linked:
+                cell_data["hyperlinked_passage"] = ""
+            row_data.append(cell_data)
+        data.append(row_data)
+    j = {"data": data}
 
-    if include_props and table.props is not None:
+    if include_props:
         j["properties"] = table.props
 
     return j
@@ -156,7 +172,8 @@ def select_cells(table, highlighted_only, cell_ids):
         return table.get_cells()
 
 
-def table_to_2d_str(cells, props):
+def table_to_2d_str(cells, props, is_linked):
+
     prop_tokens = [f"{key}: {val}" for key, val in props.items()]
     prop_str = "===\n" + "\n".join(prop_tokens) + "\n===\n"
 
@@ -165,62 +182,26 @@ def table_to_2d_str(cells, props):
         for j, cell in enumerate(row):
             if cell.is_dummy:
                 continue
-
-            cell_tokens.append(f"| {cell.value} ")
+            if is_linked and '##[HERE STARTS THE HYPERLINKED PASSAGE]##' in cell.value:
+                begin_idx = cell.value.find('##[HERE STARTS THE HYPERLINKED PASSAGE]##')
+                display_cell_value = cell.value[:begin_idx]
+            else:
+                display_cell_value = cell.value
+            cell_tokens.append(f"| {display_cell_value} ")
         cell_tokens.append(f"|\n")
     cell_str = "".join(cell_tokens).strip()
 
     return prop_str + cell_str
 
 
-def table_to_markers_str(cells, props):
-    tokens = [f"[P] {key}: {val}" for key, val in props.items()]
+def table_to_linear(table_data, inclue_props):
+    props = {}
+    if inclue_props:
+       props = table_data.props
+    table = table_data.cells
 
-    for i, row in enumerate(cells):
-        tokens.append("[R]")
+    return table_to_2d_str(table, props, table_data.is_linked)
 
-        for j, cell in enumerate(row):
-            if cell.is_dummy:
-                continue
-
-            tokens.append("[H]" if cell.is_header else "[C]")
-            tokens.append(cell.value)
-
-    return " ".join(tokens)
-
-
-def table_to_indexed_str(cells, props):
-    tokens = [f"[P] {key}: {val}" for key, val in props.items()]
-    for i, row in enumerate(cells):
-        for j, cell in enumerate(row):
-            if cell.is_dummy:
-                continue
-
-            tokens.append(f"[{i}][{j}]")
-            tokens.append(cell.value)
-    return " ".join(tokens)
-
-
-def table_to_linear(
-    table,
-    cell_ids=None,
-    props="factual",  # 'all', 'factual', 'none', or list of keys
-    style="2d",  # 'index', 'markers', '2d'
-    highlighted_only=False,
-):
-    props_to_include = select_props(table, props)
-    cells_to_include = select_cells(table, highlighted_only, cell_ids)
-
-    if style == "2d":
-        return table_to_2d_str(cells_to_include, props_to_include)
-    elif style == "markers":
-        return table_to_markers_str(cells_to_include, props_to_include)
-    elif style == "index":
-        return table_to_indexed_str(cells_to_include, props_to_include)
-    else:
-        raise NotImplementedError(
-            f"{style} linearization style is not recognized. " f'Available options: "index", "markers", or "2d".'
-        )
 
 
 def _meta_to_html(props, displayed_props):

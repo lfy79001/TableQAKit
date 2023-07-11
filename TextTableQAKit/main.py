@@ -12,6 +12,8 @@
 
 import math
 import os
+from io import BytesIO
+
 from flask import Flask, render_template, jsonify, request, send_file, session
 import pandas as pd
 import random
@@ -23,8 +25,7 @@ import logging
 
 from TextTableQAKit.loaders import DATASET_CLASSES
 from TextTableQAKit.structs.data import Table, Cell
-from TextTableQAKit.utils.export import export_table
-
+from TextTableQAKit.utils import export
 
 def init_app():
     flask_app = Flask(
@@ -137,7 +138,7 @@ def fetch_default_table_data():
             check_data_integrity(dataset_name, split, table_idx)
             dataset_obj = app.database["dataset"][dataset_name]
             table_data = dataset_obj.get_table(split, table_idx)
-            properties_html, table_html = export_table(table_data, export_format="html", displayed_props=propertie_name_list)
+            properties_html, table_html = export.export_table(table_data, export_format="html", displayed_props=propertie_name_list)
             generated_results = fetch_generated_outputs(dataset_name, split, table_idx)
             data = {
                 # "session": {},
@@ -199,7 +200,7 @@ def fetch_custom_table_data():
         custom_tables = session.get("custom_tables", {})
         if len(custom_tables) != 0 and table_name in custom_tables:
             table_data = custom_tables[table_name]
-            properties_html,table_html = export_table(table_data, export_format="html", displayed_props=properties_name_list)
+            properties_html,table_html = export.export_table(table_data, export_format="html", displayed_props=properties_name_list)
             data = {
                 "table_html": table_html,
                 "properties_html": properties_html,
@@ -330,6 +331,63 @@ def prepare_custom_table(headers, data, properties, table_name):
 
     return t
 
+@app.route("/download/default", methods=["GET", "POST"])
+def download_default_table():
+    # content = request.json
+    # format = content["format"]
+    # include_props = content["include_props"]
+    # dataset_name = content["dataset_name"]
+    # split = content["split"]
+    # table_idx = content["table_idx"]
+    try:
+        format = "json"
+        include_props = True
+        dataset_name = "hybridqa"
+        split = "dev"
+        table_idx = 20
+
+
+        check_data_integrity(dataset_name, split, table_idx)
+        dataset_obj = app.database["dataset"][dataset_name]
+        table_data = dataset_obj.get_table(split, table_idx)
+
+        if format == "txt":
+            content = export.table_to_linear(table_data, include_props)
+            file_stream = BytesIO(content.encode('utf-8'))
+            return send_file(
+                file_stream,
+                mimetype="text/plain",
+                download_name=f"{dataset_name}_{split}_{table_idx}.{format}",
+                as_attachment=True
+            )
+        elif format == "json":
+            content = export.table_to_json(table_data, include_props)
+            json_data = json.dumps(content)
+            file_stream = BytesIO(json_data.encode('utf-8'))
+
+            return send_file(
+                file_stream,
+                mimetype='application/json',
+                download_name=f"{dataset_name}_{split}_{table_idx}.{format}",
+                as_attachment=True
+            )
+
+        elif format == "xlsx":
+            content = export.table_to_excel(table_data, include_props)
+            file_stream = None
+        elif format == "csv":
+            content = export.table_to_csv(table_data, include_props)
+            file_stream = None
+        elif format == "html":
+            content = export.table_to_html(table_data, include_props)
+            file_stream = None
+        else:
+            raise Exception("illegal format")
+
+    except Exception as e:
+        logger.error(f"Download Table Error: {e}")
+
+    pass
 
 with app.app_context():
     app.database['dataset'] = {}
@@ -340,6 +398,8 @@ with app.app_context():
     # upload_custom_table()
     # fetch_custom_table_data()
     # session["custom_tables"] = {}
-    fetch_default_table_data()
+    # fetch_default_table_data()
     # pass
+    # download_default_table()
 
+app.run()
