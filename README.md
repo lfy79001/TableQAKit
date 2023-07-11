@@ -68,6 +68,29 @@ ssh -L 8000:127.0.0.1:13000 lfy@210.75.240.136
     # test版
     pip install --index-url https://test.pypi.org/simple/ttqakit
 
+## HybridQA数据处理
+首先需要从google drive上下载这个数据
+
+https://drive.google.com/file/d/1MGfxoOIyoUVQEBnFXWf_jVfFiXMifXbu/view?usp=share_link
+
+将数据集解压后放在 TextTableQAKit/modules/ 中，但是挺大的，之后git push的时候数据集得删掉，放到你本地就行
+数据包括 train.json, dev.json, test.json, 还有一个文件夹包括table和passage的实际信息。
+
+这个数据集和multimodalQA不一样，文本是呈现一个“链接”的形式，即文本不是附着在表格旁边，而是可以点击这个表格cell，弹出链接文本（这个感觉较复杂，不用实现），现阶段，就把文本附着在下面就可以。
+
+检索代码 TextTableQAKit/modules/retrieve_hybridqa.py
+
+python retrieve_hybridqa.py 可以直接运行.（没下载BERT所以只能运行dataset部分）
+
+不需要运行全部的代码，主要的数据处理在Dataset的__init__()里面，在里面打断点，看看数据怎么处理的。
+
+train/dev/test 文件里只包含了Table的id，所以需要根据这个id找到这个table对应的json文件。
+
+Table的Json文件里，存储了表格的header和cell
+
+cell的格式是   [ [1], [2]] ，位置1是cell的直接文本，位置2是cell链接的passage的链接，所以目前只需要先把1用好就行。
+
+
 
 
 

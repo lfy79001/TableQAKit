@@ -40,9 +40,15 @@ class Cell:
         return self.is_col_header or self.is_row_header
 
     def serializable_props(self):
-        props = copy.deepcopy(vars(self))
-        props["value"] = str(props["value"])
-        return props
+
+        ser_props = {}
+        ser_props["idx"] = self.idx
+        ser_props["value"] = str(self.value)
+        # ser_props["rowspan"] = self.rowspan
+        # ser_props["colspan"] = self.colspan
+        ser_props["is_row_header"] = self.is_row_header
+        ser_props["is_col_header"] = self.is_col_header
+        return ser_props
 
     def __repr__(self):
         return str(vars(self))
@@ -66,6 +72,7 @@ class Table:
         self.custom_table_name = "" # for custom table
         self.txt_info = []
         self.pic_info = []
+        self.is_linked = False
 
     def has_highlights(self):
         return any(cell.is_highlighted for row in self.cells for cell in row)
