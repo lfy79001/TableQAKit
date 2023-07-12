@@ -341,7 +341,7 @@ def download_default_table():
     # split = content["split"]
     # table_idx = content["table_idx"]
     try:
-        format = "csv"
+        format = "html"
         include_props = True
         dataset_name = "hybridqa"
         split = "dev"
@@ -395,15 +395,21 @@ def download_default_table():
                 as_attachment=True
             )
         elif format == "html":
-            content = export.table_to_html(table_data, include_props)
-            file_stream = None
+            content = export.table_to_html(table_data, None, include_props, "export", merge=True)
+            file_stream = BytesIO(content.encode('utf-8'))
+            file_stream.seek(0)
+            return send_file(
+                file_stream,
+                mimetype="text/html",
+                download_name=f"{dataset_name}_{split}_{table_idx}.{format}",
+                as_attachment=True
+            )
         else:
             raise Exception("illegal format")
 
     except Exception as e:
         logger.error(f"Download Table Error: {e}")
-
-    pass
+        return jsonify(success=False)
 
 with app.app_context():
     app.database['dataset'] = {}

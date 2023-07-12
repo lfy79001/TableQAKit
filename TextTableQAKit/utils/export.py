@@ -134,22 +134,23 @@ def table_to_df(table):
     return df
 
 
-def table_to_html(table, displayed_props, include_props, html_format):
-    if html_format == "web" and table.props is not None:
+def table_to_html(table, displayed_props, include_props, html_format, merge = False):
+    if html_format == "web" and table.props != {}:
         meta_el = _meta_to_html(table.props, displayed_props)
-    elif html_format == "export" and include_props and table.props is not None:
+    elif html_format == "export" and include_props and table.props != {}:
         meta_el = _meta_to_simple_html(table.props)
     else:
-        meta_el = None
+        meta_el = h("div")(" ")
 
     table_el = _get_main_table_html(table)
 
-    table_html = h('div')(table_el).render()
-    meta_html = meta_el.render()
-    return (lxml.etree.tostring(lxml.html.fromstring(meta_html), encoding="unicode", pretty_print=True),
-    lxml.etree.tostring(lxml.html.fromstring(table_html), encoding="unicode", pretty_print=True))
-
-
+    table_html = h('div')(table_el)
+    meta_html = meta_el
+    if not merge:
+        return (lxml.etree.tostring(lxml.html.fromstring(meta_html.render()), encoding="unicode", pretty_print=True),
+        lxml.etree.tostring(lxml.html.fromstring(table_html.render()), encoding="unicode", pretty_print=True))
+    else:
+        return lxml.etree.tostring(lxml.html.fromstring(h('div')([meta_html,table_html]).render()), encoding="unicode", pretty_print=True)
 
 def select_props(table, props):
     if props == "none" or not table.props:
