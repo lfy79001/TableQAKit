@@ -1,4 +1,6 @@
 #!/usr/bin/env python3
+import io
+
 import pandas as pd
 import lxml.etree
 import lxml.html
@@ -106,11 +108,13 @@ def table_to_triples(table, cell_ids):
 
 
 def table_to_excel(table, include_props=True):
-    workbook = Workbook("tmp.xlsx", {"in_memory": True})
+    file_stream = io.BytesIO()
+    workbook = Workbook(file_stream, {"in_memory": True})
     worksheet = workbook.add_worksheet()
     write_html_table_to_excel(table, worksheet, workbook=workbook, write_table_props=include_props)
+    workbook.close()
 
-    return workbook
+    return file_stream
 
 
 def table_to_csv(table):
@@ -124,7 +128,7 @@ def table_to_csv(table):
 
 
 def table_to_df(table):
-    table_el = _get_main_table_html(table)
+    table_el = _get_main_table_html(table, is_csv_output=True)
     table_html = table_el.render()
     df = pd.read_html(table_html)[0]
     return df
@@ -249,8 +253,11 @@ def _meta_to_simple_html(props):
     return meta_table_el
 
 
-def _get_main_table_html(table):
-    is_linked = table.is_linked
+def _get_main_table_html(table, is_csv_output = False):
+    if is_csv_output:
+        is_linked = False
+    else:
+        is_linked = table.is_linked
     trs = []
     for row in table.cells:
         tds = []

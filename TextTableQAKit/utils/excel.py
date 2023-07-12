@@ -48,16 +48,13 @@ def write_merged_cells(cell, row_num, col_num, merge_cells, merged_cells, worksh
 def write_html_table_to_excel(
     table,
     worksheet,
-    style_objs=None,
     workbook=None,
     start_row=0,
     start_col=0,
-    merge_cells=True,
     write_table_props=False,
 ):
-    if style_objs is None:
-        # TODO this will fail if workbook is None
-        style_objs = {k: workbook.add_format(v) for k, v in STYLES.items()}
+
+    style_objs = {k: workbook.add_format(v) for k, v in STYLES.items()}
 
     if write_table_props:
         worksheet.write(start_row, start_col, "properties", style_objs["bold"])
@@ -74,33 +71,19 @@ def write_html_table_to_excel(
         start_row += 1
 
     row_num = start_row
-    merged_cells = set()
 
     for row in table.cells:
         col_num = start_col
-        while (row_num, col_num) in merged_cells:
-            col_num += 1
-
         for cell in row:
             if cell.is_dummy:
                 continue
-
-            while (row_num, col_num) in merged_cells:
-                col_num += 1
-
             style_key = "data_table"
             if cell.is_col_header or cell.is_row_header:
                 style_key += "_header"
-            if cell.is_highlighted:
-                style_key += "_active"
+            # if cell.is_highlighted:
+            #     style_key += "_active"
             cell_format = style_objs[style_key]
-
-            if cell.colspan > 1 or cell.rowspan > 1:
-                merged_cells = write_merged_cells(
-                    cell, row_num, col_num, merge_cells, merged_cells, worksheet, cell_format
-                )
-            else:
-                worksheet.write(row_num, col_num, str(cell.value), cell_format)
+            worksheet.write(row_num, col_num, str(cell.value), cell_format)
 
             col_num += cell.colspan
         row_num += 1

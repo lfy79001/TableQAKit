@@ -1,4 +1,4 @@
-from .wikisql import WikiSQL
+# from .wikisql import WikiSQL
 # from .wikitablequestion import WikiTableQuestion
 # from .tatqa import TATQA
 # from .finqa import FinQA
@@ -9,7 +9,7 @@ from .mmqa import MultiModalQA
 
 
 DATASET_CLASSES = {
-    "wikisql": WikiSQL,
+    # "wikisql": WikiSQL,
     "multimodalqa": MultiModalQA,
     # "wikitablequestion": WikiTableQuestion,
     # "tatqa": TATQA,

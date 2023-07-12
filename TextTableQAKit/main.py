@@ -22,7 +22,6 @@ import json
 import glob
 import shutil
 import logging
-
 from TextTableQAKit.loaders import DATASET_CLASSES
 from TextTableQAKit.structs.data import Table, Cell
 from TextTableQAKit.utils import export
@@ -340,7 +339,7 @@ def download_default_table():
     # split = content["split"]
     # table_idx = content["table_idx"]
     try:
-        format = "json"
+        format = "csv"
         include_props = True
         dataset_name = "hybridqa"
         split = "dev"
@@ -354,6 +353,7 @@ def download_default_table():
         if format == "txt":
             content = export.table_to_linear(table_data, include_props)
             file_stream = BytesIO(content.encode('utf-8'))
+            file_stream.seek(0)
             return send_file(
                 file_stream,
                 mimetype="text/plain",
@@ -364,7 +364,7 @@ def download_default_table():
             content = export.table_to_json(table_data, include_props)
             json_data = json.dumps(content)
             file_stream = BytesIO(json_data.encode('utf-8'))
-
+            file_stream.seek(0)
             return send_file(
                 file_stream,
                 mimetype='application/json',
@@ -373,11 +373,25 @@ def download_default_table():
             )
 
         elif format == "xlsx":
-            content = export.table_to_excel(table_data, include_props)
-            file_stream = None
+            file_stream = export.table_to_excel(table_data, include_props)
+            file_stream.seek(0)
+            return send_file(
+                file_stream,
+                mimetype='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+                download_name=f"{dataset_name}_{split}_{table_idx}.{format}",
+                as_attachment=True,
+            )
+
         elif format == "csv":
-            content = export.table_to_csv(table_data, include_props)
-            file_stream = None
+            content = export.table_to_csv(table_data)
+            file_stream = BytesIO(content.encode('utf-8'))
+            file_stream.seek(0)
+            return send_file(
+                file_stream,
+                mimetype="text/csv",
+                download_name=f"{dataset_name}_{split}_{table_idx}.{format}",
+                as_attachment=True
+            )
         elif format == "html":
             content = export.table_to_html(table_data, include_props)
             file_stream = None
