@@ -96,7 +96,7 @@ def check_table_in_dataset(dataset_name, split, table_idx):
         dataset_obj.set_table(split, table_idx, table)
 
 # done
-@app.route("/table/default", methods=["GET", "POST"])
+@app.route("/default/table", methods=["GET", "POST"])
 def fetch_default_table_data():
     '''
     dataset_name = request.args.get("dataset")
@@ -191,7 +191,7 @@ def fetch_generated_outputs(dataset_name, split, table_idx):
     return outputs
 
 # done
-@app.route("/table/custom", methods=["GET", "POST"])
+@app.route("/custom/table", methods=["GET", "POST"])
 def fetch_custom_table_data():
     try:
         # json_file = request.json
@@ -331,8 +331,81 @@ def prepare_custom_table(headers, data, properties, table_name):
         t.save_row()
 
     return t
+def download_table(format, table_data, include_props, file_name):
+    if format == "txt":
+        content = export.table_to_linear(table_data, include_props)
+        file_stream = BytesIO(content.encode('utf-8'))
+        file_stream.seek(0)
+        return send_file(
+            file_stream,
+            mimetype="text/plain",
+            download_name=f"{file_name}.{format}",
+            as_attachment=True
+        )
+    elif format == "json":
+        content = export.table_to_json(table_data, include_props)
+        json_data = json.dumps(content)
+        file_stream = BytesIO(json_data.encode('utf-8'))
+        file_stream.seek(0)
+        return send_file(
+            file_stream,
+            mimetype='application/json',
+            download_name=f"{file_name}.{format}",
+            as_attachment=True
+        )
 
-@app.route("/download/default", methods=["GET", "POST"])
+    elif format == "xlsx":
+        file_stream = export.table_to_excel(table_data, include_props)
+        file_stream.seek(0)
+        return send_file(
+            file_stream,
+            mimetype='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+            download_name=f"{file_name}.{format}",
+            as_attachment=True,
+        )
+
+    elif format == "csv":
+        content = export.table_to_csv(table_data)
+        file_stream = BytesIO(content.encode('utf-8'))
+        file_stream.seek(0)
+        return send_file(
+            file_stream,
+            mimetype="text/csv",
+            download_name=f"{file_name}.{format}",
+            as_attachment=True
+        )
+    elif format == "html":
+        content = export.table_to_html(table_data, None, include_props, "export", merge=True)
+        file_stream = BytesIO(content.encode('utf-8'))
+        file_stream.seek(0)
+        return send_file(
+            file_stream,
+            mimetype="text/html",
+            download_name=f"{file_name}.{format}",
+            as_attachment=True
+        )
+    else:
+        raise Exception("illegal format")
+# done
+@app.route("/custom/download", methods=["GET", "POST"])
+def download_custom_table():
+    try:
+
+        format = "json"
+        include_props = True
+        table_name = "我的自定义表格1"
+
+        custom_tables = session.get("custom_tables", {})
+        if len(custom_tables) != 0 and table_name in custom_tables:
+            table_data = custom_tables[table_name]
+            return download_table(format, table_data, include_props, f"custom_{table_name}")
+        else:
+            raise Exception("download non-existent tables in session")
+    except Exception as e:
+        logger.error(f"Download Table Error: {e}")
+        return jsonify(success=False)
+# done
+@app.route("/default/download", methods=["GET", "POST"])
 def download_default_table():
     # content = request.json
     # format = content["format"]
@@ -341,72 +414,20 @@ def download_default_table():
     # split = content["split"]
     # table_idx = content["table_idx"]
     try:
-        format = "html"
+        format = "csv"
         include_props = True
         dataset_name = "hybridqa"
         split = "dev"
         table_idx = 20
 
-
+        if dataset_name not in app.config['datasets']:
+            raise Exception(f"datasets {dataset_name} not found")
+        elif split not in app.config['split']:
+            raise Exception(f"split {split} not found")
         check_data_integrity(dataset_name, split, table_idx)
         dataset_obj = app.database["dataset"][dataset_name]
         table_data = dataset_obj.get_table(split, table_idx)
-
-        if format == "txt":
-            content = export.table_to_linear(table_data, include_props)
-            file_stream = BytesIO(content.encode('utf-8'))
-            file_stream.seek(0)
-            return send_file(
-                file_stream,
-                mimetype="text/plain",
-                download_name=f"{dataset_name}_{split}_{table_idx}.{format}",
-                as_attachment=True
-            )
-        elif format == "json":
-            content = export.table_to_json(table_data, include_props)
-            json_data = json.dumps(content)
-            file_stream = BytesIO(json_data.encode('utf-8'))
-            file_stream.seek(0)
-            return send_file(
-                file_stream,
-                mimetype='application/json',
-                download_name=f"{dataset_name}_{split}_{table_idx}.{format}",
-                as_attachment=True
-            )
-
-        elif format == "xlsx":
-            file_stream = export.table_to_excel(table_data, include_props)
-            file_stream.seek(0)
-            return send_file(
-                file_stream,
-                mimetype='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
-                download_name=f"{dataset_name}_{split}_{table_idx}.{format}",
-                as_attachment=True,
-            )
-
-        elif format == "csv":
-            content = export.table_to_csv(table_data)
-            file_stream = BytesIO(content.encode('utf-8'))
-            file_stream.seek(0)
-            return send_file(
-                file_stream,
-                mimetype="text/csv",
-                download_name=f"{dataset_name}_{split}_{table_idx}.{format}",
-                as_attachment=True
-            )
-        elif format == "html":
-            content = export.table_to_html(table_data, None, include_props, "export", merge=True)
-            file_stream = BytesIO(content.encode('utf-8'))
-            file_stream.seek(0)
-            return send_file(
-                file_stream,
-                mimetype="text/html",
-                download_name=f"{dataset_name}_{split}_{table_idx}.{format}",
-                as_attachment=True
-            )
-        else:
-            raise Exception("illegal format")
-
+        return download_table(format, table_data, include_props, f"{dataset_name}_{split}_{table_idx}")
     except Exception as e:
         logger.error(f"Download Table Error: {e}")
         return jsonify(success=False)
@@ -423,5 +444,7 @@ with app.app_context():
     # fetch_default_table_data()
     # pass
     # download_default_table()
+    # upload_custom_table()
+
 
 app.run()
