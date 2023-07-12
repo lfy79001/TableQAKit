@@ -22,6 +22,8 @@ import json
 import glob
 import shutil
 import logging
+import sys
+
 from TextTableQAKit.loaders import DATASET_CLASSES
 from TextTableQAKit.structs.data import Table, Cell
 from TextTableQAKit.utils import export

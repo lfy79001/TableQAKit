@@ -1,54 +1,73 @@
 var split = 'dev';
 var dataset = 'wikisql0';
+var default_model = 'T5-small';
 var model = 'T5-small';
 var table_idx = 0;
 var total_examples = 1;
+var default_result = {};
 
 function mod(n, m) {
     return ((n % m) + m) % m;
 }
 
-function change_split() {
+function changeSplit() {
     split = $('#split-select').val();
     table_idx = 0;
-    fetch_table(dataset, split, table_idx);
+
 }
 
-function change_dataset() {
+function changeDataset() {
     dataset = $('#dataset-select').val();
     table_idx = 0;
-    fetch_dataset(dataset, split, table_idx);
 }
 
-function change_model() {
+function changeDefaultModel() {
+    default_model = $('#default-model-select').val();
+    if (default_model in default_result) {
+        $('#default-model-answer').html(default_model[default_model]);
+    }
+}
+
+function changeModel() {
     model = $('#model-select').val();
-    fetch_default_answer(dataset, split, table_idx);
 }
 
-
-function fetch_table(dataset, split, table_idx) {
-    console.log('fetch_table{dataset:', dataset, 'split:', split, 'table_idx:', table_idx, '}');
-    // TODO 拉取index页面中的表格
+function changeDefaultQuestionHtml(question) {
+    $('#default-question').html(question);
 }
 
-function fetch_pic(dataset, split, table_idx) {
-    console.log('fetch_table{dataset:', dataset, 'split:', split, 'table_idx:', table_idx, '}');
-    // TODO 拉取index页面数据集的图片
+function changeTableHtml(table) {
+    $('#table-container').html(table);
 }
 
-function fetch_text(dataset, split, table_idx) {
-    console.log('fetch_table{dataset:', dataset, 'split:', split, 'table_idx:', table_idx, '}');
-    // TODO 拉取index页面数据集的文本
+function changePictureHtml(pictures) {
+    let pictures_html = ''
+    for (let pic in pictures) {
+        pictures_html += '<div class="col-sm-6 col-md-4 col-lg-3"><img src="../static/img/' + pic + '" style="max-width: 100%; height: auto;"></div>'
+    }
+    $('#image-container').html(pictures_html);
 }
 
-function fetch_default_answer(dataset, split, table_idx) {
-    console.log('fetch_default_answer{dataset:', dataset, 'split:', split, 'table_idx:', table_idx, '}');
-    // TODO 拉取index页面数据集的问题回答
+function changePropertiesHtml(properties) {
+    $('#properties-container').html(properties);
 }
 
-function download(dataset, split) {
-    console.log('download_dataset{dataset:', dataset, 'split:', split, '}');
-    // TODO 下载数据集
+function changeTextHtml(question) {
+    $('#default-question').html(question);
+}
+
+function changeModelHtml(answer) {
+
+}
+
+function getData() {
+    $.get('/table/default', { 'dataset_name': dataset, 'split': split, 'table_idx': table_idx },
+        (data, status) => {
+            log.console(status);
+            log.console(data);
+            total_examples = data.table_cnt
+            default_result = data.generated_results
+        })
 }
 
 function nextbtn() {
@@ -88,10 +107,12 @@ function getAnswer(dataset, split, table_idx) {
 $(document).ready(() => {
     $('#dataset-select').val(dataset);
     $('#splite-select').val(split);
+    $('#default-model-select').val(default_model);
     $('#model-select').val(model);
-    $("#dataset-select").change(change_dataset);
-    $("#split-select").change(change_split);
-    $('#model-select').change(change_model);
+    $("#dataset-select").change(changeDataset);
+    $("#split-select").change(changeSplit);
+    $('#default-model-select').change(changeDefaultModel);
+    $('#model-select').change(changeModel);
     $("#total-examples").html(total_examples - 1);
     $('#switchToCustomMode').click(() => {
         window.location.href = 'custom_mode.html';
