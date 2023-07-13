@@ -130,8 +130,6 @@ def fetch_default_table_data():
     table_idx = int(request.args.get("table_idx"))
     displayed_props = json.loads(request.args.get("displayed_props"))
     '''
-
-
     try:
         # content = request.json
         # dataset_name = content.get("dataset_name")

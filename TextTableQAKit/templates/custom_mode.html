@@ -31,7 +31,7 @@
             <div class="navbar-menu-wrapper d-flex flex-row align-items-center justify-content-between">
                 <ul class="navbar-nav navbar-nav-right">
                     <li class="nav-item dropdown me-4">
-                        <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center notification-dropdown" id="notificationDropdown" href="#" data-bs-toggle="dropdown">
+                        <a class="nav-link count-indicator dropdown-toggle d-flex align-items-center justify-content-center notification-dropdown" id="notificationDropdown" href="#" data-bs-target="#about-modal" data-bs-toggle="modal">
                             <i class="mdi mdi-information mx-0"></i>
                         </a>
                     </li>
@@ -59,7 +59,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link">
+                        <a class="nav-link" data-bs-target="#about-modal" data-bs-toggle="modal">
                             <i class="mdi mdi-file-document-box-outline menu-icon"></i>
                             <span class="menu-title">Information</span>
                         </a>
@@ -81,11 +81,11 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-end flex-wrap">
-                                    <button type="button" class="btn btn-light bg-white btn-icon me-3 d-none d-md-block ">
-                                        <a title="download result">
-                                          <i class="mdi mdi-download text-muted"></i>
-                                        </a>
-                                    </button>
+<!--                                    <button type="button" class="btn btn-light bg-white btn-icon me-3 d-none d-md-block ">-->
+<!--                                        <a title="download result">-->
+<!--                                          <i class="mdi mdi-download text-muted"></i>-->
+<!--                                        </a>-->
+<!--                                    </button>-->
 
 
                                     <a href="/">
@@ -122,8 +122,16 @@
                             <div class="card">
                                 <div class="card-body">
                                     <p class="card-title">Step 2 : Display Table</p>
-                                    <br>
+
+                                    <button type="button" class="btn btn-info btn-icon-text" style="height:45px;" >
+                                      Download
+                                      <i class="mdi mdi-download btn-icon-append"></i>
+                                    </button>
+
+                                    <br></br>
                                     <h4>Properties</h4>
+
+
 
                                     <div>
                                         <div class="prop-buttons">
@@ -364,6 +372,41 @@
 
         </div>
 
+    </div>
+    <div class="modal fade" id="about-modal" tabindex="-1" style="display: none;" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="about-modal-label">About</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div id="aboutarea" class="tab-pane sidepanel-panel" role="tabpanel" tabindex="0">
+                <div id="about-info" class="area-content">
+                  <p>A toolkit for Text-Table Hybrid Question Answering.</p>
+                  <p>A toolkit for Text-Table Hybrid Question Answering.</p>
+
+                  <p>A toolkit for Text-Table Hybrid Question Answering</p>
+
+
+
+                  <p>
+                    A toolkit for Text-Table Hybrid Question Answering
+                  </p>
+
+                  <p>A toolkit for Text-Table Hybrid Question Answering</p>
+                  <p>
+                    A toolkit for Text-Table Hybrid Question Answering
+                  </p>
+
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
+        </div>
     </div>
 
 
