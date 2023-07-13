@@ -95,6 +95,32 @@ def check_table_in_dataset(dataset_name, split, table_idx):
         table = dataset_obj.prepare_table(entry)
         dataset_obj.set_table(split, table_idx, table)
 
+
+def statistics_default_table_information(dataset_name, split, table_idx, propertie_name_list):
+    if dataset_name not in app.config['datasets']:
+        raise Exception(f"datasets {dataset_name} not found")
+    elif split not in app.config['split']:
+        raise Exception(f"split {split} not found")
+    check_data_integrity(dataset_name, split, table_idx)
+    dataset_obj = app.database["dataset"][dataset_name]
+    table_data = dataset_obj.get_table(split, table_idx)
+    properties_html, table_html = export.export_table(table_data, export_format="html",
+                                                      displayed_props=propertie_name_list)
+    generated_results = fetch_generated_outputs(dataset_name, split, table_idx)
+    data = {
+        # "session": {},
+        "table_cnt": dataset_obj.get_example_count(split),
+        "generated_results": generated_results,
+        "dataset_info": dataset_obj.get_info(),
+        # "MultiModalQA is a dataset designed for multimodal question-answering tasks. It aims to provide a diverse range of questions that require both textual and visual understanding to answer accurately. The dataset contains questions related to images, where each question is accompanied by both text and visual information.",
+        "table_question": table_data.default_question,
+        "properties_html": properties_html,
+        "table_html": table_html,
+        "pictures": table_data.pic_info,  # 如果无，返回[]
+        "text": {(index + 1): value for index, value in enumerate(table_data.txt_info)},  # 如果无，返回{}
+        "success": True
+    }
+    return data
 # done
 @app.route("/default/table", methods=["GET", "POST"])
 def fetch_default_table_data():
@@ -132,38 +158,17 @@ def fetch_default_table_data():
                 "success": True
             }
         else:
-            if dataset_name not in app.config['datasets']:
-                raise Exception(f"datasets {dataset_name} not found")
-            elif split not in app.config['split']:
-                raise Exception(f"split {split} not found")
-            check_data_integrity(dataset_name, split, table_idx)
-            dataset_obj = app.database["dataset"][dataset_name]
-            table_data = dataset_obj.get_table(split, table_idx)
-            properties_html, table_html = export.export_table(table_data, export_format="html", displayed_props=propertie_name_list)
-            generated_results = fetch_generated_outputs(dataset_name, split, table_idx)
-            data = {
-                # "session": {},
-                "table_cnt": dataset_obj.get_example_count(split),
-                "generated_results": generated_results,
-                "dataset_info": dataset_obj.get_info(),
-                    #"MultiModalQA is a dataset designed for multimodal question-answering tasks. It aims to provide a diverse range of questions that require both textual and visual understanding to answer accurately. The dataset contains questions related to images, where each question is accompanied by both text and visual information.",
-                "table_question": table_data.default_question,
-                "properties_html":properties_html,
-                "table_html": table_html,
-                "pictures": table_data.pic_info, #如果无，返回[]
-                "text": {(index+1): value for index, value in enumerate(table_data.txt_info)}, #如果无，返回{}
-                "success": True
-            }
-        print("table_cnt\n",dataset_obj.get_example_count(split))
-        print("generated_results\n", generated_results)
-        print("dataset_info\n", dataset_obj.get_info())
-        print("table_question\n", table_data.default_question)
-        with open("properties.html", "w", encoding="utf-8") as file:
-            file.write(properties_html)
-        with open("table.html", "w", encoding="utf-8") as file:
-            file.write(table_html)
-        print("pictures\n",table_data.pic_info)
-        print("text\n", {(index+1): value for index, value in enumerate(table_data.txt_info)})
+            data = statistics_default_table_information(dataset_name, split, table_idx, propertie_name_list)
+        # print("table_cnt\n",dataset_obj.get_example_count(split))
+        # print("generated_results\n", generated_results)
+        # print("dataset_info\n", dataset_obj.get_info())
+        # print("table_question\n", table_data.default_question)
+        # with open("properties.html", "w", encoding="utf-8") as file:
+        #     file.write(properties_html)
+        # with open("table.html", "w", encoding="utf-8") as file:
+        #     file.write(table_html)
+        # print("pictures\n",table_data.pic_info)
+        # print("text\n", {(index+1): value for index, value in enumerate(table_data.txt_info)})
     except Exception as e:
         logger.error(f"Fetch Table Error: {e}")
         data = {"success": False}
@@ -431,6 +436,30 @@ def download_default_table():
     except Exception as e:
         logger.error(f"Download Table Error: {e}")
         return jsonify(success=False)
+# done
+@app.route("/custom", methods=["GET", "POST"])
+def custom_mode():
+    return render_template("custom_mode.html")
+# done
+@app.route("/", methods=["GET", "POST"])
+def index():
+
+    try:
+        dataset_name = "hybridqa"
+        split = "train"
+        table_idx = 0
+        propertie_name_list = []
+        logger.info(f"Page loaded")
+        data = statistics_default_table_information(dataset_name, split, table_idx, propertie_name_list)
+    except Exception as e:
+        logger.error(f"Fetch initial Table Error: {e}")
+        data = {"success": False}
+
+
+    return render_template(
+        "index.html",
+        table_data = data
+    )
 
 with app.app_context():
     app.database['dataset'] = {}
