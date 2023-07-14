@@ -120,6 +120,16 @@ def statistics_default_table_information(dataset_name, split, table_idx, propert
         "text": {(index + 1): value for index, value in enumerate(table_data.txt_info)},  # 如果无，返回{}
         "success": True
     }
+    print("table_cnt\n", dataset_obj.get_example_count(split))
+    print("generated_results\n", generated_results)
+    print("dataset_info\n", dataset_obj.get_info())
+    print("table_question\n", table_data.default_question)
+    with open("properties.html", "w", encoding="utf-8") as file:
+        file.write(properties_html)
+    with open("table.html", "w", encoding="utf-8") as file:
+        file.write(table_html)
+    print("pictures\n", table_data.pic_info)
+    print("text\n", {(index + 1): value for index, value in enumerate(table_data.txt_info)})
     return data
 # done
 @app.route("/default/table", methods=["GET", "POST"])
@@ -130,46 +140,40 @@ def fetch_default_table_data():
     table_idx = int(request.args.get("table_idx"))
     displayed_props = json.loads(request.args.get("displayed_props"))
     '''
-    try:
+    # try:
         # content = request.json
         # dataset_name = content.get("dataset_name")
         # split = content.get("split")
         # table_idx = content.get("table_idx")
-        dataset_name = "hybridqa"
-        split = "dev"
-        table_idx = 20
-        propertie_name_list = []
-        # testing
-        if dataset_name not in [
-            "multimodalqa",
-            "hybridqa"
-        ]:
-            data = {
-                "table_cnt": 0,
-                "generated_results": {},
-                "dataset_info": {},
-                "table_question": "",
-                "properties_html": "",
-                "table_html": "",
-                "pictures": [],
-                "text": {},
-                "success": True
-            }
-        else:
-            data = statistics_default_table_information(dataset_name, split, table_idx, propertie_name_list)
-        # print("table_cnt\n",dataset_obj.get_example_count(split))
-        # print("generated_results\n", generated_results)
-        # print("dataset_info\n", dataset_obj.get_info())
-        # print("table_question\n", table_data.default_question)
-        # with open("properties.html", "w", encoding="utf-8") as file:
-        #     file.write(properties_html)
-        # with open("table.html", "w", encoding="utf-8") as file:
-        #     file.write(table_html)
-        # print("pictures\n",table_data.pic_info)
-        # print("text\n", {(index+1): value for index, value in enumerate(table_data.txt_info)})
-    except Exception as e:
-        logger.error(f"Fetch Table Error: {e}")
-        data = {"success": False}
+    dataset_name = "finqa"
+    split = "train"
+    table_idx = 100
+    propertie_name_list = []
+    # testing
+    if dataset_name not in [
+        "multimodalqa",
+        "hybridqa",
+        "hitab",
+        "finqa",
+        "tatqa"
+    ]:
+        data = {
+            "table_cnt": 0,
+            "generated_results": {},
+            "dataset_info": {},
+            "table_question": "",
+            "properties_html": "",
+            "table_html": "",
+            "pictures": [],
+            "text": {},
+            "success": True
+        }
+    else:
+        data = statistics_default_table_information(dataset_name, split, table_idx, propertie_name_list)
+
+    # except Exception as e:
+    #     logger.error(f"Fetch Table Error: {e}")
+    #     data = {"success": False}
     return jsonify(data)
 
 
@@ -468,10 +472,10 @@ with app.app_context():
     # upload_custom_table()
     # fetch_custom_table_data()
     # session["custom_tables"] = {}
-    # fetch_default_table_data()
+    fetch_default_table_data()
     # pass
     # download_default_table()
     # upload_custom_table()
 
 
-app.run()
+# app.run()
