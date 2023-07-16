@@ -1,27 +1,32 @@
 var split = 'dev';
-var dataset = 'wikisql0';
+var dataset = 'finqa';
 var default_model = 'T5-small';
 var model = 'T5-small';
 var table_idx = 0;
 var total_examples = 1;
 var default_result = {};
+var default_question = '';
+var properties_html = '';
+var table_html = '';
+var pictures = {};
+var text = {};
 
 function mod(n, m) {
     return ((n % m) + m) % m;
 }
 
-function changeSplit() {
+function splitChanged() {
     split = $('#split-select').val();
     table_idx = 0;
 
 }
 
-function changeDataset() {
+function datasetChanged() {
     dataset = $('#dataset-select').val();
     table_idx = 0;
 }
 
-function changeDefaultModel() {
+function defaultModelChanged() {
     default_model = $('#default-model-select').val();
     if (default_model in default_result) {
         $('#default-model-answer').html(default_model[default_model]);
@@ -40,7 +45,7 @@ function changeTableHtml(table) {
     $('#table-container').html(table);
 }
 
-function changePictureHtml(pictures) {
+function changePictureHtml() {
     let pictures_html = ''
     for (let pic in pictures) {
         pictures_html += '<div class="col-sm-6 col-md-4 col-lg-3"><img src="../static/img/' + pic + '" style="max-width: 100%; height: auto;"></div>'
@@ -48,16 +53,16 @@ function changePictureHtml(pictures) {
     $('#image-container').html(pictures_html);
 }
 
-function changePropertiesHtml(properties) {
-    $('#properties-container').html(properties);
+function changePropertiesHtml() {
+    $('#properties-container').html(properties_html);
 }
 
-function changeTextHtml(question) {
-    $('#default-question').html(question);
+function changeTextHtml() {
+    $('#default-question').html(default_question);
 }
 
-function changeModelHtml(answer) {
-
+function changeTotalexamples() {
+    $('total-examples').html(total_examples - 1);
 }
 
 function getData() {
@@ -65,9 +70,25 @@ function getData() {
         (data, status) => {
             log.console(status);
             log.console(data);
-            total_examples = data.table_cnt
-            default_result = data.generated_results
+            if (status != 'success' || data.success == false) {
+                alert('fetch table error');
+                return false;
+            } else {
+                total_examples = data.table_cnt;
+                default_result = data.generated_results;
+                dataset_info = data.dataset_info;
+                default_question = data.table_question;
+                properties_html = data.properties_html;
+                table_html = data.table_html;
+                pictures = data.pictures;
+                text = data.text;
+                return true;
+            }
         })
+}
+
+function generateAnswer() {
+    // TODO pipeline
 }
 
 function nextbtn() {
@@ -99,9 +120,16 @@ function gotopage(page) {
     $("#page-input").val(table_idx);
 }
 
-function getAnswer(dataset, split, table_idx) {
-    console.log('question:', $('#input-question').val());
-    // TODO 自定义获取提问答案
+function init_page() {
+    table_cnt = 0;
+    total_examples = 1;
+    if (getData()) {
+        changeDefaultQuestionHtml();
+        changeTableHtml();
+        changePropertiesHtml();
+        changeTextHtml();
+        changeTotalexamples();
+    }
 }
 
 $(document).ready(() => {
@@ -109,9 +137,9 @@ $(document).ready(() => {
     $('#splite-select').val(split);
     $('#default-model-select').val(default_model);
     $('#model-select').val(model);
-    $("#dataset-select").change(changeDataset);
-    $("#split-select").change(changeSplit);
-    $('#default-model-select').change(changeDefaultModel);
+    $("#dataset-select").change(datasetChanged);
+    $("#split-select").change(splitChanged);
+    $('#default-model-select').change(defaultModelChanged);
     $('#model-select').change(changeModel);
     $("#total-examples").html(total_examples - 1);
     $('#switchToCustomMode').click(() => {

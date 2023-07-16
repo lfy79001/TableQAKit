@@ -1,5 +1,6 @@
-/.history/*
-/__pycache__/*
-/texttableqaweb/*
-/TextTableQAKit/__pycache__/*
-/.idea/*
+.history/*
+__pycache__/*
+texttableqaweb/*
+TextTableQAKit/__pycache__/*
+.idea/*
+.vscode/*
