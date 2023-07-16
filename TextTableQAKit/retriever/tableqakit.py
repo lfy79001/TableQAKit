@@ -249,7 +249,6 @@ class RetrieverTrainer(ABC):
                 output[index[:self.training_args.top_n_for_test]] = 1
                 output[index[self.training_args.top_n_for_test:]] = 0
                 evidence = torch.nonzero(output.reshape(-1) == 1).reshape(-1).long().tolist()
-                print("evide",evidence)
                 yield evidence
 
     def train(self):
