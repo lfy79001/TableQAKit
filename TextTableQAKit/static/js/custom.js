@@ -1,9 +1,24 @@
 var model = 'T5-small';
 
 
-function upload_table() {
-    console.log('upload table');
-    // TODO 上传表格
+function uploadFile() {
+    console.log('upload file');
+    var files = $('#file-selector')[0].files
+    if (files.length > 0) {
+        var fd = new FormData()
+        fd.append('excel_file', files[0])
+        $.ajax({
+            method: 'POST',
+            url: '/custom/upload',
+            data: fd,
+            processData: false,
+            contentType: false,
+            success: function(res) {
+                console.log(res);
+            }
+
+        })
+    }
 }
 
 function download_table() {
@@ -26,12 +41,15 @@ function getAnswer(dataset, split, table_idx) {
     // TODO 自定义获取提问答案
 }
 
-$(document).ready(function() {
+function selectFile() {
+    $('#file-selector').click();
+}
+
+$(document).ready(() => {
     $('#switchToIndex').click(function() {
         window.location.href = 'index.html';
     });
     $('#get-question-button').click(getAnswer);
+    $('#upload-table').click(selectFile);
+    $('#file-selector').change(uploadFile);
 });
-
-
-
