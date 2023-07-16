@@ -36,10 +36,10 @@ class Trainer(RetrieverTrainer):
 args = get_training_args()
 trainer = Trainer(training_args=args)
 if args.train_path is not None:
-	trainer.train()
+    trainer.train()
 if args.test_path is not None:
-	for pred in trainer.test_iterator():
-		# saving the predctions
+    for pred in trainer.test_iterator():
+        # saving the predctions
 ```
 
 ### Train
