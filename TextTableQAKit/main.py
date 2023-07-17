@@ -145,31 +145,12 @@ def fetch_default_table_data():
         # dataset_name = content.get("dataset_name")
         # split = content.get("split")
         # table_idx = content.get("table_idx")
-    dataset_name = "finqa"
+    dataset_name = "wikitq"
     split = "train"
     table_idx = 100
     propertie_name_list = []
     # testing
-    if dataset_name not in [
-        "multimodalqa",
-        "hybridqa",
-        "hitab",
-        "finqa",
-        "tatqa"
-    ]:
-        data = {
-            "table_cnt": 0,
-            "generated_results": {},
-            "dataset_info": {},
-            "table_question": "",
-            "properties_html": "",
-            "table_html": "",
-            "pictures": [],
-            "text": {},
-            "success": True
-        }
-    else:
-        data = statistics_default_table_information(dataset_name, split, table_idx, propertie_name_list)
+    data = statistics_default_table_information(dataset_name, split, table_idx, propertie_name_list)
 
     # except Exception as e:
     #     logger.error(f"Fetch Table Error: {e}")

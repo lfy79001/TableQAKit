@@ -29,7 +29,7 @@ class TATQA(HFTabularDataset):
         logger.info(f"Loading tatqa - {split}")
         question_file_path = os.path.join(file_base_path, question_file_map[split])
 
-        with open(question_file_path, 'r') as f:
+        with open(question_file_path, 'r', encoding='utf-8') as f:
             question_data_list = json.load(f)
 
 

@@ -28,7 +28,7 @@ class HybridQA(HFTabularDataset):
         logger.info(f"Loading hybridqa - {split}")
         question_file_path = os.path.join(file_base_path, question_file_map[split])
 
-        with open(question_file_path, 'r') as f:
+        with open(question_file_path, 'r', encoding='utf-8') as f:
             question_data_list = json.load(f)
 
         data = []
@@ -46,10 +46,10 @@ class HybridQA(HFTabularDataset):
                 illegal_chars = r'[\\/:\*\?"<>|]'
                 table_id = re.sub(illegal_chars, '_', table_id)
 
-            with open(f'{file_base_path}/tables_tok/{table_id}.json', 'r') as f:
+            with open(f'{file_base_path}/tables_tok/{table_id}.json', 'r', encoding='utf-8') as f:
                 table_data = json.load(f)
 
-            with open('{}/request_tok/{}.json'.format(file_base_path, table_id), 'r') as f:
+            with open('{}/request_tok/{}.json'.format(file_base_path, table_id), 'r', encoding='utf-8') as f:
                 requested_document = json.load(f)
 
             table_data_headers = [aa[0] for aa in table_data['header']]

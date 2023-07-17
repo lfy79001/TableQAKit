@@ -1,8 +1,11 @@
-import datasets
-import logging
+import os
+import platform
 
-from ..structs.data import Cell, Table, HFTabularDataset
-from google.cloud import storage
+import re
+import logging
+import json
+from TextTableQAKit.structs.data import Cell, Table, HFTabularDataset
+
 
 logger = logging.getLogger(__name__)
 
@@ -10,50 +13,68 @@ class WikiSQL(HFTabularDataset):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.mapping = {}
-        self.hf_id = "wikisql"
-        self.name = "WikiSQL"
-        self.extra_info = {"license": "BSD 3-Clause"}
-
-    @staticmethod
-    def _get_title(table):
-        keys_to_try = ["caption", "section_title", "page_title"]
-        for key in keys_to_try:
-            value = table.get(key, "").strip()
-            if value:
-                return value
+        self.hf_id = ""
+        self.name = ""
+        self.extra_info = {"license": ""}
 
     def _load_split(self, split):
-        hf_split = self.split_mapping[split]
 
-        logger.info(f"Loading {self.hf_id} - {split}")
-        '''
-        loading dataset
-        '''
-        dataset = datasets.load_dataset(
-            self.hf_id,
-            name=self.hf_extra_config,
-            split=hf_split,
-            # num_proc=4,
-        )
+        question_file_map = {
+            "train": "train.json",
+            "dev": "dev.json",
+            "test": "test.json"
+        }
 
-        self.dataset_info = dataset.info.__dict__
-        self.data[split] = dataset
+        file_base_path = 'datasets/wikisql'
+        logger.info(f"Loading wikisql - {split}")
+        question_file_path = os.path.join(file_base_path, question_file_map[split])
+
+        with open(question_file_path, 'r', encoding='utf-8') as f:
+            question_data_list = json.load(f)
+
+        data = []
+
+        for question_data in question_data_list:
+
+            properties_info = {}
+
+            if 'page_title' in question_data['table']:
+                properties_info['table--page_title'] = str(question_data['table']['page_title'])
+            if 'section_title' in question_data['table']:
+                properties_info['table--section_title'] = str(question_data['table']['section_title'])
+            if 'caption' in question_data['table']:
+                properties_info['table--caption'] = str(question_data['table']['caption'])
+            if 'sql' in question_data and 'human_readable' in question_data['sql']:
+                properties_info['sql'] = str(question_data['sql']['human_readable'])
+            question = question_data['question']
+            table_data_headers = question_data['table']['header']
+            table_data_contents = question_data['table']['rows']
+
+            data.append({
+                "question": question,
+                "table": {
+                    "header": table_data_headers,
+                    "content": table_data_contents
+                },
+                "properties": properties_info
+            })
+        self.data[split] = data
+        self.dataset_info = {
+            "citation": "111",
+            "description": "111",
+            "version": "111",
+            "license": "111"
+        }
+
+    def load_split_test(self, split):
+        self._load_split(split)
 
     def prepare_table(self, entry):
         t = Table()
         t.type = "default"
-        ######################################
-        #需要补充default_QUESTION
-        ####################################
-        t.default_question = ""
-        title = self._get_title(entry["table"])
-        if title is not None:
-            t.props["title"] = title
+        t.default_question = entry["question"]
 
-        t.props["sql"] = entry["sql"]["human_readable"]
-        t.props["reference"] = entry["question"]
-        t.props["id"] = entry["table"]["id"]
-        t.props["name"] = entry["table"]["name"]
+        t.props = entry['properties']
 
         for header_cell in entry["table"]["header"]:
             c = Cell()
@@ -62,11 +83,12 @@ class WikiSQL(HFTabularDataset):
             t.add_cell(c)
         t.save_row()
 
-        for row in entry["table"]["rows"]:
+        for row in entry["table"]["content"]:
             for cell in row:
                 c = Cell()
                 c.value = cell
                 t.add_cell(c)
             t.save_row()
-
         return t
+if __name__ == '__main__':
+    WikiSQL().load_split_test("train")
