@@ -423,12 +423,15 @@ def download_default_table():
 @app.route("/custom", methods=["GET", "POST"])
 def custom_mode():
     return render_template("custom_mode.html")
-
+# done
 @app.route("/custom/example", methods=["GET", "POST"])
 def download_file_example():
-    pass
-    #此处return一个excel示例表格即可，逻辑很简单
-
+    return send_file(
+        app.config['example_filename'],
+        as_attachment=True,
+        mimetype='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+        download_name="example.xlsx"
+    )
 
 # done
 @app.route("/", methods=["GET", "POST"])
@@ -460,10 +463,10 @@ with app.app_context():
     # upload_custom_table()
     # fetch_custom_table_data()
     # session["custom_tables"] = {}
-    fetch_default_table_data()
+    # fetch_default_table_data()
     # pass
     # download_default_table()
     # upload_custom_table()
 
 
-# app.run()
+app.run()

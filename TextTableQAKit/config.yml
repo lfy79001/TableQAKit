@@ -15,4 +15,5 @@ split:
 default_dataset: multimodalqa
 host_prefix: "."
 debug: false
+example_filename: example.xlsx
 pipelines:
