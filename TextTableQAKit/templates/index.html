@@ -183,7 +183,7 @@
                                                 </a>
                                             </li>
                                             <li>
-                                                <button type="button" class="btn btn-info btn-icon-text" style="margin-left:30px; height:45px;" >
+                                                <button type="button" class="btn btn-info btn-icon-text" style="margin-left:30px; height:45px;" data-bs-target="#download-default-table-modal" data-bs-toggle="modal">
                                                   Download
                                                   <i class="mdi mdi-download btn-icon-append"></i>
                                                 </button>
@@ -871,6 +871,52 @@
               <div class="modal-footer">
                 <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
               </div>
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+
+
+    <div class="modal fade" id="download-default-table-modal" tabindex="-1" style="display: none;" aria-hidden="true"  data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog"  style=" ">
+          <div class="modal-content"  style="width:600px;">
+            <div class="modal-header">
+              <h5 class="modal-title" id="download-default-table-modal-label">Download Table</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="card">
+                <div class="card-body">
+                  <form class="forms-sample">
+                      <h4>Select the configuration and download the table.</h4>
+                      <div class="form-group">
+                        <label >File Format</label>
+
+                        <div>
+                            <select id="download-format-select" class="form-control text-dark">
+                              <option  selected="xlsx">xlsx</option>
+                              <option>txt</option>
+                              <option>json</option>
+                              <option>csv</option>
+                              <option>html</option>
+                            </select>
+                        </div>
+                          <br></br>
+                        <label class="form-check-label">
+                            <input type="checkbox" class="form-check-input" checked="">
+                                Includes properties
+                            <i class="input-helper"></i>
+                        </label>
+                      </div>
+                      <button type="submit" class="btn btn-primary me-2">Download</button>
+                      <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+                  </form>
+
+                </div>
+              </div>
+
             </div>
           </div>
         </div>
