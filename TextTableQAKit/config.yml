@@ -4,8 +4,6 @@ datasets:
 - hitab
 - hybridqa
 - mmqa
-- multihiertt
-- tathqa
 - tatqa
 - wikisql
 - wikitq
@@ -14,7 +12,7 @@ split:
 - train
 - dev
 - test
-default_dataset: wikisql
+default_dataset: multimodalqa
 host_prefix: "."
 debug: false
 pipelines:

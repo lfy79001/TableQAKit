@@ -145,9 +145,9 @@ def fetch_default_table_data():
         # dataset_name = content.get("dataset_name")
         # split = content.get("split")
         # table_idx = content.get("table_idx")
-    dataset_name = "wikitq"
+    dataset_name = "hybridqa"
     split = "train"
-    table_idx = 100
+    table_idx = 20
     propertie_name_list = []
     # testing
     data = statistics_default_table_information(dataset_name, split, table_idx, propertie_name_list)
@@ -264,7 +264,7 @@ def upload_custom_table():
 
         file = 'test.xlsx'
         properties = {}  # 取值1
-        properties = {"title": "List of Governors of South Carolina", "overlap_subset": "True"}  # 取值2
+        # properties = {"title": "List of Governors of South Carolina", "overlap_subset": "True"}  # 取值2
 
         table_name = "我的自定义表格1"
 
@@ -428,7 +428,7 @@ def custom_mode():
 def index():
 
     try:
-        dataset_name = "hybridqa"
+        dataset_name = app.config['default_dataset']
         split = "train"
         table_idx = 0
         propertie_name_list = []

@@ -50,7 +50,7 @@
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="./custom_mode.html">
+                        <a class="nav-link" href="/custom" >
                             <i class="mdi mdi-grid-large menu-icon"></i>
                             <span class="menu-title">Custom Table QA Mode</span>
                         </a>
@@ -78,11 +78,11 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-end flex-wrap">
-                                    <!--                                    <button type="button" class="btn btn-light bg-white btn-icon me-3 d-none d-md-block ">-->
-                                    <!--                                        <a title="download result">-->
-                                    <!--                                          <i class="mdi mdi-download text-muted"></i>-->
-                                    <!--                                        </a>-->
-                                    <!--                                    </button>-->
+<!--                                    <button type="button" class="btn btn-light bg-white btn-icon me-3 d-none d-md-block ">-->
+<!--                                        <a title="download result">-->
+<!--                                          <i class="mdi mdi-download text-muted"></i>-->
+<!--                                        </a>-->
+<!--                                    </button>-->
 
                                     <!--                                    <button type="button" class="btn btn-light bg-white btn-icon me-3 mt-2 mt-xl-0">-->
                                     <!--                    <a title="favorites">-->
@@ -90,7 +90,7 @@
                                     <!--                    </a>-->
                                     <!--                  </button>-->
 
-                                    <a href="./custom_mode.html">
+                                    <a href="/custom">
                                         <button id="switchToCustomMode" class="btn btn-primary mt-2 mt-xl-0">
 
                                             Switch To Custom Table QA Mode
@@ -107,33 +107,27 @@
 
                             <div class="card">
                                 <div class="card-body dashboard-tabs">
-                                    <p class="card-title">Step 1 : Choose Datasets</p>
+                                    <p class="card-title">Step 1 : Choose Dataset</p>
 
                                     <div class="row">
                                         <div class="col-md-6">
                                             <div class="form-group row align-items-center">
-                                                <label class="col-sm-2 mx-4 col-form-label"><b>DataSets</b></label>
-                                                <div class="col-sm-6">
+                                                <label class="col-sm-2 mx-4 col-form-label"><b>DataSet</b></label>
+                                                <div class="col-sm-8">
                                                     <select id="dataset-select" class="form-control text-dark">
-                                                      <option value="finqa" selected>finqa</option>
-                                                      <option value="hitab">hitab</option>
-                                                      <option value="hybridqa">hybridqa</option>
-                                                      <option value="mmqa">mmqa</option>
-                                                      <option value="multihiertt">multihiertt</option>
-                                                      <option value="tathqa">tathqa</option>
-                                                      <option value="tatqa">tatqa</option>
-                                                      <option value="wikisql">wikisql</option>
-                                                      <option value="wtq">wtq</option>
-                                                      <option value="multimodalqa">multimodalqa</option>
+                                                      <option val="wikisql0" selected>wikisql0</option>
+                                                      <option val="wikisql1">wikisql1</option>
+                                                      <option val="wikisql2">wikisql2</option>
+                                                      <option value="wikisql3">wikisql3</option>
                                                     </select>
                                                 </div>
-                                                <div class="col-sm-2">
-                                                    <button type="button" class="btn btn-light bg-white btn-icon me-3 mt-2 mt-xl-0">
-                                                        <a title="dataset info">
-                                                          <i class="mdi mdi-information text-muted"></i>
-                                                        </a>
-                                                    </button>
-                                                </div>
+<!--                                                <div class = "col-sm-2">-->
+<!--                                                    <button type="button" class="btn btn-light bg-white btn-icon me-3 mt-2 mt-xl-0"   >-->
+<!--                                                        <a title="dataset info">-->
+<!--                                                          <i class="mdi mdi-information text-muted"></i>-->
+<!--                                                        </a>-->
+<!--                                                    </button>-->
+<!--                                                </div>-->
                                             </div>
 
                                         </div>
@@ -189,7 +183,7 @@
                                                 </a>
                                             </li>
                                             <li>
-                                                <button type="button" class="btn btn-info btn-icon-text" style="margin-left:30px; height:45px;">
+                                                <button type="button" class="btn btn-info btn-icon-text" style="margin-left:30px; height:45px;" >
                                                   Download
                                                   <i class="mdi mdi-download btn-icon-append"></i>
                                                 </button>
@@ -759,13 +753,21 @@
                                             <div class="row align-items-center">
                                                 <label class="col-sm-2 mx-4 col-form-label"><b>Model</b></label>
                                                 <div class="col-sm-8">
-                                                    <select id="default-model-select" class="form-control text-dark">
+                                                    <<<<<<< HEAD <select id="default-model-select" class="form-control text-dark">
                                                         <option value="T5-small" selected>T5-small Answer</option>
                                                         <option value="LLAMA-Lora">LLAMA-Lora Answer</option>
                                                         <option value="SQL">SQL</option>
                                                         <option value="Gold">Gold Answer</option>
                                                         <option value="Bloom-Lora">Bloom-Lora Answer</option>
                                                         </select>
+                                                        =======
+                                                        <select id="model-select" class="form-control text-dark">
+                                                      <option value="T5-small" selected>T5-small Answer</option>
+                                                      <option value="LLAMA-Lora">LLAMA-Lora Answer</option>
+                                                      <option value="SQL">SQL</option>
+                                                      <option value="Gold">Gold Answer</option>
+                                                      <option value="Bloom-Lora">Bloom-Lora Answer</option>
+                                                    </select> >>>>>>> a87856178f6c8b5fef5b220096dd494155b2e6cf
                                                 </div>
                                             </div>
                                         </div>
@@ -794,7 +796,7 @@
                                   <option selected>T5-small Answer</option>
                                   <option>LLAMA-Lora Answer</option>
                                   <option>SQL</option>
-                                  <option>Gold Answer</option>
+<!--                                  <option>Gold Answer</option>-->
                                   <option>Bloom-Lora Answer</option>
                                 </select>
                                                 </div>
@@ -840,37 +842,37 @@
 
     <div class="modal fade" id="about-modal" tabindex="-1" style="display: none;" aria-hidden="true">
         <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="about-modal-label">About</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <div id="aboutarea" class="tab-pane sidepanel-panel" role="tabpanel" tabindex="0">
-                        <div id="about-info" class="area-content">
-                            <p>A toolkit for Text-Table Hybrid Question Answering.</p>
-                            <p>A toolkit for Text-Table Hybrid Question Answering.</p>
-
-                            <p>A toolkit for Text-Table Hybrid Question Answering</p>
-
-
-
-                            <p>
-                                A toolkit for Text-Table Hybrid Question Answering
-                            </p>
-
-                            <p>A toolkit for Text-Table Hybrid Question Answering</p>
-                            <p>
-                                A toolkit for Text-Table Hybrid Question Answering
-                            </p>
-
-                        </div>
-                    </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
-                    </div>
-                </div>
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="about-modal-label">About</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
+            <div class="modal-body">
+              <div id="aboutarea" class="tab-pane sidepanel-panel" role="tabpanel" tabindex="0">
+                <div id="about-info" class="area-content">
+                  <p>A toolkit for Text-Table Hybrid Question Answering.</p>
+                  <p>A toolkit for Text-Table Hybrid Question Answering.</p>
+
+                  <p>A toolkit for Text-Table Hybrid Question Answering</p>
+
+
+
+                  <p>
+                    A toolkit for Text-Table Hybrid Question Answering
+                  </p>
+
+                  <p>A toolkit for Text-Table Hybrid Question Answering</p>
+                  <p>
+                    A toolkit for Text-Table Hybrid Question Answering
+                  </p>
+
+                </div>
+              </div>
+              <div class="modal-footer">
+                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+              </div>
+            </div>
+          </div>
         </div>
     </div>
 
