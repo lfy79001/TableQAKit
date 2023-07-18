@@ -141,7 +141,7 @@ def fetch_default_table_data():
         table_idx = content.get("table_idx")
         # dataset_name = "hybridqa"
         # split = "train"
-        # table_idx = 20
+        # table_idx = 0
         propertie_name_list = []
         # testing
         data = statistics_default_table_information(dataset_name, split, table_idx, propertie_name_list)
@@ -167,8 +167,14 @@ def fetch_generated_outputs(dataset_name, split, table_idx):
     '''
         insert your code
     '''
-    outputs = {'T5-small': 'Daniel Henry Chamberlain was the 76th Governor of South Carolina in 1874.',
-    'LLAMA-Lora': 'Daniel Henry Chamberlain was the 76th Governor of South Carolina in 1874.'}
+    outputs = {}
+    model_list = app.config['outputs_model']
+    for model_name in model_list:
+        outputs_file_path = f'outputs/{dataset_name}/{model_name}/{split}.txt'
+        with open(outputs_file_path, 'r', encoding='utf-8') as file:
+            lines = file.readlines()
+            outputs[model_name] = lines[table_idx].strip()
+
 
     return outputs
 
@@ -469,10 +475,10 @@ with app.app_context():
     # upload_custom_table()
     # fetch_custom_table_data()
     # session["custom_tables"] = {}
-    # fetch_default_table_data()
+    fetch_default_table_data()
     # pass
     # download_default_table()
     # upload_custom_table()
 
 
-app.run()
+# app.run()

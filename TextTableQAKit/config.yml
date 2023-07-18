@@ -12,6 +12,8 @@ split:
 - train
 - dev
 - test
+outputs_model:
+- gold_answer
 default_dataset: multimodalqa
 host_prefix: "."
 debug: false
