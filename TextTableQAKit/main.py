@@ -134,27 +134,21 @@ def statistics_default_table_information(dataset_name, split, table_idx, propert
 # done
 @app.route("/default/table", methods=["GET", "POST"])
 def fetch_default_table_data():
-    '''
-    dataset_name = request.args.get("dataset")
-    split = request.args.get("split")
-    table_idx = int(request.args.get("table_idx"))
-    displayed_props = json.loads(request.args.get("displayed_props"))
-    '''
-    # try:
-        # content = request.json
-        # dataset_name = content.get("dataset_name")
-        # split = content.get("split")
-        # table_idx = content.get("table_idx")
-    dataset_name = "hybridqa"
-    split = "train"
-    table_idx = 20
-    propertie_name_list = []
-    # testing
-    data = statistics_default_table_information(dataset_name, split, table_idx, propertie_name_list)
+    try:
+        content = request.json
+        dataset_name = content.get("dataset_name")
+        split = content.get("split")
+        table_idx = content.get("table_idx")
+        # dataset_name = "hybridqa"
+        # split = "train"
+        # table_idx = 20
+        propertie_name_list = []
+        # testing
+        data = statistics_default_table_information(dataset_name, split, table_idx, propertie_name_list)
 
-    # except Exception as e:
-    #     logger.error(f"Fetch Table Error: {e}")
-    #     data = {"success": False}
+    except Exception as e:
+        logger.error(f"Fetch Table Error: {e}")
+        data = {"success": False}
     return jsonify(data)
 
 
@@ -182,9 +176,9 @@ def fetch_generated_outputs(dataset_name, split, table_idx):
 @app.route("/custom/table", methods=["GET", "POST"])
 def fetch_custom_table_data():
     try:
-        # json_file = request.json
-        # table_name = json_file.get("table_name")
-        table_name = "我的自定义表格1"
+        json_file = request.json
+        table_name = json_file.get("table_name")
+        # table_name = "我的自定义表格1"
         properties_name_list = []
         custom_tables = session.get("custom_tables", {})
         if len(custom_tables) != 0 and table_name in custom_tables:
@@ -211,8 +205,9 @@ def fetch_custom_table_data():
 @app.route("/custom/remove", methods=["GET", "POST"])
 def remove_custom_table():
     try:
-        # table_name = request.json.get("table_name")
-        table_name = "我的自定义表格1"
+        json_file = request.json
+        table_name = json_file.get("table_name")
+        # table_name = "我的自定义表格1"
         custom_tables = session.get("custom_tables", {})
         if len(custom_tables) != 0 and table_name in custom_tables:
             custom_tables.pop(table_name)
@@ -220,29 +215,32 @@ def remove_custom_table():
             raise Exception("delete non-existent tables in session")
         session["custom_tables"] = custom_tables
         session.modified = True
-        result = jsonify(success=True)
+        result = {"success" : True}
     except Exception as e:
         logger.error(f"Remove Table Error: {e}")
-        result = jsonify(success=False)
+        result = {"success" : False}
 
-    return result
+    return jsonify(result)
 
 # done
 @app.route("/session", methods=["GET", "POST"])
 def get_session():
     try:
-        # target = request.json.get("target")
-        target = "all_key"
-        target = "custom_tables_name"
+        json_file = request.json
+        target = json_file.get("target")
+        # target = "custom_tables_name"
         if target == "custom_tables_name":
-            data = jsonify(list(session.get("custom_tables", {}).keys()))
+            data = {
+                "data" : list(session.get("custom_tables", {}).keys()),
+                "success" : True
+            }
         else:
             raise Exception("Illegal Target")
     except Exception as e:
         logger.error(f"Get Session Error: {e}")
-        data = jsonify([])
+        data = {"success" : False}
 
-    return data
+    return jsonify(data)
 
 
 @app.route("/pipeline", methods=["GET", "POST"])
@@ -254,19 +252,16 @@ def fetch_pipeline_result():
 def upload_custom_table():
     # 上传的表格名不能重复,前端校验+后端校验 限制文件大小
     #############################################################
-    # 问题四： 文件download功能
-    # 问题五： pipeline功能
     try:
-        # file = request.files['excel_file']
-        # json_file = request.json
-        # properties = json_file.get('properties')
-        # table_name = json_file.get('table_name')
+        file = request.files['excel_file']  #----此处未验证过----
+        json_file = request.json
+        table_name = json_file.get('table_name')
 
-        file = 'test.xlsx'
-        properties = {}  # 取值1
-        # properties = {"title": "List of Governors of South Carolina", "overlap_subset": "True"}  # 取值2
+        # file = 'test.xlsx'
+        properties = {}
+        # properties = {"title": "List of Governors of South Carolina", "overlap_subset": "True"}
 
-        table_name = "我的自定义表格1"
+        # table_name = "我的自定义表格1"
 
         custom_tables = session.get("custom_tables", {})
         if table_name in custom_tables:
@@ -279,13 +274,13 @@ def upload_custom_table():
             custom_tables[table_name] = table_data
         session["custom_tables"] = custom_tables
         session.modified = True
-        result = jsonify(success=True)
+        result = {"success" : True}
 
     except Exception as e:
         logger.error(f"Upload Table Error: {e}")
-        result = jsonify(success=False)
+        result = {"success" : False}
 
-    return result
+    return jsonify(result)
 
 
 def prepare_custom_table(headers, data, properties, table_name):
@@ -379,9 +374,13 @@ def download_table(format, table_data, include_props, file_name):
 def download_custom_table():
     try:
 
-        format = "json"
-        include_props = True
-        table_name = "我的自定义表格1"
+        json_file = request.json
+        format = json_file.get('format')
+        include_props = json_file.get('include_props')
+        table_name = json_file.get('table_name')
+        # format = "json"
+        # include_props = True
+        # table_name = "我的自定义表格1"
 
         custom_tables = session.get("custom_tables", {})
         if len(custom_tables) != 0 and table_name in custom_tables:
@@ -391,22 +390,24 @@ def download_custom_table():
             raise Exception("download non-existent tables in session")
     except Exception as e:
         logger.error(f"Download Table Error: {e}")
-        return jsonify(success=False)
+        return jsonify({"success" : False})
 # done
 @app.route("/default/download", methods=["GET", "POST"])
 def download_default_table():
-    # content = request.json
-    # format = content["format"]
-    # include_props = content["include_props"]
-    # dataset_name = content["dataset_name"]
-    # split = content["split"]
-    # table_idx = content["table_idx"]
     try:
-        format = "csv"
-        include_props = True
-        dataset_name = "hybridqa"
-        split = "dev"
-        table_idx = 20
+
+        json_file = request.json
+        format = json_file.get('format')
+        include_props = json_file.get('include_props')
+        dataset_name = json_file.get('dataset_name')
+        split = json_file.get('split')
+        table_idx = json_file.get('table_idx')
+
+        # format = "csv"
+        # include_props = True
+        # dataset_name = "hybridqa"
+        # split = "dev"
+        # table_idx = 20
 
         if dataset_name not in app.config['datasets']:
             raise Exception(f"datasets {dataset_name} not found")
@@ -418,7 +419,7 @@ def download_default_table():
         return download_table(format, table_data, include_props, f"{dataset_name}_{split}_{table_idx}")
     except Exception as e:
         logger.error(f"Download Table Error: {e}")
-        return jsonify(success=False)
+        return jsonify({"success" : False})
 # done
 @app.route("/custom", methods=["GET", "POST"])
 def custom_mode():
@@ -426,12 +427,17 @@ def custom_mode():
 # done
 @app.route("/custom/example", methods=["GET", "POST"])
 def download_file_example():
-    return send_file(
-        app.config['example_filename'],
-        as_attachment=True,
-        mimetype='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
-        download_name="example.xlsx"
-    )
+    try:
+        file_response = send_file(
+            app.config['example_filename'],
+            as_attachment=True,
+            mimetype='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
+            download_name="example.xlsx"
+        )
+        return file_response
+    except Exception as e:
+        logger.error(f"Download Example Error: {e}")
+        return jsonify({"success" : False})
 
 # done
 @app.route("/", methods=["GET", "POST"])
@@ -451,7 +457,7 @@ def index():
 
     return render_template(
         "index.html",
-        table_data = data
+        table_data = data  #--这样传没有jsonfiy应该是可以的--#
     )
 
 with app.app_context():
