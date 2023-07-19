@@ -12,13 +12,8 @@ logger = logging.getLogger(__name__)
 class FinQA(HFTabularDataset):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.mapping = {}
-        self.hf_id = ""
-        self.name = ""
-        self.extra_info = {"license": ""}
 
     def _load_split(self, split):
-
         question_file_map = {
             "train": "train.json",
             "dev": "dev.json",

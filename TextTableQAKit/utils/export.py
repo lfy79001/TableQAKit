@@ -13,43 +13,8 @@ from .excel import write_html_table_to_excel
 """
 Default methods for exporting tables to various formats.
 """
-# Export methods
-def export_table(
-        table,
-        export_format,
-        cell_ids=None,
-        displayed_props=None,
-        include_props=True,
-        linearization_style="2d",
-        html_format="web",  # 'web' or 'export'
-):
-    if export_format == "txt":
-        exported = table_to_linear(
-            table,
-            cell_ids=cell_ids,
-            props="all" if include_props else "none",
-            style=linearization_style,
-            highlighted_only=False,
-        )
-    elif export_format == "triples":
-        exported = table_to_triples(table, cell_ids=cell_ids)
-    elif export_format == "html":
-        exported = table_to_html(table, displayed_props, include_props, html_format)
-    elif export_format == "csv":
-        exported = table_to_csv(table)
-    elif export_format == "xlsx":
-        exported = table_to_excel(table, include_props)
-    elif export_format == "json":
-        exported = table_to_json(table, include_props)
-    elif export_format == "reference":
-        exported = get_reference(table)
-    else:
-        raise NotImplementedError(export_format)
 
-    return exported
 
-def get_reference(table):
-    return table.props.get("reference")
 def table_to_json(table, include_props=True):
     is_linked = table.is_linked
     data = []
@@ -74,37 +39,6 @@ def table_to_json(table, include_props=True):
         j["properties"] = table.props
 
     return j
-
-
-def table_to_triples(table, cell_ids):
-    # TODO cell ids?
-    title = table.props.get("title")
-    triples = []
-
-    for i, row in enumerate(table.get_cells()):
-        for j, cell in enumerate(row):
-            if cell.is_header():
-                continue
-
-            row_headers = table.get_row_headers(i, j)
-            col_headers = table.get_col_headers(i, j)
-
-            if row_headers and col_headers:
-                subj = row_headers[0].value
-                pred = col_headers[0].value
-
-            elif row_headers and not col_headers:
-                subj = title
-                pred = row_headers[0].value
-
-            elif col_headers and not row_headers:
-                subj = title
-                pred = col_headers[0].value
-
-            obj = cell.value
-            triples.append([subj, pred, obj])
-
-    return triples
 
 
 def table_to_excel(table, include_props=True):
@@ -151,21 +85,6 @@ def table_to_html(table, displayed_props, include_props, html_format, merge = Fa
         lxml.etree.tostring(lxml.html.fromstring(table_html.render()), encoding="unicode", pretty_print=True))
     else:
         return lxml.etree.tostring(lxml.html.fromstring(h('div')([meta_html,table_html]).render()), encoding="unicode", pretty_print=True)
-
-def select_props(table, props):
-    if props == "none" or not table.props:
-        return {}
-    elif props == "factual":
-        return {key: val for key, val in table.props.items() if "title" in key or "category" in key}
-    elif props == "all":
-        return table.props
-    elif isinstance(props, list):
-        return {key: table.props.get(key) for key in props}
-    else:
-        raise NotImplementedError(
-            f"{props} properties mode is not recognized. "
-            f'Available options: "none", "factual", "all", or list of keys.'
-        )
 
 
 def select_cells(table, highlighted_only, cell_ids):

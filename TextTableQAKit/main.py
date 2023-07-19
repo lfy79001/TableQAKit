@@ -112,7 +112,6 @@ def statistics_default_table_information(dataset_name, split, table_idx, propert
         "table_cnt": dataset_obj.get_example_count(split),
         "generated_results": generated_results,
         "dataset_info": dataset_obj.get_info(),
-        # "MultiModalQA is a dataset designed for multimodal question-answering tasks. It aims to provide a diverse range of questions that require both textual and visual understanding to answer accurately. The dataset contains questions related to images, where each question is accompanied by both text and visual information.",
         "table_question": table_data.default_question,
         "properties_html": properties_html,
         "table_html": table_html,

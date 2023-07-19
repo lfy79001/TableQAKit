@@ -12,10 +12,6 @@ logger = logging.getLogger(__name__)
 class HiTab(HFTabularDataset):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.mapping = {}
-        self.hf_id = ""
-        self.name = ""
-        self.extra_info = {"license": ""}
 
     def _load_split(self, split):
 

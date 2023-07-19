@@ -1,9 +1,7 @@
 import copy
 import logging
-from google.cloud import storage
 import datasets
-from ..utils import export
-from ..utils.export import export_table
+
 
 logger = logging.getLogger(__name__)
 
@@ -33,7 +31,7 @@ class Cell:
         self.is_col_header = is_col_header
         self.is_row_header = is_row_header
         self.is_dummy = is_dummy
-        self.main_cell = main_cell  # for dummy cells
+        self.main_cell = main_cell
 
     @property
     def is_header(self):
@@ -44,8 +42,6 @@ class Cell:
         ser_props = {}
         ser_props["idx"] = self.idx
         ser_props["value"] = str(self.value)
-        # ser_props["rowspan"] = self.rowspan
-        # ser_props["colspan"] = self.colspan
         ser_props["is_row_header"] = self.is_row_header
         ser_props["is_col_header"] = self.is_col_header
         return ser_props
@@ -140,12 +136,6 @@ class Table:
         except Exception as e:
             logger.exception(e)
 
-    def get_generated_output(self, key):
-        return self.outputs.get(key)
-
-    def set_generated_output(self, key, value):
-        self.outputs[key] = value
-
     def __repr__(self):
         return str(self.__dict__)
 
@@ -200,109 +190,14 @@ class TabularDataset:
 
     def get_info(self):
         return self.dataset_info
-    def export(self, split, table_cfg):
-        exported = []
-
-        for i in range(self.get_example_count(split)):
-            obj = {}
-            for key, export_format in table_cfg["fields"].items():
-                table = self.get_table(split, i)
-                obj[key] = export_table(table, export_format=export_format)
-            exported.append(obj)
-
-        return exported
-
-    def get_hf_dataset(
-        self,
-        split,
-        tokenizer,
-        linearize_fn=None,
-        linearize_params=None,
-        highlighted_only=True,
-        max_length=512,
-        num_proc=8,
-    ):
-        # linearize tables and convert to input_ids
-        if linearize_params is None:
-            linearize_params = {}
-
-        if linearize_fn is None:
-            linearize_fn = self.table_to_linear
-            linearize_params["style"] = "markers"
-            linearize_params["highlighted_only"] = highlighted_only
-
-        def process_example(example):
-            table_obj = self.prepare_table(example)
-            linearized = linearize_fn(table_obj, **linearize_params)
-            ref = self.get_reference(table_obj)
-
-            tokens = tokenizer(linearized, max_length=max_length, truncation=True)
-            ref_tokens = tokenizer(text_target=ref, max_length=max_length, truncation=True)
-            tokens["labels"] = ref_tokens["input_ids"]
-
-            return tokens
-
-        logger.info(f"[tabgenie] linearizing tables using {linearize_fn}")
-        lin_example = linearize_fn(self.prepare_table(self.data[split][0]), **linearize_params)
-        logger.info(f"[tabgenie] linearized example ({split}/0): {lin_example}")
-
-        processed_dataset = self.data[split].map(process_example, batched=False, num_proc=1)
-        extra_columns = [
-            col for col in processed_dataset.features.keys() if col not in ["labels", "input_ids", "attention_mask"]
-        ]
-        processed_dataset = processed_dataset.remove_columns(extra_columns)
-        processed_dataset.set_format(type="torch")
-
-        return processed_dataset
-
-    def get_linearized_pairs(self, split, linearize_fn=None):
-        if linearize_fn is None:
-            linearize_fn = self.table_to_linear
-
-        data = []
-        for i, entry in enumerate(self.data[split]):
-            ex = [
-                linearize_fn(self.prepare_table(entry)),
-                self.get_reference(self.get_table(split, i)),
-            ]
-            data.append(ex)
-
-        return data
-
-    def get_task_definition(self):
-        # TODO implement for individual datasets
-        return "Describe the following structured data in one sentence."
-
-    def get_positive_examples(self):
-        # TODO implement for individual datasets
-        # TODO fix - split may not be loaded
-        table_ex_1 = self.get_table("dev", 0)
-        table_ex_2 = self.get_table("dev", 1)
-
-        return [
-            {
-                "in": self.table_to_linear(table_ex_1),
-                "out": self.get_reference(table_ex_1),
-            },
-            {
-                "in": self.table_to_linear(table_ex_2),
-                "out": self.get_reference(table_ex_2),
-            },
-        ]
-
-
-
-    # End export methods
-
 
 class HFTabularDataset(TabularDataset):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, path=None, **kwargs)
-        self.hf_id = None  # needs to be set
-        self.hf_extra_config = None
+
         self.split_mapping = {"train": "train", "dev": "validation", "test": "test"}
         self.dataset_info = {}
-        self.extra_info = {}
+
 
     def _load_split(self, split):
         return NotImplementedError
@@ -320,34 +215,3 @@ class HFTabularDataset(TabularDataset):
 
     def load_from_disk(self, split, filepath):
         self.data[split] = datasets.load_dataset(filepath)
-
-    def get_info(self):
-        # info = {key: self.dataset_info.get(key) for key in ["citation", "description", "version", "license"]}
-        # info["examples"] = {}
-        # info["links"] = {}
-        #
-        # for split_name, split_info in self.dataset_info.get("splits").items():
-        #     if split_name.startswith("val"):
-        #         split_name = "dev"
-        #
-        #     if split_name not in ["train", "dev", "test"]:
-        #         continue
-        #
-        #     info["examples"][split_name] = split_info.num_examples
-        #
-        # if info["version"] is not None:
-        #     info["version"] = str(info["version"])
-        #
-        # if self.dataset_info.get("homepage"):
-        #     info["links"]["homepage"] = self.dataset_info["homepage"]
-        # elif self.extra_info.get("homepage"):
-        #     info["links"]["homepage"] = self.extra_info["homepage"]
-        #
-        # info["links"]["source"] = "https://huggingface.co/datasets/" + self.hf_id
-        # info["name"] = self.name
-        #
-        # # some info may not be present on HF, set it manually
-        # info.update(self.extra_info)
-        info = super().get_info()
-
-        return info

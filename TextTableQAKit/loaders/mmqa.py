@@ -11,23 +11,15 @@ logger = logging.getLogger(__name__)
 class MultiModalQA(HFTabularDataset):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.mapping = {}
-        self.hf_id = ""
-        self.name = ""
-        self.extra_info = {"license": ""}
 
     def _load_split(self, split):
-        #hf_split = self.split_mapping[split]
 
-        #logger.info(f"Loading {self.hf_id} - {split}")
         question_file_map = {
             "train" : "multimodalqa_final_dataset_pipeline_camera_ready_MMQA_train.jsonl",
             "dev" : "multimodalqa_final_dataset_pipeline_camera_ready_MMQA_dev.jsonl",
             "test" : "multimodalqa_final_dataset_pipeline_camera_ready_MMQA_test.jsonl"
         }
         logger.info(f"Loading multimodalqa - {split}")
-
-
 
 
         '''
