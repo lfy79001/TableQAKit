@@ -1,7 +1,10 @@
-Flask>=2.2.2
-datasets>=2.9.0
-requests
-lxml
-tinyhtml
-xlsxwriter
-coloredlogs
+Flask==2.3.2
+lxml==4.9.2
+numpy==1.19.5
+pandas==1.2.2
+setuptools==49.6.0.post20210108
+tinyhtml==1.2.0
+torch==1.7.1
+tqdm==4.65.0
+XlsxWriter==3.1.2
+~qdm==4.62.3

@@ -30,34 +30,19 @@ from TextTableQAKit.loaders import DATASET_CLASSES
 from TextTableQAKit.structs.data import Table, Cell
 from TextTableQAKit.utils import export
 
-def init_app():
-    flask_app = Flask(
-        "TextTableQA",
-        template_folder=os.path.join(os.path.dirname(__file__), "templates"),
-        static_folder=os.path.join(os.path.dirname(__file__), "static")
-    )
 
-    flask_app.database = dict()
-    flask_app.config.update(SECRET_KEY=os.urandom(24))
-    with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "config.yml")) as f:
-        config = yaml.safe_load(f)
-    flask_app.config.update(config)
-    return flask_app
+log_format = "%(levelname)s:"
+logging.basicConfig(format=log_format, level=logging.INFO)
+file_handler = logging.FileHandler("error.log")
+file_handler.setLevel(logging.ERROR)
+logging.getLogger().addHandler(file_handler)
+logging.getLogger().addHandler(logging.StreamHandler())
+logger = logging.getLogger(__name__)
 
 
-def init_logging():
-    log_format = "%(levelname)s:"
-    logging.basicConfig(format=log_format, level=logging.INFO)
-    file_handler = logging.FileHandler("error.log")
-    file_handler.setLevel(logging.ERROR)
-    logging.getLogger().addHandler(file_handler)
-    logging.getLogger().addHandler(logging.StreamHandler())
-    logger = logging.getLogger(__name__)
-    return logger
 
 
-app = init_app()
-logger = init_logging()
+
 
 '''
 check data integrity
@@ -467,19 +452,31 @@ def index():
         table_data = data  #--这样传没有jsonfiy应该是可以的--
     )
 
-with app.app_context():
+# with app.app_context():
+    
+#     fetch_table_data()
+#     dataset_obj = app.database['dataset']["wikisql"]
+#     print(dataset_obj.tables)
+#     session1 = {}
+#     upload_custom_table()
+#     fetch_custom_table_data()
+#     session["custom_tables"] = {}
+#     fetch_default_table_data()
+#     pass
+#     download_default_table()
+#     upload_custom_table()
+
+if __name__ == '__main__':
+    flask_app = Flask(
+        "TextTableQA",
+        template_folder=os.path.join(os.path.dirname(__file__), "templates"),
+        static_folder=os.path.join(os.path.dirname(__file__), "static")
+    )
+
+    flask_app.database = {}
     app.database['dataset'] = {}
-    # fetch_table_data()
-    # dataset_obj = app.database['dataset']["wikisql"]
-    # print(dataset_obj.tables)
-    # session1 = {}
-    # upload_custom_table()
-    # fetch_custom_table_data()
-    # session["custom_tables"] = {}
-    # fetch_default_table_data()
-    # pass
-    # download_default_table()
-    # upload_custom_table()
-
-
-# app.run()
+    flask_app.config.update(SECRET_KEY=os.urandom(24))
+    with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "config.yml")) as f:
+        config = yaml.safe_load(f)
+    flask_app.config.update(config)
+    flask_app.run(port=18888)
