@@ -1,3 +1,4 @@
+
 '''
 ### Linux工程迁移
 1.hybridqa.py windows不支持linux的文件命名 视为非法命名
@@ -7,6 +8,7 @@
        table_id = re.sub(illegal_chars, '_', table_id)
    ```
 '''
+
 
 
 
@@ -462,7 +464,7 @@ def index():
 
     return render_template(
         "index.html",
-        table_data = data  #--这样传没有jsonfiy应该是可以的--#
+        table_data = data  #--这样传没有jsonfiy应该是可以的--
     )
 
 with app.app_context():
@@ -474,7 +476,7 @@ with app.app_context():
     # upload_custom_table()
     # fetch_custom_table_data()
     # session["custom_tables"] = {}
-    fetch_default_table_data()
+    # fetch_default_table_data()
     # pass
     # download_default_table()
     # upload_custom_table()
