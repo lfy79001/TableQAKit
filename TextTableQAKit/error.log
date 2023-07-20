@@ -4,3 +4,143 @@ Fetch Table Error: Working outside of request context.
 This typically means that you attempted to use functionality that needed
 an active HTTP request. Consult the documentation on testing for
 information about how to avoid this problem.
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 460, in index
+    logger.info(f"Page loaded")
+AttributeError: 'NoneType' object has no attribute 'info'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 463, in index
+    logger.error(f"Fetch initial Table Error: {e}")
+AttributeError: 'NoneType' object has no attribute 'error'
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 460, in index
+    logger.info(f"Page loaded")
+AttributeError: 'NoneType' object has no attribute 'info'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 463, in index
+    logger.error(f"Fetch initial Table Error: {e}")
+AttributeError: 'NoneType' object has no attribute 'error'
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 460, in index
+    logger.info(f"Page loaded")
+AttributeError: 'NoneType' object has no attribute 'info'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 463, in index
+    logger.error(f"Fetch initial Table Error: {e}")
+AttributeError: 'NoneType' object has no attribute 'error'
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 460, in index
+    logger.info(f"Page loaded")
+AttributeError: 'NoneType' object has no attribute 'info'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 463, in index
+    logger.error(f"Fetch initial Table Error: {e}")
+AttributeError: 'NoneType' object has no attribute 'error'
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 460, in index
+    logger.info(f"Page loaded")
+AttributeError: 'NoneType' object has no attribute 'info'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 463, in index
+    logger.error(f"Fetch initial Table Error: {e}")
+AttributeError: 'NoneType' object has no attribute 'error'
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 460, in index
+    logger.info(f"Page loaded")
+AttributeError: 'NoneType' object has no attribute 'info'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 463, in index
+    logger.error(f"Fetch initial Table Error: {e}")
+AttributeError: 'NoneType' object has no attribute 'error'
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 460, in index
+    logger.info(f"Page loaded")
+AttributeError: 'NoneType' object has no attribute 'info'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 463, in index
+    logger.error(f"Fetch initial Table Error: {e}")
+AttributeError: 'NoneType' object has no attribute 'error'

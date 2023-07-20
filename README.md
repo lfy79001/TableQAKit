@@ -18,11 +18,11 @@ A toolkit for Text-Table Hybrid Question Answering
 
 ## QuickStart
 ```
-pip install ttqakit
-ttqakit run --host=127.0.0.1 --port 13000
-# 如果以上命令是在服务器上运行的，想在本地看网页，需要监听
-ssh -L 8000:127.0.0.1:13000 lfy@210.75.240.136
-# 在本地打开  http://127.0.0.1:8000
+pip install gunicorn
+# 运行在210.75.240.136:18888,访问：http://210.75.240.136:18888
+gunicorn -c gunicorn_config.py app:app --daemon
+# 想要停止运行？
+在gunicorn_error.log找到gunicorn进程进行kill
 ```
 
 ## Datasets
