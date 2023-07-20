@@ -7,7 +7,7 @@ import lxml.html
 
 from tinyhtml import *
 from xlsxwriter import Workbook
-from .excel import write_html_table_to_excel
+from utils.excel import write_html_table_to_excel
 
 
 """

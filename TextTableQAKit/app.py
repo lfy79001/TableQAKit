@@ -26,19 +26,36 @@ import shutil
 import logging
 import sys
 
-from TextTableQAKit.loaders import DATASET_CLASSES
-from TextTableQAKit.structs.data import Table, Cell
-from TextTableQAKit.utils import export
+from loaders import DATASET_CLASSES
+from structs.data import Table, Cell
+from utils import export
 
+def init_app():
+    flask_app = Flask(
+            "TextTableQA",
+            template_folder=os.path.join(os.path.dirname(__file__), "templates"),
+            static_folder=os.path.join(os.path.dirname(__file__), "static")
+        )
 
-log_format = "%(levelname)s:"
-logging.basicConfig(format=log_format, level=logging.INFO)
-file_handler = logging.FileHandler("error.log")
-file_handler.setLevel(logging.ERROR)
-logging.getLogger().addHandler(file_handler)
-logging.getLogger().addHandler(logging.StreamHandler())
-logger = logging.getLogger(__name__)
+    flask_app.database = {}
+    flask_app.database['dataset'] = {}
+    flask_app.config.update(SECRET_KEY=os.urandom(24))
+    with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "config.yml")) as f:
+        config = yaml.safe_load(f)
+    flask_app.config.update(config)
+    return flask_app
 
+app = init_app()
+
+def init_log():
+    log_format = "%(levelname)s:"
+    logging.basicConfig(format=log_format, level=logging.INFO)
+    file_handler = logging.FileHandler("error.log")
+    file_handler.setLevel(logging.ERROR)
+    logging.getLogger().addHandler(file_handler)
+    logging.getLogger().addHandler(logging.StreamHandler())
+    logger = logging.getLogger(__name__)
+logger = init_log()
 
 
 
@@ -465,18 +482,5 @@ def index():
 #     pass
 #     download_default_table()
 #     upload_custom_table()
-
-if __name__ == '__main__':
-    flask_app = Flask(
-        "TextTableQA",
-        template_folder=os.path.join(os.path.dirname(__file__), "templates"),
-        static_folder=os.path.join(os.path.dirname(__file__), "static")
-    )
-
-    flask_app.database = {}
-    app.database['dataset'] = {}
-    flask_app.config.update(SECRET_KEY=os.urandom(24))
-    with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "config.yml")) as f:
-        config = yaml.safe_load(f)
-    flask_app.config.update(config)
-    flask_app.run(port=18888)
+# if __name__ == '__main__':
+#     app.run(host = "210.75.240.136", port = 18888)

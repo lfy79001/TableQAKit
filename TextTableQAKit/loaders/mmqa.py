@@ -3,7 +3,7 @@ import os
 import datasets
 import logging
 import json
-from TextTableQAKit.structs.data import Cell, Table, HFTabularDataset
+from structs.data import Cell, Table, HFTabularDataset
 
 
 logger = logging.getLogger(__name__)
