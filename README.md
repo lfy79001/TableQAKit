@@ -22,7 +22,11 @@ pip install gunicorn
 # 运行在210.75.240.136:18888,访问：http://210.75.240.136:18888
 gunicorn -c gunicorn_config.py app:app --daemon
 # 想要停止运行？
-在gunicorn_error.log找到gunicorn进程进行kill
+在gunicorn_error.log找到gunicorn master进程进行kill
+
+如gunicorn_error.log片段："Listening at: http://210.75.240.136:18888 (2609966)"
+gunicorn master 进程号为2609966
+
 ```
 
 ## Datasets

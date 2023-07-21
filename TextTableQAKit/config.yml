@@ -7,14 +7,13 @@ datasets:
 - tatqa
 - wikisql
 - wikitq
-- multimodalqa
 split:
 - train
 - dev
 - test
 outputs_model:
 - gold_answer
-default_dataset: multimodalqa
+default_dataset: mmqa
 host_prefix: "."
 debug: false
 example_filename: example.xlsx

@@ -10,7 +10,7 @@ from loaders.mmqa import MultiModalQA
 
 DATASET_CLASSES = {
     "wikisql": WikiSQL,
-    "multimodalqa": MultiModalQA,
+    "mmqa": MultiModalQA,
     "wikitq": WikiTableQuestion,
     "tatqa": TATQA,
     "finqa": FinQA,

@@ -144,3 +144,140 @@ Traceback (most recent call last):
   File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 463, in index
     logger.error(f"Fetch initial Table Error: {e}")
 AttributeError: 'NoneType' object has no attribute 'error'
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 460, in index
+    logger.info(f"Page loaded")
+AttributeError: 'NoneType' object has no attribute 'info'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 463, in index
+    logger.error(f"Fetch initial Table Error: {e}")
+AttributeError: 'NoneType' object has no attribute 'error'
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 460, in index
+    logger.info(f"Page loaded")
+AttributeError: 'NoneType' object has no attribute 'info'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 463, in index
+    logger.error(f"Fetch initial Table Error: {e}")
+AttributeError: 'NoneType' object has no attribute 'error'
+Fetch initial Table Error: module 'utils.export' has no attribute 'export_table'
+Fetch initial Table Error: module 'utils.export' has no attribute 'export_table'
+Fetch initial Table Error: module 'utils.export' has no attribute 'export_table'
+Fetch initial Table Error: module 'utils.export' has no attribute 'export_table'
+Fetch initial Table Error: [Errno 2] No such file or directory: 'outputs/multimodalqa/gold_answer/train.txt'
+Fetch initial Table Error: [Errno 2] No such file or directory: 'outputs/multimodalqa/gold_answer/train.txt'
+Fetch initial Table Error: 'mmqa'
+Fetch initial Table Error: 'mmqa'
+Fetch initial Table Error: 'mmqa'
+Fetch initial Table Error: 'mmqa'
+Fetch initial Table Error: 'mmqa'
+Fetch initial Table Error: 'mmqa'
+Fetch initial Table Error: 'mmqa'
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 461, in index
+    data = statistics_default_table_information(dataset_name, split, table_idx, propertie_name_list)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 109, in statistics_default_table_information
+    check_data_integrity(dataset_name, split, table_idx)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 71, in check_data_integrity
+    check_dataset_in_database(dataset_name)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 80, in check_dataset_in_database
+    create_dataset(dataset_name)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 84, in create_dataset
+    dataset_obj = DATASET_CLASSES[dataset_name]()
+KeyError: 'mmqa'
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 461, in index
+    data = statistics_default_table_information(dataset_name, split, table_idx, propertie_name_list)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 109, in statistics_default_table_information
+    check_data_integrity(dataset_name, split, table_idx)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 71, in check_data_integrity
+    check_dataset_in_database(dataset_name)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 80, in check_dataset_in_database
+    create_dataset(dataset_name)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 84, in create_dataset
+    dataset_obj = DATASET_CLASSES[dataset_name]()
+KeyError: 'mmqa'
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 461, in index
+    data = statistics_default_table_information(dataset_name, split, table_idx, propertie_name_list)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 109, in statistics_default_table_information
+    check_data_integrity(dataset_name, split, table_idx)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 71, in check_data_integrity
+    check_dataset_in_database(dataset_name)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 80, in check_dataset_in_database
+    create_dataset(dataset_name)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 84, in create_dataset
+    dataset_obj = DATASET_CLASSES[dataset_name]()
+KeyError: 'mmqa'
+Exception on / [GET]
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 461, in index
+    data = statistics_default_table_information(dataset_name, split, table_idx, propertie_name_list)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 109, in statistics_default_table_information
+    check_data_integrity(dataset_name, split, table_idx)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 71, in check_data_integrity
+    check_dataset_in_database(dataset_name)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 80, in check_dataset_in_database
+    create_dataset(dataset_name)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 84, in create_dataset
+    dataset_obj = DATASET_CLASSES[dataset_name]()
+KeyError: 'mmqa'

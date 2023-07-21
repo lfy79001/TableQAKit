@@ -55,6 +55,7 @@ def init_log():
     logging.getLogger().addHandler(file_handler)
     logging.getLogger().addHandler(logging.StreamHandler())
     logger = logging.getLogger(__name__)
+    return logger
 logger = init_log()
 
 
@@ -108,8 +109,7 @@ def statistics_default_table_information(dataset_name, split, table_idx, propert
     check_data_integrity(dataset_name, split, table_idx)
     dataset_obj = app.database["dataset"][dataset_name]
     table_data = dataset_obj.get_table(split, table_idx)
-    properties_html, table_html = export.export_table(table_data, export_format="html",
-                                                      displayed_props=propertie_name_list)
+    properties_html, table_html = export.table_to_html(table_data, propertie_name_list,None,"web")
     generated_results = fetch_generated_outputs(dataset_name, split, table_idx)
     data = {
         # "session": {},
@@ -192,7 +192,7 @@ def fetch_custom_table_data():
         custom_tables = session.get("custom_tables", {})
         if len(custom_tables) != 0 and table_name in custom_tables:
             table_data = custom_tables[table_name]
-            properties_html,table_html = export.export_table(table_data, export_format="html", displayed_props=properties_name_list)
+            properties_html,table_html = export.table_to_html(table_data, propertie_name_list,None,"web")
             data = {
                 "table_html": table_html,
                 "properties_html": properties_html,
@@ -452,16 +452,16 @@ def download_file_example():
 @app.route("/", methods=["GET", "POST"])
 def index():
 
-    try:
-        dataset_name = app.config['default_dataset']
-        split = "train"
-        table_idx = 0
-        propertie_name_list = []
-        logger.info(f"Page loaded")
-        data = statistics_default_table_information(dataset_name, split, table_idx, propertie_name_list)
-    except Exception as e:
-        logger.error(f"Fetch initial Table Error: {e}")
-        data = {"success": False}
+    # try:
+    dataset_name = app.config['default_dataset']
+    split = "train"
+    table_idx = 0
+    propertie_name_list = []
+    logger.info(f"Page loaded")
+    data = statistics_default_table_information(dataset_name, split, table_idx, propertie_name_list)
+    # except Exception as e:
+        # logger.error(f"Fetch initial Table Error: {e}")
+        # data = {"success": False}
 
 
     return render_template(
