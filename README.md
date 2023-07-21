@@ -19,13 +19,13 @@ A toolkit for Text-Table Hybrid Question Answering
 ## QuickStart
 ```
 pip install gunicorn
-# 运行在210.75.240.136:18888,访问：http://210.75.240.136:18888
-gunicorn -c gunicorn_config.py app:app --daemon
-# 想要停止运行？
-在gunicorn_error.log找到gunicorn master进程进行kill
 
-如gunicorn_error.log片段："Listening at: http://210.75.240.136:18888 (2609966)"
-gunicorn master 进程号为2609966
+# 运行在210.75.240.136:18889,访问：http://210.75.240.136:18889
+gunicorn -c gunicorn_config.py app:app --daemon
+
+# 想要停止运行？
+在gunicorn_error.log找到最新的记录Listening记录，如"Listening at: http://210.75.240.136:18889 (2609966)"
+使用 kill 2609966 可实现停止运行
 
 ```
 
