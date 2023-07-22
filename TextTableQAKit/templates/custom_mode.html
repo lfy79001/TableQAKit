@@ -81,15 +81,15 @@
                                     </div>
                                 </div>
                                 <div class="d-flex justify-content-between align-items-end flex-wrap">
-<!--                                    <button type="button" class="btn btn-light bg-white btn-icon me-3 d-none d-md-block ">-->
-<!--                                        <a title="download result">-->
-<!--                                          <i class="mdi mdi-download text-muted"></i>-->
-<!--                                        </a>-->
-<!--                                    </button>-->
+                                    <!--                                    <button type="button" class="btn btn-light bg-white btn-icon me-3 d-none d-md-block ">-->
+                                    <!--                                        <a title="download result">-->
+                                    <!--                                          <i class="mdi mdi-download text-muted"></i>-->
+                                    <!--                                        </a>-->
+                                    <!--                                    </button>-->
 
 
                                     <a href="/">
-                                        <button id="switchToIndex" class="btn btn-success mt-2 mt-xl-0" >Switch To Default Dataset QA Mode</button>
+                                        <button id="switchToIndex" class="btn btn-success mt-2 mt-xl-0">Switch To Default Dataset QA Mode</button>
                                     </a>
                                 </div>
                             </div>
@@ -123,7 +123,7 @@
                                 <div class="card-body">
                                     <p class="card-title">Step 2 : Display Table</p>
 
-                                    <button type="button" class="btn btn-info btn-icon-text" style="height:45px;" data-bs-target="#download-custom-table-modal" data-bs-toggle="modal">
+                                    <button type="button" id="down-excel" class="btn btn-info btn-icon-text" style="height:45px;" data-bs-target="#download-custom-table-modal" data-bs-toggle="modal">
                                       Download
                                       <i class="mdi mdi-download btn-icon-append"></i>
                                     </button>
@@ -135,89 +135,93 @@
 
                                     <div>
                                         <div class="prop-buttons">
-                                          <button type="button" class="btn  prop-btn  btn-fw" data-bs-toggle="collapse" data-bs-target=".row_reference" aria-expanded="true" aria-controls="row_reference" style="margin-right:8px; margin-top:5px">reference</button>
-                                          <button type="button" class="btn  prop-btn  btn-fw" data-bs-toggle="collapse" data-bs-target=".row_title" aria-expanded="true" aria-controls="row_title" style="margin-right:8px;margin-top:5px">title</button>
-                                          <button type="button" class="btn  prop-btn  btn-fw" data-bs-toggle="collapse" data-bs-target=".row_table_section_text" aria-expanded="true" aria-controls="row_table_section_text" style="margin-right:8px;margin-top:5px">table_section_text</button>
-                                          <button type="button" class="btn  prop-btn  btn-fw" data-bs-toggle="collapse" data-bs-target=".row_table_section_title" aria-expanded="true" aria-controls="row_table_section_title" style="margin-right:8px;margin-top:5px">table_section_title</button>
-                                          <button type="button" class="btn  prop-btn  btn-fw" data-bs-toggle="collapse" data-bs-target=".row_references" aria-expanded="true" aria-controls="row_references" style="margin-right:8px;margin-top:5px">references</button>
-                                          <button type="button" class="btn  prop-btn  btn-fw" data-bs-toggle="collapse" data-bs-target=".row_linearized_input" aria-expanded="true" aria-controls="row_linearized_input" style="margin-right:8px;margin-top:5px">linearized_input</button>
+                                            <button type="button" class="btn  prop-btn  btn-fw" data-bs-toggle="collapse" data-bs-target=".row_reference" aria-expanded="true" aria-controls="row_reference" style="margin-right:8px; margin-top:5px">reference</button>
+                                            <button type="button" class="btn  prop-btn  btn-fw" data-bs-toggle="collapse" data-bs-target=".row_title" aria-expanded="true" aria-controls="row_title" style="margin-right:8px;margin-top:5px">title</button>
+                                            <button type="button" class="btn  prop-btn  btn-fw" data-bs-toggle="collapse" data-bs-target=".row_table_section_text" aria-expanded="true" aria-controls="row_table_section_text" style="margin-right:8px;margin-top:5px">table_section_text</button>
+                                            <button type="button" class="btn  prop-btn  btn-fw" data-bs-toggle="collapse" data-bs-target=".row_table_section_title" aria-expanded="true" aria-controls="row_table_section_title" style="margin-right:8px;margin-top:5px">table_section_title</button>
+                                            <button type="button" class="btn  prop-btn  btn-fw" data-bs-toggle="collapse" data-bs-target=".row_references" aria-expanded="true" aria-controls="row_references" style="margin-right:8px;margin-top:5px">references</button>
+                                            <button type="button" class="btn  prop-btn  btn-fw" data-bs-toggle="collapse" data-bs-target=".row_linearized_input" aria-expanded="true" aria-controls="row_linearized_input" style="margin-right:8px;margin-top:5px">linearized_input</button>
 
                                         </div>
                                         <table class="table table-sm caption-top meta-table">
-                                          <tbody>
-                                            <tr class="row_reference collapsible collapse show">
-                                              <th>
-                                                <div  style="">
-                                                  <div>reference</div>
-                                                </div>
-                                              </th>
-                                              <td>
-                                                <div style="">
-                                                  <div>Daniel Henry Chamberlain was the 76th Governor of South Carolina from 1874.</div>
-                                                </div>
-                                              </td>
-                                            </tr>
-                                            <tr class="row_title collapsible collapse show">
-                                              <th>
-                                                <div style="">
-                                                  <div>title</div>
-                                                </div>
-                                              </th>
-                                              <td>
-                                                <div style="">
-                                                  <div>List of Governors of South Carolina</div>
-                                                </div>
-                                              </td>
-                                            </tr>
-                                            <tr class="row_table_section_text collapsible collapse show" >
-                                              <th>
-                                                <div style="">
-                                                  <div>table_section_text</div>
-                                                </div>
-                                              </th>
-                                              <td>
-                                                <div  style="">
-                                                  <div>Parties Democratic Republican</div>
-                                                </div>
-                                              </td>
-                                            </tr>
-                                            <tr class="row_table_section_title collapsible collapse show" >
-                                              <th>
-                                                <div style="">
-                                                  <div>table_section_title</div>
-                                                </div>
-                                              </th>
-                                              <td>
-                                                <div style="">
-                                                  <div>Governors under the Constitution of 1868</div>
-                                                </div>
-                                              </td>
-                                            </tr>
-                                            <tr  class="row_references collapsible collapse show" >
-                                              <th>
-                                                <div style="">
-                                                  <div>references</div>
-                                                </div>
-                                              </th>
-                                              <td>
-                                                <div style="">
-                                                  <div>['Daniel Henry Chamberlain was the 76th Governor of South Carolina from 1874.', 'Daniel Henry Chamberlain was the 76th Governor of South Carolina, beginning in 1874.', 'Daniel Henry Chamberlain was the 76th Governor of South Carolina who took office in 1874.']</div>
-                                                </div>
-                                              </td>
-                                            </tr>
-                                            <tr class="row_linearized_input collapsible collapse show">
-                                              <th>
-                                                <div  style="">
-                                                  <div>linearized_input</div>
-                                                </div>
-                                              </th>
-                                              <td>
-                                                <div  style="">
-                                                  <div>&lt;page_title&gt; List of Governors of South Carolina &lt;/page_title&gt; &lt;section_title&gt; Governors under the Constitution of 1868 &lt;/section_title&gt; &lt;table&gt; &lt;cell&gt; 76 &lt;col_header&gt; # &lt;/col_header&gt; &lt;col_header&gt; 74 &lt;/col_header&gt; &lt;col_header&gt; 75 &lt;/col_header&gt; &lt;/cell&gt; &lt;cell&gt; Daniel Henry Chamberlain &lt;col_header&gt; Governor &lt;/col_header&gt; &lt;row_header&gt; 76 &lt;/row_header&gt; &lt;/cell&gt; &lt;cell&gt; December 1, 1874 &lt;col_header&gt; Took Office &lt;/col_header&gt; &lt;row_header&gt; 76 &lt;/row_header&gt; &lt;/cell&gt; &lt;/table&gt;</div>
-                                                </div>
-                                              </td>
-                                            </tr>
-                                          </tbody>
+                                            <tbody>
+                                                <tr class="row_reference collapsible collapse show">
+                                                    <th>
+                                                        <div style="">
+                                                            <div>reference</div>
+                                                        </div>
+                                                    </th>
+                                                    <td>
+                                                        <div style="">
+                                                            <div>Daniel Henry Chamberlain was the 76th Governor of South Carolina from 1874.</div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="row_title collapsible collapse show">
+                                                    <th>
+                                                        <div style="">
+                                                            <div>title</div>
+                                                        </div>
+                                                    </th>
+                                                    <td>
+                                                        <div style="">
+                                                            <div>List of Governors of South Carolina</div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="row_table_section_text collapsible collapse show">
+                                                    <th>
+                                                        <div style="">
+                                                            <div>table_section_text</div>
+                                                        </div>
+                                                    </th>
+                                                    <td>
+                                                        <div style="">
+                                                            <div>Parties Democratic Republican</div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="row_table_section_title collapsible collapse show">
+                                                    <th>
+                                                        <div style="">
+                                                            <div>table_section_title</div>
+                                                        </div>
+                                                    </th>
+                                                    <td>
+                                                        <div style="">
+                                                            <div>Governors under the Constitution of 1868</div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="row_references collapsible collapse show">
+                                                    <th>
+                                                        <div style="">
+                                                            <div>references</div>
+                                                        </div>
+                                                    </th>
+                                                    <td>
+                                                        <div style="">
+                                                            <div>['Daniel Henry Chamberlain was the 76th Governor of South Carolina from 1874.', 'Daniel Henry Chamberlain was the 76th Governor of South Carolina, beginning in 1874.', 'Daniel Henry Chamberlain
+                                                                was the 76th Governor of South Carolina who took office in 1874.']</div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                                <tr class="row_linearized_input collapsible collapse show">
+                                                    <th>
+                                                        <div style="">
+                                                            <div>linearized_input</div>
+                                                        </div>
+                                                    </th>
+                                                    <td>
+                                                        <div style="">
+                                                            <div>&lt;page_title&gt; List of Governors of South Carolina &lt;/page_title&gt; &lt;section_title&gt; Governors under the Constitution of 1868 &lt;/section_title&gt; &lt;table&gt; &lt;cell&gt; 76
+                                                                &lt;col_header&gt; # &lt;/col_header&gt; &lt;col_header&gt; 74 &lt;/col_header&gt; &lt;col_header&gt; 75 &lt;/col_header&gt; &lt;/cell&gt; &lt;cell&gt; Daniel Henry Chamberlain &lt;col_header&gt;
+                                                                Governor &lt;/col_header&gt; &lt;row_header&gt; 76 &lt;/row_header&gt; &lt;/cell&gt; &lt;cell&gt; December 1, 1874 &lt;col_header&gt; Took Office &lt;/col_header&gt; &lt;row_header&gt; 76
+                                                                &lt;/row_header&gt; &lt;/cell&gt; &lt;/table&gt;</div>
+                                                        </div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
                                         </table>
                                     </div>
 
@@ -374,236 +378,235 @@
     </div>
     <div class="modal fade" id="about-modal" tabindex="-1" style="display: none;" aria-hidden="true">
         <div class="modal-dialog">
-          <div class="modal-content" style="width:600px;">
-            <div class="modal-header">
-              <h5 class="modal-title" id="about-modal-label">About</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div id="aboutarea" class="tab-pane sidepanel-panel" role="tabpanel" tabindex="0">
-                <div id="about-info" class="area-content">
-                  <p>A toolkit for Text-Table Hybrid Question Answering.</p>
-                  <p>A toolkit for Text-Table Hybrid Question Answering.</p>
-
-                  <p>A toolkit for Text-Table Hybrid Question Answering</p>
-
-
-
-                  <p>
-                    A toolkit for Text-Table Hybrid Question Answering
-                  </p>
-
-                  <p>A toolkit for Text-Table Hybrid Question Answering</p>
-                  <p>
-                    A toolkit for Text-Table Hybrid Question Answering
-                  </p>
-
-
+            <div class="modal-content" style="width:600px;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="about-modal-label">About</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
-              </div>
+                <div class="modal-body">
+                    <div id="aboutarea" class="tab-pane sidepanel-panel" role="tabpanel" tabindex="0">
+                        <div id="about-info" class="area-content">
+                            <p>A toolkit for Text-Table Hybrid Question Answering.</p>
+                            <p>A toolkit for Text-Table Hybrid Question Answering.</p>
+
+                            <p>A toolkit for Text-Table Hybrid Question Answering</p>
+
+
+
+                            <p>
+                                A toolkit for Text-Table Hybrid Question Answering
+                            </p>
+
+                            <p>A toolkit for Text-Table Hybrid Question Answering</p>
+                            <p>
+                                A toolkit for Text-Table Hybrid Question Answering
+                            </p>
+
+
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
     </div>
 
-    <div class="modal fade" id="upload-table-modal" tabindex="-1" style="display: none;" aria-hidden="true"  data-bs-backdrop="static" data-bs-keyboard="false">
-        <div class="modal-dialog"  style=" ">
-          <div class="modal-content"  style="width:600px;">
-            <div class="modal-header">
-              <h5 class="modal-title" id="upload-table-modal-label">Upload Table</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div class="card">
-                <div class="card-body">
-                  <h4>Upload your Excel spreadsheet file here.</h4>
-                  <div class="card-description text-muted">
-                    <p><b>Note:</b></p>
-                    <p>1.The file format should be <code><b>.xlsx</b></code></p>
-                    <p>2.The table content should be located at the top-left corner of the Excel file.</p>
-                    <p>3.Do not use merged cells in the Excel file.</p>
-                    <p>4.The first row in Excel should contain column header data, and the data rows should start from the second row.</p>
-                    <p>5.The system will only upload the table data from the first sheet by default.</p>
-                    <p>6.The table name cannot be the same as any previously uploaded table. <code><b>You can view the names of previously uploaded tables by clicking on the icon on the right side of the table name input box.</b></code></p>
-                  </div>
-                  <form class="forms-sample">
-                    <div class="form-group">
-                      <label>Table Name</label>
-                      <div class = "row">
-                          <div class="col-md-10">
-                            <input type="text" class="form-control" id="upload-table-name" placeholder="Input Table Name">
-                          </div>
-                          <div class = "col-md-2">
-                              <a class="dropdown-toggle" id="messageDropdown-uploaded_table" href="#" data-bs-toggle="dropdown" aria-expanded="false">
-                                  <i class="mdi mdi-information mx-0"></i>
-                              </a>
-                              <div class="dropdown-menu" aria-labelledby="messageDropdown-uploaded_table" style="width=100px">
+    <div class="modal fade" id="upload-table-modal" tabindex="-1" style="display: none;" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog" style=" ">
+            <div class="modal-content" style="width:600px;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="upload-table-modal-label">Upload Table</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4>Upload your Excel spreadsheet file here.</h4>
+                            <div class="card-description text-muted">
+                                <p><b>Note:</b></p>
+                                <p>1.The file format should be <code><b>.xlsx</b></code></p>
+                                <p>2.The table content should be located at the top-left corner of the Excel file.</p>
+                                <p>3.Do not use merged cells in the Excel file.</p>
+                                <p>4.The first row in Excel should contain column header data, and the data rows should start from the second row.</p>
+                                <p>5.The system will only upload the table data from the first sheet by default.</p>
+                                <p>6.The table name cannot be the same as any previously uploaded table. <code><b>You can view the names of previously uploaded tables by clicking on the icon on the right side of the table name input box.</b></code></p>
+                            </div>
+                            <form class="forms-sample">
+                                <div class="form-group">
+                                    <label>Table Name</label>
+                                    <div class="row">
+                                        <div class="col-md-10">
+                                            <input type="text" id="table-name-input" class="form-control" id="upload-table-name" placeholder="Input Table Name">
+                                        </div>
+                                        <div class="col-md-2">
+                                            <a class="dropdown-toggle" id="messageDropdown-uploaded_table" href="#" data-bs-toggle="dropdown" aria-expanded="false">
+                                                <i class="mdi mdi-information mx-0"></i>
+                                            </a>
+                                            <div class="dropdown-menu" aria-labelledby="messageDropdown-uploaded_table" style="width=100px">
 
-                                  <p class="drop-txt">
-                                      <b>Previously uploaded table name:</b>
-                                      myTable01; myTable02; myTable03
-                                  </p>
+                                                <p class="drop-txt">
+                                                    <b>Previously uploaded table name:</b> myTable01; myTable02; myTable03
+                                                </p>
 
-                              </div>
-                          </div>
-                      </div>
-                    </div>
-                    <div class="form-group">
-                      <label>Table File(.xlsx)</label>
-                        <span style="margin-left:10px;">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Table File(.xlsx)</label>
+                                    <span style="margin-left:10px;">
                             <a class="" id="download-example" href="#">
                                 <i class="mdi mdi-download mx-0"></i>
                                 <span>Download File Example</span>
-                            </a>
+                                    </a>
+                                    </span>
+                                    <input type="file" id="table-file-input" name="files" class="file-upload-default" accept="application/vnd.openxmlformats-officedocument.spreadsheetml.sheet,application/vnd.ms-excel,text/csv">
+                                    <div class="input-group col-xs-12">
+                                        <input type="text" id="selected-file-name" class="form-control file-upload-info" disabled="" placeholder="Upload Xlsx File">
+                                        <span class="input-group-append">
+                          <button id="select-excel-button" class="file-upload-browse btn btn-primary" type="button">Upload</button>
                         </span>
-                      <input type="file" class="file-upload-default">
-                      <div class="input-group col-xs-12">
-                        <input type="text" class="form-control file-upload-info" disabled="" placeholder="Upload Xlsx File">
-                        <span class="input-group-append">
-                          <button class="file-upload-browse btn btn-primary" type="button">Upload</button>
-                        </span>
-                      </div>
+                                    </div>
+                                </div>
+                                <button type="submit" id="submit-excel-button" class="btn btn-primary me-2">Submit</button>
+                                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+                            </form>
+                        </div>
                     </div>
-                    <button type="submit" class="btn btn-primary me-2">Submit</button>
-                    <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
-                  </form>
-                </div>
-              </div>
 
+                </div>
             </div>
-          </div>
         </div>
     </div>
 
 
-    <div class="modal fade" id="select-table-modal" tabindex="-1" style="display: none;" aria-hidden="true"  data-bs-backdrop="static" data-bs-keyboard="false">
-        <div class="modal-dialog"  style=" ">
-          <div class="modal-content"  style="width:600px;">
-            <div class="modal-header">
-              <h5 class="modal-title" id="select-table-modal-label">Select table</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div class="card">
-                <div class="card-body">
-                    <h4>Select table uploaded before.</h4>
-
-
-                    <table class="table table-sm caption-top meta-table text-muted">
-                      <tbody>
-                        <tr>
-                          <th>
-                            <div style="width:100px;">
-                              Table Name
-                            </div>
-                          </th>
-                          <th>
-                            <div>
-                              Action
-                            </div>
-                          </th>
-                        </tr>
-                        <tr>
-                          <td>
-                            <div style="width:100px;">
-                              <b>MyTable01</b>
-                            </div>
-                          </td>
-                          <td>
-                            <div class="row">
-                              <div class="col-md-8">
-                                <button type="button" class="btn btn-success " style="width:200px">Use This Table</button>
-                              </div>
-                              <div class="col-md-4">
-                                <button type="button" class="btn btn-danger ">Delete</button>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr>
-                          <td>
-                            <div style="width:100px;">
-                              <b>a</b>
-                            </div>
-                          </td>
-                          <td>
-                            <div class="row">
-                              <div class="col-md-8">
-                                <button type="button" class="btn btn-success " style="width:200px">Use This Table</button>
-                              </div>
-                              <div class="col-md-4">
-                                <button type="button" class="btn btn-danger ">Delete</button>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-                        <tr class="">
-                          <td>
-                            <div style="width:100px;">
-                              <b>这个表格的名字特别长而且是中文</b>
-                            </div>
-                          </td>
-                          <td>
-                            <div class="row">
-                              <div class="col-md-8">
-                                <button type="button" class="btn btn-success " style="width:200px">Use This Table</button>
-                              </div>
-                              <div class="col-md-4">
-                                <button type="button" class="btn btn-danger ">Delete</button>
-                              </div>
-                            </div>
-                          </td>
-                        </tr>
-
-                      </tbody>
-                    </table>
+    <div class="modal fade" id="select-table-modal" tabindex="-1" style="display: none;" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog" style=" ">
+            <div class="modal-content" style="width:600px;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="select-table-modal-label">Select table</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
+                <div class="modal-body">
+                    <div class="card">
+                        <div class="card-body">
+                            <h4>Select table uploaded before.</h4>
 
-              </div>
+
+                            <table class="table table-sm caption-top meta-table text-muted">
+                                <tbody>
+                                    <tr>
+                                        <th>
+                                            <div style="width:100px;">
+                                                Table Name
+                                            </div>
+                                        </th>
+                                        <th>
+                                            <div>
+                                                Action
+                                            </div>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div style="width:100px;">
+                                                <b>MyTable01</b>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <button type="button" class="btn btn-success " style="width:200px">Use This Table</button>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <button type="button" class="btn btn-danger ">Delete</button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div style="width:100px;">
+                                                <b>a</b>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <button type="button" class="btn btn-success " style="width:200px">Use This Table</button>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <button type="button" class="btn btn-danger ">Delete</button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="">
+                                        <td>
+                                            <div style="width:100px;">
+                                                <b>这个表格的名字特别长而且是中文</b>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="row">
+                                                <div class="col-md-8">
+                                                    <button type="button" class="btn btn-success " style="width:200px">Use This Table</button>
+                                                </div>
+                                                <div class="col-md-4">
+                                                    <button type="button" class="btn btn-danger ">Delete</button>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-          </div>
         </div>
     </div>
 
 
-    <div class="modal fade" id="download-custom-table-modal" tabindex="-1" style="display: none;" aria-hidden="true"  data-bs-backdrop="static" data-bs-keyboard="false">
-        <div class="modal-dialog"  style=" ">
-          <div class="modal-content"  style="width:600px;">
-            <div class="modal-header">
-              <h5 class="modal-title" id="download-custom-table-modal-label">Download Table</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              <div class="card">
-                <div class="card-body">
-                  <form class="forms-sample">
-                      <h4>Select the configuration and download the table.</h4>
-                      <div class="form-group">
-                        <label >File Format</label>
+    <div class="modal fade" id="download-custom-table-modal" tabindex="-1" style="display: none;" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
+        <div class="modal-dialog" style=" ">
+            <div class="modal-content" style="width:600px;">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="download-custom-table-modal-label">Download Table</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="card">
+                        <div class="card-body">
+                            <form class="forms-sample">
+                                <h4>Select the configuration and download the table.</h4>
+                                <div class="form-group">
+                                    <label>File Format</label>
 
-                        <div>
-                            <select id="download-format-select" class="form-control text-dark">
+                                    <div>
+                                        <select id="download-format-select" class="form-control text-dark">
                               <option  selected="xlsx">xlsx</option>
                               <option>txt</option>
                               <option>json</option>
                               <option>csv</option>
                               <option>html</option>
                             </select>
-                        </div>
+                                    </div>
 
-                      </div>
-                      <button type="submit" class="btn btn-primary me-2">Download</button>
-                      <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
-                  </form>
+                                </div>
+                                <button type="submit" class="btn btn-primary me-2">Download</button>
+                                <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
+                            </form>
+
+                        </div>
+                    </div>
 
                 </div>
-              </div>
-
             </div>
-          </div>
         </div>
     </div>
 
