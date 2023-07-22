@@ -123,16 +123,16 @@ def statistics_default_table_information(dataset_name, split, table_idx, propert
         "text": {(index + 1): value for index, value in enumerate(table_data.txt_info)},  # 如果无，返回{}
         "success": True
     }
-    print("table_cnt\n", dataset_obj.get_example_count(split))
-    print("generated_results\n", generated_results)
-    print("dataset_info\n", dataset_obj.get_info())
-    print("table_question\n", table_data.default_question)
-    with open("properties.html", "w", encoding="utf-8") as file:
-        file.write(properties_html)
-    with open("table.html", "w", encoding="utf-8") as file:
-        file.write(table_html)
-    print("pictures\n", table_data.pic_info)
-    print("text\n", {(index + 1): value for index, value in enumerate(table_data.txt_info)})
+    # print("table_cnt\n", dataset_obj.get_example_count(split))
+    # print("generated_results\n", generated_results)
+    # print("dataset_info\n", dataset_obj.get_info())
+    # print("table_question\n", table_data.default_question)
+    # with open("properties.html", "w", encoding="utf-8") as file:
+    #     file.write(properties_html)
+    # with open("table.html", "w", encoding="utf-8") as file:
+    #     file.write(table_html)
+    # print("pictures\n", table_data.pic_info)
+    # print("text\n", {(index + 1): value for index, value in enumerate(table_data.txt_info)})
     return data
 # done
 @app.route("/default/table", methods=["GET", "POST"])
@@ -148,11 +148,12 @@ def fetch_default_table_data():
         propertie_name_list = []
         # testing
         data = statistics_default_table_information(dataset_name, split, table_idx, propertie_name_list)
+        return jsonify(data),200
 
     except Exception as e:
         logger.error(f"Fetch Table Error: {e}")
         data = {"success": False}
-    return jsonify(data)
+        return jsonify(data),400 
 
 
 def fetch_generated_outputs(dataset_name, split, table_idx):
@@ -198,17 +199,17 @@ def fetch_custom_table_data():
                 "properties_html": properties_html,
                 "success": True
             }
-            with open("properties.html", "w", encoding="utf-8") as file:
-                file.write(properties_html)
-            with open("table.html", "w", encoding="utf-8") as file:
-                file.write(table_html)
+            # with open("properties.html", "w", encoding="utf-8") as file:
+            #     file.write(properties_html)
+            # with open("table.html", "w", encoding="utf-8") as file:
+            #     file.write(table_html)
+            return jsonify(data),200
         else:
             raise Exception("fetch non-existent tables in session")
     except Exception as e:
         logger.error(f"Fetch Table Error: {e}")
         data = {"success": False}
-
-    return jsonify(data)
+        return jsonify(data),400
 
 # done
 @app.route("/custom/remove", methods=["GET", "POST"])
@@ -225,11 +226,11 @@ def remove_custom_table():
         session["custom_tables"] = custom_tables
         session.modified = True
         result = {"success" : True}
+        return jsonify(result),200
     except Exception as e:
         logger.error(f"Remove Table Error: {e}")
         result = {"success" : False}
-
-    return jsonify(result)
+        return jsonify(result),400
 
 # done
 @app.route("/session", methods=["GET", "POST"])
@@ -243,13 +244,14 @@ def get_session():
                 "data" : list(session.get("custom_tables", {}).keys()),
                 "success" : True
             }
+            return jsonify(data),200
         else:
             raise Exception("Illegal Target")
     except Exception as e:
         logger.error(f"Get Session Error: {e}")
         data = {"success" : False}
-
-    return jsonify(data)
+        return jsonify(data),400
+    
 
 
 @app.route("/pipeline", methods=["GET", "POST"])
@@ -284,12 +286,13 @@ def upload_custom_table():
         session["custom_tables"] = custom_tables
         session.modified = True
         result = {"success" : True}
-
+        return jsonify(result),200
     except Exception as e:
         logger.error(f"Upload Table Error: {e}")
         result = {"success" : False}
+        return jsonify(result),400
 
-    return jsonify(result)
+    
 
 
 def prepare_custom_table(headers, data, properties, table_name):
@@ -333,7 +336,7 @@ def download_table(format, table_data, include_props, file_name):
             mimetype="text/plain",
             download_name=f"{file_name}.{format}",
             as_attachment=True
-        )
+        ),200
     elif format == "json":
         content = export.table_to_json(table_data, include_props)
         json_data = json.dumps(content)
@@ -344,7 +347,7 @@ def download_table(format, table_data, include_props, file_name):
             mimetype='application/json',
             download_name=f"{file_name}.{format}",
             as_attachment=True
-        )
+        ),200
 
     elif format == "xlsx":
         file_stream = export.table_to_excel(table_data, include_props)
@@ -354,7 +357,7 @@ def download_table(format, table_data, include_props, file_name):
             mimetype='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
             download_name=f"{file_name}.{format}",
             as_attachment=True,
-        )
+        ),200
 
     elif format == "csv":
         content = export.table_to_csv(table_data)
@@ -365,7 +368,7 @@ def download_table(format, table_data, include_props, file_name):
             mimetype="text/csv",
             download_name=f"{file_name}.{format}",
             as_attachment=True
-        )
+        ),200
     elif format == "html":
         content = export.table_to_html(table_data, None, include_props, "export", merge=True)
         file_stream = BytesIO(content.encode('utf-8'))
@@ -375,7 +378,7 @@ def download_table(format, table_data, include_props, file_name):
             mimetype="text/html",
             download_name=f"{file_name}.{format}",
             as_attachment=True
-        )
+        ),200
     else:
         raise Exception("illegal format")
 # done
@@ -385,10 +388,9 @@ def download_custom_table():
 
         json_file = request.json
         format = json_file.get('format')
-        include_props = json_file.get('include_props')
         table_name = json_file.get('table_name')
         # format = "json"
-        # include_props = True
+        include_props = False
         # table_name = "我的自定义表格1"
 
         custom_tables = session.get("custom_tables", {})
@@ -399,7 +401,7 @@ def download_custom_table():
             raise Exception("download non-existent tables in session")
     except Exception as e:
         logger.error(f"Download Table Error: {e}")
-        return jsonify({"success" : False})
+        return jsonify({"success" : False}),400
 # done
 @app.route("/default/download", methods=["GET", "POST"])
 def download_default_table():
@@ -428,7 +430,7 @@ def download_default_table():
         return download_table(format, table_data, include_props, f"{dataset_name}_{split}_{table_idx}")
     except Exception as e:
         logger.error(f"Download Table Error: {e}")
-        return jsonify({"success" : False})
+        return jsonify({"success" : False}),400
 # done
 @app.route("/custom", methods=["GET", "POST"])
 def custom_mode():
@@ -442,31 +444,31 @@ def download_file_example():
             as_attachment=True,
             mimetype='application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',
             download_name="example.xlsx"
-        )
+        ),200
         return file_response
     except Exception as e:
         logger.error(f"Download Example Error: {e}")
-        return jsonify({"success" : False})
+        return jsonify({"success" : False}),400
 
 # done
 @app.route("/", methods=["GET", "POST"])
 def index():
 
     # try:
-    dataset_name = app.config['default_dataset']
-    split = "train"
-    table_idx = 0
-    propertie_name_list = []
-    logger.info(f"Page loaded")
-    data = statistics_default_table_information(dataset_name, split, table_idx, propertie_name_list)
+    #     dataset_name = app.config['default_dataset']
+    #     split = "train"
+    #     table_idx = 0
+    #     propertie_name_list = []
+    #     logger.info(f"Page loaded")
+    #     data = statistics_default_table_information(dataset_name, split, table_idx, propertie_name_list)
     # except Exception as e:
-        # logger.error(f"Fetch initial Table Error: {e}")
-        # data = {"success": False}
+    #     logger.error(f"Fetch initial Table Error: {e}")
+    #     data = {"success": False}
 
 
     return render_template(
-        "index.html",
-        table_data = data  #--这样传没有jsonfiy应该是可以的--
+        "index.html"
+        # table_data = data  #--这样传没有jsonfiy应该是可以的--
     )
 
 # with app.app_context():

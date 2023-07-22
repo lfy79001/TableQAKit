@@ -281,3 +281,13 @@ Traceback (most recent call last):
   File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 84, in create_dataset
     dataset_obj = DATASET_CLASSES[dataset_name]()
 KeyError: 'mmqa'
+Fetch Table Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+Download Table Error: illegal format
+Get Session Error: Illegal Target
+Fetch Table Error: datasets hybriqa not found
+Fetch Table Error: fetch non-existent tables in session
+Remove Table Error: delete non-existent tables in session
+Upload Table Error: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Upload Table Error: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Download Table Error: download non-existent tables in session
+Download Table Error: datasets None not found
