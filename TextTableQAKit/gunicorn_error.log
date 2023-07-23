@@ -278,3 +278,17 @@ AttributeError: 'CORS' object has no attribute 'route'
 [2023-07-23 04:57:50 +0000] [2320] [INFO] Listening at: http://210.75.240.136:18889 (2320)
 [2023-07-23 04:57:50 +0000] [2320] [INFO] Using worker: sync
 [2023-07-23 04:57:50 +0000] [2322] [INFO] Booting worker with pid: 2322
+[2023-07-23 05:24:23 +0000] [2320] [INFO] Handling signal: term
+[2023-07-23 05:24:23 +0000] [2322] [INFO] Worker exiting (pid: 2322)
+[2023-07-23 05:24:23 +0000] [2320] [INFO] Shutting down: Master
+[2023-07-23 05:24:26 +0000] [4160] [INFO] Starting gunicorn 21.2.0
+[2023-07-23 05:24:26 +0000] [4160] [INFO] Listening at: http://210.75.240.136:18889 (4160)
+[2023-07-23 05:24:26 +0000] [4160] [INFO] Using worker: sync
+[2023-07-23 05:24:26 +0000] [4162] [INFO] Booting worker with pid: 4162
+[2023-07-23 05:27:10 +0000] [4160] [INFO] Handling signal: term
+[2023-07-23 05:27:10 +0000] [4162] [INFO] Worker exiting (pid: 4162)
+[2023-07-23 05:27:11 +0000] [4160] [INFO] Shutting down: Master
+[2023-07-23 05:27:12 +0000] [4431] [INFO] Starting gunicorn 21.2.0
+[2023-07-23 05:27:12 +0000] [4431] [INFO] Listening at: http://210.75.240.136:18889 (4431)
+[2023-07-23 05:27:12 +0000] [4431] [INFO] Using worker: sync
+[2023-07-23 05:27:12 +0000] [4433] [INFO] Booting worker with pid: 4433
