@@ -1,25 +1,7 @@
 var model = 'T5-small';
-
-
-function uploadFile() {
-    console.log('upload file');
-    var files = $('#file-selector')[0].files
-    if (files.length > 0) {
-        var fd = new FormData()
-        fd.append('excel_file', files[0])
-        $.ajax({
-            method: 'POST',
-            url: '/custom/upload',
-            data: fd,
-            processData: false,
-            contentType: false,
-            success: function(res) {
-                console.log(res);
-            }
-
-        })
-    }
-}
+var host = '210.75.240.136';
+var port = '18889';
+var url = '';
 
 function download_table() {
     console.log('download table');
@@ -45,11 +27,58 @@ function selectFile() {
     $('#file-selector').click();
 }
 
+function submitExcelFile() {
+    var files = $('#table-file-input')[0].files[0]
+    if (files.length == 0) {
+        alert('Please Select File First');
+    }
+    var data = new FormData();
+    data.append('files', files);
+    data.append('table_name', $('#table-name-input').val());
+    $.ajax({
+        method: 'POST',
+        url: url + '/custom/upload',
+        data: fd,
+        processData: false,
+        contentType: false,
+        success: function(res) {
+            console.log(res);
+        }
+    });
+}
+
+function changeSelectedExcelFile() {
+    console.log('get file selected changed');
+    $('#selected-file-name').val($('#table-file-input')[0].files[0].name);
+}
+
+function downloadExcel() {
+    $.get(url + '/custom/download', {
+        'format': '',
+        'include_props': '',
+        'dataset_name': '',
+        'splite': '',
+        'table_idx': ''
+    }, (data, status) => {
+        console.log(status);
+        if (status === 'success') {
+            var downloadUrl = window.URL.createObjectURL(data);
+            window.location.href = downloadUrl;
+        }
+    });
+}
+
 $(document).ready(() => {
+    url = 'http://' + host + ':' + port;
     $('#switchToIndex').click(function() {
         window.location.href = 'index.html';
     });
     $('#get-question-button').click(getAnswer);
     $('#upload-table').click(selectFile);
-    $('#file-selector').change(uploadFile);
+    $('#submit-excel-button').click(submitExcelFile);
+    $('#select-excel-button').click(() => {
+        $('#table-file-input').click()
+    });
+    $('#table-file-input').change(changeSelectedExcelFile);
+    $('down-excel').change(downloadExcel);
 });

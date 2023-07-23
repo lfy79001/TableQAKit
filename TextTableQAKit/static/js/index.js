@@ -10,6 +10,9 @@ var properties_html = '';
 var table_html = '';
 var pictures = {};
 var text = {};
+var host = '210.75.240.136';
+var port = '18889';
+var url = '';
 
 function mod(n, m) {
     return ((n % m) + m) % m;
@@ -66,7 +69,7 @@ function changeTotalexamples() {
 }
 
 function getData() {
-    $.get('/table/default', { 'dataset_name': dataset, 'split': split, 'table_idx': table_idx },
+    $.get('http://' + host + ':' + port + '/table/default', { 'dataset_name': dataset, 'split': split, 'table_idx': table_idx },
         (data, status) => {
             log.console(status);
             log.console(data);
@@ -120,6 +123,22 @@ function gotopage(page) {
     $("#page-input").val(table_idx);
 }
 
+function downloadTable() {
+    $.get(url + '/default/download', {
+        'format': $('download-format-select').val(),
+        'include_props': $('includes-properties').val(),
+        'dataset_name': dataset,
+        'splite': split,
+        'table_idx': table_idx
+    }, (data, status) => {
+        console.log(status);
+        if (status === 'success') {
+            var downloadUrl = window.URL.createObjectURL(data);
+            window.location.href = downloadUrl;
+        }
+    });
+}
+
 function init_page() {
     table_cnt = 0;
     total_examples = 1;
@@ -133,6 +152,7 @@ function init_page() {
 }
 
 $(document).ready(() => {
+    url = "http://" + host + ':' + port;
     $('#dataset-select').val(dataset);
     $('#splite-select').val(split);
     $('#default-model-select').val(default_model);
@@ -151,4 +171,5 @@ $(document).ready(() => {
         }
     });
     $('#get-question-button').click(getAnswer);
+    $('#download-table').click(downloadTable);
 });
