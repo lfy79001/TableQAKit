@@ -46,7 +46,8 @@ def init_app():
     flask_app.config.update(config)
     return flask_app
 
-app = CORS(init_app()) 
+app = init_app()
+CORS(app)
 
 def init_log():
     log_format = "%(levelname)s:"
