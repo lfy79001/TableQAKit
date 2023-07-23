@@ -1,0 +1,280 @@
+[2023-07-20 10:02:09 +0000] [1471166] [INFO] Starting gunicorn 21.2.0
+[2023-07-20 10:02:09 +0000] [1471166] [ERROR] Connection in use: ('210.75.240.136', 18888)
+[2023-07-20 10:02:09 +0000] [1471166] [ERROR] Retrying in 1 second.
+[2023-07-20 10:02:10 +0000] [1471166] [ERROR] Connection in use: ('210.75.240.136', 18888)
+[2023-07-20 10:02:10 +0000] [1471166] [ERROR] Retrying in 1 second.
+[2023-07-20 10:02:11 +0000] [1471166] [ERROR] Connection in use: ('210.75.240.136', 18888)
+[2023-07-20 10:02:11 +0000] [1471166] [ERROR] Retrying in 1 second.
+[2023-07-20 10:02:12 +0000] [1471166] [ERROR] Connection in use: ('210.75.240.136', 18888)
+[2023-07-20 10:02:12 +0000] [1471166] [ERROR] Retrying in 1 second.
+[2023-07-20 10:02:13 +0000] [1471166] [ERROR] Connection in use: ('210.75.240.136', 18888)
+[2023-07-20 10:02:13 +0000] [1471166] [ERROR] Retrying in 1 second.
+[2023-07-20 10:02:14 +0000] [1471166] [ERROR] Can't connect to ('210.75.240.136', 18888)
+[2023-07-20 10:06:09 +0000] [1480881] [INFO] Starting gunicorn 21.2.0
+[2023-07-20 10:06:09 +0000] [1480881] [INFO] Listening at: http://210.75.240.136:18888 (1480881)
+[2023-07-20 10:06:09 +0000] [1480881] [INFO] Using worker: sync
+[2023-07-20 10:06:09 +0000] [1480883] [INFO] Booting worker with pid: 1480883
+[2023-07-20 10:06:45 +0000] [1480881] [CRITICAL] WORKER TIMEOUT (pid:1480883)
+[2023-07-20 10:06:45 +0000] [1480883] [INFO] Worker exiting (pid: 1480883)
+[2023-07-20 10:06:45 +0000] [1480881] [ERROR] Worker (pid:1480883) exited with code 1
+[2023-07-20 10:06:45 +0000] [1480881] [ERROR] Worker (pid:1480883) exited with code 1.
+[2023-07-20 10:06:45 +0000] [1481592] [INFO] Booting worker with pid: 1481592
+[2023-07-20 10:19:17 +0000] [1480881] [ERROR] Worker (pid:1481592) was sent SIGKILL! Perhaps out of memory?
+[2023-07-20 10:19:17 +0000] [1499503] [INFO] Booting worker with pid: 1499503
+[2023-07-20 10:19:21 +0000] [1499649] [INFO] Starting gunicorn 21.2.0
+[2023-07-20 10:19:21 +0000] [1499649] [ERROR] Connection in use: ('210.75.240.136', 18888)
+[2023-07-20 10:19:21 +0000] [1499649] [ERROR] Retrying in 1 second.
+[2023-07-20 10:19:22 +0000] [1499649] [ERROR] Connection in use: ('210.75.240.136', 18888)
+[2023-07-20 10:19:22 +0000] [1499649] [ERROR] Retrying in 1 second.
+[2023-07-20 10:19:23 +0000] [1499649] [ERROR] Connection in use: ('210.75.240.136', 18888)
+[2023-07-20 10:19:23 +0000] [1499649] [ERROR] Retrying in 1 second.
+[2023-07-20 10:19:24 +0000] [1499649] [ERROR] Connection in use: ('210.75.240.136', 18888)
+[2023-07-20 10:19:24 +0000] [1499649] [ERROR] Retrying in 1 second.
+[2023-07-20 10:19:25 +0000] [1499649] [ERROR] Connection in use: ('210.75.240.136', 18888)
+[2023-07-20 10:19:25 +0000] [1499649] [ERROR] Retrying in 1 second.
+[2023-07-20 10:19:26 +0000] [1499649] [ERROR] Can't connect to ('210.75.240.136', 18888)
+[2023-07-20 10:56:50 +0000] [1480881] [ERROR] Worker (pid:1499503) was sent SIGKILL! Perhaps out of memory?
+[2023-07-20 10:56:50 +0000] [1556305] [INFO] Booting worker with pid: 1556305
+[2023-07-20 10:56:53 +0000] [1556448] [INFO] Starting gunicorn 21.2.0
+[2023-07-20 10:56:53 +0000] [1556448] [ERROR] Connection in use: ('210.75.240.136', 18888)
+[2023-07-20 10:56:53 +0000] [1556448] [ERROR] Retrying in 1 second.
+[2023-07-20 10:56:54 +0000] [1556448] [ERROR] Connection in use: ('210.75.240.136', 18888)
+[2023-07-20 10:56:54 +0000] [1556448] [ERROR] Retrying in 1 second.
+[2023-07-20 10:56:55 +0000] [1556448] [ERROR] Connection in use: ('210.75.240.136', 18888)
+[2023-07-20 10:56:55 +0000] [1556448] [ERROR] Retrying in 1 second.
+[2023-07-20 10:56:56 +0000] [1556448] [ERROR] Connection in use: ('210.75.240.136', 18888)
+[2023-07-20 10:56:56 +0000] [1556448] [ERROR] Retrying in 1 second.
+[2023-07-20 10:56:57 +0000] [1556448] [ERROR] Connection in use: ('210.75.240.136', 18888)
+[2023-07-20 10:56:57 +0000] [1556448] [ERROR] Retrying in 1 second.
+[2023-07-20 10:56:58 +0000] [1556448] [ERROR] Can't connect to ('210.75.240.136', 18888)
+[2023-07-20 10:57:56 +0000] [1480881] [CRITICAL] WORKER TIMEOUT (pid:1556305)
+[2023-07-20 10:57:56 +0000] [1556305] [INFO] Worker exiting (pid: 1556305)
+[2023-07-20 10:57:56 +0000] [1480881] [ERROR] Worker (pid:1556305) exited with code 1
+[2023-07-20 10:57:56 +0000] [1480881] [ERROR] Worker (pid:1556305) exited with code 1.
+[2023-07-20 10:57:56 +0000] [1557478] [INFO] Booting worker with pid: 1557478
+[2023-07-20 11:00:55 +0000] [1480881] [ERROR] Worker (pid:1557478) was sent SIGKILL! Perhaps out of memory?
+[2023-07-20 11:00:55 +0000] [1563027] [INFO] Booting worker with pid: 1563027
+[2023-07-20 11:01:30 +0000] [1480881] [CRITICAL] WORKER TIMEOUT (pid:1563027)
+[2023-07-20 11:01:30 +0000] [1563027] [INFO] Worker exiting (pid: 1563027)
+[2023-07-20 11:01:30 +0000] [1480881] [ERROR] Worker (pid:1563027) exited with code 1
+[2023-07-20 11:01:30 +0000] [1480881] [ERROR] Worker (pid:1563027) exited with code 1.
+[2023-07-20 11:01:30 +0000] [1563772] [INFO] Booting worker with pid: 1563772
+[2023-07-20 11:02:49 +0000] [1563772] [INFO] Parent changed, shutting down: <Worker 1563772>
+[2023-07-20 11:02:49 +0000] [1563772] [INFO] Worker exiting (pid: 1563772)
+[2023-07-20 11:30:28 +0000] [1587198] [INFO] Starting gunicorn 21.2.0
+[2023-07-20 11:30:28 +0000] [1587198] [ERROR] Connection in use: ('210.75.240.136', 18888)
+[2023-07-20 11:30:28 +0000] [1587198] [ERROR] Retrying in 1 second.
+[2023-07-20 11:30:29 +0000] [1587198] [ERROR] Connection in use: ('210.75.240.136', 18888)
+[2023-07-20 11:30:29 +0000] [1587198] [ERROR] Retrying in 1 second.
+[2023-07-20 11:30:30 +0000] [1587198] [ERROR] Connection in use: ('210.75.240.136', 18888)
+[2023-07-20 11:30:30 +0000] [1587198] [ERROR] Retrying in 1 second.
+[2023-07-20 11:30:31 +0000] [1587198] [ERROR] Connection in use: ('210.75.240.136', 18888)
+[2023-07-20 11:30:31 +0000] [1587198] [ERROR] Retrying in 1 second.
+[2023-07-20 11:30:32 +0000] [1587198] [ERROR] Connection in use: ('210.75.240.136', 18888)
+[2023-07-20 11:30:32 +0000] [1587198] [ERROR] Retrying in 1 second.
+[2023-07-20 11:30:33 +0000] [1587198] [ERROR] Can't connect to ('210.75.240.136', 18888)
+[2023-07-20 11:54:45 +0000] [1602385] [INFO] Starting gunicorn 21.2.0
+[2023-07-20 11:54:45 +0000] [1602385] [INFO] Listening at: http://210.75.240.136:18889 (1602385)
+[2023-07-20 11:54:45 +0000] [1602385] [INFO] Using worker: sync
+[2023-07-20 11:54:45 +0000] [1602387] [INFO] Booting worker with pid: 1602387
+[2023-07-20 11:57:13 +0000] [1602387] [INFO] Worker exiting (pid: 1602387)
+[2023-07-20 11:57:14 +0000] [1605241] [INFO] Booting worker with pid: 1605241
+[2023-07-20 11:57:29 +0000] [1602385] [INFO] Handling signal: term
+[2023-07-20 11:57:29 +0000] [1605241] [INFO] Worker exiting (pid: 1605241)
+[2023-07-20 11:57:29 +0000] [1602385] [INFO] Shutting down: Master
+[2023-07-20 11:58:16 +0000] [1605501] [INFO] Starting gunicorn 21.2.0
+[2023-07-20 11:58:16 +0000] [1605501] [INFO] Listening at: http://210.75.240.136:18889 (1605501)
+[2023-07-20 11:58:16 +0000] [1605501] [INFO] Using worker: sync
+[2023-07-20 11:58:16 +0000] [1605503] [INFO] Booting worker with pid: 1605503
+[2023-07-20 12:00:39 +0000] [1605501] [INFO] Handling signal: term
+[2023-07-20 12:00:39 +0000] [1605503] [INFO] Worker exiting (pid: 1605503)
+[2023-07-20 12:00:40 +0000] [1605501] [INFO] Shutting down: Master
+[2023-07-21 13:46:05 +0000] [2609966] [INFO] Starting gunicorn 21.2.0
+[2023-07-21 13:46:05 +0000] [2609966] [INFO] Listening at: http://210.75.240.136:18889 (2609966)
+[2023-07-21 13:46:05 +0000] [2609966] [INFO] Using worker: sync
+[2023-07-21 13:46:05 +0000] [2609968] [INFO] Booting worker with pid: 2609968
+[2023-07-21 13:50:41 +0000] [2609966] [INFO] Handling signal: term
+[2023-07-21 13:50:41 +0000] [2609968] [INFO] Worker exiting (pid: 2609968)
+[2023-07-21 13:50:41 +0000] [2609966] [INFO] Shutting down: Master
+[2023-07-21 13:52:35 +0000] [2613302] [INFO] Starting gunicorn 21.2.0
+[2023-07-21 13:52:35 +0000] [2613302] [INFO] Listening at: http://210.75.240.136:18889 (2613302)
+[2023-07-21 13:52:35 +0000] [2613302] [INFO] Using worker: sync
+[2023-07-21 13:52:35 +0000] [2613304] [INFO] Booting worker with pid: 2613304
+[2023-07-22 06:30:44 +0000] [2613302] [CRITICAL] WORKER TIMEOUT (pid:2613304)
+[2023-07-22 06:30:44 +0000] [2613304] [INFO] Worker exiting (pid: 2613304)
+[2023-07-22 06:30:44 +0000] [2613302] [ERROR] Worker (pid:2613304) exited with code 1
+[2023-07-22 06:30:44 +0000] [2613302] [ERROR] Worker (pid:2613304) exited with code 1.
+[2023-07-22 06:30:44 +0000] [3297746] [INFO] Booting worker with pid: 3297746
+[2023-07-22 06:31:29 +0000] [2613302] [CRITICAL] WORKER TIMEOUT (pid:3297746)
+[2023-07-22 06:31:29 +0000] [3297746] [INFO] Worker exiting (pid: 3297746)
+[2023-07-22 06:31:30 +0000] [2613302] [ERROR] Worker (pid:3297746) exited with code 1
+[2023-07-22 06:31:30 +0000] [2613302] [ERROR] Worker (pid:3297746) exited with code 1.
+[2023-07-22 06:31:30 +0000] [3297839] [INFO] Booting worker with pid: 3297839
+[2023-07-22 06:32:43 +0000] [2613302] [CRITICAL] WORKER TIMEOUT (pid:3297839)
+[2023-07-22 06:32:43 +0000] [3297839] [INFO] Worker exiting (pid: 3297839)
+[2023-07-22 06:32:44 +0000] [2613302] [ERROR] Worker (pid:3297839) exited with code 1
+[2023-07-22 06:32:44 +0000] [2613302] [ERROR] Worker (pid:3297839) exited with code 1.
+[2023-07-22 06:32:44 +0000] [3297927] [INFO] Booting worker with pid: 3297927
+[2023-07-22 06:33:44 +0000] [2613302] [CRITICAL] WORKER TIMEOUT (pid:3297927)
+[2023-07-22 06:33:44 +0000] [3297927] [INFO] Worker exiting (pid: 3297927)
+[2023-07-22 06:33:45 +0000] [2613302] [ERROR] Worker (pid:3297927) exited with code 1
+[2023-07-22 06:33:45 +0000] [2613302] [ERROR] Worker (pid:3297927) exited with code 1.
+[2023-07-22 06:33:45 +0000] [3298004] [INFO] Booting worker with pid: 3298004
+[2023-07-22 06:41:24 +0000] [2613302] [CRITICAL] WORKER TIMEOUT (pid:3298004)
+[2023-07-22 06:41:24 +0000] [3298004] [INFO] Worker exiting (pid: 3298004)
+[2023-07-22 06:41:25 +0000] [2613302] [ERROR] Worker (pid:3298004) exited with code 1
+[2023-07-22 06:41:25 +0000] [2613302] [ERROR] Worker (pid:3298004) exited with code 1.
+[2023-07-22 06:41:25 +0000] [3306003] [INFO] Booting worker with pid: 3306003
+[2023-07-22 07:03:41 +0000] [2613302] [CRITICAL] WORKER TIMEOUT (pid:3306003)
+[2023-07-22 07:03:41 +0000] [3306003] [INFO] Worker exiting (pid: 3306003)
+[2023-07-22 07:03:42 +0000] [2613302] [ERROR] Worker (pid:3306003) exited with code 1
+[2023-07-22 07:03:42 +0000] [2613302] [ERROR] Worker (pid:3306003) exited with code 1.
+[2023-07-22 07:03:42 +0000] [3321327] [INFO] Booting worker with pid: 3321327
+[2023-07-22 07:06:07 +0000] [2613302] [INFO] Handling signal: term
+[2023-07-22 07:06:27 +0000] [3325254] [INFO] Starting gunicorn 21.2.0
+[2023-07-22 07:06:27 +0000] [3325254] [ERROR] Connection in use: ('210.75.240.136', 18889)
+[2023-07-22 07:06:27 +0000] [3325254] [ERROR] Retrying in 1 second.
+[2023-07-22 07:06:28 +0000] [3325254] [ERROR] Connection in use: ('210.75.240.136', 18889)
+[2023-07-22 07:06:28 +0000] [3325254] [ERROR] Retrying in 1 second.
+[2023-07-22 07:06:29 +0000] [3325254] [ERROR] Connection in use: ('210.75.240.136', 18889)
+[2023-07-22 07:06:29 +0000] [3325254] [ERROR] Retrying in 1 second.
+[2023-07-22 07:06:30 +0000] [3325254] [ERROR] Connection in use: ('210.75.240.136', 18889)
+[2023-07-22 07:06:30 +0000] [3325254] [ERROR] Retrying in 1 second.
+[2023-07-22 07:06:31 +0000] [3325254] [ERROR] Connection in use: ('210.75.240.136', 18889)
+[2023-07-22 07:06:31 +0000] [3325254] [ERROR] Retrying in 1 second.
+[2023-07-22 07:06:32 +0000] [3325254] [ERROR] Can't connect to ('210.75.240.136', 18889)
+[2023-07-22 07:06:37 +0000] [2613302] [INFO] Shutting down: Master
+[2023-07-22 07:08:52 +0000] [3325556] [INFO] Starting gunicorn 21.2.0
+[2023-07-22 07:08:52 +0000] [3325556] [INFO] Listening at: http://210.75.240.136:18889 (3325556)
+[2023-07-22 07:08:52 +0000] [3325556] [INFO] Using worker: sync
+[2023-07-22 07:08:52 +0000] [3325558] [INFO] Booting worker with pid: 3325558
+[2023-07-22 07:22:38 +0000] [3325556] [CRITICAL] WORKER TIMEOUT (pid:3325558)
+[2023-07-22 07:22:38 +0000] [3325558] [INFO] Worker exiting (pid: 3325558)
+[2023-07-22 07:22:39 +0000] [3325556] [ERROR] Worker (pid:3325558) exited with code 1
+[2023-07-22 07:22:39 +0000] [3325556] [ERROR] Worker (pid:3325558) exited with code 1.
+[2023-07-22 07:22:39 +0000] [3337172] [INFO] Booting worker with pid: 3337172
+[2023-07-22 07:26:51 +0000] [3325556] [CRITICAL] WORKER TIMEOUT (pid:3337172)
+[2023-07-22 07:26:51 +0000] [3337172] [INFO] Worker exiting (pid: 3337172)
+[2023-07-22 07:26:52 +0000] [3325556] [ERROR] Worker (pid:3337172) was sent SIGKILL! Perhaps out of memory?
+[2023-07-22 07:26:52 +0000] [3342479] [INFO] Booting worker with pid: 3342479
+[2023-07-22 07:27:56 +0000] [3325556] [CRITICAL] WORKER TIMEOUT (pid:3342479)
+[2023-07-22 07:27:56 +0000] [3342479] [INFO] Worker exiting (pid: 3342479)
+[2023-07-22 07:27:57 +0000] [3325556] [ERROR] Worker (pid:3342479) was sent SIGKILL! Perhaps out of memory?
+[2023-07-22 07:27:57 +0000] [3342544] [INFO] Booting worker with pid: 3342544
+[2023-07-22 07:29:37 +0000] [3325556] [CRITICAL] WORKER TIMEOUT (pid:3342544)
+[2023-07-22 07:29:37 +0000] [3342544] [INFO] Worker exiting (pid: 3342544)
+[2023-07-22 07:29:38 +0000] [3325556] [ERROR] Worker (pid:3342544) was sent SIGKILL! Perhaps out of memory?
+[2023-07-22 07:29:38 +0000] [3342650] [INFO] Booting worker with pid: 3342650
+[2023-07-22 07:33:01 +0000] [3325556] [CRITICAL] WORKER TIMEOUT (pid:3342650)
+[2023-07-22 07:33:01 +0000] [3342650] [INFO] Worker exiting (pid: 3342650)
+[2023-07-22 07:33:03 +0000] [3325556] [ERROR] Worker (pid:3342650) was sent SIGKILL! Perhaps out of memory?
+[2023-07-22 07:33:03 +0000] [3347187] [INFO] Booting worker with pid: 3347187
+[2023-07-22 07:53:11 +0000] [3325556] [INFO] Handling signal: term
+[2023-07-22 07:53:11 +0000] [3347187] [INFO] Worker exiting (pid: 3347187)
+[2023-07-22 07:53:15 +0000] [3325556] [INFO] Shutting down: Master
+[2023-07-22 07:53:21 +0000] [3366020] [INFO] Starting gunicorn 21.2.0
+[2023-07-22 07:53:21 +0000] [3366020] [INFO] Listening at: http://210.75.240.136:18889 (3366020)
+[2023-07-22 07:53:21 +0000] [3366020] [INFO] Using worker: sync
+[2023-07-22 07:53:21 +0000] [3366022] [INFO] Booting worker with pid: 3366022
+[2023-07-22 11:51:06 +0000] [3366022] [WARNING] Invalid request from ip=89.248.163.96: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-07-22 13:10:55 +0000] [3366020] [CRITICAL] WORKER TIMEOUT (pid:3366022)
+[2023-07-22 13:10:55 +0000] [3366022] [INFO] Worker exiting (pid: 3366022)
+[2023-07-22 13:10:56 +0000] [3366020] [ERROR] Worker (pid:3366022) was sent SIGKILL! Perhaps out of memory?
+[2023-07-22 13:10:56 +0000] [3635489] [INFO] Booting worker with pid: 3635489
+[2023-07-22 13:11:55 +0000] [3366020] [CRITICAL] WORKER TIMEOUT (pid:3635489)
+[2023-07-22 13:11:55 +0000] [3635489] [INFO] Worker exiting (pid: 3635489)
+[2023-07-22 13:11:56 +0000] [3366020] [ERROR] Worker (pid:3635489) exited with code 1
+[2023-07-22 13:11:56 +0000] [3366020] [ERROR] Worker (pid:3635489) exited with code 1.
+[2023-07-22 13:11:56 +0000] [3635554] [INFO] Booting worker with pid: 3635554
+[2023-07-22 13:12:55 +0000] [3366020] [CRITICAL] WORKER TIMEOUT (pid:3635554)
+[2023-07-22 13:12:55 +0000] [3635554] [INFO] Worker exiting (pid: 3635554)
+[2023-07-22 13:12:55 +0000] [3366020] [ERROR] Worker (pid:3635554) exited with code 1
+[2023-07-22 13:12:55 +0000] [3366020] [ERROR] Worker (pid:3635554) exited with code 1.
+[2023-07-22 13:12:55 +0000] [3635801] [INFO] Booting worker with pid: 3635801
+[2023-07-22 13:13:55 +0000] [3366020] [CRITICAL] WORKER TIMEOUT (pid:3635801)
+[2023-07-22 13:13:55 +0000] [3635801] [INFO] Worker exiting (pid: 3635801)
+[2023-07-22 13:13:55 +0000] [3366020] [ERROR] Worker (pid:3635801) exited with code 1
+[2023-07-22 13:13:55 +0000] [3366020] [ERROR] Worker (pid:3635801) exited with code 1.
+[2023-07-22 13:13:55 +0000] [3635859] [INFO] Booting worker with pid: 3635859
+[2023-07-22 13:14:55 +0000] [3366020] [CRITICAL] WORKER TIMEOUT (pid:3635859)
+[2023-07-22 13:14:55 +0000] [3635859] [INFO] Worker exiting (pid: 3635859)
+[2023-07-22 13:14:55 +0000] [3366020] [ERROR] Worker (pid:3635859) exited with code 1
+[2023-07-22 13:14:55 +0000] [3366020] [ERROR] Worker (pid:3635859) exited with code 1.
+[2023-07-22 13:14:55 +0000] [3635917] [INFO] Booting worker with pid: 3635917
+[2023-07-22 13:15:27 +0000] [3366020] [CRITICAL] WORKER TIMEOUT (pid:3635917)
+[2023-07-22 13:15:27 +0000] [3635917] [INFO] Worker exiting (pid: 3635917)
+[2023-07-22 13:15:27 +0000] [3366020] [ERROR] Worker (pid:3635917) exited with code 1
+[2023-07-22 13:15:27 +0000] [3366020] [ERROR] Worker (pid:3635917) exited with code 1.
+[2023-07-22 13:15:27 +0000] [3639939] [INFO] Booting worker with pid: 3639939
+[2023-07-22 13:33:23 +0000] [3366020] [CRITICAL] WORKER TIMEOUT (pid:3639939)
+[2023-07-22 13:33:23 +0000] [3639939] [INFO] Worker exiting (pid: 3639939)
+[2023-07-22 13:33:23 +0000] [3366020] [ERROR] Worker (pid:3639939) exited with code 1
+[2023-07-22 13:33:23 +0000] [3366020] [ERROR] Worker (pid:3639939) exited with code 1.
+[2023-07-22 13:33:23 +0000] [3652212] [INFO] Booting worker with pid: 3652212
+[2023-07-22 17:52:18 +0000] [3652212] [WARNING] Invalid request from ip=89.248.163.96: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-07-23 03:17:21 +0000] [3366020] [CRITICAL] WORKER TIMEOUT (pid:3652212)
+[2023-07-23 03:17:21 +0000] [3652212] [INFO] Worker exiting (pid: 3652212)
+[2023-07-23 03:17:21 +0000] [3366020] [ERROR] Worker (pid:3652212) exited with code 1
+[2023-07-23 03:17:21 +0000] [3366020] [ERROR] Worker (pid:3652212) exited with code 1.
+[2023-07-23 03:17:21 +0000] [4182915] [INFO] Booting worker with pid: 4182915
+[2023-07-23 03:38:24 +0000] [3366020] [CRITICAL] WORKER TIMEOUT (pid:4182915)
+[2023-07-23 03:38:24 +0000] [4182915] [INFO] Worker exiting (pid: 4182915)
+[2023-07-23 03:38:24 +0000] [3366020] [ERROR] Worker (pid:4182915) exited with code 1
+[2023-07-23 03:38:24 +0000] [3366020] [ERROR] Worker (pid:4182915) exited with code 1.
+[2023-07-23 03:38:24 +0000] [4186908] [INFO] Booting worker with pid: 4186908
+[2023-07-23 04:09:17 +0000] [3366020] [INFO] Handling signal: term
+[2023-07-23 04:09:17 +0000] [4186908] [INFO] Worker exiting (pid: 4186908)
+[2023-07-23 04:09:17 +0000] [3366020] [INFO] Shutting down: Master
+[2023-07-23 04:20:25 +0000] [4191380] [INFO] Starting gunicorn 21.2.0
+[2023-07-23 04:20:25 +0000] [4191380] [INFO] Listening at: http://210.75.240.136:18889 (4191380)
+[2023-07-23 04:20:25 +0000] [4191380] [INFO] Using worker: sync
+[2023-07-23 04:20:25 +0000] [4191382] [INFO] Booting worker with pid: 4191382
+[2023-07-23 04:20:26 +0000] [4191382] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 139, in <module>
+    @app.route("/default/table", methods=["GET", "POST"])
+AttributeError: 'CORS' object has no attribute 'route'
+[2023-07-23 04:20:26 +0000] [4191382] [INFO] Worker exiting (pid: 4191382)
+[2023-07-23 04:20:26 +0000] [4191380] [ERROR] Worker (pid:4191382) exited with code 3
+[2023-07-23 04:20:26 +0000] [4191380] [ERROR] Shutting down: Master
+[2023-07-23 04:20:26 +0000] [4191380] [ERROR] Reason: Worker failed to boot.
+[2023-07-23 04:21:54 +0000] [4191678] [INFO] Starting gunicorn 21.2.0
+[2023-07-23 04:21:54 +0000] [4191678] [INFO] Listening at: http://210.75.240.136:18889 (4191678)
+[2023-07-23 04:21:54 +0000] [4191678] [INFO] Using worker: sync
+[2023-07-23 04:21:54 +0000] [4191680] [INFO] Booting worker with pid: 4191680
+[2023-07-23 04:44:29 +0000] [4191678] [INFO] Handling signal: term
+[2023-07-23 04:44:29 +0000] [4191680] [INFO] Worker exiting (pid: 4191680)
+[2023-07-23 04:44:29 +0000] [4191678] [INFO] Shutting down: Master
+[2023-07-23 04:44:46 +0000] [1032] [INFO] Starting gunicorn 21.2.0
+[2023-07-23 04:44:46 +0000] [1032] [INFO] Listening at: http://210.75.240.136:18889 (1032)
+[2023-07-23 04:44:46 +0000] [1032] [INFO] Using worker: sync
+[2023-07-23 04:44:46 +0000] [1034] [INFO] Booting worker with pid: 1034
+[2023-07-23 04:57:39 +0000] [1032] [INFO] Handling signal: term
+[2023-07-23 04:57:39 +0000] [1034] [INFO] Worker exiting (pid: 1034)
+[2023-07-23 04:57:39 +0000] [1032] [INFO] Shutting down: Master
+[2023-07-23 04:57:50 +0000] [2320] [INFO] Starting gunicorn 21.2.0
+[2023-07-23 04:57:50 +0000] [2320] [INFO] Listening at: http://210.75.240.136:18889 (2320)
+[2023-07-23 04:57:50 +0000] [2320] [INFO] Using worker: sync
+[2023-07-23 04:57:50 +0000] [2322] [INFO] Booting worker with pid: 2322

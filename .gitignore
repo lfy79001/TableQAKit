@@ -4,3 +4,4 @@ texttableqaweb/*
 TextTableQAKit/__pycache__/*
 .idea/*
 .vscode/*
+TextTableQAKit/datasets
