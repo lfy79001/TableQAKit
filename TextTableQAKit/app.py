@@ -17,6 +17,7 @@ import os
 from io import BytesIO
 
 from flask import Flask, render_template, jsonify, request, send_file, session
+from flask_cors import CORS
 import pandas as pd
 import random
 import yaml
@@ -45,7 +46,7 @@ def init_app():
     flask_app.config.update(config)
     return flask_app
 
-app = init_app()
+app = CORS(init_app()) 
 
 def init_log():
     log_format = "%(levelname)s:"

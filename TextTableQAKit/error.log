@@ -291,3 +291,7 @@ Upload Table Error: 400 Bad Request: The browser (or proxy) sent a request that 
 Upload Table Error: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
 Download Table Error: download non-existent tables in session
 Download Table Error: datasets None not found
+Fetch Table Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+Fetch Table Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+Fetch Table Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+Upload Table Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
