@@ -21,12 +21,13 @@ function mod(n, m) {
 function splitChanged() {
     split = $('#split-select').val();
     table_idx = 0;
-
+    getData()
 }
 
 function datasetChanged() {
     dataset = $('#dataset-select').val();
     table_idx = 0;
+    getData();
 }
 
 function defaultModelChanged() {
@@ -40,20 +41,24 @@ function changeModel() {
     model = $('#model-select').val();
 }
 
-function changeDefaultQuestionHtml(question) {
+function changeDefaultQuestionHtml() {
     $('#default-question').html(question);
 }
 
-function changeTableHtml(table) {
-    $('#table-container').html(table);
+function changeTableHtml() {
+    $('#table-container').html(table_html);
 }
 
 function changePictureHtml() {
-    let pictures_html = ''
+    var pictures_html = ''
     for (let pic in pictures) {
         pictures_html += '<div class="col-sm-6 col-md-4 col-lg-3"><img src="../static/img/' + pic + '" style="max-width: 100%; height: auto;"></div>'
     }
     $('#image-container').html(pictures_html);
+}
+
+function changeDefaultResult() {
+    $('#default-model-answer').html(JSON.stringify(default_result));
 }
 
 function changePropertiesHtml() {
@@ -61,33 +66,53 @@ function changePropertiesHtml() {
 }
 
 function changeTextHtml() {
-    $('#default-question').html(default_question);
+    var text_html = '';
+    for (var index in text) {
+        text_html += '<tr><td>' + index + '</td><td>' + text[index] + '</td></tr>';
+    }
+    $("#text-container").html(text_html);
 }
 
 function changeTotalexamples() {
-    $('total-examples').html(total_examples - 1);
+    $("#total-examples").html(total_examples - 1);
 }
 
 function getData() {
-    $.get('http://' + host + ':' + port + '/table/default', { 'dataset_name': dataset, 'split': split, 'table_idx': table_idx },
-        (data, status) => {
-            log.console(status);
-            log.console(data);
-            if (status != 'success' || data.success == false) {
-                alert('fetch table error');
-                return false;
-            } else {
-                total_examples = data.table_cnt;
-                default_result = data.generated_results;
-                dataset_info = data.dataset_info;
-                default_question = data.table_question;
-                properties_html = data.properties_html;
-                table_html = data.table_html;
-                pictures = data.pictures;
-                text = data.text;
-                return true;
-            }
-        })
+    var dataJson = { 'dataset_name': dataset, 'split': split, 'table_idx': table_idx };
+    $.ajax({
+        type: 'POST',
+        url: url + '/default/table',
+        chche: false,
+        async: false,
+        dataType: "json",
+        contentType: 'application/json',
+        data: JSON.stringify(dataJson),
+        success: (data) => {
+            console.log(data);
+            total_examples = data.table_cnt;
+            changeTotalexamples();
+            default_result = data.generated_results;
+            changeDefaultResult();
+            dataset_info = data.dataset_info;
+            default_question = data.table_question;
+            changeDefaultQuestionHtml();
+            properties_html = data.properties_html;
+            changePropertiesHtml();
+            table_html = data.table_html;
+            changeTableHtml();
+            pictures = data.pictures;
+            changePictureHtml();
+            text = data.text;
+            changeTextHtml();
+
+        },
+        error: (XMLHttpRequest, textStatus, errorThrown) => {
+            alert('fetch table error!');
+            console.log(XMLHttpRequest.status);
+            console.log(XMLHttpRequest.readyState);
+            console.log(textStatus);
+        }
+    });
 }
 
 function generateAnswer() {
@@ -118,41 +143,70 @@ function gotobtn() {
 function gotopage(page) {
     table_idx = page;
     table_idx = mod(table_idx, total_examples);
-
-    fetch_table(dataset, split, table_idx);
     $("#page-input").val(table_idx);
+    getData();
 }
 
+
 function downloadTable() {
-    $.get(url + '/default/download', {
-        'format': $('download-format-select').val(),
-        'include_props': $('includes-properties').val(),
+    var dataJson = {
+        'format': $('#download-format-select').val(),
+        'include_props': ($('#includes-properties').val() == 'on') ? true : false,
         'dataset_name': dataset,
-        'splite': split,
+        'split': split,
         'table_idx': table_idx
-    }, (data, status) => {
-        console.log(status);
-        if (status === 'success') {
-            var downloadUrl = window.URL.createObjectURL(data);
-            window.location.href = downloadUrl;
+    };
+    console.log(dataJson);
+    $.ajax({
+        type: 'POST',
+        url: url + '/default/download',
+        chche: false,
+        async: false,
+        dataType: 'binary',
+        contentType: 'application/json',
+        xhrFields: {
+            'responseType': 'blob'
+        },
+        data: JSON.stringify(dataJson),
+        success: (data, status, xhr) => {
+            console.log(xhr);
+            const download_URL = (window.URL || window.webkitURL).createObjectURL(result);
+            const a_link = document.createElement('a');
+            a_link.href = download_URL;
+            // 利用了a标签的download属性,指定文件名称
+            a_link.download = 'file.' + dataJson['format'];
+            document.body.appendChild(a_link);
+            a_link.click();
+
+            setTimeout(function() {
+                // 移除内存中的临时文件路径和为下载而创建的a标签
+                URL.revokeObjectURL(download_URL);
+                a_link.remove();
+            }, 10000);
+        },
+        error: (XMLHttpRequest, textStatus, errorThrown) => {
+            alert('fetch file error!');
+            console.log(XMLHttpRequest.status);
+            console.log(XMLHttpRequest.readyState);
+            console.log(textStatus);
         }
     });
 }
 
-function init_page() {
+function initPage() {
     table_cnt = 0;
     total_examples = 1;
-    if (getData()) {
-        changeDefaultQuestionHtml();
-        changeTableHtml();
-        changePropertiesHtml();
-        changeTextHtml();
-        changeTotalexamples();
-    }
+    getData();
+    // changeDefaultQuestionHtml();
+    // changeTableHtml();
+    // changePropertiesHtml();
+    // changeTextHtml();
+    // changeTotalexamples();
 }
 
 $(document).ready(() => {
     url = "http://" + host + ':' + port;
+    initPage();
     $('#dataset-select').val(dataset);
     $('#splite-select').val(split);
     $('#default-model-select').val(default_model);
@@ -161,7 +215,6 @@ $(document).ready(() => {
     $("#split-select").change(splitChanged);
     $('#default-model-select').change(defaultModelChanged);
     $('#model-select').change(changeModel);
-    $("#total-examples").html(total_examples - 1);
     $('#switchToCustomMode').click(() => {
         window.location.href = 'custom_mode.html';
     });
@@ -170,6 +223,5 @@ $(document).ready(() => {
             gotobtn();
         }
     });
-    $('#get-question-button').click(getAnswer);
     $('#download-table').click(downloadTable);
 });

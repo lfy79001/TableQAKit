@@ -12,9 +12,9 @@
     <link rel="stylesheet" href="../static/css/style.css"> -->
     <link rel="stylesheet" href="../static/css/bundle.css">
     <link rel="shortcut icon" href="../static/css/CASIA_logo.png" />
-    
+
     <script src="../static/js/bundle.js"></script>
-    <!-- <script src="../static/js/jquery.js"></script> -->
+    <script src="../static/js/jquery.js"></script>
     <script src="../static/js/index.js"></script>
 </head>
 
@@ -120,10 +120,10 @@
                                                       <option val="finqa" selected>finqa</option>
                                                       <option val="hitab">hitab</option>
                                                       <option val="hybridqa">hybridqa</option>
-                                                      <option value="mmqa">mmqa</option>
-                                                      <option value="tatqa">tatqa</option>
-                                                      <option value="wikisql">wikisql</option>
-                                                      <option value="wikitq">wikitq</option> 
+                                                      <option val="mmqa">mmqa</option>
+                                                      <option val="tatqa">tatqa</option>
+                                                      <option val="wikisql">wikisql</option>
+                                                      <option val="wikitq">wikitq</option> 
                                                     </select>
                                                 </div>
                                                 <!--                                                <div class = "col-sm-2">-->
@@ -171,7 +171,7 @@
                                                 <a class="page-link" id="prev-btn" onclick="prevbtn();">‹</a>
                                             </li>
                                             <li class="page-item">
-                                                <input class="form-control" id="page-input" onfocusout="gotobtn();">
+                                                <input type="text" class="form-control" id="page-input" onfocusout="gotobtn();" onkeyup="value=value.replace(/[^\d]/g,'').replace(/^0{1,}/g,'')">
                                             </li>
                                             <li class="page-item">
                                                 <a class="page-link" id="total-examples" style="min-height: 28px;"></a>
@@ -188,7 +188,7 @@
                                                 </a>
                                             </li>
                                             <li>
-                                                <button type="button" id="download-table" class="btn btn-info btn-icon-text" style="margin-left:30px; height:45px;" data-bs-target="#download-default-table-modal" data-bs-toggle="modal">
+                                                <button type="button" class="btn btn-info btn-icon-text" style="margin-left:30px; height:45px;" data-bs-target="#download-default-table-modal" data-bs-toggle="modal">
                                                   Download
                                                   <i class="mdi mdi-download btn-icon-append"></i>
                                                 </button>
@@ -669,7 +669,7 @@
                                                     </th>
                                                 </tr>
                                             </thead>
-                                            <tbody>
+                                            <tbody id="text-container">
                                                 <tr>
                                                     <td>
                                                         1
@@ -901,11 +901,11 @@
 
                                     <div>
                                         <select id="download-format-select" class="form-control text-dark">
-                              <option  selected="xlsx">xlsx</option>
-                              <option>txt</option>
-                              <option>json</option>
-                              <option>csv</option>
-                              <option>html</option>
+                              <option val="xlsx" selected>xlsx</option>
+                              <option val="txt">txt</option>
+                              <option val="json">json</option>
+                              <option val="csv">csv</option>
+                              <option val="html">html</option>
                             </select>
                                     </div>
                                     <br></br>
@@ -915,7 +915,7 @@
                             <i class="input-helper"></i>
                         </label>
                                 </div>
-                                <button type="submit" class="btn btn-primary me-2">Download</button>
+                                <button type="button" id="download-table" class="btn btn-primary me-2">Download</button>
                                 <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
                             </form>
 
