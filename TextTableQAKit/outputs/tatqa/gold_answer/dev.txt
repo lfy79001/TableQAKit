@@ -1,0 +1,1667 @@
+['22.9%']
+['230']
+['5.0%']
+1.9
+18384.5
+16.15
+['our allowable incurred costs plus a profit which can be fixed or variable depending on the contract’s fee arrangement up to predetermined funding levels determined by the customer']
+['$1,496.5']
+['fixed-price type', 'cost-plus type', 'time-and-material type']
+['2019']
+-12.6
+-22.22
+['consistently with our internal management reporting and may be revised periodically as management deems necessary.']
+['2019', '2018', '2017']
+['Transportation Solutions', 'Industrial Solutions', 'Communications Solutions']
+['2018']
+-94
+-12.14
+['By comparison against the FTSE pension liability index for AA rated corporate instruments']
+['By comparison against country specific AA corporate indices, adjusted for duration of the obligation.']
+['Annual basis']
+2.1
+6.67
+-8.11
+['Defined contribution schemes', 'Defined benefit schemes', '']
+['Germany, Ghana, India, Ireland, Italy, the UK, the United States']
+['Greece and Turkey']
+172
+50.5
+121.5
+['73,260', '57,768']
+['19,911', '15,916']
+['795', '772']
+26.82
+25.1
+2.98
+['2018']
+['an annual plan approved by the members, and capital contributions to IMFT are requested as needed']
+['$1,305']
+2.93
+0.87
+-361
+['592']
+['5,687']
+['2019', '2018']
+['2019']
+73
+14.07
+['Taxation', 'Dividends received from associates and investments', 'Dividends paid to non-controlling shareholders in subsidiaries', 'Interest received and paid']
+['Licence and spectrum payments', 'Restructuring payments']
+['4,411']
+4227.5
+3680
+547.5
+['$(9.8) million']
+['$85.1 million']
+['36%']
+['2019']
+3728
+-16458
+['the write-off of certain spare parts']
+['below under “Segment Results.”']
+['2019', '2018']
+['2019']
+154
+104.05
+['these awards met the performance-based award classification criteria as defined within ASC 718.']
+['We estimated the fair values of our stock options that were solely subject to service-based vesting requirements using the Black-Scholes-Merton option-pricing model, which was developed for use in estimating the fair values of stock options.']
+['We estimated the fair values of the PSOs granted during fiscal 2018 at approximately $10 per share using a Monte Carlo simulation approach as of the grant date with the following assumptions: risk-free interest rate of 2.14%, expected term of seven years, expected volatility of 22.44% and dividend yield of 1.49%.']
+1.57
+1.9
+4
+['$1.2 billion']
+['2.5 years']
+['not material']
+18
+399.33
+88.06
+['the Board of Directors']
+['2019', '2018']
+['Debtors', 'Cash and cash equivalents']
+['2019']
+0.2
+40
+['$480 million']
+['1,758']
+['26,276']
+0.51
+0.7
+['Data Center Group']
+13237.4
+35796
+24
+['Our net income and diluted earnings per share were impacted in fiscal 2019 and 2018 by the effects of the U.S. Tax Cuts and Jobs Act of 2017 (the Tax Act). The more significant provisions of the Tax Act as applicable to us are described below under “Impacts of the U.S. Tax Cuts and Jobs Act of 2017”.']
+['See Note 7 of Notes to Consolidated Financial Statements included elsewhere in this Annual report for additional information regarding our notes payable and other borrowings.']
+['Working capital and total assets decreased in fiscal 2019 primarily due to $36.1 billion of cash used for repurchases of our common stock during fiscal 2019 and also due to dividend payments, partially offset by the favorable impacts to our net current assets resulting from our fiscal 2019 net income.', 'In addition, our total assets were also affected in all periods presented by the repayments of notes payable and other borrowings']
+['22,626']
+['22,094']
+64509
+62740
+14212
+['24,264']
+['27.0']
+['$513.3']
+['45.1']
+1
+2
+-67.6
+['13.0%']
+['18.3%']
+['primarily due to the recognition of approximately $2.2 billion of a non-recurring tax benefit in connection with the disposition of preferred stock, representing a minority interest in a foreign affiliate in 2019 compared to the non-recurring deferred tax benefit of approximately $2.1 billion,']
+0
+3
+-9.9
+['2018', '2017']
+['288,764']
+['259,105']
+2
+1.9
+2487.08
+['$788,948']
+['sets forth, for the periods indicated, certain data derived from our Consolidated Statements of Operations']
+['365,607']
+70056
+67210
+-13.66
+['information purposes only and is not indicative of the results of operations that would have been achieved if the acquisitions had taken place at such times.']
+['$1,073.3', '$1,095.0']
+['106.4', '70.5']
+-21.7
+88.45
+['2018']
+['commitments from customers to purchase goods and/or services that will ultimately result in recognised revenue.']
+['3.45 cents per Ordinary share']
+['13.2']
+['2019']
+61.6
+-78.06
+['sum of the current and deferred taxes.']
+['2017', '2018', '2019']
+['21']
+984
+1040
+56
+['547,000']
+['253,203']
+['375,000']
+-15.01
+12122
+721453
+["During the fourth quarter of fiscal year 2018, the Board of Directors approved a world-wide restructuring plan (“Fiscal 2018 Plan”) to support the Company's strategic priorities of completing the subscription transition, digitizing the Company, and re-imagining manufacturing, construction, and production."]
+['This world-wide restructuring plan included a reduction in force of approximately 11% of the Company’s workforce, or 1,027 employees, and the consolidation of certain leased facilities.']
+['By January 31, 2019, the personnel and facilities related actions included in this restructuring plan were substantially complete.']
+0.95
+0.05
+9336.36
+['$1,294,253', '$1,139,927']
+['423,209', '428,501']
+['$1,164,000', '$1,609,000']
+38.23
+-11.92
+425855
+['TORM defines Loan-to-value (LTV) ratio as Vessel values divided by net borrowings on the vessels.']
+['to describe the financial situation, the liquidity risk as well as to express the future possibilities to raise new capital by new loan facilities.']
+['Total (value)', 'Total (loan)']
+['2017']
+-56.5
+-6.38
+['reduced the United States corporate tax rate from 35% to 21% effective January 1, 2018']
+-19411
+['$36.5 million']
+-168
+['As of June 1, 2019, there were no uncertain tax positions that resulted in any adjustment to the Company’s provision for income taxes.']
+-162.15
+['4.1%', '4.6%']
+['4.6%', '4.5%']
+['27.1%', '28.7%']
+4.35
+4.55
+27.9
+['To assess the size of the net debt balance relative to the size of the earnings for the Group']
+['by adding back depreciation and amortisation of owned property, plant and equipment, software and development to adjusted operating profit']
+['Earnings before interest, tax, depreciation and amortisation', 'Net debt']
+['2019']
+59.4
+25.19
+['1,296,660']
+['294,954']
+['2019', '2018', '2017']
+['2018']
+13
+15.85
+['1.6%']
+['2,493']
+['3.6%']
+4900
+1729
+39.47
+['Includes deferred initial direct costs which are eliminated in IBM’s consolidated results.']
+['driven by write-offs of $64 million, primarily of receivables previously reserved, and net releases of $7 million as a result of lower average asset balances in client and commercial financing. See note K, “Financing Receivables,” for additional information.']
+['221']
+-8736
+198.5
+-28.05
+['January 1, 2018']
+['(1) identify the contract with a customer, (2) identify the performance obligations in the contract, (3) determine the transaction price, (4) allocate the transaction price to the performance obligations in the contract and (5) recognize revenue when a performance obligation is satisfied.']
+['Taxes collected on behalf of customers relating to product sales and remitted to governmental authorities, principally sales taxes']
+7927
+1.3
+188779
+['$2.0 million']
+['the value of the Company’s closing stock price on the last trading day of the fiscal period in excess of the weighted-average exercise price, multiplied by the number of options outstanding and exercisable']
+['2,806,364']
+981341.34
+0.11
+11808314
+["reduce variability in the forecasted interest payments of the Company's Variable Rate Loans, which is based on the LIBOR rate."]
+['December 2021']
+['$133', '$138', '$140']
+['2020', '2018']
+-17
+-2
+['part of the net actuarial (gain) loss and is included in accumulated other comprehensive loss, a portion of which is subject to amortization over the remaining estimated life of plan participants']
+['approximately 16 years as of December 31, 2019']
+['2019', '2018', '2017']
+21
+['2019']
+11.22
+['$140,964']
+['64,858']
+['2019', '2018']
+['2019']
+8590
+90.22
+['$53,330']
+['503']
+['2,990']
+3987
+1
+16.36
+['2019', '2018']
+['22,201']
+['14,158']
+['2018']
+-1647
+-22.26
+['due to the objective of retaining key talent and vest subject to the executive remaining employed by the Group, generally for two or more years.']
+['13,477,758']
+['Participants are required to meet a service condition and other performance measures to gain access to the performance rights.']
+1226114
+12085176
+58.71
+['$963,947']
+['the special reserve in the amount equal to the reversal may be released for earnings distribution or offsetting accumulated deficits.']
+['$0.75']
+835623
+256648
+2849050
+['Operating revenue', 'Gross profit', 'EBITDA', 'EBIT', 'NPAT']
+['Operating revenue', 'Gross profit', 'EBITDA', 'EBIT', 'NPAT', 'EPS (cents)']
+['health, life and car insurance policy sales, mortgage brokerage, energy, broadband and financial referral services']
+-22772
+['2019']
+['2018']
+['significant contractual obligations either on an annual basis or over multi-year periods related to our outsourcing activities or other material commitments, including vendor-consigned inventories']
+['$991 million']
+['building and office equipment lease obligations']
+12.02
+0.62
+8.64
+['$1.1 million']
+['65']
+['$4,143']
+2968
+2988
+100
+['Audit Fees consist of fees billed for the annual audit of our Company’s Consolidated Financial Statements, the statutory audit of the financial statements of the Company’s subsidiaries and consultations on complex accounting issues relating to the annual audit.']
+['Audit-related services are assurance and related fees consisting of the audit of employee benefit plans, due diligence services related to acquisitions and certain agreed-upon procedures.']
+['Tax Fees include fees billed for tax compliance services, including the preparation of original and amended tax returns and claims for refund; tax consultations, such as assistance in connection with tax audits and expatriate tax compliance.']
+-451500
+35071
+-416429
+['$2,303', '$1,780']
+['193', '167']
+['$2,496', '$1,947']
+523
+180
+92.27
+['$191', '$222']
+['2,929', '2,370']
+['716', '668']
+16.23
+-19.09
+-6.7
+['due to their customer base and similarities in economic characteristics, nature of products and services, and processes for procurement, manufacturing, and distribution']
+['United States', 'China', 'Europe', 'Japan', 'Korea', 'Southeast Asia', 'Taiwan']
+['to the geographic location in which the customers’ facilities are located']
+18.94
+15.99
+17.34
+['$29.3 million']
+['$ 64,798', '$ 35,452']
+['$9.5 million']
+['2018']
+244800.5
+310566.5
+['$1.1 billion']
+['2.5 years']
+['$131 million']
+91
+424
+38.98
+['$8,455']
+['Third party advisory services']
+['Third party advisory services and retention compensation']
+2192
+73.68
+7577.67
+['dividing net loss by the weighted-average number of ordinary shares outstanding during the period.']
+['550', '33', '28']
+['6,209', '6,230', '8,681']
+-21
+203.67
+['2018', '2017']
+['current assets less current liabilities.']
+['taxable revenue bonds due to the State of Alabama Industrial Development Authority.']
+['$669,094']
+-29817
+-1100
+5.42
+['$417 million', '$146 million']
+['$25 million', '$29 million']
+['"Accounts payable and accrued liabilities"']
+['2020']
+-35
+-7
+['Driven by Bars, Food and Accommodation, benefitting from venue refurbishments completed in the year.']
+['Due to an increase in funds employed driven by refurbishments and acquisitions of hotels.']
+['3.7%']
+1641.5
+11
+29.84
+['$12,548', '$12,643']
+['$9,028', '$9,189']
+['$3,800', '$6,690']
+10490
+28747
+14373.5
+['$1,949']
+['129,582']
+['2019', '2018']
+['2018']
+-23
+-3.62
+['when revenue is recognized prior to invoicing']
+['$213,654']
+['$239,275']
+-25621
+62444
+6.52
+['the excess of the consideration transferred over the fair value of net assets acquired in business combinations']
+['when either Autodesk does not use the optional assessment or, as a result of the optional assessment, it is not more likely than not that the fair value of the reporting unit is greater than its carrying value.']
+['$1,620.2']
+830.6
+4071
+2035.5
+['components of an enterprise for which separate financial information is evaluated regularly by the chief operating decision maker in deciding how to allocate resources and assessing performance.']
+['2020', '2019', '2018']
+['3,181']
+432
+2
+12.46
+['equity-settled share-based payments granted to the employees of subsidiary companies.']
+['within note 35 to the consolidated financial statements']
+['At beginning of the period', 'Additions']
+['2019']
+0.7
+29.17
+['the remittance of customer payments to the financial institutions with respect to the sold trade receivables']
+['contract assets under ASC 606']
+['Billed', 'Unbilled']
+['2018']
+140.8
+259190.5
+['25 days']
+['$72.3 million']
+['$54.5 million']
+25.39
+34.61
+103.67
+['unrealized losses of $6.4 million']
+['The unrealized losses were primarily due to increases in interest rates relative to rates at the time of purchase.']
+['we generally hold such securities until we recover our cost basis']
+7979
+2.84
+43.15
+82884
+12.47
+['Revenue increased $15.5 billion or 14%, driven by growth across each of our segments. Intelligent Cloud revenue increased, driven by server products and cloud services. Productivity and Business Processes revenue increased, driven by Office and LinkedIn. More Personal Computing revenue increased, driven by Surface, Gaming, and Windows.']
+['LinkedIn operating loss increased $63 million to $987 million, including $1.5 billion of amortization of intangible assets.']
+['Research and development expenses increased $1.7 billion or 13%, primarily due to investments in cloud engineering and LinkedIn expenses.']
+4277
+['Adjustment of previous year according to explanation in notes']
+['−298']
+['Earnings before taxes EBT', 'Income taxes']
+['2019']
+115
+16.13
+['Order intake increased in all businesses year-over-year due to a higher volume from large orders. Sharp order growth in Asia, Australia included two large orders for offshore wind-farms including service in Taiwan totaling € 2.3 billion.']
+['Revenue was up significantly year-over-year, with substantial growth in the offshore and service businesses and clear growth in the onshore business. On a geographic basis, revenue rose substantially in Europe, C. I. S., Africa, Middle East, while it declined clearly in the other two reporting regions.']
+['Adjusted EBITA was on the prior-year level as positive effects from productivity improvements and higher revenue were offset by price declines, a less favorable project mix and higher expenses for integration costs and capacity adjustments including severance.']
+12312
+1105
+-0.6
+['$224 million']
+['due to lower payments for taxes, integration and restructuring costs and proceeds received from the termination of interest rate swaps.']
+['65', '(114)', '(71)']
+['2018', '2017']
+-43
+615
+['decreased $352 million']
+['primarily as a result of lower volume, unfavorable product mix, and price erosion, partially offset by lower material costs.']
+['2019', '2018']
+['2019']
+9
+112.5
+['19.0%']
+['where future recoverability is uncertain.']
+['£(8.1m)']
+-63.6
+-0.5
+-0.5
+['across its entire end customer base and no single end user accounted for greater than 10 per cent of the Group’s revenue in either 2018 or 2019']
+['83.2']
+['UK', 'USA', 'Germany', 'Other countries']
+['2019']
+9.7
+13.2
+['$2.5 million']
+['$2.6 million']
+['$2.5 million']
+933
+11137.5
+6900
+['$71.2']
+['15.4']
+['2019', '2018']
+['2019']
+0.1
+3.03
+['temporary differences between the amount of assets and liabilities recognized for financial reporting and tax purposes.']
+['$7,144']
+['2,330']
+535
+881
+-79.67
+['$255,235', '$255,269']
+['2,458', '2,261']
+['3,322', '4,116']
+510504
+2359.5
+23.9
+['excess tax benefits related to employee stock-based payment transactions and federal research tax credits, partially offset by an increase in valuation allowances arising from foreign withholding tax and an increase in taxes related to the sale of the commercial cybersecurity business.']
+['$182', '$128', '$138']
+['22']
+['2018', '2017']
+-21
+-10.5
+['Net sales from our modules segment increased by $958.1 million in 2019 primarily due to a 180% increase in the volume of watts sold and a 4% increase in the average selling price per watt.']
+['Substantially all of our systems business net sales during 2019 were denominated in U.S. dollars and Australian dollars.']
+['191%']
+-531925
+653718
+4.14
+['amounts due from customers for rental income, goods sold or services performed in the ordinary course of business.']
+['3,770']
+['an estimate of receivables that are not considered to be recoverable.']
+716
+112
+141
+['$ 5.99', '$ 4.79', '$ 2.66', '$ 1.88']
+['LWAY']
+['March 29, 1988']
+1
+2.41
+3.83
+['35,121', '30,973']
+['20,032', '13,591']
+["attributable to the mix of the different finished products in inventory at October 31, 2019, as compared to October 31, 2018, as well as an increase in production volume at the Company's prepared chicken facility in Flowood, Mississippi"]
+49872
+7017.5
+16811.5
+['fees for preparation of tax returns to the Company and the services performed by Deloitte in connection with Inter-Company matters']
+['$86,000']
+['fees for professional services performed by Deloitte for the audit of our annual financial statements and the review of our quarterly financial statements, as well as other services provided by Deloitte in connection with statutory and regulatory filings or engagements']
+113000
+-60.71
+83.33
+['The amortization period for underlying rights (including easements) is 13.0 years.']
+['The weighted average remaining amortization period for the Company’s customer relationships asset is 14.3 years.']
+['The amortization of intangible assets for the years ended June 30, 2019, 2018 and 2017 was $95.1 million, $97.2 million, and $80.0 million, respectively.']
+309
+2
+16.4
+['Income from vessel operations for Teekay LNG increased to $299.3 million in 2019']
+90494
+-6850
+['2018']
+['$148.6 million']
+['$53.1 million']
+['Accrued Expenses and Other Current Liabilities']
+['93.8']
+['120.5']
+34.6
+111.4
+107.15
+['approximately 13%']
+['$8.0 million']
+['8,000']
+40
+82.05
+8500
+['cash collected from Egypt LNG Shipping Ltd. to cover the obligations of its vessel under the Group’s management']
+['$169']
+['2018', '2019']
+['2018']
+31
+22.39
+['87,128']
+['98,725']
+['59,495']
+-6841
+30011
+-27603
+['$183,297']
+['7,111']
+['81,731']
+3
+-181
+-20.08
+['provision of Internet-related services']
+['approximately USD500 million']
+['social networks, Internet platform, technology and other Internet-related business']
+-16189
+77395
+-1859
+['`70.07']
+['GBP']
+['USD']
+9.9
+0.01
+0.87
+['$1,791,790']
+['$1,562,474']
+['1,289,962']
+14.68
+229316
+79.05
+['US$261,518']
+['121,041']
+['228,144']
+0.78
+0.27
+-0.03
+['2019', '2018', '2017']
+['1,762']
+['255']
+1
+739
+-4.59
+['Automated Packaging Systems, LLC, formerly Automated Packaging Systems, Inc.']
+['$58.2 million']
+['$ 100.1']
+5.48
+445.7
+18.34
+['$68,024', '$67,314']
+['$12,491', '$9,587']
+['$2.2 million']
+2904
+67669
+1.05
+['9,447']
+['12,129']
+['23,363']
+1
+-2383
+-2.87
+['88,495']
+['93,669']
+['41.5%']
+1149
+24.07
+0.6
+['The Company files income tax returns in the United States and various states and foreign jurisdictions']
+['As of December 31, 2019 and 2018, the Company had no accrued interest or penalties related to uncertain tax positions.']
+["The unrecognized tax benefits, if recognized, would not impact the Company's effective tax rate as the recognition of these tax benefits would be offset by changes in the Company's valuation allowance."]
+7397
+['2018', '2019']
+24584
+['only upon the market price of our underlying public stock closing above a certain price target withins even years of the date of grant.']
+['If the required service period is not met for these options']
+['2.8%', '2.3%', '1.9%']
+4.77
+6.1
+['2019', '2018']
+['$773', '$2,055']
+['2,000', '2,000']
+['$3,423', '$4,055']
+58.43
+22.58
+18.99
+['The excess of the purchase consideration over the fair value of net tangible and identifiable intangible assets acquired']
+['25']
+['492']
+4.07
+207
+3
+['(a) our controlling interests in our publicly-traded subsidiaries Teekay LNG and Teekay Tankers and (b) Teekay Parent.']
+90494
+167424
+['2018']
+['601,256', '510,762']
+['During 2019']
+['$1,150']
+['terminating employees, vacating certain leased facilities, and cancellation of contracts.']
+['exiting certain redundant facilities.']
+1622
+1454.5
+160.5
+['blended price for all sizes and grades of shell eggs, including non-graded shell egg sales, breaking stock and undergrades.']
+['1.40']
+-138187
+['3%']
+-168630
+-17.45
+['206.2']
+['Earnings per share presents the amount of profit generated for the reporting period attributable to shareholders divided by the weighted average number of shares on issue.']
+['132.3']
+169.4
+55.44
+73.6
+['Realized and unrealized losses of the cross currency swaps are recognized in earnings and reported in foreign exchange (loss) gain in the consolidated statements of loss.']
+['(5,062)', '(6,533)', '(18,494)']
+['to reduce concentration risk.']
+42271
+-10029.67
+-74.31
+['NASDAQ Global Select Market']
+['JACK']
+['Four']
+20.53
+3.94
+2.64
+['$2.7 million']
+19582777
+5631086
+['2018']
+['$31,867,361', '$18,560,365']
+['$9.6 million']
+['the total number of days the vessels were in our fleet.']
+['Net Voyage Revenue divided by total TCE days.']
+['124,004', '175,450']
+303118
+153391
+149727
+['$66.1', '$62.9']
+['$45.5', '$62.9']
+['$65.8', '$62.8']
+5.09
+38.24
+174.5
+2053.5
+57
+8
+['Interest expense increased in fiscal 2019 compared to fiscal 2018 primarily due to higher average borrowings resulting from our issuance of $10.0 billion of senior notes in November 2017, which was partially offset by a reduction in interest expense resulting primarily from the maturities and repayments of $2.0 billion of senior notes during fiscal 2019 and $6.0 billion of senior notes during fiscal 2018.']
+['3%', '3%']
+['Year Ended May 31']
+['55%', '50%']
+['50%', '43%']
+['50%', '57%']
+105
+52.5
+46.5
+['Original Equipment Manufacturers (“OEM”) are the end-customers to which the Company provides direct marketing application engineering support']
+['Distribution customers refers to the distributors and representatives that the Company engages to distribute its products around the world.']
+['(i) contracts with an original expected length of one year or less and (ii) contracts for which the Company recognizes revenue at the amount to which the Company has the right to invoice for services performed.']
+9189
+144
+39.33
+['Products', 'Services']
+['$48,881']
+['cost of third-party manufacturing services and cost of inventory for the hardware component']
+-5.81
+100777
+61
+['based on the deferral method and includes foreign investment tax credits']
+['2027']
+['$57,299']
+622908
+58442
+0.08
+['£13.0 million']
+['£12.4 million']
+['finance lease']
+-33.33
+0
+0
+['Salaries and fees', 'Incentive schemes', 'Other benefits']
+['Aggregate emoluments of the Directors of the Company']
+['4']
+4
+2.5
+1.5
+['The following table shows assets allocated by reportable segment']
+['2019', '2018']
+['5,765.2']
+1541.5
+14.16
+5407.7
+['6.14 per cent']
+['29 per cent']
+['Scope 1', 'Scope 2']
+['2019']
+-301.9
+-5.93
+['The changes in cash flows from investing activities primarily relate to our acquisitions, the timing of our purchases, maturities and sales of our investments in marketable debt securities and investments in capital and other assets, including certain intangible assets, to support our growth.']
+['Net cash provided by operating activities decreased during fiscal 2019 compared to fiscal 2018 primarily due to certain unfavorable cash changes in working capital balances, primarily unfavorable changes associated with income taxes including the first installment payment made pursuant to the transition tax provisions of the Tax Act during fiscal 2019']
+['$(9,982)']
+-835
+14968.5
+-32074
+['The defined benefit plan is closed to new members.']
+['2.9']
+['Woolworths Group Superannuation Plan']
+3.35
+0
+2
+['for the periods indicated, the percentage of sales represented by certain items reflected in our Consolidated Statements of Operations']
+['50.9']
+['33.1']
+-10.9
+1.5
+-2.1
+['days past due', 'credit status of the counterparty', 'historical evidence of collection']
+['£3.5 million']
+['£3.5 million']
+11.45
+['2018']
+25.06
+['2019', '2018']
+['6,868']
+['(168)']
+2
+4163
+41.67
+['$24,193', '$20,402', '$14,366']
+['$47,625', '$38,186', '$28,725']
+['$45,007', '$45,082', '$31,497']
+19653.67
+['2019']
+3791
+92437
+4
+2
+['expense resulting from stock options, RSUs, and ESPP']
+['2.87', '2.69']
+['$46.4 million']
+['tested annually, or more frequently where there is indication of impairment']
+['if the carrying value of the cash-generating unit to which it relates is greater than the higher of fair value less costs of disposal and the value in use']
+['Americas', 'EMEA', 'APJ']
+['2018']
+-4.9
+-4.73
+['sales of our identity and information protection products, partially offset by higher related cost of sales and operating expenses']
+['$616 million']
+['49%']
+3944
+1972
+975
+['mortality will be in line with nationally published mortality table S2NA with CMI 2018 projections related to members’ years of birth with long-term rate of improvement of 1.5% per annum']
+['86.8']
+['2019', '2018']
+['2018']
+-0.5
+-0.57
+['a group of employees within the U.S. to contribute base salary and commissions or incentive compensation on a tax deferred basis in excess of the IRS limits imposed on 401(k) plans.']
+['31']
+['29']
+4
+35
+16
+['$2,410', '$598']
+['161', '186']
+['151', '164']
+15.53
+-75.19
+8.61
+13182
+22575
+['In constant currency, total cloud and license expenses increased in fiscal 2019 compared to fiscal 2018 due to higher sales and marketing expenses and higher cloud services and license support expenses, each of which increased primarily due to higher employee related expenses from higher headcount and due to higher technology infrastructure expenses.']
+['Excludes stock-based compensation and certain expense allocations. Also excludes amortization of intangible assets and certain other GAAP-based expenses, which were not allocated to our operating segment results for purposes of reporting to and review by our CODMs, as further described under “Presentation of Operating Segment results and Other Financial Information” above.']
+['Excluding the effects of currency rate fluctuations, our cloud and license segment’s total margin increased in fiscal 2019 compared to fiscal 2018 primarily due to increased revenues, while total margin as a percentage of revenues decreased slightly due to expenses growth.']
+12
+['$45.4']
+['(0.4)']
+['2019', '2018', '2017']
+['2019']
+3.5
+8.54
+['$35.66']
+['due to higher valued options assumed through business combinations with exercise prices lower than the fair market value of VMware’s stock on the date of grant.']
+['0.6']
+['2020', '2019', '2018']
+0.8
+-6.1
+['Horizon Clinicals and Series2000 Revenue Cycle']
+['$9,441']
+['$0.9 million']
+-1508
+-596
+569
+['842,000']
+['$64,000']
+['4,474,868']
+-400464
+-91.95
+['Aug 2007- Jan 2011']
+['Services', 'Software and other']
+['Consists primarily of fees for customer support services generated from our partners']
+['Comprised primarily of fees for end-user software products provided through direct customer']
+['Software and other']
+-4931
+-6216
+['San Diego, California']
+['approximately 150,000 square feet']
+['381']
+316
+468
+183
+['Factors such as asset class allocations, long-term rates of return (actual and expected), and results of periodic asset liability modeling studies are considered when constructing the long-term rate of return assumption for our defined benefit pension plans.']
+['The weighted-average expected long-term rate of return for the plan assets is 3.3%.']
+['2.5%']
+2.7
+1
+2.7
+['previously recognised as loans and receivables under IAS 39 now classified as amortised cost under IFRS 9, represents the maximum credit exposure']
+['£59.1m']
+['UK', 'Ireland']
+['2018']
+-0.1
+-20
+['$3,795', '$3,795']
+['38', '18']
+['3,757', '3,777']
+0
+-52.63
+0.53
+['Deloitte']
+['the effective transition of the external audit process from PwC to Deloitte']
+['FRC’s Revised Ethical Standard']
+32.69
+35.38
+53.08
+['$3.0 million']
+['$13,162']
+['484']
+-2828
+-1164
+185.3
+['using the straight-line method']
+['27.2 million', '$22.5 million', '$22.0 million']
+['$6.4 million', '$9.0 million']
+2.9
+75.2
+['2018']
+['a stock repurchase program']
+['262']
+['309,635']
+0.76
+228
+3.61
+['$1,955']
+['1,230']
+['2019', '2018', '2017']
+['2019']
+230
+95.83
+['$1,887.8']
+['439,606']
+['(87.4)']
+-153
+0.1
+52.69
+['Net cash used in operating activities was $0.6 million for the year ended December 31, 2019 and consisted primarily of a net loss of $3.8 million, capitalized debt discount of $13 thousand and a loss on debt extinguishment of $2.6 million.']
+['$1.8 million']
+['We had no investing activities for the years ended December 31, 2019 and 2018.']
+3290
+-21.92
+2900
+['INR19']
+['£41.5 million']
+['32.4 per cent holding in the ordinary shares of Prozone Intu Properties Limited (Prozone)', 'a 26.8 per cent direct holding in the ordinary shares of Empire Mall Private Limited (Empire)']
+-18.14
+1.23
+['2019']
+['Canada', 'United States', 'United Kingdom', 'Australia', 'Rest of World']
+['96,168']
+['1,079,520']
+['2019']
+['United States']
+['2019']
+['$33,014']
+['$8,620']
+['41,846']
+385.45
+50466
+4313
+['132', '353']
+['(43)', '(118)']
+['(19)', '(41)']
+242.5
+80.5
+30
+['over 50 countries']
+['includes relationships with distribution partners, sub-distributors, producers, directors and prominent figures within the Indian film industry and distribution arena.']
+['7']
+-3
+21.33
+-2
+['from the date of commercial release on a straight-line basis over the period of the expected benefit']
+['varies from 2 to 10 years']
+['2019', '2018']
+3.85
+20.6
+222.58
+7
+48.71
+['annually']
+['Andrew R. Kaiser']
+['Joshua T. Duckworth']
+['2017', '2018', '2019']
+['$(426)']
+['5,798']
+59.99
+17842
+16767
+['acquired inventory fair value costs and amortization of purchased intangible assets']
+['5,563.7']
+['2019', '2018']
+5.56
+-5.3
+-171.1
+['$16.9 million']
+['both stated interest and the amortization of debt discount and issuance costs associated with the $400.0 million aggregate principal amount of our Convertible Senior Notes that were issued in March 2018']
+['$30,182', '$13,281']
+['2019']
+21731.5
+11888
+['$191.7 million']
+['$52.9 million']
+['November 12, 2019']
+466
+84.53
+670
+['increases in direct labor and subcontractor costs consistent with the rate of growth in Technology Development segment revenues.']
+12381521
+17024818
+['2018']
+['18,649,161', '15,400,475']
+['$8.6 million']
+['the grants associated with the programs part of the European Commission IPCEI in Italy and in France, partially offset by a higher level of start-up costs associated with the production ramp up of the 200 mm fab recently acquired from Micron Technology Inc. in Singapore.']
+['lower level of R&D grants.']
+['$55 million']
+83
+6.33
+67
+['$510 million']
+['2019', '2018']
+['Land and improvements', 'Buildings and improvements', 'Machinery and equipment', 'Construction in process']
+['2019']
+77
+2.2
+['operations']
+['$14.8 billion']
+['maintaining an adequate cash balance, access to global funding sources, committed global credit facilities and other committed and uncommitted lines of credit worldwide.']
+15.57
+11.33
+15.3
+['$ 19,694']
+['accounts receivable, inventories, and net property, plant, and equipment.']
+['2019', '2018', '2017']
+['2018']
+74
+1.57
+['31%']
+['primarily from higher sales from expeditionary satellite communications products and secure networks products']
+['2019', '2018']
+['2018']
+121.8
+30.3
+['$9.9 million']
+['primarily due to interest on investments.']
+['$1,310', '$510']
+910
+-433
+['2017']
+['AU 18 cents']
+['US$15.9 million']
+['2019', '2018']
+9.73
+6.33
+12.99
+['$25.7 million']
+['793.4', '934.2']
+['$7,938.3']
+76.09
+-8.99
+1600.1
+['tax effects of temporary differences that gave rise to significant portions of the deferred tax assets and deferred tax liabilities']
+['$2.8 billion']
+['Property, plant and equipment, primarily due to depreciation differences', 'Goodwill and other intangible assets', 'Other']
+4
+5.4
+4.34
+['Cash provided by operating activities for the year ended December 31, 2018 as compared to the year ended December 31, 2017']
+['102,839']
+['269']
+1
+150092
+6.05
+['$1,792,000']
+['$181,000']
+['11,328']
+2161
+8995
+1071.5
+['Fair value is determined based upon the exit price that would be received to sell an asset or paid to transfer a liability in an orderly transaction between market participants, as determined by either the principal market or the most advantageous market.']
+['highly liquid investments purchased with an original maturity of three months or less']
+['money market funds, U.S. treasury bonds, commercial paper, certificates of deposit, asset-backed securities and corporate debt securities']
+0.45
+['Corporate Debt Securities']
+1
+['inventories, net property and equipment, goodwill, intangible assets and asset retirement obligations.']
+['the carrying amounts and estimated fair values of our debt, excluding lease liabilities']
+['$ 4,073.9']
+2.49
+1.75
+1711.4
+['452,695']
+['445.0p']
+['2019', '2018']
+3
+421825
+15.72
+['$64,000']
+['$1,264']
+['$54,000', '$3,000']
+-362
+['2018']
+1261
+['due to the adoption of ASC 606']
+['35,298']
+['2019', '2018']
+57553
+1
+-4049.06
+['(1.6)']
+['(1.9)']
+['2019', '2018', '2017']
+0.4
+0.3
+-31.58
+['$41.8 million', '$86.3 million', '$5.7 million']
+['$0.3 million']
+['$65,477']
+590
+77718
+['2018']
+['Amounts owed by subsidiaries', 'Taxation recoverable', 'Other debtors', 'Derivative financial instruments']
+['Derivative financial instruments', 'Deferred tax']
+['233']
+232328.5
+2959.5
+['2019']
+['a total of 866.6 RSUs']
+['Black-Scholes model']
+['2019', '2018', '2017']
+['2019']
+93.8
+10.34
+['$9.9 million']
+92
+-20.2
+['2019']
+['12.0', '66.6', '23.0']
+['$3.5 million']
+['temporary differences between the amount of assets and liabilities recognized for financial reporting and tax purposes']
+['$ 2,620']
+['Intangible assets', 'Property, plant, and equipment', 'Other']
+['2018']
+-1
+-20
+['(64)']
+['185']
+['No significant amounts of gains (losses) were reclassified from AOCI into earnings as a result of forecasted transactions that failed to occur during fiscal year 2019.']
+236
+-27.4
+-66.67
+['The increase is mainly attributable to an increase of $591.5 million in payments for the construction costs of newbuildings and other fixed assets and a net decrease in cash from short-term investments of $43.0 million in 2018 compared to 2017']
+['Operating activities', 'Investing activities', 'Financing activities']
+['The increase was attributable to an increase in total revenues (revenues and net pool allocation) of $103.7 million, partially offset by a decrease of $23.5 million caused by movements in working capital accounts, an increase of $15.3 million in cash paid for interest including the interest paid for finance leases and a net decrease of $4.8 million from the remaining movements.']
+['2018']
+26.87
+4967.03
+['distribution of the Company’s sales']
+['49%']
+['7,427']
+456
+1222
+1503
+['$24.9 million']
+['7%']
+['26.1%']
+-25.67
+0.1
+-0.26
+['primarily due to lower debt balances, a reduction in interest related to interest rate swaps, and a one-time charge related to a liability that was settled in 2017.']
+['(2,085)']
+['1,758']
+1
+1258
+-266.95
+['a restructuring program associated with footprint consolidation and structural improvements impacting all segments']
+['expected, incurred, and remaining charges for the fiscal 2019 program by segment']
+['Transportation Solutions', 'Industrial Solutions', 'Communications Solutions']
+['Transportation Solutions']
+80
+96.33
+['23,762']
+['1']
+['238']
+4055
+4558
+85.3
+['January 1, 2018', 'December 31, 2018', 'December 31, 2019']
+['Indirect taxes receivable', 'Unbilled revenues', 'Trade receivables', 'Accrued interest', 'Other receivables']
+['6,665']
+10425.5
+20297.5
+7642.5
+['$1,659', '$1,433']
+['346', '411']
+['155', '113']
+134
+155
+14.81
+['legally binding lease payments for leases signed but not yet commenced of $361 million.']
+['138']
+['6']
+-3
+1
+-25.53
+['a leader in messaging security and threat intelligence for internet service providers and mobile carriers worldwide']
+['increased messaging threat intelligence from the analysis of billions of daily emails, malicious domain intelligence, and visibility into fraudulent and malicious SMS messages directed to mobile carriers worldwide']
+['Indefinite']
+36847
+1400
+27727
+['386.1p']
+['those attributable to good leavers as defined by the scheme rules']
+['2019', '2018']
+-5260
+-369919
+-53.55
+['$539']
+['$572']
+['$4,203']
+-12.04
+-19.91
+9754
+['2019', '2018', '2017']
+['$300,853']
+['12,186']
+-89189
+9940
+0.15
+['34%', '11%']
+['36%', '8%']
+['32%', '13%']
+45
+22.5
+22
+['2019', '2018', '2017']
+['$6,751']
+['$17']
+2
+84.64
+64.71
+['a wireless infrastructure company specializing in the design and delivery of radio and antenna communication solutions']
+['comparing the fair value of each reporting unit to its carrying amount, including recorded goodwill']
+['Cubic Transportation Systems', 'Cubic Mission Solutions', 'Cubic Global Defense']
+['Cubic Global Defense']
+39343
+192699
+["calculated using the two-class method, which allocates earnings among common stock and participating securities to calculate EPS when an entity's capital structure includes either two or more classes of common stock or common stock and participating securities."]
+['The Company had no dilutive common share equivalents during the year ended December 31, 2019, due to the results of operations being a loss from continuing operations, net of tax']
+['$(31.5)']
+0.5
+0.5
+3.5
+['$1.9 million']
+['$14.7 million']
+['$14,740', '$1,910']
+8325
+16650
+87.04
+['115,651']
+['40,615']
+['12,391']
+-611
+3
+20.15
+['Include cost of equipment sold, content and programming costs, payments to other carriers, franchise fees and network costs.']
+['Include advertising and marketing expenses, selling costs, billing expenses, bad debts and collection expenses.']
+['Include office building expenses, professional service fees, Canadian Radio-television and Telecommunications Commission (“CRTC”) fees, losses and gains on disposals and write-offs of property, plant and equipment and other administrative expenses.']
+27923
+45947
+14657
+['hedges part of its exposure to potential increases in longevity']
+['Equity securities', 'debt securities']
+['Canadian', 'Foreign']
+4
+60.5
+25.07
+["the Company's decision to take bonus depreciation on qualifying assets placed in service during fiscal 2019."]
+['$148,505', '$88,351']
+['$74,132', '$62,793']
+68462.5
+120259
+51796.5
+['0.9']
+['112,852']
+['2019', '2018', '2017']
+502
+8146
+66.94
+['$2.3 million', '$2.1 million', '$1.9 million']
+['1,310', '1,141', '980']
+['$234', '$259', '$282']
+['2017']
+258.33
+52
+['There was no material bad debt expense in 2019, 2018 and 2017.']
+['Apple']
+['$75 million']
+1344
+15.5
+104
+['(472.7)']
+['908.7']
+['2019', '2018', '2017']
+-1184
+1
+-52.45
+['gross profit plus amortization of acquired intangibles and stock-based compensation.']
+['137,347', '100,284', '72,849']
+['expenses to continue to negatively impact our gross profit.']
+103493.33
+['2018', '2017']
+-340
+['$31.4 million', '$28.5 million']
+['$2.9 million']
+['$7,870', '$12,129']
+['2019']
+7005.5
+3169.5
+['251,379']
+['21,189']
+['4,697']
+-3270
+21303
+2063
+['$2.7 billion']
+['$2.0 billion']
+['There have been no impairment charges recognized for the years ended December 31, 2019 and 2018.']
+495
+1861.5
+5.46
+['as tax-effected operating income before restructuring and other special items divided by average invested capital over a rolling five-quarter period for the fiscal year.']
+['annually']
+['735.6']
+2.1
+-0.5
+25.49
+['205,092.26']
+['167,488.48']
+['19,144.17']
+6292.13
+31311.65
+310336.67
+['$533 million']
+['(1,212)']
+['$497 million']
+24
+-1284
+-6.75
+['Contributed equity represents the number of ordinary shares on issue less shares held by the Group.']
+['27 May 2019']
+['Holders of ordinary shares are entitled to receive dividends as declared and are entitled to one vote per share at shareholders’ meetings.']
+54633874
+5941.5
+227
+['$53,294', '$61,431', '$279,745']
+['$2.41', '$2.70', '$12.30']
+['$2.41', '$2.70', '$12.30']
+57362.5
+-8137
+-13.25
+['mainly attributable to corresponding changes in deferred tax assets, primarily foreign tax credit carryforwards and certain state tax credit carryforwards.']
+['50']
+['131']
+-13
+1
+16.85
+['the risk that we will be unable to meet our financial obligations']
+['the relative sensitivity of the Group’s performance to developments affecting a particular industry.']
+['$25,153,000']
+-33.56
+-19.93
+10.84
+['Specialty Alloys Operations (“SAO”) and Performance Engineered Products (“PEP”).']
+['$1,327.9']
+['2019', '2018', '2017']
+['2019']
+4.7
+3.57
+['2,296']
+['75.1']
+['12,621']
+321
+2296
+5.22
+['our growth, ability to maintain our contractual billing and collection terms, and our investments in headcount and infrastructure to support anticipated growth.']
+['$67,510']
+['14,775']
+91104
+368.13
+33.69
+['at cost, net of accumulated depreciation and amortization']
+['$0.8 million', '$0.6 million']
+['$672', '$672']
+-18.93
+0.18
+0.97
+['30,303', '303,793']
+['26,069', '256,660']
+['10,436', '9,399']
+181.59
+1136.66
+288625
+['53,445']
+10.15
+78.55
+55307.33
+['$161,544']
+['54,330']
+['reconciliation of the beginning and ending liability for the year ended June 30, 2019 and 2018']
+['workforce reductions and facility consolidations']
+['$41.9 million']
+-1903
+35.47
+-7419
+['Original Equipment Manufacturers (“OEM”) are the end-customers to which we provide direct marketing application engineering support']
+['Distribution customers refers to the distributors and representatives that we engage to distribute our products around the world.']
+['Our revenues weight in Distribution registered a decrease of 5 percentage point compared to 2018, reaching a 30% share of total revenues in 2019.']
+67
+33
+4
+['50']
+['42']
+['$1,366']
+44798
+16
+93.7
+['$872 million']
+['13,428']
+['8,574']
+470
+222
+-15.61
+['31']
+['60%', '40%']
+['23%', '77%']
+-37
+67.5
+['2019']
+['$0.3 million', '$0.9 million']
+['$0.9 million', '$0.6 million']
+['$0.8 million']
+53113
+202845
+1.8
+['in thousands']
+['$1,407']
+['$1,082']
+3695
+11.36
+16
+['1,620']
+['approximately 7%']
+['payroll and payroll related benefits expenses, related overhead, audit fees, other professional fees, contract labour and consulting expenses and public company costs']
+37556
+18778
+714
+['lower capital expenditure partly offset by lower operating cash flow, higher cash taxes and lower associates’ dividends']
+['S$215 million for fixed and data infrastructure, S$183 million for mobile networks and S$189 million for ICT and other investments']
+['S$1.75 billion']
+3
+-10.5
+467
+['due to normal price pressure and increased unsaturation charges, partially offset by improved manufacturing efficiencies, better product mix, and favorable currency effects, net of hedging.']
+['manufacturing efficiencies and better product mix, partially offset by normal price pressure and unfavorable currency effects, net of hedging.']
+['40.0%']
+5579.33
+3609.67
+39.3
+['$39,000']
+['primarily from the release of the tax valuation allowance associated with previously generated alternative minimum tax (AMT) credits due to the December 22, 2017 Tax Cuts and Jobs Act Tax Reform (the “Tax Act”)']
+['227', '173']
+0.13
+1.18
+2.65
+['trade and other receivables and cash at bank']
+['cash at bank or cash placed on deposit']
+['Sterling', 'Euro', 'US Dollar', 'Renminbi', 'Other']
+['Sterling']
+26.83
+15.53
+['NASDAQ Global Select Market']
+['TZOO']
+['$11.44', '$9.47']
+1.97
+10.3
+-3.52
+['110.43', '1,100.50']
+['30.15', '30.90']
+['South Korean Won']
+-1.29
+0.31
+['U.S.']
+['driven by a higher average debt balance and higher interest rates as we issued debt to finance the Red Hat acquisition.']
+['It excludes the Red Hat pre-closing debt financing costs.']
+['$621 million']
+1033.5
+-228
+393
+['2019', '2018', '2017']
+['940,045']
+['195,837']
+['2019', '2018']
+8399
+10.18
+['an estimate of open purchase orders and contractual obligations in the normal course of business for which we have not received the goods or services as of December 31, 2019']
+['19,812', '5,912']
+['6,551', '0']
+79570
+9.12
+48410
+['May 2014']
+['net revenue for fiscal 2019 increased $47 million, and our operating expenses decreased $12 million']
+['$708']
+0.72
+4.4
+36.01
+['$275,792', '$282,950']
+['254,924', '239,310']
+['67,918', '45,218']
+279371
+247117
+56568
+19213
+-462
+-0.2
+['Adjusted EBITA was down year-over-year on lower revenue, price declines and reduced capacity utilization']
+['remain challenging with market volume stabilizing at the current level']
+['driven by the liquefied natural gas and upstream markets']
+['$1.2 million']
+['result of interest expense of $3.3 million associated with our long-term debt and our financing lease obligation of $2.0 million in connection with the construction of our Lexington, MA – U.S. headquarters']
+['$ 2,515', '$ 1,310']
+1912.5
+-3269
+['2018']
+['€1.3 billion']
+['433']
+['(2,088)']
+559
+-1581
+2140
+['the Audit Committee will reconsider whether to retain KPMG, and may appoint that firm or another without resubmitting the matter to the shareholders']
+['the cost of preparing agreed upon procedures reports and providing general accounting consulting services']
+['auditing our annual consolidated financial statements', 'auditing our internal control over financial reporting in accordance with Section 404 of the Sarbanes-Oxley Act of 2002', 'reviewing our quarterly financial statements', 'auditing the financial statements of several of our subsidiaries', 'reviewing our registration statements and issuing related comfort letters', 'statutory audits for certain of our foreign subsidiaries', 'consultations regarding accounting standards']
+7
+472663
+43.81
+['875.8']
+['8.1']
+['2019', '2018']
+318
+['2019', '2018']
+56.22
+['the divestiture of the Service Provider Video Software Solutions (SPVSS) business.']
+['core networking technologies of switching, routing, wireless, and data center products that are designed to work together to deliver networking capabilities and transport and/or store data.']
+['28,322']
+468
+3
+5.22
+['$ 93,662']
+['$ 74,646']
+['$ 77,492', '$ 71,513']
+411.5
+48007
+24539
+['primarily due to an increased in Solid Capacitor net sales $164.6 million']
+['2018', '2019']
+['315,535']
+2
+-1.4
+217805
+['royalty reports received from third party licensees']
+['$3,037,000']
+['Fully-Paid Licenses', 'Royalty Bearing Licenses', 'Other Revenue']
+-86.26
+['Fully-Paid Licenses']
+95.72
+['RMB77 million']
+['27,728']
+['2,899']
+28101
+20471
+20683
+['2019', '2018', '2017']
+['72,071']
+['2,321']
+1
+66955
+68.07
+['2018', '2019']
+['1,429']
+['41,837']
+['2018']
+40695
+312.93
+['1,169']
+['1']
+['268']
+-1.32
+-3
+-7.83
+['2019', '2018']
+['4,206']
+['88,848']
+2
+-654
+-228.75
+['20']
+720.2
+7.6
+['0']
+['87%']
+7957.9
+['77,131']
+['2,154']
+['100,107']
+-12069
+146.65
+-3206
+['maturities of lease liabilities']
+['2020', '2021', '2022', '2023', '2024', 'Thereafter']
+['Operating Leases', 'Finance Leases']
+6
+140
+-21.52
+['(494)']
+['1,663']
+['29,423']
+-2157
+-48207
+0.5
+['51%', '57%', '53%']
+['13%', '9%', '13%']
+['$17,116']
+23.23
+15.64
+12405.18
+['268,000']
+['$278,057']
+['$0.34']
+0.34
+0.02
+4570576.14
+['$0.8 million']
+['weighted-average period of 2.9 years.']
+['$2,936', '$3,869', '$3,189']
+['2019']
+3331.33
+-2315
+['the carrying value of goodwill by segment']
+['tax adjustments for acquisitions in 2019 and 2018']
+['$ 4,565.4', '$ 318.2']
+1336.7
+0.59
+49.92
+['Professional Service and Other']
+['costs of providing integration, configuration and training with respect to our various software products. The most significant components of these costs are personnel-related expenses, travel costs and third party subcontracting']
+['2019', '2018', '2017']
+19.43
+54510.33
+49.4
+['the unfunded obligations are remeasured each fiscal year, thereby resulting in our inability to accurately predict the ultimate amount and timing of any future required contributions to such plans']
+['$14.2 million', '$10.8 million']
+['a party to an agricultural sublease agreement with a third party for certain farmland through 2020']
+['Long-term debt']
+0.48
+0.6
+['$15.6 million']
+['The Company reports intangible impairment charges within the Asset impairment expense line of our Consolidated Statements of Operations.']
+['2.5']
+15.6
+2.5
+12.67
+['materially affect our results of operations and cash flows, and in some cases result in liabilities to complete contracts in a loss position']
+['if underlying assumptions were to change such that our estimated profit rate at completion for all fixed-price contracts accounted for under the cost-to-cost percentage-of-completion method was higher or lower by one percentage point']
+['2019', '2018', '2017']
+['2018']
+4751
+-1161.33
+['In-game net revenues primarily includes the net amount of revenue recognized for downloadable content and microtransactions during the period.']
+['3,376']
+['6,489']
+9865
+11749
+13989
+['473,550']
+['365,223']
+['12,632']
+36.9
+28.46
+0.98
+['254,127']
+['46,552']
+['2019', '2018', '2017']
+3251
+-993
+-19.17
+['cost of sales and in operating expenses']
+['2018', '2019']
+['158,371']
+['Wages and salaries', 'Wages and salaries']
+39224
+20.81
+['$86.8']
+['33.2']
+['19.9']
+-0.2
+37.35
+183.4

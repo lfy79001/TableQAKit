@@ -38,7 +38,7 @@ class TATQA(HFTabularDataset):
             table_data_contents = table_data[1:]
             txt_list = [paragraph["text"] for paragraph in question_data["paragraphs"]]
 
-            for single_question_data in question_data["question"]:
+            for single_question_data in question_data["questions"]:
                 question = single_question_data["question"]
                 data.append({
                     "question": question,
