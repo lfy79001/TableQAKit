@@ -195,7 +195,7 @@ def fetch_custom_table_data():
         custom_tables = session.get("custom_tables", {})
         if len(custom_tables) != 0 and table_name in custom_tables:
             table_data = custom_tables[table_name]
-            properties_html,table_html = export.table_to_html(table_data, propertie_name_list,None,"web")
+            properties_html,table_html = export.table_to_html(table_data, properties_name_list,None,"web")
             data = {
                 "table_html": table_html,
                 "properties_html": properties_html,

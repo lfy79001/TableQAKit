@@ -292,3 +292,52 @@ AttributeError: 'CORS' object has no attribute 'route'
 [2023-07-23 05:27:12 +0000] [4431] [INFO] Listening at: http://210.75.240.136:18889 (4431)
 [2023-07-23 05:27:12 +0000] [4431] [INFO] Using worker: sync
 [2023-07-23 05:27:12 +0000] [4433] [INFO] Booting worker with pid: 4433
+[2023-07-23 06:25:19 +0000] [4431] [CRITICAL] WORKER TIMEOUT (pid:4433)
+[2023-07-23 06:25:19 +0000] [4433] [INFO] Worker exiting (pid: 4433)
+[2023-07-23 06:25:19 +0000] [4431] [ERROR] Worker (pid:4433) exited with code 1
+[2023-07-23 06:25:19 +0000] [4431] [ERROR] Worker (pid:4433) exited with code 1.
+[2023-07-23 06:25:19 +0000] [11929] [INFO] Booting worker with pid: 11929
+[2023-07-23 06:48:15 +0000] [4431] [CRITICAL] WORKER TIMEOUT (pid:11929)
+[2023-07-23 06:48:15 +0000] [11929] [INFO] Worker exiting (pid: 11929)
+[2023-07-23 06:48:15 +0000] [4431] [ERROR] Worker (pid:11929) exited with code 1
+[2023-07-23 06:48:15 +0000] [4431] [ERROR] Worker (pid:11929) exited with code 1.
+[2023-07-23 06:48:15 +0000] [15207] [INFO] Booting worker with pid: 15207
+[2023-07-23 07:05:58 +0000] [4431] [CRITICAL] WORKER TIMEOUT (pid:15207)
+[2023-07-23 07:05:58 +0000] [15207] [INFO] Worker exiting (pid: 15207)
+[2023-07-23 07:05:59 +0000] [4431] [ERROR] Worker (pid:15207) exited with code 1
+[2023-07-23 07:05:59 +0000] [4431] [ERROR] Worker (pid:15207) exited with code 1.
+[2023-07-23 07:05:59 +0000] [18322] [INFO] Booting worker with pid: 18322
+[2023-07-23 07:36:23 +0000] [4431] [CRITICAL] WORKER TIMEOUT (pid:18322)
+[2023-07-23 07:36:23 +0000] [18322] [INFO] Worker exiting (pid: 18322)
+[2023-07-23 07:36:23 +0000] [4431] [ERROR] Worker (pid:18322) exited with code 1
+[2023-07-23 07:36:23 +0000] [4431] [ERROR] Worker (pid:18322) exited with code 1.
+[2023-07-23 07:36:23 +0000] [33038] [INFO] Booting worker with pid: 33038
+[2023-07-23 07:42:42 +0000] [4431] [CRITICAL] WORKER TIMEOUT (pid:33038)
+[2023-07-23 07:42:42 +0000] [33038] [INFO] Worker exiting (pid: 33038)
+[2023-07-23 07:42:43 +0000] [4431] [ERROR] Worker (pid:33038) exited with code 1
+[2023-07-23 07:42:43 +0000] [4431] [ERROR] Worker (pid:33038) exited with code 1.
+[2023-07-23 07:42:43 +0000] [36018] [INFO] Booting worker with pid: 36018
+[2023-07-23 07:43:15 +0000] [4431] [CRITICAL] WORKER TIMEOUT (pid:36018)
+[2023-07-23 07:43:15 +0000] [36018] [INFO] Worker exiting (pid: 36018)
+[2023-07-23 07:43:15 +0000] [4431] [ERROR] Worker (pid:36018) exited with code 1
+[2023-07-23 07:43:15 +0000] [4431] [ERROR] Worker (pid:36018) exited with code 1.
+[2023-07-23 07:43:15 +0000] [36189] [INFO] Booting worker with pid: 36189
+[2023-07-23 07:47:38 +0000] [4431] [CRITICAL] WORKER TIMEOUT (pid:36189)
+[2023-07-23 07:47:38 +0000] [36189] [INFO] Worker exiting (pid: 36189)
+[2023-07-23 07:47:38 +0000] [4431] [ERROR] Worker (pid:36189) exited with code 1
+[2023-07-23 07:47:38 +0000] [4431] [ERROR] Worker (pid:36189) exited with code 1.
+[2023-07-23 07:47:38 +0000] [38049] [INFO] Booting worker with pid: 38049
+[2023-07-23 07:59:43 +0000] [4431] [CRITICAL] WORKER TIMEOUT (pid:38049)
+[2023-07-23 07:59:43 +0000] [38049] [INFO] Worker exiting (pid: 38049)
+[2023-07-23 07:59:44 +0000] [4431] [ERROR] Worker (pid:38049) exited with code 1
+[2023-07-23 07:59:44 +0000] [4431] [ERROR] Worker (pid:38049) exited with code 1.
+[2023-07-23 07:59:44 +0000] [40542] [INFO] Booting worker with pid: 40542
+[2023-07-23 08:03:45 +0000] [4431] [CRITICAL] WORKER TIMEOUT (pid:40542)
+[2023-07-23 08:03:45 +0000] [40542] [INFO] Worker exiting (pid: 40542)
+[2023-07-23 08:03:45 +0000] [4431] [ERROR] Worker (pid:40542) exited with code 1
+[2023-07-23 08:03:45 +0000] [4431] [ERROR] Worker (pid:40542) exited with code 1.
+[2023-07-23 08:03:45 +0000] [42080] [INFO] Booting worker with pid: 42080
+[2023-07-23 14:08:42 +0000] [4431] [CRITICAL] WORKER TIMEOUT (pid:42080)
+[2023-07-23 14:08:42 +0000] [42080] [INFO] Worker exiting (pid: 42080)
+[2023-07-23 14:08:43 +0000] [4431] [ERROR] Worker (pid:42080) was sent SIGKILL! Perhaps out of memory?
+[2023-07-23 14:08:43 +0000] [140811] [INFO] Booting worker with pid: 140811

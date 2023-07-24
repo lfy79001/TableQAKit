@@ -7,6 +7,8 @@ datasets:
 - tatqa
 - wikisql
 - wikitq
+- multihiertt
+- spreadsheetqa
 split:
 - train
 - dev

@@ -4,9 +4,9 @@ from loaders.tatqa import TATQA
 from loaders.finqa import FinQA
 from loaders.hitab import HiTab
 from loaders.hybridqa import HybridQA
-# from loaders.multihiertt import MultiHiertt
+from loaders.multihiertt import MultiHiertt
 from loaders.mmqa import MultiModalQA
-
+from loaders.spreadsheetqa import SpreadSheetQA
 
 DATASET_CLASSES = {
     "wikisql": WikiSQL,
@@ -16,5 +16,6 @@ DATASET_CLASSES = {
     "finqa": FinQA,
     "hitab": HiTab,
     "hybridqa": HybridQA,
-    # "multihiertt": MultiHiertt
+    "spreadsheetqa": SpreadSheetQA,
+    "multihiertt": MultiHiertt
 }
