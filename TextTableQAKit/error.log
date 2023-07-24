@@ -337,3 +337,9 @@ Download Table Error: 415 Unsupported Media Type: Did not attempt to load JSON d
 Download Table Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
 Download Table Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
 Fetch Table Error: fetch non-existent tables in session
+Fetch Table Error: list index out of range
+Fetch Table Error: list index out of range
+Fetch Table Error: list index out of range
+Fetch Table Error: list index out of range
+Fetch Table Error: list index out of range
+Fetch Table Error: list index out of range

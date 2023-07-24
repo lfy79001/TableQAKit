@@ -39,6 +39,8 @@ class SpreadSheetQA(HFTabularDataset):
                 properties_info['question--program'] = str(question_data['qa']['program'])
             if 'program_re' in question_data['qa']:
                 properties_info['question--program_re'] = str(question_data['qa']['program_re'])
+            if 'source' in question_data:
+                properties_info['source'] = str(question_data['source'])
 
             question = question_data['qa']['question']
             if type(question_data['table_ori']) == list:
