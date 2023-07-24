@@ -17,19 +17,21 @@ def generate_gold_answer(dataset, split):
             for item in result:
                 file.write(str(item) + '\n')
     elif dataset == 'finqa':
-        pass
-        # result = []
-        # output_file_base_path = 'finqa/gold_answer'
-        # output_file_path = os.path.join(output_file_base_path, f'{split}.txt')
-        # input_file_base_path = '../datasets/finqa'
-        # input_file_path = os.path.join(input_file_base_path, f'{split}.json')
-        # with open(input_file_path, 'r', encoding='utf-8') as f:
-        #     question_data_list = json.load(f)
-        # for question_data in question_data_list:
-        #     result.append(question_data['qa']['exe_ans'])
-        # with open(output_file_path, 'w', encoding='utf-8') as file:
-        #     for item in result:
-        #         file.write(str(item) + '\n')
+        result = []
+        output_file_base_path = 'finqa/gold_answer'
+        output_file_path = os.path.join(output_file_base_path, f'{split}.txt')
+        input_file_base_path = '../datasets/finqa'
+        input_file_path = os.path.join(input_file_base_path, f'{split}.json')
+        with open(input_file_path, 'r', encoding='utf-8') as f:
+            question_data_list = json.load(f)
+        for question_data in question_data_list:
+            if 'exe_ans' in question_data['qa']:
+                result.append(question_data['qa']['exe_ans'])
+            else:
+                result.append("[The test dataset does not provide a gold answer.]")
+        with open(output_file_path, 'w', encoding='utf-8') as file:
+            for item in result:
+                file.write(str(item) + '\n')
     elif dataset == 'tatqa':
         result = []
         output_file_base_path = 'tatqa/gold_answer'
@@ -137,7 +139,7 @@ def generate_gold_answer(dataset, split):
                 file.write(str(item) + '\n')
 
 if __name__ == '__main__':
-    dataset_list = ['spreadsheetqa', 'wikisql', 'wikitq', 'hybridqa', 'mmqa', 'tatqa']
+    dataset_list = ['spreadsheetqa', 'wikisql', 'wikitq', 'hybridqa', 'mmqa', 'tatqa', 'finqa']
     split_list = ['train', 'dev', 'test']
 
     for dataset in dataset_list:
