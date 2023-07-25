@@ -378,3 +378,25 @@ AttributeError: 'CORS' object has no attribute 'route'
 [2023-07-25 08:56:03 +0000] [2770913] [INFO] Listening at: http://210.75.240.136:18889 (2770913)
 [2023-07-25 08:56:03 +0000] [2770913] [INFO] Using worker: sync
 [2023-07-25 08:56:03 +0000] [2770915] [INFO] Booting worker with pid: 2770915
+[2023-07-25 09:04:18 +0000] [2770913] [INFO] Handling signal: term
+[2023-07-25 09:04:18 +0000] [2770915] [INFO] Worker exiting (pid: 2770915)
+[2023-07-25 09:04:18 +0000] [2770913] [INFO] Shutting down: Master
+[2023-07-25 09:04:27 +0000] [2777852] [INFO] Starting gunicorn 21.2.0
+[2023-07-25 09:04:27 +0000] [2777852] [INFO] Listening at: http://210.75.240.136:18889 (2777852)
+[2023-07-25 09:04:27 +0000] [2777852] [INFO] Using worker: sync
+[2023-07-25 09:04:27 +0000] [2777858] [INFO] Booting worker with pid: 2777858
+[2023-07-25 09:05:13 +0000] [2777852] [INFO] Handling signal: term
+[2023-07-25 09:05:13 +0000] [2777858] [INFO] Worker exiting (pid: 2777858)
+[2023-07-25 09:05:14 +0000] [2777852] [INFO] Shutting down: Master
+[2023-07-25 09:05:15 +0000] [2779684] [INFO] Starting gunicorn 21.2.0
+[2023-07-25 09:05:15 +0000] [2779684] [INFO] Listening at: http://210.75.240.136:18889 (2779684)
+[2023-07-25 09:05:15 +0000] [2779684] [INFO] Using worker: sync
+[2023-07-25 09:05:15 +0000] [2779686] [INFO] Booting worker with pid: 2779686
+[2023-07-25 09:06:22 +0000] [2779684] [INFO] Handling signal: term
+[2023-07-25 09:06:22 +0000] [2779686] [INFO] Worker exiting (pid: 2779686)
+[2023-07-25 09:06:23 +0000] [2779684] [INFO] Shutting down: Master
+[2023-07-25 09:06:24 +0000] [2780806] [INFO] Starting gunicorn 21.2.0
+[2023-07-25 09:06:24 +0000] [2780806] [INFO] Listening at: http://210.75.240.136:18889 (2780806)
+[2023-07-25 09:06:24 +0000] [2780806] [INFO] Using worker: sync
+[2023-07-25 09:06:24 +0000] [2780808] [INFO] Booting worker with pid: 2780808
+[2023-07-25 09:08:53 +0000] [2780808] [WARNING] Invalid request from ip=89.248.163.224: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'

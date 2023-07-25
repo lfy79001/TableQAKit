@@ -129,10 +129,10 @@ def statistics_default_table_information(dataset_name, split, table_idx, propert
     # print("generated_results\n", generated_results)
     # print("dataset_info\n", dataset_obj.get_info())
     # print("table_question\n", table_data.default_question)
-    # with open("properties.html", "w", encoding="utf-8") as file:
-    #     file.write(properties_html)
-    # with open("table.html", "w", encoding="utf-8") as file:
-    #     file.write(table_html)
+    with open("properties.html", "w", encoding="utf-8") as file:
+        file.write(properties_html)
+    with open("table.html", "w", encoding="utf-8") as file:
+        file.write(table_html)
     # print("pictures\n", table_data.pic_info)
     # print("text\n", {(index + 1): value for index, value in enumerate(table_data.txt_info)})
     return data
