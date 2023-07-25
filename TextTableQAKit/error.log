@@ -343,3 +343,8 @@ Fetch Table Error: list index out of range
 Fetch Table Error: list index out of range
 Fetch Table Error: list index out of range
 Fetch Table Error: list index out of range
+Fetch Table Error: [Errno 2] No such file or directory: 'datasets/hitab/test.jsonl'
+Fetch Table Error: get_all_coordinates() takes 1 positional argument but 2 were given
+Fetch Table Error: [Errno 2] No such file or directory: 'outputs/hitab/gold_answer/test.txt'
+Fetch Table Error: [Errno 2] No such file or directory: 'outputs/hitab/gold_answer/test.txt'
+Fetch Table Error: [Errno 2] No such file or directory: 'outputs/hitab/gold_answer/test.txt'

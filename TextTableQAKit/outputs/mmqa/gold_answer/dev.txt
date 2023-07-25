@@ -1,2442 +1,2441 @@
-Mask
-1976
-baseball
-Tell Me That You Love Me, Junie Moon
-Tell Me That You Love Me, Junie Moon
-Bosnian Premier League
-FK Tuzla City
-Seven Furlongs
-three-year-old Thoroughbreds
-2009
-2008
-554
-The mint julep
-blue
-horses
-horses
-Breeders' Cup Mile
-Victor Espinoza
-horses
-blue
+['Mask']
+['1976']
+['baseball']
+['Tell Me That You Love Me, Junie Moon']
+['Tell Me That You Love Me, Junie Moon']
+['Bosnian Premier League']
+['FK Tuzla City']
+['Seven Furlongs']
+['three-year-old Thoroughbreds']
+['2009']
+['2008']
+['554']
+['The mint julep']
+['blue']
+['horses']
+['horses']
+["Breeders' Cup Mile"]
+['Victor Espinoza']
+['horses']
+['blue']
 ['1999', '1998', '2002', '2001']
-1981
-Sarah
-Kodiak Valley Ski Resort
-Orange County
+['1981']
+['Sarah']
+['Kodiak Valley Ski Resort']
+['Orange County']
 ['Tommy', 'Zhang Ling']
-Soup for One
-Jean Terrell
-Carl Sadler
+['Soup for One']
+['Jean Terrell']
+['Carl Sadler']
 ['05:05', '04:39']
-Lata Mangeshkar
-Asha Bhosle
-2003
-Anne Ramsey
-Anne Ramsey
-1976
-N.Y. Broadcaster
-Reds
-William Christopher Handy
-Professor Peter Saunders
-A Febre do Rato
-Blue Eyes
-gun
-2009
-Pittsburgh Steelers
-4th Annual Shorty Awards
-three
-three
-three
-microphone
-black
+['Lata Mangeshkar']
+['Asha Bhosle']
+['2003']
+['Anne Ramsey']
+['Anne Ramsey']
+['1976']
+['N.Y. Broadcaster']
+['Reds']
+['William Christopher Handy']
+['Professor Peter Saunders']
+['A Febre do Rato']
+['Blue Eyes']
+['gun']
+['2009']
+['Pittsburgh Steelers']
+['4th Annual Shorty Awards']
+['three']
+['three']
+['three']
+['microphone']
+['black']
 ['PlayStation Theater', 'Galapagos Art Space', 'The Times Center']
-black
-300.0
-Mikael Samuelsson
-Professor Hugh Merrill
-Ryan Phillippe
-Yes
-2011 - 2013
-scythe
-Hindi
-Murphy's law
-August 17, 2007
-blonde
-Emily Osment
-Kendall Wackerman
+['black']
+[300.0]
+['Mikael Samuelsson']
+['Professor Hugh Merrill']
+['Ryan Phillippe']
+['Yes']
+['2011 - 2013']
+['scythe']
+['Hindi']
+["Murphy's law"]
+['August 17, 2007']
+['blonde']
+['Emily Osment']
+['Kendall Wackerman']
 ['Kick Buttowski: Suburban Daredevil', 'Slugterra']
-Don't Call Me Mama Anymore
-Dream a Little Dream (Cass Elliot album)
-yes
-V/H/S/2 (Segment: Slumber Party Alien Abduction)
-Light Turner
-Page Municipal Airport
-yes
-Young Electric Sign Company (YESCO)
-yes
-bridge
-yes
-bridge
-3
-desert
-Missouri
-630-foot
-Judy Garland, Margaret O'Brien, Mary Astor, Lucille Bremer, Tom Drake, Leon Ames, Marjorie Main, June Lockhart, and Joan Carroll
+["Don't Call Me Mama Anymore"]
+['Dream a Little Dream (Cass Elliot album)']
+['yes']
+['V/H/S/2 (Segment: Slumber Party Alien Abduction)']
+['Light Turner']
+['Page Municipal Airport']
+['yes']
+['Young Electric Sign Company (YESCO)']
+['yes']
+['bridge']
+['yes']
+['bridge']
+['3']
+['desert']
+['Missouri']
+['630-foot']
+["Judy Garland, Margaret O'Brien, Mary Astor, Lucille Bremer, Tom Drake, Leon Ames, Marjorie Main, June Lockhart, and Joan Carroll"]
 ['Senza buccia', 'Tourist Trap', 'Home Movies']
-yes
-Carrie
-Marc Cattaneo
-a higher lord
-The Mountains of the Monsoon
-yes
-Winged monkeys
-No
-Celine Dion
-no
-yes
-no
-San Martín
-Syahrini
-Al-Hilal
-Yes
-2013–14
-2018
-4
-yes
-Adios: The Greatest Hits
-4
-2003
-Football
+['yes']
+['Carrie']
+['Marc Cattaneo']
+['a higher lord']
+['The Mountains of the Monsoon']
+['yes']
+['Winged monkeys']
+['No']
+['Celine Dion']
+['no']
+['yes']
+['no']
+['San Martín']
+['Syahrini']
+['Al-Hilal']
+['Yes']
+['2013–14']
+['2018']
+['4']
+['yes']
+['Adios: The Greatest Hits']
+['4']
+['2003']
+['Football']
 ['Point University', 'Bluefield College', 'Faulkner University']
-Let's Eat 3
-MBC
-Lost Quarterfinal, 2–4 (Rockets)
-Roricus, Rorichus
-1066 AD
-Southwestern Athletic Conference
-J. C. Romero
-No
-Dennis Price
-Stanley Holloway
-United States
-black
-Giorgio Armani
-Domenico Dolce
-David Geffen
-white
-1.74
-No
-Battlefield America
-a young boy who has been accepted into the crew through Rico, was killed in a drive-by
-killed in a drive-by
-Good Burger
-Jake
-No
+["Let's Eat 3"]
+['MBC']
+['Lost Quarterfinal, 2–4 (Rockets)']
+['Roricus, Rorichus']
+['1066 AD']
+['Southwestern Athletic Conference']
+['J. C. Romero']
+['No']
+['Dennis Price']
+['Stanley Holloway']
+['United States']
+['black']
+['Giorgio Armani']
+['Domenico Dolce']
+['David Geffen']
+['white']
+['1.74']
+['No']
+['Battlefield America']
+['a young boy who has been accepted into the crew through Rico, was killed in a drive-by']
+['killed in a drive-by']
+['Good Burger']
+['Jake']
+['No']
 ['Ivica Magdić', 'Marko Barlecaj']
-FSV Frankfurt
-Yes
-17
-2002
-soccer
-soccer
-crown
-Laura San Giacomo
-Jenny
-yes
-The Town Hall, New York City
-Audra McDonald
-No
-single
-Filipów
-Gmina Bakałarzewo
-rural
-Terry Pilkadaris
-Yes
-AP-1, TSN-2
-Dick Huffman
-Our Idiot Brother
-gun
-A Kid in King Arthur's Court
-gun
-2013
-The Lotus Pond
-4 - 0
-TSH
-Vancouver
-2013
-New York City
-Wendy
-no
-K-9
-no
-Receptionist
-Maximum Overdrive
-Glen E. Friedman Russell Simmons
-James Brown
-unzipped
-hands
-fists
-nine
-"Ekkadoyi Muddula Bava"
-hoops
-hoops
+['FSV Frankfurt']
+['Yes']
+['17']
+['2002']
+['soccer']
+['soccer']
+['crown']
+['Laura San Giacomo']
+['Jenny']
+['yes']
+['The Town Hall, New York City']
+['Audra McDonald']
+['No']
+['single']
+['Filipów']
+['Gmina Bakałarzewo']
+['rural']
+['Terry Pilkadaris']
+['Yes']
+['AP-1, TSN-2']
+['Dick Huffman']
+['Our Idiot Brother']
+['gun']
+["A Kid in King Arthur's Court"]
+['gun']
+['2013']
+['The Lotus Pond']
+['4 - 0']
+['TSH']
+['Vancouver']
+['2013']
+['New York City']
+['Wendy']
+['no']
+['K-9']
+['no']
+['Receptionist']
+['Maximum Overdrive']
+['Glen E. Friedman Russell Simmons']
+['James Brown']
+['unzipped']
+['hands']
+['fists']
+['nine']
+['"Ekkadoyi Muddula Bava"']
+['hoops']
+['hoops']
 ['Block B', 'Block A']
-no
-Consejo Mundial de Lucha Libre
-Tiger
+['no']
+['Consejo Mundial de Lucha Libre']
+['Tiger']
 ['6.9', '7.0', '6.0', '6.6', '6.2']
-Alaska
-Plamen Iliev
-Alexandru Greab
-glove
-yes
-soccer
-Sai Tej
-2016
-K McConville
-Trip hop
-Moto2
-5.2
-1.1440000000000001
-1961
-South Africa
-83%
-3
-Rickey
-green
-3
-suit
-Solarbabies
-The Pilot
-pink
-6
-Ron Grahame
-Jack Norris
-halo
-Houston Aeros
-Minnesota Fighting Saints
-No
-Brotherhood
+['Alaska']
+['Plamen Iliev']
+['Alexandru Greab']
+['glove']
+['yes']
+['soccer']
+['Sai Tej']
+['2016']
+['K McConville']
+['Trip hop']
+['Moto2']
+['5.2']
+[1.1440000000000001]
+['1961']
+['South Africa']
+['83%']
+['3']
+['Rickey']
+['green']
+['3']
+['suit']
+['Solarbabies']
+['The Pilot']
+['pink']
+['6']
+['Ron Grahame']
+['Jack Norris']
+['halo']
+['Houston Aeros']
+['Minnesota Fighting Saints']
+['No']
+['Brotherhood']
 ['CETV Awards', 'SBS Drama Awards']
-Marcian (450–457)
-The Basilica Cistern
-Waterloo Black Hawks
-A Child Is Waiting
+['Marcian (450–457)']
+['The Basilica Cistern']
+['Waterloo Black Hawks']
+['A Child Is Waiting']
 ['Bing Crosby', 'Lee J. Cobb']
-Jinusean
-Eun Ji-won
-Come and Find Me
-Vancouver, British Columbia
-Charlize Theron
-two
-blond
-Chris Hemsworth
-ties
-blond
-Yes
-Yes
+['Jinusean']
+['Eun Ji-won']
+['Come and Find Me']
+['Vancouver, British Columbia']
+['Charlize Theron']
+['two']
+['blond']
+['Chris Hemsworth']
+['ties']
+['blond']
+['Yes']
+['Yes']
 ['Mysterious Island', 'A Waste of Shame: The Mystery of Shakespeare and His Sonnets']
-Thurrock, Essex overlooking the River Thames with the backdrop of the Dartford River Crossing
-castle
-castle
-5.014285714285714
-Horace Grant
-no
-Melinda Clarke
-No
+['Thurrock, Essex overlooking the River Thames with the backdrop of the Dartford River Crossing']
+['castle']
+['castle']
+[5.014285714285714]
+['Horace Grant']
+['no']
+['Melinda Clarke']
+['No']
 ['Xander Berkeley', 'Aaron Stanford', 'Shane West']
-s.t.
-Abacus
-hand
-hand
-54.834
-white
-bangs
-gymnastics
-white
-bun
-bangs
-Lewis Grabban
-Black Knight Decoded
-Amanda
-Hillbilly Elegy
-eight
-the Juhu slums of Mumbai
-confetti
-Danny Leiner
+['s.t.']
+['Abacus']
+['hand']
+['hand']
+['54.834']
+['white']
+['bangs']
+['gymnastics']
+['white']
+['bun']
+['bangs']
+['Lewis Grabban']
+['Black Knight Decoded']
+['Amanda']
+['Hillbilly Elegy']
+['eight']
+['the Juhu slums of Mumbai']
+['confetti']
+['Danny Leiner']
 ['sovereignty', "people's democracy", 'freedom', 'unity']
-confetti
-Pascali's Island
-wand
-yes
-Venom (1971 film)
-Olivia Rose Olson
-1971
-Ministry Witch #1
-No
-Bradenton, Florida
+['confetti']
+["Pascali's Island"]
+['wand']
+['yes']
+['Venom (1971 film)']
+['Olivia Rose Olson']
+['1971']
+['Ministry Witch #1']
+['No']
+['Bradenton, Florida']
 ['Kailua High School', 'Kalāheo High School']
-Dorothee Stapelfeldt
+['Dorothee Stapelfeldt']
 ['Maccabi Netanya', "Hapoel Be'er Sheva", 'Beitar Jerusalem']
 ['Gümüş', 'Pelin', 'Arzu / Kız İsmail']
 ['Olena Zubrilova', 'Corinne Niogret']
-Canadian football
-nine teams
-nine teams
+['Canadian football']
+['nine teams']
+['nine teams']
 ['Canadian Football League', 'Arena Football League', 'National Football League', 'Alliance of American Football', 'Indoor Football League', 'Professional American Football League of Mexico']
-yes
-football
-Alliance of American Football
-Detroit
-no
-Chicago
-190.5
-crown
-Musa
-9–6
-2008
-Necro
-yes
-outdoor
-Lani Misalucha, Kyryll Ugdiman, Mika Gorospe, Mirriam Manalo, Lyra Micolob
-1989
-1988
-Leicester Tigers
-blue
-cleats
-rugby
-shorts
-SUGO GT 300km Race
-1987
-Rhythm of Fear
-Devolution
-Wacky Races: Starring Dastardly and Muttley
-The Simpsons Game
-yes
-Tiny Toon Adventures: Toonenstein
-yes
-cane
-red
-Joyland
-Street of Pain
-American Crude
-sunglasses
-Baroness
-Duchy of Austria
-harpoon
-Phil
-July 18 to November 23, 1989
-five
-yes
-five
+['yes']
+['football']
+['Alliance of American Football']
+['Detroit']
+['no']
+['Chicago']
+[190.5]
+['crown']
+['Musa']
+['9–6']
+['2008']
+['Necro']
+['yes']
+['outdoor']
+['Lani Misalucha, Kyryll Ugdiman, Mika Gorospe, Mirriam Manalo, Lyra Micolob']
+['1989']
+['1988']
+['Leicester Tigers']
+['blue']
+['cleats']
+['rugby']
+['shorts']
+['SUGO GT 300km Race']
+['1987']
+['Rhythm of Fear']
+['Devolution']
+['Wacky Races: Starring Dastardly and Muttley']
+['The Simpsons Game']
+['yes']
+['Tiny Toon Adventures: Toonenstein']
+['yes']
+['cane']
+['red']
+['Joyland']
+['Street of Pain']
+['American Crude']
+['sunglasses']
+['Baroness']
+['Duchy of Austria']
+['harpoon']
+['Phil']
+['July 18 to November 23, 1989']
+['five']
+['yes']
+['five']
 ['Eastern', 'Southern']
-Atlas V
-yes
-1941
-Tanu Weds Manu
-2016
-Found a Treasure Called Love
+['Atlas V']
+['yes']
+['1941']
+['Tanu Weds Manu']
+['2016']
+['Found a Treasure Called Love']
 ['Zero Divided by Zero Equals Nothing', 'slang for "Good For Nothing"']
-red
-green
-red
-2016
-DeNA
+['red']
+['green']
+['red']
+['2016']
+['DeNA']
 ['Jekyll and Hyde', 'The Last Panthers']
-1927
-bird
+['1927']
+['bird']
 ['1923', '1922']
-Outfielder
-Ghum Ashena
-John Osborne / Sam Gold
-Scottish
-right
-right
-Mercutio
-orange
-long
-6
-No
-World War II
-Manon
-Ramiro
-moon
-white
-Manon
-yes
-sword
-white
+['Outfielder']
+['Ghum Ashena']
+['John Osborne / Sam Gold']
+['Scottish']
+['right']
+['right']
+['Mercutio']
+['orange']
+['long']
+['6']
+['No']
+['World War II']
+['Manon']
+['Ramiro']
+['moon']
+['white']
+['Manon']
+['yes']
+['sword']
+['white']
 ['Le nozze di Figaro', 'Die Zauberflöte', 'Così fan tutte', 'Don Giovanni']
 ['Le nozze di Figaro', 'Die Zauberflöte', 'Così fan tutte', 'Don Giovanni']
-Yes
-Moraga, CA
-California
-1526 H Street in Sacramento
-bridge
-4118
-2005
-standing
-Out Here
-cake
-one
-The Rolling Stones
-Diana Ross Presents The Jackson 5
-Diana Ross Presents The Jackson 5
-Grand Funk
-Matthew Greenbert
-Blumenthal
+['Yes']
+['Moraga, CA']
+['California']
+['1526 H Street in Sacramento']
+['bridge']
+['4118']
+['2005']
+['standing']
+['Out Here']
+['cake']
+['one']
+['The Rolling Stones']
+['Diana Ross Presents The Jackson 5']
+['Diana Ross Presents The Jackson 5']
+['Grand Funk']
+['Matthew Greenbert']
+['Blumenthal']
 ['Northern Territory, Australia', 'New York City']
-Lewis Estridge
-Barry Sobel
-black
-black
-headband
-7–5, 6–0
-tie
-Zvereva and Gigi Fernández won more women's doubles titles and Grand Slam women's doubles
-tie
-wristbands
-fence
-Kiatisuk Senamuang
-Juventus
-Milan
-closed
-star
-backwards
-ear
+['Lewis Estridge']
+['Barry Sobel']
+['black']
+['black']
+['headband']
+['7–5, 6–0']
+['tie']
+["Zvereva and Gigi Fernández won more women's doubles titles and Grand Slam women's doubles"]
+['tie']
+['wristbands']
+['fence']
+['Kiatisuk Senamuang']
+['Juventus']
+['Milan']
+['closed']
+['star']
+['backwards']
+['ear']
 ['Just Visiting', "Captain Corelli's Mandolin"]
-The Swan Princess: The Mystery of the Enchanted Kingdom
-no
-Gary Rydstrom
-Mulan
-necklace
-Personal Choice
-smiling
-1880
-singing
-smiling
-AIADMK
-red
-star
-1928
-Jowoon
-2008
-black
-16672.375
-Stony Brook University
-Binghamton University
+['The Swan Princess: The Mystery of the Enchanted Kingdom']
+['no']
+['Gary Rydstrom']
+['Mulan']
+['necklace']
+['Personal Choice']
+['smiling']
+['1880']
+['singing']
+['smiling']
+['AIADMK']
+['red']
+['star']
+['1928']
+['Jowoon']
+['2008']
+['black']
+[16672.375]
+['Stony Brook University']
+['Binghamton University']
 ['Binghamton Bearcats', 'Vermont Catamounts']
-public
-public
-six
-17,768
+['public']
+['public']
+['six']
+['17,768']
 ['Plumiferos', 'Miss Tacuarembó', 'Toy Story 3']
-Ned Beatty
-no
-William Everett "Bud" Luckey
+['Ned Beatty']
+['no']
+['William Everett "Bud" Luckey']
 ['SS6', 'SS3', 'SS4', 'SS7', 'SS5']
-1994
-Thomas Mork
-Chris Bosh
-no
-August 17, 1969
-no
-yellow
-cross
-no
-No
-Cheetah
-Yes
-Murlen National Park
-yes
-bicycle
-snow
-snow
-yes
-Assam
-Miss Aubrey
-Paul Millsap
-the Utah Jazz
-Andrei Kirilenko
-1984
-maroon
-no
-goalpost
-yes
-one
-football
-nine
-No
-Soy sauce
-Alex
-Yes
-Colors TV
-STAR Plus
-David Nail and Jonathan Singleton
-Bruce Robison
-microphone
-black
-microphone
-black
-Tim McGraw
+['1994']
+['Thomas Mork']
+['Chris Bosh']
+['no']
+['August 17, 1969']
+['no']
+['yellow']
+['cross']
+['no']
+['No']
+['Cheetah']
+['Yes']
+['Murlen National Park']
+['yes']
+['bicycle']
+['snow']
+['snow']
+['yes']
+['Assam']
+['Miss Aubrey']
+['Paul Millsap']
+['the Utah Jazz']
+['Andrei Kirilenko']
+['1984']
+['maroon']
+['no']
+['goalpost']
+['yes']
+['one']
+['football']
+['nine']
+['No']
+['Soy sauce']
+['Alex']
+['Yes']
+['Colors TV']
+['STAR Plus']
+['David Nail and Jonathan Singleton']
+['Bruce Robison']
+['microphone']
+['black']
+['microphone']
+['black']
+['Tim McGraw']
 ['Walworth', 'Racine', 'Kenosha']
-No
-Cedevita
-basketball
-fourth
-Encores!
-Quiara Alegría Hudes
-Stephen Sondheim
-dancing
-dancing
-"Beggin & Pleadin"
-"Lullaby"
-one
-Mystic River
-Catwoman
-Shobhna Samarth
-15 March 1988
-yes
-bridge
-mountains
-Antholz-Anterselva
-Explorer 3
-1998
-Ivo Trenchev (interim)
+['No']
+['Cedevita']
+['basketball']
+['fourth']
+['Encores!']
+['Quiara Alegría Hudes']
+['Stephen Sondheim']
+['dancing']
+['dancing']
+['"Beggin & Pleadin"']
+['"Lullaby"']
+['one']
+['Mystic River']
+['Catwoman']
+['Shobhna Samarth']
+['15 March 1988']
+['yes']
+['bridge']
+['mountains']
+['Antholz-Anterselva']
+['Explorer 3']
+['1998']
+['Ivo Trenchev (interim)']
 ['2011', '2010', '2016', '2014', '2017', '2013', '2018', '2015', '2012']
 ['Ajnabee', 'Pranaam']
-Yes
-Soviet Union
-Yes
-Ed Sheeran
-Ed Sheeran
-2012
-"For Life"
+['Yes']
+['Soviet Union']
+['Yes']
+['Ed Sheeran']
+['Ed Sheeran']
+['2012']
+['"For Life"']
 ['2009', '2006', '2008']
-BomKrash
-Eurythmics
-Som Livre
-Cars
+['BomKrash']
+['Eurythmics']
+['Som Livre']
+['Cars']
 ['1915–16', '1912 spring', '1913–14', '1912–13']
-Mike Lowell 3B
-Mike Lockwood
-McLintock!
-James Bowie
-Mechanic
-"Dil Mere Tu Deewana Hai" – female
-All About You
-1420.0
-No
-2014
-2004
-Marshall
-Trans States Airlines
-W, 24–21
+['Mike Lowell 3B']
+['Mike Lockwood']
+['McLintock!']
+['James Bowie']
+['Mechanic']
+['"Dil Mere Tu Deewana Hai" – female']
+['All About You']
+[1420.0]
+['No']
+['2014']
+['2004']
+['Marshall']
+['Trans States Airlines']
+['W, 24–21']
 ['Parampara', 'Roopkatha Noy', 'Premer Galpo']
-Two Hearts
-April 10, 2003
+['Two Hearts']
+['April 10, 2003']
 ['"Second Last Chance"', '"Gambling Man"', '"The Longest Time"', '"Say What I Feel"']
-6th TVB Anniversary Awards
-Best Supporting Actor
-Lake Toba
+['6th TVB Anniversary Awards']
+['Best Supporting Actor']
+['Lake Toba']
 ['3 March 2003', '18 March 2013', '31 March 2009']
-Ron Dermer
-1998-99
-Bizet: Carmen
+['Ron Dermer']
+['1998-99']
+['Bizet: Carmen']
 ['Spin', 'San Francisco Examiner', 'Idolator', 'Stereogum', 'PopCrush', 'Los Angeles Times', 'Mashable', 'Daily Herald', 'USA Today']
 ['Centennial', 'Southeast Polk County', 'Marshalltown', 'Ankeny', 'Mason City', 'Waukee', 'Lincoln', 'Roosevelt', 'Urbandale', 'Johnston', 'Valley', 'Hoover', 'East', 'North', 'Ottumwa', 'Fort Dodge', 'Ames']
-645,911
-No
-Mladá Boleslav District
-Madrid, Community of Madrid
-No
-Avengers: Age of Ultron
-yes
-1971
-No
-105
-Philippe Gilbert
-Shadows on the Ground
+['645,911']
+['No']
+['Mladá Boleslav District']
+['Madrid, Community of Madrid']
+['No']
+['Avengers: Age of Ultron']
+['yes']
+['1971']
+['No']
+['105']
+['Philippe Gilbert']
+['Shadows on the Ground']
 ['38,760', '39,009']
-11
-No
-Josh Gardner
-Chad Marshall
-Danny Szetela
-Cincinnati
-Cincinnati
+['11']
+['No']
+['Josh Gardner']
+['Chad Marshall']
+['Danny Szetela']
+['Cincinnati']
+['Cincinnati']
 ['Contestant', 'Himself', 'Billa']
-No
-Aurealis Award
-No
-ATMA Classique
-Sergei Prokofiev
-Sergei Sergeyevich Prokofiev
-No
-Yes
-Game of the Year
-Guest judge
+['No']
+['Aurealis Award']
+['No']
+['ATMA Classique']
+['Sergei Prokofiev']
+['Sergei Sergeyevich Prokofiev']
+['No']
+['Yes']
+['Game of the Year']
+['Guest judge']
 ['Mamadou Niang', 'Alex']
-Mamadou Niang
-2007
-2004
-Åtvidabergs FF
-No
-Mort
-Koba Zakadze
-Noia Freixenet
+['Mamadou Niang']
+['2007']
+['2004']
+['Åtvidabergs FF']
+['No']
+['Mort']
+['Koba Zakadze']
+['Noia Freixenet']
 ['19th ↓', '11th']
 ['Baba', 'Ninaivirukkum Varai']
-Davi
+['Davi']
 ['Tharu Athara Mama', 'Guru Geethaya', 'Bhavatharna', 'Thanapathilage Gedara']
-Douglas Engelbart
+['Douglas Engelbart']
 ['"Désenchantée"', '"Beyond My Control"']
-Yes
+['Yes']
 ['1,573,587', '2,301,492', '6,211,937', '10,449,933', '1,891,264', '15,537,394', '1,564,197']
-Once Upon a Time in China
-Charlie's Angels: Full Throttle
-Kelly Garrett
-Youssef Kalfa
-Last Week Tonight with John Oliver
-Narrator
+['Once Upon a Time in China']
+["Charlie's Angels: Full Throttle"]
+['Kelly Garrett']
+['Youssef Kalfa']
+['Last Week Tonight with John Oliver']
+['Narrator']
 ['BUT RETB/1', 'Volvo B10M']
 ['"Thats Not How Dreams Are Made"', '"Heres to Love"', '"Need Your Love"']
-Winter visitor
+['Winter visitor']
 ['"The Wolfpack"', '"Paralyzed"']
-Battersea United
-Yes
-Los Angeles
-No
-United States
+['Battersea United']
+['Yes']
+['Los Angeles']
+['No']
+['United States']
 ['GY-80 Horizon', 'T-37B', 'Douglas AC-47 Spooky', 'T-28 Trojan', 'Bell UH-1H/1G', 'Fairchild C-123 Provider', 'Douglas C-47']
 ['Bell UH-1 Iroquois', 'Mil Mi-24', 'Mil Mi-8']
-Bell UH-1H/1G
-Ajante Bhalobasha
+['Bell UH-1H/1G']
+['Ajante Bhalobasha']
 ['Toyota 91C-V', 'Toyota 90C-V']
 ['19 January 2019', 'August 2014', '26 October 2014', '18th of April 2019', '26 April 2011', 'April 2007', 'November 2012', '28 July 2012', 'April 1998', '28 February 2019']
-Stojnci
+['Stojnci']
 ['Gmina Komarów-Osada', 'Gmina Adamów', 'Gmina Sitno', 'Gmina Skierbieszów', 'Gmina Zamość', 'Gmina Miączyn', 'Gmina Radecznica', 'Gmina Nielisz', 'Gmina Łabunie', 'Gmina Sułów', 'Gmina Grabowiec', 'Gmina Stary Zamość']
-No
+['No']
 ['Tang Shaoyi', 'Sheng Xuanhuai']
-Israel
+['Israel']
 ['Hadji Barry', 'Richmond Laryea', 'Mason Stajduhar', 'Harrison Heath', 'Tyler Turner', 'Bryan Róchez']
-SC Neuenheim
-Yes
-Oribe Peralta
-Kingdom Hearts II: Final Mix+
-Yes
-Los Angeles
-Los Angeles
-Yes
+['SC Neuenheim']
+['Yes']
+['Oribe Peralta']
+['Kingdom Hearts II: Final Mix+']
+['Yes']
+['Los Angeles']
+['Los Angeles']
+['Yes']
 ['Jack McBean', 'Charlie Rugg', 'Bradford Jamieson IV', 'Kenney Walker', 'Oscar Sorto', 'Kyle Venter', 'Rafael Garcia', 'Kofi Opare', 'Raul Mendiola']
-Universal Music
-Mercury Records
-"Walk the Wire"
-John James ()
-No
-KARA Vacation
-"En tätort på en slätt"
+['Universal Music']
+['Mercury Records']
+['"Walk the Wire"']
+['John James ()']
+['No']
+['KARA Vacation']
+['"En tätort på en slätt"']
 ['CD 66', 'Di 8']
-Lorena Chan
-at the Pacific entrance of the Panama Canal, in the province of Panama
-No
-Yes
-Arrested Development
-Newport Beach, California
-1997
-Jess Walton
-No
-Paul Townend
-Radius
-7:00pm CDT
-No
-The Lion King
-2 (1991, 2004)
-Kaiserslautern
-Alf Padgham
+['Lorena Chan']
+['at the Pacific entrance of the Panama Canal, in the province of Panama']
+['No']
+['Yes']
+['Arrested Development']
+['Newport Beach, California']
+['1997']
+['Jess Walton']
+['No']
+['Paul Townend']
+['Radius']
+['7:00pm CDT']
+['No']
+['The Lion King']
+['2 (1991, 2004)']
+['Kaiserslautern']
+['Alf Padgham']
 ['O Xangô de Baker Street', 'Amores Possíveis']
-2001
-No
-Yes
-Bill Cosby
-4th
-2004
-Thank You Vithalla
-United Services
-2019
-Mount Broughton Ladies Classic
-1925
+['2001']
+['No']
+['Yes']
+['Bill Cosby']
+['4th']
+['2004']
+['Thank You Vithalla']
+['United Services']
+['2019']
+['Mount Broughton Ladies Classic']
+['1925']
 ['16 November 1958', '2 July 1967', '14 June 1981', '20 October 1963', '8 June 1986', '19 October 1950']
-No
-1966
+['No']
+['1966']
 ['Transformers Autobots', 'Transformers: The Game']
-No
-2010
-2010
-Adonis Idaliou
-Christer Lundh, Mikael Wendt
-2016
-2015
-Warsaw
-See "First Professional win"
-Memphis, Tennessee
-22nd Star Awards Ceremony
+['No']
+['2010']
+['2010']
+['Adonis Idaliou']
+['Christer Lundh, Mikael Wendt']
+['2016']
+['2015']
+['Warsaw']
+['See "First Professional win"']
+['Memphis, Tennessee']
+['22nd Star Awards Ceremony']
 ['Reeta Chakrabarti', 'Shaun Ley', 'Vicki Young', 'Rachel Schofield', 'Rebecca Jones', 'Ben Brown', 'Matthew Price', 'Lukwesa Burak', 'Julian Worricker', 'Carole Walker', 'Martine Croxall']
-2014
-Yes
-Homestead
+['2014']
+['Yes']
+['Homestead']
 ['"Everyone Says \'Hi\'"', '"I\'ve Been Waiting for You"', '"Slow Burn"']
-seven
-seven
-Yes
-Rachna Malhotra
-No
+['seven']
+['seven']
+['Yes']
+['Rachna Malhotra']
+['No']
 ['REM sleep', 'fluctuations of heart rate and arterial pressure', 'Heart rate, cardiac pressure, cardiac output, arterial pressure, and breathing rate quickly become irregular', 'twitches', 'sudden changes in breathing', 'less control over breathing', 'electrical stimulation of respiration-linked brain areas does not influence the lungs', 'rapid eye movements']
-No
-Thammasin Sitthikom
+['No']
+['Thammasin Sitthikom']
 ['BMG through RCA Records', 'unknown', 'BMG']
 ['Buick', 'Ford']
-OXEN Peristeronas
+['OXEN Peristeronas']
 ['4 GB', '2 GB', '2 GB\n3 GB']
-No
+['No']
 ['Laçi', 'Apolonia Fier', 'Pogradeci', 'Elbasani', 'Kukësi', 'Luftëtari Gjirokastër', 'Bylis Ballsh', 'Sopoti Librazhd', 'Kastrioti']
-Torrie Wilson
-Yes
+['Torrie Wilson']
+['Yes']
 ['ARY Digital', 'Hum TV']
-Tom Berninger
-Yes
-Susan Egan
-No
-1972
-yes
+['Tom Berninger']
+['Yes']
+['Susan Egan']
+['No']
+['1972']
+['yes']
 ['Kenny Browne', 'Graham Cummins', 'Alan Carey']
-Telugu
-245.35
+['Telugu']
+['245.35']
 ['Ferdinand Sinaga', 'Syihan Hazmi', 'Daudsu Jamaluddin', 'Qayyum Marjoni', 'Shahrul Hakim', 'Hasmizan Kamarodin', 'Khairul Izuan', 'Norhafiz Zamani', 'Indra Putra Mahayuddin', 'S. Subramaniam', 'Zairul Fitree']
-Bishop's Cleeve, Gloucestershire
-Schubert Dip
-No
-24th season
-Jason Kidd
-Bishop's Gaiters
-Burt Manning
-No
-2000
-Eastern Equatoria
-Kingdom of Kush
-Stag's Leap Wine Cellars
-Stag's Leap Wine Cellars
-Max Aaron   Ross Miner
-Bob Ross
-Jack Smith
-Yes
-No
-Mark (Lead)
-Ivan Fiolić
+["Bishop's Cleeve, Gloucestershire"]
+['Schubert Dip']
+['No']
+['24th season']
+['Jason Kidd']
+["Bishop's Gaiters"]
+['Burt Manning']
+['No']
+['2000']
+['Eastern Equatoria']
+['Kingdom of Kush']
+["Stag's Leap Wine Cellars"]
+["Stag's Leap Wine Cellars"]
+['Max Aaron   Ross Miner']
+['Bob Ross']
+['Jack Smith']
+['Yes']
+['No']
+['Mark (Lead)']
+['Ivan Fiolić']
 ['"Who will you think of "', '"Fall in Luv"']
 ['AHCA West Second-Team All-American', 'All-WCHA First Team']
-No
-4 – 1
-Sweater Club: Episode II
-2010
-Yes
-No
-No
-33
-Ćićarija
-RCTI
-ABC
+['No']
+['4 – 1']
+['Sweater Club: Episode II']
+['2010']
+['Yes']
+['No']
+['No']
+['33']
+['Ćićarija']
+['RCTI']
+['ABC']
 ['Matt Maloney', 'Mike Leake', 'Willie Bloomquist']
-second baseman Adam Kennedy and pitcher Kent Bottenfield
+['second baseman Adam Kennedy and pitcher Kent Bottenfield']
 ['Tamires Braga', 'Damiana Sadili']
-"The Beast"
-Lulu
-San Diego State
-The Royal Air Force
-Shaadi Mein Zaroor Aana
-Susanne Blakeslee
+['"The Beast"']
+['Lulu']
+['San Diego State']
+['The Royal Air Force']
+['Shaadi Mein Zaroor Aana']
+['Susanne Blakeslee']
 ['"Peace Train"', '"Dont Talk"', '"Like the Weather"', '"What\'s the Matter Here?"']
-Because the Night
+['Because the Night']
 ['Las Vegas Desert Classic', 'International Darts League', 'World Darts Trophy']
 ['Prelude 2', 'Main Presentation', 'Prelude 3']
-So Ji-sub
-March 25, 2016
-November 3, 2017
-euthanizes her crippled horse with a knife
-Skips
-October 3, 2016
-Maulik Pancholy
-2016
-multicolored, cloud-shaped humanoid
+['So Ji-sub']
+['March 25, 2016']
+['November 3, 2017']
+['euthanizes her crippled horse with a knife']
+['Skips']
+['October 3, 2016']
+['Maulik Pancholy']
+['2016']
+['multicolored, cloud-shaped humanoid']
 ['voiced by Kerry Shale', 'a rock man who works at almost every establishment in Elmore, including the grocery store, the gas station convenience store and the DVD rental shop amongst other places']
-8
-Swiper
-PlatinumGames
-Antara Mali
-Max von Sydow
-Marlon Brando
-Hayley Williams
+['8']
+['Swiper']
+['PlatinumGames']
+['Antara Mali']
+['Max von Sydow']
+['Marlon Brando']
+['Hayley Williams']
 ['The Ying Yang Twins', 'Lil Jon', 'The East Side Boyz']
-Slaves
-six pieces
-Star Trek: Legacy
-Hammer & Sickle
-The Elder Scrolls V: Skyrim
-yes
-yes
-A Beautiful Mind
-Jonathan Harris
-A Beautiful Mind
-autism
-Twelfth Night, or What You Will
-3
-microphone
-Lennon
-3
-1998
-American
-James Patrick Caviezel
+['Slaves']
+['six pieces']
+['Star Trek: Legacy']
+['Hammer & Sickle']
+['The Elder Scrolls V: Skyrim']
+['yes']
+['yes']
+['A Beautiful Mind']
+['Jonathan Harris']
+['A Beautiful Mind']
+['autism']
+['Twelfth Night, or What You Will']
+['3']
+['microphone']
+['Lennon']
+['3']
+['1998']
+['American']
+['James Patrick Caviezel']
 ['Katherine', 'Robert']
-The Omen
-Karl Rove
-Tim Robbins
-yes
-yes
-Jerrod Niemann
-Jerrod Niemann
-Frank Cappello
-Adams
-2010
-heart
-heart
-September 1962
-sunglasses
-Whitney Houston
-sunglasses
-four
-"The Power of Love"
-"Duet"
-Paolo Risi
-one
-Gibraltarian
-Harold Melvin & the Blue Notes
-Kopi luwak
-Mother
+['The Omen']
+['Karl Rove']
+['Tim Robbins']
+['yes']
+['yes']
+['Jerrod Niemann']
+['Jerrod Niemann']
+['Frank Cappello']
+['Adams']
+['2010']
+['heart']
+['heart']
+['September 1962']
+['sunglasses']
+['Whitney Houston']
+['sunglasses']
+['four']
+['"The Power of Love"']
+['"Duet"']
+['Paolo Risi']
+['one']
+['Gibraltarian']
+['Harold Melvin & the Blue Notes']
+['Kopi luwak']
+['Mother']
 ['The Windmills of Your Mind', 'His Eyes, Her Eyes']
-two
-two
-Johnnie Cochran
-Eddie Van Halen
-Silver Spoons
-Costas Mandylor
-Sextown
+['two']
+['two']
+['Johnnie Cochran']
+['Eddie Van Halen']
+['Silver Spoons']
+['Costas Mandylor']
+['Sextown']
 ['central Idaho', 'Columbia, also in Tuolumne County, California', 'Tuolumne County, California, near Jamestown', 'Boulder Mountains', 'Sawtooth National Recreation Area']
-two
-two
-Jaime Murray
-Dr. Eli Nader
-yes
-bridge
-bridge
-Ken Barlow
-Lucy-Jo Hudson
-writing
-writing
-Arthur
-4th and 8th century
-fluid lava
-Mario Been
-Kanpur
-Bharatiya Janata Party
-United Kingdom
-one
-one
-one
-The first book of Samuel
-December 2003
-2010
-no
-intense energy and raucous attitude
+['two']
+['two']
+['Jaime Murray']
+['Dr. Eli Nader']
+['yes']
+['bridge']
+['bridge']
+['Ken Barlow']
+['Lucy-Jo Hudson']
+['writing']
+['writing']
+['Arthur']
+['4th and 8th century']
+['fluid lava']
+['Mario Been']
+['Kanpur']
+['Bharatiya Janata Party']
+['United Kingdom']
+['one']
+['one']
+['one']
+['The first book of Samuel']
+['December 2003']
+['2010']
+['no']
+['intense energy and raucous attitude']
 ['samurai', 'merchants', 'artisans', 'farming peasants']
-By 1990
-John Joseph Patrick Ryan (December 30, 1920 – January 21, 1998), best known by his stage name, Jack Lord
-Hawaii Five-O
-Joey Rand
+['By 1990']
+['John Joseph Patrick Ryan (December 30, 1920\xa0– January 21, 1998), best known by his stage name, Jack Lord']
+['Hawaii Five-O']
+['Joey Rand']
 ['the seaside town of Sidi Kaouki', 'Amanjena, outside of Marrakesh']
-Harry Brown (film)
-at Longchamp
-no
-no
-American
+['Harry Brown (film)']
+['at Longchamp']
+['no']
+['no']
+['American']
 ['After five weeks filming, production moved to California where scenes such as the end parade were shot', 'in the Twin Cities of Minneapolis and Saint Paul', 'the Mall of America']
 ['After five weeks filming, production moved to California where scenes such as the end parade were shot', 'in the Twin Cities of Minneapolis and Saint Paul', 'the Mall of America']
-Timecop 2: The Berlin Decision
-Johnny Tsunami
-Urchins
-Yaya DaCosta
-Memphis
-Michael Jackson
-happy
-20 March 1997
-Gloria Estefan
-polish
-1990
-Halloween
-Christmas
-yes
-Jay Hawkins
+['Timecop 2: The Berlin Decision']
+['Johnny Tsunami']
+['Urchins']
+['Yaya DaCosta']
+['Memphis']
+['Michael Jackson']
+['happy']
+['20 March 1997']
+['Gloria Estefan']
+['polish']
+['1990']
+['Halloween']
+['Christmas']
+['yes']
+['Jay Hawkins']
 ['Ace Frehley', 'Hello']
-smile
-San Francisco, California
-The Partridge Family
-1970–74
-Billy Dee Williams
-a violent, foul-mouthed young boy named Hob
-Rocky III
-Billy Dee Williams
-various locations in New York City, New Jersey, and Washington DC, including the World Trade Center, 55 East 77th Street, NYC, The Ansonia, Central Park, and the National Mall
-the fictional town of West and East Egg on prosperous Long Island
+['smile']
+['San Francisco, California']
+['The Partridge Family']
+['1970–74']
+['Billy Dee Williams']
+['a violent, foul-mouthed young boy named Hob']
+['Rocky III']
+['Billy Dee Williams']
+['various locations in New York City, New Jersey, and Washington DC, including the World Trade Center, 55 East 77th Street, NYC, The Ansonia, Central Park, and the National Mall']
+['the fictional town of West and East Egg on prosperous Long Island']
 ['Oxfordshire', 'Buckinghamshire', 'Dorset', 'London']
-six
-dress
-Vaporwave
-German defenses
-no
-United States Army Rangers Captain John H. Miller
-German defenses
-a person whose life changes after baptism
-black
-Lynn Anderson
-long
-black
-Colorado, immediately north of Colorado Springs in El Paso County
-Alvin Plantinga
-Cadet Lacrosse Stadium
-Falcons
-Cadet Lacrosse Stadium
-yes
-yes
-earring
-twelve
-no
-earring
-basketball
-earring
-Barcelona
-soccer
-scarf
-microphone
-right
-soccer
-Mozi (circa 470 BCE-circa 391 BCE), a Han Chinese philosopher and the founder of Mohist School of Logic
-guitar
-guitar
-beverage
+['six']
+['dress']
+['Vaporwave']
+['German defenses']
+['no']
+['United States Army Rangers Captain John H. Miller']
+['German defenses']
+['a person whose life changes after baptism']
+['black']
+['Lynn Anderson']
+['long']
+['black']
+['Colorado, immediately north of Colorado Springs in El Paso County']
+['Alvin Plantinga']
+['Cadet Lacrosse Stadium']
+['Falcons']
+['Cadet Lacrosse Stadium']
+['yes']
+['yes']
+['earring']
+['twelve']
+['no']
+['earring']
+['basketball']
+['earring']
+['Barcelona']
+['soccer']
+['scarf']
+['microphone']
+['right']
+['soccer']
+['Mozi (circa 470 BCE-circa 391 BCE), a Han Chinese philosopher and the founder of Mohist School of Logic']
+['guitar']
+['guitar']
+['beverage']
 ['premiered on February 23, 2017, at Spencer House in London', 'was released in the United States on March 17, 2017']
-the name was changed to the Royal Albert Hall of Arts and Sciences by Queen Victoria upon laying the Hall's foundation stone in 1867, in memory of her husband consort, Prince Albert
-the name was changed to the Royal Albert Hall of Arts and Sciences by Queen Victoria upon laying the Hall's foundation stone in 1867, in memory of her husband consort, Prince Albert
-Rob Reiner
-Susanna Thompson
-the members of Green Day
-Unorthodox Jukebox
-Atlantic
-December  7
-inspired many Texians—both Texas settlers and adventurers from the United States—to join the Texian Army
-Lady Violet Crawley, Dowager Countess of Grantham
-yes
-yes
-Antichrist
-yes
+["the name was changed to the Royal Albert Hall of Arts and Sciences by Queen Victoria upon laying the Hall's foundation stone in 1867, in memory of her husband consort, Prince Albert"]
+["the name was changed to the Royal Albert Hall of Arts and Sciences by Queen Victoria upon laying the Hall's foundation stone in 1867, in memory of her husband consort, Prince Albert"]
+['Rob Reiner']
+['Susanna Thompson']
+['the members of Green Day']
+['Unorthodox Jukebox']
+['Atlantic']
+['December  7']
+['inspired many Texians—both Texas settlers and adventurers from the United States—to join the Texian Army']
+['Lady Violet Crawley, Dowager Countess of Grantham']
+['yes']
+['yes']
+['Antichrist']
+['yes']
 ['lover', 'justice', 'soldier', 'old age', 'Pantalone', 'infant', 'schoolboy']
-white
-night
-1973
-1973
+['white']
+['night']
+['1973']
+['1973']
 ['the Phoenix Suns', 'the Miami Heat', 'the New York Knicks', 'the Orlando Magic']
-Toby Bailey
-NBC
-Matthew Lillard
-2010
-no
-no
-March 29, 2018
-no
-Bud McNulty
-Valentine's Day
-special collectivity of France in the southwest Pacific Ocean, 1,210 km (750 mi) east of Australia and 20,000 km (12,000 mi) from Metropolitan France
-season two
-Future World
-Future World (film)
-2018
-1971
-Mertis John Jr.
-Mertis John Jr.
-Santana
-7:54
-July 28, 2008
-yes
-October 24, 2017
-Thomas Patrick Cavanagh
-an unnamed large city
-23 January 1993
-121
-Gossip Girl
-eighth season
-yes
-1969
-Ali Daei
-June 15, 1994
-1994
+['Toby Bailey']
+['NBC']
+['Matthew Lillard']
+['2010']
+['no']
+['no']
+['March 29, 2018']
+['no']
+['Bud McNulty']
+["Valentine's Day"]
+['special collectivity of France in the southwest Pacific Ocean, 1,210\xa0km (750\xa0mi) east of Australia and 20,000\xa0km (12,000\xa0mi) from Metropolitan France']
+['season two']
+['Future World']
+['Future World (film)']
+['2018']
+['1971']
+['Mertis John Jr.']
+['Mertis John Jr.']
+['Santana']
+['7:54']
+['July 28, 2008']
+['yes']
+['October 24, 2017']
+['Thomas Patrick Cavanagh']
+['an unnamed large city']
+['23 January 1993']
+['121']
+['Gossip Girl']
+['eighth season']
+['yes']
+['1969']
+['Ali Daei']
+['June 15, 1994']
+['1994']
 ['Steve Cropper', 'Otis Redding']
-the Beatles
-yes
-New in Town
-yes
-yes
-Fallen
-yes
-Rawson Marshall Thurber
-yes
-The Parent Trap
-Hayley Mills
-Lloyd Avery II
-Gifted Hands: The Ben Carson Story
-South Central
-Billingsley
-yes
-bespectacled jazz musician Putter Smith
-Staten Island, New York
-Murielle Telio
-Steven Spielberg
-Phil
-Alex Jennings
-Kidnapped
-3.98 °C (39.16 °F)
-the fictional Gulf Coast town of Bluebell, Alabama
-McG
-Josh Gad
-no
-Ed, Edd n Eddy
-no
-the 29th of May 2018
-Anfernee Deon "Penny" Hardaway
-Jason Robards
-1970
-Jana Rosoła street
-her performance in Cactus Flower
-five
+['the Beatles']
+['yes']
+['New in Town']
+['yes']
+['yes']
+['Fallen']
+['yes']
+['Rawson Marshall Thurber']
+['yes']
+['The Parent Trap']
+['Hayley Mills']
+['Lloyd Avery II']
+['Gifted Hands: The Ben Carson Story']
+['South Central']
+['Billingsley']
+['yes']
+['bespectacled jazz musician Putter Smith']
+['Staten Island, New York']
+['Murielle Telio']
+['Steven Spielberg']
+['Phil']
+['Alex Jennings']
+['Kidnapped']
+['3.98\xa0°C (39.16\xa0°F)']
+['the fictional Gulf Coast town of Bluebell, Alabama']
+['McG']
+['Josh Gad']
+['no']
+['Ed, Edd n Eddy']
+['no']
+['the 29th of May 2018']
+['Anfernee Deon "Penny" Hardaway']
+['Jason Robards']
+['1970']
+['Jana Rosoła street']
+['her performance in Cactus Flower']
+['five']
 ['Jacqueline Bisset', 'Michael York', 'Albert Finney', 'Vanessa Redgrave', 'Ingrid Bergman', 'John Gielgud', 'Wendy Hiller', 'Sean Connery', 'Anthony Perkins']
-the Englishman
-Wight & Hampshire East
-Anthony Natale
-midwife Jenny Lee
-Helen George
-yes
-Richard Kind
-Dolly Parton
-Aerosmith
-Armageddon
-the real life Detroit gang The Chambers Brothers
-yes
-Trouble with the Curve
-the real life Detroit gang The Chambers Brothers
-near Covaleda, Province of Soria, Spain
-no
-1969
-Ali Daei
-football agent
-2007 UEFA Champions League Final
-the nuns' chorus
-Andrea Robinson
-Tuppence Middleton
-yes
+['the Englishman']
+['Wight & Hampshire East']
+['Anthony Natale']
+['midwife Jenny Lee']
+['Helen George']
+['yes']
+['Richard Kind']
+['Dolly Parton']
+['Aerosmith']
+['Armageddon']
+['the real life Detroit gang The Chambers Brothers']
+['yes']
+['Trouble with the Curve']
+['the real life Detroit gang The Chambers Brothers']
+['near Covaleda, Province of Soria, Spain']
+['no']
+['1969']
+['Ali Daei']
+['football agent']
+['2007 UEFA Champions League Final']
+["the nuns' chorus"]
+['Andrea Robinson']
+['Tuppence Middleton']
+['yes']
 ['The Hobbit: The Desolation of Smaug', 'The Hobbit: The Battle of the Five Armies']
-no
-Karan Johar
-Harry Crowe Buck
-Seth Rogen and Evan Goldberg
-Semi-Pro
-no
-CIA agents
-BAFTA Award for Best Direction for "Four Weddings and a Funeral
-1989
-no
-Mia Sasha McKenna-Bruce
-no
-yes
-Anthony Rapp
-Beverly Hills High School
-While exterior shots of the house were filmed at the historic Frank Lloyd Wright-designed 1924 Ennis House in Los Feliz, California, the bulk of the film was shot on sound stages
-the head cavities
-sphinx
-yes
-one
-Alexandra Anna Daddario
-yes
+['no']
+['Karan Johar']
+['Harry Crowe Buck']
+['Seth Rogen and Evan Goldberg']
+['Semi-Pro']
+['no']
+['CIA agents']
+['BAFTA Award for Best Direction for "Four Weddings and a Funeral']
+['1989']
+['no']
+['Mia Sasha McKenna-Bruce']
+['no']
+['yes']
+['Anthony Rapp']
+['Beverly Hills High School']
+['While exterior shots of the house were filmed at the historic Frank Lloyd Wright-designed 1924 Ennis House in Los Feliz, California, the bulk of the film was shot on sound stages']
+['the head cavities']
+['sphinx']
+['yes']
+['one']
+['Alexandra Anna Daddario']
+['yes']
 ['French', 'British']
-Jackson Timothy Brundage
-Loretta Devine
-Pyumori Mehta Ghosh
-Steve Hunter and Dick Wagner
-Adam Guettel
-Jake
-29 January 2016
-no
-Land Rover
-yes
-201
-yes
-shahādah
-January 31, 2017
-22 episodes
-Tobias Fünke
-2020
-Josh Hutcherson
-Beowulf
-no
-Hair
-Australian
-$94 million
-Little Caesars Arena
-Lieutenant Kara "Starbuck" Thrace
-Wilfred Bailey Everett "Bill" Bixby III
-seven
-seven
-Jeanne Tripplehorn
-Joel McKinnon Miller
-Frank P. Brown Medal
-yes
-yes
-2016
-yes
-Yeouido-dong, Seoul, South Korea
-bird
-bird
-bird
-yes
-hats
-brunette
-two
-two
-two
-yes
-1982
-two
-two
-smile
-Aerosmith
-smile
-May 8
-1993 Tour
-Travis Tritt
-Linda Kaye Davis
-two
-arrow
-arrow
-smiling
-black
-black
-two
-hands
-Dolly Parton
-hands
-yes
-Phil Taylor
-tennis
-tennis
-medal
-1978
-medal
-clay
-neckless
-one
-forward
-writing
-writing
-writing
-moustache
-eight
-eight
-eight
-black
-historic
-no
-rooster
-yes
-glasses
-(Selena Gomez)
-mustache
-yes
-glasses
-three
-Dirk Kuyt
-microphone
-microphone
-microphone
-guitar
-green
-1980s and the 1990s
-green
-900 million
+['Jackson Timothy Brundage']
+['Loretta Devine']
+['Pyumori Mehta Ghosh']
+['Steve Hunter and Dick Wagner']
+['Adam Guettel']
+['Jake']
+['29 January 2016']
+['no']
+['Land Rover']
+['yes']
+['201']
+['yes']
+['shahādah']
+['January 31, 2017']
+['22 episodes']
+['Tobias Fünke']
+['2020']
+['Josh Hutcherson']
+['Beowulf']
+['no']
+['Hair']
+['Australian']
+['$94 million']
+['Little Caesars Arena']
+['Lieutenant Kara "Starbuck" Thrace']
+['Wilfred Bailey Everett "Bill" Bixby III']
+['seven']
+['seven']
+['Jeanne Tripplehorn']
+['Joel McKinnon Miller']
+['Frank P. Brown Medal']
+['yes']
+['yes']
+['2016']
+['yes']
+['Yeouido-dong, Seoul, South Korea']
+['bird']
+['bird']
+['bird']
+['yes']
+['hats']
+['brunette']
+['two']
+['two']
+['two']
+['yes']
+['1982']
+['two']
+['two']
+['smile']
+['Aerosmith']
+['smile']
+['May 8']
+['1993 Tour']
+['Travis Tritt']
+['Linda Kaye Davis']
+['two']
+['arrow']
+['arrow']
+['smiling']
+['black']
+['black']
+['two']
+['hands']
+['Dolly Parton']
+['hands']
+['yes']
+['Phil Taylor']
+['tennis']
+['tennis']
+['medal']
+['1978']
+['medal']
+['clay']
+['neckless']
+['one']
+['forward']
+['writing']
+['writing']
+['writing']
+['moustache']
+['eight']
+['eight']
+['eight']
+['black']
+['historic']
+['no']
+['rooster']
+['yes']
+['glasses']
+['(Selena Gomez)']
+['mustache']
+['yes']
+['glasses']
+['three']
+['Dirk Kuyt']
+['microphone']
+['microphone']
+['microphone']
+['guitar']
+['green']
+['1980s and the 1990s']
+['green']
+['900 million']
 ['Basketball', 'Tennis']
-1984
-yes
-yes
-black
-yes
-white
-glasses
-asian
-asian
-guitar
-Dixie Chicks
-guitar
-James Taylor
-guitar
-guitar
-boat
-one
-Caesars Entertainment Corporation
-Marnell Corrao Associates
-one
-motorcycle
-case design
-seven
-FBI Agent
-yes
-yes
-yes
-yes
-yes
-leopard
-yes
-green
-four
-leopard
-yes
-fire
-Steve
-delorean
-James, who suffered an accident that has left him on life support
-delorean
-blue
-one
-High Desert Yardbirds
-High Desert Yardbirds
-15-year
-Basketball
-headphones
-ring
-headphones
-gloves
-gloves
-gloves
-green
-green
-2010
-orange
-horse
-orange
-Calgary Cowboys
-George Roy Hill
-horse
-orange
-pink
-Peyton Meyer
-Young Maya
-Bennett Joseph Savage
-boots
-yes
-blue
-Kathy Vaughn
-watch
-cap
-gecko
-black
-black
-hand
-gecko
-hand
-no
-yes
-Rio de Janeiro
-watch
-no
-sneakers
-yes
-blue
-Peter Sarno
-Providence Bruins
-blonde
-blonde
-cockerel
-mask
-TNT
-purple
-two
-2010
-yes
+['1984']
+['yes']
+['yes']
+['black']
+['yes']
+['white']
+['glasses']
+['asian']
+['asian']
+['guitar']
+['Dixie Chicks']
+['guitar']
+['James Taylor']
+['guitar']
+['guitar']
+['boat']
+['one']
+['Caesars Entertainment Corporation']
+['Marnell Corrao Associates']
+['one']
+['motorcycle']
+['case design']
+['seven']
+['FBI Agent']
+['yes']
+['yes']
+['yes']
+['yes']
+['yes']
+['leopard']
+['yes']
+['green']
+['four']
+['leopard']
+['yes']
+['fire']
+['Steve']
+['delorean']
+['James, who suffered an accident that has left him on life support']
+['delorean']
+['blue']
+['one']
+['High Desert Yardbirds']
+['High Desert Yardbirds']
+['15-year']
+['Basketball']
+['headphones']
+['ring']
+['headphones']
+['gloves']
+['gloves']
+['gloves']
+['green']
+['green']
+['2010']
+['orange']
+['horse']
+['orange']
+['Calgary Cowboys']
+['George Roy Hill']
+['horse']
+['orange']
+['pink']
+['Peyton Meyer']
+['Young Maya']
+['Bennett Joseph Savage']
+['boots']
+['yes']
+['blue']
+['Kathy Vaughn']
+['watch']
+['cap']
+['gecko']
+['black']
+['black']
+['hand']
+['gecko']
+['hand']
+['no']
+['yes']
+['Rio de Janeiro']
+['watch']
+['no']
+['sneakers']
+['yes']
+['blue']
+['Peter Sarno']
+['Providence Bruins']
+['blonde']
+['blonde']
+['cockerel']
+['mask']
+['TNT']
+['purple']
+['two']
+['2010']
+['yes']
 ['Foz do Iguaçu, Brazil', 'Buffalo', 'New York City']
-yes
-award
-basketball
-basketball
-yes
-Rupert Wyatt
-Last Vegas
-yes
-two
-two
-Tom Boonen
-Tom Boonen
-The Story on Page One
-The Crossing Guard
-The Story on Page One (film)
-StarCraft II: Heart of the Swarm
-StarCraft II: Legacy of the Void
-2012
-EDI
-Look Before You Love
-St Louis
-1995
-Gmina Janowice Wielkie
-Janowice Wielkie
-58.1
-Achuvinte Amma
-Southeastern Woodlands
-2005
-Antigua Barracuda FC
-is a proposed body that would revise the constitution of the State of New York
-yes
-soccer
-Folded
-2017
-Ohio State
-Ohio State
-The Wind Rises
-$119,513,192
-Spearman, Texas
-Nagyatád
-Nagyatád
-Ric Flair
-ribbon
-nothing
-Berea District
-Berea District
-Lesotho
-House of Harmony and Vengeance
-asia
-Devotion
-1942
-Love Sex aur Dhokha
-2010
-2010
-Prince of Songkla University
-Science
-Yuvakudu
-Tie Me Up! Tie Me Down!
-Takanobu Okabe
-Osijek
-NK Osijek
-Toledo
-McMaster Marauders
+['yes']
+['award']
+['basketball']
+['basketball']
+['yes']
+['Rupert Wyatt']
+['Last Vegas']
+['yes']
+['two']
+['two']
+['Tom Boonen']
+['Tom Boonen']
+['The Story on Page One']
+['The Crossing Guard']
+['The Story on Page One (film)']
+['StarCraft II: Heart of the Swarm']
+['StarCraft II: Legacy of the Void']
+['2012']
+['EDI']
+['Look Before You Love']
+['St Louis']
+['1995']
+['Gmina Janowice Wielkie']
+['Janowice Wielkie']
+['58.1']
+['Achuvinte Amma']
+['Southeastern Woodlands']
+['2005']
+['Antigua Barracuda FC']
+['is a proposed body that would revise the constitution of the State of New York']
+['yes']
+['soccer']
+['Folded']
+['2017']
+['Ohio State']
+['Ohio State']
+['The Wind Rises']
+['$119,513,192']
+['Spearman, Texas']
+['Nagyatád']
+['Nagyatád']
+['Ric Flair']
+['ribbon']
+['nothing']
+['Berea District']
+['Berea District']
+['Lesotho']
+['House of Harmony and Vengeance']
+['asia']
+['Devotion']
+['1942']
+['Love Sex aur Dhokha']
+['2010']
+['2010']
+['Prince of Songkla University']
+['Science']
+['Yuvakudu']
+['Tie Me Up! Tie Me Down!']
+['Takanobu Okabe']
+['Osijek']
+['NK Osijek']
+['Toledo']
+['McMaster Marauders']
 ['Winnipeg', 'Manitoba']
 ['Hamilton Tiger-Cats', 'Saskatchewan Roughriders (via Toronto via Winnipeg)']
 ['Jesse Lumsden', "Matt O'Meara"]
-Madingley (St Mary Magdalene)
-Over
-The Nun's Story
-no
-1959
-The African Queen
-Cutie Q
-Pac-Land
-Gee Bee (arcade game)
-1978
-1984
-Producer
-The Masque of the Red Death
-Surviving Sid
-Happy Feet
+['Madingley (St Mary Magdalene)']
+['Over']
+["The Nun's Story"]
+['no']
+['1959']
+['The African Queen']
+['Cutie Q']
+['Pac-Land']
+['Gee Bee (arcade game)']
+['1978']
+['1984']
+['Producer']
+['The Masque of the Red Death']
+['Surviving Sid']
+['Happy Feet']
 ['county fair', 'barnyard']
-The Wild Angels
-"I Was Here"
-Rasquera
-Devil's Pass
-Elena
-Guaporé
-Hershey Bears
+['The Wild Angels']
+['"I Was Here"']
+['Rasquera']
+["Devil's Pass"]
+['Elena']
+['Guaporé']
+['Hershey Bears']
 ['Connecticut', 'New Haven']
-Aleksandar Mitrović
-Todor Veselinović
-James Foulis
-Green Bay
-Medicine Hat Tigers
-Vanderbilt
-Cleveland Browns
-49
-220
-Ilawod
-Star Cinema
-Michigan
-California
-Sterling Moore
-Tennessee
-Kentucky
-Cornish Pirates
-N'Djamena
-Entebbe
-Al Sharpton
-Al Sharpton
-documentary
-Resistance 3
-Hell in the Pacific
-Bobsleigh
-between 38 and 44 pounds (17.24 and 19.96 kg)
-Ashtone Morgan
-Defender
-Breiðablik
-Reykjavík
-Whatever It Takes
-Amanat Baghdad
-Wonder Woman
-The Strongest Man in the World
-Enter Laughin
-1968
-Laura Davies
-Laura Davies
-Christian Dvorak
-Guelph Storm
-Skiddaw
-Acerra
-Days of Being Wild (阿飛正傳)
-Seoul E-Land
-"Say You'll Be There"
-Ed Sheeran
-Requiem for a Dream
-Requiem for a Dream
-Pontarlier
-Sachin Tendulkar
-Sachin Tendulkar
-"I Believe I Can Fly"
-SuperGrid
-the memoir Molly's Game: The True Story of the 26-Year-Old Woman Behind the Most Exclusive, High-Stakes Underground Poker Game in the World by Molly Bloom
-Jessica Chastain
-Snow Buddies
-2010
-Lionel Beauxis
-Chonburi
-Brad Davis
-418
-John Hopkins
-Stipe Miocic
-Busan KT Sonicboom
-Turkey, Texas
-2836
-Macdonald Smith
-Boris Said
-Boris Said
-Elizaveta Tuktamysheva
-Bruce Penhall
-Mark Williams
-Mark Williams
-Sofia, Bulgaria
-Torino
-Letyan, around Tehran
-Nigel Hawthorne
-Youngstown, Ohio
-Cafaro Company
-OH Leuven
-Breaking the Girls
+['Aleksandar Mitrović']
+['Todor Veselinović']
+['James Foulis']
+['Green Bay']
+['Medicine Hat Tigers']
+['Vanderbilt']
+['Cleveland Browns']
+['49']
+['220']
+['Ilawod']
+['Star Cinema']
+['Michigan']
+['California']
+['Sterling Moore']
+['Tennessee']
+['Kentucky']
+['Cornish Pirates']
+["N'Djamena"]
+['Entebbe']
+['Al Sharpton']
+['Al Sharpton']
+['documentary']
+['Resistance 3']
+['Hell in the Pacific']
+['Bobsleigh']
+['between 38 and 44 pounds (17.24 and 19.96\xa0kg)']
+['Ashtone Morgan']
+['Defender']
+['Breiðablik']
+['Reykjavík']
+['Whatever It Takes']
+['Amanat Baghdad']
+['Wonder Woman']
+['The Strongest Man in the World']
+['Enter Laughin']
+['1968']
+['Laura Davies']
+['Laura Davies']
+['Christian Dvorak']
+['Guelph Storm']
+['Skiddaw']
+['Acerra']
+['Days of Being Wild (阿飛正傳)']
+['Seoul E-Land']
+['"Say You\'ll Be There"']
+['Ed Sheeran']
+['Requiem for a Dream']
+['Requiem for a Dream']
+['Pontarlier']
+['Sachin Tendulkar']
+['Sachin Tendulkar']
+['"I Believe I Can Fly"']
+['SuperGrid']
+["the memoir Molly's Game: The True Story of the 26-Year-Old Woman Behind the Most Exclusive, High-Stakes Underground Poker Game in the World by Molly Bloom"]
+['Jessica Chastain']
+['Snow Buddies']
+['2010']
+['Lionel Beauxis']
+['Chonburi']
+['Brad Davis']
+['418']
+['John Hopkins']
+['Stipe Miocic']
+['Busan KT Sonicboom']
+['Turkey, Texas']
+['2836']
+['Macdonald Smith']
+['Boris Said']
+['Boris Said']
+['Elizaveta Tuktamysheva']
+['Bruce Penhall']
+['Mark Williams']
+['Mark Williams']
+['Sofia, Bulgaria']
+['Torino']
+['Letyan, around Tehran']
+['Nigel Hawthorne']
+['Youngstown, Ohio']
+['Cafaro Company']
+['OH Leuven']
+['Breaking the Girls']
 ['Justin Timberlake', 'Mila Kunis']
-Hostess
-Planes
-yes
-April 1944
-Portuguese
-"With or Without You"
-Relient K
-Harry Potter and the Deathly Hallows – Part 2
-Liu Yifei
-Gladys Knight
-yes
-Wichita, Kansas
+['Hostess']
+['Planes']
+['yes']
+['April 1944']
+['Portuguese']
+['"With or Without You"']
+['Relient K']
+['Harry Potter and the Deathly Hallows – Part 2']
+['Liu Yifei']
+['Gladys Knight']
+['yes']
+['Wichita, Kansas']
 ['Great Plains Athletic Conference', 'Mid-South Conference']
-SDF
-Noonie Bao
-2016
-Louis Tomlinson
-Only the Brave
-John McTiernan
-Anderson
+['SDF']
+['Noonie Bao']
+['2016']
+['Louis Tomlinson']
+['Only the Brave']
+['John McTiernan']
+['Anderson']
 ['Lionel Messi', 'Wayne Rooney', 'Sergio Agüero']
-Appointment in London
+['Appointment in London']
 ['Anthony Quinn Bay', 'Greek island of Rhodes', 'Tino, in the Ligurian Sea', 'Gozo, near Malta']
-De La Salle University
-Danny Elfman
-L!fe Happens
-Isla Lang Fisher
-2017
-Group Health Cooperative
-Bill Gates
-Washoe County
-Palmachim
-Mars
-Robert Fick
-at New England Patriots
-Simon Wells
-Bryce Dallas Howard
-Mace Windu
-Nick Price
-Gaiserwald
-St. Gallen
-Yaroslavl Oblast
-† Davenport
-Keerthi Sagathia, Shazneen Arethna
-1993
-North
-north
-Jinnah
-Amway Center
-He's Just Not That into You
-Susan Sarandon as Louise
-BIG STAR
-no
-Mitsubishi
-Ringwood, New Jersey
-Gotye
-Marvin Hamlisch
-yes
-Siemens
-Vladimir Guerrero
-Bobby Cole
-Bette Midler
+['De La Salle University']
+['Danny Elfman']
+['L!fe Happens']
+['Isla Lang Fisher']
+['2017']
+['Group Health Cooperative']
+['Bill Gates']
+['Washoe County']
+['Palmachim']
+['Mars']
+['Robert Fick']
+['at New England Patriots']
+['Simon Wells']
+['Bryce Dallas Howard']
+['Mace Windu']
+['Nick Price']
+['Gaiserwald']
+['St. Gallen']
+['Yaroslavl Oblast']
+['† Davenport']
+['Keerthi Sagathia, Shazneen Arethna']
+['1993']
+['North']
+['north']
+['Jinnah']
+['Amway Center']
+["He's Just Not That into You"]
+['Susan Sarandon as Louise']
+['BIG STAR']
+['no']
+['Mitsubishi']
+['Ringwood, New Jersey']
+['Gotye']
+['Marvin Hamlisch']
+['yes']
+['Siemens']
+['Vladimir Guerrero']
+['Bobby Cole']
+['Bette Midler']
 ['Annabella Sciorra', 'Rebecca De Mornay']
-Elsie
-Andy
-Tottenham Hotspur
-Big Ten
-Tales from the Golden Age
-United States
-Budapest
-New Orleans Arena
-The Futureheads
-Mike Fetchick
-Stormzy
-Eminem
-Camila
-December 13, 2016
+['Elsie']
+['Andy']
+['Tottenham Hotspur']
+['Big Ten']
+['Tales from the Golden Age']
+['United States']
+['Budapest']
+['New Orleans Arena']
+['The Futureheads']
+['Mike Fetchick']
+['Stormzy']
+['Eminem']
+['Camila']
+['December 13, 2016']
 ['Danny Says (film)', 'Red Shirley', 'One-Trick Pony (film)', 'Prozac Nation (film)', "Berlin: Live at St. Ann's Warehouse", 'Palermo Shooting']
 ['Palermo Shooting', "Berlin: Live at St. Ann's Warehouse", 'Prozac Nation']
-Tammy and the Doctor
-The Happiest Millionaire
-AS Vita Club
-Joe Ledley
-Cardiff City
+['Tammy and the Doctor']
+['The Happiest Millionaire']
+['AS Vita Club']
+['Joe Ledley']
+['Cardiff City']
 ['Eva Herzigová', 'Rebecca Romijn', 'Jennifer Aniston', 'Helen Hunt', 'Niki Taylor', 'Claudia Schiffer']
 ['Al-Ittihad Kalba SC', 'Al Jazira Club']
-Robben Island
+['Robben Island']
 ['FC Politehnica Iași (2010)', 'CS Universitatea Craiova', 'CFR Cluj', 'FC Dunărea Călărași', 'FC Botoșani', 'FC Hermannstadt', 'CS Gaz Metan Mediaș', 'FC Voluntari']
-Polar Satellite Launch Vehicle
-Fantasies (album)
-no
-Galaxy Express 999 (film)
-2015–16 Clemson Tigers men's basketball team
-Charlotte Gainsbourg
+['Polar Satellite Launch Vehicle']
+['Fantasies (album)']
+['no']
+['Galaxy Express 999 (film)']
+["2015–16 Clemson Tigers men's basketball team"]
+['Charlotte Gainsbourg']
 ['Back to Love (Anthony Hamilton album)', 'TY.O']
-New York City
-Back to Love
-Annegret Kramp-Karrenbauer
-Helmut Kohl
+['New York City']
+['Back to Love']
+['Annegret Kramp-Karrenbauer']
+['Helmut Kohl']
 ['Jens Spahn', 'Peter Altmaier', 'Annegret Kramp-Karrenbauer']
-Hadsel Church
-ITV (TV network)
-Game Night (film)
-Visakhapatnam Airport
+['Hadsel Church']
+['ITV (TV network)']
+['Game Night (film)']
+['Visakhapatnam Airport']
 ['Jason Chimera', 'Brad Smyth', 'Bob Wren', 'Justin Papineau']
-Rob Brown (ice hockey)
-Allstate Arena
+['Rob Brown (ice hockey)']
+['Allstate Arena']
 ['San Antonio Rampage', 'Chicago Wolves']
-hockey
-Chicago Wolves
-Ruhpolding
-James Bennett (Australian politician)
-Russia
-MO Béjaïa
-Iona Gaels women's basketball
-Louisville
+['hockey']
+['Chicago Wolves']
+['Ruhpolding']
+['James Bennett (Australian politician)']
+['Russia']
+['MO Béjaïa']
+["Iona Gaels women's basketball"]
+['Louisville']
 ['Porsche in motorsport', 'Persson Motorsport', 'Larbre Compétition']
-Redwing
-Turdus iliacus
+['Redwing']
+['Turdus iliacus']
 ['Anaheim Bolts', 'Arizona Storm']
-Gmina Klembów
-85.8
+['Gmina Klembów']
+['85.8']
 ['Chevrolet Silverado', 'Chevrolet Colorado']
-Walter Toogood
-Bhimber District
-Chestnut-crowned bush warbler
+['Walter Toogood']
+['Bhimber District']
+['Chestnut-crowned bush warbler']
 ['SMU Mustangs football', 'Arkansas Razorbacks football']
-December 29, 1845
-SMU
-Sanderson, Texas
-no
+['December 29, 1845']
+['SMU']
+['Sanderson, Texas']
+['no']
 ['Pascal Grünwald', 'Rubin Okotie']
-Soldotna, Alaska
-yes
-Antarctica
-Shaggy (musician)
+['Soldotna, Alaska']
+['yes']
+['Antarctica']
+['Shaggy (musician)']
 ['P. P. Arnold', 'Rod Stewart', 'Sheryl Crow', 'Keith Hampshire', 'Dawn Penn', 'Papa Dee']
-Arabella
-Grammy Award for Best Latin Pop Album
-Albany Symphony Orchestra
-Ocean County, New Jersey
+['Arabella']
+['Grammy Award for Best Latin Pop Album']
+['Albany Symphony Orchestra']
+['Ocean County, New Jersey']
 ['Alberton Oval', 'Glenelg Oval']
-Gmina Strzałkowo
-rural
+['Gmina Strzałkowo']
+['rural']
 ['Single-Handed (TV series)', 'Jack Taylor (TV series)', 'Strike (TV series)']
-Declan Doyle
-no
-Colonel (United States)
-Jalan Besar Stadium
-Holmenkollen
-Hot Fuzz
-guns
-2007
+['Declan Doyle']
+['no']
+['Colonel (United States)']
+['Jalan Besar Stadium']
+['Holmenkollen']
+['Hot Fuzz']
+['guns']
+['2007']
 ['OM Arzew', 'Gimnàstic de Tarragona', 'FC Gueugnon']
 ['OM Arzew', 'FC Gueugnon', 'Gimnàstic de Tarragona B']
-East Bengal F.C.
-19 July 2019
-Loan
-Fever Pitch (2005 film)
-2005
-Ljubljana
-Elektra
-Israel Railways JT 42CW
-Israel
-1996
-Clean My Name, Mr. Coroner!
-2000
-Kick (2014 film)
-Mini
-Fontana Dam
-Bizerte Governorate
-Grimstad
-Margunn Haugenes
-Visions of Eight
-Orson Welles
-John Lennon
-Miedź Legnica
-Legnica
-UMF Tindastóll
-Ben Everson
-Rugby Calvisano
-Catch-22#Adaptations
-Gustavo Yacamán
-yes
-United States
-Mohammad Ahsan
+['East Bengal F.C.']
+['19 July 2019']
+['Loan']
+['Fever Pitch (2005 film)']
+['2005']
+['Ljubljana']
+['Elektra']
+['Israel Railways JT 42CW']
+['Israel']
+['1996']
+['Clean My Name, Mr. Coroner!']
+['2000']
+['Kick (2014 film)']
+['Mini']
+['Fontana Dam']
+['Bizerte Governorate']
+['Grimstad']
+['Margunn Haugenes']
+['Visions of Eight']
+['Orson Welles']
+['John Lennon']
+['Miedź Legnica']
+['Legnica']
+['UMF Tindastóll']
+['Ben Everson']
+['Rugby Calvisano']
+['Catch-22#Adaptations']
+['Gustavo Yacamán']
+['yes']
+['United States']
+['Mohammad Ahsan']
 ['FC Gomel', 'FC Isloch Minsk Raion', 'FC Energetik-BGU Minsk', 'FC Minsk']
-Spartacus (film)
-Andy Whitfield
-Bay Area Bandits
-Mamadou Barry
-Union Pacific Railroad
-Promontory, Utah
-Union Pacific Corporation (NYSE: UNP)
-its dominant stockholder Dr. Thomas Clark Durant
-Union Pacific Railroad
+['Spartacus (film)']
+['Andy Whitfield']
+['Bay Area Bandits']
+['Mamadou Barry']
+['Union Pacific Railroad']
+['Promontory, Utah']
+['Union Pacific Corporation (NYSE:\xa0UNP)']
+['its dominant stockholder Dr. Thomas Clark Durant']
+['Union Pacific Railroad']
 ['F.C. Paços de Ferreira', 'C.F. Os Belenenses']
-Akane Yamaguchi
-India
-Alfonso XI of Castile
-Conrad
-on the coast between the mouths of the rivers Llobregat and Besòs, and bounded to the west by the Serra de Collserola mountain range
+['Akane Yamaguchi']
+['India']
+['Alfonso XI of Castile']
+['Conrad']
+['on the coast between the mouths of the rivers Llobregat and Besòs, and bounded to the west by the Serra de Collserola mountain range']
 ['18 January 1357', '13 November 1345']
 ['Kemar Lawrence', 'Bradley Wright-Phillips']
 ['Murali Vijay', 'Lasith Malinga', 'Harbhajan Singh']
 ['Lasith Malinga', 'Harbhajan Singh']
-Arrows of Desire
-SU Agen Lot-et-Garonne
-Michael Chang
-Thierry Henry
-Arsenal
-Ryan Giggs
-Leung Kwok Wai
+['Arrows of Desire']
+['SU Agen Lot-et-Garonne']
+['Michael Chang']
+['Thierry Henry']
+['Arsenal']
+['Ryan Giggs']
+['Leung Kwok Wai']
 ['Austin, Chicago', 'East Garfield Park, Chicago']
-Austin
+['Austin']
 ['Bray Wanderers A.F.C.', 'Sporting Fingal F.C.']
-Aly Michalka
-Aremark
-AS Vita Club
-Icterine warbler
-Neptune
-1642
-either been covered up or vanished
+['Aly Michalka']
+['Aremark']
+['AS Vita Club']
+['Icterine warbler']
+['Neptune']
+['1642']
+['either been covered up or vanished']
 ['Natalie Geisenberger', 'Dajana Eitberger']
 ['Goat (zodiac)', 'Ox (zodiac)']
-yes
-FC Twente Vrouwen
+['yes']
+['FC Twente Vrouwen']
 ['UFC 116', 'UFC 113', 'UFC 122', 'UFC 114', 'UFC 115', 'UFC 124']
-Bellagio
-March 27, 2017
+['Bellagio']
+['March 27, 2017']
 ['UFC 116: Lesnar vs. Carwin', 'UFC 114: Rampage vs. Evans']
 ['Ashley Cole', 'John Barnes (footballer)']
 ['Olivier Giroud', 'Laurent Koscielny']
-Lake Superior State Lakers men's ice hockey
-Lake Superior State Lakers men's ice hockey
-Esapekka Lappi
-Olympiacos B.C.
-Chiranjeevi
-The Polar Express (film)
-Hero Girl (voice)
-La Paz Department (Bolivia)
-Gary Roberts (ice hockey)
-Gatineau Olympiques
-Road Atlanta
-no
-Blue
-handrail
-lock
+["Lake Superior State Lakers men's ice hockey"]
+["Lake Superior State Lakers men's ice hockey"]
+['Esapekka Lappi']
+['Olympiacos B.C.']
+['Chiranjeevi']
+['The Polar Express (film)']
+['Hero Girl (voice)']
+['La Paz Department (Bolivia)']
+['Gary Roberts (ice hockey)']
+['Gatineau Olympiques']
+['Road Atlanta']
+['no']
+['Blue']
+['handrail']
+['lock']
 ['2011', '2011-2017', '1996-2007', '2018', '2015']
-leader
-Scarecrow
-Shadowrun
-Humvee
-yes
-2016
+['leader']
+['Scarecrow']
+['Shadowrun']
+['Humvee']
+['yes']
+['2016']
 ['Marseille', 'Lille', 'Brussels', 'Paris', 'Lyon', 'Avignon']
-1974
-twice
-Lenny Kravitz
-Kim Yarbrough
-Melbourne Stars
-Stadium Australia
+['1974']
+['twice']
+['Lenny Kravitz']
+['Kim Yarbrough']
+['Melbourne Stars']
+['Stadium Australia']
 ['Julia Morris', 'Chris Brown']
-Oscar Robertson
+['Oscar Robertson']
 ['Blocks per game', 'FG%', 'Assists per game']
-no
-13
-2016–17
-Recording Industry Association of America
-US
-2015
-McDonnell Douglas DC-10
+['no']
+['13']
+['2016–17']
+['Recording Industry Association of America']
+['US']
+['2015']
+['McDonnell Douglas DC-10']
 ['Tara Lipinski', 'Johnny Weir', 'Terry Gannon']
-Suraj Jagan
-2014
-Seenus Mother
-Sunaina
-yes
-Israel
-himself
-Seventeen
-in the median at 5100 Las Vegas Boulevard South
-July 13–30, 1929
-Nowhere Boy
-microphone
-2009
-Nivin Pauly
-Canada
-UE Red Warriors
-Best-of-three series
-from Washington, D.C., to Cumberland, Maryland
-2012
-Revolver
-Ewan MacColl
-Ewan MacColl
+['Suraj Jagan']
+['2014']
+['Seenus Mother']
+['Sunaina']
+['yes']
+['Israel']
+['himself']
+['Seventeen']
+['in the median at 5100 Las Vegas Boulevard South']
+['July 13–30, 1929']
+['Nowhere Boy']
+['microphone']
+['2009']
+['Nivin Pauly']
+['Canada']
+['UE Red Warriors']
+['Best-of-three series']
+['from Washington, D.C., to Cumberland, Maryland']
+['2012']
+['Revolver']
+['Ewan MacColl']
+['Ewan MacColl']
 ['British Columbia', 'Vancouver']
-Atlantic Coast Conference
-Hard Rock Stadium
-in Corydon on May 5, 1817
-white
-16,419
-September 21, 2013
-16,419
-Space Ghost Coast to Coast
-2011
-Barnes & Noble
-1999
-songwriter
-The Nutty Professor
-1972
-sixteen
+['Atlantic Coast Conference']
+['Hard Rock Stadium']
+['in Corydon on May 5, 1817']
+['white']
+['16,419']
+['September 21, 2013']
+['16,419']
+['Space Ghost Coast to Coast']
+['2011']
+['Barnes & Noble']
+['1999']
+['songwriter']
+['The Nutty Professor']
+['1972']
+['sixteen']
 ['Greg Baldwin', 'Mako Iwamatsu']
-Chutney
-private
-Santiniketan
-Sciences, Engineering & Technology
-Joseph Sherrard Kearns
-1946
-Hawker Hurricane
+['Chutney']
+['private']
+['Santiniketan']
+['Sciences, Engineering & Technology']
+['Joseph Sherrard Kearns']
+['1946']
+['Hawker Hurricane']
 ['Richard Powers', 'Joshua Ferris', 'David Nicholls', 'Karen Joy Fowler']
 ['her unnamed brother', 'Sally']
-Mia Wasikowska
-2010
+['Mia Wasikowska']
+['2010']
 ['Thor: The Dark World', 'Thor']
-Thor
-Balfour Declaration
-at the center of the city of Rome
-Alan King
-two
-two
+['Thor']
+['Balfour Declaration']
+['at the center of the city of Rome']
+['Alan King']
+['two']
+['two']
 ['at Atlanta Falcons', 'Atlanta Falcons']
-For Your Eyes Only
-2004
-the 2020 National Football League (NFL) season
-Javier García Portillo
-puma
-medal
-black
-Chester College
-conservative
-Bangsamoro
-the captain
-Zeus
-Jainism
-Jainism
-Islam
-Battle of Midway
+['For Your Eyes Only']
+['2004']
+['the 2020 National Football League (NFL) season']
+['Javier García Portillo']
+['puma']
+['medal']
+['black']
+['Chester College']
+['conservative']
+['Bangsamoro']
+['the captain']
+['Zeus']
+['Jainism']
+['Jainism']
+['Islam']
+['Battle of Midway']
 ['by the U.S. President at any time', 'by the U.S. Congress during times of war']
-yes
-Robert Catesby
-Liberton Tower
-Pan American Games
-Percy Bysshe Shelley
-no
-Team-XBMC and XBMC Foundation
-1948
-English
-Portuguese
-Lucimar Ferreira da Silva
-New York City
+['yes']
+['Robert Catesby']
+['Liberton Tower']
+['Pan American Games']
+['Percy Bysshe Shelley']
+['no']
+['Team-XBMC and XBMC Foundation']
+['1948']
+['English']
+['Portuguese']
+['Lucimar Ferreira da Silva']
+['New York City']
 ['Jack Nance', 'Conway Twitty']
-Battle of the Alamo
-yes
-2000
-eight
+['Battle of the Alamo']
+['yes']
+['2000']
+['eight']
 ['University of Delaware', 'Delaware State University']
-Masterpiece
+['Masterpiece']
 ['wing exerts a downward force on the air and the air exerts an upward force on the wing', 'force']
-galea
-Loose Forward
-October 2017
-St. Moritz
-Poland
-LaPointe
-Gareth Southgate
-CBS
+['galea']
+['Loose Forward']
+['October 2017']
+['St. Moritz']
+['Poland']
+['LaPointe']
+['Gareth Southgate']
+['CBS']
 ['BrainDead', 'Mercy Street']
 ['The victim', 'an unnamed narrator']
-Emma Rolfe
-1965
-younger
-Eric Stoltz
-Tech
-500 GB
-four
-Tracee Ellis Ross
-Alice Louise Walton
-The Home Depot
-1982
-no
-Thomas Schlamme
-Rita Hayworth
-Master of Complications
-School 2013
-Han Tae-sun
-Petter Northug Jr.
-Baymax
-Stealers Wheel
-Brendon McCullum
-South Africa
-yes
-7, set by Guy Hecker
-Kansas City Chiefs
-Harry Potter and the Deathly Hallows – Part 1
-3,945
-no
-Avis Europe
-the Beatles
+['Emma Rolfe']
+['1965']
+['younger']
+['Eric Stoltz']
+['Tech']
+['500 GB']
+['four']
+['Tracee Ellis Ross']
+['Alice Louise Walton']
+['The Home Depot']
+['1982']
+['no']
+['Thomas Schlamme']
+['Rita Hayworth']
+['Master of Complications']
+['School 2013']
+['Han Tae-sun']
+['Petter Northug Jr.']
+['Baymax']
+['Stealers Wheel']
+['Brendon McCullum']
+['South Africa']
+['yes']
+['7, set by Guy Hecker']
+['Kansas City Chiefs']
+['Harry Potter and the Deathly Hallows – Part 1']
+['3,945']
+['no']
+['Avis Europe']
+['the Beatles']
 ["Ryan O'Neal", 'Ali MacGraw']
-Shakespearean tragedy
-The tree
-sixteen
-Lucian Gabriel Wiina Msamati
-Chef Pablo Fantastico
-2013
-Calhoun County
-Atif Aslam
-Nessun dorma
-Hannah Ormerod
-Ismene
-Doctor Baugh
-yes
-Salilda
-Glendale, California
-Oxnard, California
-Aristotle
-8 Out of 10 Cats
-a maroon Bristol 405
-Dylan Moran
-video editing software
-18th century
-yes
-yes
-NSYNC
-Elliot Fletcher
-Lily
-Connor
-490 m (1,608 ft)
-Bobby Kimball
-1974
-Necessary and Proper Clause
-500-1,000
-implied powers
-Munich
-1830
-George McGovern
-24 November 1859
-yes
-in and around the town of Marfa, Texas, and the remote, dry plains found nearby
-the Beatles
-February 1964
-Japan
-February 2015
-Kimbra
-Leslie Howard
-September 18, 1851
-2012
-Turkey
-Savannah Nix
-1983
-Roadhouse Mechanic
-Midnite Spares
-InMobi
-Global
-eight
-1949
-The Cardigans
-Borås HC
-2013
-Bart Howard
-18 October 2017
-Allu Arjun, Shruti Haasan
-leg spinner Jimmy Matthews
-1st career NHL game
-Columbia, Missouri
-yes
-Girl, Interrupted
-either Emily or her Royal Protector and father Corvo Attano
-1920
-World War II
-Labour
-no
-Victory
-3 a.m.
-A Midsummer Night's Dream
-Leeanna Walsman
-1982
-1993
-Sloss Mines
-1992
-What's on TV
+['Shakespearean tragedy']
+['The tree']
+['sixteen']
+['Lucian Gabriel Wiina Msamati']
+['Chef Pablo Fantastico']
+['2013']
+['Calhoun County']
+['Atif Aslam']
+['Nessun dorma']
+['Hannah Ormerod']
+['Ismene']
+['Doctor Baugh']
+['yes']
+['Salilda']
+['Glendale, California']
+['Oxnard, California']
+['Aristotle']
+['8 Out of 10 Cats']
+['a maroon Bristol 405']
+['Dylan Moran']
+['video editing software']
+['18th century']
+['yes']
+['yes']
+['NSYNC']
+['Elliot Fletcher']
+['Lily']
+['Connor']
+['490\xa0m (1,608\xa0ft)']
+['Bobby Kimball']
+['1974']
+['Necessary and Proper Clause']
+['500-1,000']
+['implied powers']
+['Munich']
+['1830']
+['George McGovern']
+['24 November 1859']
+['yes']
+['in and around the town of Marfa, Texas, and the remote, dry plains found nearby']
+['the Beatles']
+['February 1964']
+['Japan']
+['February 2015']
+['Kimbra']
+['Leslie Howard']
+['September 18, 1851']
+['2012']
+['Turkey']
+['Savannah Nix']
+['1983']
+['Roadhouse Mechanic']
+['Midnite Spares']
+['InMobi']
+['Global']
+['eight']
+['1949']
+['The Cardigans']
+['Borås HC']
+['2013']
+['Bart Howard']
+['18 October 2017']
+['Allu Arjun, Shruti Haasan']
+['leg spinner Jimmy Matthews']
+['1st career NHL game']
+['Columbia, Missouri']
+['yes']
+['Girl, Interrupted']
+['either Emily or her Royal Protector and father Corvo Attano']
+['1920']
+['World War II']
+['Labour']
+['no']
+['Victory']
+['3 a.m.']
+["A Midsummer Night's Dream"]
+['Leeanna Walsman']
+['1982']
+['1993']
+['Sloss Mines']
+['1992']
+["What's on TV"]
 ['Gordon Angus Deayton', 'known professionally as Angus Deayton']
-Kobe
-Honshū
-1993
-yes
-Noah Schnapp
-Japan
-good luck
-2013
-yes
-Yuma, Arizona
-Eight Legged Freaks
-Watch the Throne
-Meredith Willson
-Deckard Shaw
-God
-Denver Broncos
-Helen
-Anton Viktorovich Yelchin
-yes
-Tom Levitt
-the old woman
-Narmer
-Princess Leia
-Alan North
-September
-yes
-Soviet Union
+['Kobe']
+['Honshū']
+['1993']
+['yes']
+['Noah Schnapp']
+['Japan']
+['good luck']
+['2013']
+['yes']
+['Yuma, Arizona']
+['Eight Legged Freaks']
+['Watch the Throne']
+['Meredith Willson']
+['Deckard Shaw']
+['God']
+['Denver Broncos']
+['Helen']
+['Anton Viktorovich Yelchin']
+['yes']
+['Tom Levitt']
+['the old woman']
+['Narmer']
+['Princess Leia']
+['Alan North']
+['September']
+['yes']
+['Soviet Union']
 ['S-125 Neva', '9K33 Osa']
-no
-2,200
-March 1997
+['no']
+['2,200']
+['March 1997']
 ['2011', '1993', '1996']
-Doc
-UCLA
-Matt Pickens
-Primark
-it grew more violent after volume eight
-The Monkees
-as a possible trade route to Asia
-Melinda
-United States Army Reserve
-Treasure Island
-14,179 feet
-no
-Gary Ross
-Jesse Lon Plemons
-Football
-.22 LR
-Warner Bros.
-Brandon
-James and the Giant Peach
-no
-point guard
-Đoko Šalić
-yes
-Days of Thunder
-no
-an unnamed large city
-Danny DeVito
-STX Entertainment
-Media Alliance
-1982
-Ireland
-Curling
-no
+['Doc']
+['UCLA']
+['Matt Pickens']
+['Primark']
+['it grew more violent after volume eight']
+['The Monkees']
+['as a possible trade route to Asia']
+['Melinda']
+['United States Army Reserve']
+['Treasure Island']
+['14,179 feet']
+['no']
+['Gary Ross']
+['Jesse Lon Plemons']
+['Football']
+['.22 LR']
+['Warner Bros.']
+['Brandon']
+['James and the Giant Peach']
+['no']
+['point guard']
+['Đoko Šalić']
+['yes']
+['Days of Thunder']
+['no']
+['an unnamed large city']
+['Danny DeVito']
+['STX Entertainment']
+['Media Alliance']
+['1982']
+['Ireland']
+['Curling']
+['no']
 ['the Blue God', 'Blue Head']
-Josiah
-Sanskrit
-yes
-Scott Pilgrim, a slacker musician who must battle the seven evil exes of his newest girlfriend Ramona
+['Josiah']
+['Sanskrit']
+['yes']
+['Scott Pilgrim, a slacker musician who must battle the seven evil exes of his newest girlfriend Ramona']
 ['Saturn Awards', 'Empire Awards']
-near Parth Galen
-Lincolnville Center, Maine
-1999
-a theme park
-Islands of Adventure
-Universal Studios Florida
+['near Parth Galen']
+['Lincolnville Center, Maine']
+['1999']
+['a theme park']
+['Islands of Adventure']
+['Universal Studios Florida']
 ['Steve Gaines', 'Ronnie Van Zant', 'William Gray', 'Walter McCreary', 'Dean Kilpatrick', 'Cassie Gaines']
-yes
-Trisha Yearwood
-Martina McBride
-Gothic
-American
+['yes']
+['Trisha Yearwood']
+['Martina McBride']
+['Gothic']
+['American']
 ['August 1, 2007', 'July 22, 2007', 'July 25, 2007']
-Frances McDormand
-Patty ONeill
-Of Monsters and Men
-Beth Brennan
+['Frances McDormand']
+['Patty ONeill']
+['Of Monsters and Men']
+['Beth Brennan']
 ['Moulin Rouge!', 'Bridget Jones: The Edge of Reason']
-St. Louis Rams
-Kalindi and Rishabh
-Krasimir Balakov
-no
-Victor
-1943
-Dutchmen
-2006
-public
-Glenn Robinson
-yes
-John Adams
-Sheree Julienne Wilson
-Casino Royale
-poet Muhammad Iqbal
-Richard Curtis
-Adrian Peterson
-John Banville
-Esporte Clube Bahia
-2005
-2013
-1972
-Moral Orel
-mole
-YouTube
-no
-Grant Imahara
-yes
-1949
-The first book of Samuel
+['St. Louis Rams']
+['Kalindi and Rishabh']
+['Krasimir Balakov']
+['no']
+['Victor']
+['1943']
+['Dutchmen']
+['2006']
+['public']
+['Glenn Robinson']
+['yes']
+['John Adams']
+['Sheree Julienne Wilson']
+['Casino Royale']
+['poet Muhammad Iqbal']
+['Richard Curtis']
+['Adrian Peterson']
+['John Banville']
+['Esporte Clube Bahia']
+['2005']
+['2013']
+['1972']
+['Moral Orel']
+['mole']
+['YouTube']
+['no']
+['Grant Imahara']
+['yes']
+['1949']
+['The first book of Samuel']
 ['John Barry', 'John Adams', 'John Paul Jones']
-over 12 million
-no
-New York Yankees
-New York Yankees
-New York City
-no
-St Kilda Football Club
-September 11, 1985
-68–63
-The Gift of Winter
-Hercules
-Hunter
-Amar
-24 March 1990
-Charlotte Hornets
-1970
-peace
-yes
-Angela Lansbury
-Corvallis, Oregon
-yes
-Second Continental Congress
-Warner Bros.
-Mexican
-Maxine Peake
-Louis Prima
-American Museum of Natural History
-Amtrak
-Palmer
-Scone
-Wimpy
-English
-Seven Natural Wonders of the world
-Twin Dragons
-July 8, 2013
-English
-English
-2015
-5
-Barbet Schroeder
-Julius Caesar
-1,309
-2013
-Bonham Carter
-yes
-Algiers
-Chandelier
-Carlinhos Brown
-Richmond
-Fremantle
-Footscray
-Astrid Lindgren
-Bernie Worrell
-San Francisco
-Alcatraz
-Kiss
-emu
-Principal photography took place in Atlanta
-1997
-Gerrit Cole
-Carolina Panthers
-being the half-blood son of Muggle Tobias Snape and pure-blood Eileen Prince
-Newt Scamander
-So Random!
-2013
-1863
-The Green Mile
-Arthur
-Act IV
-on the Gulf of Gonâve
-Groom Range
-Punished "Venom" Snake
-Lucy
-Amazon.com
-Light My Fire
-2010
-no
-April 13, 2018
-yes
-Congratulations
+['over 12 million']
+['no']
+['New York Yankees']
+['New York Yankees']
+['New York City']
+['no']
+['St Kilda Football Club']
+['September 11, 1985']
+['68–63']
+['The Gift of Winter']
+['Hercules']
+['Hunter']
+['Amar']
+['24 March 1990']
+['Charlotte Hornets']
+['1970']
+['peace']
+['yes']
+['Angela Lansbury']
+['Corvallis, Oregon']
+['yes']
+['Second Continental Congress']
+['Warner Bros.']
+['Mexican']
+['Maxine Peake']
+['Louis Prima']
+['American Museum of Natural History']
+['Amtrak']
+['Palmer']
+['Scone']
+['Wimpy']
+['English']
+['Seven Natural Wonders of the world']
+['Twin Dragons']
+['July 8, 2013']
+['English']
+['English']
+['2015']
+['5']
+['Barbet Schroeder']
+['Julius Caesar']
+['1,309']
+['2013']
+['Bonham Carter']
+['yes']
+['Algiers']
+['Chandelier']
+['Carlinhos Brown']
+['Richmond']
+['Fremantle']
+['Footscray']
+['Astrid Lindgren']
+['Bernie Worrell']
+['San Francisco']
+['Alcatraz']
+['Kiss']
+['emu']
+['Principal photography took place in Atlanta']
+['1997']
+['Gerrit Cole']
+['Carolina Panthers']
+['being the half-blood son of Muggle Tobias Snape and pure-blood Eileen Prince']
+['Newt Scamander']
+['So Random!']
+['2013']
+['1863']
+['The Green Mile']
+['Arthur']
+['Act IV']
+['on the Gulf of Gonâve']
+['Groom Range']
+['Punished "Venom" Snake']
+['Lucy']
+['Amazon.com']
+['Light My Fire']
+['2010']
+['no']
+['April 13, 2018']
+['yes']
+['Congratulations']
 ['sugar', 'rum', 'molasses']
-Tony Award
-Andrew Lloyd Webber
-Studio 54
-Norbert Leo Butz
-no
-Eli Raphael Roth
-her mother, Miranda, marries King Roland II of Enchantia
-Belmont Park
-Kentucky Derby
-yes
-Henry Purcell
+['Tony Award']
+['Andrew Lloyd Webber']
+['Studio 54']
+['Norbert Leo Butz']
+['no']
+['Eli Raphael Roth']
+['her mother, Miranda, marries King Roland II of Enchantia']
+['Belmont Park']
+['Kentucky Derby']
+['yes']
+['Henry Purcell']
 ['pride', 'lust', 'wrath', 'sloth', 'gluttony', 'envy', 'greed']
-co-assistant coach
-Thierry Henry
-2009
-1964 New York World's Fair
-March 4, 1995
-2016
-2018
+['co-assistant coach']
+['Thierry Henry']
+['2009']
+["1964 New York World's Fair"]
+['March 4, 1995']
+['2016']
+['2018']
 ['shooting', 'lethal injection']
-Ice Cube
-June 2010
-The Longhorn Network
-Silent Hill
-The Beatles at the Hollywood Bowl
-2003
-Tyson Gay
-no
-Nevada
-Israel
-27
-3:37
-Should've Said No
-The south lawn
-Lee Hong-gi
-eight
-Brooke Smith
-Keane
-1802
+['Ice Cube']
+['June 2010']
+['The Longhorn Network']
+['Silent Hill']
+['The Beatles at the Hollywood Bowl']
+['2003']
+['Tyson Gay']
+['no']
+['Nevada']
+['Israel']
+['27']
+['3:37']
+["Should've Said No"]
+['The south lawn']
+['Lee Hong-gi']
+['eight']
+['Brooke Smith']
+['Keane']
+['1802']
 ['Joe Robert Cole', 'Ryan Coogler']
-Sofia Coppola
-Abbey Road
-Shaw
+['Sofia Coppola']
+['Abbey Road']
+['Shaw']
 ['Kosovo', 'Albania', 'Macedonia', 'Montenegro', 'Serbia', 'Turkey', 'Bosnia and Herzegovina']
-Ethan Suplee
-Nicolaus Copernicus
-Cold Blood Warm Heart
-Zachary Adam Gordon
-Elderly Woman
-US$432.6 million
-no
-five
-no
+['Ethan Suplee']
+['Nicolaus Copernicus']
+['Cold Blood Warm Heart']
+['Zachary Adam Gordon']
+['Elderly Woman']
+['US$432.6 million']
+['no']
+['five']
+['no']
 ['Rachel Hughes', 'Charity Dingle']
-Daryl Sabara
-six
-2004
-1994
-boy
-Malcolm in the Middle
+['Daryl Sabara']
+['six']
+['2004']
+['1994']
+['boy']
+['Malcolm in the Middle']
 ['non-uniform', 'uniform']
-Jason Scott Lee
-yes
-Santos Ramirez
-Stock Car Brasil
-Australia
-Be Cool, Scooby-Doo!
-Peking Opera School "brothers" at the "China Drama Academy", Sammo Hung and Jackie Chan
-2015
-Investec
-Daffy Duck
-Death to false metal
-"The Star-Spangled Banner" by Marvin Gaye
-John
+['Jason Scott Lee']
+['yes']
+['Santos Ramirez']
+['Stock Car Brasil']
+['Australia']
+['Be Cool, Scooby-Doo!']
+['Peking Opera School "brothers" at the "China Drama Academy", Sammo Hung and Jackie Chan']
+['2015']
+['Investec']
+['Daffy Duck']
+['Death to false metal']
+['"The Star-Spangled Banner" by Marvin Gaye']
+['John']
 ['Majorca, Spain', 'Pembroke', 'Buckinghamshire', 'Chenies Manor House', 'Wales', 'Chenies', 'England']
-Ang Lee
-Barry Fitzgerald
-Sava
-Beauty and the Beast
-Der Ring des Nibelungen
-Thorpe Park
-Twitches
-yes
-crown
-circle
-ball
-gloves
-yes
-wristbands
-moustache
-checkered
-red
-ribbon
-ring
-red
-windmill
-eight
-eight
-eight
-two
-nike
-running
-right
-baton
-track
-folded
-glasses
-no
-sunglasses
+['Ang Lee']
+['Barry Fitzgerald']
+['Sava']
+['Beauty and the Beast']
+['Der Ring des Nibelungen']
+['Thorpe Park']
+['Twitches']
+['yes']
+['crown']
+['circle']
+['ball']
+['gloves']
+['yes']
+['wristbands']
+['moustache']
+['checkered']
+['red']
+['ribbon']
+['ring']
+['red']
+['windmill']
+['eight']
+['eight']
+['eight']
+['two']
+['nike']
+['running']
+['right']
+['baton']
+['track']
+['folded']
+['glasses']
+['no']
+['sunglasses']
 ['Luis Enrique Gonzales', 'Michael Megrew']
-skates
-black
-three
-four
-red
-three
-three
-square
-microphone
-microphone
-microphone
-two
-female
-suit
-Shah Rukh Khan
-Shah Rukh Khan
-suit
-tree
-eyeglasses
-six
-carousel
-horse
-eight
-four
-1997
-Molly
-Allison Rhodes
-1988–1989
-Medallion with eagle and stars
-2007
-1991
-Green
-Jude
-Declan Coyne
-Fragaria × ananassa
-businessman W.H. Moses
-Ribera Alta del Ebro
-Keitaro Motonaga
-K-pop
-Wm. Wrigley Jr. Company
-Chhat Ke Upar Do Kabutar
-2006–07
-2014
-Best Contemporary Jazz Performance
-1960
-Senior Inspector Daya
-Aamir Hassan
-851
-2016
+['skates']
+['black']
+['three']
+['four']
+['red']
+['three']
+['three']
+['square']
+['microphone']
+['microphone']
+['microphone']
+['two']
+['female']
+['suit']
+['Shah Rukh Khan']
+['Shah Rukh Khan']
+['suit']
+['tree']
+['eyeglasses']
+['six']
+['carousel']
+['horse']
+['eight']
+['four']
+['1997']
+['Molly']
+['Allison Rhodes']
+['1988–1989']
+['Medallion with eagle and stars']
+['2007']
+['1991']
+['Green']
+['Jude']
+['Declan Coyne']
+['Fragaria × ananassa']
+['businessman W.H. Moses']
+['Ribera Alta del Ebro']
+['Keitaro Motonaga']
+['K-pop']
+['Wm. Wrigley Jr. Company']
+['Chhat Ke Upar Do Kabutar']
+['2006–07']
+['2014']
+['Best Contemporary Jazz Performance']
+['1960']
+['Senior Inspector Daya']
+['Aamir Hassan']
+['851']
+['2016']
 ['Ramzi Mouas', 'Khairi Barki']
-Indian Affairs
-Bobby
-The Divergent Series: Insurgent
-1980
-1959
-2015
-"A Case of Klapp"
-1986
-Marc Lloyd-Williams
-Oldham R.L.F.C.
-42 – 6
-Eliminated 3rd  on March 31, 2017
-2018
-Connor
-Sophia Quinn
-Easts Tigers
-Same
-Eduard Khavrov
-Edward Waters College
-U.S. Route 23
-Indian beechnut
-2014
-Assistant Engineer/PT
-5–10
+['Indian Affairs']
+['Bobby']
+['The Divergent Series: Insurgent']
+['1980']
+['1959']
+['2015']
+['"A Case of Klapp"']
+['1986']
+['Marc Lloyd-Williams']
+['Oldham R.L.F.C.']
+['42 – 6']
+['Eliminated 3rd  on March 31, 2017']
+['2018']
+['Connor']
+['Sophia Quinn']
+['Easts Tigers']
+['Same']
+['Eduard Khavrov']
+['Edward Waters College']
+['U.S. Route 23']
+['Indian beechnut']
+['2014']
+['Assistant Engineer/PT']
+['5–10']
 ['Hilmi Mihci', 'Berry Powel']
-86–0
-CBS Television Stations
-11 July 2017
-Foo Fighters
-Left Shoulder Impingement
-2011
-Feirense
-Storyboard revisionist
-Ryo Matsuri
-Cody Martin
-Motacilla alba
-Allingawier
-2007
-Washington and Lee University
+['86–0']
+['CBS Television Stations']
+['11 July 2017']
+['Foo Fighters']
+['Left Shoulder Impingement']
+['2011']
+['Feirense']
+['Storyboard revisionist']
+['Ryo Matsuri']
+['Cody Martin']
+['Motacilla alba']
+['Allingawier']
+['2007']
+['Washington and Lee University']
 ['Arena Lviv', 'Ukraina Stadium']
-13.72%
-1898
-in west-central Bolivia 68 km (42 mi) southeast of Lake Titicaca
--50
-2007
+['13.72%']
+['1898']
+['in west-central Bolivia 68\xa0km (42\xa0mi) southeast of Lake Titicaca']
+['-50']
+['2007']
 ['Johansson, Lars  Lars Johansson', 'Fernström, Linus  Linus Fernström']
-Herself
-Stephanie Senneker
-Essendon
-Eddy Merckx
-Eddy Merckx
-Snoop Dogg
-Donald Trump
-Bruno Mars
-ITA
-Brie Larson
-Ice Cube
-John Denver
-Lord Vishnu
-Rick Mears
-Rick Mears
-Rick Mears
-James Garner
+['Herself']
+['Stephanie Senneker']
+['Essendon']
+['Eddy Merckx']
+['Eddy Merckx']
+['Snoop Dogg']
+['Donald Trump']
+['Bruno Mars']
+['ITA']
+['Brie Larson']
+['Ice Cube']
+['John Denver']
+['Lord Vishnu']
+['Rick Mears']
+['Rick Mears']
+['Rick Mears']
+['James Garner']
 ['Calcium', 'Magnesium']
-Best Supporting Actress
-Best Supporting Actress
-Best Supporting Actress
-Atlanta Falcons
-CSKA Moscow
-Best Actor
+['Best Supporting Actress']
+['Best Supporting Actress']
+['Best Supporting Actress']
+['Atlanta Falcons']
+['CSKA Moscow']
+['Best Actor']
 ['Cindy Crawford', 'Linda Evangelista']
-1977
+['1977']
 ['Le nozze di Figaro', 'Don Giovanni']
-Il Trittico
-Saturday, September 18
-Cheyenne
-Cheyenne
-Kevin
+['Il Trittico']
+['Saturday, September 18']
+['Cheyenne']
+['Cheyenne']
+['Kevin']
 ['SEA 10–4', 'SEA 5–2', 'SEA 4–2', 'SEA 9–4', 'Tied 2–2', 'SEA 7–4', 'SEA 6–2']
-Ceremonial First Pitch
-Mr. White
-Jeremy Johnson
-1 July 1857
-UFA
-BPI: Platinum  
-* ARIA: Platinum
-2007
-Peter Iverson
+['Ceremonial First Pitch']
+['Mr. White']
+['Jeremy Johnson']
+['1 July 1857']
+['UFA']
+['BPI: Platinum  \n* ARIA: Platinum']
+['2007']
+['Peter Iverson']
 ['Sunday', 'Saturday']
-2018
-December 21, 1980
-71-73=144
-2014
-1952
-Arjun Chandy
-1999
-Savannah
-Charlton Heston
-Terence Young
-1952-1956
-Co-presenter
-Reshard Cliett
-Bugatti
-L 0–31
-1965
-Wolf Pack
-inspired by Bono's conflicting feelings about the lives he led as a musician and domestic man
-Ptolemaic period
-southern Jordan
-during indigenous rule in early antiquity
-football
-no
-H. Jon Benjamin
-Clarkson
-comedy
-Dr APJ Abdul Kalam Road
-Vlade Divac
-Siem Reap Stadium
-Corey Harawira-Naera
-George Sims
+['2018']
+['December 21, 1980']
+['71-73=144']
+['2014']
+['1952']
+['Arjun Chandy']
+['1999']
+['Savannah']
+['Charlton Heston']
+['Terence Young']
+['1952-1956']
+['Co-presenter']
+['Reshard Cliett']
+['Bugatti']
+['L 0–31']
+['1965']
+['Wolf Pack']
+["inspired by Bono's conflicting feelings about the lives he led as a musician and domestic man"]
+['Ptolemaic period']
+['southern Jordan']
+['during indigenous rule in early antiquity']
+['football']
+['no']
+['H. Jon Benjamin']
+['Clarkson']
+['comedy']
+['Dr APJ Abdul Kalam Road']
+['Vlade Divac']
+['Siem Reap Stadium']
+['Corey Harawira-Naera']
+['George Sims']
 ['Marcin Gortat', 'J. J. Redick', 'James Augustine']
-Michel Bastos
-Angela Park
-Uğur İnceman
-Wakaba Higuchi
-Marina Aitova
-Milad Meydavoudi
-Sully
+['Michel Bastos']
+['Angela Park']
+['Uğur İnceman']
+['Wakaba Higuchi']
+['Marina Aitova']
+['Milad Meydavoudi']
+['Sully']
 ['Pico', 'Terceira']
-Victor Moses
+['Victor Moses']
 ['Creighton', 'Purdue']
 ['Mike McEwen', 'Reid Carruthers']
 ['W Connection', 'San Juan Jabloteh', 'Point Fortin Civic']
-Mao Asada
-Arthur Ashe
-Funny About Love
-Diego Maradona
-Odesa
+['Mao Asada']
+['Arthur Ashe']
+['Funny About Love']
+['Diego Maradona']
+['Odesa']

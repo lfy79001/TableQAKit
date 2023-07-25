@@ -28,7 +28,7 @@ def generate_gold_answer(dataset, split):
             if 'exe_ans' in question_data['qa']:
                 result.append(question_data['qa']['exe_ans'])
             else:
-                result.append("[The test dataset does not provide a gold answer.]")
+                result.append("<The test dataset does not provide a gold answer.>")
         with open(output_file_path, 'w', encoding='utf-8') as file:
             for item in result:
                 file.write(str(item) + '\n')
@@ -45,7 +45,7 @@ def generate_gold_answer(dataset, split):
                 if 'answer' in single_question_data:
                     result.append(str(single_question_data['answer']))
                 else:
-                    result.append("[The test dataset does not provide a gold answer.]")
+                    result.append("<The test dataset does not provide a gold answer.>")
         with open(output_file_path, 'w', encoding='utf-8') as file:
             for item in result:
                 file.write(str(item) + '\n')
@@ -111,7 +111,7 @@ def generate_gold_answer(dataset, split):
             if 'answer-text' in question_data:
                 answer = question_data['answer-text']
             else:
-                answer = "[The test dataset does not provide a gold answer.]"
+                answer = "<The test dataset does not provide a gold answer.>"
             result.append(answer)
         with open(output_file_path, 'w', encoding='utf-8') as file:
             for item in result:
@@ -127,12 +127,9 @@ def generate_gold_answer(dataset, split):
                 json_data = json.loads(line)
                 if 'answers' in json_data:
                     answers = json_data['answers']
-                    if len(answers) == 1:
-                        answer = str(answers[0]['answer'])
-                    else:
-                        answer = str([answer_data['answer'] for answer_data in answers])
+                    answer = str([answer_data['answer'] for answer_data in answers])
                 else:
-                    answer = "[The test dataset does not provide a gold answer.]"
+                    answer = "<The test dataset does not provide a gold answer.>"
                 result.append(answer)
         with open(output_file_path, 'w', encoding='utf-8') as file:
             for item in result:

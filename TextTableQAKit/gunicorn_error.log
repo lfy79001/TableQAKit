@@ -356,3 +356,25 @@ AttributeError: 'CORS' object has no attribute 'route'
 [2023-07-24 08:18:58 +0000] [519649] [INFO] Listening at: http://210.75.240.136:18889 (519649)
 [2023-07-24 08:18:58 +0000] [519649] [INFO] Using worker: sync
 [2023-07-24 08:18:58 +0000] [519651] [INFO] Booting worker with pid: 519651
+[2023-07-24 08:35:40 +0000] [519649] [INFO] Handling signal: term
+[2023-07-24 08:35:40 +0000] [519651] [INFO] Worker exiting (pid: 519651)
+[2023-07-24 08:35:42 +0000] [519649] [INFO] Shutting down: Master
+[2023-07-24 08:35:50 +0000] [542350] [INFO] Starting gunicorn 21.2.0
+[2023-07-24 08:35:50 +0000] [542350] [INFO] Listening at: http://210.75.240.136:18889 (542350)
+[2023-07-24 08:35:50 +0000] [542350] [INFO] Using worker: sync
+[2023-07-24 08:35:50 +0000] [542353] [INFO] Booting worker with pid: 542353
+[2023-07-24 18:08:17 +0000] [542353] [WARNING] Invalid request from ip=89.248.163.224: Invalid HTTP request line: '\x03\x00\x00/*à\x00\x00\x00\x00\x00Cookie: mstshash=Administr'
+[2023-07-25 08:46:49 +0000] [542350] [INFO] Handling signal: term
+[2023-07-25 08:46:49 +0000] [542353] [INFO] Worker exiting (pid: 542353)
+[2023-07-25 08:46:50 +0000] [542350] [INFO] Shutting down: Master
+[2023-07-25 08:47:03 +0000] [2758490] [INFO] Starting gunicorn 21.2.0
+[2023-07-25 08:47:03 +0000] [2758490] [INFO] Listening at: http://210.75.240.136:18889 (2758490)
+[2023-07-25 08:47:03 +0000] [2758490] [INFO] Using worker: sync
+[2023-07-25 08:47:03 +0000] [2758495] [INFO] Booting worker with pid: 2758495
+[2023-07-25 08:56:01 +0000] [2758490] [INFO] Handling signal: term
+[2023-07-25 08:56:01 +0000] [2758495] [INFO] Worker exiting (pid: 2758495)
+[2023-07-25 08:56:01 +0000] [2758490] [INFO] Shutting down: Master
+[2023-07-25 08:56:03 +0000] [2770913] [INFO] Starting gunicorn 21.2.0
+[2023-07-25 08:56:03 +0000] [2770913] [INFO] Listening at: http://210.75.240.136:18889 (2770913)
+[2023-07-25 08:56:03 +0000] [2770913] [INFO] Using worker: sync
+[2023-07-25 08:56:03 +0000] [2770915] [INFO] Booting worker with pid: 2770915
