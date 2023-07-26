@@ -1,4 +1,4 @@
-# TextTableQAKit
+# TableQAKit
 A toolkit for Text-Table Hybrid Question Answering
 
 
