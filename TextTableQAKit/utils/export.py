@@ -75,11 +75,18 @@ def table_to_html(table, displayed_props, include_props, html_format, merge = Fa
         meta_el = _meta_to_simple_html(table.props)
     else:
         meta_el = h("div")(" ")
+    meta_html = meta_el
+    if table.html != "":
+        if not merge:
+            return (lxml.etree.tostring(lxml.html.fromstring(meta_html.render()), encoding="unicode", pretty_print=True),
+            table_html)
+        else:
+            combine_html = lxml.etree.tostring(lxml.html.fromstring(meta_html.render()), encoding="unicode", pretty_print=True)+table_html
+            return f'<div>{combine_html}</div>'
 
     table_el = _get_main_table_html(table)
-
     table_html = h('div')(table_el)
-    meta_html = meta_el
+    
     if not merge:
         return (lxml.etree.tostring(lxml.html.fromstring(meta_html.render()), encoding="unicode", pretty_print=True),
         lxml.etree.tostring(lxml.html.fromstring(table_html.render()), encoding="unicode", pretty_print=True))

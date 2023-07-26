@@ -69,6 +69,7 @@ class Table:
         self.txt_info = []
         self.pic_info = []
         self.is_linked = False
+        self.html = "" # for multihiertt dataset
 
     def has_highlights(self):
         return any(cell.is_highlighted for row in self.cells for cell in row)
