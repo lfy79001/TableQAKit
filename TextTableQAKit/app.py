@@ -129,10 +129,10 @@ def statistics_default_table_information(dataset_name, split, table_idx, propert
     # print("generated_results\n", generated_results)
     # print("dataset_info\n", dataset_obj.get_info())
     # print("table_question\n", table_data.default_question)
-    # with open("properties.html", "w", encoding="utf-8") as file:
-    #     file.write(properties_html)
-    # with open("table.html", "w", encoding="utf-8") as file:
-    #     file.write(table_html)
+    with open("properties.html", "w", encoding="utf-8") as file:
+        file.write(properties_html)
+    with open("table.html", "w", encoding="utf-8") as file:
+        file.write(table_html)
     # print("pictures\n", table_data.pic_info)
     # print("text\n", {(index + 1): value for index, value in enumerate(table_data.txt_info)})
     return data
@@ -144,11 +144,10 @@ def fetch_default_table_data():
         dataset_name = content.get("dataset_name")
         split = content.get("split")
         table_idx = content.get("table_idx")
-        # dataset_name = "hybridqa"
-        # split = "train"
-        # table_idx = 0
+    # dataset_name = "multihiertt"
+    # split = "train"
+    # table_idx = 0
         propertie_name_list = []
-        # testing
         data = statistics_default_table_information(dataset_name, split, table_idx, propertie_name_list)
         return jsonify(data),200
 
@@ -416,9 +415,9 @@ def download_default_table():
         split = json_file.get('split')
         table_idx = json_file.get('table_idx')
 
-        # format = "csv"
+        # format = "html"
         # include_props = True
-        # dataset_name = "hybridqa"
+        # dataset_name = "multihiertt"
         # split = "dev"
         # table_idx = 20
 

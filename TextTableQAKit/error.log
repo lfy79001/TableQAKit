@@ -348,3 +348,25 @@ Fetch Table Error: get_all_coordinates() takes 1 positional argument but 2 were 
 Fetch Table Error: [Errno 2] No such file or directory: 'outputs/hitab/gold_answer/test.txt'
 Fetch Table Error: [Errno 2] No such file or directory: 'outputs/hitab/gold_answer/test.txt'
 Fetch Table Error: [Errno 2] No such file or directory: 'outputs/hitab/gold_answer/test.txt'
+Download Table Error: wrap_with_div() takes 1 positional argument but 2 were given
+Download Table Error: local variable 'table_html' referenced before assignment
+Exception on /default/download [GET]
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 434, in download_default_table
+    return download_table(format, table_data, include_props, f"{dataset_name}_{split}_{table_idx}")
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 375, in download_table
+    content = export.table_to_html(table_data, None, include_props, "export", merge=True)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/utils/export.py", line 84, in table_to_html
+    combine_html = lxml.etree.tostring(lxml.html.fromstring(meta_html.render()), encoding="unicode", pretty_print=True)+table_html
+UnboundLocalError: local variable 'table_html' referenced before assignment
+Fetch Table Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.

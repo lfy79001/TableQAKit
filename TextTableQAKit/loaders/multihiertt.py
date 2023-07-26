@@ -14,7 +14,7 @@ class MultiHiertt(HFTabularDataset):
         super().__init__(*args, **kwargs)
         self.html = []
 
-    def wrap_with_div(table_str):
+    def wrap_with_div(self, table_str):
         return f'<div>{table_str}</div>'
 
     def _load_split(self, split):

@@ -141,9 +141,26 @@ def generate_gold_answer(dataset, split):
         with open(output_file_path, 'w', encoding='utf-8') as file:
             for item in result:
                 file.write(str(item) + '\n')
+    elif dataset == 'multihiertt':
+        result = []
+        output_file_base_path = 'multihiertt/gold_answer'
+        output_file_path = os.path.join(output_file_base_path, f'{split}.txt')
+        input_file_base_path = '../datasets/multihiertt'
+        input_file_path = os.path.join(input_file_base_path, f'{split}.json')
+        with open(input_file_path, 'r', encoding='utf-8') as f:
+            question_data_list = json.load(f)
+        for question_data in question_data_list:
+            if 'answer' in question_data['qa']:
+                answer = question_data['qa']['answer']
+            else:
+                answer = "<The test dataset does not provide a gold answer.>"
+            result.append(answer)
+        with open(output_file_path, 'w', encoding='utf-8') as file:
+            for item in result:
+                file.write(str(item) + '\n')
 
 if __name__ == '__main__':
-    dataset_list = ['spreadsheetqa', 'wikisql', 'wikitq', 'hybridqa', 'mmqa', 'tatqa', 'finqa', 'hitab']
+    dataset_list = ['spreadsheetqa', 'wikisql', 'wikitq', 'hybridqa', 'mmqa', 'tatqa', 'finqa', 'hitab', 'multihiertt']
     split_list = ['train', 'dev', 'test']
 
     for dataset in dataset_list:
