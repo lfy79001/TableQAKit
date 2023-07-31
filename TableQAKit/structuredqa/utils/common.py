@@ -8,16 +8,12 @@ from copy import deepcopy
 from collections import defaultdict
 import numpy as np
 import pandas as pd
-from utils.wikisql_utils import _TYPE_CONVERTER
+from utils.tapex_wikisql_utils import _TYPE_CONVERTER
 from transformers import Seq2SeqTrainingArguments
+import torch
 
 DEFAULT_MODEL_ARGUMENTS = {
     'model_name_or_path': 'Yale-LILY/reastap-large',
-}
-
-
-DEFAULT_DATA_ARGUMENTS = {
-    
 }
 
 DEFAULT_TRAINING_ARGUMENTS = {
@@ -26,7 +22,7 @@ DEFAULT_TRAINING_ARGUMENTS = {
     "output_dir": 'checkpoints/exp',
     "per_device_train_batch_size":16,
     "gradient_accumulation_steps":2,
-    "per_device_eval_batch_size":12,
+    "per_device_eval_batch_size":8,
     "report_to": 'wandb',
     "num_train_epochs":20.0,
     "warmup_ratio":0.1,
@@ -54,7 +50,7 @@ DEFAULT_EVAL_ARGUMENTS = {
     "max_source_length": 1024,
     "max_target_length": 128,
     "output_dir": 'outputs/eval',
-    "per_device_eval_batch_size": 6,
+    "per_device_eval_batch_size": 8,
     "predict_with_generate": True,
     "generation_max_length": 128,
     "num_beams": 5,
@@ -67,7 +63,7 @@ DEFAULT_PREDICT_ARGUMENTS = {
     "max_source_length": 1024,
     "max_target_length": 128,
     "output_dir": 'outputs/predict',
-    "per_device_eval_batch_size": 12,
+    "per_device_eval_batch_size": 8,
     "predict_with_generate": True,
     "generation_max_length": 128,
     "num_beams": 5,
@@ -289,4 +285,19 @@ def compute_metrics(eval_preds, tokenizer, ignore_pad_token_for_loss = True):
 
     accuracy = get_denotation_accuracy(decoded_preds, decoded_labels)
     result = {"denotation_accuracy": accuracy}
+    return result
+
+def compute_metrics_tapas(eval_preds, tokenizer):
+    """
+    compute metrics for tapas model
+    """
+    logits, labels = eval_preds
+    if hasattr(eval_preds,'aggregation_label_ids'):
+        # TODO: 增加对聚合操作的预测评估
+        pass
+
+    preds = (logits > 0).astype(int) 
+    acc_result = ~np.any(~(preds == labels), axis=-1)
+    acc = sum(acc_result)/len(acc_result)
+    result = {"denotation_accuracy": acc}
     return result
