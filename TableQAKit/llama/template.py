@@ -1,22 +1,23 @@
 from typing import List, Optional
 from dataclasses import dataclass
-from abc import abstractmethod
+from abc import abstractmethod, ABC
 
 
 @dataclass
-class Template:
+class Template(ABC):
     @abstractmethod
-    def __post_init__(self):
+    def __post_init__(self) -> None:
         """
-        Default template.
-        """
+        call the self._register_template to define the template like:
         self._register_template(
-            prefix="A chat between a curious user and an artificial intelligence assistant. "
-                   "The assistant gives helpful, detailed, and polite answers to the user's questions.",
-            prompt="Human: {query}\nAssistant: ",
+            prefix="the prefix if the dataset's prefix is not defined",
+            prompt="the model input with {query}",
             sep="\n",
             use_history=False
         )
+        :return: NoneType
+        """
+        pass
 
     def get_prompt(self, query: str, history: Optional[list] = None, prefix: Optional[str] = "") -> str:
         r"""
@@ -37,8 +38,8 @@ class Template:
         self.use_history = use_history
 
     def _format_example(self, query: str, history: Optional[list] = None, prefix: Optional[str] = "") -> List[str]:
-        prefix = prefix if prefix else self.prefix # use prefix if provided
-        prefix = prefix + self.sep if prefix else "" # add separator for non-empty prefix
+        prefix = prefix if prefix else self.prefix  # use prefix if provided
+        prefix = prefix + self.sep if prefix else ""  # add separator for non-empty prefix
         history = history if (history and self.use_history) else []
         history = history + [(query, "<dummy>")]
         convs = []
@@ -49,4 +50,18 @@ class Template:
             else:
                 convs.append(self.sep + self.prompt.format(query=user_query))
                 convs.append(bot_resp)
-        return convs[:-1] # drop last
+        return convs[:-1]  # drop last
+
+
+class defaultTemplate(Template):
+    def __post_init__(self):
+        """
+        Default template.
+        """
+        self._register_template(
+            prefix="A chat between a curious user and an artificial intelligence assistant. "
+                   "The assistant gives helpful, detailed, and polite answers to the user's questions.",
+            prompt="Human: {query}\nAssistant: ",
+            sep="\n",
+            use_history=False
+        )

@@ -16,15 +16,17 @@ from transformers import (
 from transformers.trainer import TRAINING_ARGS_NAME
 from transformers.modeling_utils import unwrap_model
 
-from .config import FinetuningArguments
-
-from .other import (
+from .utils import (
     get_logger,
-    get_state_dict,
-    load_trainable_params,
-    load_valuehead_params,
+    FinetuningArguments,
     FINETUNING_ARGS_NAME,
     VALUE_HEAD_FILE_NAME
+)
+
+from .model import (
+    get_state_dict,
+    load_trainable_params,
+    load_valuehead_params
 )
 
 

@@ -6,19 +6,35 @@
 ```
 from llama import LLaMaTrainer
 from llama import MultiHiertt
-from llama import Template
+from llama import defaultTemplate
 
-
-class Trainer(LLaMaTrainer):
-    def __getTemplate__(self) -> Template:
-        template = Template()
-        return template
-
-
-datasets = MultiHiertt()
-trainer = Trainer([datasets])
+template = defaultTemplate()
+datasets = MultiHiertt("path of your dataset")
+trainer = Trainer([datasets], defaultTemplate)
 trainer.train()
 ```
+
+### start train
+```
+python main.py \
+--model_name_or_path ./ckpt/llama-7b-hf \
+--do_train \
+--finetuning_type lora \
+--output_dir ./ckpt/lora \
+--max_source_length 1536 \
+--overwrite_cache \
+--per_device_train_batch_size 4 \
+--gradient_accumulation_steps 4 \
+--lr_scheduler_type cosine \
+--logging_steps 50 \
+--save_steps 1000 \
+--learning_rate 5e-5 \
+--num_train_epochs 2 \
+--plot_loss \
+--lora_rank 32 \
+--fp16
+```
+
 
 ### Add new datasets
 ```
@@ -67,13 +83,18 @@ class NewTemplate(Template):
         )
 
 
-class Trainer(LLaMaTrainer):
-    def __getTemplate__(self) -> Template:
-        template = NewTemplate()
-        return template
-
-
+newtemplate = NewTemplate()
 datasets = NewDataset()
-trainer = Trainer([datasets])
+trainer = Trainer([datasets], newtemplate)
+trainer.train()
+```
+
+## Training with multi-datasets
+```
+dataset1 = Dataset1("path1")
+dataset2 = Dataset1("path2")
+...
+
+trainer = Trainer([dataset1, dataset2, ...], template)
 trainer.train()
 ```

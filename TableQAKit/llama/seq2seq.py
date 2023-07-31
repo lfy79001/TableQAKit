@@ -6,14 +6,11 @@ from typing import Dict, List, Sequence, Tuple, Union
 
 from transformers.trainer import PredictionOutput
 from transformers.tokenization_utils import PreTrainedTokenizer
-
 import jieba
 from rouge_chinese import Rouge
 from nltk.translate.bleu_score import sentence_bleu, SmoothingFunction
-
 from .peft_trainer import PeftTrainer
-
-from .other import get_logger, IGNORE_INDEX
+from .utils import get_logger, IGNORE_INDEX
 
 
 logger = get_logger(__name__)

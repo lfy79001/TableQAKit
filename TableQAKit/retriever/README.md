@@ -6,31 +6,11 @@ MultiHiertt Dataset as a demonstration
 ```
 from typing import Dict, List
 import json
-from tableqakit import get_training_args, RetrieverTrainer
+from retriever import MultiHierttTrainer
 
 
-class Trainer(RetrieverTrainer):
-    def __read_data__(self, data_path: str) -> List[Dict]:
-        data = json.load(
-            open(data_path, 'r', encoding='utf-8')
-        )
-        return data
-
-    def __data_proc__(self, instance) -> Dict:
-        rows = instance["paragraphs"]
-        labels = [0] * len(instance["paragraphs"])
-        if len(instance["qa"]["text_evidence"]):
-            for text_evidence in instance["qa"]["text_evidence"]:
-                labels[text_evidence] = 1
-        for k, v in instance["table_description"].items():
-            rows.append(v)
-            labels.append(1 if k in instance["qa"]["table_evidence"] else 0)
-        return {
-            "id": instance["uid"],
-            "question": instance["qa"]["question"],
-            "rows": rows,
-            "labels": labels
-        }
+trainer = MultiHierttTrainer()
+trainer.train()
 
 
 args = get_training_args()
@@ -46,7 +26,7 @@ if args.test_path is not None:
 ```
 python main.py \
 --train_mode row \
---per_device_train_batch_size 1 \
+--per_device_train_batch_size 16 \
 --per_device_eval_batch_size 1 \
 --dataloader_pin_memory False \
 --output_dir ./ckpt \
@@ -57,6 +37,7 @@ python main.py \
 --learning_rate 0.00001 \
 --top_n_for_eval 10 \
 ```
+
 ### Inference
 ```
 python infer.py \
@@ -67,4 +48,52 @@ python infer.py \
 --ckpt_for_test ./ckpt/epoch3_step53000.pt \
 --top_n_for_test 10 \
 --encoder_path bert-base-uncased/
+```
+
+## Create Trainer for New Dataset
+```
+from retriever import RetrieverTrainer as RT
+
+class NewTrainer(RT):
+    def read_data(self, data_path: str) -> List[Dict]:
+        """
+
+        :param data_path: The path of data
+        :return: List of raw data
+        [
+            data_1,
+            data_2,
+            ……
+        ]
+        """
+        data = json.load(
+            open(data_path, 'r', encoding='utf-8')
+        )
+        return data
+
+    def data_proc(self, instance) -> Dict:
+        """
+
+        :return:
+        {
+            "id": str,
+            "question": str,
+            "rows": list[str],
+            "labels": list[int]
+        }
+        """
+        rows = instance["paragraphs"]
+        labels = [0] * len(instance["paragraphs"])
+        if len(instance["qa"]["text_evidence"]):
+            for text_evidence in instance["qa"]["text_evidence"]:
+                labels[text_evidence] = 1
+        for k, v in instance["table_description"].items():
+            rows.append(v)
+            labels.append(1 if k in instance["qa"]["table_evidence"] else 0)
+        return {
+            "id": instance["uid"],
+            "question": instance["qa"]["question"],
+            "rows": rows,
+            "labels": labels
+        }
 ```

@@ -5,7 +5,7 @@ from typing import Dict, Optional, Sequence, Union
 from transformers import DataCollatorWithPadding, BatchEncoding
 from transformers.tokenization_utils import PreTrainedTokenizer
 
-from .other import IGNORE_INDEX
+from .utils import IGNORE_INDEX
 
 
 class DynamicDataCollatorWithPadding(DataCollatorWithPadding):
@@ -68,3 +68,4 @@ class DynamicDataCollatorWithPadding(DataCollatorWithPadding):
         batch["attention_mask"] = self.get_attention_masks(input_ids, device=input_ids.device)
 
         return BatchEncoding(batch)
+

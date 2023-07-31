@@ -1,6 +1,3 @@
-from .Trainer import (
-    LLaMaTrainer,
-    LLaMaDataset,
-    Template,
-    MultiHiertt,
-)
+from .trainer import LLaMaTrainer
+from .dataset import LLaMaDataset, MultiHiertt, SKG
+from .template import Template, defaultTemplate

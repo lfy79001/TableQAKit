@@ -1,8 +1,18 @@
-import os
 import json
+import logging
+import os
+import sys
+from dataclasses import dataclass, field, asdict
+from typing import Optional, Literal, Dict, Any, Tuple
+
+import datasets
 import torch
-from typing import Any, Dict, List, Literal, Optional
-from dataclasses import asdict, dataclass, field
+import transformers
+from transformers import HfArgumentParser, Seq2SeqTrainingArguments, LogitsProcessorList, LogitsProcessor
+
+IGNORE_INDEX = -100
+VALUE_HEAD_FILE_NAME = "value_head.bin"
+FINETUNING_ARGS_NAME = "finetuning_args.json"
 
 
 @dataclass
@@ -49,10 +59,6 @@ class ModelArguments:
         default=None,
         metadata={"help": "Path to the directory(s) containing the delta model checkpoints as well as the configurations."}
     )
-    reward_model: Optional[str] = field(
-        default=None,
-        metadata={"help": "Path to the directory containing the checkpoints of the reward model."}
-    )
     resume_lora_training: Optional[bool] = field(
         default=True,
         metadata={"help": "Whether to resume training from the last LoRA weights or create new weights after merging them."}
@@ -63,7 +69,7 @@ class ModelArguments:
     )
 
     def __post_init__(self):
-        if self.checkpoint_dir is not None: # support merging multiple lora weights
+        if self.checkpoint_dir is not None:  # support merging multiple lora weights
             self.checkpoint_dir = [cd.strip() for cd in self.checkpoint_dir.split(",")]
 
         if self.quantization_bit is not None:
@@ -140,7 +146,7 @@ class FinetuningArguments:
         default=8,
         metadata={"help": "The intrinsic dimension for LoRA fine-tuning."}
     )
-    lora_alpha: Optional[float] = field(
+    lora_alpha: Optional[int] = field(
         default=32.0,
         metadata={"help": "The scale factor for LoRA fine-tuning (similar with the learning rate)."}
     )
@@ -230,3 +236,116 @@ class GeneratingArguments:
         if args.get("max_new_tokens", None):
             args.pop("max_length", None)
         return args
+
+
+def get_logger(name: str) -> logging.Logger:
+    return logging.getLogger(name)
+
+
+logger = get_logger(__name__)
+
+
+def prepare_args() -> Tuple[ModelArguments, DataTrainingArguments, Seq2SeqTrainingArguments, FinetuningArguments]:
+
+    parser = HfArgumentParser((ModelArguments, DataTrainingArguments, Seq2SeqTrainingArguments, FinetuningArguments))
+
+    if len(sys.argv) == 2 and sys.argv[1].endswith(".json"): # Provide arguments with a json file.
+        model_args, data_args, training_args, finetuning_args = parser.parse_json_file(json_file=os.path.abspath(sys.argv[1]))
+    else:
+        model_args, data_args, training_args, finetuning_args = parser.parse_args_into_dataclasses()
+
+    # Setup logging
+    if training_args.should_log:
+        # The default of training_args.log_level is passive, so we set log level at info here to have that default.
+        transformers.utils.logging.set_verbosity_info()
+
+    log_level = training_args.get_process_log_level()
+    datasets.utils.logging.set_verbosity(log_level)
+    transformers.utils.logging.set_verbosity(log_level)
+    transformers.utils.logging.enable_default_handler()
+    transformers.utils.logging.enable_explicit_format()
+
+    assert not (training_args.do_train and training_args.predict_with_generate), \
+        "`predict_with_generate` cannot be set as True while training."
+
+    assert (not training_args.do_predict) or training_args.predict_with_generate, \
+        "Please enable `predict_with_generate` to save model predictions."
+
+    assert model_args.quantization_bit is None or finetuning_args.finetuning_type == "lora", \
+        "Quantization is only compatible with the LoRA method."
+
+    if model_args.checkpoint_dir is not None:
+        if finetuning_args.finetuning_type != "lora":
+            assert len(model_args.checkpoint_dir) == 1, "Only LoRA tuning accepts multiple checkpoints."
+        else:
+            assert model_args.quantization_bit is None or len(model_args.checkpoint_dir) == 1, \
+                "Quantized model only accepts a single checkpoint."
+
+    if model_args.quantization_bit is not None and (not training_args.do_train):
+        logger.warning("Evaluating model in 4/8-bit mode may cause lower scores.")
+
+    if training_args.do_train and (not training_args.fp16):
+        logger.warning("We recommend enable fp16 mixed precision training.")
+
+    if training_args.local_rank != -1 and training_args.ddp_find_unused_parameters is None:
+        logger.warning("`ddp_find_unused_parameters` needs to be set as False in DDP training.")
+        training_args.ddp_find_unused_parameters = False
+
+    training_args.optim = "adamw_torch" if training_args.optim == "adamw_hf" else training_args.optim # suppress warning
+
+    if model_args.quantization_bit is not None:
+        if training_args.fp16:
+            model_args.compute_dtype = torch.float16
+        elif training_args.bf16:
+            model_args.compute_dtype = torch.bfloat16
+        else:
+            model_args.compute_dtype = torch.float32
+
+    # Log on each process the small summary:
+    logger.info(
+        f"Process rank: {training_args.local_rank}, device: {training_args.device}, n_gpu: {training_args.n_gpu}\n"
+        + f"  distributed training: {bool(training_args.local_rank != -1)}, 16-bits training: {training_args.fp16}"
+    )
+    logger.info(f"Training/evaluation parameters {training_args}")
+
+    # Set seed before initializing model.
+    transformers.set_seed(training_args.seed)
+
+    return model_args, data_args, training_args, finetuning_args
+
+
+def prepare_infer_args() -> Tuple[ModelArguments, DataTrainingArguments, FinetuningArguments, GeneratingArguments]:
+
+    parser = HfArgumentParser((ModelArguments, DataTrainingArguments, FinetuningArguments, GeneratingArguments))
+
+    if len(sys.argv) == 2 and sys.argv[1].endswith(".json"): # Provide arguments with a json file.
+        model_args, data_args, finetuning_args, generating_args = parser.parse_json_file(json_file=os.path.abspath(sys.argv[1]))
+    else:
+        model_args, data_args, finetuning_args, generating_args = parser.parse_args_into_dataclasses()
+
+    assert model_args.quantization_bit is None or finetuning_args.finetuning_type == "lora", \
+        "Quantization is only compatible with the LoRA method."
+
+    if model_args.checkpoint_dir is not None:
+        if finetuning_args.finetuning_type != "lora":
+            assert len(model_args.checkpoint_dir) == 1, "Only LoRA tuning accepts multiple checkpoints."
+        else:
+            assert model_args.quantization_bit is None or len(model_args.checkpoint_dir) == 1, \
+                "Quantized model only accepts a single checkpoint."
+
+    return model_args, data_args, finetuning_args, generating_args
+
+
+class InvalidScoreLogitsProcessor(LogitsProcessor):
+
+    def __call__(self, input_ids: torch.LongTensor, scores: torch.FloatTensor) -> torch.FloatTensor:
+        if torch.isnan(scores).any() or torch.isinf(scores).any():
+            scores.zero_()
+            scores[..., 0] = 1.0
+        return scores
+
+
+def get_logits_processor() -> LogitsProcessorList:
+    logits_processor = LogitsProcessorList()
+    logits_processor.append(InvalidScoreLogitsProcessor())
+    return logits_processor
