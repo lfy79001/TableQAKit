@@ -11,6 +11,8 @@ import torch.nn.functional as F
 import numpy as np
 import argparse
 from dataset import EncycDataset
+from abc import abstractmethod, ABC
+from typing import Dict, List, Tuple
 
 
 
@@ -169,3 +171,9 @@ class HybridQATrainer:
             self.train_epoch(train_loader, model, self.kwargs['logger'])
             self.kwargs['logger'].info(f"start eval....")
             acc = self.eval(model, dev_loader)
+    
+    @abstractmethod 
+    def convert(self) -> Tuple(List, List):
+        pass
+        
+        

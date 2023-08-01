@@ -1,3 +1,8 @@
+import datasets
+import os
+import json
+
+
 import logging
 import sys
 import math
@@ -27,3 +32,23 @@ def create_logger(name, silent=False, to_disk=True, log_file=None):
         fh.setFormatter(formatter)
         log.addHandler(fh)
     return log
+
+
+def load_json(path):
+    with open(path, 'r') as f:
+        data = json.load(f)
+    return data
+
+
+# def load_data(path_dict):
+#     if 'train' in path_dict:
+#         train_data = load_json(path_dict['train'])
+#     if 'dev' in path_dict:
+#         dev_data = load_json(path_dict['dev'])
+#     if 'test' in path_dict:
+#         test_data = load_json(path_dict['test'])
+#     return {'train':train_data, 'dev':dev_data, 'test':test_data}
+
+
+
+

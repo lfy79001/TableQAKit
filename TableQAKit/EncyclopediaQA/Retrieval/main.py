@@ -1,5 +1,8 @@
 import json
 
+
+
+
 def hybridqa_content(data):
     path = '/home/lfy/UMQM/Data/HybridQA/WikiTables-WithLinks'
     table_id = data['table_id']
@@ -30,6 +33,7 @@ def hybridqa_header(data):
 def hybridqa_label(data):
     return data['labels']
 
-kwargs['header_func'] = hybridqa_header
-kwargs['content_func'] = hybridqa_content
-kwargs['label_func'] = hybridqa_label
+
+
+class 
+
