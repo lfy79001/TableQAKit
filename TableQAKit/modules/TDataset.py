@@ -171,10 +171,8 @@ class HybridQATrainer:
         labels = torch.tensor(data[1])
         metadata = data[2]
 
-        if not False:
-            return {"input_ids": input_ids.cuda(), "input_mask":input_mask.cuda(), "label":labels.cuda()}
-        else:
-            return {"input_ids": input_ids.cuda(), "input_mask":input_mask.cuda(),"label":labels.cuda()}
+        
+        return {"input_ids": input_ids.cuda(), "input_mask":input_mask.cuda(), "label":labels.cuda()}
         
         
         

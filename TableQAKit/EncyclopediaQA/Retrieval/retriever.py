@@ -35,7 +35,6 @@ class Retriever(nn.Module):
         inputs = {"input_ids": data['input_ids'], "attention_mask": data['input_mask']}
         cls_output = self.bert_model(**inputs)[0][:,0,:]
         logits = self.projection(cls_output)
-        device = cls_output.device
         probs = logits.squeeze(-1).unsqueeze(0)
         probs = torch.softmax(probs, -1)
         return probs

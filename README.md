@@ -1,5 +1,5 @@
 # TableQAKit
-A toolkit for Text-Table Hybrid Question Answering
+A Comprehensive and Practical Toolkit for Table-based Question Answering
 
 
 # 目前思路

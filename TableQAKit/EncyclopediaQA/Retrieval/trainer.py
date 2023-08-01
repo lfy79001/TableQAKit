@@ -54,12 +54,11 @@ class HybridQATrainer:
             dataset_path = dataset_download(kwargs['dataset_name'])
             # load data  -> dict {'train', 'dev', 'test'}
             dataset_data = load_data(dataset_path)
-
-
+            
             kwargs['logger'].info('Starting load dataset')
             train_dataset = EncycDataset(dataset_data['train'][11:100], **kwargs)
             dev_dataset = EncycDataset(dataset_data['dev'][10:30], **kwargs)
-            # test_dataset = EncycDataset(dataset_data['test'], **kwargs)
+            test_dataset = EncycDataset(dataset_data['test'], **kwargs)
             kwargs['logger'].info(f"train_dataset: {len(train_dataset)}")
             kwargs['logger'].info(f"dev_dataset: {len(dev_dataset)}")
             # print(f"test_dataset: {len(test_dataset)}")
@@ -88,10 +87,32 @@ class HybridQATrainer:
         labels = torch.tensor(data[1])
         metadata = data[2]
 
-        return {"input_ids": input_ids.cuda(), "input_mask":input_mask.cuda(), "label":labels.cuda()}
+        return {"input_ids": input_ids.cuda(), "input_mask":input_mask.cuda(), "label":labels.cuda(), "metadata": metadata}
 
-        
-        
+    
+    # Dataset Collator
+    def test_collate(self, data):
+        data = data[0]
+        pad_id = self.tokenizer.convert_tokens_to_ids(self.tokenizer.pad_token)
+        rows_ids = data[0]
+        max_input_length = max([len(i) for i in rows_ids])
+        if max_input_length > 512:
+            max_input_length = 512
+    
+        input_ids = []
+        metadata = []
+        for item in rows_ids:
+            if len(item) > max_input_length:
+                item = item[:max_input_length]
+            else:
+                item = item + (max_input_length - len(item)) * [pad_id]
+            input_ids.append(item) 
+        input_ids = torch.tensor(input_ids)
+        input_mask = torch.where(input_ids==self.tokenizer.pad_token_id, 0, 1)
+        metadata = data[2]
+
+        return {"input_ids": input_ids.cuda(), "input_mask":input_mask.cuda(), "metadata": metadata}
+
         
     def train_epoch(self, loader, model, logger):
         model.train()
@@ -125,7 +146,7 @@ class HybridQATrainer:
                     if predicts[i] in gold_row[i]:
                         acc += 1
         self.kwargs['logger'].info(f"Total: {total}")
-        print(f'recall: {acc/total}')
+        print(f'recall: {acc / total}')
         return acc / total
         
     

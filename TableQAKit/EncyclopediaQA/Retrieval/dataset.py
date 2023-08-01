@@ -19,7 +19,6 @@ class EncycDataset(Dataset):
             data_i['header'] = kwargs['header_func'](item)
             data_i['label'] = kwargs['label_func'](item)
 
-            # if len(content[0]) == 2: # HybridQA数据集
             self.data.append(data_i)
         
     def __len__(self):
@@ -62,5 +61,3 @@ class EncycDataset(Dataset):
         return input_ids, data_i['label'], data_i
     
     
-class EncycDatasetSample(Dataset):
-    pass
