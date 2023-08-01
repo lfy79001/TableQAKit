@@ -10,85 +10,10 @@ from retriever import Retriever
 import torch.nn.functional as F
 import numpy as np
 import argparse
+from dataset import EncycDataset
 
 
 
-
-
-
-
-
-# question_id, question, answer,   
-class EncycDataset(Dataset):
-    def __init__(self, all_data, **kwargs):
-        super(EncycDataset, self).__init__()
-        self.tokenizer = AutoTokenizer.from_pretrained(kwargs['plm'])
-        self.data = []
-        dataset_config = kwargs['dataset_config']
-        for item in tqdm(all_data):
-            data_i = {}
-            data_i['id'] = item[dataset_config['id']]
-            data_i['question'] = item[dataset_config['question']]
-            data_i['answer'] = item[dataset_config['answer']]
-            data_i['content'] = kwargs['content_func'](item)
-            data_i['header'] = kwargs['header_func'](item)
-            data_i['label'] = kwargs['label_func'](item)
-
-            # if len(content[0]) == 2: # HybridQA数据集
-            self.data.append(data_i)
-        
-    def __len__(self):
-        return len(self.data)
-        
-    def __getitem__(self, index):
-        data_i = self.data[index]
-        question_ids = self.tokenizer.encode(data_i['question'])
-
-        header = data_i['header']
-        content = data_i['content']  # content is a tuple list, each item is a tuple (cell list, links list)
-        row_tmp = '{} is {} '
-        input_ids = []
-        if isinstance(content[0], tuple):
-            for i, row in enumerate(content):
-                row_ids = []
-                for j, cell in enumerate(row[0]): # tokenize cell
-                    if cell != '':
-                        cell_desc = row_tmp.format(header[j], cell)
-                        cell_toks = self.tokenizer.tokenize(cell_desc)
-                        cell_ids = self.tokenizer.convert_tokens_to_ids(cell_toks)
-                        row_ids += cell_ids
-                for link in row[1]:               # tokenize links
-                    passage_toks = self.tokenizer.tokenize(link)
-                    passage_ids = self.tokenizer.convert_tokens_to_ids(passage_toks)
-                    row_ids += passage_ids
-                row_ids = question_ids + row_ids + [self.tokenizer.sep_token_id]
-                input_ids.append(row_ids)
-        else:
-            for i, row in enumerate(content):
-                row_ids = []
-                for j, cell in enumerate(row):
-                    if cell != '':
-                        cell_desc = row_tmp.format(header[j], cell)
-                        cell_toks = self.tokenizer.tokenize(cell_desc)
-                        cell_ids = self.tokenizer.convert_tokens_to_ids(cell_toks)
-                        row_ids += cell_ids
-                row_ids = question_ids + row_ids + [self.tokenizer.sep_token_id]
-                input_ids.append(row_ids)
-        return input_ids, data_i['label'], data_i
-        
-        
-
-# class SpreadsheetDataset(Dataset):
-#     def __init__(self):
-#         pass
-        
-    
-#     def __len__(self):
-#         return len(self.data)
-    
-#     def __getitem__(self, index):
-#         return feature, label
-    
 
 def hybridqa_content(data):
     path = '/home/lfy/UMQM/Data/HybridQA/WikiTables-WithLinks'
@@ -120,11 +45,6 @@ def hybridqa_header(data):
 def hybridqa_label(data):
     return data['labels']
 
-
-
-
-
-
 class HybridQATrainer:
     def __init__(self, **kwargs):
         self.kwargs = kwargs
@@ -135,10 +55,7 @@ class HybridQATrainer:
             # load data  -> dict {'train', 'dev', 'test'}
             dataset_data = load_data(dataset_path)
 
-            if kwargs['dataset_name'] == 'hybridqa':
-                kwargs['header_func'] = hybridqa_header
-                kwargs['content_func'] = hybridqa_content
-                kwargs['label_func'] = hybridqa_label
+
             kwargs['logger'].info('Starting load dataset')
             train_dataset = EncycDataset(dataset_data['train'][11:100], **kwargs)
             dev_dataset = EncycDataset(dataset_data['dev'][10:30], **kwargs)
@@ -171,14 +88,12 @@ class HybridQATrainer:
         labels = torch.tensor(data[1])
         metadata = data[2]
 
-        if not False:
-            return {"input_ids": input_ids.cuda(), "input_mask":input_mask.cuda(), "label":labels.cuda()}
-        else:
-            return {"input_ids": input_ids.cuda(), "input_mask":input_mask.cuda(),"label":labels.cuda()}
+        return {"input_ids": input_ids.cuda(), "input_mask":input_mask.cuda(), "label":labels.cuda()}
+
         
         
         
-    def train_epoch(self, loader, model):
+    def train_epoch(self, loader, model, logger):
         model.train()
         averge_step = len(loader) // 12
         loss_sum, step = 0, 0
@@ -210,6 +125,7 @@ class HybridQATrainer:
                     if predicts[i] in gold_row[i]:
                         acc += 1
         self.kwargs['logger'].info(f"Total: {total}")
+        print(f'recall: {acc/total}')
         return acc / total
         
     
@@ -229,49 +145,6 @@ class HybridQATrainer:
         self.scheduler = get_linear_schedule_with_warmup(self.optimizer, num_warmup_steps=0 * t_total, num_training_steps=t_total)
         for epoch in range(training_config['epoch_num']):
             self.kwargs['logger'].info(f"Training epoch: {epoch}")
-            self.train_epoch(train_loader, model)
+            self.train_epoch(train_loader, model, self.kwargs['logger'])
             self.kwargs['logger'].info(f"start eval....")
             acc = self.eval(model, dev_loader)
-          
-
-    
-    
-if __name__ == '__main__':
-    parser = argparse.ArgumentParser()
-    parser.add_argument('--type', type=str, default='common')
-    parser.add_argument('--dataset_name', type=str, default='hybridqa')
-    parser.add_argument('--plm', type=str, default='/home/lfy/PTM/bert-base-uncased')
-    
-    
-    args = parser.parse_args()
-    
-    kwargs = {}
-    kwargs['type'] = 'common'
-
-    kwargs['dataset_name'] = 'hybridqa'
-    kwargs['plm'] = '/home/lfy/PTM/bert-base-uncased'
-    kwargs['dataset_config'] = {'id': 'question_id', 'question': 'question', 'answer': 'answer-text'}
-    
-    # need to write a function map the table to row/columnss
-    
-    
-    # need to generate a logger for yourself
-    logger = create_logger("Training", log_file=os.path.join('../outputs', 'try.txt'))
-    kwargs['logger'] = logger
-
-
-    
-    training_config = {}
-    training_config['train_bs'] = 1
-    training_config['dev_bs'] = 1
-    training_config['epoch_num'] = 5
-    training_config['max_len'] = 512
-    training_config['lr'] = 7e-6
-    training_config['eps'] = 1e-8
-    
-    hybridqaTrainer = HybridQATrainer(**kwargs)
-    # dataset = EncycDataset(dataset_name='hybridqa')
-    
-    hybridqaTrainer.train(**training_config)
-
-

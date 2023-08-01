@@ -33,8 +33,9 @@ def dataset_download(dataset_name):
         train_path = os.path.join(dataset_path, "train.p.json")
         dev_path = os.path.join(dataset_path, "dev.p.json")
         test_path = os.path.join(dataset_path, "test.p.json")
-    elif dataset_name == 'finqa':
-        pass    
+    elif dataset_name == 'multimodalqa':
+        pass
+
     return {"train": train_path, "dev": dev_path, "test": test_path}
 
 
