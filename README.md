@@ -28,7 +28,37 @@ TableQAKit is a unified platform for TableQA (especially in the LLM era). Its ma
 - **Efficient LLM benchmark**: TableQAEval, a benchmark to evaluate the performance of LLM for TableQA. It evaluates LLM's modeling ability of long tables (context) and comprehension capabilities (numerical reasoning, multi-hop reasoning).
 - **Comprehensive Survey**: We are about to release a systematic TableQA Survey, this project is a pre-work.
 
+# Folder
+The TableQAKit repository is structured as follows:
+
+```bash
+├── Baselines/ # scripts to generate the prediction files with baseline models
+├── Evaluation/ # evaluation scripts
+├── Leaderboard/ # csv files of results
+├── LEval-data/ # test samples
+│   ├── Exam/ # exact match tasks (like multiple-choice)
+│   │   ├── test_file.jsonl 
+│   │   └── ...
+│   ├── Generation/ # generation tasks
+│   │   ├── test_file.jsonl
+│   │   └── ...
+├── Predictions/ # output of models
+│   ├── exam_eval/trubo-16k-0613
+│   │              ├── <task_name>.pred.jsonl
+│   │              └── ... 
+│   ├── llm_gpt4_eval  
+│   │             ├──<model_name>.pred.jsonl
+│   ├── ...
+├── Tools/ # useful scripts
+├── figs/ # figures
+├── LICENSE
+└── README.md
+```
+
+
 # 🏴󠁶󠁵󠁭󠁡󠁰󠁿 Overview
+
+
 
 
 
