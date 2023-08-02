@@ -46,7 +46,7 @@ TableQAKit is a unified platform for TableQA (especially in the LLM era). Its ma
 # TableQAEval
 
 <p align="center">
-<img src="figs/table.png" width="512">
+<img src="figs/TableQAEval.png" width="300">
 </p>
 
 
