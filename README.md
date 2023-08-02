@@ -13,7 +13,7 @@
 
 </div>
 
-# TableQAKit: A Comprehensive and Practical Toolkit for Table-based Question Answering
+# TableQAKit: A Toolkit for Table-based Question Answering
 
 # 🔥 Updates
 
