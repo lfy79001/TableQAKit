@@ -1,8 +1,7 @@
 .history/*
 __pycache__/*
-texttableqaweb/*
-TextTableQAKit/__pycache__/*
+TableQAKit/__pycache__/*
 .idea/*
 .vscode/*
-TextTableQAKit/datasets
-TextTableQAKit/loaders/__pycache__/*
+TableQAKit/datasets
+TableQAKit/loaders/__pycache__/*
