@@ -1,3 +1,7 @@
+<div align="center">
+<img src="figs/tableqakit.png" border="0" width=450px/>
+</div>
+
 # TableQAKit
 A Comprehensive and Practical Toolkit for Table-based Question Answering
 

@@ -32,15 +32,9 @@ class Retriever(nn.Module):
         self.projection = FFNLayer(self.hidden_size, self.hidden_size, 1, 0.2)
 
     def forward(self, data):
-        inputs = {"input_ids": data['input_ids'], "attention_mask": data['input_mask']}
+        inputs = {"input_ids": data['input_ids'], "attention_mask": data['attention_mask']}
         cls_output = self.bert_model(**inputs)[0][:,0,:]
         logits = self.projection(cls_output)
-        probs = logits.squeeze(-1).unsqueeze(0)
-        probs = torch.softmax(probs, -1)
+        probs = torch.softmax(logits, 0)
         return probs
         
-        
-    
-    
-
-
