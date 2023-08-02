@@ -217,20 +217,6 @@ TableQAEval is a benchmark to evaluate the performance of LLM for TableQA. It ev
 
 
 
-# 目前思路
-1. 统一数据数据模板
-2. 经典模型各个模块的多种实现
-3. 最新LLM的融合（检索能力，工具使用能力）
-4. 模块化设计便于下游用户针对性的定制
-
-## Flask框架简介
-- cli.py：用于定义 Flask 应用程序的命令行接口（CLI）。在 cli.py 文件中，你可以使用 Flask 的 click 库定义命令行命令和参数，并将它们与 Flask 应用程序的功能关联起来。例如，你可以定义一个命令行命令，用于初始化 Flask 应用程序的数据库或执行其他任务。cli.py 文件通常与 Flask 应用程序的工具集集成在一起，可以方便地使用命令行来管理和维护应用程序。
-- main.py：用于定义 Flask 应用程序的主要入口点。在 main.py 文件中，你可以定义 Flask 应用程序的路由和视图函数，并启动应用程序的服务器。这个文件通常是 Flask 应用程序的主要代码文件，用于实现应用程序的核心功能。
-- config.yaml：用于定义 Flask 应用程序的配置选项。在 config.yaml 文件中，你可以指定 Flask 应用程序的各种配置选项，如数据库连接、调试模式、密钥等。这个文件通常是 Flask 应用程序的配置文件，可以方便地修改和管理应用程序的配置选项。
-- static/：用于存储静态文件，如 CSS、JavaScript、图像等。Flask 应用程序会自动查找 static/ 文件夹，并将其中的静态文件提供给客户端。
-- templates/：用于存储模板文件，如 HTML 文件、Jinja2 模板等。Flask 应用程序会自动查找 templates/ 文件夹，并使用其中的模板文件进行渲染。
-
-
 ## QuickStart
 ```
 pip install gunicorn
@@ -277,27 +263,6 @@ gunicorn -c gunicorn_config.py app:app --daemon
     # test版
     pip install --index-url https://test.pypi.org/simple/ttqakit
 
-## HybridQA数据处理
-首先需要从google drive上下载这个数据
-
-https://drive.google.com/file/d/1MGfxoOIyoUVQEBnFXWf_jVfFiXMifXbu/view?usp=share_link
-
-将数据集解压后放在 TextTableQAKit/modules/ 中，但是挺大的，之后git push的时候数据集得删掉，放到你本地就行
-数据包括 train.json, dev.json, test.json, 还有一个文件夹包括table和passage的实际信息。
-
-这个数据集和multimodalQA不一样，文本是呈现一个“链接”的形式，即文本不是附着在表格旁边，而是可以点击这个表格cell，弹出链接文本（这个感觉较复杂，不用实现），现阶段，就把文本附着在下面就可以。
-
-检索代码 TextTableQAKit/modules/retrieve_hybridqa.py
-
-python retrieve_hybridqa.py 可以直接运行.（没下载BERT所以只能运行dataset部分）
-
-不需要运行全部的代码，主要的数据处理在Dataset的__init__()里面，在里面打断点，看看数据怎么处理的。
-
-train/dev/test 文件里只包含了Table的id，所以需要根据这个id找到这个table对应的json文件。
-
-Table的Json文件里，存储了表格的header和cell
-
-cell的格式是   [ [1], [2]] ，位置1是cell的直接文本，位置2是cell链接的passage的链接，所以目前只需要先把1用好就行。
 
 
 
