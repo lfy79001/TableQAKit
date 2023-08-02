@@ -46,7 +46,7 @@ TableQAKit is a unified platform for TableQA (especially in the LLM era). Its ma
 # TableQAEval
 
 <p align="center">
-<img src="figs/TableQAEval.png" width="300">
+<img src="figs/TableQAEval.png" width="400">
 </p>
 
 TableQAEval is a benchmark to evaluate the performance of LLM for TableQA. It evaluates LLM's modeling ability of long tables (context) and comprehension capabilities (numerical reasoning, multi-hop reasoning).
