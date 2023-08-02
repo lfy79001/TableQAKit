@@ -1,5 +1,43 @@
-# TextTableQAKit
-A toolkit for Text-Table Hybrid Question Answering
+<div align="center">
+  <img src="figs/tableqakit.png" border="0" width=450px/>
+  <br />
+  <br />
+
+
+[🌐Website](https://www.baidu.com/) |
+[📦PyPI](https://www.baidu.com/)
+
+<!-- [📘Documentation](https://opencompass.readthedocs.io/en/latest/) |
+[🛠️Installation](https://opencompass.readthedocs.io/en/latest/get_started.html#installation) | -->
+
+
+</div>
+
+# TableQAKit: A Comprehensive and Practical Toolkit for Table-based Question Answering
+
+
+
+# 🔥 Updates
+
+- [**2023-8-7**]: We released our [code](https://github.com/lfy79001/TableQAKit) and [PyPI](https://www.baidu.com). Check it out!
+
+# 🏴󠁶󠁵󠁭󠁡󠁰󠁿 Overview
+
+
+
+# ✨ Features
+
+
+# 🗃️ Dataset
+<p align="center">
+<img src="figs/dataset_examples.png" width="512">
+</p>
+
+
+<p align="center">
+<img src="figs/table.png" width="512">
+</p>
+
 
 
 # 目前思路
@@ -29,17 +67,7 @@ gunicorn -c gunicorn_config.py app:app --daemon
 
 ```
 
-## Datasets
-| Dataset                                                                              | Source                                                                                                                                          | Data type      | # train | # dev  | # test | License     |
-| ------------------------------------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------------------------------- | -------------- | ------- | ------ | ------ | ----------- |
-| **[TAT-QA](https://huggingface.co/datasets/kasnerz/cacapo)**                         | [van der Lee et al. (2020)](https://aclanthology.org/2020.inlg-1.10.pdf)                                                                        | Key-value      | 15,290  | 1,831  | 3,028  | CC BY       |
-| **[FinQA](https://huggingface.co/datasets/GEM/dart)**                                 | [Nan et al. (2021)](https://aclanthology.org/2021.naacl-main.37/)                                                                               | Graph          | 62,659  | 2,768  | 5,097  | MIT         |
-| **[Multihiertt](https://huggingface.co/datasets/GEM/dart)**                                 | [Nan et al. (2021)](https://aclanthology.org/2021.naacl-main.37/)                                                                               | Graph          | 62,659  | 2,768  | 5,097  | MIT         |
-| **[HiTab](https://huggingface.co/datasets/kasnerz/hitab)**                           | [Cheng et al. (2021)](https://aclanthology.org/2022.acl-long.78/)                                                                               | Table          | 7,417   | 1,671  | 1,584  | C-UDA       |
-| **[WikiSQL](https://huggingface.co/datasets/wikisql)**                               | [Zhong et al. (2017)](https://arxiv.org/abs/1709.00103)                                                                                         | Table + SQL    | 56,355  | 8,421  | 15,878 | BSD         |
-| **[WTQuestions](https://huggingface.co/datasets/wikisql)**                               | [Zhong et al. (2017)](https://arxiv.org/abs/1709.00103)                                                                                         | Table + SQL    | 56,355  | 8,421  | 15,878 | BSD         |
-| **[MultimodalQA](https://huggingface.co/datasets/wikisql)**                               | [Zhong et al. (2017)](https://arxiv.org/abs/1709.00103)                                                                                         | Table + SQL    | 56,355  | 8,421  | 15,878 | BSD         |
-| **[MultimodalQA](https://huggingface.co/datasets/wikisql)**                               | [Zhong et al. (2017)](https://arxiv.org/abs/1709.00103)                                                                                         | Table + SQL    | 56,355  | 8,421  | 15,878 | BSD         |
+
 
 
 
