@@ -11,7 +11,7 @@ var table_html = '';
 var pictures = {};
 var text = {};
 var host = '210.75.240.136';
-var port = '18889';
+var port = '18890';
 var url = '';
 
 function mod(n, m) {
@@ -32,8 +32,9 @@ function datasetChanged() {
 
 function defaultModelChanged() {
     default_model = $('#default-model-select').val();
+    console.log('default_model:'+default_model);
     if (default_model in default_result) {
-        $('#default-model-answer').html(default_model[default_model]);
+        $('#default-model-answer').html(default_result[default_model]);
     }
 }
 
@@ -42,7 +43,7 @@ function changeModel() {
 }
 
 function changeDefaultQuestionHtml() {
-    $('#default-question').html(question);
+    $('#default-question').html(default_question);
 }
 
 function changeTableHtml() {
@@ -57,9 +58,9 @@ function changePictureHtml() {
     $('#image-container').html(pictures_html);
 }
 
-function changeDefaultResult() {
-    $('#default-model-answer').html(JSON.stringify(default_result));
-}
+// function changeDefaultResult() {
+//     $('#default-model-answer').html(JSON.stringify(default_result));
+// }
 
 function changePropertiesHtml() {
     $('#properties-container').html(properties_html);
@@ -77,6 +78,28 @@ function changeTotalexamples() {
     $("#total-examples").html(total_examples - 1);
 }
 
+function changeDefaultQuestionModelHtml() {
+    default_model_select_html = '';
+    flag = 0
+    for (var each in default_result) {
+        if (flag == 0) {
+            default_model_select_html += '<option value="' + each + '" selected>' + each + '</option>'
+            flag = 1;
+        } else {
+            default_model_select_html += '<option value="' + each + '">' + each + '</option>'
+        }
+    }
+    $('#default-model-select').html(default_model_select_html);
+}
+
+function checkFormatSupport() {
+    if (dataset == 'multihiertt') {
+        $('#download-format-select').html('<option val="html" selected>html</option>');
+    } else {
+        $('#download-format-select').html('<option val="xlsx" selected>xlsx</option><option val="txt">txt</option><option val="json">json</option><option val="csv">csv</option><option val="html">html</option>');
+    }
+}
+
 function getData() {
     var dataJson = { 'dataset_name': dataset, 'split': split, 'table_idx': table_idx };
     $.ajax({
@@ -88,11 +111,10 @@ function getData() {
         contentType: 'application/json',
         data: JSON.stringify(dataJson),
         success: (data) => {
-            console.log(data);
             total_examples = data.table_cnt;
             changeTotalexamples();
             default_result = data.generated_results;
-            changeDefaultResult();
+            // changeDefaultResult();
             dataset_info = data.dataset_info;
             default_question = data.table_question;
             changeDefaultQuestionHtml();
@@ -104,6 +126,7 @@ function getData() {
             changePictureHtml();
             text = data.text;
             changeTextHtml();
+            changeDefaultQuestionModelHtml();
 
         },
         error: (XMLHttpRequest, textStatus, errorThrown) => {
@@ -149,48 +172,9 @@ function gotopage(page) {
 
 
 function downloadTable() {
-    var dataJson = {
-        'format': $('#download-format-select').val(),
-        'include_props': ($('#includes-properties').val() == 'on') ? true : false,
-        'dataset_name': dataset,
-        'split': split,
-        'table_idx': table_idx
-    };
-    console.log(dataJson);
-    $.ajax({
-        type: 'POST',
-        url: url + '/default/download',
-        chche: false,
-        async: false,
-        dataType: 'binary',
-        contentType: 'application/json',
-        xhrFields: {
-            'responseType': 'blob'
-        },
-        data: JSON.stringify(dataJson),
-        success: (data, status, xhr) => {
-            console.log(xhr);
-            const download_URL = (window.URL || window.webkitURL).createObjectURL(result);
-            const a_link = document.createElement('a');
-            a_link.href = download_URL;
-            // 利用了a标签的download属性,指定文件名称
-            a_link.download = 'file.' + dataJson['format'];
-            document.body.appendChild(a_link);
-            a_link.click();
-
-            setTimeout(function() {
-                // 移除内存中的临时文件路径和为下载而创建的a标签
-                URL.revokeObjectURL(download_URL);
-                a_link.remove();
-            }, 10000);
-        },
-        error: (XMLHttpRequest, textStatus, errorThrown) => {
-            alert('fetch file error!');
-            console.log(XMLHttpRequest.status);
-            console.log(XMLHttpRequest.readyState);
-            console.log(textStatus);
-        }
-    });
+    download_url = url + '/default/download?format=' + ($('#download-format-select').val()) + '&include_props=' + (($('#includes-properties').val() == 'on') ? true : false) + '&dataset_name=' + dataset + '&split=' + split + '&table_idx=' + table_idx;
+    console.log(download_url);
+    window.location.href = download_url;
 }
 
 function initPage() {

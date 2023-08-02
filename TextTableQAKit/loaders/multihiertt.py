@@ -5,7 +5,7 @@ import re
 import logging
 import json
 from structs.data import Cell, Table, HFTabularDataset
-
+from bs4 import BeautifulSoup
 
 logger = logging.getLogger(__name__)
 
@@ -46,7 +46,18 @@ class MultiHiertt(HFTabularDataset):
             
             html_data = ""
             for table_html in question_data["tables"]:
-                html_data += self.wrap_with_div(table_html)
+
+                soup = BeautifulSoup(table_html, 'html.parser')
+
+      
+                for table in soup.find_all('table'):
+                    table['class'] = "table table-sm no-footer table-bordered caption-top main-table"
+
+           
+                updated_html_string = soup.prettify()
+
+
+                html_data += self.wrap_with_div(updated_html_string)
             
             txt_list = question_data['paragraphs']
             

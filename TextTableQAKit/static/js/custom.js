@@ -3,7 +3,7 @@ var properties_html = '';
 var table_list = [];
 var model = 'T5-small';
 var host = '210.75.240.136';
-var port = '18889';
+var port = '18890';
 var url = '';
 
 function download_table() {

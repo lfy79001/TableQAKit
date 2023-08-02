@@ -370,3 +370,16 @@ Traceback (most recent call last):
     combine_html = lxml.etree.tostring(lxml.html.fromstring(meta_html.render()), encoding="unicode", pretty_print=True)+table_html
 UnboundLocalError: local variable 'table_html' referenced before assignment
 Fetch Table Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+Download Table Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+Download Table Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+Download Table Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+Download Table Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+Download Table Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+Download Table Error: split None not found
+Download Table Error: list indices must be integers or slices, not str
+Download Table Error: list indices must be integers or slices, not str
+Download Table Error: list indices must be integers or slices, not str
+Download Table Error: datasets  not found
+<traceback object at 0x7fd7a4789dc0>
+Upload Table Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+Upload Table Error: Pandas requires version '2.6.0' or newer of 'openpyxl' (version '2.4.11' currently installed).

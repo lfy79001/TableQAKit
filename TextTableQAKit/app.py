@@ -129,10 +129,10 @@ def statistics_default_table_information(dataset_name, split, table_idx, propert
     # print("generated_results\n", generated_results)
     # print("dataset_info\n", dataset_obj.get_info())
     # print("table_question\n", table_data.default_question)
-    with open("properties.html", "w", encoding="utf-8") as file:
-        file.write(properties_html)
-    with open("table.html", "w", encoding="utf-8") as file:
-        file.write(table_html)
+    # with open("properties.html", "w", encoding="utf-8") as file:
+    #     file.write(properties_html)
+    # with open("table.html", "w", encoding="utf-8") as file:
+    #     file.write(table_html)
     # print("pictures\n", table_data.pic_info)
     # print("text\n", {(index + 1): value for index, value in enumerate(table_data.txt_info)})
     return data
@@ -242,7 +242,7 @@ def get_session():
         # target = "custom_tables_name"
         if target == "custom_tables_name":
             data = {
-                "data" : list(session.get("custom_tables", {}).keys()),
+                "data" : list(session.get("custom_tables", {}).keys()), #["a","b"]
                 "success" : True
             }
             return jsonify(data),200
@@ -266,8 +266,9 @@ def upload_custom_table():
     #############################################################
     try:
         file = request.files['excel_file']  #----此处未验证过----
-        json_file = request.json
-        table_name = json_file.get('table_name')
+        # json_file = request.json
+        # table_name = json_file.get('table_name')
+        table_name = file.filename
 
         # file = 'test.xlsx'
         properties = {}
@@ -386,10 +387,8 @@ def download_table(format, table_data, include_props, file_name):
 @app.route("/custom/download", methods=["GET", "POST"])
 def download_custom_table():
     try:
-
-        json_file = request.json
-        format = json_file.get('format')
-        table_name = json_file.get('table_name')
+        format = request.args.get('format')
+        table_name = request.args.get('table_name')
         # format = "json"
         include_props = False
         # table_name = "我的自定义表格1"
@@ -407,15 +406,13 @@ def download_custom_table():
 @app.route("/default/download", methods=["GET", "POST"])
 def download_default_table():
     try:
+        format = request.args.get('format')
+        include_props = request.args.get('include_props')
+        dataset_name = request.args.get('dataset_name')
+        split = request.args.get('split')
+        table_idx = int(request.args.get('table_idx'))
 
-        json_file = request.json
-        format = json_file.get('format')
-        include_props = json_file.get('include_props')
-        dataset_name = json_file.get('dataset_name')
-        split = json_file.get('split')
-        table_idx = json_file.get('table_idx')
-
-        # format = "html"
+        # format = "html" 
         # include_props = True
         # dataset_name = "multihiertt"
         # split = "dev"
@@ -433,6 +430,7 @@ def download_default_table():
         return download_table(format, table_data, include_props, f"{dataset_name}_{split}_{table_idx}")
     except Exception as e:
         logger.error(f"Download Table Error: {e}")
+        logger.error(e.__traceback__)
         return jsonify({"success" : False}),400
 # done
 @app.route("/custom", methods=["GET", "POST"])

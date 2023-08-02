@@ -568,3 +568,1834 @@ AttributeError: 'CORS' object has no attribute 'route'
 [2023-07-26 08:19:33 +0000] [4156845] [INFO] Booting worker with pid: 4156845
 [2023-07-26 08:19:33 +0000] [4156846] [INFO] Booting worker with pid: 4156846
 [2023-07-26 08:19:33 +0000] [4156902] [INFO] Booting worker with pid: 4156902
+[2023-07-29 08:31:27 +0000] [3664503] [INFO] Starting gunicorn 21.2.0
+[2023-07-29 08:31:27 +0000] [3664503] [INFO] Listening at: http://210.75.240.136:18890 (3664503)
+[2023-07-29 08:31:27 +0000] [3664503] [INFO] Using worker: sync
+[2023-07-29 08:31:27 +0000] [3664505] [INFO] Booting worker with pid: 3664505
+[2023-07-29 08:31:28 +0000] [3664506] [INFO] Booting worker with pid: 3664506
+[2023-07-29 08:31:28 +0000] [3664511] [INFO] Booting worker with pid: 3664511
+[2023-07-29 08:31:28 +0000] [3664567] [INFO] Booting worker with pid: 3664567
+[2023-07-29 08:46:50 +0000] [3664506] [INFO] Parent changed, shutting down: <Worker 3664506>
+[2023-07-29 08:46:50 +0000] [3664506] [INFO] Worker exiting (pid: 3664506)
+[2023-07-29 08:46:50 +0000] [3664505] [INFO] Parent changed, shutting down: <Worker 3664505>
+[2023-07-29 08:46:50 +0000] [3664505] [INFO] Worker exiting (pid: 3664505)
+[2023-07-29 08:46:50 +0000] [3664511] [INFO] Parent changed, shutting down: <Worker 3664511>
+[2023-07-29 08:46:50 +0000] [3664511] [INFO] Worker exiting (pid: 3664511)
+[2023-07-29 08:46:50 +0000] [3664567] [INFO] Parent changed, shutting down: <Worker 3664567>
+[2023-07-29 08:46:50 +0000] [3664567] [INFO] Worker exiting (pid: 3664567)
+[2023-07-29 08:46:57 +0000] [3706528] [INFO] Starting gunicorn 21.2.0
+[2023-07-29 08:46:57 +0000] [3706528] [INFO] Listening at: http://210.75.240.136:18890 (3706528)
+[2023-07-29 08:46:57 +0000] [3706528] [INFO] Using worker: sync
+[2023-07-29 08:46:57 +0000] [3706530] [INFO] Booting worker with pid: 3706530
+[2023-07-29 08:46:57 +0000] [3706531] [INFO] Booting worker with pid: 3706531
+[2023-07-29 08:46:57 +0000] [3706532] [INFO] Booting worker with pid: 3706532
+[2023-07-29 08:46:57 +0000] [3706588] [INFO] Booting worker with pid: 3706588
+[2023-07-29 08:47:43 +0000] [3706530] [INFO] Parent changed, shutting down: <Worker 3706530>
+[2023-07-29 08:47:43 +0000] [3706530] [INFO] Worker exiting (pid: 3706530)
+[2023-07-29 08:47:43 +0000] [3706588] [INFO] Parent changed, shutting down: <Worker 3706588>
+[2023-07-29 08:47:43 +0000] [3706588] [INFO] Worker exiting (pid: 3706588)
+[2023-07-29 08:47:43 +0000] [3706532] [INFO] Parent changed, shutting down: <Worker 3706532>
+[2023-07-29 08:47:43 +0000] [3706532] [INFO] Worker exiting (pid: 3706532)
+[2023-07-29 08:47:43 +0000] [3706531] [INFO] Parent changed, shutting down: <Worker 3706531>
+[2023-07-29 08:47:43 +0000] [3706531] [INFO] Worker exiting (pid: 3706531)
+[2023-07-29 08:49:13 +0000] [3711876] [INFO] Starting gunicorn 21.2.0
+[2023-07-29 08:49:13 +0000] [3711876] [INFO] Listening at: http://210.75.240.136:18890 (3711876)
+[2023-07-29 08:49:13 +0000] [3711876] [INFO] Using worker: sync
+[2023-07-29 08:49:13 +0000] [3711878] [INFO] Booting worker with pid: 3711878
+[2023-07-29 08:49:13 +0000] [3711885] [INFO] Booting worker with pid: 3711885
+[2023-07-29 08:49:13 +0000] [3711941] [INFO] Booting worker with pid: 3711941
+[2023-07-29 08:49:13 +0000] [3711942] [INFO] Booting worker with pid: 3711942
+[2023-07-29 08:50:40 +0000] [3711876] [CRITICAL] WORKER TIMEOUT (pid:3711878)
+[2023-07-29 08:50:40 +0000] [3711878] [INFO] Worker exiting (pid: 3711878)
+[2023-07-29 08:50:41 +0000] [3711876] [ERROR] Worker (pid:3711878) exited with code 1
+[2023-07-29 08:50:41 +0000] [3711876] [ERROR] Worker (pid:3711878) exited with code 1.
+[2023-07-29 08:50:41 +0000] [3717751] [INFO] Booting worker with pid: 3717751
+[2023-08-01 07:01:15 +0000] [3711876] [CRITICAL] WORKER TIMEOUT (pid:3711885)
+[2023-08-01 07:01:15 +0000] [3711885] [INFO] Worker exiting (pid: 3711885)
+[2023-08-01 07:01:16 +0000] [3711876] [ERROR] Worker (pid:3711885) was sent SIGKILL! Perhaps out of memory?
+[2023-08-01 07:01:16 +0000] [95530] [INFO] Booting worker with pid: 95530
+[2023-08-01 07:02:39 +0000] [3711876] [CRITICAL] WORKER TIMEOUT (pid:3711942)
+[2023-08-01 07:02:39 +0000] [3711876] [CRITICAL] WORKER TIMEOUT (pid:95530)
+[2023-08-01 07:02:39 +0000] [95530] [INFO] Worker exiting (pid: 95530)
+[2023-08-01 07:02:39 +0000] [3711942] [INFO] Worker exiting (pid: 3711942)
+[2023-08-01 07:02:40 +0000] [3711876] [ERROR] Worker (pid:95530) exited with code 1
+[2023-08-01 07:02:40 +0000] [3711876] [ERROR] Worker (pid:95530) exited with code 1.
+[2023-08-01 07:02:40 +0000] [96725] [INFO] Booting worker with pid: 96725
+[2023-08-01 07:02:40 +0000] [3711876] [ERROR] Worker (pid:3711942) was sent SIGKILL! Perhaps out of memory?
+[2023-08-01 07:02:40 +0000] [96726] [INFO] Booting worker with pid: 96726
+[2023-08-01 07:02:54 +0000] [3717751] [INFO] Parent changed, shutting down: <Worker 3717751>
+[2023-08-01 07:02:54 +0000] [3717751] [INFO] Worker exiting (pid: 3717751)
+[2023-08-01 07:02:54 +0000] [3711941] [INFO] Parent changed, shutting down: <Worker 3711941>
+[2023-08-01 07:02:54 +0000] [3711941] [INFO] Worker exiting (pid: 3711941)
+[2023-08-01 07:02:56 +0000] [96726] [INFO] Parent changed, shutting down: <Worker 96726>
+[2023-08-01 07:02:56 +0000] [96726] [INFO] Worker exiting (pid: 96726)
+[2023-08-01 07:02:56 +0000] [96725] [INFO] Parent changed, shutting down: <Worker 96725>
+[2023-08-01 07:02:56 +0000] [96725] [INFO] Worker exiting (pid: 96725)
+[2023-08-01 07:06:21 +0000] [101252] [INFO] Starting gunicorn 21.2.0
+[2023-08-01 07:06:21 +0000] [101252] [INFO] Listening at: http://210.75.240.136:18890 (101252)
+[2023-08-01 07:06:21 +0000] [101252] [INFO] Using worker: sync
+[2023-08-01 07:06:21 +0000] [101254] [INFO] Booting worker with pid: 101254
+[2023-08-01 07:06:21 +0000] [101255] [INFO] Booting worker with pid: 101255
+[2023-08-01 07:06:21 +0000] [101256] [INFO] Booting worker with pid: 101256
+[2023-08-01 07:06:21 +0000] [101257] [INFO] Booting worker with pid: 101257
+[2023-08-01 07:07:22 +0000] [101252] [CRITICAL] WORKER TIMEOUT (pid:101254)
+[2023-08-01 07:07:22 +0000] [101252] [CRITICAL] WORKER TIMEOUT (pid:101257)
+[2023-08-01 07:07:22 +0000] [101254] [INFO] Worker exiting (pid: 101254)
+[2023-08-01 07:07:22 +0000] [101257] [INFO] Worker exiting (pid: 101257)
+[2023-08-01 07:07:23 +0000] [101252] [ERROR] Worker (pid:101257) exited with code 1
+[2023-08-01 07:07:23 +0000] [101252] [ERROR] Worker (pid:101257) exited with code 1.
+[2023-08-01 07:07:23 +0000] [102470] [INFO] Booting worker with pid: 102470
+[2023-08-01 07:07:23 +0000] [101252] [ERROR] Worker (pid:101254) was sent SIGKILL! Perhaps out of memory?
+[2023-08-01 07:07:23 +0000] [102471] [INFO] Booting worker with pid: 102471
+[2023-08-01 07:08:35 +0000] [101252] [CRITICAL] WORKER TIMEOUT (pid:101255)
+[2023-08-01 07:08:35 +0000] [101252] [CRITICAL] WORKER TIMEOUT (pid:102470)
+[2023-08-01 07:08:35 +0000] [101255] [INFO] Worker exiting (pid: 101255)
+[2023-08-01 07:08:35 +0000] [102470] [INFO] Worker exiting (pid: 102470)
+[2023-08-01 07:08:35 +0000] [101252] [ERROR] Worker (pid:102470) exited with code 1
+[2023-08-01 07:08:35 +0000] [101252] [ERROR] Worker (pid:102470) exited with code 1.
+[2023-08-01 07:08:35 +0000] [103794] [INFO] Booting worker with pid: 103794
+[2023-08-01 07:08:35 +0000] [101252] [ERROR] Worker (pid:101255) was sent SIGKILL! Perhaps out of memory?
+[2023-08-01 07:08:35 +0000] [103795] [INFO] Booting worker with pid: 103795
+[2023-08-01 07:10:06 +0000] [103794] [INFO] Parent changed, shutting down: <Worker 103794>
+[2023-08-01 07:10:06 +0000] [103794] [INFO] Worker exiting (pid: 103794)
+[2023-08-01 07:10:06 +0000] [102471] [INFO] Parent changed, shutting down: <Worker 102471>
+[2023-08-01 07:10:06 +0000] [102471] [INFO] Worker exiting (pid: 102471)
+[2023-08-01 07:10:06 +0000] [103795] [INFO] Parent changed, shutting down: <Worker 103795>
+[2023-08-01 07:10:06 +0000] [103795] [INFO] Worker exiting (pid: 103795)
+[2023-08-01 07:10:07 +0000] [101256] [INFO] Parent changed, shutting down: <Worker 101256>
+[2023-08-01 07:10:07 +0000] [101256] [INFO] Worker exiting (pid: 101256)
+[2023-08-01 07:10:21 +0000] [106704] [INFO] Starting gunicorn 21.2.0
+[2023-08-01 07:10:21 +0000] [106704] [INFO] Listening at: http://210.75.240.136:18890 (106704)
+[2023-08-01 07:10:21 +0000] [106704] [INFO] Using worker: sync
+[2023-08-01 07:10:21 +0000] [106706] [INFO] Booting worker with pid: 106706
+[2023-08-01 07:10:21 +0000] [106708] [INFO] Booting worker with pid: 106708
+[2023-08-01 07:10:21 +0000] [106709] [INFO] Booting worker with pid: 106709
+[2023-08-01 07:10:21 +0000] [106710] [INFO] Booting worker with pid: 106710
+[2023-08-01 07:12:54 +0000] [106704] [CRITICAL] WORKER TIMEOUT (pid:106706)
+[2023-08-01 07:12:54 +0000] [106704] [CRITICAL] WORKER TIMEOUT (pid:106709)
+[2023-08-01 07:12:54 +0000] [106706] [INFO] Worker exiting (pid: 106706)
+[2023-08-01 07:12:54 +0000] [106709] [INFO] Worker exiting (pid: 106709)
+[2023-08-01 07:12:55 +0000] [106704] [ERROR] Worker (pid:106706) exited with code 1
+[2023-08-01 07:12:55 +0000] [106704] [ERROR] Worker (pid:106706) exited with code 1.
+[2023-08-01 07:12:55 +0000] [109548] [INFO] Booting worker with pid: 109548
+[2023-08-01 07:12:55 +0000] [106704] [ERROR] Worker (pid:106709) was sent SIGKILL! Perhaps out of memory?
+[2023-08-01 07:12:55 +0000] [109549] [INFO] Booting worker with pid: 109549
+[2023-08-01 07:17:45 +0000] [106704] [CRITICAL] WORKER TIMEOUT (pid:106708)
+[2023-08-01 07:17:45 +0000] [106704] [CRITICAL] WORKER TIMEOUT (pid:109549)
+[2023-08-01 07:17:45 +0000] [106708] [INFO] Worker exiting (pid: 106708)
+[2023-08-01 07:17:45 +0000] [109549] [INFO] Worker exiting (pid: 109549)
+[2023-08-01 07:17:45 +0000] [106704] [ERROR] Worker (pid:109549) exited with code 1
+[2023-08-01 07:17:45 +0000] [106704] [ERROR] Worker (pid:109549) exited with code 1.
+[2023-08-01 07:17:45 +0000] [116080] [INFO] Booting worker with pid: 116080
+[2023-08-01 07:17:45 +0000] [106704] [ERROR] Worker (pid:106708) was sent SIGKILL! Perhaps out of memory?
+[2023-08-01 07:17:45 +0000] [116081] [INFO] Booting worker with pid: 116081
+[2023-08-01 07:18:27 +0000] [106704] [CRITICAL] WORKER TIMEOUT (pid:109548)
+[2023-08-01 07:18:27 +0000] [106704] [CRITICAL] WORKER TIMEOUT (pid:116080)
+[2023-08-01 07:18:27 +0000] [109548] [INFO] Worker exiting (pid: 109548)
+[2023-08-01 07:18:27 +0000] [116080] [INFO] Worker exiting (pid: 116080)
+[2023-08-01 07:18:28 +0000] [106704] [ERROR] Worker (pid:109548) exited with code 1
+[2023-08-01 07:18:28 +0000] [106704] [ERROR] Worker (pid:109548) exited with code 1.
+[2023-08-01 07:18:28 +0000] [117100] [INFO] Booting worker with pid: 117100
+[2023-08-01 07:18:28 +0000] [106704] [ERROR] Worker (pid:116080) was sent SIGKILL! Perhaps out of memory?
+[2023-08-01 07:18:28 +0000] [117101] [INFO] Booting worker with pid: 117101
+[2023-08-01 07:19:23 +0000] [106704] [CRITICAL] WORKER TIMEOUT (pid:117100)
+[2023-08-01 07:19:23 +0000] [106704] [CRITICAL] WORKER TIMEOUT (pid:117101)
+[2023-08-01 07:19:23 +0000] [117100] [INFO] Worker exiting (pid: 117100)
+[2023-08-01 07:19:23 +0000] [117101] [INFO] Worker exiting (pid: 117101)
+[2023-08-01 07:19:23 +0000] [106704] [ERROR] Worker (pid:117100) exited with code 1
+[2023-08-01 07:19:23 +0000] [106704] [ERROR] Worker (pid:117101) exited with code 1
+[2023-08-01 07:19:23 +0000] [106704] [ERROR] Worker (pid:117101) exited with code 1.
+[2023-08-01 07:19:23 +0000] [106704] [ERROR] Worker (pid:117100) exited with code 1.
+[2023-08-01 07:19:23 +0000] [118424] [INFO] Booting worker with pid: 118424
+[2023-08-01 07:19:23 +0000] [118425] [INFO] Booting worker with pid: 118425
+[2023-08-01 07:20:25 +0000] [106704] [CRITICAL] WORKER TIMEOUT (pid:106710)
+[2023-08-01 07:20:25 +0000] [106710] [INFO] Worker exiting (pid: 106710)
+[2023-08-01 07:20:25 +0000] [106704] [ERROR] Worker (pid:106710) exited with code 1
+[2023-08-01 07:20:25 +0000] [106704] [ERROR] Worker (pid:106710) exited with code 1.
+[2023-08-01 07:20:25 +0000] [120628] [INFO] Booting worker with pid: 120628
+[2023-08-01 07:20:26 +0000] [106704] [CRITICAL] WORKER TIMEOUT (pid:118424)
+[2023-08-01 07:20:26 +0000] [118424] [INFO] Worker exiting (pid: 118424)
+[2023-08-01 07:20:27 +0000] [106704] [ERROR] Worker (pid:118424) exited with code 1
+[2023-08-01 07:20:27 +0000] [106704] [ERROR] Worker (pid:118424) exited with code 1.
+[2023-08-01 07:20:27 +0000] [120697] [INFO] Booting worker with pid: 120697
+[2023-08-01 07:21:11 +0000] [106704] [CRITICAL] WORKER TIMEOUT (pid:120628)
+[2023-08-01 07:21:11 +0000] [120628] [INFO] Worker exiting (pid: 120628)
+[2023-08-01 07:21:11 +0000] [106704] [ERROR] Worker (pid:120628) exited with code 1
+[2023-08-01 07:21:11 +0000] [106704] [ERROR] Worker (pid:120628) exited with code 1.
+[2023-08-01 07:21:11 +0000] [121326] [INFO] Booting worker with pid: 121326
+[2023-08-01 07:28:39 +0000] [106704] [CRITICAL] WORKER TIMEOUT (pid:120697)
+[2023-08-01 07:28:39 +0000] [120697] [INFO] Worker exiting (pid: 120697)
+[2023-08-01 07:28:40 +0000] [106704] [ERROR] Worker (pid:120697) exited with code 1
+[2023-08-01 07:28:40 +0000] [106704] [ERROR] Worker (pid:120697) exited with code 1.
+[2023-08-01 07:28:40 +0000] [130086] [INFO] Booting worker with pid: 130086
+[2023-08-01 07:56:26 +0000] [106704] [CRITICAL] WORKER TIMEOUT (pid:121326)
+[2023-08-01 07:56:26 +0000] [106704] [CRITICAL] WORKER TIMEOUT (pid:130086)
+[2023-08-01 07:56:26 +0000] [130086] [INFO] Worker exiting (pid: 130086)
+[2023-08-01 07:56:26 +0000] [121326] [INFO] Worker exiting (pid: 121326)
+[2023-08-01 07:56:27 +0000] [106704] [ERROR] Worker (pid:130086) exited with code 1
+[2023-08-01 07:56:27 +0000] [106704] [ERROR] Worker (pid:130086) exited with code 1.
+[2023-08-01 07:56:27 +0000] [106704] [ERROR] Worker (pid:121326) exited with code 1
+[2023-08-01 07:56:27 +0000] [106704] [ERROR] Worker (pid:121326) exited with code 1.
+[2023-08-01 07:56:27 +0000] [163535] [INFO] Booting worker with pid: 163535
+[2023-08-01 07:56:27 +0000] [163536] [INFO] Booting worker with pid: 163536
+[2023-08-01 08:03:18 +0000] [116081] [INFO] Parent changed, shutting down: <Worker 116081>
+[2023-08-01 08:03:18 +0000] [116081] [INFO] Worker exiting (pid: 116081)
+[2023-08-01 08:03:18 +0000] [163535] [INFO] Parent changed, shutting down: <Worker 163535>
+[2023-08-01 08:03:18 +0000] [163535] [INFO] Worker exiting (pid: 163535)
+[2023-08-01 08:03:18 +0000] [163536] [INFO] Parent changed, shutting down: <Worker 163536>
+[2023-08-01 08:03:18 +0000] [163536] [INFO] Worker exiting (pid: 163536)
+[2023-08-01 08:03:18 +0000] [118425] [INFO] Parent changed, shutting down: <Worker 118425>
+[2023-08-01 08:03:18 +0000] [118425] [INFO] Worker exiting (pid: 118425)
+[2023-08-01 08:04:02 +0000] [171030] [INFO] Starting gunicorn 21.2.0
+[2023-08-01 08:04:02 +0000] [171030] [INFO] Listening at: http://210.75.240.136:18890 (171030)
+[2023-08-01 08:04:02 +0000] [171030] [INFO] Using worker: sync
+[2023-08-01 08:04:02 +0000] [171035] [INFO] Booting worker with pid: 171035
+[2023-08-01 08:04:02 +0000] [171036] [INFO] Booting worker with pid: 171036
+[2023-08-01 08:04:02 +0000] [171037] [INFO] Booting worker with pid: 171037
+[2023-08-01 08:04:02 +0000] [171148] [INFO] Booting worker with pid: 171148
+[2023-08-02 05:50:41 +0000] [171030] [CRITICAL] WORKER TIMEOUT (pid:171037)
+[2023-08-02 05:50:41 +0000] [171037] [INFO] Worker exiting (pid: 171037)
+[2023-08-02 05:50:42 +0000] [171030] [ERROR] Worker (pid:171037) was sent SIGKILL! Perhaps out of memory?
+[2023-08-02 05:50:42 +0000] [2073898] [INFO] Booting worker with pid: 2073898
+[2023-08-02 05:50:44 +0000] [2073898] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 21, in <module>
+    import pandas as pd
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/__init__.py", line 22, in <module>
+    from pandas.compat import is_numpy_dev as _is_numpy_dev  # pyright: ignore # noqa:F401
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/__init__.py", line 18, in <module>
+    from pandas.compat.numpy import (
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/numpy/__init__.py", line 4, in <module>
+    from pandas.util.version import Version
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/util/__init__.py", line 2, in <module>
+    from pandas.util._decorators import (  # noqa:F401
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/util/_decorators.py", line 14, in <module>
+    from pandas._libs.properties import cache_readonly
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/_libs/__init__.py", line 13, in <module>
+    from pandas._libs.interval import Interval
+  File "pandas/_libs/interval.pyx", line 1, in init pandas._libs.interval
+ValueError: numpy.ndarray size changed, may indicate binary incompatibility. Expected 88 from C header, got 80 from PyObject
+[2023-08-02 05:50:44 +0000] [2073898] [INFO] Worker exiting (pid: 2073898)
+[2023-08-02 05:50:44 +0000] [171030] [ERROR] Worker (pid:2073898) exited with code 3
+[2023-08-02 05:50:44 +0000] [171148] [INFO] Worker exiting (pid: 171148)
+[2023-08-02 05:50:44 +0000] [171035] [INFO] Worker exiting (pid: 171035)
+[2023-08-02 05:50:44 +0000] [171036] [INFO] Worker exiting (pid: 171036)
+[2023-08-02 05:50:45 +0000] [171030] [ERROR] Shutting down: Master
+[2023-08-02 05:50:45 +0000] [171030] [ERROR] Reason: Worker failed to boot.
+[2023-08-02 05:59:35 +0000] [2086542] [INFO] Starting gunicorn 21.2.0
+[2023-08-02 05:59:35 +0000] [2086542] [INFO] Listening at: http://210.75.240.136:18890 (2086542)
+[2023-08-02 05:59:35 +0000] [2086542] [INFO] Using worker: sync
+[2023-08-02 05:59:35 +0000] [2086547] [INFO] Booting worker with pid: 2086547
+[2023-08-02 05:59:35 +0000] [2086548] [INFO] Booting worker with pid: 2086548
+[2023-08-02 05:59:35 +0000] [2086550] [INFO] Booting worker with pid: 2086550
+[2023-08-02 05:59:35 +0000] [2086551] [INFO] Booting worker with pid: 2086551
+[2023-08-02 05:59:35 +0000] [2086547] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 21, in <module>
+    import pandas as pd
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/__init__.py", line 22, in <module>
+    from pandas.compat import is_numpy_dev as _is_numpy_dev  # pyright: ignore # noqa:F401
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/__init__.py", line 18, in <module>
+    from pandas.compat.numpy import (
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/numpy/__init__.py", line 4, in <module>
+    from pandas.util.version import Version
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/util/__init__.py", line 2, in <module>
+    from pandas.util._decorators import (  # noqa:F401
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/util/_decorators.py", line 14, in <module>
+    from pandas._libs.properties import cache_readonly
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/_libs/__init__.py", line 13, in <module>
+    from pandas._libs.interval import Interval
+  File "pandas/_libs/interval.pyx", line 1, in init pandas._libs.interval
+ValueError: numpy.ndarray size changed, may indicate binary incompatibility. Expected 88 from C header, got 80 from PyObject
+[2023-08-02 05:59:35 +0000] [2086547] [INFO] Worker exiting (pid: 2086547)
+[2023-08-02 05:59:35 +0000] [2086542] [ERROR] Worker (pid:2086547) exited with code 3
+[2023-08-02 05:59:35 +0000] [2086548] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 21, in <module>
+    import pandas as pd
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/__init__.py", line 22, in <module>
+    from pandas.compat import is_numpy_dev as _is_numpy_dev  # pyright: ignore # noqa:F401
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/__init__.py", line 18, in <module>
+    from pandas.compat.numpy import (
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/numpy/__init__.py", line 4, in <module>
+    from pandas.util.version import Version
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/util/__init__.py", line 2, in <module>
+    from pandas.util._decorators import (  # noqa:F401
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/util/_decorators.py", line 14, in <module>
+    from pandas._libs.properties import cache_readonly
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/_libs/__init__.py", line 13, in <module>
+    from pandas._libs.interval import Interval
+  File "pandas/_libs/interval.pyx", line 1, in init pandas._libs.interval
+ValueError: numpy.ndarray size changed, may indicate binary incompatibility. Expected 88 from C header, got 80 from PyObject
+[2023-08-02 05:59:35 +0000] [2086548] [INFO] Worker exiting (pid: 2086548)
+[2023-08-02 05:59:35 +0000] [2086550] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 21, in <module>
+    import pandas as pd
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/__init__.py", line 22, in <module>
+    from pandas.compat import is_numpy_dev as _is_numpy_dev  # pyright: ignore # noqa:F401
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/__init__.py", line 18, in <module>
+    from pandas.compat.numpy import (
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/numpy/__init__.py", line 4, in <module>
+    from pandas.util.version import Version
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/util/__init__.py", line 2, in <module>
+    from pandas.util._decorators import (  # noqa:F401
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/util/_decorators.py", line 14, in <module>
+    from pandas._libs.properties import cache_readonly
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/_libs/__init__.py", line 13, in <module>
+    from pandas._libs.interval import Interval
+  File "pandas/_libs/interval.pyx", line 1, in init pandas._libs.interval
+ValueError: numpy.ndarray size changed, may indicate binary incompatibility. Expected 88 from C header, got 80 from PyObject
+[2023-08-02 05:59:35 +0000] [2086550] [INFO] Worker exiting (pid: 2086550)
+[2023-08-02 05:59:35 +0000] [2086542] [ERROR] Worker (pid:2086548) exited with code 3
+[2023-08-02 05:59:35 +0000] [2086551] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 21, in <module>
+    import pandas as pd
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/__init__.py", line 22, in <module>
+    from pandas.compat import is_numpy_dev as _is_numpy_dev  # pyright: ignore # noqa:F401
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/__init__.py", line 18, in <module>
+    from pandas.compat.numpy import (
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/numpy/__init__.py", line 4, in <module>
+    from pandas.util.version import Version
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/util/__init__.py", line 2, in <module>
+    from pandas.util._decorators import (  # noqa:F401
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/util/_decorators.py", line 14, in <module>
+    from pandas._libs.properties import cache_readonly
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/_libs/__init__.py", line 13, in <module>
+    from pandas._libs.interval import Interval
+  File "pandas/_libs/interval.pyx", line 1, in init pandas._libs.interval
+ValueError: numpy.ndarray size changed, may indicate binary incompatibility. Expected 88 from C header, got 80 from PyObject
+[2023-08-02 05:59:35 +0000] [2086551] [INFO] Worker exiting (pid: 2086551)
+[2023-08-02 07:43:42 +0000] [2267796] [INFO] Starting gunicorn 21.2.0
+[2023-08-02 07:43:42 +0000] [2267796] [INFO] Listening at: http://210.75.240.136:18890 (2267796)
+[2023-08-02 07:43:42 +0000] [2267796] [INFO] Using worker: sync
+[2023-08-02 07:43:42 +0000] [2267798] [INFO] Booting worker with pid: 2267798
+[2023-08-02 07:43:42 +0000] [2267799] [INFO] Booting worker with pid: 2267799
+[2023-08-02 07:43:42 +0000] [2267800] [INFO] Booting worker with pid: 2267800
+[2023-08-02 07:43:42 +0000] [2267801] [INFO] Booting worker with pid: 2267801
+[2023-08-02 07:43:43 +0000] [2267798] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 21, in <module>
+    import pandas as pd
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/__init__.py", line 22, in <module>
+    from pandas.compat import is_numpy_dev as _is_numpy_dev  # pyright: ignore # noqa:F401
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/__init__.py", line 18, in <module>
+    from pandas.compat.numpy import (
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/numpy/__init__.py", line 4, in <module>
+    from pandas.util.version import Version
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/util/__init__.py", line 2, in <module>
+    from pandas.util._decorators import (  # noqa:F401
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/util/_decorators.py", line 14, in <module>
+    from pandas._libs.properties import cache_readonly
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/_libs/__init__.py", line 13, in <module>
+    from pandas._libs.interval import Interval
+  File "pandas/_libs/interval.pyx", line 1, in init pandas._libs.interval
+ValueError: numpy.ndarray size changed, may indicate binary incompatibility. Expected 88 from C header, got 80 from PyObject
+[2023-08-02 07:43:43 +0000] [2267798] [INFO] Worker exiting (pid: 2267798)
+[2023-08-02 07:43:43 +0000] [2267799] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 21, in <module>
+    import pandas as pd
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/__init__.py", line 22, in <module>
+    from pandas.compat import is_numpy_dev as _is_numpy_dev  # pyright: ignore # noqa:F401
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/__init__.py", line 18, in <module>
+    from pandas.compat.numpy import (
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/numpy/__init__.py", line 4, in <module>
+    from pandas.util.version import Version
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/util/__init__.py", line 2, in <module>
+    from pandas.util._decorators import (  # noqa:F401
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/util/_decorators.py", line 14, in <module>
+    from pandas._libs.properties import cache_readonly
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/_libs/__init__.py", line 13, in <module>
+    from pandas._libs.interval import Interval
+  File "pandas/_libs/interval.pyx", line 1, in init pandas._libs.interval
+ValueError: numpy.ndarray size changed, may indicate binary incompatibility. Expected 88 from C header, got 80 from PyObject
+[2023-08-02 07:43:43 +0000] [2267799] [INFO] Worker exiting (pid: 2267799)
+[2023-08-02 07:43:43 +0000] [2267800] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 21, in <module>
+    import pandas as pd
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/__init__.py", line 22, in <module>
+    from pandas.compat import is_numpy_dev as _is_numpy_dev  # pyright: ignore # noqa:F401
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/__init__.py", line 18, in <module>
+    from pandas.compat.numpy import (
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/numpy/__init__.py", line 4, in <module>
+    from pandas.util.version import Version
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/util/__init__.py", line 2, in <module>
+    from pandas.util._decorators import (  # noqa:F401
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/util/_decorators.py", line 14, in <module>
+    from pandas._libs.properties import cache_readonly
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/_libs/__init__.py", line 13, in <module>
+    from pandas._libs.interval import Interval
+  File "pandas/_libs/interval.pyx", line 1, in init pandas._libs.interval
+ValueError: numpy.ndarray size changed, may indicate binary incompatibility. Expected 88 from C header, got 80 from PyObject
+[2023-08-02 07:43:43 +0000] [2267800] [INFO] Worker exiting (pid: 2267800)
+[2023-08-02 07:43:43 +0000] [2267796] [ERROR] Worker (pid:2267798) exited with code 3
+[2023-08-02 07:43:43 +0000] [2267796] [ERROR] Worker (pid:2267799) was sent SIGTERM!
+[2023-08-02 07:43:43 +0000] [2267796] [ERROR] Worker (pid:2267800) was sent SIGTERM!
+[2023-08-02 07:43:43 +0000] [2267801] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 21, in <module>
+    import pandas as pd
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/__init__.py", line 22, in <module>
+    from pandas.compat import is_numpy_dev as _is_numpy_dev  # pyright: ignore # noqa:F401
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/__init__.py", line 18, in <module>
+    from pandas.compat.numpy import (
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/numpy/__init__.py", line 4, in <module>
+    from pandas.util.version import Version
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/util/__init__.py", line 2, in <module>
+    from pandas.util._decorators import (  # noqa:F401
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/util/_decorators.py", line 14, in <module>
+    from pandas._libs.properties import cache_readonly
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/_libs/__init__.py", line 13, in <module>
+    from pandas._libs.interval import Interval
+  File "pandas/_libs/interval.pyx", line 1, in init pandas._libs.interval
+ValueError: numpy.ndarray size changed, may indicate binary incompatibility. Expected 88 from C header, got 80 from PyObject
+[2023-08-02 07:43:43 +0000] [2267801] [INFO] Worker exiting (pid: 2267801)
+[2023-08-02 07:43:43 +0000] [2267796] [ERROR] Worker (pid:2267801) exited with code 3
+[2023-08-02 07:43:57 +0000] [2268423] [INFO] Starting gunicorn 21.2.0
+[2023-08-02 07:43:57 +0000] [2268423] [INFO] Listening at: http://210.75.240.136:18890 (2268423)
+[2023-08-02 07:43:57 +0000] [2268423] [INFO] Using worker: sync
+[2023-08-02 07:43:57 +0000] [2268425] [INFO] Booting worker with pid: 2268425
+[2023-08-02 07:43:57 +0000] [2268426] [INFO] Booting worker with pid: 2268426
+[2023-08-02 07:43:57 +0000] [2268428] [INFO] Booting worker with pid: 2268428
+[2023-08-02 07:43:57 +0000] [2268492] [INFO] Booting worker with pid: 2268492
+[2023-08-02 07:43:57 +0000] [2268425] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 21, in <module>
+    import pandas as pd
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/__init__.py", line 22, in <module>
+    from pandas.compat import is_numpy_dev as _is_numpy_dev  # pyright: ignore # noqa:F401
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/__init__.py", line 18, in <module>
+    from pandas.compat.numpy import (
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/numpy/__init__.py", line 4, in <module>
+    from pandas.util.version import Version
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/util/__init__.py", line 2, in <module>
+    from pandas.util._decorators import (  # noqa:F401
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/util/_decorators.py", line 14, in <module>
+    from pandas._libs.properties import cache_readonly
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/_libs/__init__.py", line 13, in <module>
+    from pandas._libs.interval import Interval
+  File "pandas/_libs/interval.pyx", line 1, in init pandas._libs.interval
+ValueError: numpy.ndarray size changed, may indicate binary incompatibility. Expected 88 from C header, got 80 from PyObject
+[2023-08-02 07:43:57 +0000] [2268425] [INFO] Worker exiting (pid: 2268425)
+[2023-08-02 07:43:57 +0000] [2268426] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 21, in <module>
+    import pandas as pd
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/__init__.py", line 22, in <module>
+    from pandas.compat import is_numpy_dev as _is_numpy_dev  # pyright: ignore # noqa:F401
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/__init__.py", line 18, in <module>
+    from pandas.compat.numpy import (
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/numpy/__init__.py", line 4, in <module>
+    from pandas.util.version import Version
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/util/__init__.py", line 2, in <module>
+    from pandas.util._decorators import (  # noqa:F401
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/util/_decorators.py", line 14, in <module>
+    from pandas._libs.properties import cache_readonly
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/_libs/__init__.py", line 13, in <module>
+    from pandas._libs.interval import Interval
+  File "pandas/_libs/interval.pyx", line 1, in init pandas._libs.interval
+ValueError: numpy.ndarray size changed, may indicate binary incompatibility. Expected 88 from C header, got 80 from PyObject
+[2023-08-02 07:43:57 +0000] [2268426] [INFO] Worker exiting (pid: 2268426)
+[2023-08-02 07:43:57 +0000] [2268428] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 21, in <module>
+    import pandas as pd
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/__init__.py", line 22, in <module>
+    from pandas.compat import is_numpy_dev as _is_numpy_dev  # pyright: ignore # noqa:F401
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/__init__.py", line 18, in <module>
+    from pandas.compat.numpy import (
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/numpy/__init__.py", line 4, in <module>
+    from pandas.util.version import Version
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/util/__init__.py", line 2, in <module>
+    from pandas.util._decorators import (  # noqa:F401
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/util/_decorators.py", line 14, in <module>
+    from pandas._libs.properties import cache_readonly
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/_libs/__init__.py", line 13, in <module>
+    from pandas._libs.interval import Interval
+  File "pandas/_libs/interval.pyx", line 1, in init pandas._libs.interval
+ValueError: numpy.ndarray size changed, may indicate binary incompatibility. Expected 88 from C header, got 80 from PyObject
+[2023-08-02 07:43:57 +0000] [2268428] [INFO] Worker exiting (pid: 2268428)
+[2023-08-02 07:43:57 +0000] [2268423] [ERROR] Worker (pid:2268426) exited with code 3
+[2023-08-02 07:43:57 +0000] [2268423] [ERROR] Worker (pid:2268428) was sent SIGTERM!
+[2023-08-02 07:43:57 +0000] [2268492] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 21, in <module>
+    import pandas as pd
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/__init__.py", line 22, in <module>
+    from pandas.compat import is_numpy_dev as _is_numpy_dev  # pyright: ignore # noqa:F401
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/__init__.py", line 18, in <module>
+    from pandas.compat.numpy import (
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/numpy/__init__.py", line 4, in <module>
+    from pandas.util.version import Version
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/util/__init__.py", line 2, in <module>
+    from pandas.util._decorators import (  # noqa:F401
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/util/_decorators.py", line 14, in <module>
+    from pandas._libs.properties import cache_readonly
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/_libs/__init__.py", line 13, in <module>
+    from pandas._libs.interval import Interval
+  File "pandas/_libs/interval.pyx", line 1, in init pandas._libs.interval
+ValueError: numpy.ndarray size changed, may indicate binary incompatibility. Expected 88 from C header, got 80 from PyObject
+[2023-08-02 07:43:57 +0000] [2268492] [INFO] Worker exiting (pid: 2268492)
+[2023-08-02 07:43:58 +0000] [2268423] [ERROR] Worker (pid:2268492) exited with code 3
+[2023-08-02 07:45:03 +0000] [2271494] [INFO] Starting gunicorn 21.2.0
+[2023-08-02 07:45:03 +0000] [2271494] [INFO] Listening at: http://210.75.240.136:18890 (2271494)
+[2023-08-02 07:45:03 +0000] [2271494] [INFO] Using worker: sync
+[2023-08-02 07:45:03 +0000] [2271496] [INFO] Booting worker with pid: 2271496
+[2023-08-02 07:45:03 +0000] [2271497] [INFO] Booting worker with pid: 2271497
+[2023-08-02 07:45:03 +0000] [2271501] [INFO] Booting worker with pid: 2271501
+[2023-08-02 07:45:03 +0000] [2271503] [INFO] Booting worker with pid: 2271503
+[2023-08-02 07:45:04 +0000] [2271497] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 21, in <module>
+    import pandas as pd
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/__init__.py", line 22, in <module>
+    from pandas.compat import is_numpy_dev as _is_numpy_dev  # pyright: ignore # noqa:F401
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/__init__.py", line 18, in <module>
+    from pandas.compat.numpy import (
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/numpy/__init__.py", line 4, in <module>
+    from pandas.util.version import Version
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/util/__init__.py", line 2, in <module>
+    from pandas.util._decorators import (  # noqa:F401
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/util/_decorators.py", line 14, in <module>
+    from pandas._libs.properties import cache_readonly
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/_libs/__init__.py", line 13, in <module>
+    from pandas._libs.interval import Interval
+  File "pandas/_libs/interval.pyx", line 1, in init pandas._libs.interval
+ValueError: numpy.ndarray size changed, may indicate binary incompatibility. Expected 88 from C header, got 80 from PyObject
+[2023-08-02 07:45:04 +0000] [2271497] [INFO] Worker exiting (pid: 2271497)
+[2023-08-02 07:45:04 +0000] [2271496] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 21, in <module>
+    import pandas as pd
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/__init__.py", line 22, in <module>
+    from pandas.compat import is_numpy_dev as _is_numpy_dev  # pyright: ignore # noqa:F401
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/__init__.py", line 18, in <module>
+    from pandas.compat.numpy import (
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/numpy/__init__.py", line 4, in <module>
+    from pandas.util.version import Version
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/util/__init__.py", line 2, in <module>
+    from pandas.util._decorators import (  # noqa:F401
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/util/_decorators.py", line 14, in <module>
+    from pandas._libs.properties import cache_readonly
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/_libs/__init__.py", line 13, in <module>
+    from pandas._libs.interval import Interval
+  File "pandas/_libs/interval.pyx", line 1, in init pandas._libs.interval
+ValueError: numpy.ndarray size changed, may indicate binary incompatibility. Expected 88 from C header, got 80 from PyObject
+[2023-08-02 07:45:04 +0000] [2271501] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 21, in <module>
+    import pandas as pd
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/__init__.py", line 22, in <module>
+    from pandas.compat import is_numpy_dev as _is_numpy_dev  # pyright: ignore # noqa:F401
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/__init__.py", line 18, in <module>
+    from pandas.compat.numpy import (
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/numpy/__init__.py", line 4, in <module>
+    from pandas.util.version import Version
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/util/__init__.py", line 2, in <module>
+    from pandas.util._decorators import (  # noqa:F401
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/util/_decorators.py", line 14, in <module>
+    from pandas._libs.properties import cache_readonly
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/_libs/__init__.py", line 13, in <module>
+    from pandas._libs.interval import Interval
+  File "pandas/_libs/interval.pyx", line 1, in init pandas._libs.interval
+ValueError: numpy.ndarray size changed, may indicate binary incompatibility. Expected 88 from C header, got 80 from PyObject
+[2023-08-02 07:45:04 +0000] [2271501] [INFO] Worker exiting (pid: 2271501)
+[2023-08-02 07:45:04 +0000] [2271496] [INFO] Worker exiting (pid: 2271496)
+[2023-08-02 07:45:04 +0000] [2271494] [ERROR] Worker (pid:2271497) exited with code 3
+[2023-08-02 07:45:04 +0000] [2271494] [ERROR] Worker (pid:2271496) was sent SIGTERM!
+[2023-08-02 07:45:04 +0000] [2271494] [ERROR] Worker (pid:2271501) was sent SIGTERM!
+[2023-08-02 07:45:04 +0000] [2271503] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 21, in <module>
+    import pandas as pd
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/__init__.py", line 22, in <module>
+    from pandas.compat import is_numpy_dev as _is_numpy_dev  # pyright: ignore # noqa:F401
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/__init__.py", line 18, in <module>
+    from pandas.compat.numpy import (
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/numpy/__init__.py", line 4, in <module>
+    from pandas.util.version import Version
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/util/__init__.py", line 2, in <module>
+    from pandas.util._decorators import (  # noqa:F401
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/util/_decorators.py", line 14, in <module>
+    from pandas._libs.properties import cache_readonly
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/_libs/__init__.py", line 13, in <module>
+    from pandas._libs.interval import Interval
+  File "pandas/_libs/interval.pyx", line 1, in init pandas._libs.interval
+ValueError: numpy.ndarray size changed, may indicate binary incompatibility. Expected 88 from C header, got 80 from PyObject
+[2023-08-02 07:45:04 +0000] [2271503] [INFO] Worker exiting (pid: 2271503)
+[2023-08-02 07:45:04 +0000] [2271494] [ERROR] Worker (pid:2271503) exited with code 3
+[2023-08-02 07:48:38 +0000] [2278210] [INFO] Starting gunicorn 21.2.0
+[2023-08-02 07:48:38 +0000] [2278210] [INFO] Listening at: http://210.75.240.136:18890 (2278210)
+[2023-08-02 07:48:38 +0000] [2278210] [INFO] Using worker: sync
+[2023-08-02 07:48:38 +0000] [2278214] [INFO] Booting worker with pid: 2278214
+[2023-08-02 07:48:38 +0000] [2278227] [INFO] Booting worker with pid: 2278227
+[2023-08-02 07:48:39 +0000] [2278248] [INFO] Booting worker with pid: 2278248
+[2023-08-02 07:48:39 +0000] [2278296] [INFO] Booting worker with pid: 2278296
+[2023-08-02 07:48:42 +0000] [2278227] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 30, in <module>
+    from loaders import DATASET_CLASSES
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/loaders/__init__.py", line 1, in <module>
+    from loaders.wikisql import WikiSQL
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/loaders/wikisql.py", line 7, in <module>
+    from structs.data import Cell, Table, HFTabularDataset
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/structs/data.py", line 3, in <module>
+    import datasets
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/__init__.py", line 43, in <module>
+    from .arrow_dataset import Dataset
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 66, in <module>
+    from .arrow_writer import ArrowWriter, OptimizedTypedSequence
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/arrow_writer.py", line 27, in <module>
+    from .features import Features, Image, Value
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/features/__init__.py", line 18, in <module>
+    from .features import Array2D, Array3D, Array4D, Array5D, ClassLabel, Features, Sequence, Value
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/features/features.py", line 34, in <module>
+    from pandas.api.extensions import ExtensionArray as PandasExtensionArray
+ModuleNotFoundError: No module named 'pandas.api'
+[2023-08-02 07:48:42 +0000] [2278248] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 30, in <module>
+    from loaders import DATASET_CLASSES
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/loaders/__init__.py", line 1, in <module>
+    from loaders.wikisql import WikiSQL
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/loaders/wikisql.py", line 7, in <module>
+    from structs.data import Cell, Table, HFTabularDataset
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/structs/data.py", line 3, in <module>
+    import datasets
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/__init__.py", line 43, in <module>
+    from .arrow_dataset import Dataset
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 66, in <module>
+    from .arrow_writer import ArrowWriter, OptimizedTypedSequence
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/arrow_writer.py", line 27, in <module>
+    from .features import Features, Image, Value
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/features/__init__.py", line 18, in <module>
+    from .features import Array2D, Array3D, Array4D, Array5D, ClassLabel, Features, Sequence, Value
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/features/features.py", line 34, in <module>
+    from pandas.api.extensions import ExtensionArray as PandasExtensionArray
+ModuleNotFoundError: No module named 'pandas.api'
+[2023-08-02 07:48:42 +0000] [2278214] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 30, in <module>
+    from loaders import DATASET_CLASSES
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/loaders/__init__.py", line 1, in <module>
+    from loaders.wikisql import WikiSQL
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/loaders/wikisql.py", line 7, in <module>
+    from structs.data import Cell, Table, HFTabularDataset
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/structs/data.py", line 3, in <module>
+    import datasets
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/__init__.py", line 43, in <module>
+    from .arrow_dataset import Dataset
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 66, in <module>
+    from .arrow_writer import ArrowWriter, OptimizedTypedSequence
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/arrow_writer.py", line 27, in <module>
+    from .features import Features, Image, Value
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/features/__init__.py", line 18, in <module>
+    from .features import Array2D, Array3D, Array4D, Array5D, ClassLabel, Features, Sequence, Value
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/features/features.py", line 34, in <module>
+    from pandas.api.extensions import ExtensionArray as PandasExtensionArray
+ModuleNotFoundError: No module named 'pandas.api'
+[2023-08-02 07:48:42 +0000] [2278296] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 30, in <module>
+    from loaders import DATASET_CLASSES
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/loaders/__init__.py", line 1, in <module>
+    from loaders.wikisql import WikiSQL
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/loaders/wikisql.py", line 7, in <module>
+    from structs.data import Cell, Table, HFTabularDataset
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/structs/data.py", line 3, in <module>
+    import datasets
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/__init__.py", line 43, in <module>
+    from .arrow_dataset import Dataset
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 66, in <module>
+    from .arrow_writer import ArrowWriter, OptimizedTypedSequence
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/arrow_writer.py", line 27, in <module>
+    from .features import Features, Image, Value
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/features/__init__.py", line 18, in <module>
+    from .features import Array2D, Array3D, Array4D, Array5D, ClassLabel, Features, Sequence, Value
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/features/features.py", line 34, in <module>
+    from pandas.api.extensions import ExtensionArray as PandasExtensionArray
+ModuleNotFoundError: No module named 'pandas.api'
+[2023-08-02 07:48:42 +0000] [2278227] [INFO] Worker exiting (pid: 2278227)
+[2023-08-02 07:48:42 +0000] [2278248] [INFO] Worker exiting (pid: 2278248)
+[2023-08-02 07:48:42 +0000] [2278214] [INFO] Worker exiting (pid: 2278214)
+[2023-08-02 07:48:42 +0000] [2278296] [INFO] Worker exiting (pid: 2278296)
+[2023-08-02 07:48:42 +0000] [2278210] [ERROR] Worker (pid:2278296) exited with code 3
+[2023-08-02 07:48:42 +0000] [2278210] [ERROR] Worker (pid:2278227) exited with code 3
+[2023-08-02 07:48:42 +0000] [2278210] [ERROR] Worker (pid:2278248) was sent SIGTERM!
+[2023-08-02 07:49:40 +0000] [2280074] [INFO] Starting gunicorn 21.2.0
+[2023-08-02 07:49:40 +0000] [2280074] [INFO] Listening at: http://210.75.240.136:18890 (2280074)
+[2023-08-02 07:49:40 +0000] [2280074] [INFO] Using worker: sync
+[2023-08-02 07:49:40 +0000] [2280087] [INFO] Booting worker with pid: 2280087
+[2023-08-02 07:49:40 +0000] [2280092] [INFO] Booting worker with pid: 2280092
+[2023-08-02 07:49:40 +0000] [2280100] [INFO] Booting worker with pid: 2280100
+[2023-08-02 07:49:40 +0000] [2280158] [INFO] Booting worker with pid: 2280158
+[2023-08-02 07:49:41 +0000] [2280087] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 30, in <module>
+    from loaders import DATASET_CLASSES
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/loaders/__init__.py", line 1, in <module>
+    from loaders.wikisql import WikiSQL
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/loaders/wikisql.py", line 7, in <module>
+    from structs.data import Cell, Table, HFTabularDataset
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/structs/data.py", line 3, in <module>
+    import datasets
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/__init__.py", line 43, in <module>
+    from .arrow_dataset import Dataset
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 66, in <module>
+    from .arrow_writer import ArrowWriter, OptimizedTypedSequence
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/arrow_writer.py", line 27, in <module>
+    from .features import Features, Image, Value
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/features/__init__.py", line 18, in <module>
+    from .features import Array2D, Array3D, Array4D, Array5D, ClassLabel, Features, Sequence, Value
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/features/features.py", line 34, in <module>
+    from pandas.api.extensions import ExtensionArray as PandasExtensionArray
+ModuleNotFoundError: No module named 'pandas.api'
+[2023-08-02 07:49:41 +0000] [2280087] [INFO] Worker exiting (pid: 2280087)
+[2023-08-02 07:49:41 +0000] [2280092] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 30, in <module>
+    from loaders import DATASET_CLASSES
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/loaders/__init__.py", line 1, in <module>
+    from loaders.wikisql import WikiSQL
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/loaders/wikisql.py", line 7, in <module>
+    from structs.data import Cell, Table, HFTabularDataset
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/structs/data.py", line 3, in <module>
+    import datasets
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/__init__.py", line 43, in <module>
+    from .arrow_dataset import Dataset
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 66, in <module>
+    from .arrow_writer import ArrowWriter, OptimizedTypedSequence
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/arrow_writer.py", line 27, in <module>
+    from .features import Features, Image, Value
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/features/__init__.py", line 18, in <module>
+    from .features import Array2D, Array3D, Array4D, Array5D, ClassLabel, Features, Sequence, Value
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/features/features.py", line 34, in <module>
+    from pandas.api.extensions import ExtensionArray as PandasExtensionArray
+ModuleNotFoundError: No module named 'pandas.api'
+[2023-08-02 07:49:41 +0000] [2280092] [INFO] Worker exiting (pid: 2280092)
+[2023-08-02 07:49:41 +0000] [2280100] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 30, in <module>
+    from loaders import DATASET_CLASSES
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/loaders/__init__.py", line 1, in <module>
+    from loaders.wikisql import WikiSQL
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/loaders/wikisql.py", line 7, in <module>
+    from structs.data import Cell, Table, HFTabularDataset
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/structs/data.py", line 3, in <module>
+    import datasets
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/__init__.py", line 43, in <module>
+    from .arrow_dataset import Dataset
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 66, in <module>
+    from .arrow_writer import ArrowWriter, OptimizedTypedSequence
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/arrow_writer.py", line 27, in <module>
+    from .features import Features, Image, Value
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/features/__init__.py", line 18, in <module>
+    from .features import Array2D, Array3D, Array4D, Array5D, ClassLabel, Features, Sequence, Value
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/features/features.py", line 34, in <module>
+    from pandas.api.extensions import ExtensionArray as PandasExtensionArray
+ModuleNotFoundError: No module named 'pandas.api'
+[2023-08-02 07:49:41 +0000] [2280100] [INFO] Worker exiting (pid: 2280100)
+[2023-08-02 07:49:41 +0000] [2280074] [ERROR] Worker (pid:2280087) exited with code 3
+[2023-08-02 07:49:41 +0000] [2280074] [ERROR] Worker (pid:2280092) exited with code 3
+[2023-08-02 07:49:41 +0000] [2280158] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 30, in <module>
+    from loaders import DATASET_CLASSES
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/loaders/__init__.py", line 1, in <module>
+    from loaders.wikisql import WikiSQL
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/loaders/wikisql.py", line 7, in <module>
+    from structs.data import Cell, Table, HFTabularDataset
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/structs/data.py", line 3, in <module>
+    import datasets
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/__init__.py", line 43, in <module>
+    from .arrow_dataset import Dataset
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/arrow_dataset.py", line 66, in <module>
+    from .arrow_writer import ArrowWriter, OptimizedTypedSequence
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/arrow_writer.py", line 27, in <module>
+    from .features import Features, Image, Value
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/features/__init__.py", line 18, in <module>
+    from .features import Array2D, Array3D, Array4D, Array5D, ClassLabel, Features, Sequence, Value
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/datasets/features/features.py", line 34, in <module>
+    from pandas.api.extensions import ExtensionArray as PandasExtensionArray
+ModuleNotFoundError: No module named 'pandas.api'
+[2023-08-02 07:49:41 +0000] [2280158] [INFO] Worker exiting (pid: 2280158)
+[2023-08-02 07:53:34 +0000] [2288187] [INFO] Starting gunicorn 21.2.0
+[2023-08-02 07:53:34 +0000] [2288187] [INFO] Listening at: http://210.75.240.136:18890 (2288187)
+[2023-08-02 07:53:34 +0000] [2288187] [INFO] Using worker: sync
+[2023-08-02 07:53:34 +0000] [2288189] [INFO] Booting worker with pid: 2288189
+[2023-08-02 07:53:34 +0000] [2288190] [INFO] Booting worker with pid: 2288190
+[2023-08-02 07:53:34 +0000] [2288191] [INFO] Booting worker with pid: 2288191
+[2023-08-02 07:53:34 +0000] [2288192] [INFO] Booting worker with pid: 2288192
+[2023-08-02 07:53:34 +0000] [2288189] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 21, in <module>
+    import pandas as pd
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/__init__.py", line 22, in <module>
+    from pandas.compat import is_numpy_dev as _is_numpy_dev  # pyright: ignore # noqa:F401
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/__init__.py", line 25, in <module>
+    from pandas.compat.numpy import (
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/numpy/__init__.py", line 25, in <module>
+    raise ImportError(
+ImportError: this version of pandas is incompatible with numpy < 1.20.3
+your numpy version is 1.19.5.
+Please upgrade numpy to >= 1.20.3 to use this pandas version
+[2023-08-02 07:53:34 +0000] [2288189] [INFO] Worker exiting (pid: 2288189)
+[2023-08-02 07:53:34 +0000] [2288187] [ERROR] Worker (pid:2288189) exited with code 3
+[2023-08-02 07:53:34 +0000] [2288190] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 21, in <module>
+    import pandas as pd
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/__init__.py", line 22, in <module>
+    from pandas.compat import is_numpy_dev as _is_numpy_dev  # pyright: ignore # noqa:F401
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/__init__.py", line 25, in <module>
+    from pandas.compat.numpy import (
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/numpy/__init__.py", line 25, in <module>
+    raise ImportError(
+ImportError: this version of pandas is incompatible with numpy < 1.20.3
+your numpy version is 1.19.5.
+Please upgrade numpy to >= 1.20.3 to use this pandas version
+[2023-08-02 07:53:34 +0000] [2288190] [INFO] Worker exiting (pid: 2288190)
+[2023-08-02 07:53:34 +0000] [2288191] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 21, in <module>
+    import pandas as pd
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/__init__.py", line 22, in <module>
+    from pandas.compat import is_numpy_dev as _is_numpy_dev  # pyright: ignore # noqa:F401
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/__init__.py", line 25, in <module>
+    from pandas.compat.numpy import (
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/numpy/__init__.py", line 25, in <module>
+    raise ImportError(
+ImportError: this version of pandas is incompatible with numpy < 1.20.3
+your numpy version is 1.19.5.
+Please upgrade numpy to >= 1.20.3 to use this pandas version
+[2023-08-02 07:53:34 +0000] [2288191] [INFO] Worker exiting (pid: 2288191)
+[2023-08-02 07:53:34 +0000] [2288187] [ERROR] Worker (pid:2288190) exited with code 3
+[2023-08-02 07:53:34 +0000] [2288192] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TextTableQAKit/app.py", line 21, in <module>
+    import pandas as pd
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/__init__.py", line 22, in <module>
+    from pandas.compat import is_numpy_dev as _is_numpy_dev  # pyright: ignore # noqa:F401
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/__init__.py", line 25, in <module>
+    from pandas.compat.numpy import (
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/pandas/compat/numpy/__init__.py", line 25, in <module>
+    raise ImportError(
+ImportError: this version of pandas is incompatible with numpy < 1.20.3
+your numpy version is 1.19.5.
+Please upgrade numpy to >= 1.20.3 to use this pandas version
+[2023-08-02 07:53:34 +0000] [2288192] [INFO] Worker exiting (pid: 2288192)
+[2023-08-02 08:13:30 +0000] [2323586] [INFO] Starting gunicorn 21.2.0
+[2023-08-02 08:13:30 +0000] [2323586] [INFO] Listening at: http://210.75.240.136:18890 (2323586)
+[2023-08-02 08:13:30 +0000] [2323586] [INFO] Using worker: sync
+[2023-08-02 08:13:30 +0000] [2323588] [INFO] Booting worker with pid: 2323588
+[2023-08-02 08:13:30 +0000] [2323589] [INFO] Booting worker with pid: 2323589
+[2023-08-02 08:13:30 +0000] [2323645] [INFO] Booting worker with pid: 2323645
+[2023-08-02 08:13:30 +0000] [2323646] [INFO] Booting worker with pid: 2323646
+[2023-08-02 08:25:38 +0000] [2323586] [CRITICAL] WORKER TIMEOUT (pid:2323589)
+[2023-08-02 08:25:38 +0000] [2323586] [CRITICAL] WORKER TIMEOUT (pid:2323646)
+[2023-08-02 08:25:38 +0000] [2323589] [INFO] Worker exiting (pid: 2323589)
+[2023-08-02 08:25:38 +0000] [2323646] [INFO] Worker exiting (pid: 2323646)
+[2023-08-02 08:25:38 +0000] [2323586] [ERROR] Worker (pid:2323589) exited with code 1
+[2023-08-02 08:25:38 +0000] [2323586] [ERROR] Worker (pid:2323589) exited with code 1.
+[2023-08-02 08:25:38 +0000] [2347326] [INFO] Booting worker with pid: 2347326
+[2023-08-02 08:25:38 +0000] [2323586] [ERROR] Worker (pid:2323646) was sent SIGKILL! Perhaps out of memory?
+[2023-08-02 08:25:38 +0000] [2347327] [INFO] Booting worker with pid: 2347327
+[2023-08-02 08:27:13 +0000] [2323586] [CRITICAL] WORKER TIMEOUT (pid:2347326)
+[2023-08-02 08:27:13 +0000] [2323586] [CRITICAL] WORKER TIMEOUT (pid:2347327)
+[2023-08-02 08:27:13 +0000] [2347326] [INFO] Worker exiting (pid: 2347326)
+[2023-08-02 08:27:13 +0000] [2347327] [INFO] Worker exiting (pid: 2347327)
+[2023-08-02 08:27:13 +0000] [2323586] [ERROR] Worker (pid:2347327) exited with code 1
+[2023-08-02 08:27:13 +0000] [2323586] [ERROR] Worker (pid:2347327) exited with code 1.
+[2023-08-02 08:27:13 +0000] [2349933] [INFO] Booting worker with pid: 2349933
+[2023-08-02 08:27:13 +0000] [2323586] [ERROR] Worker (pid:2347326) exited with code 1
+[2023-08-02 08:27:13 +0000] [2323586] [ERROR] Worker (pid:2347326) exited with code 1.
+[2023-08-02 08:27:13 +0000] [2349937] [INFO] Booting worker with pid: 2349937
+[2023-08-02 08:28:24 +0000] [2323586] [CRITICAL] WORKER TIMEOUT (pid:2323588)
+[2023-08-02 08:28:24 +0000] [2323586] [CRITICAL] WORKER TIMEOUT (pid:2323645)
+[2023-08-02 08:28:24 +0000] [2323588] [INFO] Worker exiting (pid: 2323588)
+[2023-08-02 08:28:24 +0000] [2323645] [INFO] Worker exiting (pid: 2323645)
+[2023-08-02 08:28:24 +0000] [2323586] [ERROR] Worker (pid:2323645) exited with code 1
+[2023-08-02 08:28:24 +0000] [2323586] [ERROR] Worker (pid:2323645) exited with code 1.
+[2023-08-02 08:28:24 +0000] [2352235] [INFO] Booting worker with pid: 2352235
+[2023-08-02 08:28:24 +0000] [2323586] [ERROR] Worker (pid:2323588) was sent SIGKILL! Perhaps out of memory?
+[2023-08-02 08:28:24 +0000] [2352236] [INFO] Booting worker with pid: 2352236
+[2023-08-02 08:29:24 +0000] [2323586] [CRITICAL] WORKER TIMEOUT (pid:2349933)
+[2023-08-02 08:29:24 +0000] [2323586] [CRITICAL] WORKER TIMEOUT (pid:2349937)
+[2023-08-02 08:29:24 +0000] [2349933] [INFO] Worker exiting (pid: 2349933)
+[2023-08-02 08:29:24 +0000] [2349937] [INFO] Worker exiting (pid: 2349937)
+[2023-08-02 08:29:24 +0000] [2323586] [ERROR] Worker (pid:2349933) exited with code 1
+[2023-08-02 08:29:24 +0000] [2323586] [ERROR] Worker (pid:2349933) exited with code 1.
+[2023-08-02 08:29:24 +0000] [2353890] [INFO] Booting worker with pid: 2353890
+[2023-08-02 08:29:24 +0000] [2323586] [ERROR] Worker (pid:2349937) was sent SIGKILL! Perhaps out of memory?
+[2023-08-02 08:29:24 +0000] [2353894] [INFO] Booting worker with pid: 2353894
+[2023-08-02 08:30:24 +0000] [2323586] [CRITICAL] WORKER TIMEOUT (pid:2352235)
+[2023-08-02 08:30:24 +0000] [2323586] [CRITICAL] WORKER TIMEOUT (pid:2353894)
+[2023-08-02 08:30:24 +0000] [2352235] [INFO] Worker exiting (pid: 2352235)
+[2023-08-02 08:30:24 +0000] [2353894] [INFO] Worker exiting (pid: 2353894)
+[2023-08-02 08:30:24 +0000] [2323586] [ERROR] Worker (pid:2352235) exited with code 1
+[2023-08-02 08:30:24 +0000] [2323586] [ERROR] Worker (pid:2352235) exited with code 1.
+[2023-08-02 08:30:24 +0000] [2323586] [ERROR] Worker (pid:2353894) exited with code 1
+[2023-08-02 08:30:24 +0000] [2323586] [ERROR] Worker (pid:2353894) exited with code 1.
+[2023-08-02 08:30:24 +0000] [2356729] [INFO] Booting worker with pid: 2356729
+[2023-08-02 08:30:24 +0000] [2356730] [INFO] Booting worker with pid: 2356730
+[2023-08-02 08:32:01 +0000] [2323586] [CRITICAL] WORKER TIMEOUT (pid:2353890)
+[2023-08-02 08:32:01 +0000] [2323586] [CRITICAL] WORKER TIMEOUT (pid:2356729)
+[2023-08-02 08:32:01 +0000] [2353890] [INFO] Worker exiting (pid: 2353890)
+[2023-08-02 08:32:01 +0000] [2356729] [INFO] Worker exiting (pid: 2356729)
+[2023-08-02 08:32:02 +0000] [2323586] [ERROR] Worker (pid:2356729) exited with code 1
+[2023-08-02 08:32:02 +0000] [2323586] [ERROR] Worker (pid:2356729) exited with code 1.
+[2023-08-02 08:32:02 +0000] [2359208] [INFO] Booting worker with pid: 2359208
+[2023-08-02 08:32:02 +0000] [2323586] [ERROR] Worker (pid:2353890) was sent SIGKILL! Perhaps out of memory?
+[2023-08-02 08:32:02 +0000] [2359212] [INFO] Booting worker with pid: 2359212
+[2023-08-02 08:33:40 +0000] [2323586] [CRITICAL] WORKER TIMEOUT (pid:2352236)
+[2023-08-02 08:33:40 +0000] [2323586] [CRITICAL] WORKER TIMEOUT (pid:2356730)
+[2023-08-02 08:33:40 +0000] [2352236] [INFO] Worker exiting (pid: 2352236)
+[2023-08-02 08:33:40 +0000] [2356730] [INFO] Worker exiting (pid: 2356730)
+[2023-08-02 08:33:41 +0000] [2323586] [ERROR] Worker (pid:2356730) exited with code 1
+[2023-08-02 08:33:41 +0000] [2323586] [ERROR] Worker (pid:2356730) exited with code 1.
+[2023-08-02 08:33:41 +0000] [2362042] [INFO] Booting worker with pid: 2362042
+[2023-08-02 08:33:41 +0000] [2323586] [ERROR] Worker (pid:2352236) was sent SIGKILL! Perhaps out of memory?
+[2023-08-02 08:33:41 +0000] [2362046] [INFO] Booting worker with pid: 2362046
+[2023-08-02 08:34:53 +0000] [2323586] [CRITICAL] WORKER TIMEOUT (pid:2359208)
+[2023-08-02 08:34:53 +0000] [2323586] [CRITICAL] WORKER TIMEOUT (pid:2359212)
+[2023-08-02 08:34:53 +0000] [2359208] [INFO] Worker exiting (pid: 2359208)
+[2023-08-02 08:34:53 +0000] [2359212] [INFO] Worker exiting (pid: 2359212)
+[2023-08-02 08:34:53 +0000] [2323586] [ERROR] Worker (pid:2359208) exited with code 1
+[2023-08-02 08:34:53 +0000] [2323586] [ERROR] Worker (pid:2359208) exited with code 1.
+[2023-08-02 08:34:53 +0000] [2364561] [INFO] Booting worker with pid: 2364561
+[2023-08-02 08:34:53 +0000] [2323586] [ERROR] Worker (pid:2359212) was sent SIGKILL! Perhaps out of memory?
+[2023-08-02 08:34:53 +0000] [2364562] [INFO] Booting worker with pid: 2364562
+[2023-08-02 08:51:10 +0000] [2323586] [CRITICAL] WORKER TIMEOUT (pid:2362042)
+[2023-08-02 08:51:10 +0000] [2323586] [CRITICAL] WORKER TIMEOUT (pid:2364561)
+[2023-08-02 08:51:10 +0000] [2364561] [INFO] Worker exiting (pid: 2364561)
+[2023-08-02 08:51:10 +0000] [2362042] [INFO] Worker exiting (pid: 2362042)
+[2023-08-02 08:51:10 +0000] [2323586] [ERROR] Worker (pid:2362042) exited with code 1
+[2023-08-02 08:51:10 +0000] [2323586] [ERROR] Worker (pid:2362042) exited with code 1.
+[2023-08-02 08:51:10 +0000] [2323586] [ERROR] Worker (pid:2364561) exited with code 1
+[2023-08-02 08:51:10 +0000] [2323586] [ERROR] Worker (pid:2364561) exited with code 1.
+[2023-08-02 08:51:10 +0000] [2389833] [INFO] Booting worker with pid: 2389833
+[2023-08-02 08:51:10 +0000] [2389834] [INFO] Booting worker with pid: 2389834
+[2023-08-02 08:52:24 +0000] [2323586] [CRITICAL] WORKER TIMEOUT (pid:2389833)
+[2023-08-02 08:52:24 +0000] [2323586] [CRITICAL] WORKER TIMEOUT (pid:2389834)
+[2023-08-02 08:52:24 +0000] [2389834] [INFO] Worker exiting (pid: 2389834)
+[2023-08-02 08:52:24 +0000] [2389833] [INFO] Worker exiting (pid: 2389833)
+[2023-08-02 08:52:24 +0000] [2323586] [ERROR] Worker (pid:2389833) exited with code 1
+[2023-08-02 08:52:24 +0000] [2323586] [ERROR] Worker (pid:2389833) exited with code 1.
+[2023-08-02 08:52:24 +0000] [2392385] [INFO] Booting worker with pid: 2392385
+[2023-08-02 08:52:24 +0000] [2323586] [ERROR] Worker (pid:2389834) exited with code 1
+[2023-08-02 08:52:24 +0000] [2323586] [ERROR] Worker (pid:2389834) exited with code 1.
+[2023-08-02 08:52:24 +0000] [2392386] [INFO] Booting worker with pid: 2392386
+[2023-08-02 08:53:53 +0000] [2323586] [CRITICAL] WORKER TIMEOUT (pid:2364562)
+[2023-08-02 08:53:53 +0000] [2323586] [CRITICAL] WORKER TIMEOUT (pid:2392385)
+[2023-08-02 08:53:53 +0000] [2392385] [INFO] Worker exiting (pid: 2392385)
+[2023-08-02 08:53:53 +0000] [2364562] [INFO] Worker exiting (pid: 2364562)
+[2023-08-02 08:53:53 +0000] [2323586] [ERROR] Worker (pid:2392385) exited with code 1
+[2023-08-02 08:53:53 +0000] [2323586] [ERROR] Worker (pid:2392385) exited with code 1.
+[2023-08-02 08:53:53 +0000] [2395421] [INFO] Booting worker with pid: 2395421
+[2023-08-02 08:53:53 +0000] [2323586] [ERROR] Worker (pid:2364562) was sent SIGKILL! Perhaps out of memory?
+[2023-08-02 08:53:53 +0000] [2395430] [INFO] Booting worker with pid: 2395430
+[2023-08-02 08:55:32 +0000] [2323586] [CRITICAL] WORKER TIMEOUT (pid:2392386)
+[2023-08-02 08:55:32 +0000] [2323586] [CRITICAL] WORKER TIMEOUT (pid:2395421)
+[2023-08-02 08:55:32 +0000] [2392386] [INFO] Worker exiting (pid: 2392386)
+[2023-08-02 08:55:32 +0000] [2395421] [INFO] Worker exiting (pid: 2395421)
+[2023-08-02 08:55:33 +0000] [2323586] [ERROR] Worker (pid:2395421) exited with code 1
+[2023-08-02 08:55:33 +0000] [2323586] [ERROR] Worker (pid:2395421) exited with code 1.
+[2023-08-02 08:55:33 +0000] [2323586] [ERROR] Worker (pid:2392386) exited with code 1
+[2023-08-02 08:55:33 +0000] [2323586] [ERROR] Worker (pid:2392386) exited with code 1.
+[2023-08-02 08:55:33 +0000] [2400102] [INFO] Booting worker with pid: 2400102
+[2023-08-02 08:55:33 +0000] [2400104] [INFO] Booting worker with pid: 2400104
+[2023-08-02 08:57:08 +0000] [2403046] [INFO] Starting gunicorn 21.2.0
+[2023-08-02 08:57:08 +0000] [2403046] [INFO] Listening at: http://210.75.240.136:18889 (2403046)
+[2023-08-02 08:57:08 +0000] [2403046] [INFO] Using worker: sync
+[2023-08-02 08:57:08 +0000] [2403048] [INFO] Booting worker with pid: 2403048
+[2023-08-02 08:57:08 +0000] [2403049] [INFO] Booting worker with pid: 2403049
+[2023-08-02 08:57:08 +0000] [2403050] [INFO] Booting worker with pid: 2403050
+[2023-08-02 08:57:08 +0000] [2403051] [INFO] Booting worker with pid: 2403051
+[2023-08-02 08:58:41 +0000] [2403046] [CRITICAL] WORKER TIMEOUT (pid:2403051)
+[2023-08-02 08:58:41 +0000] [2403051] [INFO] Worker exiting (pid: 2403051)
+[2023-08-02 08:58:41 +0000] [2403046] [ERROR] Worker (pid:2403051) exited with code 1
+[2023-08-02 08:58:41 +0000] [2403046] [ERROR] Worker (pid:2403051) exited with code 1.
+[2023-08-02 08:58:41 +0000] [2405615] [INFO] Booting worker with pid: 2405615
+[2023-08-02 08:59:58 +0000] [2403046] [CRITICAL] WORKER TIMEOUT (pid:2405615)
+[2023-08-02 08:59:58 +0000] [2405615] [INFO] Worker exiting (pid: 2405615)
+[2023-08-02 08:59:59 +0000] [2403046] [ERROR] Worker (pid:2405615) exited with code 1
+[2023-08-02 08:59:59 +0000] [2403046] [ERROR] Worker (pid:2405615) exited with code 1.
+[2023-08-02 08:59:59 +0000] [2407527] [INFO] Booting worker with pid: 2407527
+[2023-08-02 09:00:32 +0000] [2403046] [CRITICAL] WORKER TIMEOUT (pid:2407527)
+[2023-08-02 09:00:32 +0000] [2407527] [INFO] Worker exiting (pid: 2407527)
+[2023-08-02 09:00:32 +0000] [2403046] [ERROR] Worker (pid:2407527) exited with code 1
+[2023-08-02 09:00:32 +0000] [2403046] [ERROR] Worker (pid:2407527) exited with code 1.
+[2023-08-02 09:00:32 +0000] [2409562] [INFO] Booting worker with pid: 2409562
+[2023-08-02 09:03:14 +0000] [2403046] [INFO] Handling signal: term
+[2023-08-02 09:03:14 +0000] [2409562] [INFO] Worker exiting (pid: 2409562)
+[2023-08-02 09:03:14 +0000] [2403049] [INFO] Worker exiting (pid: 2403049)
+[2023-08-02 09:03:14 +0000] [2403050] [INFO] Worker exiting (pid: 2403050)
+[2023-08-02 09:03:14 +0000] [2403048] [INFO] Worker exiting (pid: 2403048)
+[2023-08-02 09:03:15 +0000] [2403046] [INFO] Shutting down: Master
+[2023-08-02 09:04:10 +0000] [2323586] [INFO] Handling signal: term
+[2023-08-02 09:04:10 +0000] [2395430] [INFO] Worker exiting (pid: 2395430)
+[2023-08-02 09:04:10 +0000] [2400102] [INFO] Worker exiting (pid: 2400102)
+[2023-08-02 09:04:10 +0000] [2362046] [INFO] Worker exiting (pid: 2362046)
+[2023-08-02 09:04:10 +0000] [2400104] [INFO] Worker exiting (pid: 2400104)
+[2023-08-02 09:04:11 +0000] [2323586] [INFO] Shutting down: Master
+[2023-08-02 09:04:12 +0000] [2416698] [INFO] Starting gunicorn 21.2.0
+[2023-08-02 09:04:12 +0000] [2416698] [INFO] Listening at: http://210.75.240.136:18890 (2416698)
+[2023-08-02 09:04:12 +0000] [2416698] [INFO] Using worker: sync
+[2023-08-02 09:04:12 +0000] [2416703] [INFO] Booting worker with pid: 2416703
+[2023-08-02 09:04:12 +0000] [2416710] [INFO] Booting worker with pid: 2416710
+[2023-08-02 09:04:12 +0000] [2416711] [INFO] Booting worker with pid: 2416711
+[2023-08-02 09:04:12 +0000] [2416712] [INFO] Booting worker with pid: 2416712
+[2023-08-02 09:12:19 +0000] [2416698] [CRITICAL] WORKER TIMEOUT (pid:2416711)
+[2023-08-02 09:12:19 +0000] [2416711] [INFO] Worker exiting (pid: 2416711)
+[2023-08-02 09:12:19 +0000] [2416698] [ERROR] Worker (pid:2416711) exited with code 1
+[2023-08-02 09:12:19 +0000] [2416698] [ERROR] Worker (pid:2416711) exited with code 1.
+[2023-08-02 09:12:19 +0000] [2435722] [INFO] Booting worker with pid: 2435722
+[2023-08-02 09:12:48 +0000] [2416698] [CRITICAL] WORKER TIMEOUT (pid:2416710)
+[2023-08-02 09:12:48 +0000] [2416698] [CRITICAL] WORKER TIMEOUT (pid:2416712)
+[2023-08-02 09:12:48 +0000] [2416710] [INFO] Worker exiting (pid: 2416710)
+[2023-08-02 09:12:48 +0000] [2416712] [INFO] Worker exiting (pid: 2416712)
+[2023-08-02 09:12:49 +0000] [2416698] [ERROR] Worker (pid:2416712) exited with code 1
+[2023-08-02 09:12:49 +0000] [2416698] [ERROR] Worker (pid:2416712) exited with code 1.
+[2023-08-02 09:12:49 +0000] [2436842] [INFO] Booting worker with pid: 2436842
+[2023-08-02 09:12:49 +0000] [2416698] [ERROR] Worker (pid:2416710) was sent SIGKILL! Perhaps out of memory?
+[2023-08-02 09:12:49 +0000] [2436847] [INFO] Booting worker with pid: 2436847
+[2023-08-02 09:13:24 +0000] [2416698] [CRITICAL] WORKER TIMEOUT (pid:2435722)
+[2023-08-02 09:13:24 +0000] [2435722] [INFO] Worker exiting (pid: 2435722)
+[2023-08-02 09:13:24 +0000] [2416698] [ERROR] Worker (pid:2435722) exited with code 1
+[2023-08-02 09:13:24 +0000] [2416698] [ERROR] Worker (pid:2435722) exited with code 1.
+[2023-08-02 09:13:24 +0000] [2438010] [INFO] Booting worker with pid: 2438010
+[2023-08-02 09:14:31 +0000] [2416698] [CRITICAL] WORKER TIMEOUT (pid:2416703)
+[2023-08-02 09:14:31 +0000] [2416698] [CRITICAL] WORKER TIMEOUT (pid:2436842)
+[2023-08-02 09:14:31 +0000] [2436842] [INFO] Worker exiting (pid: 2436842)
+[2023-08-02 09:14:31 +0000] [2416703] [INFO] Worker exiting (pid: 2416703)
+[2023-08-02 09:14:32 +0000] [2416698] [ERROR] Worker (pid:2416703) exited with code 1
+[2023-08-02 09:14:32 +0000] [2416698] [ERROR] Worker (pid:2416703) exited with code 1.
+[2023-08-02 09:14:32 +0000] [2439435] [INFO] Booting worker with pid: 2439435
+[2023-08-02 09:14:32 +0000] [2416698] [ERROR] Worker (pid:2436842) exited with code 1
+[2023-08-02 09:14:32 +0000] [2416698] [ERROR] Worker (pid:2436842) exited with code 1.
+[2023-08-02 09:14:32 +0000] [2439436] [INFO] Booting worker with pid: 2439436
+[2023-08-02 09:16:31 +0000] [2416698] [CRITICAL] WORKER TIMEOUT (pid:2439436)
+[2023-08-02 09:16:31 +0000] [2439436] [INFO] Worker exiting (pid: 2439436)
+[2023-08-02 09:16:31 +0000] [2416698] [ERROR] Worker (pid:2439436) exited with code 1
+[2023-08-02 09:16:31 +0000] [2416698] [ERROR] Worker (pid:2439436) exited with code 1.
+[2023-08-02 09:16:31 +0000] [2443291] [INFO] Booting worker with pid: 2443291
+[2023-08-02 09:17:11 +0000] [2416698] [CRITICAL] WORKER TIMEOUT (pid:2438010)
+[2023-08-02 09:17:11 +0000] [2416698] [CRITICAL] WORKER TIMEOUT (pid:2443291)
+[2023-08-02 09:17:11 +0000] [2438010] [INFO] Worker exiting (pid: 2438010)
+[2023-08-02 09:17:11 +0000] [2443291] [INFO] Worker exiting (pid: 2443291)
+[2023-08-02 09:17:12 +0000] [2416698] [ERROR] Worker (pid:2443291) exited with code 1
+[2023-08-02 09:17:12 +0000] [2416698] [ERROR] Worker (pid:2443291) exited with code 1.
+[2023-08-02 09:17:12 +0000] [2444323] [INFO] Booting worker with pid: 2444323
+[2023-08-02 09:17:12 +0000] [2416698] [ERROR] Worker (pid:2438010) was sent SIGKILL! Perhaps out of memory?
+[2023-08-02 09:17:12 +0000] [2444324] [INFO] Booting worker with pid: 2444324
+[2023-08-02 09:17:32 +0000] [2416698] [INFO] Handling signal: term
+[2023-08-02 09:17:32 +0000] [2444324] [INFO] Worker exiting (pid: 2444324)
+[2023-08-02 09:17:32 +0000] [2436847] [INFO] Worker exiting (pid: 2436847)
+[2023-08-02 09:17:32 +0000] [2439435] [INFO] Worker exiting (pid: 2439435)
+[2023-08-02 09:17:32 +0000] [2444323] [INFO] Worker exiting (pid: 2444323)
+[2023-08-02 09:17:32 +0000] [2416698] [INFO] Shutting down: Master
+[2023-08-02 09:17:35 +0000] [2444951] [INFO] Starting gunicorn 21.2.0
+[2023-08-02 09:17:35 +0000] [2444951] [INFO] Listening at: http://210.75.240.136:18890 (2444951)
+[2023-08-02 09:17:35 +0000] [2444951] [INFO] Using worker: sync
+[2023-08-02 09:17:35 +0000] [2444953] [INFO] Booting worker with pid: 2444953
+[2023-08-02 09:17:35 +0000] [2444954] [INFO] Booting worker with pid: 2444954
+[2023-08-02 09:17:35 +0000] [2444955] [INFO] Booting worker with pid: 2444955
+[2023-08-02 09:17:35 +0000] [2445011] [INFO] Booting worker with pid: 2445011
+[2023-08-02 09:18:44 +0000] [2444951] [CRITICAL] WORKER TIMEOUT (pid:2444954)
+[2023-08-02 09:18:44 +0000] [2444954] [INFO] Worker exiting (pid: 2444954)
+[2023-08-02 09:18:44 +0000] [2444951] [ERROR] Worker (pid:2444954) exited with code 1
+[2023-08-02 09:18:44 +0000] [2444951] [ERROR] Worker (pid:2444954) exited with code 1.
+[2023-08-02 09:18:44 +0000] [2446721] [INFO] Booting worker with pid: 2446721
+[2023-08-02 09:19:22 +0000] [2444951] [CRITICAL] WORKER TIMEOUT (pid:2445011)
+[2023-08-02 09:19:22 +0000] [2444951] [CRITICAL] WORKER TIMEOUT (pid:2446721)
+[2023-08-02 09:19:22 +0000] [2446721] [INFO] Worker exiting (pid: 2446721)
+[2023-08-02 09:19:22 +0000] [2445011] [INFO] Worker exiting (pid: 2445011)
+[2023-08-02 09:19:23 +0000] [2444951] [ERROR] Worker (pid:2445011) exited with code 1
+[2023-08-02 09:19:23 +0000] [2444951] [ERROR] Worker (pid:2445011) exited with code 1.
+[2023-08-02 09:19:23 +0000] [2447553] [INFO] Booting worker with pid: 2447553
+[2023-08-02 09:19:23 +0000] [2444951] [ERROR] Worker (pid:2446721) was sent SIGKILL! Perhaps out of memory?
+[2023-08-02 09:19:23 +0000] [2447554] [INFO] Booting worker with pid: 2447554
+[2023-08-02 09:19:49 +0000] [2444951] [CRITICAL] WORKER TIMEOUT (pid:2444955)
+[2023-08-02 09:19:49 +0000] [2444955] [INFO] Worker exiting (pid: 2444955)
+[2023-08-02 09:19:49 +0000] [2444951] [ERROR] Worker (pid:2444955) exited with code 1
+[2023-08-02 09:19:49 +0000] [2444951] [ERROR] Worker (pid:2444955) exited with code 1.
+[2023-08-02 09:19:49 +0000] [2448112] [INFO] Booting worker with pid: 2448112
+[2023-08-02 09:20:20 +0000] [2444951] [CRITICAL] WORKER TIMEOUT (pid:2447553)
+[2023-08-02 09:20:20 +0000] [2447553] [INFO] Worker exiting (pid: 2447553)
+[2023-08-02 09:20:21 +0000] [2444951] [ERROR] Worker (pid:2447553) exited with code 1
+[2023-08-02 09:20:21 +0000] [2444951] [ERROR] Worker (pid:2447553) exited with code 1.
+[2023-08-02 09:20:21 +0000] [2449903] [INFO] Booting worker with pid: 2449903
+[2023-08-02 09:21:01 +0000] [2444951] [CRITICAL] WORKER TIMEOUT (pid:2449903)
+[2023-08-02 09:21:01 +0000] [2449903] [INFO] Worker exiting (pid: 2449903)
+[2023-08-02 09:21:01 +0000] [2444951] [ERROR] Worker (pid:2449903) exited with code 1
+[2023-08-02 09:21:01 +0000] [2444951] [ERROR] Worker (pid:2449903) exited with code 1.
+[2023-08-02 09:21:01 +0000] [2450683] [INFO] Booting worker with pid: 2450683
+[2023-08-02 09:21:19 +0000] [2444951] [CRITICAL] WORKER TIMEOUT (pid:2447554)
+[2023-08-02 09:21:19 +0000] [2447554] [INFO] Worker exiting (pid: 2447554)
+[2023-08-02 09:21:20 +0000] [2444951] [ERROR] Worker (pid:2447554) exited with code 1
+[2023-08-02 09:21:20 +0000] [2444951] [ERROR] Worker (pid:2447554) exited with code 1.
+[2023-08-02 09:21:20 +0000] [2451173] [INFO] Booting worker with pid: 2451173
+[2023-08-02 09:21:51 +0000] [2444951] [CRITICAL] WORKER TIMEOUT (pid:2448112)
+[2023-08-02 09:21:51 +0000] [2448112] [INFO] Worker exiting (pid: 2448112)
+[2023-08-02 09:21:51 +0000] [2444951] [ERROR] Worker (pid:2448112) exited with code 1
+[2023-08-02 09:21:51 +0000] [2444951] [ERROR] Worker (pid:2448112) exited with code 1.
+[2023-08-02 09:21:51 +0000] [2451771] [INFO] Booting worker with pid: 2451771
+[2023-08-02 09:25:34 +0000] [2444951] [CRITICAL] WORKER TIMEOUT (pid:2444953)
+[2023-08-02 09:25:34 +0000] [2444951] [CRITICAL] WORKER TIMEOUT (pid:2451771)
+[2023-08-02 09:25:34 +0000] [2444953] [INFO] Worker exiting (pid: 2444953)
+[2023-08-02 09:25:34 +0000] [2451771] [INFO] Worker exiting (pid: 2451771)
+[2023-08-02 09:25:35 +0000] [2444951] [ERROR] Worker (pid:2451771) exited with code 1
+[2023-08-02 09:25:35 +0000] [2444951] [ERROR] Worker (pid:2451771) exited with code 1.
+[2023-08-02 09:25:35 +0000] [2458321] [INFO] Booting worker with pid: 2458321
+[2023-08-02 09:25:35 +0000] [2444951] [ERROR] Worker (pid:2444953) was sent SIGKILL! Perhaps out of memory?
+[2023-08-02 09:25:35 +0000] [2458322] [INFO] Booting worker with pid: 2458322
+[2023-08-02 09:27:22 +0000] [2444951] [CRITICAL] WORKER TIMEOUT (pid:2450683)
+[2023-08-02 09:27:22 +0000] [2444951] [CRITICAL] WORKER TIMEOUT (pid:2458322)
+[2023-08-02 09:27:22 +0000] [2458322] [INFO] Worker exiting (pid: 2458322)
+[2023-08-02 09:27:22 +0000] [2450683] [INFO] Worker exiting (pid: 2450683)
+[2023-08-02 09:27:22 +0000] [2444951] [ERROR] Worker (pid:2458322) exited with code 1
+[2023-08-02 09:27:22 +0000] [2444951] [ERROR] Worker (pid:2458322) exited with code 1.
+[2023-08-02 09:27:22 +0000] [2461500] [INFO] Booting worker with pid: 2461500
+[2023-08-02 09:27:22 +0000] [2444951] [ERROR] Worker (pid:2450683) exited with code 1
+[2023-08-02 09:27:22 +0000] [2444951] [ERROR] Worker (pid:2450683) exited with code 1.
+[2023-08-02 09:27:22 +0000] [2461505] [INFO] Booting worker with pid: 2461505
+[2023-08-02 09:28:54 +0000] [2444951] [INFO] Handling signal: term
+[2023-08-02 09:28:54 +0000] [2458321] [INFO] Worker exiting (pid: 2458321)
+[2023-08-02 09:28:54 +0000] [2461505] [INFO] Worker exiting (pid: 2461505)
+[2023-08-02 09:28:54 +0000] [2461500] [INFO] Worker exiting (pid: 2461500)
+[2023-08-02 09:28:54 +0000] [2451173] [INFO] Worker exiting (pid: 2451173)
+[2023-08-02 09:28:55 +0000] [2444951] [INFO] Shutting down: Master
+[2023-08-02 09:28:56 +0000] [2464343] [INFO] Starting gunicorn 21.2.0
+[2023-08-02 09:28:56 +0000] [2464343] [INFO] Listening at: http://210.75.240.136:18890 (2464343)
+[2023-08-02 09:28:56 +0000] [2464343] [INFO] Using worker: sync
+[2023-08-02 09:28:56 +0000] [2464345] [INFO] Booting worker with pid: 2464345
+[2023-08-02 09:28:56 +0000] [2464346] [INFO] Booting worker with pid: 2464346
+[2023-08-02 09:28:56 +0000] [2464347] [INFO] Booting worker with pid: 2464347
+[2023-08-02 09:28:56 +0000] [2464403] [INFO] Booting worker with pid: 2464403
+[2023-08-02 09:30:46 +0000] [2464343] [INFO] Handling signal: term
+[2023-08-02 09:30:46 +0000] [2464347] [INFO] Worker exiting (pid: 2464347)
+[2023-08-02 09:30:46 +0000] [2464403] [INFO] Worker exiting (pid: 2464403)
+[2023-08-02 09:30:46 +0000] [2464345] [INFO] Worker exiting (pid: 2464345)
+[2023-08-02 09:30:46 +0000] [2464346] [INFO] Worker exiting (pid: 2464346)
+[2023-08-02 09:30:46 +0000] [2464343] [INFO] Shutting down: Master
+[2023-08-02 09:30:48 +0000] [2468992] [INFO] Starting gunicorn 21.2.0
+[2023-08-02 09:30:48 +0000] [2468992] [INFO] Listening at: http://210.75.240.136:18890 (2468992)
+[2023-08-02 09:30:48 +0000] [2468992] [INFO] Using worker: sync
+[2023-08-02 09:30:48 +0000] [2468994] [INFO] Booting worker with pid: 2468994
+[2023-08-02 09:30:48 +0000] [2469000] [INFO] Booting worker with pid: 2469000
+[2023-08-02 09:30:48 +0000] [2469056] [INFO] Booting worker with pid: 2469056
+[2023-08-02 09:30:48 +0000] [2469064] [INFO] Booting worker with pid: 2469064
+[2023-08-02 09:33:48 +0000] [2468992] [CRITICAL] WORKER TIMEOUT (pid:2469000)
+[2023-08-02 09:33:48 +0000] [2468992] [CRITICAL] WORKER TIMEOUT (pid:2469056)
+[2023-08-02 09:33:48 +0000] [2469000] [INFO] Worker exiting (pid: 2469000)
+[2023-08-02 09:33:48 +0000] [2469056] [INFO] Worker exiting (pid: 2469056)
+[2023-08-02 09:33:48 +0000] [2468992] [ERROR] Worker (pid:2469000) exited with code 1
+[2023-08-02 09:33:48 +0000] [2468992] [ERROR] Worker (pid:2469000) exited with code 1.
+[2023-08-02 09:33:48 +0000] [2474537] [INFO] Booting worker with pid: 2474537
+[2023-08-02 09:33:48 +0000] [2468992] [ERROR] Worker (pid:2469056) was sent SIGKILL! Perhaps out of memory?
+[2023-08-02 09:33:48 +0000] [2474538] [INFO] Booting worker with pid: 2474538
+[2023-08-02 09:34:48 +0000] [2468992] [CRITICAL] WORKER TIMEOUT (pid:2474537)
+[2023-08-02 09:34:48 +0000] [2474537] [INFO] Worker exiting (pid: 2474537)
+[2023-08-02 09:34:48 +0000] [2468992] [ERROR] Worker (pid:2474537) exited with code 1
+[2023-08-02 09:34:48 +0000] [2468992] [ERROR] Worker (pid:2474537) exited with code 1.
+[2023-08-02 09:34:48 +0000] [2468992] [CRITICAL] WORKER TIMEOUT (pid:2474538)
+[2023-08-02 09:34:48 +0000] [2474538] [INFO] Worker exiting (pid: 2474538)
+[2023-08-02 09:34:48 +0000] [2476010] [INFO] Booting worker with pid: 2476010
+[2023-08-02 09:34:49 +0000] [2468992] [ERROR] Worker (pid:2474538) exited with code 1
+[2023-08-02 09:34:49 +0000] [2468992] [ERROR] Worker (pid:2474538) exited with code 1.
+[2023-08-02 09:34:49 +0000] [2476077] [INFO] Booting worker with pid: 2476077
+[2023-08-02 09:35:48 +0000] [2468992] [CRITICAL] WORKER TIMEOUT (pid:2468994)
+[2023-08-02 09:35:48 +0000] [2468992] [CRITICAL] WORKER TIMEOUT (pid:2476010)
+[2023-08-02 09:35:48 +0000] [2476010] [INFO] Worker exiting (pid: 2476010)
+[2023-08-02 09:35:48 +0000] [2468994] [INFO] Worker exiting (pid: 2468994)
+[2023-08-02 09:35:48 +0000] [2468992] [ERROR] Worker (pid:2468994) exited with code 1
+[2023-08-02 09:35:48 +0000] [2468992] [ERROR] Worker (pid:2468994) exited with code 1.
+[2023-08-02 09:35:48 +0000] [2478528] [INFO] Booting worker with pid: 2478528
+[2023-08-02 09:35:48 +0000] [2468992] [ERROR] Worker (pid:2476010) exited with code 1
+[2023-08-02 09:35:48 +0000] [2468992] [ERROR] Worker (pid:2476010) exited with code 1.
+[2023-08-02 09:35:48 +0000] [2478529] [INFO] Booting worker with pid: 2478529
+[2023-08-02 09:36:48 +0000] [2468992] [CRITICAL] WORKER TIMEOUT (pid:2469064)
+[2023-08-02 09:36:48 +0000] [2468992] [CRITICAL] WORKER TIMEOUT (pid:2478529)
+[2023-08-02 09:36:48 +0000] [2478529] [INFO] Worker exiting (pid: 2478529)
+[2023-08-02 09:36:48 +0000] [2469064] [INFO] Worker exiting (pid: 2469064)
+[2023-08-02 09:36:48 +0000] [2468992] [ERROR] Worker (pid:2469064) exited with code 1
+[2023-08-02 09:36:48 +0000] [2468992] [ERROR] Worker (pid:2469064) exited with code 1.
+[2023-08-02 09:36:48 +0000] [2479926] [INFO] Booting worker with pid: 2479926
+[2023-08-02 09:36:48 +0000] [2468992] [ERROR] Worker (pid:2478529) was sent SIGKILL! Perhaps out of memory?
+[2023-08-02 09:36:48 +0000] [2479941] [INFO] Booting worker with pid: 2479941
+[2023-08-02 09:37:47 +0000] [2468992] [CRITICAL] WORKER TIMEOUT (pid:2476077)
+[2023-08-02 09:37:47 +0000] [2468992] [CRITICAL] WORKER TIMEOUT (pid:2478528)
+[2023-08-02 09:37:47 +0000] [2478528] [INFO] Worker exiting (pid: 2478528)
+[2023-08-02 09:37:47 +0000] [2476077] [INFO] Worker exiting (pid: 2476077)
+[2023-08-02 09:37:48 +0000] [2468992] [ERROR] Worker (pid:2478528) exited with code 1
+[2023-08-02 09:37:48 +0000] [2468992] [ERROR] Worker (pid:2478528) exited with code 1.
+[2023-08-02 09:37:48 +0000] [2481395] [INFO] Booting worker with pid: 2481395
+[2023-08-02 09:37:48 +0000] [2468992] [ERROR] Worker (pid:2476077) was sent SIGKILL! Perhaps out of memory?
+[2023-08-02 09:37:48 +0000] [2481396] [INFO] Booting worker with pid: 2481396
+[2023-08-02 09:51:29 +0000] [2468992] [INFO] Handling signal: term
+[2023-08-02 09:51:29 +0000] [2479941] [INFO] Worker exiting (pid: 2479941)
+[2023-08-02 09:51:29 +0000] [2479926] [INFO] Worker exiting (pid: 2479926)
+[2023-08-02 09:51:29 +0000] [2481396] [INFO] Worker exiting (pid: 2481396)
+[2023-08-02 09:51:29 +0000] [2481395] [INFO] Worker exiting (pid: 2481395)
+[2023-08-02 09:51:29 +0000] [2468992] [INFO] Shutting down: Master
+[2023-08-02 09:51:41 +0000] [2502975] [INFO] Starting gunicorn 21.2.0
+[2023-08-02 09:51:41 +0000] [2502975] [INFO] Listening at: http://210.75.240.136:18890 (2502975)
+[2023-08-02 09:51:41 +0000] [2502975] [INFO] Using worker: sync
+[2023-08-02 09:51:41 +0000] [2502977] [INFO] Booting worker with pid: 2502977
+[2023-08-02 09:51:41 +0000] [2502978] [INFO] Booting worker with pid: 2502978
+[2023-08-02 09:51:41 +0000] [2502983] [INFO] Booting worker with pid: 2502983
+[2023-08-02 09:51:41 +0000] [2503051] [INFO] Booting worker with pid: 2503051
+[2023-08-02 10:15:17 +0000] [2502975] [INFO] Handling signal: term
+[2023-08-02 10:15:17 +0000] [2502977] [INFO] Worker exiting (pid: 2502977)
+[2023-08-02 10:15:17 +0000] [2502983] [INFO] Worker exiting (pid: 2502983)
+[2023-08-02 10:15:17 +0000] [2503051] [INFO] Worker exiting (pid: 2503051)
+[2023-08-02 10:15:17 +0000] [2502978] [INFO] Worker exiting (pid: 2502978)
+[2023-08-02 10:15:18 +0000] [2502975] [INFO] Shutting down: Master
+[2023-08-02 10:15:27 +0000] [2538827] [INFO] Starting gunicorn 21.2.0
+[2023-08-02 10:15:27 +0000] [2538827] [INFO] Listening at: http://210.75.240.136:18890 (2538827)
+[2023-08-02 10:15:27 +0000] [2538827] [INFO] Using worker: sync
+[2023-08-02 10:15:27 +0000] [2538829] [INFO] Booting worker with pid: 2538829
+[2023-08-02 10:15:27 +0000] [2538830] [INFO] Booting worker with pid: 2538830
+[2023-08-02 10:15:27 +0000] [2538886] [INFO] Booting worker with pid: 2538886
+[2023-08-02 10:15:27 +0000] [2538890] [INFO] Booting worker with pid: 2538890
