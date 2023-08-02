@@ -34,6 +34,8 @@ TableQAKit is a unified platform for TableQA (especially in the LLM era). Its ma
 
 
 # 🗃️ Dataset
+According to our taxonomy, we classify the TableQA task into three categories of tasks, as shown in the following figure:
+
 <p align="center">
 <img src="figs/dataset_examples.png" width="512">
 </p>
@@ -42,6 +44,11 @@ TableQAKit is a unified platform for TableQA (especially in the LLM era). Its ma
 <p align="center">
 <img src="figs/table.png" width="512">
 </p>
+
+
+# Folders
+
+
 
 # TableQAEval
 
