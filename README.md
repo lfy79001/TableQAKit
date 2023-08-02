@@ -15,17 +15,22 @@
 
 # TableQAKit: A Comprehensive and Practical Toolkit for Table-based Question Answering
 
-
-
 # 🔥 Updates
 
 - [**2023-8-7**]: We released our [code](https://github.com/lfy79001/TableQAKit) and [PyPI](https://www.baidu.com). Check it out!
 
+# ✨ Features
+TableQAKit is a unified platform for TableQA (especially in the LLM era). Its main features includes:
+- **Comprehensive datasets**: We design a unified data interface to process data and store them in Huggingface datasets.
+- **Powerful methods**: Using our toolkit, you can reproduce most of the SOTA methods for TableQA tasks.
+- **Extensible disign**: You can use the interfaces defined by the toolkit, extend methods and models, and implement your own new models based on your own data.
+- **Equipped with LLM**: TableQAKit supports LLM-based methods, including LLM-prompting methods and LLM-finetuning methods.
+- **Efficient LLM benchmark**: TableQAEval, a benchmark to evaluate the performance of LLM for TableQA. It evaluates LLM's modeling ability of long tables (context) and comprehension capabilities (numerical reasoning, multi-hop reasoning).
+- **Comprehensive Survey**: We are about to release a systematic TableQA Survey, this project is a pre-work.
+
 # 🏴󠁶󠁵󠁭󠁡󠁰󠁿 Overview
 
 
-
-# ✨ Features
 
 
 # 🗃️ Dataset
