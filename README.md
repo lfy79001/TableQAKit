@@ -28,6 +28,28 @@ TableQAKit is a unified platform for TableQA (especially in the LLM era). Its ma
 - **Efficient LLM benchmark**: TableQAEval, a benchmark to evaluate the performance of LLM for TableQA. It evaluates LLM's modeling ability of long tables (context) and comprehension capabilities (numerical reasoning, multi-hop reasoning).
 - **Comprehensive Survey**: We are about to release a systematic TableQA Survey, this project is a pre-work.
 
+
+
+# 🏴󠁶󠁵󠁭󠁡󠁰󠁿 Overview
+
+
+
+
+
+
+# 🗃️ Dataset
+According to our taxonomy, we classify the TableQA task into three categories of tasks, as shown in the following figure:
+
+<p align="center">
+<img src="figs/dataset_examples.png" width="512">
+</p>
+
+
+<p align="center">
+<img src="figs/table.png" width="512">
+</p>
+
+
 # Folder
 The TableQAKit repository is structured as follows:
 
@@ -54,29 +76,6 @@ The TableQAKit repository is structured as follows:
 ├── LICENSE
 └── README.md
 ```
-
-
-# 🏴󠁶󠁵󠁭󠁡󠁰󠁿 Overview
-
-
-
-
-
-
-# 🗃️ Dataset
-According to our taxonomy, we classify the TableQA task into three categories of tasks, as shown in the following figure:
-
-<p align="center">
-<img src="figs/dataset_examples.png" width="512">
-</p>
-
-
-<p align="center">
-<img src="figs/table.png" width="512">
-</p>
-
-
-# Folders
 
 
 
