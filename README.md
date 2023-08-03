@@ -5,7 +5,7 @@
 
 
 [🌐Website](http://210.75.240.136:18888) |
-[📦PyPI](https://www.baidu.com/)
+[📦PyPI](https://www.baidu.com/)  |
 [🤗Huggingface Datasets](https://huggingface.co/TableQAKit)
 
 <!-- [📘Documentation](https://opencompass.readthedocs.io/en/latest/) |
