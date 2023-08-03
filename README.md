@@ -135,7 +135,7 @@ class NewTrainer(RT):
         }
 ```
 
-### TablePTM Reasoner
+### TaLM Reasoner
 
 
 
