@@ -1,11 +1,12 @@
 <div align="center">
-  <img src="figs/tableqakit.png" border="0" width=450px/>
+  <img src="figs/TableQAKit.png" border="0" width="512"/>
   <br />
   <br />
 
 
-[🌐Website](https://www.baidu.com/) |
-[📦PyPI](https://www.baidu.com/)
+[🌐Website](http://210.75.240.136:18888) |
+[📦PyPI](https://www.baidu.com/)  |
+[🤗Huggingface Datasets](https://huggingface.co/TableQAKit)
 
 <!-- [📘Documentation](https://opencompass.readthedocs.io/en/latest/) |
 [🛠️Installation](https://opencompass.readthedocs.io/en/latest/get_started.html#installation) | -->
@@ -13,22 +14,156 @@
 
 </div>
 
-# TableQAKit: A Comprehensive and Practical Toolkit for Table-based Question Answering
-
-
+# TableQAKit: A Toolkit for Table Question Answering
 
 # 🔥 Updates
 
-- [**2023-8-7**]: We released our [code](https://github.com/lfy79001/TableQAKit) and [PyPI](https://www.baidu.com). Check it out!
-
-# 🏴󠁶󠁵󠁭󠁡󠁰󠁿 Overview
-
-
+- [**2023-8-7**]: We released our [code](https://github.com/lfy79001/TableQAKit) [datasets](https://huggingface.co/TableQAKit)and [PyPI Package](https://www.baidu.com). Check it out!
 
 # ✨ Features
+TableQAKit is a unified platform for TableQA (especially in the LLM era). Its main features includes:
+- **Extensible disign**: You can use the interfaces defined by the toolkit, extend methods and models, and implement your own new models based on your own data.
+- **Equipped with LLM**: TableQAKit supports LLM-based methods, including LLM-prompting methods and LLM-finetuning methods.
+- **Comprehensive datasets**: We design a unified data interface to process data and store them in Huggingface datasets.
+- **Powerful methods**: Using our toolkit, you can reproduce most of the SOTA methods for TableQA tasks.
+- **Efficient LLM benchmark**: TableQAEval, a benchmark to evaluate the performance of LLM for TableQA. It evaluates LLM's modeling ability of long tables (context) and comprehension capabilities (numerical reasoning, multi-hop reasoning).
+- **Comprehensive Survey**: We are about to release a systematic TableQA Survey, this project is a pre-work.
+
+
+# ⚙️ Install
+```
+pip install tableqakit
+or
+git clone git@github.com:lfy79001/TableQAKit.git
+pip install -r requirements.txt
+```
+
+
+
+# 🔧 How to use
+
+## Retrieval-then-Read Methods
+
+### Retriever
+
+#### QuickStart
+
+MultiHiertt Dataset as a demonstration
+```
+from typing import Dict, List
+import json
+from retriever import MultiHierttTrainer
+
+
+trainer = MultiHierttTrainer()
+trainer.train()
+
+
+args = get_training_args()
+trainer = Trainer(training_args=args)
+if args.train_path is not None:
+    trainer.train()
+if args.test_path is not None:
+    for pred in trainer.test_iterator():
+        # saving the predctions
+```
+
+#### Train
+```
+python main.py \
+--train_mode row \
+--per_device_train_batch_size 16 \
+--per_device_eval_batch_size 1 \
+--dataloader_pin_memory False \
+--output_dir ./ckpt \
+--train_path ./data/train.json \
+--val_path ./data/val.json \
+--save_steps 1000 \
+--logging_steps 20 \
+--learning_rate 0.00001 \
+--top_n_for_eval 10 \
+```
+
+#### Inference
+```
+python infer.py \
+--train_mode row \
+--dataloader_pin_memory False \
+--output_dir ./ckpt \
+--test_path ./data/test-dev_out.json \
+--ckpt_for_test ./ckpt/epoch3_step53000.pt \
+--top_n_for_test 10 \
+--encoder_path bert-base-uncased/
+```
+
+### Create Trainer for New Dataset
+```
+from retriever import RetrieverTrainer as RT
+
+class NewTrainer(RT):
+    def read_data(self, data_path: str) -> List[Dict]:
+        """
+
+        :param data_path: The path of data
+        :return: List of raw data
+        [
+            data_1,
+            data_2,
+            ……
+        ]
+        """
+        data = json.load(
+            open(data_path, 'r', encoding='utf-8')
+        )
+        return data
+
+    def data_proc(self, instance) -> Dict:
+        """
+
+        :return:
+        {
+            "id": str,
+            "question": str,
+            "rows": list[str],
+            "labels": list[int]
+        }
+        """
+        rows = instance["paragraphs"]
+        labels = [0] * len(instance["paragraphs"])
+        if len(instance["qa"]["text_evidence"]):
+            for text_evidence in instance["qa"]["text_evidence"]:
+                labels[text_evidence] = 1
+        for k, v in instance["table_description"].items():
+            rows.append(v)
+            labels.append(1 if k in instance["qa"]["table_evidence"] else 0)
+        return {
+            "id": instance["uid"],
+            "question": instance["qa"]["question"],
+            "rows": rows,
+            "labels": labels
+        }
+```
+
+### TaLM Reasoner
+
+
+
+## LLM-Finetuning Methods
+
+
+
+
+
+## LLM-Prompting Methods
+
+
+
+
 
 
 # 🗃️ Dataset
+According to our taxonomy, we classify the TableQA task into three categories of tasks, as shown in the following figure:
+
 <p align="center">
 <img src="figs/dataset_examples.png" width="512">
 </p>
@@ -40,18 +175,58 @@
 
 
 
-# 目前思路
-1. 统一数据数据模板
-2. 经典模型各个模块的多种实现
-3. 最新LLM的融合（检索能力，工具使用能力）
-4. 模块化设计便于下游用户针对性的定制
 
-## Flask框架简介
-- cli.py：用于定义 Flask 应用程序的命令行接口（CLI）。在 cli.py 文件中，你可以使用 Flask 的 click 库定义命令行命令和参数，并将它们与 Flask 应用程序的功能关联起来。例如，你可以定义一个命令行命令，用于初始化 Flask 应用程序的数据库或执行其他任务。cli.py 文件通常与 Flask 应用程序的工具集集成在一起，可以方便地使用命令行来管理和维护应用程序。
-- main.py：用于定义 Flask 应用程序的主要入口点。在 main.py 文件中，你可以定义 Flask 应用程序的路由和视图函数，并启动应用程序的服务器。这个文件通常是 Flask 应用程序的主要代码文件，用于实现应用程序的核心功能。
-- config.yaml：用于定义 Flask 应用程序的配置选项。在 config.yaml 文件中，你可以指定 Flask 应用程序的各种配置选项，如数据库连接、调试模式、密钥等。这个文件通常是 Flask 应用程序的配置文件，可以方便地修改和管理应用程序的配置选项。
-- static/：用于存储静态文件，如 CSS、JavaScript、图像等。Flask 应用程序会自动查找 static/ 文件夹，并将其中的静态文件提供给客户端。
-- templates/：用于存储模板文件，如 HTML 文件、Jinja2 模板等。Flask 应用程序会自动查找 templates/ 文件夹，并使用其中的模板文件进行渲染。
+# Folder
+The TableQAKit repository is structured as follows:
+
+```bash
+├── Baselines/ # scripts to generate the prediction files with baseline models
+├── Evaluation/ # evaluation scripts
+├── Leaderboard/ # csv files of results
+├── LEval-data/ # test samples
+│   ├── Exam/ # exact match tasks (like multiple-choice)
+│   │   ├── test_file.jsonl 
+│   │   └── ...
+│   ├── Generation/ # generation tasks
+│   │   ├── test_file.jsonl
+│   │   └── ...
+├── Predictions/ # output of models
+│   ├── exam_eval/trubo-16k-0613
+│   │              ├── <task_name>.pred.jsonl
+│   │              └── ... 
+│   ├── llm_gpt4_eval  
+│   │             ├──<model_name>.pred.jsonl
+│   ├── ...
+├── Tools/ # useful scripts
+├── figs/ # figures
+├── LICENSE
+└── README.md
+```
+
+
+
+# TableQAEval
+
+<p align="center">
+<img src="figs/TableQAEval.png" width="400">
+</p>
+
+TableQAEval is a benchmark to evaluate the performance of LLM for TableQA. It evaluates LLM's modeling ability of long tables (context) and comprehension capabilities (numerical reasoning, multi-hop reasoning).
+
+## Leaderboard
+
+| Model | Parameters | Numerical Reasoning | Multi-hop Reasoning | Structured Reasoning | Total |
+| ---   | ---        | ---                 | ---                 | ---                  | ---   |
+| Turbo-16k-0613 | -     | 32.3               | 40.6 | 43.5 | 38.3 |
+| longchat-7b-16k | 7B | 22.3 | 24.1 | 20.9 | 23.0 |
+| xgen-7b-8k | 7B | 19.5 | 20.4 | 18.7 | 19.6  |
+| mpt-7b-65k | 7B | 17.3 | 16.2 | 18.0 | 17.3 |
+| LLaMA2-7b-chat | 7B | 16.2 | 18.4 | 20.1 | 18.6 |
+| LLaMA2-7b-4k | 7B | 11.5 | 14.2 | 16.3 | 13.5 |
+| LLaMA-7b-2k | 7B | 5.6 | 7.3 | 6.1 | 6.5 |
+
+
+
 
 
 ## QuickStart
@@ -100,27 +275,6 @@ gunicorn -c gunicorn_config.py app:app --daemon
     # test版
     pip install --index-url https://test.pypi.org/simple/ttqakit
 
-## HybridQA数据处理
-首先需要从google drive上下载这个数据
-
-https://drive.google.com/file/d/1MGfxoOIyoUVQEBnFXWf_jVfFiXMifXbu/view?usp=share_link
-
-将数据集解压后放在 TextTableQAKit/modules/ 中，但是挺大的，之后git push的时候数据集得删掉，放到你本地就行
-数据包括 train.json, dev.json, test.json, 还有一个文件夹包括table和passage的实际信息。
-
-这个数据集和multimodalQA不一样，文本是呈现一个“链接”的形式，即文本不是附着在表格旁边，而是可以点击这个表格cell，弹出链接文本（这个感觉较复杂，不用实现），现阶段，就把文本附着在下面就可以。
-
-检索代码 TextTableQAKit/modules/retrieve_hybridqa.py
-
-python retrieve_hybridqa.py 可以直接运行.（没下载BERT所以只能运行dataset部分）
-
-不需要运行全部的代码，主要的数据处理在Dataset的__init__()里面，在里面打断点，看看数据怎么处理的。
-
-train/dev/test 文件里只包含了Table的id，所以需要根据这个id找到这个table对应的json文件。
-
-Table的Json文件里，存储了表格的header和cell
-
-cell的格式是   [ [1], [2]] ，位置1是cell的直接文本，位置2是cell链接的passage的链接，所以目前只需要先把1用好就行。
 
 
 
