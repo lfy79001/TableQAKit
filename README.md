@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="figs/tableqakit.png" border="0" width="512"/>
+  <img src="figs/TableQAKit.png" border="0" width="512"/>
   <br />
   <br />
 
