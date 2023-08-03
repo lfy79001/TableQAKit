@@ -6,6 +6,7 @@
 
 [🌐Website](https://www.baidu.com/) |
 [📦PyPI](https://www.baidu.com/)
+[🤗Huggingface Datasets](https://huggingface.co/TableQAKit)
 
 <!-- [📘Documentation](https://opencompass.readthedocs.io/en/latest/) |
 [🛠️Installation](https://opencompass.readthedocs.io/en/latest/get_started.html#installation) | -->
@@ -162,6 +163,8 @@ According to our taxonomy, we classify the TableQA task into three categories of
 <p align="center">
 <img src="figs/table.png" width="512">
 </p>
+
+
 
 
 # Folder
