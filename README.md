@@ -30,6 +30,15 @@ TableQAKit is a unified platform for TableQA (especially in the LLM era). Its ma
 - **Comprehensive Survey**: We are about to release a systematic TableQA Survey, this project is a pre-work.
 
 
+# ⚙️ Install
+```
+pip install tableqakit
+or
+git clone git@github.com:lfy79001/TableQAKit.git
+pip install -r requirements.txt
+```
+
+
 
 # 🔧 How to use
 

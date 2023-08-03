@@ -44,6 +44,7 @@ function changeModel() {
 
 function changeDefaultQuestionHtml() {
     $('#default-question').html(default_question);
+    $('#tableqa-default-question').html(default_question);
 }
 
 function changeTableHtml() {
@@ -112,19 +113,19 @@ function getData() {
         data: JSON.stringify(dataJson),
         success: (data) => {
             total_examples = data.table_cnt;
-            changeTotalexamples();
             default_result = data.generated_results;
             // changeDefaultResult();
             dataset_info = data.dataset_info;
             default_question = data.table_question;
-            changeDefaultQuestionHtml();
             properties_html = data.properties_html;
-            changePropertiesHtml();
             table_html = data.table_html;
-            changeTableHtml();
             pictures = data.pictures;
-            changePictureHtml();
             text = data.text;
+            changeTotalexamples();
+            changeDefaultQuestionHtml();
+            changePropertiesHtml();
+            changeTableHtml();
+            changePictureHtml();
             changeTextHtml();
             changeDefaultQuestionModelHtml();
 
