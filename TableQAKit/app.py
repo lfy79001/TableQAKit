@@ -26,7 +26,8 @@ import glob
 import shutil
 import logging
 import sys
-
+import traceback
+import pickle
 from loaders import DATASET_CLASSES
 from structs.data import Table, Cell
 from utils import export
@@ -193,7 +194,7 @@ def fetch_custom_table_data():
         properties_name_list = []
         custom_tables = session.get("custom_tables", {})
         if len(custom_tables) != 0 and table_name in custom_tables:
-            table_data = custom_tables[table_name]
+            table_data = pickle.loads(custom_tables[table_name])
             properties_html,table_html = export.table_to_html(table_data, properties_name_list,None,"web")
             data = {
                 "table_html": table_html,
@@ -268,7 +269,8 @@ def upload_custom_table():
         file = request.files['excel_file']  #----此处未验证过----
         # json_file = request.json
         # table_name = json_file.get('table_name')
-        table_name = file.filename
+    
+        table_name, file_extension = os.path.splitext(file.filename)
 
         # file = 'test.xlsx'
         properties = {}
@@ -279,12 +281,18 @@ def upload_custom_table():
         custom_tables = session.get("custom_tables", {})
         if table_name in custom_tables:
             raise Exception("add duplicate names to tables in session")
-        else:
-            df = pd.read_excel(file, dtype=str)
+        else:     
+            if file_extension == '.xls':
+                df = pd.read_excel(file, dtype=str, engine="xlrd")
+            elif file_extension == '.xlsx':
+                df = pd.read_excel(file, dtype=str, engine="openpyxl")
+            else:
+                raise Exception("Unsupported file format. Only .xls and .xlsx are supported.")
+
             headers = df.columns.tolist()
             data = df.values.tolist()
             table_data = prepare_custom_table(headers, data, properties, table_name)
-            custom_tables[table_name] = table_data
+            custom_tables[table_name] = pickle.dumps(table_data)
         session["custom_tables"] = custom_tables
         session.modified = True
         result = {"success" : True}
@@ -395,7 +403,7 @@ def download_custom_table():
 
         custom_tables = session.get("custom_tables", {})
         if len(custom_tables) != 0 and table_name in custom_tables:
-            table_data = custom_tables[table_name]
+            table_data = pickle.loads(custom_tables[table_name])
             return download_table(format, table_data, include_props, f"custom_{table_name}")
         else:
             raise Exception("download non-existent tables in session")

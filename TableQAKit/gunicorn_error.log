@@ -2484,3 +2484,770 @@ Please upgrade numpy to >= 1.20.3 to use this pandas version
 [2023-08-02 11:55:25 +0000] [2689804] [INFO] Booting worker with pid: 2689804
 [2023-08-02 11:55:25 +0000] [2689805] [INFO] Booting worker with pid: 2689805
 [2023-08-02 11:55:25 +0000] [2689811] [INFO] Booting worker with pid: 2689811
+[2023-08-02 12:37:17 +0000] [2689798] [CRITICAL] WORKER TIMEOUT (pid:2689800)
+[2023-08-02 12:37:18 +0000] [2689798] [CRITICAL] WORKER TIMEOUT (pid:2689805)
+[2023-08-02 12:37:18 +0000] [2689805] [INFO] Worker exiting (pid: 2689805)
+[2023-08-02 12:37:18 +0000] [2689800] [INFO] Worker exiting (pid: 2689800)
+[2023-08-02 12:37:18 +0000] [2689798] [ERROR] Worker (pid:2689805) exited with code 1
+[2023-08-02 12:37:18 +0000] [2689798] [ERROR] Worker (pid:2689805) exited with code 1.
+[2023-08-02 12:37:18 +0000] [2753073] [INFO] Booting worker with pid: 2753073
+[2023-08-02 12:37:18 +0000] [2689798] [ERROR] Worker (pid:2689800) was sent SIGKILL! Perhaps out of memory?
+[2023-08-02 12:37:18 +0000] [2753075] [INFO] Booting worker with pid: 2753075
+[2023-08-02 12:38:32 +0000] [2689798] [CRITICAL] WORKER TIMEOUT (pid:2753073)
+[2023-08-02 12:38:32 +0000] [2753073] [INFO] Worker exiting (pid: 2753073)
+[2023-08-02 12:38:32 +0000] [2689798] [ERROR] Worker (pid:2753073) exited with code 1
+[2023-08-02 12:38:32 +0000] [2689798] [ERROR] Worker (pid:2753073) exited with code 1.
+[2023-08-02 12:38:32 +0000] [2754713] [INFO] Booting worker with pid: 2754713
+[2023-08-02 12:38:43 +0000] [2689798] [CRITICAL] WORKER TIMEOUT (pid:2689811)
+[2023-08-02 12:38:43 +0000] [2689811] [INFO] Worker exiting (pid: 2689811)
+[2023-08-02 12:38:44 +0000] [2689798] [ERROR] Worker (pid:2689811) exited with code 1
+[2023-08-02 12:38:44 +0000] [2689798] [ERROR] Worker (pid:2689811) exited with code 1.
+[2023-08-02 12:38:44 +0000] [2754998] [INFO] Booting worker with pid: 2754998
+[2023-08-02 12:46:17 +0000] [2689798] [CRITICAL] WORKER TIMEOUT (pid:2754713)
+[2023-08-02 12:46:17 +0000] [2754713] [INFO] Worker exiting (pid: 2754713)
+[2023-08-02 12:46:17 +0000] [2689798] [ERROR] Worker (pid:2754713) exited with code 1
+[2023-08-02 12:46:17 +0000] [2689798] [ERROR] Worker (pid:2754713) exited with code 1.
+[2023-08-02 12:46:17 +0000] [2767319] [INFO] Booting worker with pid: 2767319
+[2023-08-02 12:47:18 +0000] [2689798] [CRITICAL] WORKER TIMEOUT (pid:2753075)
+[2023-08-02 12:47:18 +0000] [2689798] [CRITICAL] WORKER TIMEOUT (pid:2754998)
+[2023-08-02 12:47:18 +0000] [2753075] [INFO] Worker exiting (pid: 2753075)
+[2023-08-02 12:47:18 +0000] [2754998] [INFO] Worker exiting (pid: 2754998)
+[2023-08-02 12:47:18 +0000] [2689798] [ERROR] Worker (pid:2754998) exited with code 1
+[2023-08-02 12:47:18 +0000] [2689798] [ERROR] Worker (pid:2754998) exited with code 1.
+[2023-08-02 12:47:18 +0000] [2768613] [INFO] Booting worker with pid: 2768613
+[2023-08-02 12:47:18 +0000] [2689798] [ERROR] Worker (pid:2753075) was sent SIGKILL! Perhaps out of memory?
+[2023-08-02 12:47:18 +0000] [2768616] [INFO] Booting worker with pid: 2768616
+[2023-08-02 12:48:18 +0000] [2689798] [CRITICAL] WORKER TIMEOUT (pid:2689804)
+[2023-08-02 12:48:18 +0000] [2689798] [CRITICAL] WORKER TIMEOUT (pid:2767319)
+[2023-08-02 12:48:18 +0000] [2767319] [INFO] Worker exiting (pid: 2767319)
+[2023-08-02 12:48:18 +0000] [2689804] [INFO] Worker exiting (pid: 2689804)
+[2023-08-02 12:48:18 +0000] [2689798] [ERROR] Worker (pid:2767319) exited with code 1
+[2023-08-02 12:48:18 +0000] [2689798] [ERROR] Worker (pid:2767319) exited with code 1.
+[2023-08-02 12:48:18 +0000] [2769914] [INFO] Booting worker with pid: 2769914
+[2023-08-02 12:48:18 +0000] [2689798] [ERROR] Worker (pid:2689804) was sent SIGKILL! Perhaps out of memory?
+[2023-08-02 12:48:18 +0000] [2769915] [INFO] Booting worker with pid: 2769915
+[2023-08-02 12:49:17 +0000] [2689798] [CRITICAL] WORKER TIMEOUT (pid:2768613)
+[2023-08-02 12:49:17 +0000] [2689798] [CRITICAL] WORKER TIMEOUT (pid:2769915)
+[2023-08-02 12:49:17 +0000] [2769915] [INFO] Worker exiting (pid: 2769915)
+[2023-08-02 12:49:17 +0000] [2768613] [INFO] Worker exiting (pid: 2768613)
+[2023-08-02 12:49:18 +0000] [2689798] [ERROR] Worker (pid:2769915) exited with code 1
+[2023-08-02 12:49:18 +0000] [2689798] [ERROR] Worker (pid:2769915) exited with code 1.
+[2023-08-02 12:49:18 +0000] [2771280] [INFO] Booting worker with pid: 2771280
+[2023-08-02 12:49:18 +0000] [2689798] [ERROR] Worker (pid:2768613) was sent SIGKILL! Perhaps out of memory?
+[2023-08-02 12:49:18 +0000] [2771283] [INFO] Booting worker with pid: 2771283
+[2023-08-02 12:50:18 +0000] [2689798] [CRITICAL] WORKER TIMEOUT (pid:2769914)
+[2023-08-02 12:50:18 +0000] [2689798] [CRITICAL] WORKER TIMEOUT (pid:2771283)
+[2023-08-02 12:50:18 +0000] [2769914] [INFO] Worker exiting (pid: 2769914)
+[2023-08-02 12:50:18 +0000] [2771283] [INFO] Worker exiting (pid: 2771283)
+[2023-08-02 12:50:18 +0000] [2689798] [ERROR] Worker (pid:2769914) exited with code 1
+[2023-08-02 12:50:18 +0000] [2689798] [ERROR] Worker (pid:2769914) exited with code 1.
+[2023-08-02 12:50:18 +0000] [2773834] [INFO] Booting worker with pid: 2773834
+[2023-08-02 12:50:18 +0000] [2689798] [ERROR] Worker (pid:2771283) exited with code 1
+[2023-08-02 12:50:18 +0000] [2689798] [ERROR] Worker (pid:2771283) exited with code 1.
+[2023-08-02 12:50:18 +0000] [2773835] [INFO] Booting worker with pid: 2773835
+[2023-08-02 17:05:25 +0000] [2689798] [CRITICAL] WORKER TIMEOUT (pid:2768616)
+[2023-08-02 17:05:25 +0000] [2768616] [INFO] Worker exiting (pid: 2768616)
+[2023-08-02 17:05:25 +0000] [2689798] [ERROR] Worker (pid:2768616) exited with code 1
+[2023-08-02 17:05:25 +0000] [2689798] [ERROR] Worker (pid:2768616) exited with code 1.
+[2023-08-02 17:05:25 +0000] [3086873] [INFO] Booting worker with pid: 3086873
+[2023-08-03 08:18:29 +0000] [2689798] [INFO] Handling signal: term
+[2023-08-03 08:18:29 +0000] [2771280] [INFO] Worker exiting (pid: 2771280)
+[2023-08-03 08:18:29 +0000] [2773834] [INFO] Worker exiting (pid: 2773834)
+[2023-08-03 08:18:29 +0000] [3086873] [INFO] Worker exiting (pid: 3086873)
+[2023-08-03 08:18:29 +0000] [2773835] [INFO] Worker exiting (pid: 2773835)
+[2023-08-03 08:18:30 +0000] [2689798] [INFO] Shutting down: Master
+[2023-08-03 08:18:57 +0000] [65887] [INFO] Starting gunicorn 21.2.0
+[2023-08-03 08:18:57 +0000] [65887] [INFO] Listening at: http://210.75.240.136:18890 (65887)
+[2023-08-03 08:18:57 +0000] [65887] [INFO] Using worker: sync
+[2023-08-03 08:18:57 +0000] [65889] [INFO] Booting worker with pid: 65889
+[2023-08-03 08:18:57 +0000] [65890] [INFO] Booting worker with pid: 65890
+[2023-08-03 08:18:57 +0000] [65894] [INFO] Booting worker with pid: 65894
+[2023-08-03 08:18:57 +0000] [65896] [INFO] Booting worker with pid: 65896
+[2023-08-03 08:23:19 +0000] [65887] [INFO] Handling signal: term
+[2023-08-03 08:23:19 +0000] [65896] [INFO] Worker exiting (pid: 65896)
+[2023-08-03 08:23:19 +0000] [65890] [INFO] Worker exiting (pid: 65890)
+[2023-08-03 08:23:19 +0000] [65889] [INFO] Worker exiting (pid: 65889)
+[2023-08-03 08:23:19 +0000] [65894] [INFO] Worker exiting (pid: 65894)
+[2023-08-03 08:23:19 +0000] [65887] [INFO] Shutting down: Master
+[2023-08-03 08:23:20 +0000] [72385] [INFO] Starting gunicorn 21.2.0
+[2023-08-03 08:23:20 +0000] [72385] [INFO] Listening at: http://210.75.240.136:18890 (72385)
+[2023-08-03 08:23:20 +0000] [72385] [INFO] Using worker: sync
+[2023-08-03 08:23:20 +0000] [72389] [INFO] Booting worker with pid: 72389
+[2023-08-03 08:23:20 +0000] [72393] [INFO] Booting worker with pid: 72393
+[2023-08-03 08:23:20 +0000] [72457] [INFO] Booting worker with pid: 72457
+[2023-08-03 08:23:20 +0000] [72459] [INFO] Booting worker with pid: 72459
+[2023-08-03 08:44:04 +0000] [72385] [INFO] Handling signal: term
+[2023-08-03 08:44:04 +0000] [72389] [INFO] Worker exiting (pid: 72389)
+[2023-08-03 08:44:04 +0000] [72459] [INFO] Worker exiting (pid: 72459)
+[2023-08-03 08:44:04 +0000] [72393] [INFO] Worker exiting (pid: 72393)
+[2023-08-03 08:44:04 +0000] [72457] [INFO] Worker exiting (pid: 72457)
+[2023-08-03 08:44:04 +0000] [72385] [INFO] Shutting down: Master
+[2023-08-03 08:44:05 +0000] [99424] [INFO] Starting gunicorn 21.2.0
+[2023-08-03 08:44:05 +0000] [99424] [INFO] Listening at: http://210.75.240.136:18890 (99424)
+[2023-08-03 08:44:05 +0000] [99424] [INFO] Using worker: sync
+[2023-08-03 08:44:05 +0000] [99426] [INFO] Booting worker with pid: 99426
+[2023-08-03 08:44:05 +0000] [99430] [INFO] Booting worker with pid: 99430
+[2023-08-03 08:44:05 +0000] [99434] [INFO] Booting worker with pid: 99434
+[2023-08-03 08:44:05 +0000] [99435] [INFO] Booting worker with pid: 99435
+[2023-08-03 08:44:42 +0000] [99424] [INFO] Handling signal: term
+[2023-08-03 08:44:42 +0000] [99434] [INFO] Worker exiting (pid: 99434)
+[2023-08-03 08:44:42 +0000] [99426] [INFO] Worker exiting (pid: 99426)
+[2023-08-03 08:44:42 +0000] [99430] [INFO] Worker exiting (pid: 99430)
+[2023-08-03 08:44:42 +0000] [99435] [INFO] Worker exiting (pid: 99435)
+[2023-08-03 08:44:42 +0000] [99424] [INFO] Shutting down: Master
+[2023-08-03 08:44:42 +0000] [100234] [INFO] Starting gunicorn 21.2.0
+[2023-08-03 08:44:42 +0000] [100234] [INFO] Listening at: http://210.75.240.136:18890 (100234)
+[2023-08-03 08:44:42 +0000] [100234] [INFO] Using worker: sync
+[2023-08-03 08:44:42 +0000] [100236] [INFO] Booting worker with pid: 100236
+[2023-08-03 08:44:42 +0000] [100237] [INFO] Booting worker with pid: 100237
+[2023-08-03 08:44:43 +0000] [100238] [INFO] Booting worker with pid: 100238
+[2023-08-03 08:44:43 +0000] [100294] [INFO] Booting worker with pid: 100294
+[2023-08-03 08:50:14 +0000] [100234] [INFO] Handling signal: term
+[2023-08-03 08:50:14 +0000] [100238] [INFO] Worker exiting (pid: 100238)
+[2023-08-03 08:50:14 +0000] [100294] [INFO] Worker exiting (pid: 100294)
+[2023-08-03 08:50:14 +0000] [100236] [INFO] Worker exiting (pid: 100236)
+[2023-08-03 08:50:14 +0000] [100237] [INFO] Worker exiting (pid: 100237)
+[2023-08-03 08:50:14 +0000] [100234] [INFO] Shutting down: Master
+[2023-08-03 08:50:15 +0000] [109908] [INFO] Starting gunicorn 21.2.0
+[2023-08-03 08:50:15 +0000] [109908] [INFO] Listening at: http://210.75.240.136:18890 (109908)
+[2023-08-03 08:50:15 +0000] [109908] [INFO] Using worker: sync
+[2023-08-03 08:50:15 +0000] [109910] [INFO] Booting worker with pid: 109910
+[2023-08-03 08:50:15 +0000] [109911] [INFO] Booting worker with pid: 109911
+[2023-08-03 08:50:15 +0000] [109912] [INFO] Booting worker with pid: 109912
+[2023-08-03 08:50:15 +0000] [109913] [INFO] Booting worker with pid: 109913
+[2023-08-03 08:50:48 +0000] [109908] [INFO] Handling signal: term
+[2023-08-03 08:50:48 +0000] [109913] [INFO] Worker exiting (pid: 109913)
+[2023-08-03 08:50:48 +0000] [109911] [INFO] Worker exiting (pid: 109911)
+[2023-08-03 08:50:48 +0000] [109910] [INFO] Worker exiting (pid: 109910)
+[2023-08-03 08:50:48 +0000] [109912] [INFO] Worker exiting (pid: 109912)
+[2023-08-03 08:50:49 +0000] [109908] [INFO] Shutting down: Master
+[2023-08-03 08:50:53 +0000] [110995] [INFO] Starting gunicorn 21.2.0
+[2023-08-03 08:50:53 +0000] [110995] [INFO] Listening at: http://210.75.240.136:18890 (110995)
+[2023-08-03 08:50:53 +0000] [110995] [INFO] Using worker: sync
+[2023-08-03 08:50:53 +0000] [110997] [INFO] Booting worker with pid: 110997
+[2023-08-03 08:50:53 +0000] [110998] [INFO] Booting worker with pid: 110998
+[2023-08-03 08:50:53 +0000] [110999] [INFO] Booting worker with pid: 110999
+[2023-08-03 08:50:53 +0000] [111000] [INFO] Booting worker with pid: 111000
+[2023-08-03 08:51:15 +0000] [110999] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 08:51:15 +0000] [110999] [INFO] Worker exiting (pid: 110999)
+[2023-08-03 08:51:15 +0000] [110998] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 08:51:15 +0000] [110998] [INFO] Worker exiting (pid: 110998)
+[2023-08-03 08:51:15 +0000] [111671] [INFO] Booting worker with pid: 111671
+[2023-08-03 08:51:15 +0000] [111671] [ERROR] unexpected EOF while parsing (app.py, line 498)
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py", line 498
+    #     app.run(host = "210.75.240.136", port = 18888)
+                                                       ^
+SyntaxError: unexpected EOF while parsing
+[2023-08-03 08:51:15 +0000] [111000] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 08:51:15 +0000] [111000] [INFO] Worker exiting (pid: 111000)
+[2023-08-03 08:51:15 +0000] [111689] [INFO] Booting worker with pid: 111689
+[2023-08-03 08:51:15 +0000] [111689] [ERROR] unexpected EOF while parsing (app.py, line 498)
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py", line 498
+    #     app.run(host = "210.75.240.136", port = 18888)
+                                                       ^
+SyntaxError: unexpected EOF while parsing
+[2023-08-03 08:51:16 +0000] [111691] [INFO] Booting worker with pid: 111691
+[2023-08-03 08:51:16 +0000] [111691] [ERROR] unexpected EOF while parsing (app.py, line 498)
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py", line 498
+    #     app.run(host = "210.75.240.136", port = 18888)
+                                                       ^
+SyntaxError: unexpected EOF while parsing
+[2023-08-03 08:51:16 +0000] [110997] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 08:51:16 +0000] [110997] [INFO] Worker exiting (pid: 110997)
+[2023-08-03 08:51:16 +0000] [111709] [INFO] Booting worker with pid: 111709
+[2023-08-03 08:51:16 +0000] [111709] [ERROR] unexpected EOF while parsing (app.py, line 498)
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py", line 498
+    #     app.run(host = "210.75.240.136", port = 18888)
+                                                       ^
+SyntaxError: unexpected EOF while parsing
+[2023-08-03 08:51:21 +0000] [111689] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 08:51:21 +0000] [111689] [INFO] Worker exiting (pid: 111689)
+[2023-08-03 08:51:22 +0000] [111818] [INFO] Booting worker with pid: 111818
+[2023-08-03 08:51:22 +0000] [111691] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 08:51:22 +0000] [111691] [INFO] Worker exiting (pid: 111691)
+[2023-08-03 08:51:22 +0000] [111831] [INFO] Booting worker with pid: 111831
+[2023-08-03 08:51:22 +0000] [111709] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 08:51:22 +0000] [111709] [INFO] Worker exiting (pid: 111709)
+[2023-08-03 08:51:22 +0000] [111952] [INFO] Booting worker with pid: 111952
+[2023-08-03 08:51:22 +0000] [111671] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 08:51:22 +0000] [111671] [INFO] Worker exiting (pid: 111671)
+[2023-08-03 08:51:22 +0000] [111954] [INFO] Booting worker with pid: 111954
+[2023-08-03 08:57:43 +0000] [111954] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 08:57:43 +0000] [111954] [INFO] Worker exiting (pid: 111954)
+[2023-08-03 08:57:43 +0000] [111818] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 08:57:43 +0000] [111818] [INFO] Worker exiting (pid: 111818)
+[2023-08-03 08:57:43 +0000] [111831] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 08:57:43 +0000] [111831] [INFO] Worker exiting (pid: 111831)
+[2023-08-03 08:57:43 +0000] [124779] [INFO] Booting worker with pid: 124779
+[2023-08-03 08:57:44 +0000] [124835] [INFO] Booting worker with pid: 124835
+[2023-08-03 08:57:44 +0000] [124839] [INFO] Booting worker with pid: 124839
+[2023-08-03 08:57:44 +0000] [111952] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 08:57:44 +0000] [111952] [INFO] Worker exiting (pid: 111952)
+[2023-08-03 08:57:44 +0000] [124970] [INFO] Booting worker with pid: 124970
+[2023-08-03 09:01:03 +0000] [124779] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:01:03 +0000] [124779] [INFO] Worker exiting (pid: 124779)
+[2023-08-03 09:01:04 +0000] [124835] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:01:04 +0000] [124835] [INFO] Worker exiting (pid: 124835)
+[2023-08-03 09:01:04 +0000] [124839] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:01:04 +0000] [124839] [INFO] Worker exiting (pid: 124839)
+[2023-08-03 09:01:04 +0000] [133546] [INFO] Booting worker with pid: 133546
+[2023-08-03 09:01:04 +0000] [133576] [INFO] Booting worker with pid: 133576
+[2023-08-03 09:01:04 +0000] [133606] [INFO] Booting worker with pid: 133606
+[2023-08-03 09:01:04 +0000] [124970] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:01:04 +0000] [124970] [INFO] Worker exiting (pid: 124970)
+[2023-08-03 09:01:05 +0000] [133727] [INFO] Booting worker with pid: 133727
+[2023-08-03 09:02:09 +0000] [133606] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:02:09 +0000] [133606] [INFO] Worker exiting (pid: 133606)
+[2023-08-03 09:02:09 +0000] [133576] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:02:09 +0000] [133576] [INFO] Worker exiting (pid: 133576)
+[2023-08-03 09:02:09 +0000] [135362] [INFO] Booting worker with pid: 135362
+[2023-08-03 09:02:10 +0000] [135367] [INFO] Booting worker with pid: 135367
+[2023-08-03 09:02:10 +0000] [133727] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:02:10 +0000] [133727] [INFO] Worker exiting (pid: 133727)
+[2023-08-03 09:02:10 +0000] [135498] [INFO] Booting worker with pid: 135498
+[2023-08-03 09:02:10 +0000] [133546] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:02:10 +0000] [133546] [INFO] Worker exiting (pid: 133546)
+[2023-08-03 09:02:11 +0000] [135578] [INFO] Booting worker with pid: 135578
+[2023-08-03 09:02:27 +0000] [135578] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:02:27 +0000] [135578] [INFO] Worker exiting (pid: 135578)
+[2023-08-03 09:02:27 +0000] [135362] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:02:27 +0000] [135362] [INFO] Worker exiting (pid: 135362)
+[2023-08-03 09:02:27 +0000] [135998] [INFO] Booting worker with pid: 135998
+[2023-08-03 09:02:27 +0000] [135367] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:02:27 +0000] [135367] [INFO] Worker exiting (pid: 135367)
+[2023-08-03 09:02:28 +0000] [136054] [INFO] Booting worker with pid: 136054
+[2023-08-03 09:02:28 +0000] [136055] [INFO] Booting worker with pid: 136055
+[2023-08-03 09:02:28 +0000] [135498] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:02:28 +0000] [135498] [INFO] Worker exiting (pid: 135498)
+[2023-08-03 09:02:28 +0000] [136170] [INFO] Booting worker with pid: 136170
+[2023-08-03 09:05:14 +0000] [135998] [INFO] Parent changed, shutting down: <Worker 135998>
+[2023-08-03 09:05:14 +0000] [135998] [INFO] Worker exiting (pid: 135998)
+[2023-08-03 09:05:14 +0000] [136054] [INFO] Parent changed, shutting down: <Worker 136054>
+[2023-08-03 09:05:14 +0000] [136054] [INFO] Worker exiting (pid: 136054)
+[2023-08-03 09:05:14 +0000] [136055] [INFO] Parent changed, shutting down: <Worker 136055>
+[2023-08-03 09:05:14 +0000] [136055] [INFO] Worker exiting (pid: 136055)
+[2023-08-03 09:05:15 +0000] [136170] [INFO] Parent changed, shutting down: <Worker 136170>
+[2023-08-03 09:05:15 +0000] [136170] [INFO] Worker exiting (pid: 136170)
+[2023-08-03 09:06:12 +0000] [143486] [INFO] Starting gunicorn 21.2.0
+[2023-08-03 09:06:12 +0000] [143486] [INFO] Listening at: http://210.75.240.136:18890 (143486)
+[2023-08-03 09:06:12 +0000] [143486] [INFO] Using worker: sync
+[2023-08-03 09:06:12 +0000] [143488] [INFO] Booting worker with pid: 143488
+[2023-08-03 09:06:12 +0000] [143490] [INFO] Booting worker with pid: 143490
+[2023-08-03 09:06:12 +0000] [143546] [INFO] Booting worker with pid: 143546
+[2023-08-03 09:06:12 +0000] [143552] [INFO] Booting worker with pid: 143552
+[2023-08-03 09:26:32 +0000] [143490] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/structs/data.py modified
+[2023-08-03 09:26:32 +0000] [143490] [INFO] Worker exiting (pid: 143490)
+[2023-08-03 09:26:32 +0000] [143552] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/structs/data.py modified
+[2023-08-03 09:26:32 +0000] [143552] [INFO] Worker exiting (pid: 143552)
+[2023-08-03 09:26:32 +0000] [143546] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/structs/data.py modified
+[2023-08-03 09:26:32 +0000] [143546] [INFO] Worker exiting (pid: 143546)
+[2023-08-03 09:26:32 +0000] [143488] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/structs/data.py modified
+[2023-08-03 09:26:32 +0000] [143488] [INFO] Worker exiting (pid: 143488)
+[2023-08-03 09:26:32 +0000] [182335] [INFO] Booting worker with pid: 182335
+[2023-08-03 09:26:32 +0000] [182341] [INFO] Booting worker with pid: 182341
+[2023-08-03 09:26:32 +0000] [182342] [INFO] Booting worker with pid: 182342
+[2023-08-03 09:26:32 +0000] [182398] [INFO] Booting worker with pid: 182398
+[2023-08-03 09:26:37 +0000] [182341] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/structs/data.py modified
+[2023-08-03 09:26:37 +0000] [182341] [INFO] Worker exiting (pid: 182341)
+[2023-08-03 09:26:37 +0000] [182335] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/structs/data.py modified
+[2023-08-03 09:26:37 +0000] [182335] [INFO] Worker exiting (pid: 182335)
+[2023-08-03 09:26:37 +0000] [182398] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/structs/data.py modified
+[2023-08-03 09:26:37 +0000] [182398] [INFO] Worker exiting (pid: 182398)
+[2023-08-03 09:26:37 +0000] [182342] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/structs/data.py modified
+[2023-08-03 09:26:37 +0000] [182342] [INFO] Worker exiting (pid: 182342)
+[2023-08-03 09:26:37 +0000] [182635] [INFO] Booting worker with pid: 182635
+[2023-08-03 09:26:37 +0000] [182641] [INFO] Booting worker with pid: 182641
+[2023-08-03 09:26:37 +0000] [182642] [INFO] Booting worker with pid: 182642
+[2023-08-03 09:26:37 +0000] [182698] [INFO] Booting worker with pid: 182698
+[2023-08-03 09:26:43 +0000] [182641] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:26:43 +0000] [182641] [INFO] Worker exiting (pid: 182641)
+[2023-08-03 09:26:43 +0000] [182635] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:26:43 +0000] [182635] [INFO] Worker exiting (pid: 182635)
+[2023-08-03 09:26:43 +0000] [182642] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:26:43 +0000] [182642] [INFO] Worker exiting (pid: 182642)
+[2023-08-03 09:26:43 +0000] [182698] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:26:43 +0000] [182698] [INFO] Worker exiting (pid: 182698)
+[2023-08-03 09:26:43 +0000] [182962] [INFO] Booting worker with pid: 182962
+[2023-08-03 09:26:43 +0000] [182964] [INFO] Booting worker with pid: 182964
+[2023-08-03 09:26:43 +0000] [182965] [INFO] Booting worker with pid: 182965
+[2023-08-03 09:26:43 +0000] [183025] [INFO] Booting worker with pid: 183025
+[2023-08-03 09:28:27 +0000] [182962] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:28:27 +0000] [182962] [INFO] Worker exiting (pid: 182962)
+[2023-08-03 09:28:27 +0000] [183025] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:28:27 +0000] [183025] [INFO] Worker exiting (pid: 183025)
+[2023-08-03 09:28:27 +0000] [182964] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:28:27 +0000] [182964] [INFO] Worker exiting (pid: 182964)
+[2023-08-03 09:28:27 +0000] [182965] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:28:27 +0000] [182965] [INFO] Worker exiting (pid: 182965)
+[2023-08-03 09:28:27 +0000] [185184] [INFO] Booting worker with pid: 185184
+[2023-08-03 09:28:27 +0000] [185184] [ERROR] invalid syntax (app.py, line 198)
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py", line 198
+    properties_html,table_html = export.table_to_html(table_data, properties_name_list,None,"web")
+    ^
+SyntaxError: invalid syntax
+[2023-08-03 09:28:27 +0000] [185192] [INFO] Booting worker with pid: 185192
+[2023-08-03 09:28:27 +0000] [185192] [ERROR] invalid syntax (app.py, line 198)
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py", line 198
+    properties_html,table_html = export.table_to_html(table_data, properties_name_list,None,"web")
+    ^
+SyntaxError: invalid syntax
+[2023-08-03 09:28:27 +0000] [185201] [INFO] Booting worker with pid: 185201
+[2023-08-03 09:28:27 +0000] [185201] [ERROR] invalid syntax (app.py, line 198)
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py", line 198
+    properties_html,table_html = export.table_to_html(table_data, properties_name_list,None,"web")
+    ^
+SyntaxError: invalid syntax
+[2023-08-03 09:28:27 +0000] [185204] [INFO] Booting worker with pid: 185204
+[2023-08-03 09:28:27 +0000] [185204] [ERROR] invalid syntax (app.py, line 198)
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py", line 198
+    properties_html,table_html = export.table_to_html(table_data, properties_name_list,None,"web")
+    ^
+SyntaxError: invalid syntax
+[2023-08-03 09:28:29 +0000] [185184] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:28:29 +0000] [185184] [INFO] Worker exiting (pid: 185184)
+[2023-08-03 09:28:29 +0000] [185219] [INFO] Booting worker with pid: 185219
+[2023-08-03 09:28:29 +0000] [185192] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:28:29 +0000] [185192] [INFO] Worker exiting (pid: 185192)
+[2023-08-03 09:28:29 +0000] [185220] [INFO] Booting worker with pid: 185220
+[2023-08-03 09:28:29 +0000] [185201] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:28:29 +0000] [185201] [INFO] Worker exiting (pid: 185201)
+[2023-08-03 09:28:29 +0000] [185204] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:28:29 +0000] [185204] [INFO] Worker exiting (pid: 185204)
+[2023-08-03 09:28:29 +0000] [185280] [INFO] Booting worker with pid: 185280
+[2023-08-03 09:28:29 +0000] [185342] [INFO] Booting worker with pid: 185342
+[2023-08-03 09:31:01 +0000] [185219] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:31:01 +0000] [185219] [INFO] Worker exiting (pid: 185219)
+[2023-08-03 09:31:01 +0000] [185220] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:31:01 +0000] [185220] [INFO] Worker exiting (pid: 185220)
+[2023-08-03 09:31:01 +0000] [185342] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:31:01 +0000] [185342] [INFO] Worker exiting (pid: 185342)
+[2023-08-03 09:31:01 +0000] [185280] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:31:01 +0000] [185280] [INFO] Worker exiting (pid: 185280)
+[2023-08-03 09:31:01 +0000] [189911] [INFO] Booting worker with pid: 189911
+[2023-08-03 09:31:01 +0000] [189911] [ERROR] invalid syntax (app.py, line 296)
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py", line 296
+    session["custom_tables"] = custom_tables
+    ^
+SyntaxError: invalid syntax
+[2023-08-03 09:31:01 +0000] [189916] [INFO] Booting worker with pid: 189916
+[2023-08-03 09:31:01 +0000] [189916] [ERROR] invalid syntax (app.py, line 296)
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py", line 296
+    session["custom_tables"] = custom_tables
+    ^
+SyntaxError: invalid syntax
+[2023-08-03 09:31:01 +0000] [189919] [INFO] Booting worker with pid: 189919
+[2023-08-03 09:31:01 +0000] [189919] [ERROR] invalid syntax (app.py, line 296)
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py", line 296
+    session["custom_tables"] = custom_tables
+    ^
+SyntaxError: invalid syntax
+[2023-08-03 09:31:01 +0000] [189921] [INFO] Booting worker with pid: 189921
+[2023-08-03 09:31:01 +0000] [189921] [ERROR] invalid syntax (app.py, line 296)
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py", line 296
+    session["custom_tables"] = custom_tables
+    ^
+SyntaxError: invalid syntax
+[2023-08-03 09:31:03 +0000] [189911] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:31:03 +0000] [189911] [INFO] Worker exiting (pid: 189911)
+[2023-08-03 09:31:03 +0000] [189971] [INFO] Booting worker with pid: 189971
+[2023-08-03 09:31:03 +0000] [189916] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:31:03 +0000] [189916] [INFO] Worker exiting (pid: 189916)
+[2023-08-03 09:31:03 +0000] [190031] [INFO] Booting worker with pid: 190031
+[2023-08-03 09:31:03 +0000] [189919] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:31:03 +0000] [189919] [INFO] Worker exiting (pid: 189919)
+[2023-08-03 09:31:03 +0000] [189921] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:31:03 +0000] [189921] [INFO] Worker exiting (pid: 189921)
+[2023-08-03 09:31:03 +0000] [190038] [INFO] Booting worker with pid: 190038
+[2023-08-03 09:31:03 +0000] [190039] [INFO] Booting worker with pid: 190039
+[2023-08-03 09:32:03 +0000] [189971] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:32:03 +0000] [189971] [INFO] Worker exiting (pid: 189971)
+[2023-08-03 09:32:03 +0000] [190038] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:32:03 +0000] [190038] [INFO] Worker exiting (pid: 190038)
+[2023-08-03 09:32:03 +0000] [190031] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:32:03 +0000] [190031] [INFO] Worker exiting (pid: 190031)
+[2023-08-03 09:32:03 +0000] [190039] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:32:03 +0000] [190039] [INFO] Worker exiting (pid: 190039)
+[2023-08-03 09:32:03 +0000] [191309] [INFO] Booting worker with pid: 191309
+[2023-08-03 09:32:03 +0000] [191309] [ERROR] invalid syntax (app.py, line 407)
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py", line 407
+    return download_table(format, table_data, include_props, f"custom_{table_name}")
+    ^
+SyntaxError: invalid syntax
+[2023-08-03 09:32:03 +0000] [191311] [INFO] Booting worker with pid: 191311
+[2023-08-03 09:32:03 +0000] [191311] [ERROR] invalid syntax (app.py, line 407)
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py", line 407
+    return download_table(format, table_data, include_props, f"custom_{table_name}")
+    ^
+SyntaxError: invalid syntax
+[2023-08-03 09:32:04 +0000] [191313] [INFO] Booting worker with pid: 191313
+[2023-08-03 09:32:04 +0000] [191313] [ERROR] invalid syntax (app.py, line 407)
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py", line 407
+    return download_table(format, table_data, include_props, f"custom_{table_name}")
+    ^
+SyntaxError: invalid syntax
+[2023-08-03 09:32:04 +0000] [191320] [INFO] Booting worker with pid: 191320
+[2023-08-03 09:32:04 +0000] [191320] [ERROR] invalid syntax (app.py, line 407)
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 839, in exec_module
+  File "<frozen importlib._bootstrap_external>", line 976, in get_code
+  File "<frozen importlib._bootstrap_external>", line 906, in source_to_code
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py", line 407
+    return download_table(format, table_data, include_props, f"custom_{table_name}")
+    ^
+SyntaxError: invalid syntax
+[2023-08-03 09:32:05 +0000] [191309] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:32:05 +0000] [191309] [INFO] Worker exiting (pid: 191309)
+[2023-08-03 09:32:05 +0000] [191347] [INFO] Booting worker with pid: 191347
+[2023-08-03 09:32:05 +0000] [191311] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:32:05 +0000] [191311] [INFO] Worker exiting (pid: 191311)
+[2023-08-03 09:32:06 +0000] [191354] [INFO] Booting worker with pid: 191354
+[2023-08-03 09:32:06 +0000] [191313] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:32:06 +0000] [191313] [INFO] Worker exiting (pid: 191313)
+[2023-08-03 09:32:06 +0000] [191355] [INFO] Booting worker with pid: 191355
+[2023-08-03 09:32:06 +0000] [191320] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:32:06 +0000] [191320] [INFO] Worker exiting (pid: 191320)
+[2023-08-03 09:32:06 +0000] [191411] [INFO] Booting worker with pid: 191411
+[2023-08-03 09:32:20 +0000] [191347] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:32:20 +0000] [191347] [INFO] Worker exiting (pid: 191347)
+[2023-08-03 09:32:20 +0000] [191354] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:32:20 +0000] [191354] [INFO] Worker exiting (pid: 191354)
+[2023-08-03 09:32:20 +0000] [191411] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:32:20 +0000] [191411] [INFO] Worker exiting (pid: 191411)
+[2023-08-03 09:32:20 +0000] [191355] [INFO] Worker reloading: /home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py modified
+[2023-08-03 09:32:20 +0000] [191355] [INFO] Worker exiting (pid: 191355)
+[2023-08-03 09:32:20 +0000] [191840] [INFO] Booting worker with pid: 191840
+[2023-08-03 09:32:21 +0000] [191848] [INFO] Booting worker with pid: 191848
+[2023-08-03 09:32:21 +0000] [191904] [INFO] Booting worker with pid: 191904
+[2023-08-03 09:32:21 +0000] [191905] [INFO] Booting worker with pid: 191905
