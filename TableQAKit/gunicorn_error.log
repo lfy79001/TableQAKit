@@ -3251,3 +3251,29 @@ SyntaxError: invalid syntax
 [2023-08-03 09:32:21 +0000] [191848] [INFO] Booting worker with pid: 191848
 [2023-08-03 09:32:21 +0000] [191904] [INFO] Booting worker with pid: 191904
 [2023-08-03 09:32:21 +0000] [191905] [INFO] Booting worker with pid: 191905
+[2023-08-03 13:27:51 +0000] [143486] [INFO] Handling signal: term
+[2023-08-03 13:27:51 +0000] [191905] [INFO] Worker exiting (pid: 191905)
+[2023-08-03 13:27:51 +0000] [191840] [INFO] Worker exiting (pid: 191840)
+[2023-08-03 13:27:51 +0000] [191848] [INFO] Worker exiting (pid: 191848)
+[2023-08-03 13:27:51 +0000] [191904] [INFO] Worker exiting (pid: 191904)
+[2023-08-03 13:27:52 +0000] [143486] [INFO] Shutting down: Master
+[2023-08-03 13:28:21 +0000] [590648] [INFO] Starting gunicorn 21.2.0
+[2023-08-03 13:28:21 +0000] [590648] [INFO] Listening at: http://210.75.240.136:18890 (590648)
+[2023-08-03 13:28:21 +0000] [590648] [INFO] Using worker: sync
+[2023-08-03 13:28:21 +0000] [590650] [INFO] Booting worker with pid: 590650
+[2023-08-03 13:28:21 +0000] [590659] [INFO] Booting worker with pid: 590659
+[2023-08-03 13:28:21 +0000] [590664] [INFO] Booting worker with pid: 590664
+[2023-08-03 13:28:21 +0000] [590727] [INFO] Booting worker with pid: 590727
+[2023-08-03 13:30:01 +0000] [590648] [INFO] Handling signal: term
+[2023-08-03 13:30:01 +0000] [590664] [INFO] Worker exiting (pid: 590664)
+[2023-08-03 13:30:01 +0000] [590650] [INFO] Worker exiting (pid: 590650)
+[2023-08-03 13:30:01 +0000] [590659] [INFO] Worker exiting (pid: 590659)
+[2023-08-03 13:30:01 +0000] [590727] [INFO] Worker exiting (pid: 590727)
+[2023-08-03 13:30:01 +0000] [590648] [INFO] Shutting down: Master
+[2023-08-03 13:30:02 +0000] [594248] [INFO] Starting gunicorn 21.2.0
+[2023-08-03 13:30:02 +0000] [594248] [INFO] Listening at: http://210.75.240.136:18890 (594248)
+[2023-08-03 13:30:02 +0000] [594248] [INFO] Using worker: sync
+[2023-08-03 13:30:02 +0000] [594274] [INFO] Booting worker with pid: 594274
+[2023-08-03 13:30:02 +0000] [594317] [INFO] Booting worker with pid: 594317
+[2023-08-03 13:30:02 +0000] [594444] [INFO] Booting worker with pid: 594444
+[2023-08-03 13:30:02 +0000] [594487] [INFO] Booting worker with pid: 594487
