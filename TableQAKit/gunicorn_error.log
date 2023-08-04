@@ -7132,3 +7132,16 @@ NameError: name 'fetc' is not defined
 [2023-08-04 11:54:58 +0000] [2501094] [INFO] Booting worker with pid: 2501094
 [2023-08-04 11:54:58 +0000] [2501106] [INFO] Booting worker with pid: 2501106
 [2023-08-04 11:54:58 +0000] [2501108] [INFO] Booting worker with pid: 2501108
+[2023-08-04 14:11:02 +0000] [2501086] [INFO] Handling signal: term
+[2023-08-04 14:11:02 +0000] [2501090] [INFO] Worker exiting (pid: 2501090)
+[2023-08-04 14:11:02 +0000] [2501106] [INFO] Worker exiting (pid: 2501106)
+[2023-08-04 14:11:02 +0000] [2501094] [INFO] Worker exiting (pid: 2501094)
+[2023-08-04 14:11:02 +0000] [2501108] [INFO] Worker exiting (pid: 2501108)
+[2023-08-04 14:11:03 +0000] [2501086] [INFO] Shutting down: Master
+[2023-08-04 14:11:18 +0000] [2797833] [INFO] Starting gunicorn 21.2.0
+[2023-08-04 14:11:18 +0000] [2797833] [INFO] Listening at: http://210.75.240.136:18890 (2797833)
+[2023-08-04 14:11:18 +0000] [2797833] [INFO] Using worker: sync
+[2023-08-04 14:11:18 +0000] [2797835] [INFO] Booting worker with pid: 2797835
+[2023-08-04 14:11:18 +0000] [2797836] [INFO] Booting worker with pid: 2797836
+[2023-08-04 14:11:18 +0000] [2797837] [INFO] Booting worker with pid: 2797837
+[2023-08-04 14:11:18 +0000] [2797841] [INFO] Booting worker with pid: 2797841

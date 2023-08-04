@@ -87,7 +87,7 @@ class FinQA(HFTabularDataset):
         t.save_row()
 
         for row in entry["table"]["content"]:
-            for cell in enumerate(row):
+            for cell in row:
                 c = Cell()
                 c.value = cell
                 t.add_cell(c)
