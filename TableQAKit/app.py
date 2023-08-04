@@ -251,9 +251,14 @@ def get_session():
     
 
 
-@app.route("/pipeline", methods=["GET", "POST"])
-def fetch_pipeline_result():
+@app.route("/default/pipeline", methods=["GET", "POST"])
+def fetch_default_pipeline_result():
     pass
+
+@app.route("/custom/pipeline", methods=["GET", "POST"])
+def fetch_custom_pipeline_result():
+    pass
+
 
 # done
 @app.route("/custom/upload", methods=["GET", "POST"])
