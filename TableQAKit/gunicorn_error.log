@@ -6782,3 +6782,10 @@ Traceback (most recent call last):
 NameError: name 'fetc' is not defined
 [2023-08-04 10:17:15 +0000] [2277460] [INFO] Worker exiting (pid: 2277460)
 [2023-08-04 10:17:16 +0000] [712228] [ERROR] Worker (pid:2277460) exited with code 3
+[2023-08-04 10:44:18 +0000] [2320123] [INFO] Starting gunicorn 21.2.0
+[2023-08-04 10:44:18 +0000] [2320123] [INFO] Listening at: http://210.75.240.136:18890 (2320123)
+[2023-08-04 10:44:18 +0000] [2320123] [INFO] Using worker: sync
+[2023-08-04 10:44:18 +0000] [2320126] [INFO] Booting worker with pid: 2320126
+[2023-08-04 10:44:18 +0000] [2320133] [INFO] Booting worker with pid: 2320133
+[2023-08-04 10:44:18 +0000] [2320192] [INFO] Booting worker with pid: 2320192
+[2023-08-04 10:44:18 +0000] [2320193] [INFO] Booting worker with pid: 2320193

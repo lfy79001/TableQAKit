@@ -45,10 +45,13 @@ def init_app():
     with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "config.yml")) as f:
         config = yaml.safe_load(f)
     flask_app.config.update(config)
+
+    
     return flask_app
 
 app = init_app()
 CORS(app)
+
 
 def init_log():
     log_format = "%(levelname)s:"
@@ -103,6 +106,9 @@ def check_table_in_dataset(dataset_name, split, table_idx):
         table = dataset_obj.prepare_table(entry)
         dataset_obj.set_table(split, table_idx, table)
 
+for dataset_name in app.config['datasets']:
+    for split in app.config['split']:
+        check_data_integrity(dataset_name, split, 0)
 
 def statistics_default_table_information(dataset_name, split, table_idx, propertie_name_list):
     if dataset_name not in app.config['datasets']:
@@ -253,7 +259,31 @@ def get_session():
 
 @app.route("/default/pipeline", methods=["GET", "POST"])
 def fetch_default_pipeline_result():
-    pass
+    try:
+        content = request.json
+        dataset_name = content.get("dataset_name")
+        split = content.get("split")
+        table_idx = content.get("table_idx")
+        question = content.get("question")
+
+
+        if dataset_name not in app.config['datasets']:
+            raise Exception(f"datasets {dataset_name} not found")
+        elif split not in app.config['split']:
+            raise Exception(f"split {split} not found")
+        check_data_integrity(dataset_name, split, table_idx)
+
+        answer = ""
+        data = {
+            "answer": answer,
+            "success": True
+        }
+        return jsonify(data),200
+        
+    except Exception as e:
+        logger.error(f"Pipeline Error: {e}")
+        data = {"success": False}
+        return jsonify(data),400
 
 @app.route("/custom/pipeline", methods=["GET", "POST"])
 def fetch_custom_pipeline_result():
