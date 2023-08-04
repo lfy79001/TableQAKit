@@ -106,9 +106,9 @@ def check_table_in_dataset(dataset_name, split, table_idx):
         table = dataset_obj.prepare_table(entry)
         dataset_obj.set_table(split, table_idx, table)
 
-for dataset_name in app.config['datasets']:
-    for split in app.config['split']:
-        check_data_integrity(dataset_name, split, 0)
+# for dataset_name in app.config['datasets']:
+#     for split in app.config['split']:
+#         check_data_integrity(dataset_name, split, 0)
 
 def statistics_default_table_information(dataset_name, split, table_idx, propertie_name_list):
     if dataset_name not in app.config['datasets']:
@@ -271,9 +271,8 @@ def fetch_default_pipeline_result():
             raise Exception(f"datasets {dataset_name} not found")
         elif split not in app.config['split']:
             raise Exception(f"split {split} not found")
-        check_data_integrity(dataset_name, split, table_idx)
 
-        answer = ""
+        answer = "(dataset_name,split,table_idx,question)"
         data = {
             "answer": answer,
             "success": True
