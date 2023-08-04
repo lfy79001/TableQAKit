@@ -40,7 +40,7 @@ pip install -r requirements.txt
 
 
 
-# 🔧 How to use
+# 🔧 Get started
 
 ## Retrieval-then-Read Methods
 
