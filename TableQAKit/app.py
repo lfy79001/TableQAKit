@@ -286,7 +286,30 @@ def fetch_default_pipeline_result():
 
 @app.route("/custom/pipeline", methods=["GET", "POST"])
 def fetch_custom_pipeline_result():
-    pass
+    try:
+        content = request.json
+        table_name = content.get("table_name")
+        question = content.get("question")
+
+        custom_tables = session.get("custom_tables", {})
+        if len(custom_tables) != 0 and table_name in custom_tables:
+            table_data = pickle.loads(custom_tables[table_name])
+            cells = table_data.cells
+            input = [[cell.value for cell in row] for row in cells]
+            answer = "input question"
+
+            data = {
+                "answer": answer,
+                "success": True
+            }
+
+            return jsonify(data),200
+        else:
+            raise Exception("fetch non-existent tables in session")
+    except Exception as e:
+        logger.error(f"Pipeline Error: {e}")
+        data = {"success": False}
+        return jsonify(data),400
 
 
 # done
