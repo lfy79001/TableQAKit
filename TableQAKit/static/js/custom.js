@@ -175,8 +175,26 @@ function downloadExcelExample() {
     window.location.href = url + '/custom/example';
 }
 
+function hideTable(val) {
+    if (val == 1) {
+        $("#table").hide();
+    } else {
+        $("#table").show();
+    }
+}
+
+function hideTableqa(val) {
+    if (val == 1) {
+        $("#tableqa").hide();
+    } else {
+        $("#tableqa").show();
+    }
+}
+
 function init() {
     changeTableListHtml();
+    hideTable(1);
+    hideTableqa(1);
 }
 
 $(document).ready(() => {

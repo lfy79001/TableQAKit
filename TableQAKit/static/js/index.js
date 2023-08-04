@@ -3,7 +3,7 @@ var dataset = 'finqa';
 var default_model = 'T5-small';
 var model = 'T5-small';
 var table_idx = 0;
-var total_examples = 1;
+var total_examples = 0;
 var default_result = {};
 var default_question = '';
 var properties_html = '';
@@ -13,6 +13,8 @@ var text = {};
 var host = '210.75.240.136';
 var port = '18890';
 var url = '';
+var textIsHided = false;
+var picturesIsHided = false;
 
 function mod(n, m) {
     return ((n % m) + m) % m;
@@ -53,10 +55,15 @@ function changeTableHtml() {
 
 function changePictureHtml() {
     var pictures_html = ''
-    for (let pic in pictures) {
-        pictures_html += '<div class="col-sm-6 col-md-4 col-lg-3"><img src="../static/img/' + pic + '" style="max-width: 100%; height: auto;"></div>'
+    for (var pic in pictures) {
+        pictures_html += '<div class="col-sm-6 col-md-4 col-lg-3"><img src="../static/img/mmqa/' + pictures[pic] + '" style="max-width: 100%; height: auto;"></div>'
     }
     $('#image-container').html(pictures_html);
+    if (pictures.length == 0) {
+        hidePictures(1);
+    } else {
+        hidePictures(0);
+    }
 }
 
 // function changeDefaultResult() {
@@ -73,6 +80,12 @@ function changeTextHtml() {
         text_html += '<tr><td>' + index + '</td><td>' + text[index] + '</td></tr>';
     }
     $("#text-container").html(text_html);
+    if (Object.getOwnPropertyNames(text).length == 0) {
+        hideText(1);
+        hidePictures(1);
+    } else {
+        hideText(0);
+    }
 }
 
 function changeTotalexamples() {
@@ -101,6 +114,49 @@ function checkFormatSupport() {
     }
 }
 
+function changeTextWidth(val) {
+    if (val == 0) {
+        $("#text").removeClass("col-md-12")
+        $("#text").addClass("col-md-6")
+    } else {
+        $("#text").removeClass("col-md-6")
+        $("#text").addClass("col-md-12")
+    }
+}
+
+function hidePictures(val) {
+    if (val == 1) {
+        $("#pictures").hide();
+        picturesIsHided = true;
+        if (!textIsHided) {
+            changeTextWidth(1);
+        }
+    } else {
+        $("#pictures").show();
+        picturesIsHided = false;
+        changeTextWidth(0);
+    }
+}
+
+function hideText(val) {
+    if (val == 1) {
+        $("#text").hide();
+        hidePictures(1);
+        textIsHided = true;
+    } else {
+        $("#text").show();
+        textIsHided = false;
+    }
+}
+
+function hideTableqa(val) {
+    if (val == 1) {
+        $("#tableqa").hide();
+    } else {
+        $("#tableqa").show();
+    }
+}
+
 function getData() {
     var dataJson = { 'dataset_name': dataset, 'split': split, 'table_idx': table_idx };
     $.ajax({
@@ -112,6 +168,7 @@ function getData() {
         contentType: 'application/json',
         data: JSON.stringify(dataJson),
         success: (data) => {
+            console.log(data);
             total_examples = data.table_cnt;
             default_result = data.generated_results;
             // changeDefaultResult();
@@ -125,8 +182,8 @@ function getData() {
             changeDefaultQuestionHtml();
             changePropertiesHtml();
             changeTableHtml();
-            changePictureHtml();
             changeTextHtml();
+            changePictureHtml();
             changeDefaultQuestionModelHtml();
 
         },
