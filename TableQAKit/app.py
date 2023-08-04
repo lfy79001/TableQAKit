@@ -159,28 +159,23 @@ def fetch_default_table_data():
 
 
 def fetch_generated_outputs(dataset_name, split, table_idx):
-    # outputs = {}
-    #
-    # out_dir = os.path.join(app.config["root_dir"], app.config["generated_outputs_dir"], dataset_name, split)
-    # if not os.path.isdir(out_dir):
-    #     return outputs
-    #
-    # for filename in glob.glob(out_dir + "/" + "*.jsonl"):
-    #     line = linecache.getline(filename, table_idx + 1)  # 1-based indexing
-    #     j = json.loads(line)
-    #     model_name = os.path.basename(filename).rsplit(".", 1)[0]
-    #     outputs[model_name] = j
-    '''
-        insert your code
-    '''
+    
     outputs = {}
-    model_list = app.config['outputs_model']
+
+    model_list = os.listdir(f"outputs/{dataset_name}")
+    valid_model_list = []
     for model_name in model_list:
-        outputs_file_path = f'outputs/{dataset_name}/{model_name}/{split}.txt'
+        split_list = os.listdir(f"outputs/{dataset_name}/{model_name}")
+        for split_file_name in split_list:
+            split_name, _ = os.path.splitext(split_file_name)
+            if split == split_name:
+                valid_model_list.append(model_name)
+                break
+    for valid_model_name in valid_model_list:
+        outputs_file_path = f'outputs/{dataset_name}/{valid_model_name}/{split}.txt'
         with open(outputs_file_path, 'r', encoding='utf-8') as file:
             lines = file.readlines()
-            outputs[model_name] = lines[table_idx].strip()
-
+            outputs[valid_model_name] = lines[table_idx].strip()        
 
     return outputs
 
@@ -481,7 +476,10 @@ def index():
     )
 
 # with app.app_context():
-    
+#     print(fetch_generated_outputs("spreadsheetqa","dev",10))
+
+
+
 #     fetch_table_data()
 #     dataset_obj = app.database['dataset']["wikisql"]
 #     print(dataset_obj.tables)
