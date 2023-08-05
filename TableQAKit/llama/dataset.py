@@ -153,3 +153,36 @@ class SKG(LLaMaDataset):
 
         hf_dataset = Dataset.from_dict(huggingface_data)
         return hf_dataset
+
+
+class CompAQT(LLaMaDataset):
+    def __read_data_to_huggingface_dataset__(self, data_path: str) -> Dataset:
+        column_names = ["prefix", "prompt", "query", "response", "history"]
+        data = json.load(
+            open(data_path, 'r', encoding='utf-8')
+        )
+        dataset = []
+        for one in data:
+            texts = "paragraphs: \n"
+            tables = "table descriptions: \n"
+            for k, v in one["qa"]["gold_inds"].items():
+                if "text" in k:
+                    texts += (v + "\n")
+                if "table" in k:
+                    tables += (v + "\n")
+            dataset.append({
+                "prefix": None,
+                "prompt": "According to the paragraphs and table descriptions, try your best to answer the question: " + one["qa"]["question"],
+                "query": texts + tables,
+                "response": one["qa"]["program"],
+                "history": None
+            })
+
+        huggingface_data = {column_name: [] for column_name in column_names}
+
+        for data_sample in dataset:
+            for column_name in column_names:
+                huggingface_data[column_name].append(data_sample[column_name])
+
+        hf_dataset = Dataset.from_dict(huggingface_data)
+        return hf_dataset

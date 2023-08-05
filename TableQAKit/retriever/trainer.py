@@ -401,6 +401,24 @@ class MultiHierttTrainer(RetrieverTrainer):
             "labels": labels
         }
 
+    def infer(self):
+        test_data = self.read_data(self.training_args.test_path)
+        for one, pred in zip(test_data, self.test_iterator()):
+            text_pred = pred[:len(one["paragraphs"])]
+            table_pred = pred[len(one["paragraphs"]):]
+            one["qa"]["text_evidence"] = [i for i, x in enumerate(text_pred) if x == 1]
+            keys = list(one["table_description"].keys())
+            one["qa"]["text_evidence"] = [key for i, key in enumerate(keys) if table_pred[i] == 1]
+
+            if not os.path.isfile(self.training_args.test_out_path):
+                with open(self.training_args.test_out_path, 'w') as file:
+                    json.dump([], file)
+            with open(self.training_args.test_out_path, 'r+') as file:
+                file_data = json.load(file)
+                file_data.append(one)
+                file.seek(0)
+                json.dump(file_data, file, indent=4)
+
 
 class FinQATrainer(RetrieverTrainer):
     @staticmethod
@@ -414,9 +432,6 @@ class FinQATrainer(RetrieverTrainer):
         return " ".join(res)
 
     def table_row_to_text(self, header, row):
-        """
-        use templates to convert table row to text
-        """
         res = ""
 
         if header[0]:
@@ -434,6 +449,56 @@ class FinQATrainer(RetrieverTrainer):
         )
         return data
 
+    def data_proc(self, instance) -> Dict:
+        gold_inds = instance["qa"]["gold_inds"]
+        pre_text = instance["pre_text2"]
+        post_text = instance["post_text2"]
+        rows = pre_text + post_text
+        labels = [0] * (len(rows))
+        for key in gold_inds:
+            if "text_" in key:
+                text_id = int(key.replace("text_", ""))
+                if text_id < len(labels):
+                    labels[text_id] = 1
+
+        table = instance["table"]
+        for idx, row in enumerate(table):
+            row_description = self.table_row_to_text(table[0], table[idx])
+            rows.append(row_description)
+            label_key = "table_" + str(idx)
+            labels.append(1 if label_key in gold_inds else 0)
+        return {
+                "id": instance["id"],
+                "question": instance["qa"]["question"],
+                "rows": rows,
+                "labels": labels
+            }
+
+    def infer(self):
+        test_data = self.read_data(self.training_args.test_path)
+        for one, pred in zip(test_data, self.test_iterator()):
+            texts = one["pre_text2"] + one["post_text2"]
+            text_pred = pred[:len(texts)]
+            table_pred = pred[len(texts):]
+            one["qa"]["ann_text_rows"] = [i for i, x in enumerate(text_pred) if x == 1]
+            one["qa"]["ann_table_rows"] = [i for i, x in enumerate(table_pred) if x == 1]
+            for i in one["qa"]["ann_text_rows"]:
+                one["qa"]["gold_inds"][f"text_{i}"] = texts[i]
+
+            for i in one["qa"]["ann_table_rows"]:
+                one["qa"]["gold_inds"][f"table_{i}"] = self.table_row_to_text(one["table"][0], one["table"][i])
+
+            if not os.path.isfile(self.training_args.test_out_path):
+                with open(self.training_args.test_out_path, 'w') as file:
+                    json.dump([], file)
+            with open(self.training_args.test_out_path, 'r+') as file:
+                file_data = json.load(file)
+                file_data.append(one)
+                file.seek(0)
+                json.dump(file_data, file, indent=4)
+
+
+class CompAQTTrainer(FinQATrainer):
     def data_proc(self, instance) -> Dict:
         gold_inds = instance["qa"]["gold_inds"]
         pre_text = instance["pre_text"]
@@ -457,3 +522,26 @@ class FinQATrainer(RetrieverTrainer):
                 "rows": rows,
                 "labels": labels
             }
+
+    def infer(self):
+        test_data = self.read_data(self.training_args.test_path)
+        for one, pred in zip(test_data, self.test_iterator()):
+            texts = one["pre_text"] + one["post_text"]
+            text_pred = pred[:len(texts)]
+            table_pred = pred[len(texts):]
+            one["qa"]["ann_text_rows"] = [i for i, x in enumerate(text_pred) if x == 1]
+            one["qa"]["ann_table_rows"] = [i for i, x in enumerate(table_pred) if x == 1]
+            for i in one["qa"]["ann_text_rows"]:
+                one["qa"]["gold_inds"][f"text_{i}"] = texts[i]
+
+            for i in one["qa"]["ann_table_rows"]:
+                one["qa"]["gold_inds"][f"table_{i}"] = self.table_row_to_text(one["table"][0], one["table"][i])
+
+            if not os.path.isfile(self.training_args.test_out_path):
+                with open(self.training_args.test_out_path, 'w') as file:
+                    json.dump([], file)
+            with open(self.training_args.test_out_path, 'r+') as file:
+                file_data = json.load(file)
+                file_data.append(one)
+                file.seek(0)
+                json.dump(file_data, file, indent=4)

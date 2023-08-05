@@ -18,6 +18,7 @@ class ICLArguments:
     output_path: str = field(default='./data/test_predictions.json')
     use_table_markdown: bool = field(default=True)
     use_table_flatten: bool = field(default=False)
+    truncation: int = field(default=3000)
 
 
 class Logger(object):
