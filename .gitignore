@@ -5,3 +5,5 @@ TableQAKit/__pycache__/*
 .vscode/*
 TableQAKit/datasets
 TableQAKit/loaders/__pycache__/*
+TableQAKit/static/img/mmqa_raw
+TableQAKit/static/img/mmqa

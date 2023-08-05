@@ -3,34 +3,34 @@ from icl import turbo, text_davinci_003, FinQA, Wikisql, Wikitq, TAT_QA
 
 DATA_PATH = {
     "finqa": {
-        "train": "./data/FinQA/train.json",
-        "dev": "./data/FinQA/dev.json",
+        "train": "datasets/finqa/train.json",
+        "dev": "datasets/finqa/dev.json",
         "eval": None,
         "test": None
     },
     "tatqa": {
-        "train": None,
-        "dev": "./data/TAT-QA/tatqa_dataset_dev.json",
+        "train": "datasets/tatqa/train.json",
+        "dev": "datasets/tatqa/dev.json",
         "eval": None,
-        "test": None
+        "test": "datasets/tatqa/test.json"
     },
     "wikisql": {
-        "train": None,
-        "dev": None,
+        "train": "datasets/wikisql/train.json",
+        "dev": "datasets/wikisql/dev.json",
         "eval": None,
-        "test": "./data/SKG/wikisql_test.json"
+        "test": "datasets/wikisql/test.json"
     },
     "wikitq": {
-        "train": "./data/SKG/wikitq_train.json",
-        "dev": None,
+        "train": "datasets/wikitq/train.json",
+        "dev": "datasets/wikitq/dev.json",
         "eval": None,
-        "test": "./data/SKG/wikitq_test.json"
+        "test": "datasets/wikitq/test.json"
     },
     "spreadsheetqa": {
-        "train": "./data/CompAQT/train.json",
-        "dev": "./data/CompAQT/dev.json",
+        "train": "datasets/spreadsheetqa/train.json",
+        "dev": "datasets/spreadsheetqa/dev.json",
         "eval": None,
-        "test": "./data/CompAQT/test.json"
+        "test": "datasets/spreadsheetqa/test.json"
     }
 }
 
@@ -248,82 +248,93 @@ class TableQAKitDemo:
 
 
 if __name__ == "__main__":
+    import time
+    t1 = time.time()
     kit = TableQAKitDemo(model_type="text_davinci_003", key="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")
-    # out = kit.try_table_qa_kit_by_id(data="tatqa", dataset_type="dev", index=1, question="Summarize the table?")
+    t2 = time.time()
+    for dataset_name in ["tatqa","wikisql","wikitq","spreadsheetqa"]:
+        for split in ["train","dev","test"]:
+
+
+            out = kit.try_table_qa_kit_by_id(data=dataset_name, dataset_type=split, index=1, question="Summarize the table?")
     # print(out)
-    table = [
-        [
-            "Player",
-            "No.",
-            "Nationality",
-            "Position",
-            "Years in Toronto",
-            "School/Club Team"
-        ],
-        [
-            "Aleksandar Radojevi\u0107",
-            "25",
-            "Serbia",
-            "Center",
-            "1999-2000",
-            "Barton CC (KS)"
-        ],
-        [
-            "Shawn Respert",
-            "31",
-            "United States",
-            "Guard",
-            "1997-98",
-            "Michigan State"
-        ],
-        [
-            "Quentin Richardson",
-            "N/A",
-            "United States",
-            "Forward",
-            "2013-present",
-            "DePaul"
-        ],
-        [
-            "Alvin Robertson",
-            "7, 21",
-            "United States",
-            "Guard",
-            "1995-96",
-            "Arkansas"
-        ],
-        [
-            "Carlos Rogers",
-            "33, 34",
-            "United States",
-            "Forward-Center",
-            "1995-98",
-            "Tennessee State"
-        ],
-        [
-            "Roy Rogers",
-            "9",
-            "United States",
-            "Forward",
-            "1998",
-            "Alabama"
-        ],
-        [
-            "Jalen Rose",
-            "5",
-            "United States",
-            "Guard-Forward",
-            "2003-06",
-            "Michigan"
-        ],
-        [
-            "Terrence Ross",
-            "31",
-            "United States",
-            "Guard",
-            "2012-present",
-            "Washington"
-        ]
-    ]
-    out = kit.try_table_qa_kit(table=table, texts=None, question="Summarize the table?")
-    print(out)
+    
+    # table = [
+    #     [
+    #         "Player",
+    #         "No.",
+    #         "Nationality",
+    #         "Position",
+    #         "Years in Toronto",
+    #         "School/Club Team"
+    #     ],
+    #     [
+    #         "Aleksandar Radojevi\u0107",
+    #         "25",
+    #         "Serbia",
+    #         "Center",
+    #         "1999-2000",
+    #         "Barton CC (KS)"
+    #     ],
+    #     [
+    #         "Shawn Respert",
+    #         "31",
+    #         "United States",
+    #         "Guard",
+    #         "1997-98",
+    #         "Michigan State"
+    #     ],
+    #     [
+    #         "Quentin Richardson",
+    #         "N/A",
+    #         "United States",
+    #         "Forward",
+    #         "2013-present",
+    #         "DePaul"
+    #     ],
+    #     [
+    #         "Alvin Robertson",
+    #         "7, 21",
+    #         "United States",
+    #         "Guard",
+    #         "1995-96",
+    #         "Arkansas"
+    #     ],
+    #     [
+    #         "Carlos Rogers",
+    #         "33, 34",
+    #         "United States",
+    #         "Forward-Center",
+    #         "1995-98",
+    #         "Tennessee State"
+    #     ],
+    #     [
+    #         "Roy Rogers",
+    #         "9",
+    #         "United States",
+    #         "Forward",
+    #         "1998",
+    #         "Alabama"
+    #     ],
+    #     [
+    #         "Jalen Rose",
+    #         "5",
+    #         "United States",
+    #         "Guard-Forward",
+    #         "2003-06",
+    #         "Michigan"
+    #     ],
+    #     [
+    #         "Terrence Ross",
+    #         "31",
+    #         "United States",
+    #         "Guard",
+    #         "2012-present",
+    #         "Washington"
+    #     ]
+    # ]
+    # out = kit.try_table_qa_kit(table=table, texts=None, question="Summarize the table?")
+            print(f"{dataset_name},{split}:",out)
+    t3 = time.time()
+    print("t2-t1",t2-t1)
+    print("t3-t2",t3-t2)

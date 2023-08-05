@@ -31,6 +31,7 @@ import pickle
 from loaders import DATASET_CLASSES
 from structs.data import Table, Cell
 from utils import export
+from try_table_qa_kit import TableQAKitDemo
 
 def init_app():
     flask_app = Flask(
@@ -45,6 +46,7 @@ def init_app():
     with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "config.yml")) as f:
         config = yaml.safe_load(f)
     flask_app.config.update(config)
+    flask_app.pipeline = TableQAKitDemo(model_type="text_davinci_003", key="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")
 
     
     return flask_app
@@ -268,7 +270,7 @@ def fetch_default_pipeline_result():
         elif split not in app.config['split']:
             raise Exception(f"split {split} not found")
 
-        answer = "(dataset_name,split,table_idx,question)"
+        answer = app.pipeline.try_table_qa_kit_by_id(data=dataset_name, dataset_type=split, index=table_idx, question=question)
         data = {
             "answer": answer,
             "success": True
@@ -292,7 +294,7 @@ def fetch_custom_pipeline_result():
             table_data = pickle.loads(custom_tables[table_name])
             cells = table_data.cells
             input = [[cell.value for cell in row] for row in cells]
-            answer = "input question"
+            answer = app.pipeline.try_table_qa_kit(table=input, texts=None, question=question)
 
             data = {
                 "answer": answer,

@@ -1460,3 +1460,4 @@ Traceback (most recent call last):
     raise TypeError(f"Object of type {type(o).__name__} is not JSON serializable")
 TypeError: Object of type Table is not JSON serializable
 Fetch Table Error: list index out of range
+Pipeline Error: can only concatenate str (not "NoneType") to str

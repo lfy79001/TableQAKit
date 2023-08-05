@@ -56,7 +56,7 @@ function changeTableHtml() {
 function changePictureHtml() {
     var pictures_html = ''
     for (var pic in pictures) {
-        pictures_html += '<div class="col-sm-6 col-md-4 col-lg-3"><img src="../static/img/mmqa/' + pictures[pic] + '" style="max-width: 100%; height: auto;"></div>'
+        pictures_html += '<div class="col-sm-12 col-md-6 col-lg-4"><img src="../static/img/mmqa/' + pictures[pic] + '" style="max-width: 100%; height: auto;"></div>'
     }
     $('#image-container').html(pictures_html);
     if (pictures.length == 0) {

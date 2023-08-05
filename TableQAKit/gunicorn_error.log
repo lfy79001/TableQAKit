@@ -8031,3 +8031,17 @@ NameError: name 'fetc' is not defined
 [2023-08-05 07:37:37 +0000] [160499] [INFO] Listening at: http://210.75.240.136:18890 (160499)
 [2023-08-05 07:37:37 +0000] [160499] [INFO] Using worker: sync
 [2023-08-05 07:37:37 +0000] [160501] [INFO] Booting worker with pid: 160501
+[2023-08-05 08:14:15 +0000] [160499] [INFO] Handling signal: term
+[2023-08-05 08:14:15 +0000] [160501] [INFO] Worker exiting (pid: 160501)
+[2023-08-05 08:14:26 +0000] [160499] [INFO] Shutting down: Master
+[2023-08-05 08:14:33 +0000] [226229] [INFO] Starting gunicorn 21.2.0
+[2023-08-05 08:14:33 +0000] [226229] [INFO] Listening at: http://210.75.240.136:18890 (226229)
+[2023-08-05 08:14:33 +0000] [226229] [INFO] Using worker: sync
+[2023-08-05 08:14:33 +0000] [226232] [INFO] Booting worker with pid: 226232
+[2023-08-05 09:38:39 +0000] [226229] [INFO] Handling signal: term
+[2023-08-05 09:38:39 +0000] [226232] [INFO] Worker exiting (pid: 226232)
+[2023-08-05 09:38:47 +0000] [226229] [INFO] Shutting down: Master
+[2023-08-05 09:38:56 +0000] [317806] [INFO] Starting gunicorn 21.2.0
+[2023-08-05 09:38:56 +0000] [317806] [INFO] Listening at: http://210.75.240.136:18890 (317806)
+[2023-08-05 09:38:56 +0000] [317806] [INFO] Using worker: sync
+[2023-08-05 09:38:56 +0000] [317808] [INFO] Booting worker with pid: 317808
