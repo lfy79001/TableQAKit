@@ -106,10 +106,6 @@ def check_table_in_dataset(dataset_name, split, table_idx):
         table = dataset_obj.prepare_table(entry)
         dataset_obj.set_table(split, table_idx, table)
 
-# for dataset_name in app.config['datasets']:
-#     for split in app.config['split']:
-#         check_data_integrity(dataset_name, split, 0)
-
 def statistics_default_table_information(dataset_name, split, table_idx, propertie_name_list):
     if dataset_name not in app.config['datasets']:
         raise Exception(f"datasets {dataset_name} not found")
@@ -532,8 +528,38 @@ def index():
         # table_data = data  #--这样传没有jsonfiy应该是可以的--
     )
 
-# with app.app_context():
-#     print(fetch_generated_outputs("spreadsheetqa","dev",10))
+with app.app_context():
+    print("Initing datasets")
+    for dataset_name in app.config['datasets']:
+        for split in app.config['split']:
+            check_data_integrity(dataset_name, split, 0)
+    print("done")
+#     import psutil
+#     # 获取内存使用情况
+#     memory_info = psutil.virtual_memory()
+
+#     # 打印内存总量、使用量、可用量等信息
+#     print(f"1Total Memory: {memory_info.total} bytes")
+#     print(f"1Used Memory: {memory_info.used} bytes")
+#     print(f"1Available Memory: {memory_info.available} bytes")
+#     print(f"1Percentage Used: {memory_info.percent}%")
+#     print("load start")
+#     for dataset_name in app.config['datasets']:
+#         for split in app.config['split']:
+#             check_data_integrity(dataset_name, split, 0)
+#     print("load over")
+#     # 获取内存使用情况
+#     memory_info = psutil.virtual_memory()
+
+#     # 打印内存总量、使用量、可用量等信息
+#     print(f"2Total Memory: {memory_info.total} bytes")
+#     print(f"2Used Memory: {memory_info.used} bytes")
+#     print(f"2Available Memory: {memory_info.available} bytes")
+#     print(f"2Percentage Used: {memory_info.percent}%")
+
+
+
+    # print(fetch_generated_outputs("spreadsheetqa","dev",10))
 
 
 
