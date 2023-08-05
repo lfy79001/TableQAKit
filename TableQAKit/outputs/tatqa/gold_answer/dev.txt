@@ -1,9 +1,3 @@
-['22.9%']
-['230']
-['5.0%']
-1.9
-18384.5
-16.15
 ['our allowable incurred costs plus a profit which can be fixed or variable depending on the contract’s fee arrangement up to predetermined funding levels determined by the customer']
 ['$1,496.5']
 ['fixed-price type', 'cost-plus type', 'time-and-material type']
@@ -658,6 +652,12 @@
 ['2018']
 ['$31,867,361', '$18,560,365']
 ['$9.6 million']
+['22.9%']
+['230']
+['5.0%']
+1.9
+18384.5
+16.15
 ['the total number of days the vessels were in our fleet.']
 ['Net Voyage Revenue divided by total TCE days.']
 ['124,004', '175,450']
@@ -937,6 +937,7 @@
 7
 48.71
 ['annually']
+12
 ['Andrew R. Kaiser']
 ['Joshua T. Duckworth']
 ['2017', '2018', '2019']
