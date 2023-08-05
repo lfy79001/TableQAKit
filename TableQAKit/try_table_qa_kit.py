@@ -1,7 +1,46 @@
 from typing import List, Optional, Union, Dict
-from icl import turbo, text_davinci_003
-from loaders import DATASET_CLASSES
-from structs.data import HFTabularDataset
+from icl import turbo, text_davinci_003, FinQA, Wikisql, Wikitq, TAT_QA
+
+DATA_PATH = {
+    "finqa": {
+        "train": "./data/FinQA/train.json",
+        "dev": "./data/FinQA/dev.json",
+        "eval": None,
+        "test": None
+    },
+    "tatqa": {
+        "train": None,
+        "dev": "./data/TAT-QA/tatqa_dataset_dev.json",
+        "eval": None,
+        "test": None
+    },
+    "wikisql": {
+        "train": None,
+        "dev": None,
+        "eval": None,
+        "test": "./data/SKG/wikisql_test.json"
+    },
+    "wikitq": {
+        "train": "./data/SKG/wikitq_train.json",
+        "dev": None,
+        "eval": None,
+        "test": "./data/SKG/wikitq_test.json"
+    },
+    "spreadsheetqa": {
+        "train": "./data/CompAQT/train.json",
+        "dev": "./data/CompAQT/dev.json",
+        "eval": None,
+        "test": "./data/CompAQT/test.json"
+    }
+}
+
+DATA_CLASS = {
+    "finqa": FinQA,
+    "tatqa": TAT_QA,
+    "wikisql": Wikisql,
+    "wikitq": Wikitq,
+    "spreadsheetqa": FinQA
+}
 
 
 class TableQAKitDemo:
@@ -59,7 +98,13 @@ class TableQAKitDemo:
         demo = demo_dict[data]
         return demo
 
-    def create_demo_input(self, demos: List[dict], demo_prefix: str, cot_trigger: str, answer_trigger: str) -> Union[str, List[Dict[str, str]]]:
+    def create_demo_input(
+            self,
+            demos: List[dict],
+            demo_prefix: str,
+            cot_trigger: str,
+            answer_trigger: str
+    ) -> Union[str, List[Dict[str, str]]]:
         if "davinci" in self.model_type:
             demo_input = demo_prefix + "\n"
             for demo in demos:
@@ -86,6 +131,7 @@ class TableQAKitDemo:
             data: str,
             dataset_type: str,
             index: int,
+            question: str,
             temperature: float = 0.1,
             max_length: int = 256,
             api_time_interval: float = 1.0,
@@ -98,13 +144,18 @@ class TableQAKitDemo:
         if dataset_type not in ["train", "dev", "eval", "test"]:
             raise NotImplementedError
 
-        dataset = DATASET_CLASSES[data]()
-        dataset.load_split_test(dataset_type)
+        dataset = DATA_CLASS[data](DATA_PATH[data][dataset_type], None).data
+        # if data == "tatqa":
+        #     temp_data = []
+        #     for one in dataset:
+        #         if len(temp_data) == 0 or temp_data[-1]["rows"] != one["rows"]:
+        #             temp_data.append(one)
+        #     dataset = temp_data
         demo = self.get_demo_by_data(data)
         demo_input = self.create_demo_input([demo], demo_prefix, cot_trigger, answer_trigger)
         self.model.set_prompt(demo_input)
 
-        data_input = self.create_data_input(dataset, index, cot_trigger)
+        data_input = self.create_data_input(dataset, index, question, cot_trigger)
         output = self.model.getResponse(
             data_input,
             temperature,
@@ -131,7 +182,8 @@ class TableQAKitDemo:
             max_length: int = 256,
             api_time_interval: float = 1.0,
             cot_trigger: str = "Let's think step by step. ",
-            answer_trigger: str = "Therefore, the answer to the question is "
+            answer_trigger: str = "Therefore, the answer to the question is ",
+            demo_prefix: str = "Reading the texts and tables and try your best to answer the question."
     ) -> str:
         table_input = ""
         texts_input = ""
@@ -147,10 +199,12 @@ class TableQAKitDemo:
 
         if "davinci" in self.model_type:
             data_input = "Q:\n" + texts_input + table_input + "question:\n" + question + "\nA:\n" + cot_trigger
-        elif "turbo" in self.model:
+        elif "turbo" in self.model_type:
             data_input = texts_input + table_input + "question:\n" + question + "\n" + cot_trigger
         else:
             raise NotImplementedError
+        demo_input = self.create_demo_input([], demo_prefix, cot_trigger, answer_trigger)
+        self.model.set_prompt(demo_input)
         output = self.model.getResponse(
             data_input,
             temperature,
@@ -168,44 +222,108 @@ class TableQAKitDemo:
             answer_extract = output.split(answer_trigger)[-1]
         return answer_extract
 
-    def create_data_input(self, dataset: HFTabularDataset, index: int, cot_trigger: str) -> str:
-        f"""
-        Index the dataset and build the instance into str.
-        For davinci:
-        "Q:
-        paragraphs:
-        p1
-        p2
-        ...
-        table:
-        the markdown of table
-        ...
-        question:
-        the question to the paragraphs and table
-        A: {cot_trigger}"
-        
-        For turbo:
-        "paragraphs:
-        p1
-        p2
-        ...
-        table:
-        the markdown of table
-        ...
-        question:
-        the question to the paragraphs and table
-        {cot_trigger}"
-
-        :param dataset:
-        :param index:
-        :param cot_trigger:
-        :return:
-        """
-        if "davinci" in self.model_type:
-            # TODO
-            pass
-        elif "turbo" in self.model_type:
-            # TODO
-            pass
+    def create_data_input(self, dataset: List[Dict], index: int, question_in: str, cot_trigger: str, truncation: int = 3000) -> str:
+        if index >= len(dataset):
+            raise ValueError("Index must less than length of dataset")
+        data = dataset[index]
+        content = ""
+        if data["texts"] is not None and len(data["texts"]):
+            content += "paragraphs:\n"
+            for text in data["texts"]:
+                content += (text + "\n")
+        if data["rows"] is not None and len(data["rows"]):
+            content += "table:\n"
+            for i, row in enumerate(data["rows"]):
+                content += (self.table_markdown(row) + "\n")
+        if "turbo" in self.model_type:
+            question = "question:\n" + question_in + "\n" + cot_trigger
         else:
-            raise NotImplementedError
+            question = "question:\n" + question_in + "\nA: " + cot_trigger
+        if len(content) > truncation - len(question):
+            content = content[:truncation - len(question) - 1] + '\n'
+        content += question
+        if "davinci" in self.model_type:
+            content = "Q: \n" + content
+        return content
+
+
+if __name__ == "__main__":
+    kit = TableQAKitDemo(model_type="text_davinci_003", key="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")
+    # out = kit.try_table_qa_kit_by_id(data="tatqa", dataset_type="dev", index=1, question="Summarize the table?")
+    # print(out)
+    table = [
+        [
+            "Player",
+            "No.",
+            "Nationality",
+            "Position",
+            "Years in Toronto",
+            "School/Club Team"
+        ],
+        [
+            "Aleksandar Radojevi\u0107",
+            "25",
+            "Serbia",
+            "Center",
+            "1999-2000",
+            "Barton CC (KS)"
+        ],
+        [
+            "Shawn Respert",
+            "31",
+            "United States",
+            "Guard",
+            "1997-98",
+            "Michigan State"
+        ],
+        [
+            "Quentin Richardson",
+            "N/A",
+            "United States",
+            "Forward",
+            "2013-present",
+            "DePaul"
+        ],
+        [
+            "Alvin Robertson",
+            "7, 21",
+            "United States",
+            "Guard",
+            "1995-96",
+            "Arkansas"
+        ],
+        [
+            "Carlos Rogers",
+            "33, 34",
+            "United States",
+            "Forward-Center",
+            "1995-98",
+            "Tennessee State"
+        ],
+        [
+            "Roy Rogers",
+            "9",
+            "United States",
+            "Forward",
+            "1998",
+            "Alabama"
+        ],
+        [
+            "Jalen Rose",
+            "5",
+            "United States",
+            "Guard-Forward",
+            "2003-06",
+            "Michigan"
+        ],
+        [
+            "Terrence Ross",
+            "31",
+            "United States",
+            "Guard",
+            "2012-present",
+            "Washington"
+        ]
+    ]
+    out = kit.try_table_qa_kit(table=table, texts=None, question="Summarize the table?")
+    print(out)
