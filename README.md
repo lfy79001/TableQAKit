@@ -219,7 +219,7 @@ TableQAEval is a benchmark to evaluate the performance of LLM for TableQA. It ev
 | ---   | ---        | ---                 | ---                 | ---                  | ---   |
 | Turbo-16k-0613 | -     | 20.3     | 52.8 | 54.3 | 43.5 |
 | LLaMA2-7b-chat | 7B | 2.0 | 14.2 | 13.4 | 12.6 |
-| chatglm2-6b-8k | 6B | 1.4 | 10.1 | 11.5 | 10.2  |
+| ChatGLM2-6b-8k | 6B | 1.4 | 10.1 | 11.5 | 10.2  |
 | LLaMA2-7b-4k | 7B | 0.8 | 9.2 | 5.4 | 6.6 |
 | longchat-7b-16k | 7B | 0.3 | 7.1 | 5.1 | 5.2 |
 | LLaMA-7b-2k | 7B | 0.5 | 7.3 | 4.1 | 4.5 |
