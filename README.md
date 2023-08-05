@@ -217,13 +217,14 @@ TableQAEval is a benchmark to evaluate the performance of LLM for TableQA. It ev
 
 | Model | Parameters | Numerical Reasoning | Multi-hop Reasoning | Structured Reasoning | Total |
 | ---   | ---        | ---                 | ---                 | ---                  | ---   |
-| Turbo-16k-0613 | -     | 32.3               | 40.6 | 43.5 | 38.3 |
-| longchat-7b-16k | 7B | 22.3 | 24.1 | 20.9 | 23.0 |
-| xgen-7b-8k | 7B | 19.5 | 20.4 | 18.7 | 19.6  |
-| mpt-7b-65k | 7B | 17.3 | 16.2 | 18.0 | 17.3 |
-| LLaMA2-7b-chat | 7B | 16.2 | 18.4 | 20.1 | 18.6 |
-| LLaMA2-7b-4k | 7B | 11.5 | 14.2 | 16.3 | 13.5 |
-| LLaMA-7b-2k | 7B | 5.6 | 7.3 | 6.1 | 6.5 |
+| Turbo-16k-0613 | -     | 20.3     | 52.8 | 54.3 | 43.5 |
+| LLaMA2-7b-chat | 7B | 2.0 | 14.2 | 13.4 | 12.6 |
+| chatglm2-6b-8k | 6B | 1.4 | 10.1 | 11.5 | 10.2  |
+| LLaMA2-7b-4k | 7B | 0.8 | 9.2 | 5.4 | 6.6 |
+| longchat-7b-16k | 7B | 0.3 | 7.1 | 5.1 | 5.2 |
+| LLaMA-7b-2k | 7B | 0.5 | 7.3 | 4.1 | 4.5 |
+| MPT-7b-65k | 7B | 0.3 | 3.2 | 2.0 | 2.3 |
+| LLaMA-7b-2k | 7B | 0.0 | 4.3 | 1.7 | 2.0 |
 
 
 
