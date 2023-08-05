@@ -15,7 +15,7 @@ class ICL(ABC):
         self.dataset = dataset
         fix_seed(self.args.random_seed)
 
-    def infer(self, cot_trigger, answer_trigger):
+    def infer(self, demo_prefix: str, cot_trigger: str, answer_trigger: str):
         print('-' * 20)
         print(self.args)
         print('-' * 20)
@@ -23,7 +23,7 @@ class ICL(ABC):
             os.mkdir(self.args.logging_dir)
         sys.stdout = Logger(os.path.join(self.args.logging_dir, print_time(1) + '.log'), sys.stdout)
         print_time()
-        demo_input = self.create_demo_input(self.dataset.demos, cot_trigger, answer_trigger)
+        demo_input = self.create_demo_input(self.dataset.demos, demo_prefix, cot_trigger, answer_trigger)
 
         self.model.set_prompt(demo_input)
         for i, one in enumerate(self.dataset.data):
@@ -32,7 +32,7 @@ class ICL(ABC):
             print('-' * 20)
             print("{}st data".format(i + 1))
             print("id: {}".format(one["id"]))
-            data_input = self.create_data_input(one, cot_trigger, answer_trigger)
+            data_input = self.create_data_input(one, cot_trigger, answer_trigger, self.args.truncation)
             print("demo input: \n{}".format(demo_input))
             print("data input: \n{}".format(data_input))
             gpt_out = self.model.getResponse(
@@ -84,13 +84,15 @@ class ICL(ABC):
 
     @abstractmethod
     def create_demo_input(
-        self,
-        demos: List[Dict[str, str]],
-        cot_trigger: str,
-        answer_trigger: str
+            self,
+            demos: List[Dict[str, str]],
+            demo_prefix: str,
+            cot_trigger: str,
+            answer_trigger: str,
     ) -> Union[str, List[Dict[str, str]]]:
         """
         According to the demos from the dataset, create the demo that will be input to the openai model
+        :param demo_prefix: The prefix of demo_input like "Reading the texts and tables and try your best to answer the question."
         :param demos: demos list from the dataset.create_demos()
         :param cot_trigger: the prompt to trigger cot like "Let's think step by step."
         :param answer_trigger: the prompt to trigger the answer like "Therefore, the answer is "
@@ -110,16 +112,18 @@ class ICL(ABC):
 
     @abstractmethod
     def create_data_input(
-        self,
-        data: Dict[str, str],
-        cot_trigger: str,
-        answer_trigger: str
+            self,
+            data: Dict[str, str],
+            cot_trigger: str,
+            answer_trigger: str,
+            truncation: int
     ) -> str:
         """
         According to the data from the dataset, create the data that will be input to the openai model
         :param data: one data from the dataset
         :param cot_trigger: the prompt to trigger cot like "Let's think step by step."
         :param answer_trigger: the prompt to trigger the answer like "Therefore, the answer is "
+        :param truncation: cut off the max length of content
         :return: str for all Openai model like
         "Q: paragraphs:……
         tables:……
@@ -139,10 +143,10 @@ class ICL(ABC):
 
     @abstractmethod
     def save_prediction(
-        self,
-        output_path: str,
-        data: Dict[str, str],
-        answer: str
+            self,
+            output_path: str,
+            data: Dict[str, str],
+            answer: str
     ) -> None:
         """
         Saving the answer with the form that you are fond of
@@ -155,8 +159,9 @@ class ICL(ABC):
 
 
 class turboICL(ICL):
-    def create_demo_input(self, demos: List[dict], cot_trigger: str, answer_trigger: str) -> Union[str, List[Dict[str, str]]]:
-        demo_input = [{"role": "user", "content": "Reading the texts and tables and try your best to answer the question."}]
+    def create_demo_input(self, demos: List[dict], demo_prefix: str, cot_trigger: str, answer_trigger: str) -> Union[str, List[Dict[str, str]]]:
+        demo_input = [
+            {"role": "user", "content": demo_prefix}]
         for demo in demos:
             demo_input.append({
                 "role": "user",
@@ -168,7 +173,7 @@ class turboICL(ICL):
             })
         return demo_input
 
-    def create_data_input(self, data: dict, cot_trigger: str, answer_trigger: str) -> str:
+    def create_data_input(self, data: dict, cot_trigger: str, answer_trigger: str, truncation: int) -> str:
         heads = []
         content = ""
         if data["texts"] is not None and len(data["texts"]):
@@ -187,7 +192,10 @@ class turboICL(ICL):
                         content += (self.table_flatten(heads, row) + "\n")
                 else:
                     raise NotImplementedError
-        content += ("question:\n" + data["question"] + "\n" + cot_trigger)
+        question = "question:\n" + data["question"] + "\n" + cot_trigger
+        if len(content) > truncation - len(question):
+            content = content[:truncation - len(question) - 1] + '\n'
+        content += question
         return content
 
     def answer_post_proc(self, answer_extract: str) -> str:
@@ -201,7 +209,7 @@ class turboICL(ICL):
             "uid": data["id"],
             "predicted_program": [],
             "predicted_ans": answer
-            }
+        }
         with open(output_path, 'r+') as file:
             file_data = json.load(file)
             file_data.append(output_data)
@@ -210,15 +218,15 @@ class turboICL(ICL):
 
 
 class davinciICL(ICL):
-    def create_demo_input(self, demos: List[dict], cot_trigger: str, answer_trigger: str) -> Union[str, List[Dict[str, str]]]:
-        demo_input = "Reading the texts and tables and try your best to answer the question.\n\n"
+    def create_demo_input(self, demos: List[dict], demo_prefix: str, cot_trigger: str, answer_trigger: str) -> Union[str, List[Dict[str, str]]]:
+        demo_input = demo_prefix + "\n"
         for demo in demos:
             demo_input += ("Q: " + demo["question"] + "\n" +
                            "A: " + cot_trigger + demo["rationale"] +
                            answer_trigger + demo["answer"] + "\n\n")
         return demo_input
 
-    def create_data_input(self, data: dict, cot_trigger: str, answer_trigger: str) -> str:
+    def create_data_input(self, data: dict, cot_trigger: str, answer_trigger: str, truncation: int) -> str:
         heads = []
         content = "Q: \n"
         if data["texts"] is not None and len(data["texts"]):
@@ -237,7 +245,10 @@ class davinciICL(ICL):
                         content += (self.table_flatten(heads, row) + "\n")
                 else:
                     raise NotImplementedError
-        content += ("question:\n" + data["question"] + "\n" + "A: " + cot_trigger)
+        question = "question:\n" + data["question"] + "\n" + "A: " + cot_trigger
+        if len(content) > truncation - len(question):
+            content = content[:truncation - len(question) - 1] + '\n'
+        content += question
         return content
 
     def answer_post_proc(self, answer_extract: str) -> str:
@@ -251,7 +262,7 @@ class davinciICL(ICL):
             "uid": data["id"],
             "predicted_program": [],
             "predicted_ans": answer
-            }
+        }
         with open(output_path, 'r+') as file:
             file_data = json.load(file)
             file_data.append(output_data)

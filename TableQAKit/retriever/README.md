@@ -18,8 +18,7 @@ trainer = Trainer(training_args=args)
 if args.train_path is not None:
     trainer.train()
 if args.test_path is not None:
-    for pred in trainer.test_iterator():
-        # saving the predctions
+    trainer.infer()
 ```
 
 ### Train

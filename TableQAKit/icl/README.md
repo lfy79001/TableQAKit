@@ -11,9 +11,10 @@ from icl import turbo, MultiHiertt, turboICL
 
 
 dataset = MultiHiertt(data_path="./data/val.json", demo_path=None)
+demo_prefix = "Reading the texts and tables and try your best to answer the question."
 model = turbo(key="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")
 infer = turbo(model=model, dataset=dataset)
-infer.infer(cot_trigger="Let's think step by step.", answer_trigger="Therefore, the answer is ")
+infer.infer(demo_prefix=demo_prefix, cot_trigger="Let's think step by step.", answer_trigger="Therefore, the answer is ")
 ```
 
 ### using davinci_003 for MultiHiertt
@@ -25,9 +26,10 @@ from icl import text_davinci_003, MultiHiertt, davinciICL
 
 
 dataset = MultiHiertt(data_path="./data/val.json", demo_path=None)
+demo_prefix = "Reading the texts and tables and try your best to answer the question."
 model = text_davinci_003(key="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")
 infer = davinci(model=model, dataset=dataset)
-infer.infer(cot_trigger="Let's think step by step.", answer_trigger="Therefore, the answer is ")
+infer.infer(demo_prefix=demo_prefix, cot_trigger="Let's think step by step.", answer_trigger="Therefore, the answer is ")
 ```
 
 ### Create New Dataset
@@ -71,5 +73,6 @@ python main.py \
 --logging_dir ./log \
 --output_path ./data/test_predicitions.json \
 --use_table_markdown True \
---use_table_flatten False
+--use_table_flatten False \
+--truncation 2048
 ```

@@ -34,14 +34,29 @@ class turbo(GPT):
     def getResponse(self, content: str, temperature: float, max_length: int, api_time_interval: float) -> str:
         time.sleep(api_time_interval)
         self.addText(content)
-        response = openai.ChatCompletion.create(
-            model='gpt-3.5-turbo',
-            messages=self.prompt,
-            temperature=temperature
-        )
-        resText = response.choices[0].message.content
-        self.deleteText()
-        return resText
+        # response = openai.ChatCompletion.create(
+        #     model='gpt-3.5-turbo',
+        #     messages=self.prompt,
+        #     temperature=temperature
+        # )
+        # resText = response.choices[0].message.content
+        retries = 0
+        max_retries = 10
+        while retries < max_retries:
+            try:
+                response = openai.ChatCompletion.create(
+                    model='gpt-3.5-turbo',
+                    messages=self.prompt,
+                    temperature=temperature
+                )
+                resText = response.choices[0].message.content
+                self.deleteText()
+                return resText
+            except Exception as e:
+                print(f"Error: {e}")
+                retries += 1
+                time.sleep(api_time_interval)
+        raise Exception("API call failed after maximum retries.")
 
     def deleteText(self):
         self.prompt.pop()
@@ -50,14 +65,34 @@ class turbo(GPT):
 class text_davinci_003(GPT):
     def getResponse(self, content: str, temperature: float, max_length: int, api_time_interval: float) -> str:
         time.sleep(api_time_interval)
-        response = openai.Completion.create(
-            engine="text-davinci-003",
-            prompt=self.prompt + content,
-            max_tokens=max_length,
-            temperature=temperature,
-            top_p=1,
-            frequency_penalty=0,
-            presence_penalty=0,
-            stop=None
-        )
-        return response["choices"][0]["text"]
+        # response = openai.Completion.create(
+        #     engine="text-davinci-003",
+        #     prompt=self.prompt + content,
+        #     max_tokens=max_length,
+        #     temperature=temperature,
+        #     top_p=1,
+        #     frequency_penalty=0,
+        #     presence_penalty=0,
+        #     stop=None
+        # )
+        # return response["choices"][0]["text"]
+        retries = 0
+        max_retries = 10
+        while retries < max_retries:
+            try:
+                response = openai.Completion.create(
+                    engine="text-davinci-003",
+                    prompt=self.prompt + content,
+                    max_tokens=max_length,
+                    temperature=temperature,
+                    top_p=1,
+                    frequency_penalty=0,
+                    presence_penalty=0,
+                    stop=None
+                )
+                return response["choices"][0]["text"]
+            except Exception as e:
+                print(f"Error: {e}")
+                retries += 1
+                time.sleep(api_time_interval)
+        raise Exception("API call failed after maximum retries.")

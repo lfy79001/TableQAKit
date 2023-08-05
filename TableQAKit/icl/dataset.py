@@ -141,3 +141,32 @@ class FinQA(GPTDataSet):
             )
         else:
             return []
+
+
+class TAT_QA(GPTDataSet):
+    def read_data(self, data_path: str) -> List[Dict[str, any]]:
+        data_list = []
+        data = json.load(
+            open(data_path, 'r', encoding='utf-8')
+        )
+        for one in data:
+            rows = one["table"]["table"]
+            texts = []
+            for p in one["paragraphs"]:
+                texts.append(p["text"])
+            for question in one["questions"]:
+                data_list.append({
+                    "id": question["uid"],
+                    "question": question["question"],
+                    "texts": texts,
+                    "rows": rows,
+                })
+        return data_list
+
+    def read_demos(self, demo_path: str) -> List[Dict[str, any]]:
+        if demo_path is not None:
+            return json.load(
+                open(demo_path, 'r', encoding='utf-8')
+            )
+        else:
+            return []
