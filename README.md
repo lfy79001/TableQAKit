@@ -180,25 +180,71 @@ According to our taxonomy, we classify the TableQA task into three categories of
 The TableQAKit repository is structured as follows:
 
 ```bash
-├── Baselines/ # scripts to generate the prediction files with baseline models
-├── Evaluation/ # evaluation scripts
-├── Leaderboard/ # csv files of results
-├── LEval-data/ # test samples
-│   ├── Exam/ # exact match tasks (like multiple-choice)
-│   │   ├── test_file.jsonl 
+├── icl/ # LLM-prompting toolkit
+│   ├── dataset.py  
+│   ├── infer.py
+│   ├── model.py
+│   └── utils.py
+├── llama/ # LLM-finetuning toolkit
+│   ├── data_collator.py 
+│   ├── dataset.py 
+│   ├── model.py
+│   ├── peft_trainer.py
+│   ├── seq2seq.py
+│   ├── template.py
+│   ├── Trainer.py
+│   └── utils.py
+├── mmqa_utils/ # EncyclopediaQA toolkit
+│   ├── classifier_module/ # The package for classifier
+│   │   ├── dataset.py
+│   │   ├── model.py
+│   │   ├── train.py
+│   │   ├── trainer.py
+│   │   └── utils.py
+│   ├── retriever_module/ # The package for encyclopedia retrieval
+│   │   ├── dataset.py
+│   │   ├── model.py
+│   │   ├── train.py
+│   │   ├── trainer.py
+│   │   └── utils.py
+├── structuredqa/ # Read model TaLMs
+│   ├── builder/
+│   │   ├── hybridqa.py
+│   │   ├── msr_sqa.py
+│   │   ├── wikisql_tapas.py
+│   │   ├── wikisql.py
+│   │   ├── wikitq_tapas.py
+│   │   └── wikitq.py
+│   ├── utils/
+│   │   ├── common.py
+│   │   ├── configure.py
+│   │   ├── dataset.py
+│   │   ├── tapas_utils.py
+│   │   ├── tapas_wikisql_utils.py
+│   │   └── tapex_wikisql_utils.py
+├── retriever/ # TableQA's general retriever （SpreadSheet examples）
+│   ├── dataset.py
+│   ├── model.py
+│   ├── trainer.py
+│   └── utils.py
+├── multihop/ # Readers for encyclopediaQA
+│   ├── Retrieval/
+│   └── Read/
+├── numerical/ # Readers for some TableQA datasets
+├── TableQAEval/ # The proposed new LLM-Long-Table Benchmark
+│   ├── Baselines/ # Add your LLMs
+│   │   ├── turbo16k-table.py
+│   │   ├── llama2-chat-table.py
 │   │   └── ...
-│   ├── Generation/ # generation tasks
-│   │   ├── test_file.jsonl
-│   │   └── ...
-├── Predictions/ # output of models
-│   ├── exam_eval/trubo-16k-0613
-│   │              ├── <task_name>.pred.jsonl
-│   │              └── ... 
-│   ├── llm_gpt4_eval  
-│   │             ├──<model_name>.pred.jsonl
-│   ├── ...
-├── Tools/ # useful scripts
-├── figs/ # figures
+│   ├── Evaluation/ # metrics
+│   └── TableQAEval.json  
+├── outputs/ # the results of some models
+├── loaders/ 
+│   ├── WikiSQL.py
+│   └── ...
+├── structs/ 
+│   ├── data.py
+├── static/ 
 ├── LICENSE
 └── README.md
 ```
