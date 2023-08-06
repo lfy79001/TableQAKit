@@ -1,19 +1,11 @@
-var table_html = '';
-var properties_html = '';
-var table_list = [];
-var model = 'T5-small';
 var host = '210.75.240.136';
 var port = '18890';
 var url = '';
+var table_name = '';
 
 function download_table() {
     console.log('download table');
     // TODO 下载表格
-}
-
-function select_table() {
-    console.log('select table');
-    // TODO 切换历史表格
 }
 
 function change_model() {
@@ -30,15 +22,36 @@ function selectFile() {
     $('#file-selector').click();
 }
 
-function changeTableListHtml() {
-    var table_list_html = '<tr><th><div style="width:100px;">Table Name</div></th><th><div>Action</div></th></tr>'
-    for (var index = 0; index < table_list.length; index) {
-        table_list_html += '<tr><td><div style="width:100px;"><b>' + table_list[index] + '</b></div></td><td><div class="row"><div class="col-md-8"><button type="button" class="btn btn-success " style="width:200px" onclick="selectTable(' + index + ')">Use This Table</button></div><div class="col-md-4"><button type="button" class="btn btn-danger " onclick="deleteTable(' + index + ')">Delete</button></div></div></td></tr>'
-    }
-    $('#table-list').html(table_list_html);
+function appendTableListHtml(name) {
+    table_list_html = ' \
+    <tr> \
+        <td> \
+            <div style="width:100px;"> \
+                <b>' + name + '</b> \
+            </div> \
+        </td> \
+        <td> \
+            <div class="row"> \
+                <div class="col-md-8"> \
+                    <button type="button" class="select-btn btn btn-success " style="width:200px" \
+                    onclick="selectTable(\'' + name + '\')"> \
+                        Use This Table \
+                    </button> \
+                </div> \
+                <div class="col-md-4"> \
+                    <button type="button" class="delete-btn btn btn-danger " \
+                    onclick="deleteTable(\'' + name + '\')"> \
+                        Delete \
+                    </button> \
+                </div> \
+            </div> \
+        </td> \
+    </tr>';
+    $('#table-list').append(table_list_html);
 }
 
-function changeTableHtml() {
+
+function changeTableHtml(table_html) {
     $('#table-container').html(table_html);
 }
 
@@ -46,9 +59,8 @@ function changePropertiesHtml() {
     $('#properties-container').html(properties_html);
 }
 
-function selectTable(index) {
-    dataJson = { 'table_name': table_list[index] };
-
+function selectTable(name) {
+    dataJson = { 'table_name': name };
     $.ajax({
         type: 'POST',
         url: url + '/custom/table',
@@ -58,14 +70,11 @@ function selectTable(index) {
         contentType: 'application/json',
         data: JSON.stringify(dataJson),
         success: (data) => {
-            if (data[success] == 'success') {
-                table_html = data.table_html;
-                changeTableHtml();
-                properties_html = data.properties_html;
-                changePropertiesHtml();
-            } else {
-                alert('fetch table failed!');
-            }
+            table_html = data.table_html;
+            changeTableHtml(data.table_html);
+            table_name = name;
+            hideTable(0);
+            hideTableqa(0);
         },
         error: (XMLHttpRequest, textStatus, errorThrown) => {
             alert('fetch table error!');
@@ -76,51 +85,62 @@ function selectTable(index) {
     });
 }
 
-function deleteTable(index) {
-    dataJson = { 'table_name': table_list[index] };
+// function deleteTable(index) {
+//     dataJson = { 'table_name': table_list[index] };
 
-    $.ajax({
-        type: 'POST',
-        url: url + '/custom/remove',
-        chche: false,
-        async: true,
-        dataType: "json",
-        contentType: 'application/json',
-        data: JSON.stringify(dataJson),
-        success: (data) => {
-            if (data[success] == 'success') {
-                table_list.splice(index);
-                changeTableListHtml();
-            } else {
-                alert('table remove failed!');
-            }
-        },
-        error: (XMLHttpRequest, textStatus, errorThrown) => {
-            alert('fetch table error!');
-            console.log(XMLHttpRequest.status);
-            console.log(XMLHttpRequest.readyState);
-            console.log(textStatus);
-        }
-    });
-}
+//     $.ajax({
+//         type: 'POST',
+//         url: url + '/custom/remove',
+//         chche: false,
+//         async: true,
+//         dataType: "json",
+//         contentType: 'application/json',
+//         data: JSON.stringify(dataJson),
+//         success: (data) => {
+//             if (data[success] == 'success') {
+//                 table_list.splice(index);
+//             } else {
+//                 alert('table remove failed!');
+//             }
+//         },
+//         error: (XMLHttpRequest, textStatus, errorThrown) => {
+//             alert('fetch table error!');
+//             console.log(XMLHttpRequest.status);
+//             console.log(XMLHttpRequest.readyState);
+//             console.log(textStatus);
+//         }
+//     });
+// }
 
 function submitExcelFile() {
-    var files = $('#table-file-input')[0].files[0]
-    if (files.length == 0) {
-        alert('Please Select File First');
+    var files = $('#table-file-input')[0].files[0];
+    var inputName = $('#table-name-input').val();
+    if (inputName == null || inputName == '') {
+        alert('Please input name First');
+        return;
     }
+    if (files == null || files.length == 0) {
+        alert('Please Select File First');
+        return;
+    }
+    var suffix = files.name.substring(files.name.lastIndexOf("."));
     var data = new FormData();
-    data.append('files', files);
-    data.append('table_name', $('#table-name-input').val());
+    data.append('excel_file', files, inputName+suffix);
     $.ajax({
         method: 'POST',
         url: url + '/custom/upload',
-        data: fd,
+        data: data,
         processData: false,
         contentType: false,
         async: true,
         success: function(res) {
             console.log(res);
+        },
+        error: (XMLHttpRequest, textStatus, errorThrown) => {
+            alert('fetch table error!');
+            console.log(XMLHttpRequest.status);
+            console.log(XMLHttpRequest.readyState);
+            console.log(textStatus);
         }
     });
 }
@@ -156,17 +176,32 @@ function changeSelectedExcelFile() {
 }
 
 function downloadExcel() {
-    $.get(url + '/custom/download', {
-        'format': '',
-        'include_props': '',
-        'dataset_name': '',
-        'splite': '',
-        'table_idx': ''
-    }, (data, status) => {
-        console.log(status);
-        if (status === 'success') {
-            var downloadUrl = window.URL.createObjectURL(data);
-            window.location.href = downloadUrl;
+    download_url = url+'/custom/download?format='+$('#download-format-select').val()+'&table_name='+table_name;
+    console.log(download_url);
+    window.location.href(download_url);
+}
+
+function getHistory() {
+    $.ajax({
+        type: 'POST',
+        url: url + '/session',
+        chche: false,
+        async: true,
+        dataType: "json",
+        contentType: 'application/json',
+        data: JSON.stringify({"target": "custom_tables_name"}),
+        success: (data) => {
+            console.log(data.data);
+            table_list = data.data;
+            for (each in table_list) {
+                appendTableListHtml(table_list[each]);
+            }
+        },
+        error: (XMLHttpRequest, textStatus, errorThrown) => {
+            alert('fetch table error!');
+            console.log(XMLHttpRequest.status);
+            console.log(XMLHttpRequest.readyState);
+            console.log(textStatus);
         }
     });
 }
@@ -192,9 +227,9 @@ function hideTableqa(val) {
 }
 
 function init() {
-    changeTableListHtml();
     hideTable(1);
     hideTableqa(1);
+    getHistory();
 }
 
 $(document).ready(() => {
@@ -210,5 +245,8 @@ $(document).ready(() => {
         $('#table-file-input').click();
     });
     $('#table-file-input').change(changeSelectedExcelFile);
-    $('#down-excel').change(downloadExcel);
+    $('#download-excel').click(downloadExcel);
+    $('.delete-btn').click((event) => {
+        $(event.target).parent().parent().parent().parent().remove();
+    });
 });

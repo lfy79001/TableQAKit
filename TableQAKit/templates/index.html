@@ -125,10 +125,10 @@
                                                 <label class="col-sm-3 mx-4 col-form-label"><b>Split</b></label>
                                                 <div class="col-sm-7">
                                                     <select id="split-select" class="form-control text-dark">
-                                <option value="train">train</option>
-                                <option value="dev" selected>dev</option>
-                                <option value="test">test</option>
-                              </select>
+                                                        <option value="train" selected>train</option>
+                                                        <option value="dev">dev</option>
+                                                        <option value="test">test</option>
+                                                    </select>
                                                 </div>
                                             </div>
                                         </div>
@@ -259,10 +259,7 @@
                                                     </th>
                                                 </tr>
                                             </thead>
-                                            <tbody id="text-container">
-                                               
-                                                </tr> -->
-                                            </tbody>
+                                            <tbody id="text-container"></tbody>
                                         </table>
                                     </div>
                                 </div>
@@ -276,8 +273,8 @@
                                     <p class="card-title">TableQA Playground</p>
                                     <h4>Default Question:</h4>
                                     <h5 id="tableqa-default-question">Today, many people rely on computers to do homework, work, and create or store useful information. Therefore, it is important </h5>
-
-                                    <div>
+                                    <div id="default-answer"></div>
+                                    <!-- <div>
                                         <div class="row">
                                             <div class="col-md-12 p-0">
                                                 <div class="row align-items-center">
@@ -309,23 +306,27 @@
                                             <p id="default-model-answer"></p>
                                         </div>
                                       
-                                    </div>
+                                    </div> -->
 
 
-                                    <h4>Input your Question:</h4>
+                                    <div id="pipeline">
+                                        <h4>Input your Question:</h4>
 
-                                    <textarea class="form-control" id="input-question" placeholder="question" rows="5"></textarea>
+                                        <textarea class="form-control" id="input-question" placeholder="question" rows="5"></textarea>
 
 
 
-                                   
-                                    <div class="d-flex justify-content-end">
-                                        <button id="get-question-button" type="button" class="btn btn-success btn-rounded btn-fw my-2">Run</button>
-                                    </div>
+                                    
+                                        <div class="d-flex justify-content-end">
+                                            <button id="get-question-button" type="button" class="btn btn-success btn-rounded btn-fw my-2">Run</button>
+                                            <p id="loading">Inference in progress... Estimated total wait time: 15 seconds.</p>
+                                            <img src="static/img/example.gif" alt="Animated GIF" style="display: none;">
+                                        </div>
 
-                                    <div class="alert alert-success mt-4 d-flex align-items-center" role="alert">
-                                        <i class="ti-info-alt me-4"></i>
-                                        <p> </p>
+                                        <div class="alert alert-success mt-4 d-flex align-items-center" role="alert">
+                                            <i class="ti-info-alt me-4"></i>
+                                            <p id="answer"> </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -411,12 +412,12 @@
 
                                     <div>
                                         <select id="download-format-select" class="form-control text-dark">
-                              <option val="xlsx" selected>xlsx</option>
-                              <option val="txt">txt</option>
-                              <option val="json">json</option>
-                              <option val="csv">csv</option>
-                              <option val="html">html</option>
-                            </select>
+                                            <option val="xlsx" selected>xlsx</option>
+                                            <option val="txt">txt</option>
+                                            <option val="json">json</option>
+                                            <option val="csv">csv</option>
+                                            <option val="html">html</option>
+                                        </select>
                                     </div>
                                     <br></br>
                                     <label class="form-check-label">
@@ -436,6 +437,11 @@
             </div>
         </div>
     </div>
+
+
+
+
+    
 
 
 

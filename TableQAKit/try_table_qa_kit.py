@@ -249,11 +249,13 @@ class TableQAKitDemo:
 
 if __name__ == "__main__":
     import time
-    t1 = time.time()
+    
     kit = TableQAKitDemo(model_type="text_davinci_003", key="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")
-    t2 = time.time()
+    
     for dataset_name in ["tatqa","wikisql","wikitq","spreadsheetqa"]:
         for split in ["train","dev","test"]:
+            t1 = time.time()
+
 
 
             out = kit.try_table_qa_kit_by_id(data=dataset_name, dataset_type=split, index=1, question="Summarize the table?")
@@ -335,6 +337,6 @@ if __name__ == "__main__":
     # ]
     # out = kit.try_table_qa_kit(table=table, texts=None, question="Summarize the table?")
             print(f"{dataset_name},{split}:",out)
-    t3 = time.time()
-    print("t2-t1",t2-t1)
-    print("t3-t2",t3-t2)
+            t2 = time.time()
+            print("t2-t1",t2-t1)
+   

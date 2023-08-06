@@ -1461,3 +1461,23 @@ Traceback (most recent call last):
 TypeError: Object of type Table is not JSON serializable
 Fetch Table Error: list index out of range
 Pipeline Error: can only concatenate str (not "NoneType") to str
+Fetch Table Error: split eval not found
+Pipeline Error: 
+Fetch Table Error: list indices must be integers or slices, not NoneType
+Upload Table Error: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Upload Table Error: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Upload Table Error: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Upload Table Error: add duplicate names to tables in session
+Upload Table Error: add duplicate names to tables in session
+Get Session Error: 415 Unsupported Media Type: Did not attempt to load JSON data because the request Content-Type was not 'application/json'.
+Upload Table Error: Unsupported file format. Only .xls and .xlsx are supported.
+Fetch Table Error: 400 Bad Request: The browser (or proxy) sent a request that this server could not understand.
+Download Table Error: download non-existent tables in session
+Upload Table Error: add duplicate names to tables in session
+Upload Table Error: add duplicate names to tables in session
+Upload Table Error: add duplicate names to tables in session
+Upload Table Error: add duplicate names to tables in session
+Upload Table Error: add duplicate names to tables in session
+Upload Table Error: add duplicate names to tables in session
+Upload Table Error: add duplicate names to tables in session
+Upload Table Error: add duplicate names to tables in session

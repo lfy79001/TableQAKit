@@ -15,21 +15,34 @@ var port = '18890';
 var url = '';
 var textIsHided = false;
 var picturesIsHided = false;
+var pipelineTask = null;
+var pipelineSupport = {
+    "finqa": ["train","dev"],
+    "tatqa": ["train", "dev", "test"],
+    "wikisql": ["train", "dev", "test"],
+    "wikitq": ["train","dev","test"],
+    "spreadsheetqa": ["train","dev","test"]
+};
 
 function mod(n, m) {
     return ((n % m) + m) % m;
 }
 
 function splitChanged() {
+    abortPipelineTask();
     split = $('#split-select').val();
     table_idx = 0;
     getData()
+    checkPipelineSupport();
 }
 
 function datasetChanged() {
+    abortPipelineTask();
     dataset = $('#dataset-select').val();
     table_idx = 0;
     getData();
+    checkPipelineSupport();
+    checkFormatSupport();
 }
 
 function defaultModelChanged() {
@@ -89,7 +102,7 @@ function changeTextHtml() {
 }
 
 function changeTotalexamples() {
-    $("#total-examples").html(total_examples - 1);
+    $("#total-examples").html(total_examples);
 }
 
 function changeDefaultQuestionModelHtml() {
@@ -114,6 +127,14 @@ function checkFormatSupport() {
     }
 }
 
+function checkPipelineSupport() {
+    if (dataset in pipelineSupport && pipelineSupport[dataset].indexOf(split) != -1) {
+        hidePipline(0);
+    } else {
+        hidePipline(1);
+    }
+}
+
 function changeTextWidth(val) {
     if (val == 0) {
         $("#text").removeClass("col-md-12")
@@ -121,6 +142,35 @@ function changeTextWidth(val) {
     } else {
         $("#text").removeClass("col-md-6")
         $("#text").addClass("col-md-12")
+    }
+}
+
+function changeTableqaDefaultAnswerHtml() {
+    default_answer_html = '';
+    for (var eachModel in default_result) {
+        default_answer_html += '<div> \
+        <div class="row"> \
+            <div class="col-md-12 p-0"> \
+                <div class="row align-items-center"> \
+                    <label class="col-sm-2 mx-4 col-form-label"><b>Model</b></label> \
+                    <label class="col-sm-8 col-form-label">' + eachModel + '</label> \
+                </div> \
+            </div> \
+        </div> \
+        <div class="alert alert-warning d-flex align-items-center" role="alert"> \
+            <i class="ti-info-alt me-4"></i> \
+            <p> ' + default_result[eachModel] + '</p> \
+        </div> \
+    </div>';
+    }
+    $('#default-answer').html(default_answer_html);
+}
+
+function hidePipline(val) {
+    if (val == 0) {
+        $("#pipeline").show();
+    } else {
+        $("#pipeline").hide();
     }
 }
 
@@ -184,11 +234,44 @@ function getData() {
             changeTableHtml();
             changeTextHtml();
             changePictureHtml();
-            changeDefaultQuestionModelHtml();
-
+            // changeDefaultQuestionModelHtml();
+            changeTableqaDefaultAnswerHtml();
         },
         error: (XMLHttpRequest, textStatus, errorThrown) => {
             alert('fetch table error!');
+            console.log(XMLHttpRequest.status);
+            console.log(XMLHttpRequest.readyState);
+            console.log(textStatus);
+        }
+    });
+}
+
+function getPipelineAnswer() {
+    abortPipelineTask();
+    var dataJson = { 'dataset_name': dataset, 'split': split, 'table_idx': table_idx, 'question': $('#input-question').val()};
+    console.log(dataJson);
+    getPiplineAnswerTask = $.ajax({
+        type: 'POST',
+        url: url + '/default/pipeline',
+        chche: false,
+        async: true,
+        dataType: "json",
+        contentType: 'application/json',
+        data: JSON.stringify(dataJson),
+        beforeSend: () => {
+            $('#get-question-button').hide();
+            $('#loading').show();
+        },
+        success: (data) => {
+            $('#get-question-button').show();
+            $('#loading').hide();
+            console.log(data);
+            $('#answer').html(data.answer);
+        },
+        error: (XMLHttpRequest, textStatus, errorThrown) => {
+            $('#get-question-button').show();
+            $('#loading').hide();
+            alert('Network error! Please try again');
             console.log(XMLHttpRequest.status);
             console.log(XMLHttpRequest.readyState);
             console.log(textStatus);
@@ -221,10 +304,17 @@ function gotobtn() {
     gotopage(n);
 }
 
+function randombtn() {
+    gotopage(Math.floor(Math.random() * total_examples));
+}
+
 function gotopage(page) {
-    table_idx = page;
-    table_idx = mod(table_idx, total_examples);
-    $("#page-input").val(table_idx);
+    _page = mod(page, total_examples);
+    $("#page-input").val(_page);
+    if (table_idx == _page) {
+        return;
+    }
+    table_idx = _page
     getData();
 }
 
@@ -235,10 +325,17 @@ function downloadTable() {
     window.location.href = download_url;
 }
 
+function abortPipelineTask() {
+    if (pipelineTask != null) {
+        pipelineTask.abort();
+    }
+}
+
 function initPage() {
     table_cnt = 0;
     total_examples = 1;
     getData();
+    $('#loading').hide();
     // changeDefaultQuestionHtml();
     // changeTableHtml();
     // changePropertiesHtml();
@@ -255,7 +352,7 @@ $(document).ready(() => {
     $('#model-select').val(model);
     $("#dataset-select").change(datasetChanged);
     $("#split-select").change(splitChanged);
-    $('#default-model-select').change(defaultModelChanged);
+    // $('#default-model-select').change(defaultModelChanged);
     $('#model-select').change(changeModel);
     $('#switchToCustomMode').click(() => {
         window.location.href = 'custom_mode.html';
@@ -266,4 +363,5 @@ $(document).ready(() => {
         }
     });
     $('#download-table').click(downloadTable);
+    $('#get-question-button').click(getPipelineAnswer);
 });

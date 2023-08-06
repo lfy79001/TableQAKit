@@ -316,7 +316,10 @@ def upload_custom_table():
     # 上传的表格名不能重复,前端校验+后端校验 限制文件大小
     #############################################################
     try:
-        file = request.files['excel_file']  #----此处未验证过----
+        if 'excel_file' in request.files:
+            file = request.files['excel_file']
+        else:
+            raise Exception("no excel file")
         # json_file = request.json
         # table_name = json_file.get('table_name')
     

@@ -119,7 +119,7 @@
                                 <div class="card-body">
                                     <p class="card-title">Table</p>
 
-                                    <button type="button" id="down-excel" class="btn btn-info btn-icon-text" style="height:45px;" data-bs-target="#download-custom-table-modal" data-bs-toggle="modal">
+                                    <button type="button" class="btn btn-info btn-icon-text" style="height:45px;" data-bs-target="#download-custom-table-modal" data-bs-toggle="modal">
                                       Download
                                       <i class="mdi mdi-download btn-icon-append"></i>
                                     </button>
@@ -223,7 +223,7 @@
     </div>
 
     <div class="modal fade" id="upload-table-modal" tabindex="-1" style="display: none;" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
-        <div class="modal-dialog" style=" ">
+        <div class="modal-dialog" >
             <div class="modal-content" style="width:600px;">
                 <div class="modal-header">
                     <h5 class="modal-title" id="upload-table-modal-label">Upload Table</h5>
@@ -252,7 +252,7 @@
                                             <a class="dropdown-toggle" id="messageDropdown-uploaded_table" href="#" data-bs-toggle="dropdown" aria-expanded="false">
                                                 <i class="mdi mdi-information mx-0"></i>
                                             </a>
-                                            <div class="dropdown-menu" aria-labelledby="messageDropdown-uploaded_table" style="width=100px">
+                                            <div class="dropdown-menu" aria-labelledby="messageDropdown-uploaded_table" >
 
                                                 <p class="drop-txt">
                                                     <b>Previously uploaded table name:</b> myTable01; myTable02; myTable03
@@ -265,7 +265,7 @@
                                 <div class="form-group">
                                     <label>Table File</label>
                                     <span style="margin-left:10px;">
-                            <a class="" id="download-example" href="#">
+                            <a class="" id="download-example" href="/example">
                                 <i class="mdi mdi-download mx-0"></i>
                                 <span>Download File Example</span>
                                     </a>
@@ -291,7 +291,7 @@
 
 
     <div class="modal fade" id="select-table-modal" tabindex="-1" style="display: none;" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
-        <div class="modal-dialog" style=" ">
+        <div class="modal-dialog" >
             <div class="modal-content" style="width:600px;">
                 <div class="modal-header">
                     <h5 class="modal-title" id="select-table-modal-label">Select table</h5>
@@ -377,7 +377,7 @@
                 </div>
 
                 <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
+                    <button id="close-select-list-btn" type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>
                 </div>
 
             </div>
@@ -386,7 +386,7 @@
 
 
     <div class="modal fade" id="download-custom-table-modal" tabindex="-1" style="display: none;" aria-hidden="true" data-bs-backdrop="static" data-bs-keyboard="false">
-        <div class="modal-dialog" style=" ">
+        <div class="modal-dialog" >
             <div class="modal-content" style="width:600px;">
                 <div class="modal-header">
                     <h5 class="modal-title" id="download-custom-table-modal-label">Download Table</h5>
@@ -411,7 +411,7 @@
                                     </div>
 
                                 </div>
-                                <button type="submit" class="btn btn-primary me-2">Download</button>
+                                <button type="button" id="download-excel" class="btn btn-primary me-2">Download</button>
                                 <button type="button" class="btn btn-light" data-bs-dismiss="modal">Cancel</button>
                             </form>
 
