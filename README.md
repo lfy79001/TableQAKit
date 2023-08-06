@@ -276,54 +276,6 @@ TableQAEval is a benchmark to evaluate the performance of LLM for TableQA. It ev
 
 
 
-## QuickStart
-```
-pip install gunicorn
-
-# 运行在210.75.240.136:18889,访问：http://210.75.240.136:18889
-gunicorn -c gunicorn_config.py app:app --daemon
-
-# 想要停止运行？
-在gunicorn_error.log找到最新的记录Listening记录，如"Listening at: http://210.75.240.136:18889 (2609966)"
-使用 kill 2609966 可实现停止运行
-
-```
-
-
-
-
-
-
-## 如何往PyPI上提交
-0. 安装必要的工具
-   ```bash
-   pip install setuptools wheel twine
-1. 先修改setup.py这个文件
-2. 生成分发文件。在命令行中运行以下命令以生成源代码压缩包和轮子（wheel）分发文件：
-   ```bash
-    python setup.py sdist bdist_wheel
-3. 使用twine上传到测试 PyPI。运行以下命令以将您的分发文件上传到测试 PyPI：
-    ```bash 
-    twine upload --repository-url https://test.pypi.org/legacy/dist/*
-    ```
-    UserName: lfy79001
-
-    PassWord: 20010213lfyLFY!
-4. 访问 https://test.pypi.org/project/ttqakit
-5. 上传到正式的
-    ```bash
-    twine upload dist/*
-    ```
-    访问 https://pypi.org/project/ttqakit
-6. 完毕后可以安装
-    ```bash
-    # 正式版
-    pip install ttqakit
-    # test版
-    pip install --index-url https://test.pypi.org/simple/ttqakit
-
-
-
 
 
 
