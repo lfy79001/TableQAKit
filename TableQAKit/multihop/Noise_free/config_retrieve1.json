@@ -1,0 +1,7 @@
+{
+    "batch_size": 1, 
+    "epoch_nums": 5, 
+    "bert_max_length": 512, 
+    "learning_rate": 7e-06, 
+    "eps": 1e-08
+}
