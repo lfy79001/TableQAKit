@@ -39,7 +39,7 @@ pip install -r requirements.txt
 ```
 
 
-# Folder
+<!-- # Folder
 The TableQAKit repository is structured as follows:
 
 ```bash
@@ -110,7 +110,44 @@ The TableQAKit repository is structured as follows:
 ├── static/ 
 ├── LICENSE
 └── README.md
+``` -->
+
+
+# Folder
+The TableQAKit repository is structured as follows:
+
+```bash
+├── icl/ # LLM-prompting toolkit
+├── llama/ # LLM-finetuning toolkit
+├── mmqa_utils/ # EncyclopediaQA toolkit
+│   ├── classifier_module/ # The package for classifier
+│   ├── retriever_module/ # The package for encyclopedia retrieval
+├── structuredqa/ # Read model TaLMs
+│   ├── builder/
+│   ├── utils/
+├── retriever/ # TableQA's general retriever （SpreadSheet examples）
+├── multihop/ # Readers for encyclopediaQA
+│   ├── Retrieval/
+│   └── Read/
+├── numerical/ # Readers for some TableQA datasets
+├── TableQAEval/ # The proposed new LLM-Long-Table Benchmark
+│   ├── Baselines/ # Add your LLMs
+│   │   ├── turbo16k-table.py
+│   │   ├── llama2-chat-table.py
+│   │   └── ...
+│   ├── Evaluation/ # metrics
+│   └── TableQAEval.json  
+├── outputs/ # the results of some models
+├── loaders/ 
+│   ├── WikiSQL.py
+│   └── ...
+├── structs/ 
+│   ├── data.py
+├── static/ 
+├── LICENSE
+└── README.md
 ```
+
 
 # 🗃️ Dataset
 According to our taxonomy, we classify the TableQA task into three categories of tasks, as shown in the following figure:
