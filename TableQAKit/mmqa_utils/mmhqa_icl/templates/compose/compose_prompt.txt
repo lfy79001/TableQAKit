@@ -1,0 +1,781 @@
+Args info:
+dataset: mmqa
+dataset_split: train
+api_keys_file: key.txt
+prompt_file: templates/prompt.json
+save_dir: results/
+save_file_name: None
+n_processes: 1
+n_shots: 18
+seed: 42
+limit: 150
+start_eid: 100
+resume: False
+oracle_retriever: True
+oracle_classifier: True
+engine: text-davinci-003
+worker_address: http://localhost:40000
+n_parallel_prompts: 1
+max_generation_tokens: 200
+max_api_total_tokens: 4000
+temperature: 0.1
+sampling_n: 10
+top_p: 1.0
+stop_tokens: ['\n\n']
+verbose: False
+
+******* End To End QA *******
+begin annotate begin_eid:  100 end_eid:  250 total:  23817
+Process#0: eid#100, qid#ee309a646a1661b94e768bda4e901cf4 generation error: '97bdbbaad924eec472f1f74648af8196'
+Process#0: eid#101, qid#e090b8d1cca0a7cbeceb4f18cfe43ef8 generation error: '97bdbbaad924eec472f1f74648af8196'
+Process#0: eid#104, qid#529d4345a1c5519e0aed79c5de6809e7 generation error: '7f31cee0ef4e1a61dc3ef0f1fd76c3c2'
+Process#0: eid#105, qid#c054335cf6ca4217ed5bcb63fe8c9f1b generation error: '8cde2f85b5d23b4b2eb5716e0d940023'
+Process#0: eid#106, qid#95c60c5bd74c14d31d3e82f4235c15a5 generation error: '8cde2f85b5d23b4b2eb5716e0d940023'
+Process#0: eid#107, qid#86a90276c7d6fee4489f1c5920239b44 generation error: 'c2044be7619dc8fa4fb7ff3956c91e94'
+Process#0: eid#108, qid#ebd3441ba69a12ea56fc8c40e5a1d712 generation error: 'c2044be7619dc8fa4fb7ff3956c91e94'
+Images: 
+
+Passages: 
+"Internet café" (The online café phenomenon in the United States was started in July 1991 by Wayne Gregori in San Francisco when he began SFnet Coffeehouse Network. Gregori designed, built and installed 25 coin-operated computer terminals in coffeehouses throughout the San Francisco Bay Area. The café terminals dialed into a 32 line Bulletin Board System that offered an array of electronic services including FIDOnet mail and, in 1992, Internet mail.)
+
+Table FIRST Power Up: 
+Event	Location	Date
+Rocket City	Huntsville, Alabama	March 14–17
+Los Angeles	Pomona, California	March 14–17
+Central Illinois	Peoria, Illinois	March 14–17
+Greater Kansas City	Kansas City, Missouri	March 14–17
+Finger Lakes	Rochester, New York	March 14–17
+New York Tech Valley	Troy, New York	March 14–17
+Lone Star Central	Houston, Texas	March 14–17
+San Francisco	San Francisco, California	March 15–18
+Shanghai	Shanghai, China	March 15–18
+South Pacific	Sydney Olympic Park, Australia	March 16–18
+
+Question: What was the event name during Week 3 of the 1st Power Up in the location of the first US cybercafe?
+
+Answer: San Francisco
+
+
+Process#0: eid#111, qid#1ea914ec59ea6c628e841b20faf12990 generation error: '82cc9731d44fec0bc2dbe85ef33acc9d'
+Process#0: eid#112, qid#4b66b82b20d3ae85b4104b56aad4aeee generation error: '7aeba59625f2943e29114281c0962823'
+Process#0: eid#126, qid#562b7f10fa66e2a7fe0f5b276c97542d generation error: 'bdb661b8c779a3f059d8b389b665451a'
+Process#0: eid#127, qid#1e8864a1422a0e14b1bd6549ca44e38e generation error: 'bdb661b8c779a3f059d8b389b665451a'
+Images: 
+
+Passages: 
+"Rosalind (As You Like It)" (She is the beautiful daughter of the exiled Duke Senior and niece to his usurping  brother Duke Frederick. Her father is banished from the kingdom which breaks her heart. She then meets Orlando, one of her father's friends' son and falls in love with him. After angering her uncle, she leaves his court for exile in the Forest of Arden. Disguised as a shepherd named Ganymede, Rosalind lives with her sweet and devoted cousin, Celia (who is disguised as Ganymede's sister, Aliena), and Duke Frederick's fool Touchstone. Eventually, Rosalind is reunited with her father and married to her faithful lover, Orlando.)
+
+Table Vanessa Kirby: 
+Year	Title	Playwright	Role	Venue
+2010	All My Sons	Arthur Miller	Ann Deever	Octagon Theatre
+2010	Ghosts	Henrik Ibsen	Regina Engstrand	Octagon Theatre
+2010	A Midsummer Night's Dream	William Shakespeare	Helena	Octagon Theatre
+2010	As You Like It	William Shakespeare	Rosalind	West Yorkshire Playhouse
+2011	Women Beware Women	Thomas Middleton	Isabella	Royal National Theatre
+2011	The Acid Test	Anya Reiss	Dana	Royal Court Theatre
+2012	Three Sisters	Anton Chekhov	Maria "Masha" Kulygina	Young Vic
+2013	Edward II	Christopher Marlowe	Isabella of France	Royal National Theatre
+2014	A Streetcar Named Desire	Tennessee Williams	Stella Kowalski	Young Vic
+2016	Uncle Vanya	Anton Chekhov	Helena Serebryakova	Almeida Theatre
+2016	A Streetcar Named Desire	Tennessee Williams	Stella Kowalski	St. Ann's Warehouse
+2018	Julie	Polly Stenham	Julie	Royal National Theatre
+
+Question: What is the alter ego adopted by Rosalind in the Vanessa Kirby Theater title at the West Yorkshire Playhouse?
+
+Answer: a shepherd named Ganymede
+
+
+Images: 
+
+Passages: 
+"Rosalind (As You Like It)" (She is the beautiful daughter of the exiled Duke Senior and niece to his usurping  brother Duke Frederick. Her father is banished from the kingdom which breaks her heart. She then meets Orlando, one of her father's friends' son and falls in love with him. After angering her uncle, she leaves his court for exile in the Forest of Arden. Disguised as a shepherd named Ganymede, Rosalind lives with her sweet and devoted cousin, Celia (who is disguised as Ganymede's sister, Aliena), and Duke Frederick's fool Touchstone. Eventually, Rosalind is reunited with her father and married to her faithful lover, Orlando.)
+
+Table Vanessa Kirby: 
+Year	Title	Playwright	Role	Venue
+2010	All My Sons	Arthur Miller	Ann Deever	Octagon Theatre
+2010	Ghosts	Henrik Ibsen	Regina Engstrand	Octagon Theatre
+2010	A Midsummer Night's Dream	William Shakespeare	Helena	Octagon Theatre
+2010	As You Like It	William Shakespeare	Rosalind	West Yorkshire Playhouse
+2011	Women Beware Women	Thomas Middleton	Isabella	Royal National Theatre
+2011	The Acid Test	Anya Reiss	Dana	Royal Court Theatre
+2012	Three Sisters	Anton Chekhov	Maria "Masha" Kulygina	Young Vic
+2013	Edward II	Christopher Marlowe	Isabella of France	Royal National Theatre
+2014	A Streetcar Named Desire	Tennessee Williams	Stella Kowalski	Young Vic
+2016	Uncle Vanya	Anton Chekhov	Helena Serebryakova	Almeida Theatre
+2016	A Streetcar Named Desire	Tennessee Williams	Stella Kowalski	St. Ann's Warehouse
+2018	Julie	Polly Stenham	Julie	Royal National Theatre
+
+Question: What was the alter-ego adopted by Rosalind in the play where Vanessa Kirby played Rosalind
+
+Answer: a shepherd named Ganymede
+
+
+Process#0: eid#137, qid#530d9663f1e5687d2e016a5fcdf0c93b generation error: '69fc620e24d1ea08065fe462174c6e41'
+Images: 
+
+Passages: 
+"Deion Sanders" (Sanders played football primarily at cornerback, but also as a kick returner, punt returner, and occasionally wide receiver. He played in the National Football League (NFL) for the Atlanta Falcons, the San Francisco 49ers, the Dallas Cowboys, the Washington Redskins and the Baltimore Ravens, winning the Super Bowl with both the 49ers and the Cowboys. An outfielder in baseball, he played professionally for the New York Yankees, the Atlanta Braves, the Cincinnati Reds and the San Francisco Giants, and participated in the 1992 World Series with the Braves. He attended Florida State University, where he was recognized as a two-time All-American in football, and also played baseball and ran track.)
+
+Table 2013 Arizona Cardinals season: 
+Week	Date	Opponent	Result	Record	Game site	NFL.com recap
+1	September 8	at St. Louis Rams	L 24–27	0–1	Edward Jones Dome	[http://www.nfl.com/gamecenter/2013090810/2013/REG1/cardinals@rams Recap]
+2	September 15	Detroit Lions	W 25–21	1–1	University of Phoenix Stadium	[http://www.nfl.com/gamecenter/2013091509/2013/REG2/lions@cardinals Recap]
+3	September 22	at New Orleans Saints	L 7–31	1–2	Mercedes-Benz Superdome	[http://www.nfl.com/gamecenter/2013092207/2013/REG3/cardinals@saints Recap]
+4	September 29	at Tampa Bay Buccaneers	W 13–10	2–2	Raymond James Stadium	[http://www.nfl.com/gamecenter/2013092907/2013/REG4/cardinals@buccaneers Recap]
+5	October 6	Carolina Panthers	W 22–6	3–2	University of Phoenix Stadium	[http://www.nfl.com/gamecenter/2013100608/2013/REG5/panthers@cardinals Recap]
+6	October 13	at San Francisco 49ers	L 20–32	3–3	Candlestick Park	[http://www.nfl.com/gamecenter/2013101311/2013/REG6/cardinals@49ers Recap]
+7	Thursday (October 17)	Seattle Seahawks	L 22–34	3–4	University of Phoenix Stadium	[http://www.nfl.com/gamecenter/2013101700/2013/REG7/seahawks@cardinals Recap]
+8	October 27	Atlanta Falcons	W 27–13	4–4	University of Phoenix Stadium	[http://www.nfl.com/gamecenter/2013102708/2013/REG8/falcons@cardinals Recap]
+9	Bye	Bye	Bye	Bye	Bye	Bye
+10	November 10	Houston Texans	W 27–24	5–4	University of Phoenix Stadium	[http://www.nfl.com/gamecenter/2013111009/2013/REG10/texans@cardinals Recap]
+11	November 17	at Jacksonville Jaguars	W 27–14	6–4	EverBank Field	[http://www.nfl.com/gamecenter/2013111704/2013/REG11/cardinals@jaguars Recap]
+12	November 24	Indianapolis Colts	W 40–11	7–4	University of Phoenix Stadium	[http://www.nfl.com/gamecenter/2013112408/2013/REG12/colts@cardinals Recap]
+13	December 1	at Philadelphia Eagles	L 21–24	7–5	Lincoln Financial Field	[http://www.nfl.com/gamecenter/2013120106/2013/REG13/cardinals@eagles Recap]
+14	December 8	St. Louis Rams	W 30–10	8–5	University of Phoenix Stadium	[http://www.nfl.com/gamecenter/2013120810/2013/REG14/rams@cardinals Recap]
+15	December 15	at Tennessee Titans	W 37–34	9–5	LP Field	[http://www.nfl.com/gamecenter/2013121509/2013/REG15/cardinals@titans Recap]
+16	December 22	at Seattle Seahawks	W 17–10	10–5	CenturyLink Field	[http://www.nfl.com/gamecenter/2013122211/2013/REG16/cardinals@seahawks Recap]
+17	December 29	San Francisco 49ers	L 20–23	10–6	University of Phoenix Stadium	[http://www.nfl.com/gamecenter/2013122912/2013/REG17/49ers@cardinals Recap]
+
+Question: What NFL teams that deion sanders played for versed the Arizona Cardinals at the University of Phoenix Stadium in the 2013 regular season?
+
+Answer: San Francisco 49ers | Atlanta Falcons
+
+
+Images: 
+
+Passages: 
+"Brad Culpepper" (Culpepper was a tenth round selection (264th overall pick) in the 1992 NFL Draft by the Minnesota Vikings, and he played for the Vikings from 1992 to 1993, the Tampa Bay Buccaneers from 1994 to 1999, and the Chicago Bears in 2000. In his nine-year professional career, Culpepper played in 131 games, started 83 of them, and recorded 34 quarterback sacks and one safety.)
+
+Table 2013 Arizona Cardinals season: 
+Week	Date	Opponent	Result	Record	Game site	NFL.com recap
+1	September 8	at St. Louis Rams	L 24–27	0–1	Edward Jones Dome	[http://www.nfl.com/gamecenter/2013090810/2013/REG1/cardinals@rams Recap]
+2	September 15	Detroit Lions	W 25–21	1–1	University of Phoenix Stadium	[http://www.nfl.com/gamecenter/2013091509/2013/REG2/lions@cardinals Recap]
+3	September 22	at New Orleans Saints	L 7–31	1–2	Mercedes-Benz Superdome	[http://www.nfl.com/gamecenter/2013092207/2013/REG3/cardinals@saints Recap]
+4	September 29	at Tampa Bay Buccaneers	W 13–10	2–2	Raymond James Stadium	[http://www.nfl.com/gamecenter/2013092907/2013/REG4/cardinals@buccaneers Recap]
+5	October 6	Carolina Panthers	W 22–6	3–2	University of Phoenix Stadium	[http://www.nfl.com/gamecenter/2013100608/2013/REG5/panthers@cardinals Recap]
+6	October 13	at San Francisco 49ers	L 20–32	3–3	Candlestick Park	[http://www.nfl.com/gamecenter/2013101311/2013/REG6/cardinals@49ers Recap]
+7	Thursday (October 17)	Seattle Seahawks	L 22–34	3–4	University of Phoenix Stadium	[http://www.nfl.com/gamecenter/2013101700/2013/REG7/seahawks@cardinals Recap]
+8	October 27	Atlanta Falcons	W 27–13	4–4	University of Phoenix Stadium	[http://www.nfl.com/gamecenter/2013102708/2013/REG8/falcons@cardinals Recap]
+9	Bye	Bye	Bye	Bye	Bye	Bye
+10	November 10	Houston Texans	W 27–24	5–4	University of Phoenix Stadium	[http://www.nfl.com/gamecenter/2013111009/2013/REG10/texans@cardinals Recap]
+11	November 17	at Jacksonville Jaguars	W 27–14	6–4	EverBank Field	[http://www.nfl.com/gamecenter/2013111704/2013/REG11/cardinals@jaguars Recap]
+12	November 24	Indianapolis Colts	W 40–11	7–4	University of Phoenix Stadium	[http://www.nfl.com/gamecenter/2013112408/2013/REG12/colts@cardinals Recap]
+13	December 1	at Philadelphia Eagles	L 21–24	7–5	Lincoln Financial Field	[http://www.nfl.com/gamecenter/2013120106/2013/REG13/cardinals@eagles Recap]
+14	December 8	St. Louis Rams	W 30–10	8–5	University of Phoenix Stadium	[http://www.nfl.com/gamecenter/2013120810/2013/REG14/rams@cardinals Recap]
+15	December 15	at Tennessee Titans	W 37–34	9–5	LP Field	[http://www.nfl.com/gamecenter/2013121509/2013/REG15/cardinals@titans Recap]
+16	December 22	at Seattle Seahawks	W 17–10	10–5	CenturyLink Field	[http://www.nfl.com/gamecenter/2013122211/2013/REG16/cardinals@seahawks Recap]
+17	December 29	San Francisco 49ers	L 20–23	10–6	University of Phoenix Stadium	[http://www.nfl.com/gamecenter/2013122912/2013/REG17/49ers@cardinals Recap]
+
+Question: Did the Arizona Cardinals play the Detroit Lions or the NFL team that Culpepper played for in a lower week during their 2013 regular season?
+
+Answer: at Tampa Bay Buccaneers
+
+
+Images: 
+
+Passages: 
+"Candlestick Park" (Candlestick Park was an outdoor sports and entertainment stadium in the West Coast of the United States, located in San Francisco, in the Bayview Heights area. The stadium was originally the home of Major League Baseball's San Francisco Giants, who played there from 1960 until moving into Pacific Bell Park (since renamed AT&T Park) in 2000. It was also the home field of the San Francisco 49ers of the National Football League from 1971 through 2013. The 49ers moved to Levi's Stadium in Santa Clara for the 2014 season.)
+
+Table 2013 Arizona Cardinals season: 
+Week	Date	Opponent	Result	Record	Game site	NFL.com recap
+1	September 8	at St. Louis Rams	L 24–27	0–1	Edward Jones Dome	[http://www.nfl.com/gamecenter/2013090810/2013/REG1/cardinals@rams Recap]
+2	September 15	Detroit Lions	W 25–21	1–1	University of Phoenix Stadium	[http://www.nfl.com/gamecenter/2013091509/2013/REG2/lions@cardinals Recap]
+3	September 22	at New Orleans Saints	L 7–31	1–2	Mercedes-Benz Superdome	[http://www.nfl.com/gamecenter/2013092207/2013/REG3/cardinals@saints Recap]
+4	September 29	at Tampa Bay Buccaneers	W 13–10	2–2	Raymond James Stadium	[http://www.nfl.com/gamecenter/2013092907/2013/REG4/cardinals@buccaneers Recap]
+5	October 6	Carolina Panthers	W 22–6	3–2	University of Phoenix Stadium	[http://www.nfl.com/gamecenter/2013100608/2013/REG5/panthers@cardinals Recap]
+6	October 13	at San Francisco 49ers	L 20–32	3–3	Candlestick Park	[http://www.nfl.com/gamecenter/2013101311/2013/REG6/cardinals@49ers Recap]
+7	Thursday (October 17)	Seattle Seahawks	L 22–34	3–4	University of Phoenix Stadium	[http://www.nfl.com/gamecenter/2013101700/2013/REG7/seahawks@cardinals Recap]
+8	October 27	Atlanta Falcons	W 27–13	4–4	University of Phoenix Stadium	[http://www.nfl.com/gamecenter/2013102708/2013/REG8/falcons@cardinals Recap]
+9	Bye	Bye	Bye	Bye	Bye	Bye
+10	November 10	Houston Texans	W 27–24	5–4	University of Phoenix Stadium	[http://www.nfl.com/gamecenter/2013111009/2013/REG10/texans@cardinals Recap]
+11	November 17	at Jacksonville Jaguars	W 27–14	6–4	EverBank Field	[http://www.nfl.com/gamecenter/2013111704/2013/REG11/cardinals@jaguars Recap]
+12	November 24	Indianapolis Colts	W 40–11	7–4	University of Phoenix Stadium	[http://www.nfl.com/gamecenter/2013112408/2013/REG12/colts@cardinals Recap]
+13	December 1	at Philadelphia Eagles	L 21–24	7–5	Lincoln Financial Field	[http://www.nfl.com/gamecenter/2013120106/2013/REG13/cardinals@eagles Recap]
+14	December 8	St. Louis Rams	W 30–10	8–5	University of Phoenix Stadium	[http://www.nfl.com/gamecenter/2013120810/2013/REG14/rams@cardinals Recap]
+15	December 15	at Tennessee Titans	W 37–34	9–5	LP Field	[http://www.nfl.com/gamecenter/2013121509/2013/REG15/cardinals@titans Recap]
+16	December 22	at Seattle Seahawks	W 17–10	10–5	CenturyLink Field	[http://www.nfl.com/gamecenter/2013122211/2013/REG16/cardinals@seahawks Recap]
+17	December 29	San Francisco 49ers	L 20–23	10–6	University of Phoenix Stadium	[http://www.nfl.com/gamecenter/2013122912/2013/REG17/49ers@cardinals Recap]
+
+Question: In which year did the San Francisco 49ers move to their new stadium, which was the location that the Arizona Cardinals lost a 2013 regular season game by the score of 20 to 32?
+
+Answer: 1971
+
+
+Process#0: eid#154, qid#8d218eb970ded772145bc4b3c20457f3 generation error: '57d345acbfc636392d4656b685e216f4'
+Images: 
+
+Passages: 
+"Burj Al Arab" (The building opened in December 1999.)
+
+Table SaudiGulf Airlines: 
+Country	City	Airport	Notes	Refs
+(null)	Amman	Queen Alia International Airport	(null)	(null)
+(null)	Islamabad	Islamabad International Airport	(null)	(null)
+(null)	Karachi	Jinnah International Airport	(null)	(null)
+(null)	Lahore	Allama Iqbal International Airport	(null)	(null)
+(null)	Sialkot	Sialkot International Airport	(null)	(null)
+(null)	Abha	Abha Regional Airport	(null)	(null)
+(null)	Dammam	King Fahd International Airport	(null)	(null)
+(null)	Jeddah	King Abdulaziz International Airport	(null)	(null)
+(null)	Riyadh	King Khalid International Airport	(null)	(null)
+(null)	Medina	Prince Mohammad bin Abdulaziz International  Airport	(null)	(null)
+(null)	Dubai	Dubai International Airport	(null)	(null)
+
+Question: When was the burj al arab in the city where SaudiGulf Airlines operates to Dubai International Airport built?
+
+Answer: 1999
+
+
+Images: 
+
+Passages: 
+"Boston Legal" (A spin-off of the long-running Kelley series The Practice, Boston Legal follows the exploits of former Practice character Alan Shore at the legal firm of Crane, Poole & Schmidt.)
+
+Table Dave Anthony: 
+Program	Date	Character
+Veep	2016	Reporter
+Hidden America with Jonah Ray	2016	Gary
+Director's Cut	2016	Richard Speck
+Comedy Bang Bang	2015	Pranked Guy
+Hello Ladies	2014	Dave
+Maron	2013–2016	Self
+The Office	2011	Businessman
+Men of a Certain Age	2011	Customer
+Crocodile Tears (Funny or Die short)	2011	Director
+Entourage	2009	Showrunner #2
+Recount	2008	Florida Stay Reporter
+Magnetic Poles (short)	2006	Matteo
+Las Vegas	2006	Jason
+Boston Legal	2005	Technician
+Scare Tactics	2003	Dave / Meteor Man / Repo Man
+
+Question: The program where dave anthony played a Technician was a spinoff of what show?
+
+Answer: The Practice
+
+
+Images: 
+
+Passages: 
+"Corn flakes" (There have been many mascots of Kellogg's Cornflakes. The most popular one is a green rooster named Cornelius "Corny" Rooster, which has been the mascot since his debut. In early commercials, he would speak the catch phrase "Wake up, up, up to Kellogg's Cornflakes!" Dallas McKennon and Andy Devine voiced him. Later, he stopped talking and simply crowed.[citation needed] The concept of using a stylized cockerel originated from a suggestion by family friend Nansi Richards, a harpist from Wales and a Welsh language proponent. The Welsh word for cockerel is ceiliog (pronounced keyeleeog or in some dialects keelog).)
+
+Table 1980 in Michigan: 
+Fortune 500 Rank (1981) (sales and net earnings figures come from the 1981 Fortune 500 list based on 1955 sales and earnings, unless another source is provided.)	Company	1980 sales (millions)	1980 net earnings (millions)	Headquarters	Nature of business
+3	General Motors	57,728.5	-762.5	Detroit	One of the "Big Three" automobile manufacturers
+6	Ford Motor Company	37,085.5	-1,543.3	Dearborn	One of the "Big Three" automobile manufacturers
+na	Kmart	14,200.0	260.5	Troy	Retail stores
+25	Dow Chemical Co.	10,626.0	805.0	Midland	Chemicals
+32	Chrysler	9,225.3	-1,709.7	Detroit	One of the "Big Three" automobile manufacturers
+87	Bendix Corporation	4,270.4	191.6	Southfield	Auto parts, aerospace and electronic equipment and machine tools
+115	Eaton Corporation	3,176.5	115.8	Cleveland, OH	Automobile parts
+137	Burroughs	2,857.2	82.0	Detroit	Computers and data processing machines (later became Unisys)
+155	American Motors	2,552.6	-197.5	Southfield	Automobiles
+na	Consumers Power	2,300.0	224.0	Jackson	Electric and natural gas utility
+170	Whirlpool Corporation	2,243.2	101.7	Benton Harbor	Washers, dryers, appliances
+176	Kellogg's	2,150.9	184.8	Battle Creek	Cereal
+180	Fruehauf Trailer Co.	2,081.7	32.2	Detroit	Truck trailers
+na	Upjohn	1,800.0	170.1	Kalamazoo	Pharmaceuticals
+na	Detroit Edison	1,800.0	137.5	Detroit	Electric utility
+226	Clark Equipment Co.	1,533.7	53.5	Buchanan	Industrial and construction machinery
+297	Ex-Cell-O	1,020.7	50.4	Troy	Industrial equipment
+377	Federal-Mogul	721.2	36.7	Detroit	Bearings and replacement parts for autos, trucks, and aircraft
+427	McLouth Steel	614.0	-56.6	Detroit	Steel producer for auto industry
+434	Gerber Products	602.0	29.7	Fremont	Baby food
+
+Question: The 1980 top Battle Creek Michigan company had what kind of rooster?
+
+Answer: cockerel
+
+
+Process#0: eid#171, qid#4642ff2ffbdb35f0f4c29ce0a51fd703 generation error: '11c83f9255a2c44a05159e41095a7402'
+Images: 
+
+Passages: 
+"Kellogg's" (Kellogg's was founded as the Battle Creek Toasted Corn Flake Company on February 19, 1906, by Will Keith Kellogg as an outgrowth of his work with his brother John Harvey Kellogg at the Battle Creek Sanitarium following practices based on the Seventh-day Adventist Church. The company produced and marketed the hugely successful Kellogg's Toasted Corn Flakes and was renamed the Kellogg Company in 1922.[not verified in body])
+
+Table 1980 in Michigan: 
+Fortune 500 Rank (1981) (sales and net earnings figures come from the 1981 Fortune 500 list based on 1955 sales and earnings, unless another source is provided.)	Company	1980 sales (millions)	1980 net earnings (millions)	Headquarters	Nature of business
+3	General Motors	57,728.5	-762.5	Detroit	One of the "Big Three" automobile manufacturers
+6	Ford Motor Company	37,085.5	-1,543.3	Dearborn	One of the "Big Three" automobile manufacturers
+na	Kmart	14,200.0	260.5	Troy	Retail stores
+25	Dow Chemical Co.	10,626.0	805.0	Midland	Chemicals
+32	Chrysler	9,225.3	-1,709.7	Detroit	One of the "Big Three" automobile manufacturers
+87	Bendix Corporation	4,270.4	191.6	Southfield	Auto parts, aerospace and electronic equipment and machine tools
+115	Eaton Corporation	3,176.5	115.8	Cleveland, OH	Automobile parts
+137	Burroughs	2,857.2	82.0	Detroit	Computers and data processing machines (later became Unisys)
+155	American Motors	2,552.6	-197.5	Southfield	Automobiles
+na	Consumers Power	2,300.0	224.0	Jackson	Electric and natural gas utility
+170	Whirlpool Corporation	2,243.2	101.7	Benton Harbor	Washers, dryers, appliances
+176	Kellogg's	2,150.9	184.8	Battle Creek	Cereal
+180	Fruehauf Trailer Co.	2,081.7	32.2	Detroit	Truck trailers
+na	Upjohn	1,800.0	170.1	Kalamazoo	Pharmaceuticals
+na	Detroit Edison	1,800.0	137.5	Detroit	Electric utility
+226	Clark Equipment Co.	1,533.7	53.5	Buchanan	Industrial and construction machinery
+297	Ex-Cell-O	1,020.7	50.4	Troy	Industrial equipment
+377	Federal-Mogul	721.2	36.7	Detroit	Bearings and replacement parts for autos, trucks, and aircraft
+427	McLouth Steel	614.0	-56.6	Detroit	Steel producer for auto industry
+434	Gerber Products	602.0	29.7	Fremont	Baby food
+
+Question: In the companies of 1980 in Michigan, where did the name of the company that was headquartered in Battle Creek come from?
+
+Answer: Will Keith Kellogg
+
+
+Process#0: eid#173, qid#30c3f3920ce666c2407bcf72a897d2dc generation error: '2471de79891ff90b88d604d980416897'
+Images: 
+
+Passages: 
+"Ford Motor Company" (Ford Motor Company is an American multinational automaker headquartered in Dearborn, Michigan, a suburb of Detroit. It was founded by Henry Ford and incorporated on June 16, 1903. The company sells automobiles and commercial vehicles under the Ford brand and most luxury cars under the Lincoln brand. Ford also owns Brazilian SUV manufacturer Troller, an 8% stake in Aston Martin of the United Kingdom, and a 49% stake in Jiangling Motors of China. It also has joint-ventures in China (Changan Ford), Taiwan (Ford Lio Ho), Thailand (AutoAlliance Thailand), Turkey (Ford Otosan), and Russia (Ford Sollers). The company is listed on the New York Stock Exchange and is controlled by the Ford family; they have minority ownership but the majority of the voting power.)
+
+Table 1980 in Michigan: 
+Fortune 500 Rank (1981) (sales and net earnings figures come from the 1981 Fortune 500 list based on 1955 sales and earnings, unless another source is provided.)	Company	1980 sales (millions)	1980 net earnings (millions)	Headquarters	Nature of business
+3	General Motors	57,728.5	-762.5	Detroit	One of the "Big Three" automobile manufacturers
+6	Ford Motor Company	37,085.5	-1,543.3	Dearborn	One of the "Big Three" automobile manufacturers
+na	Kmart	14,200.0	260.5	Troy	Retail stores
+25	Dow Chemical Co.	10,626.0	805.0	Midland	Chemicals
+32	Chrysler	9,225.3	-1,709.7	Detroit	One of the "Big Three" automobile manufacturers
+87	Bendix Corporation	4,270.4	191.6	Southfield	Auto parts, aerospace and electronic equipment and machine tools
+115	Eaton Corporation	3,176.5	115.8	Cleveland, OH	Automobile parts
+137	Burroughs	2,857.2	82.0	Detroit	Computers and data processing machines (later became Unisys)
+155	American Motors	2,552.6	-197.5	Southfield	Automobiles
+na	Consumers Power	2,300.0	224.0	Jackson	Electric and natural gas utility
+170	Whirlpool Corporation	2,243.2	101.7	Benton Harbor	Washers, dryers, appliances
+176	Kellogg's	2,150.9	184.8	Battle Creek	Cereal
+180	Fruehauf Trailer Co.	2,081.7	32.2	Detroit	Truck trailers
+na	Upjohn	1,800.0	170.1	Kalamazoo	Pharmaceuticals
+na	Detroit Edison	1,800.0	137.5	Detroit	Electric utility
+226	Clark Equipment Co.	1,533.7	53.5	Buchanan	Industrial and construction machinery
+297	Ex-Cell-O	1,020.7	50.4	Troy	Industrial equipment
+377	Federal-Mogul	721.2	36.7	Detroit	Bearings and replacement parts for autos, trucks, and aircraft
+427	McLouth Steel	614.0	-56.6	Detroit	Steel producer for auto industry
+434	Gerber Products	602.0	29.7	Fremont	Baby food
+
+Question: Who owns the major part of the company headquartered in Dearborn Michigan in 1980?
+
+Answer: the Ford family
+
+
+Process#0: eid#179, qid#f236950754792502b50158750553cc45 generation error: '6c29baada7d38aca839dbf15f035ede4'
+Images: 
+
+Passages: 
+"Crying in the Club" ("Crying in the Club" is the debut solo single by Cuban-born American singer and songwriter Camila Cabello. It was released as the lead single on May 19, 2017 for her debut studio album The Hurting. The Healing. The Loving. (2017). Its music video premiered the same date. The song was written by Cabello, Sia, and Benny Blanco. It is a mid-tempo tropical pop and dance track. It is her first release as a solo artist since her departure from the girl group Fifth Harmony.)
+
+Table Jordan Smith (musician): 
+Stage	Song	Original Artist	Date	Order	Result
+Blind Auditions	"Chandelier"	Sia	Sept. 21, 2015	1.6	All four chairs turned; joined Team Adam
+Battles (Top 48)	"Like I Can"  (vs. Regina Love)	Sam Smith	Oct. 12, 2015	7.1	Saved by Coach
+Knockouts (Top 32)	"Set Fire to the Rain"   (vs. Viktor Király)	Adele	Oct. 26, 2015	11.6	Saved by Coach
+Live Playoffs (Top 24)	"Halo"	Beyoncé	Nov. 9, 2015	15.12	Saved by Public Vote
+Live Top 12	"Great Is Thy Faithfulness"	Thomas Chisholm	Nov. 16, 2015	18.11	Saved by Public Vote
+Live Top 11	"Who You Are"	Jessie J	Nov. 23, 2015	20.9	Saved by Public Vote
+Live Top 10	"Hallelujah"	Leonard Cohen	Nov. 30, 2015	22.7	Saved by Public Vote
+Live Semifinals (Top 9)	"Somebody to Love"	Queen	Dec. 7, 2015	24.9	Saved by Public Vote
+Live Finale (Final 4)	"Climb Ev'ry Mountain"	The Sound Of Music	Dec. 14, 2015	26.1	rowspan=3
+Live Finale (Final 4)	"God Only Knows"  (with Adam Levine)	The Beach Boys	Dec. 14, 2015	26.5	(null)
+Live Finale (Final 4)	"Mary, Did You Know?"	Kenny Rogers & Wynonna Judd	Dec. 14, 2015	26.11	(null)
+
+Question: Which original artist of the J. Smith performances on the 2015 The Voice was lower in order: S. Smith or the writer of Crying in the Club?
+
+Answer: Sia
+
+
+Process#0: eid#182, qid#3d0bdd6f05065043bee2ed380e9c5423 generation error: '6c29baada7d38aca839dbf15f035ede4'
+Process#0: eid#183, qid#461f6b84f0a7e17b878a3fe39545c8ea generation error: '6c29baada7d38aca839dbf15f035ede4'
+Process#0: eid#186, qid#ce948e3aad8b8ab11bb9027269952eb0 generation error: '7dadf89e87a976f4fce44e351de950a3'
+Images: 
+
+Passages: 
+"Francis Ouimet" (In 1913, Ouimet won his first significant title at age 20, the Massachusetts Amateur, an event he won five more times. He participated in the U.S. Amateur at the Garden City Golf Club in Long Island, New York in early September, losing in the quarterfinals to the eventual champion, Jerome Travers. Soon after, he was asked personally by the president of the United States Golf Association, Robert Watson, if he would play in the national professional championship, the 1913 U.S. Open, which had been postponed to mid-September from its original June dates to allow for the participation of British golfers Harry Vardon and Ted Ray, both of Jersey. Vardon had won the U.S. Open in 1900 and The Open Championship five times to that point. Ray had won the Open Championship in 1912. The 1913 event was played at the course Ouimet knew best, The Country Club in Brookline, Massachusetts. Ouimet originally declined to play, having just returned from an absence from work to play in the National Amateur. His participation in the Open was soon arranged, however, with the cooperation of his employer.)
+
+Table 1920 U.S. Open (golf): 
+Place	Player	Country	Score	To par	Money ($)
+1	Ted Ray	(null)	74-73-73-75=295	+11	500
+T2	Jack Burke Sr.	(null)	75-77-72-72=296	+12	188
+T2	Leo Diegel	(null)	72-74-73-77=296	+12	188
+T2	Jock Hutchison	According to his naturalization certificate (available at Ancestry.com) Hutchinson became a U.S. citizen on April 1, 1920	69-76-74-77=296	+12	188
+T2	Harry Vardon	(null)	74-73-71-78=296	+12	188
+T6	Jim Barnes	(null)	76-70-76-76=298	+14	90
+T6	Chick Evans (a)	(null)	74-76-73-75=298	+14	0
+T8	Bobby Jones (a)	(null)	78-74-70-77=299	+15	0
+T8	Willie Macfarlane	(null)	76-75-74-74=299	+15	80
+10	Bob MacDonald	(null)	73-78-71-78=300	+16	75
+
+Question: Who was a final round player in the 1920 US Open when to par was +12 who Francis Ouimet beat in the US Open?
+
+Answer: Harry Vardon
+
+
+Images: 
+"Billy Joel" (The image features a happy older man with a gray beard and mustache, wearing a black suit and a white shirt. He is smiling and appears to be in a good mood. The man is standing under an awning, surrounded by several other people who are also standing under the same awning, possibly at an event or gathering. The awning provides shelter from the elements, creating a shared space for the individuals to enjoy.)
+
+Passages: 
+
+Table PNC Park: 
+Date	Artist	Opening act(s)	Tour / Concert name	Attendance	Revenue	Notes
+August 6, 2003	Bruce Springsteen & The E Street Band	—	The Rising Tour	42,301 / 48,074	$3,137,575	(null)
+June 26, 2005	Jimmy Buffett	—	A Salty Piece of Land Tour	—	—	Sonny Landreth and Jake Shimabukuro were special guests http://www.buffettworld.com/archives/2005-a-salty-piece-of-land/06-26/
+September 28, 2005	The Rolling Stones	Pearl Jam	A Bigger Bang	—	—	(null)
+August 24, 2006	Me First and the Gimme Gimmes	—	—	32,000	—	Originally scheduled to play three dates at the ballpark after Pirates games, but after the band got booed on the first night, the next two nights were cancelled.
+July 10, 2010	Dave Matthews Band	Zac Brown Band	—	30,964 / 38,365	$2,173,667	(null)
+July 7, 2012	Daughtry	Mike Sanchez SafetySuit	Break the Spell Tour	—	—	(null)
+July 26, 2014	Jason Aldean	Miranda Lambert Florida Georgia Line Tyler Farr	Burn It Down Tour	38,985 / 39,548	$2,898,350	(null)
+July 1, 2016	Billy Joel	Charlie Puth	Billy Joel in Concert	39,500 / 39,500	$4,627,472	(null)
+September 29, 2018	Ed Sheeran	Snow Patrol Anne-Marie	÷ Tour	41,014 / 41,104	$4,169,874	Originally scheduled for September 30 but moved due to the Steelers-Ravens game that night at nearby Heinz Field resulting in the concert being moved to the 29th.
+August 15, 2020	Green Day Fall Out Boy Weezer	The Interrupters	Hella Mega Tour	(null)	(null)	(null)
+
+Question: The musician who performed at PNC Park, making $4,627,472, has what color hair?
+
+Answer: grey
+
+
+Images: 
+"Billy Joel" (The image features a happy older man with a gray beard and mustache, wearing a black suit and a white shirt. He is smiling and appears to be in a good mood. The man is standing under an awning, surrounded by several other people who are also standing under the same awning, possibly at an event or gathering. The awning provides shelter from the elements, creating a shared space for the individuals to enjoy.)
+
+Passages: 
+"Just the Way You Are (Billy Joel song)" ("Just the Way You Are" is a song by Billy Joel and the third track from his 1977 album The Stranger that became Joel's first US Top 10 (reaching #3) and UK Top 20 single, as well as Joel's first gold single in the US. The song also topped the Billboard Easy Listening Chart for the entire month of January 1978.)
+
+Table PNC Park: 
+Date	Artist	Opening act(s)	Tour / Concert name	Attendance	Revenue	Notes
+August 6, 2003	Bruce Springsteen & The E Street Band	—	The Rising Tour	42,301 / 48,074	$3,137,575	(null)
+June 26, 2005	Jimmy Buffett	—	A Salty Piece of Land Tour	—	—	Sonny Landreth and Jake Shimabukuro were special guests http://www.buffettworld.com/archives/2005-a-salty-piece-of-land/06-26/
+September 28, 2005	The Rolling Stones	Pearl Jam	A Bigger Bang	—	—	(null)
+August 24, 2006	Me First and the Gimme Gimmes	—	—	32,000	—	Originally scheduled to play three dates at the ballpark after Pirates games, but after the band got booed on the first night, the next two nights were cancelled.
+July 10, 2010	Dave Matthews Band	Zac Brown Band	—	30,964 / 38,365	$2,173,667	(null)
+July 7, 2012	Daughtry	Mike Sanchez SafetySuit	Break the Spell Tour	—	—	(null)
+July 26, 2014	Jason Aldean	Miranda Lambert Florida Georgia Line Tyler Farr	Burn It Down Tour	38,985 / 39,548	$2,898,350	(null)
+July 1, 2016	Billy Joel	Charlie Puth	Billy Joel in Concert	39,500 / 39,500	$4,627,472	(null)
+September 29, 2018	Ed Sheeran	Snow Patrol Anne-Marie	÷ Tour	41,014 / 41,104	$4,169,874	Originally scheduled for September 30 but moved due to the Steelers-Ravens game that night at nearby Heinz Field resulting in the concert being moved to the 29th.
+August 15, 2020	Green Day Fall Out Boy Weezer	The Interrupters	Hella Mega Tour	(null)	(null)	(null)
+
+Question: The original artist of just the way you are has what color hair?
+
+Answer: grey
+
+
+Images: 
+"Billy Joel" (The image features a happy older man with a gray beard and mustache, wearing a black suit and a white shirt. He is smiling and appears to be in a good mood. The man is standing under an awning, surrounded by several other people who are also standing under the same awning, possibly at an event or gathering. The awning provides shelter from the elements, creating a shared space for the individuals to enjoy.)
+
+Passages: 
+
+Table PNC Park: 
+Date	Artist	Opening act(s)	Tour / Concert name	Attendance	Revenue	Notes
+August 6, 2003	Bruce Springsteen & The E Street Band	—	The Rising Tour	42,301 / 48,074	$3,137,575	(null)
+June 26, 2005	Jimmy Buffett	—	A Salty Piece of Land Tour	—	—	Sonny Landreth and Jake Shimabukuro were special guests http://www.buffettworld.com/archives/2005-a-salty-piece-of-land/06-26/
+September 28, 2005	The Rolling Stones	Pearl Jam	A Bigger Bang	—	—	(null)
+August 24, 2006	Me First and the Gimme Gimmes	—	—	32,000	—	Originally scheduled to play three dates at the ballpark after Pirates games, but after the band got booed on the first night, the next two nights were cancelled.
+July 10, 2010	Dave Matthews Band	Zac Brown Band	—	30,964 / 38,365	$2,173,667	(null)
+July 7, 2012	Daughtry	Mike Sanchez SafetySuit	Break the Spell Tour	—	—	(null)
+July 26, 2014	Jason Aldean	Miranda Lambert Florida Georgia Line Tyler Farr	Burn It Down Tour	38,985 / 39,548	$2,898,350	(null)
+July 1, 2016	Billy Joel	Charlie Puth	Billy Joel in Concert	39,500 / 39,500	$4,627,472	(null)
+September 29, 2018	Ed Sheeran	Snow Patrol Anne-Marie	÷ Tour	41,014 / 41,104	$4,169,874	Originally scheduled for September 30 but moved due to the Steelers-Ravens game that night at nearby Heinz Field resulting in the concert being moved to the 29th.
+August 15, 2020	Green Day Fall Out Boy Weezer	The Interrupters	Hella Mega Tour	(null)	(null)	(null)
+
+Question: What is the hair color of the artist who drew 39,500 fans to a concert at PNC Park?
+
+Answer: grey
+
+
+Process#0: eid#204, qid#c2dea48e58cb4f1b81b90727a61de7f1 generation error: '856123648b31ce640cd5ff10526eb2b4'
+Images: 
+
+Passages: 
+"Justin Berfield" (Justin Tyler Berfield (born February 25, 1986) is an American actor, writer and producer, best known for his portrayal of Malcolm's second-oldest brother, Reese, in the Fox sitcom Malcolm in the Middle. He also starred on The WB sitcom Unhappily Ever After as Ross Malloy. As of 2010, Berfield is Chief Creative Officer of Virgin Produced, a film and television development, packaging, and production company announced in 2010 by the Virgin Group. Virgin Produced is based in Los Angeles, California.)
+
+Table 16th TCA Awards: 
+Category	Winner	Other Nominees
+Program of the Year	The West Wing  (NBC)	Buffy the Vampire Slayer  (The WB) 
+* Sex and the City  (HBO) 
+* The Sopranos  (HBO) 
+* Who Wants to Be a Millionaire  (ABC)
+Outstanding Achievement in Comedy	Malcolm in the Middle  (Fox)	Everybody Loves Raymond  (CBS) 
+* Frasier  (NBC) 
+* Sex and the City  (HBO) 
+* Will & Grace  (NBC)
+Outstanding Achievement in Drama	The West Wing  (NBC)	Buffy the Vampire Slayer  (The WB) 
+* Freaks and Geeks  (NBC) 
+* Once and Again  (ABC) 
+* The Practice  (ABC) 
+* The Sopranos  (HBO)
+Outstanding Achievement in Movies, Miniseries and Specials	The Corner  (HBO)	Annie  (ABC) 
+* Arabian Nights  (ABC) 
+* Fail Safe  (CBS) 
+* Jesus  (CBS)
+Outstanding New Program of the Year	The West Wing  (NBC)	Freaks and Geeks  (NBC) 
+* Judging Amy  (CBS) 
+* Malcolm in the Middle  (Fox) 
+* Once and Again  (ABC)
+Individual Achievement in Comedy	Jane Kaczmarek - Malcolm in the Middle  (Fox)	Sean Hayes - Will & Grace  (NBC) 
+* Megan Mullally - Will & Grace  (NBC) 
+* Frankie Muniz - Malcolm in the Middle  (Fox) 
+* Ray Romano - Everybody Loves Raymond  (CBS)
+Individual Achievement in Drama	James Gandolfini - The Sopranos  (HBO)	Allison Janney - The West Wing  (NBC) 
+* Martin Sheen - The West Wing  (NBC) 
+* Aaron Sorkin - The West Wing  (NBC) 
+* Sela Ward - Once and Again  (ABC)
+Outstanding Achievement in Children's Programming	Between the Lions  (PBS)	Arthur  (PBS) 
+* Bear in the Big Blue House  (Disney Channel) 
+* Blue's Clues  (Nickelodeon) 
+* Sesame Street  (PBS)
+Outstanding Achievement in News and Information	ABC 2000: The Millennium  (ABC)	60 Minutes  (CBS) 
+* The American President  (PBS) 
+* Frontline  (PBS) 
+* Walking with Dinosaurs  (Discovery Channel)
+Career Achievement Award	Dick Van Dyke	Mary Tyler Moore
+*Aaron Spelling
+*Mike Wallace
+*Dick Wolf
+
+Question: On the show that won Outstanding Achievement in Comedy in the 16th TCA Awards who played Reese?
+
+Answer: Justin Tyler Berfield
+
+
+Images: 
+
+Passages: 
+"Chitty Chitty Bang Bang" (Set in the 1910s, the story opens with a montage of European Grand Prix races in which one particular car appears to win every race. In the final race, the car crashes and catches fire, ending its racing career. The car ends up in an old garage in rural England, where two children, Jeremy (Adrian Hall) and Jemima Potts (Heather Ripley), have grown fond of it. However, a man in the junkyard intends to buy the car from the garage owner, Mr. Coggins (Desmond Llewelyn), for scrap. The children, who live with their widowed father Caractacus Potts (Dick Van Dyke), an eccentric inventor, and the family's equally peculiar grandfather, implore their father to buy the car, but Caractacus can't afford it. While playing truant from school, they meet Truly Scrumptious (Sally Ann Howes), a beautiful upper-class woman with her own motor car, who brings them home to report their truancy to their father. After she leaves, Caractacus promises the children that he will save the car, but is taken aback at the cost he has committed himself to. He looks for ways to raise money to avoid letting them down.)
+
+Table 16th TCA Awards: 
+Category	Winner	Other Nominees
+Program of the Year	The West Wing  (NBC)	Buffy the Vampire Slayer  (The WB) 
+* Sex and the City  (HBO) 
+* The Sopranos  (HBO) 
+* Who Wants to Be a Millionaire  (ABC)
+Outstanding Achievement in Comedy	Malcolm in the Middle  (Fox)	Everybody Loves Raymond  (CBS) 
+* Frasier  (NBC) 
+* Sex and the City  (HBO) 
+* Will & Grace  (NBC)
+Outstanding Achievement in Drama	The West Wing  (NBC)	Buffy the Vampire Slayer  (The WB) 
+* Freaks and Geeks  (NBC) 
+* Once and Again  (ABC) 
+* The Practice  (ABC) 
+* The Sopranos  (HBO)
+Outstanding Achievement in Movies, Miniseries and Specials	The Corner  (HBO)	Annie  (ABC) 
+* Arabian Nights  (ABC) 
+* Fail Safe  (CBS) 
+* Jesus  (CBS)
+Outstanding New Program of the Year	The West Wing  (NBC)	Freaks and Geeks  (NBC) 
+* Judging Amy  (CBS) 
+* Malcolm in the Middle  (Fox) 
+* Once and Again  (ABC)
+Individual Achievement in Comedy	Jane Kaczmarek - Malcolm in the Middle  (Fox)	Sean Hayes - Will & Grace  (NBC) 
+* Megan Mullally - Will & Grace  (NBC) 
+* Frankie Muniz - Malcolm in the Middle  (Fox) 
+* Ray Romano - Everybody Loves Raymond  (CBS)
+Individual Achievement in Drama	James Gandolfini - The Sopranos  (HBO)	Allison Janney - The West Wing  (NBC) 
+* Martin Sheen - The West Wing  (NBC) 
+* Aaron Sorkin - The West Wing  (NBC) 
+* Sela Ward - Once and Again  (ABC)
+Outstanding Achievement in Children's Programming	Between the Lions  (PBS)	Arthur  (PBS) 
+* Bear in the Big Blue House  (Disney Channel) 
+* Blue's Clues  (Nickelodeon) 
+* Sesame Street  (PBS)
+Outstanding Achievement in News and Information	ABC 2000: The Millennium  (ABC)	60 Minutes  (CBS) 
+* The American President  (PBS) 
+* Frontline  (PBS) 
+* Walking with Dinosaurs  (Discovery Channel)
+Career Achievement Award	Dick Van Dyke	Mary Tyler Moore
+*Aaron Spelling
+*Mike Wallace
+*Dick Wolf
+
+Question: What was the category at the 16th TCA Awards when the winner was the person who played the role of Potts in Chitty Chitty Bang Bang?
+
+Answer: Career Achievement Award
+
+
+Images: 
+
+Passages: 
+"Malcolm in the Middle" (Set in the fictional town of Star City, California, The series Malcolm in the Middle is about a boy named Malcolm Wilkerson and his dysfunctional family. The show stars Frankie Muniz as Malcolm, the third of four and later five boys, his brothers, and their parents, Lois (Jane Kaczmarek) and Hal (Bryan Cranston). Their first child, Francis (Christopher Masterson), was sent away to military school, leaving his three younger brothers at home, Reese (Justin Berfield), Malcolm, and Dewey (Erik Per Sullivan) with Malcolm being the middle child still living at home. In season four, the character Jamie (James and Lukas Rodriguez) was added to the show as the fifth son of Hal & Lois. The show's early seasons centered on Malcolm dealing with the rigors of being an adolescent and enduring the eccentricities of his life. Later seasons gradually explored the other members of the family and their friends in more depth, including others such as Craig Feldspar, Lois' coworker at the Lucky Aide drugstore, Malcolm's friend Stevie Kenarban, and Stevie's dad Abe.)
+
+Table 16th TCA Awards: 
+Category	Winner	Other Nominees
+Program of the Year	The West Wing  (NBC)	Buffy the Vampire Slayer  (The WB) 
+* Sex and the City  (HBO) 
+* The Sopranos  (HBO) 
+* Who Wants to Be a Millionaire  (ABC)
+Outstanding Achievement in Comedy	Malcolm in the Middle  (Fox)	Everybody Loves Raymond  (CBS) 
+* Frasier  (NBC) 
+* Sex and the City  (HBO) 
+* Will & Grace  (NBC)
+Outstanding Achievement in Drama	The West Wing  (NBC)	Buffy the Vampire Slayer  (The WB) 
+* Freaks and Geeks  (NBC) 
+* Once and Again  (ABC) 
+* The Practice  (ABC) 
+* The Sopranos  (HBO)
+Outstanding Achievement in Movies, Miniseries and Specials	The Corner  (HBO)	Annie  (ABC) 
+* Arabian Nights  (ABC) 
+* Fail Safe  (CBS) 
+* Jesus  (CBS)
+Outstanding New Program of the Year	The West Wing  (NBC)	Freaks and Geeks  (NBC) 
+* Judging Amy  (CBS) 
+* Malcolm in the Middle  (Fox) 
+* Once and Again  (ABC)
+Individual Achievement in Comedy	Jane Kaczmarek - Malcolm in the Middle  (Fox)	Sean Hayes - Will & Grace  (NBC) 
+* Megan Mullally - Will & Grace  (NBC) 
+* Frankie Muniz - Malcolm in the Middle  (Fox) 
+* Ray Romano - Everybody Loves Raymond  (CBS)
+Individual Achievement in Drama	James Gandolfini - The Sopranos  (HBO)	Allison Janney - The West Wing  (NBC) 
+* Martin Sheen - The West Wing  (NBC) 
+* Aaron Sorkin - The West Wing  (NBC) 
+* Sela Ward - Once and Again  (ABC)
+Outstanding Achievement in Children's Programming	Between the Lions  (PBS)	Arthur  (PBS) 
+* Bear in the Big Blue House  (Disney Channel) 
+* Blue's Clues  (Nickelodeon) 
+* Sesame Street  (PBS)
+Outstanding Achievement in News and Information	ABC 2000: The Millennium  (ABC)	60 Minutes  (CBS) 
+* The American President  (PBS) 
+* Frontline  (PBS) 
+* Walking with Dinosaurs  (Discovery Channel)
+Career Achievement Award	Dick Van Dyke	Mary Tyler Moore
+*Aaron Spelling
+*Mike Wallace
+*Dick Wolf
+
+Question: Where is the main setting of the TV show that won Outstanding Achievement in Comedy in the 16th TCA Awards?
+
+Answer: the fictional town of Star City, California
+
+
+Process#0: eid#221, qid#d44f03f91a8595ca2c4820b8bce749ad generation error: '50896ad23dd468fe077a4c97f28a400b'
+Images: 
+
+Passages: 
+"South Asia" (The current territories of Afghanistan, Bangladesh, Bhutan, Maldives, Nepal, India, Pakistan, and Sri Lanka form South Asia. The South Asian Association for Regional Cooperation (SAARC) is an economic cooperation organisation in the region which was established in 1985 and includes all eight nations comprising South Asia.)
+
+Table Lithuanian Armed Forces: 
+Deployment	Organization	Operation	Personnel
+Somalia	EU	Operation Atalanta	15
+Mali	EU	EUTM Mali	2
+Afghanistan	NATO	Operation Resolute Support	29
+Libya	EU	EU Navfor Med	3
+Mali	UN	MINUSMA	39
+Iraq	CJTF	Operation Inherent Resolve	6
+Central African Republic	EU	EUFOR RCA	1
+Kosovo	NATO	KFOR	1
+Ukraine	(null)	Training mission	40
+
+Question: Among the Lithuanian Armed Forces' current operations, which of her deployments involves fewer personnel: Kosovo, or the deployment in the nation that, along with six others, constitutes the subcontinent of South Asia?
+
+Answer: Kosovo
+
+
+Process#0: eid#228, qid#d8e3d56666a5e189a5f5c56f9d282c23 generation error: '566c495bb06aa2748c0aed4bc6e4a3ec'
+Images: 
+
+Passages: 
+"Somebody Up There Likes Me (1956 film)" (Somebody Up There Likes Me is a 1956 American drama film based on the life of middleweight boxing legend Rocky Graziano. Joseph Ruttenberg was awarded a 1956 Oscar in the category of Best Cinematography (Black and White). The film also won the Oscar for Best Art Direction (Cedric Gibbons, Malcolm F. Brown, Edwin B. Willis, F. Keogh Gleason). It was directed by Robert Wise.)
+"Albert Akst" (Albert Akst (August 31, 1899 – 19 April 1958) was an American musician turned film editor, played saxophone in Meyer Davis Orchestra and on vaudeville until 1930. He became a film cutter of short subjects and later became an editor on 53 feature films, including Forbidden Passage, Johnny Eager, Ziegfeld Follies, Summer Stock, Brigadoon and Meet Me in Las Vegas. He was nominated for an Academy Award for his work on Somebody Up There Likes Me.)
+
+Table 31st Sarasaviya Awards: 
+Category	Film	Recipient
+Best Film	Ira Madiyama	Prasanna Vithanage
+Best Director	Ira Madiyama	Prasanna Vithanage
+Best Actor	Sudu Kalu Saha Alu	Mahendra Perera
+Best Actress	Sudu Kalu Saha Alu	Dilhani Ekanayake
+Best Supporting Actor	Guerilla Marketing	Jackson Anthony
+Best Supporting Actress	Sulanga Enu Pinisa	Kaushalya Fernando
+Best Script Writer	Ira Madiyama	Prasanna Liyanage
+Best Cinematographer	Ira Madiyama	M.D. Mahindapala
+Best Editor	Ira Madiyama	A.S. Prasad
+Best Music Direction	Guerilla Marketing	Premasiri Khemadasa
+Best Art Direction	Guerilla Marketing	Jagath Imbulpe
+Best Makeup Artist	(null)	Ebert Wijesinghe
+Best Sound Effects	Guerilla Marketing	Kalinga Gihan Perera
+Best Lyricist	Sulanga	Sunil Ariyarathne
+Best Female Playback Singer	Samantha	Neela Wickramasinghe
+Best Emerging Actor	Ira Madiyama	Namal Jayasinghe
+Best Emerging Actress	Ira Madiyama	Nadee Kammallaweera
+Rana Thisara Awards	(null)	Roy De Silva
+Rana Thisara Awards	(null)	Shesha Palihakkara
+Ranapala Bodhinagoda Memorial Literary Awards	(null)	U. Amarasinghe
+Ranapala Bodhinagoda Memorial Literary Awards	(null)	Edwin Ariyadasa
+Most Popular Actor	(null)	Ranjan Ramanayake
+Most Popular Actress	(null)	Sangeetha Weeraratne
+Most Popular Film	(null)	Samanala Thatu
+
+Question: Which 2005 movie won an award at the 31st Sarasaviya Awards in the same category as that of the Oscar won by the American movie for which Albert Akst was also nominated (with Akst being nominated for a different category)?
+
+Answer: Guerilla Marketing
+
+
+Images: 
+
+Passages: 
+"Mr. Noodle" (When Irwin became unavailable, Sherman asked Michael Jeter, who was her friend, to replace Irwin as Mr. Noodle's brother Mister Noodle, which he accepted enthusiastically, calling it his favorite role in twenty years. Jeter was in the role beginning in 2000, until his death in 2003. Kristin Chenoweth played Mr. Noodle's sister Ms. Noodle, and Sarah Jones played Mr. Noodle's other sister Miss Noodle. As of January 2017, Daveed Diggs and comedian Daniel Koren, have played two more of Mr. Noodle's brothers. Five actors playing members of the Noodle family have won Tonys.)
+
+Table Julianne Moore filmography: 
+Title	Year(s)	Role(s)	Network	Notes	
+The Edge of Night	1984	Carmen Engler	ABC	1 episode	(null)
+As the World Turns	1985–1988; 2010	Frannie Hughes Sabrina Hughes	CBS	(null)	(null)
+I'll Take Manhattan	1987	India West	CBS	Miniseries	(null)
+Money, Power, Murder	1989	Peggy Lynn Brady	CBS	Television film	(null)
+B.L. Stryker	1990	Tina	ABC	Episode: "High Rise"	(null)
+The Last to Go	1991	Marcy	ABC	Television film	(null)
+Cast a Deadly Spell	1991	Connie Stone	HBO	Television film	(null)
+Saturday Night Live	1998	Host	NBC	Episode: "Julianne Moore / Backstreet Boys"	(null)
+Sesame Street	2004	Herself	PBS	(null)	(null)
+30 Rock	2009–2013	Nancy Donovan	NBC	6 episodes	(null)
+Game Change	2012	Sarah Palin	HBO	Television film	(null)
+Inside Amy Schumer	2016	Herself	Comedy Central	Episode: "Brave"	(null)
+Difficult People	2016	Sarah Nussbaum	Hulu	Episode: "High Alert"	(null)
+Nightcap	2017	Herself	Pop	Episode: "Single White Staci"	(null)
+
+Question: Who plays Mr. Noodle's brother on the 2004 Julianne Moore TV title?
+
+Answer: Michael Jeter | Daveed Diggs | Daniel Koren
+
+
+Images: 
+
+Passages: 
+"30 Rock" (30 Rock episodes were produced in a single-camera setup (with the exception of the two live episodes that were taped in the multiple-camera setup), and were filmed in New York. The pilot episode premiered on October 11, 2006, and seven seasons followed. The series stars Fey with a supporting cast that includes Alec Baldwin, Tracy Morgan, Jane Krakowski, Jack McBrayer, Scott Adsit, Judah Friedlander, Katrina Bowden, Keith Powell, Lonny Ross, John Lutz, Sue Galloway, Kevin Brown, Grizz Chapman, Maulik Pancholy, and Rachel Dratch.)
+
+Table Julianne Moore filmography: 
+Title	Year(s)	Role(s)	Network	Notes	
+The Edge of Night	1984	Carmen Engler	ABC	1 episode	(null)
+As the World Turns	1985–1988; 2010	Frannie Hughes Sabrina Hughes	CBS	(null)	(null)
+I'll Take Manhattan	1987	India West	CBS	Miniseries	(null)
+Money, Power, Murder	1989	Peggy Lynn Brady	CBS	Television film	(null)
+B.L. Stryker	1990	Tina	ABC	Episode: "High Rise"	(null)
+The Last to Go	1991	Marcy	ABC	Television film	(null)
+Cast a Deadly Spell	1991	Connie Stone	HBO	Television film	(null)
+Saturday Night Live	1998	Host	NBC	Episode: "Julianne Moore / Backstreet Boys"	(null)
+Sesame Street	2004	Herself	PBS	(null)	(null)
+30 Rock	2009–2013	Nancy Donovan	NBC	6 episodes	(null)
+Game Change	2012	Sarah Palin	HBO	Television film	(null)
+Inside Amy Schumer	2016	Herself	Comedy Central	Episode: "Brave"	(null)
+Difficult People	2016	Sarah Nussbaum	Hulu	Episode: "High Alert"	(null)
+Nightcap	2017	Herself	Pop	Episode: "Single White Staci"	(null)
+
+Question: How many seasons are on Netflix of the show where Julianne Moore played the role of Nancy Donovan?
+
+Answer: seven
+
+
+Images: 
+
+Passages: 
+"Michelin Man" (Bibendum, commonly referred to in English as the Michelin Man, is the symbol of the Michelin tire company. Introduced at the Lyon Exhibition of 1894 where the Michelin brothers had a stand, Bibendum is one of the world's oldest trademarks. The slogan Nunc est bibendum (Drink up) is taken from Horace's Odes (book I, ode xxxvii, line 1). He is also referred to as Bib or Bibelobis.)
+
+Table Dothan, Alabama: 
+#	Employer	Employees
+1	Southeast Alabama Medical Center	2,500
+2	Dothan City & Houston County Schools	1,973
+3	Flowers Hospital	1,100
+4	City of Dothan	927
+5	Southern Nuclear (Farley)	860
+6	Perdue Farms	800
+7	Michelin	542
+8	AAA Cooper	425
+9	Houston County	392
+10	Twitchell	387
+
+Question: For the tyre company that has 542 employees in Dothan, Alabama, what is their symbol?
+
+Answer: Bibendum
+
+
+Process#0: eid#249, qid#fd01377497b2d5d0125f7df3dea1d4e2 generation error: '8efd7002c5e145a9a5f5cf5ab6eb19ae'
