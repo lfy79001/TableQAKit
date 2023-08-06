@@ -1739,3 +1739,19 @@ Remove Table Error: delete non-existent tables in session
 Fetch Table Error: fetch non-existent tables in session
 Remove Table Error: delete non-existent tables in session
 Remove Table Error: delete non-existent tables in session
+Remove Table Error: delete non-existent tables in session
+Fetch Table Error: list indices must be integers or slices, not NoneType
+Pipeline Error: fetch non-existent tables in session
+Pipeline Error: fetch non-existent tables in session
+Pipeline Error: fetch non-existent tables in session
+Pipeline Error: fetch non-existent tables in session
+Pipeline Error: fetch non-existent tables in session
+Fetch Table Error: fetch non-existent tables in session
+Fetch Table Error: fetch non-existent tables in session
+Fetch Table Error: fetch non-existent tables in session
+Remove Table Error: delete non-existent tables in session
+Fetch Table Error: fetch non-existent tables in session
+Pipeline Error: fetch non-existent tables in session
+Remove Table Error: delete non-existent tables in session
+Remove Table Error: delete non-existent tables in session
+Remove Table Error: delete non-existent tables in session
