@@ -39,8 +39,99 @@ pip install -r requirements.txt
 ```
 
 
+# Folder
+The TableQAKit repository is structured as follows:
+
+```bash
+├── icl/ # LLM-prompting toolkit
+│   ├── dataset.py  
+│   ├── infer.py
+│   ├── model.py
+│   └── utils.py
+├── llama/ # LLM-finetuning toolkit
+│   ├── data_collator.py 
+│   ├── dataset.py 
+│   ├── model.py
+│   ├── peft_trainer.py
+│   ├── seq2seq.py
+│   ├── template.py
+│   ├── Trainer.py
+│   └── utils.py
+├── mmqa_utils/ # EncyclopediaQA toolkit
+│   ├── classifier_module/ # The package for classifier
+│   │   ├── dataset.py
+│   │   ├── model.py
+│   │   ├── train.py
+│   │   ├── trainer.py
+│   │   └── utils.py
+│   ├── retriever_module/ # The package for encyclopedia retrieval
+│   │   ├── dataset.py
+│   │   ├── model.py
+│   │   ├── train.py
+│   │   ├── trainer.py
+│   │   └── utils.py
+├── structuredqa/ # Read model TaLMs
+│   ├── builder/
+│   │   ├── hybridqa.py
+│   │   ├── msr_sqa.py
+│   │   ├── wikisql_tapas.py
+│   │   ├── wikisql.py
+│   │   ├── wikitq_tapas.py
+│   │   └── wikitq.py
+│   ├── utils/
+│   │   ├── common.py
+│   │   ├── configure.py
+│   │   ├── dataset.py
+│   │   ├── tapas_utils.py
+│   │   ├── tapas_wikisql_utils.py
+│   │   └── tapex_wikisql_utils.py
+├── retriever/ # TableQA's general retriever （SpreadSheet examples）
+│   ├── dataset.py
+│   ├── model.py
+│   ├── trainer.py
+│   └── utils.py
+├── multihop/ # Readers for encyclopediaQA
+│   ├── Retrieval/
+│   └── Read/
+├── numerical/ # Readers for some TableQA datasets
+├── TableQAEval/ # The proposed new LLM-Long-Table Benchmark
+│   ├── Baselines/ # Add your LLMs
+│   │   ├── turbo16k-table.py
+│   │   ├── llama2-chat-table.py
+│   │   └── ...
+│   ├── Evaluation/ # metrics
+│   └── TableQAEval.json  
+├── outputs/ # the results of some models
+├── loaders/ 
+│   ├── WikiSQL.py
+│   └── ...
+├── structs/ 
+│   ├── data.py
+├── static/ 
+├── LICENSE
+└── README.md
+```
+
+# 🗃️ Dataset
+According to our taxonomy, we classify the TableQA task into three categories of tasks, as shown in the following figure:
+
+<p align="center">
+<img src="figs/dataset_examples.png" width="512">
+</p>
+
+
+<p align="center">
+<img src="figs/table.png" width="512">
+</p>
+
+
+
+
 
 # 🔧 Get started
+
+# LLM-Prompting Methods
+
 
 ## Retrieval-then-Read Methods
 
@@ -157,97 +248,6 @@ class NewTrainer(RT):
 ## LLM-Prompting Methods
 
 
-
-
-
-
-# 🗃️ Dataset
-According to our taxonomy, we classify the TableQA task into three categories of tasks, as shown in the following figure:
-
-<p align="center">
-<img src="figs/dataset_examples.png" width="512">
-</p>
-
-
-<p align="center">
-<img src="figs/table.png" width="512">
-</p>
-
-
-
-
-# Folder
-The TableQAKit repository is structured as follows:
-
-```bash
-├── icl/ # LLM-prompting toolkit
-│   ├── dataset.py  
-│   ├── infer.py
-│   ├── model.py
-│   └── utils.py
-├── llama/ # LLM-finetuning toolkit
-│   ├── data_collator.py 
-│   ├── dataset.py 
-│   ├── model.py
-│   ├── peft_trainer.py
-│   ├── seq2seq.py
-│   ├── template.py
-│   ├── Trainer.py
-│   └── utils.py
-├── mmqa_utils/ # EncyclopediaQA toolkit
-│   ├── classifier_module/ # The package for classifier
-│   │   ├── dataset.py
-│   │   ├── model.py
-│   │   ├── train.py
-│   │   ├── trainer.py
-│   │   └── utils.py
-│   ├── retriever_module/ # The package for encyclopedia retrieval
-│   │   ├── dataset.py
-│   │   ├── model.py
-│   │   ├── train.py
-│   │   ├── trainer.py
-│   │   └── utils.py
-├── structuredqa/ # Read model TaLMs
-│   ├── builder/
-│   │   ├── hybridqa.py
-│   │   ├── msr_sqa.py
-│   │   ├── wikisql_tapas.py
-│   │   ├── wikisql.py
-│   │   ├── wikitq_tapas.py
-│   │   └── wikitq.py
-│   ├── utils/
-│   │   ├── common.py
-│   │   ├── configure.py
-│   │   ├── dataset.py
-│   │   ├── tapas_utils.py
-│   │   ├── tapas_wikisql_utils.py
-│   │   └── tapex_wikisql_utils.py
-├── retriever/ # TableQA's general retriever （SpreadSheet examples）
-│   ├── dataset.py
-│   ├── model.py
-│   ├── trainer.py
-│   └── utils.py
-├── multihop/ # Readers for encyclopediaQA
-│   ├── Retrieval/
-│   └── Read/
-├── numerical/ # Readers for some TableQA datasets
-├── TableQAEval/ # The proposed new LLM-Long-Table Benchmark
-│   ├── Baselines/ # Add your LLMs
-│   │   ├── turbo16k-table.py
-│   │   ├── llama2-chat-table.py
-│   │   └── ...
-│   ├── Evaluation/ # metrics
-│   └── TableQAEval.json  
-├── outputs/ # the results of some models
-├── loaders/ 
-│   ├── WikiSQL.py
-│   └── ...
-├── structs/ 
-│   ├── data.py
-├── static/ 
-├── LICENSE
-└── README.md
-```
 
 
 
