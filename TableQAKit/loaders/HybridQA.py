@@ -20,8 +20,8 @@ class HybridQA(HFTabularDataset):
             "test": "test.json"
         }
 
-        file_base_path = 'datasets/hybridqa'
-        logger.info(f"Loading hybridqa - {split}")
+        file_base_path = 'datasets/HybridQA'
+        logger.info(f"Loading HybridQA - {split}")
         question_file_path = os.path.join(file_base_path, question_file_map[split])
 
         with open(question_file_path, 'r', encoding='utf-8') as f:

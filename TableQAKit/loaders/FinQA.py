@@ -9,7 +9,7 @@ from structs.data import Cell, Table, HFTabularDataset
 
 logger = logging.getLogger(__name__)
 
-class TATQA(HFTabularDataset):
+class FinQA(HFTabularDataset):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
@@ -20,8 +20,8 @@ class TATQA(HFTabularDataset):
             "test": "test.json"
         }
 
-        file_base_path = 'datasets/tatqa'
-        logger.info(f"Loading tatqa - {split}")
+        file_base_path = 'datasets/FinQA'
+        logger.info(f"Loading FinQA - {split}")
         question_file_path = os.path.join(file_base_path, question_file_map[split])
 
         with open(question_file_path, 'r', encoding='utf-8') as f:
@@ -33,22 +33,33 @@ class TATQA(HFTabularDataset):
 
             properties_info = {}
 
-            table_data = question_data["table"]["table"]
+            if 'explanation' in question_data['qa']:
+                properties_info['question--explanation'] = str(question_data['qa']['explanation'])
+            if 'program' in question_data['qa']:
+                properties_info['question--program'] = str(question_data['qa']['program'])
+            if 'program_re' in question_data['qa']:
+                properties_info['question--program_re'] = str(question_data['qa']['program_re'])
+
+            question = question_data['qa']['question']
+            if type(question_data['table_ori']) == list:
+                table_data = question_data['table_ori']
+            else:
+                table_data = question_data['table_ori']['table']
             table_data_headers = table_data[0]
             table_data_contents = table_data[1:]
-            txt_list = [paragraph["text"] for paragraph in question_data["paragraphs"]]
+            txt_list = question_data['pre_text'] + question_data['post_text']
+            txt_list = list(filter(lambda x: x not in ['.', '*'], txt_list))
 
-            for single_question_data in question_data["questions"]:
-                question = single_question_data["question"]
-                data.append({
-                    "question": question,
-                    "table": {
-                        "header": table_data_headers,
-                        "content": table_data_contents
-                    },
-                    "txt": txt_list,
-                    "properties": properties_info
-                })
+
+            data.append({
+                "question": question,
+                "table": {
+                    "header": table_data_headers,
+                    "content": table_data_contents
+                },
+                "txt": txt_list,
+                "properties": properties_info
+            })
         self.data[split] = data
         self.dataset_info = {
             "citation": "111",
@@ -83,4 +94,4 @@ class TATQA(HFTabularDataset):
             t.save_row()
         return t
 if __name__ == '__main__':
-    TATQA().load_split_test("train")
+    FinQA().load_split_test("train")

@@ -1,19 +1,19 @@
 ---
 datasets:
-- finqa
-- hitab
-- hybridqa
-- mmqa
-- tatqa
-- wikisql
-- wikitq
-- multihiertt
-- spreadsheetqa
+- FinQA
+- HiTab
+- HybridQA
+- MultimodalQA
+- TATQA
+- WikiSQL
+- WikiTableQuestions
+- MultiHiertt
+- SpreadSheetQA
 split:
 - train
 - dev
 - test
-default_dataset: mmqa
+default_dataset: FinQA
 host_prefix: "."
 debug: false
 example_filename: example.xlsx

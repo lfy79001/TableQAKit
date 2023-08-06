@@ -24,8 +24,8 @@ class MultiHiertt(HFTabularDataset):
             "test": "test.json"
         }
 
-        file_base_path = 'datasets/multihiertt'
-        logger.info(f"Loading multihiertt - {split}")
+        file_base_path = 'datasets/MultiHiertt'
+        logger.info(f"Loading MultiHiertt - {split}")
 
         question_file_path = os.path.join(file_base_path, question_file_map[split])
 

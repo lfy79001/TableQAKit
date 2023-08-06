@@ -21,8 +21,8 @@ class WikiTableQuestion(HFTabularDataset):
             "test": "test.json"
         }
 
-        file_base_path = 'datasets/wikitq'
-        logger.info(f"Loading wikitq - {split}")
+        file_base_path = 'datasets/WikiTableQuestions'
+        logger.info(f"Loading WikiTableQuestions - {split}")
         question_file_path = os.path.join(file_base_path, question_file_map[split])
 
         with open(question_file_path, 'r', encoding='utf-8') as f:

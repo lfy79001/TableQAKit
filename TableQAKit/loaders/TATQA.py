@@ -9,7 +9,7 @@ from structs.data import Cell, Table, HFTabularDataset
 
 logger = logging.getLogger(__name__)
 
-class SpreadSheetQA(HFTabularDataset):
+class TATQA(HFTabularDataset):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
 
@@ -20,8 +20,8 @@ class SpreadSheetQA(HFTabularDataset):
             "test": "test.json"
         }
 
-        file_base_path = 'datasets/spreadsheetqa'
-        logger.info(f"Loading spreadsheetqa - {split}")
+        file_base_path = 'datasets/TATQA'
+        logger.info(f"Loading TAT-QA - {split}")
         question_file_path = os.path.join(file_base_path, question_file_map[split])
 
         with open(question_file_path, 'r', encoding='utf-8') as f:
@@ -33,35 +33,22 @@ class SpreadSheetQA(HFTabularDataset):
 
             properties_info = {}
 
-            if 'explanation' in question_data['qa']:
-                properties_info['question--explanation'] = str(question_data['qa']['explanation'])
-            if 'program' in question_data['qa']:
-                properties_info['question--program'] = str(question_data['qa']['program'])
-            if 'program_re' in question_data['qa']:
-                properties_info['question--program_re'] = str(question_data['qa']['program_re'])
-            if 'source' in question_data:
-                properties_info['source'] = str(question_data['source'])
-
-            question = question_data['qa']['question']
-            if type(question_data['table_ori']) == list:
-                table_data = question_data['table_ori']
-            else:
-                table_data = question_data['table_ori']['table']
+            table_data = question_data["table"]["table"]
             table_data_headers = table_data[0]
             table_data_contents = table_data[1:]
-            txt_list = question_data['pre_text'] + question_data['post_text']
-            txt_list = list(filter(lambda x: x not in ['.', '*'], txt_list))
+            txt_list = [paragraph["text"] for paragraph in question_data["paragraphs"]]
 
-
-            data.append({
-                "question": question,
-                "table": {
-                    "header": table_data_headers,
-                    "content": table_data_contents
-                },
-                "txt": txt_list,
-                "properties": properties_info
-            })
+            for single_question_data in question_data["questions"]:
+                question = single_question_data["question"]
+                data.append({
+                    "question": question,
+                    "table": {
+                        "header": table_data_headers,
+                        "content": table_data_contents
+                    },
+                    "txt": txt_list,
+                    "properties": properties_info
+                })
         self.data[split] = data
         self.dataset_info = {
             "citation": "111",
@@ -89,13 +76,11 @@ class SpreadSheetQA(HFTabularDataset):
         t.save_row()
 
         for row in entry["table"]["content"]:
-            for (i, cell) in enumerate(row):
+            for cell in row:
                 c = Cell()
-                if i == 0:
-                    c.is_row_header = True
                 c.value = cell
                 t.add_cell(c)
             t.save_row()
         return t
 if __name__ == '__main__':
-    SpreadSheetQA().load_split_test("train")
+    TATQA().load_split_test("train")

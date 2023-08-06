@@ -7,7 +7,7 @@ def generate_gold_answer(dataset, split):
         result = []
         output_file_base_path = 'SpreadSheetQA/Gold_Answer'
         output_file_path = os.path.join(output_file_base_path, f'{split}.txt')
-        input_file_base_path = '../datasets/spreadsheetqa'
+        input_file_base_path = '../datasets/SpreadSheetQA'
         input_file_path = os.path.join(input_file_base_path, f'{split}.json')
         with open(input_file_path, 'r', encoding='utf-8') as f:
             question_data_list = json.load(f)
@@ -20,7 +20,7 @@ def generate_gold_answer(dataset, split):
         result = []
         output_file_base_path = 'FinQA/Gold_Answer'
         output_file_path = os.path.join(output_file_base_path, f'{split}.txt')
-        input_file_base_path = '../datasets/finqa'
+        input_file_base_path = '../datasets/FinQA'
         input_file_path = os.path.join(input_file_base_path, f'{split}.json')
         with open(input_file_path, 'r', encoding='utf-8') as f:
             question_data_list = json.load(f)
@@ -32,11 +32,11 @@ def generate_gold_answer(dataset, split):
         with open(output_file_path, 'w', encoding='utf-8') as file:
             for item in result:
                 file.write(str(item) + '\n')
-    elif dataset == 'TAT-QA':
+    elif dataset == 'TATQA':
         result = []
-        output_file_base_path = 'TAT-QA/Gold_Answer'
+        output_file_base_path = 'TATQA/Gold_Answer'
         output_file_path = os.path.join(output_file_base_path, f'{split}.txt')
-        input_file_base_path = '../datasets/tatqa'
+        input_file_base_path = '../datasets/TATQA'
         input_file_path = os.path.join(input_file_base_path, f'{split}.json')
         with open(input_file_path, 'r', encoding='utf-8') as f:
             question_data_list = json.load(f)
@@ -55,7 +55,7 @@ def generate_gold_answer(dataset, split):
         result = []
         output_file_base_path = 'HiTab/Gold_Answer'
         output_file_path = os.path.join(output_file_base_path, f'{split}.txt')
-        input_file_base_path = '../datasets/hitab'
+        input_file_base_path = '../datasets/HiTab'
         input_file_path = os.path.join(input_file_base_path, f'{split}.jsonl')
         with open(input_file_path, 'r', encoding='utf-8') as file:
             for line in file:
@@ -74,7 +74,7 @@ def generate_gold_answer(dataset, split):
         result = []
         output_file_base_path = 'WikiSQL/Gold_Answer'
         output_file_path = os.path.join(output_file_base_path, f'{split}.txt')
-        input_file_base_path = '../datasets/wikisql'
+        input_file_base_path = '../datasets/WikiSQL'
         input_file_path = os.path.join(input_file_base_path, f'{split}.json')
         with open(input_file_path, 'r', encoding='utf-8') as f:
             question_data_list = json.load(f)
@@ -92,7 +92,7 @@ def generate_gold_answer(dataset, split):
         result = []
         output_file_base_path = 'WikiTableQuestions/Gold_Answer'
         output_file_path = os.path.join(output_file_base_path, f'{split}.txt')
-        input_file_base_path = '../datasets/wikitq'
+        input_file_base_path = '../datasets/WikiTableQuestions'
         input_file_path = os.path.join(input_file_base_path, f'{split}.json')
         with open(input_file_path, 'r', encoding='utf-8') as f:
             question_data_list = json.load(f)
@@ -110,7 +110,7 @@ def generate_gold_answer(dataset, split):
         result = []
         output_file_base_path = 'HybridQA/Gold_Answer'
         output_file_path = os.path.join(output_file_base_path, f'{split}.txt')
-        input_file_base_path = '../datasets/hybridqa'
+        input_file_base_path = '../datasets/HybridQA'
         input_file_path = os.path.join(input_file_base_path, f'{split}.json')
         with open(input_file_path, 'r', encoding='utf-8') as f:
             question_data_list = json.load(f)
@@ -127,7 +127,7 @@ def generate_gold_answer(dataset, split):
         result = []
         output_file_base_path = 'MultimodalQA/Gold_Answer'
         output_file_path = os.path.join(output_file_base_path, f'{split}.txt')
-        input_file_base_path = '../datasets/mmqa'
+        input_file_base_path = '../datasets/MultimodalQA'
         input_file_path = os.path.join(input_file_base_path, f'multimodalqa_final_dataset_pipeline_camera_ready_MMQA_{split}.jsonl')
         with open(input_file_path, 'r', encoding='utf-8') as file:
             for line in file:
@@ -145,7 +145,7 @@ def generate_gold_answer(dataset, split):
         result = []
         output_file_base_path = 'MultiHiertt/Gold_Answer'
         output_file_path = os.path.join(output_file_base_path, f'{split}.txt')
-        input_file_base_path = '../datasets/multihiertt'
+        input_file_base_path = '../datasets/MultiHiertt'
         input_file_path = os.path.join(input_file_base_path, f'{split}.json')
         with open(input_file_path, 'r', encoding='utf-8') as f:
             question_data_list = json.load(f)
@@ -160,7 +160,7 @@ def generate_gold_answer(dataset, split):
                 file.write(str(item) + '\n')
 
 if __name__ == '__main__':
-    dataset_list = ['SpreadSheetQA', 'WikiSQL', 'WikiTableQuestions', 'HybridQA', 'MultimodalQA', 'TAT-QA', 'FinQA', 'HiTAB', 'MultiHiertt']
+    dataset_list = ['SpreadSheetQA', 'WikiSQL', 'WikiTableQuestions', 'HybridQA', 'MultimodalQA', 'TATQA', 'FinQA', 'HiTAB', 'MultiHiertt']
     split_list = ['train', 'dev', 'test']
 
     for dataset in dataset_list:

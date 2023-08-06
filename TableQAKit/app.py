@@ -1,17 +1,3 @@
-
-'''
-### Linux工程迁移
-1.hybridqa.py windows不支持linux的文件命名 视为非法命名
-   ```
-   if platform.system() == 'Windows':
-       illegal_chars = r'[\\/:\*\?"<>|]'
-       table_id = re.sub(illegal_chars, '_', table_id)
-   ```
-'''
-
-
-
-
 import math
 import os
 from io import BytesIO
@@ -149,7 +135,7 @@ def fetch_default_table_data():
         dataset_name = content.get("dataset_name")
         split = content.get("split")
         table_idx = content.get("table_idx")
-    # dataset_name = "multihiertt"
+    # dataset_name = "MultiHiertt"
     # split = "train"
     # table_idx = 0
         propertie_name_list = []
@@ -473,17 +459,12 @@ def download_default_table():
         split = request.args.get('split')
         table_idx = int(request.args.get('table_idx'))
 
-        # format = "html" 
-        # include_props = True
-        # dataset_name = "multihiertt"
-        # split = "dev"
-        # table_idx = 20
 
         if dataset_name not in app.config['datasets']:
             raise Exception(f"datasets {dataset_name} not found")
         elif split not in app.config['split']:
             raise Exception(f"split {split} not found")
-        elif dataset_name == "multihiertt" and format != "html":
+        elif dataset_name == "MultiHiertt" and format != "html":
             raise Exception(f"dataset {dataset_name} can only be downloaded in HTML format")
         check_data_integrity(dataset_name, split, table_idx)
         dataset_obj = app.database["dataset"][dataset_name]

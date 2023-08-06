@@ -19,14 +19,14 @@ class MultiModalQA(HFTabularDataset):
             "dev" : "multimodalqa_final_dataset_pipeline_camera_ready_MMQA_dev.jsonl",
             "test" : "multimodalqa_final_dataset_pipeline_camera_ready_MMQA_test.jsonl"
         }
-        logger.info(f"Loading multimodalqa - {split}")
+        logger.info(f"Loading MultimodalQA - {split}")
 
 
         '''
         loading dataset
         '''
         # loading txt
-        txt_file_path = "datasets/mmqa/multimodalqa_final_dataset_pipeline_camera_ready_MMQA_texts.jsonl"
+        txt_file_path = "datasets/MultimodalQA/multimodalqa_final_dataset_pipeline_camera_ready_MMQA_texts.jsonl"
         txt_info = {}
 
         with open(txt_file_path, 'r', encoding='utf-8') as file:
@@ -39,7 +39,7 @@ class MultiModalQA(HFTabularDataset):
         # print(txt_info)
 
         #loading pic
-        pic_file_path = "datasets/mmqa/multimodalqa_final_dataset_pipeline_camera_ready_MMQA_images.jsonl"
+        pic_file_path = "datasets/MultimodalQA/multimodalqa_final_dataset_pipeline_camera_ready_MMQA_images.jsonl"
         pic_info = {}
 
         with open(pic_file_path, 'r', encoding='utf-8') as file:
@@ -52,7 +52,7 @@ class MultiModalQA(HFTabularDataset):
         # print(pic_info)
 
         #loading table
-        table_file_path = "datasets/mmqa/multimodalqa_final_dataset_pipeline_camera_ready_MMQA_tables.jsonl"
+        table_file_path = "datasets/MultimodalQA/multimodalqa_final_dataset_pipeline_camera_ready_MMQA_tables.jsonl"
         table_info = {}
         table_meta_info = {}
 
@@ -86,7 +86,7 @@ class MultiModalQA(HFTabularDataset):
 
         # loading question
         question_file_name = question_file_map[split]
-        question_file_path = os.path.join("datasets/mmqa", question_file_name)
+        question_file_path = os.path.join("datasets/MultimodalQA", question_file_name)
         question_info = []
         # print(question_file_path)
 

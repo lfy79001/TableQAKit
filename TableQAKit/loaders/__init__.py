@@ -1,21 +1,21 @@
-from loaders.wikisql import WikiSQL
-from loaders.wikitq import WikiTableQuestion
-from loaders.tatqa import TATQA
-from loaders.finqa import FinQA
-from loaders.hitab import HiTab
-from loaders.hybridqa import HybridQA
-from loaders.multihiertt import MultiHiertt
-from loaders.mmqa import MultiModalQA
-from loaders.spreadsheetqa import SpreadSheetQA
+from loaders.WikiSQL import WikiSQL
+from loaders.WikiTableQuestions import WikiTableQuestion
+from loaders.TATQA import TATQA
+from loaders.FinQA import FinQA
+from loaders.HiTab import HiTab
+from loaders.HybridQA import HybridQA
+from loaders.MultiHiertt import MultiHiertt
+from loaders.MultimodalQA import MultiModalQA
+from loaders.SpreadSheetQA import SpreadSheetQA
 
 DATASET_CLASSES = {
-    "wikisql": WikiSQL,
-    "mmqa": MultiModalQA,
-    "wikitq": WikiTableQuestion,
-    "tatqa": TATQA,
-    "finqa": FinQA,
-    "hitab": HiTab,
-    "hybridqa": HybridQA,
-    "spreadsheetqa": SpreadSheetQA,
-    "multihiertt": MultiHiertt
+    "WikiSQL": WikiSQL,
+    "MultimodalQA": MultiModalQA,
+    "WikiTableQuestions": WikiTableQuestion,
+    "TATQA": TATQA,
+    "FinQA": FinQA,
+    "HiTab": HiTab,
+    "HybridQA": HybridQA,
+    "SpreadSheetQA": SpreadSheetQA,
+    "MultiHiertt": MultiHiertt
 }

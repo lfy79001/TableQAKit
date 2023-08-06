@@ -61,7 +61,7 @@
                     <li class="nav-item">
                         <a class="nav-link" data-bs-target="#about-modal" data-bs-toggle="modal">
                             <i class="mdi mdi-file-document-box-outline menu-icon"></i>
-                            <span class="menu-title">Information</span>
+                            <span class="menu-title">How to Use</span>
                         </a>
                     </li>
                 </ul>
@@ -189,27 +189,45 @@
         <div class="modal-dialog">
             <div class="modal-content" style="width:600px;">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="about-modal-label">About</h5>
+                    <h5 class="modal-title" id="about-modal-label">Guide - How to Use the Tool</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div id="aboutarea" class="tab-pane sidepanel-panel" role="tabpanel" tabindex="0">
                         <div id="about-info" class="area-content">
-                            <p>A toolkit for Text-Table Hybrid Question Answering.</p>
-                            <p>A toolkit for Text-Table Hybrid Question Answering.</p>
+                            
+                            <h4>Default DataSet QA Mode</h4>
+                            <p>In this mode, you will use common datasets (including <code><b><em>FinQA, hitab, HybridQA, MultimodalQA, MultiHiertt, SpreadSheetQA, TAT-QA, WikiSQL, WikiTableQuestions</em></b></code>) for QA.</p>
+                            <h5>Usage</h5>
+                            <ul>
+                                <li>
+                                    <b>Step 1:</b> In the <b><em>"DATASET"</em></b> module, select the Dataset and Split (including <code><b><em>train, dev, test</em></b></code>) to specify the data source for QA.
+                                </li>
+                                <li>
+                                    <b>Step 2:</b> In the <b><em>"TABLE"</em></b> module, enter the number of the question you want to display for the current data source, then click anywhere on the blank space. The corresponding table information (including <code><b><em>properties, question, table</em></b></code>) will then be displayed. You can also click the <em><b>“download”</em></b> button to choose the file format and download the table information.
+                                </li>
+                                <li>
+                                    <b>Step 3:</b> After determining which question to display in the <b><em>"TABLE"</em></b> module, any image associated with the question (if exists) will be displayed in the <b><em>"PICTURES"</em></b> module, and any text information associated with the question (if exists) will be displayed in the <b><em>"TEXT"</em></b> module.
+                                </li>
+                                <li>
+                                    <b>Step 4:</b> In the <b><em>"TABLEQA PLAYGROUND"</em></b> module, the gold answer for the current question is displayed, along with inferred answers from various models. You can also input custom questions and invoke the model for inference answers.
+                                </li>
+                            </ul>
 
-                            <p>A toolkit for Text-Table Hybrid Question Answering</p>
-
-
-
-                            <p>
-                                A toolkit for Text-Table Hybrid Question Answering
-                            </p>
-
-                            <p>A toolkit for Text-Table Hybrid Question Answering</p>
-                            <p>
-                                A toolkit for Text-Table Hybrid Question Answering
-                            </p>
+                            <h4>Custom Table QA Mode</h4>
+                            <p>In this mode, you will use custom uploaded table for QA.</p>
+                            <h5>Usage</h5>
+                            <ul>
+                                <li>
+                                    <b>Step 1:</b> In the <b><em>"SELECT OR UPLOAD YOUR TABLE"</em></b> module, click the <b><em>"Upload a new table"</em></b> button to upload a local table (.xls or .xlsx format) for QA. The uploaded table will then be displayed directly in the <b><em>"TABLE"</em></b> module;You can also click the <b><em>"Select/Delete a table uploaded before"</em></b> button to choose a previously uploaded table which will be displayed directly in the <b><em>"TABLE"</em></b> module. You can also delete uploaded table here.
+                                </li>
+                                <li>
+                                    <b>Step 2:</b> In the <b><em>"TABLE"</em></b> module, your uploaded local table will be displayed. You can click the <b><em>"download"</em></b> button to choose the file format and download the table information.
+                                </li>
+                                <li>
+                                    <b>Step 3:</b> In the <b><em>"TABLEQA PLAYGROUND"</em></b> module, you can input custom questions and invoke the model for inference answers.
+                                </li>
+                            </ul>
 
 
                         </div>

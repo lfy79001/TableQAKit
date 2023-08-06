@@ -37,8 +37,8 @@ class HiTab(HFTabularDataset):
             "test": "test.jsonl"
         }
 
-        file_base_path = 'datasets/hitab'
-        logger.info(f"Loading hitab - {split}")
+        file_base_path = 'datasets/HiTab'
+        logger.info(f"Loading HiTab - {split}")
         question_file_path = os.path.join(file_base_path, question_file_map[split])
 
 
