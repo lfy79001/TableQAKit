@@ -71,6 +71,63 @@ class RetrievalDataset(Dataset):
     
     
 
+class ColumnRetrievalDataset(Dataset):
+    def __init__(self, args, data):
+        super(ColumnRetrievalDataset, self).__init__()
+        tokenizer = AutoTokenizer.from_pretrained(args.plm)
+        self.tokenizer = tokenizer
+        self.total_data = []
+        for item in tqdm(data): 
+            
+            if item['labels'].count(1) == 0:
+                continue
+            
+            question = item['question']
+            path = '/home/lfy/UMQM/Data/HybridQA/WikiTables-WithLinks'
+            table_id = item['table_id']
+            
+            
+            with open(f'{path}/tables_tok/{table_id}.json', 'r') as f:
+                table = json.load(f) 
+            
+            
+            item_data = {}
+            input_ids = [] 
+            question_ids = tokenizer.encode(question)
+            template = '{} is {}. '
+            headers =  [aa[0] for aa in table['header']]
+            
+            header = table['header']
+            labels = []
+            
+            data = table['data']
+            
+            num_columns = len(data[0])  
+            num_rows = len(data)  
+
+            for col in range(num_columns):
+                column_ids = []
+                column_values = [data[row][col] for row in range(num_rows)]
+                for i, item_cell in enumerate(column_values):
+                    cell_string = template.format(headers[col], item_cell[0])
+                    cell_tokens = tokenizer.tokenize(cell_string)
+                    cell_ids = tokenizer.convert_tokens_to_ids(cell_tokens)
+                    column_ids += cell_ids
+                    column_ids += [tokenizer.sep_token_id]
+                question_column_ids = question_ids + column_ids
+                input_ids.append(question_column_ids)
+
+            item_data['input_ids'] = input_ids
+            item_data['labels'] = item['labels']
+            item_data['metadata'] = item 
+            self.total_data.append(item_data) 
+            
+    def __len__(self):
+        return len(self.total_data)
+    def __getitem__(self, index):
+        data = self.total_data[index]
+        return data
+
 
 
 # def hybridqa_content(data):

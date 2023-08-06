@@ -1,0 +1,232 @@
+Give you a table with multirows, answer questiones step by step:
+
+Table student:
+name	gender	age
+alice	girl	18
+bob	boy	18
+
+Question: Is Bob a 18 years old girl?
+Please answer the question step by step.
+We need to analyze the given table and compare the information provided with the question.
+
+Step 1: Examine the table structure:
+The table "student" has three columns: "name," "gender," and "age."
+
+Step 2: Identify the relevant row:
+The row that contains information about Bob is the second row of the table:
+
+Name: Bob
+Gender: Boy
+Age: 18
+Step 3: Compare the information with the question:
+The question asks if Bob is an 18-year-old girl.
+
+Step 4: Analyze the information:
+From the table, we can see that Bob is a boy, not a girl. The table states his gender as "boy."
+
+Step 5: Compare the age:
+The question states that Bob is 18 years old. From the table, we can see that Bob's age is indeed 18.
+
+Step 6: Answer the question:
+No, Bob is not an 18-year-old girl. According to the table, Bob is an 18-year-old boy.
+Answer: no
+
+
+Table Rude (song): 
+Chart (2014)	Position
+Australia (ARIA)	40
+Canada (Canadian Hot 100)	5
+Denmark (Tracklisten)	13
+Germany (Official German Charts)	54
+Italy (FIMI)	31
+Japan (Japan Hot 100)	39
+Netherlands (Dutch Top 40)	15
+Netherlands (Single Top 100)	19
+New Zealand (Recorded Music NZ)	10
+Poland (ZPAV)	17
+Slovenia (SloTop50)	25
+Sweden (Sverigetopplistan)	17
+Switzerland (Schweizer Hitparade)	58
+UK Singles (Official Charts Company)	12
+US Billboard Hot 100	7
+US Adult Contemporary (Billboard)	13
+US Adult Top 40 (Billboard)	5
+US Dance/Mix Show Airplay (Billboard)	28
+US Mainstream Top 40 (Billboard)	6
+US Rhythmic (Billboard)	24
+
+Question: Which Rude Song Chart location has a lower 2014 rank in the Year in chart on the table, Germany (official German Charts) or Sweden (Sveringetopplistan)?
+Please answer the question step by step.
+To answer the question step by step, we need to compare the chart positions of "Rude" in Germany (Official German Charts) and Sweden (Sverigetopplistan) in the Year in chart for 2014.
+
+Step 1: Examine the table structure:
+The table "Rude (song)" lists different chart positions for the song in various countries and regions in 2014.
+
+Step 2: Locate the relevant chart positions:
+Germany (Official German Charts) has a rank of 54.
+Sweden (Sverigetopplistan) has a rank of 17.
+
+Step 3: Compare the chart positions:
+To determine which chart location has a lower rank, we need to compare the numbers. In this case, 17 is lower than 54.
+
+Step 4: Answer the question:
+The chart location with a lower rank in the Year in chart for 2014 is Sweden (Sverigetopplistan). It had a rank of 17, while Germany (Official German Charts) had a rank of 54.
+Answer: Sweden (Sverigetopplistan)
+
+
+Table FIRST Power Up: 
+Event	Location	Date
+Rocket City	Huntsville, Alabama	March 14–17
+Los Angeles	Pomona, California	March 14–17
+Central Illinois	Peoria, Illinois	March 14–17
+Greater Kansas City	Kansas City, Missouri	March 14–17
+Finger Lakes	Rochester, New York	March 14–17
+New York Tech Valley	Troy, New York	March 14–17
+Lone Star Central	Houston, Texas	March 14–17
+San Francisco	San Francisco, California	March 15–18
+Shanghai	Shanghai, China	March 15–18
+South Pacific	Sydney Olympic Park, Australia	March 16–18
+
+Question: What were the locations of events in week 3 of FIRST Power Up on the same dates as the event in Central Illinois
+Please answer the question step by step.
+To answer the question step by step, we need to identify the locations of events in week 3 of the FIRST Power Up game that occurred on the same dates as the event in Central Illinois.
+Step 1: Examine the table structure:
+The table "FIRST Power Up" lists different events along with their locations and dates.
+
+Step 2: Locate the event in Central Illinois:
+The event in Central Illinois occurred from March 14 to March 17.
+
+Step 3: Find events with the same dates:
+Events that occurred on the same dates as Central Illinois are:
+
+Central Illinois in Peoria, Illinois
+Lone Star Central in Houston, Texas
+Greater Kansas City in Kansas City, Missouri
+Los Angeles in Pomona, California
+Finger Lakes in Rochester, New York
+New York Tech Valley in Troy, New York
+Rocket City in Huntsville, Alabama
+Step 4: Answer the question:
+The locations of events in week 3 of FIRST Power Up on the same dates as the event in Central Illinois were:
+
+Peoria, Illinois
+Houston, Texas
+Kansas City, Missouri
+Pomona, California
+Rochester, New York
+Troy, New York
+Huntsville, Alabama
+Answer: Peoria, Illinois | Houston, Texas | Kansas City, Missouri | Pomona, California | Rochester, New York | Troy, New York | Huntsville, Alabama
+
+
+Table Vanessa Kirby: 
+Year	Title	Playwright	Role	Venue
+2010	All My Sons	Arthur Miller	Ann Deever	Octagon Theatre
+2010	Ghosts	Henrik Ibsen	Regina Engstrand	Octagon Theatre
+2010	A Midsummer Night's Dream	William Shakespeare	Helena	Octagon Theatre
+2010	As You Like It	William Shakespeare	Rosalind	West Yorkshire Playhouse
+2011	Women Beware Women	Thomas Middleton	Isabella	Royal National Theatre
+2011	The Acid Test	Anya Reiss	Dana	Royal Court Theatre
+2012	Three Sisters	Anton Chekhov	Maria "Masha" Kulygina	Young Vic
+2013	Edward II	Christopher Marlowe	Isabella of France	Royal National Theatre
+2014	A Streetcar Named Desire	Tennessee Williams	Stella Kowalski	Young Vic
+2016	Uncle Vanya	Anton Chekhov	Helena Serebryakova	Almeida Theatre
+2016	A Streetcar Named Desire	Tennessee Williams	Stella Kowalski	St. Ann's Warehouse
+2018	Julie	Polly Stenham	Julie	Royal National Theatre
+
+Question: What character did Vanessa Kirby play in Anton Chekov's play at the Young Vic theatre?
+Please answer the question step by step.
+To answer the question step by step, we need to identify the character that Vanessa Kirby played in an Anton Chekhov play at the Young Vic theatre.
+
+Step 1: Examine the table structure:
+The table "Vanessa Kirby" lists different plays, playwrights, roles, and venues.
+
+Step 2: Locate the plays at the Young Vic theatre:
+Looking at the table, we can see that there are two plays listed with the Young Vic as the venue:
+
+Three Sisters by Anton Chekhov
+A Streetcar Named Desire by Tennessee Williams
+Step 3: Identify the character played by Vanessa Kirby:
+From the table, we can see that Vanessa Kirby played the role of "Maria 'Masha' Kulygina" in Anton Chekhov's play Three Sisters at the Young Vic.
+
+Step 4: Answer the question:
+The character Vanessa Kirby played in Anton Chekhov's play at the Young Vic theatre was Maria "Masha" Kulygina.
+Answer: Maria "Masha" Kulygina
+
+
+Table 2018 Allsvenskan: 
+Team	Head coach 1	Captain	Kit manufacturer	Main shirt sponsor
+AIK	Norling	Goitom	Nike	Notar
+BK Häcken	Alm	Lindgren	Nike	BRA Bygg
+Dalkurd FF	Sandahl	Azizi	Adidas	Min Stora Dag
+Djurgårdens IF	Melkemichel	footballer, born 1983	Adidas	Prioritet Finans
+GIF Sundsvall	Cedergren	Naurin	Adidas	SCA
+Hammarby IF	Stefan Billborn	Bakircioglu	Puma	Jobman
+IF Brommapojkarna	Björknesjö	Sandberg Magnusson	Nike	Bauhaus
+IF Elfsborg	Thelin	Stuhr Ellegaard	Umbro	Pulsen
+IFK Göteborg	Asbaghi	Boo Wiklander	Kappa	Prioritet Finans
+IFK Norrköping	Gustafsson	Andreas Johansson (footballer, born 1982)	Nike	Holmen
+IK Sirius	Bergstrand	Ogbu	Nike	Various
+Kalmar FF	Bergstrand	Elm	Hummel	Hjältevadshus
+Malmö FF	Rösler	Rosenberg	Puma	Volkswagen
+Trelleborgs FF	Winqvist	Camara Jönsson	Nike	Mellby Gård
+Örebro SK	Kjäll	Gerzić	Puma	Ambitiös
+Östersunds FK	Ian Burchnall	Pettersson	Adidas	Various
+
+Question: Who was the head coach when the captain was Rosenberg in personnel and sponsoring for 2018 Allsvenskan?
+Please answer the question step by step.
+To answer the question step by step, we need to identify the head coach of the team when the captain was Rosenberg in the 2018 Allsvenskan.
+
+Step 1: Examine the table structure:
+The table "2018 Allsvenskan" lists different teams, head coaches, captains, kit manufacturers, and main shirt sponsors.
+
+Step 2: Locate the team with Rosenberg as the captain:
+From the table, we can see that Malmö FF had Rosenberg as the captain.
+
+Step 3: Identify the head coach:
+From the table, we can see that the head coach of Malmö FF was Rösler.
+
+Step 4: Answer the question:
+The head coach when the captain was Rosenberg in the personnel and sponsoring for the 2018 Allsvenskan was Rösler.
+Answer: Rösler
+
+
+Table Azadegan League: 
+Team	Location	Stadium	Capacity
+Aluminium Arak	Arak	Imam Khomeini	15,000
+Arman Gohar Sirjan	Sirjan	TBA	TBA
+Baadraan Tehran	Tehran	Kargaran	5,000
+Damash	Rasht	Shahid Dr. Azodi	11,000
+Elmoadab Tabriz	Tabriz	Marzdaran Stadium	5,000
+Esteghlal Khuzestan	Ahvaz	Ghadir	38,900
+Fajr Sepasi	Shiraz	Hafezieh	15,000
+Gol Reyhan Alborz	Karaj	Enghelab	15,000
+Khooshe Talaei Saveh	Saveh	Shahid Chamran	3,000
+Malavan	Bandar-e Anzali	Takhti Anzali	8,000
+Mes Kerman	Kerman	Shahid Bahonar	15,430
+Mes Rafsanjan	Rafsanjan	Shohadaye Noushabad	5,000
+Navad Urmia	Urmia	Shahid Bakeri	15,000
+Nirooye Zamini	Tehran	TBA	TBA
+Qashqai	Shiraz	Hafezieh	15,000
+Rayka Babol	Babol	Haft-e Tir	6,000
+Sepidrood	Rasht	Sardar Jangal	15,000
+Sorkhpooshan Pakdasht	Pakdasht	Shahid Dastgerdi	8,250
+
+Question: What team in the Azadegan league plays in Rasht with a capacity of 15000
+Please answer the question step by step.
+To answer the question step by step, we need to identify the team in the Azadegan League that plays in Rasht with a stadium capacity of 15,000.
+
+Step 1: Examine the table structure:
+The table "Azadegan League" lists different teams, their locations, stadiums, and capacities.
+
+Step 2: Locate the teams in Rasht:
+From the table, we can see that two teams have a location in Rasht:
+
+Damash - Plays at Shahid Dr. Azodi with a capacity of 11,000.
+Sepidrood - Plays at Sardar Jangal with a capacity of 15,000.
+Step 3: Identify the team with a stadium capacity of 15,000:
+From the table, we can see that Sepidrood is the team in the Azadegan League that plays in Rasht with a stadium capacity of 15,000.
+
+Step 4: Answer the question:
+The team in the Azadegan League that plays in Rasht with a capacity of 15,000 is Sepidrood.
+Answer: Sepidrood

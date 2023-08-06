@@ -9,7 +9,7 @@ import torch.nn.functional as F
 import numpy as np
 import argparse
 from .model import Retriever
-from .dataset import RetrievalDataset
+from .dataset import RetrievalDataset, ColumnRetrievalDataset
 from typing import Dict, List, Tuple
 from pathlib import Path
 
@@ -29,9 +29,14 @@ class RetrievalTrainer:
         self.dev_data = load_json(args.dev_data_path)
         self.logger.info(f"dev_data: {len(self.dev_data)}")
         
-        if args.is_train:
-            self.train_dataset = RetrievalDataset(args, self.train_data)
-        self.dev_dataset = RetrievalDataset(args, self.dev_data)   
+        if args.mode == 'row':
+            if args.is_train:
+                self.train_dataset = RetrievalDataset(args, self.train_data)
+            self.dev_dataset = RetrievalDataset(args, self.dev_data)   
+        elif args.mode == 'column':
+            if args.is_train:
+                self.train_dataset = ColumnRetrievalDataset(args, self.train_data[:30])
+            self.dev_dataset = ColumnRetrievalDataset(args, self.dev_data[:10])   
     
     # Dataset Collator
     def collate(self, data, **training_config):

@@ -1,0 +1,188 @@
+Give you some images, passages and at most one table, answer questions:
+
+Images:
+"alice" (a girl)
+
+Passages:
+"alice" (alice is 18 years old)
+
+Table student:
+name	gender	age
+alice	girl	18
+
+Question: Is Alice a 18 years old girl?
+Answer: yes
+
+
+Images:
+"alice" (a girl)
+
+Passages:
+"alice" (alice is 18 years old)
+
+Table student:
+name	gender	age
+alice	girl	18
+bob	boy	18
+
+Question: Is Bob a 18 years old girl?
+Answer: no
+
+
+Images:
+"Rio de Janeiro" (six views of city rio de janeiro, brazil)
+
+Passages:
+"Earth Summit" (The United Nations Conference on Environment and Development (UNCED), also known as the Rio de Janeiro Earth Summit, the Rio Summit, the Rio Conference, and the Earth Summit (Portuguese: ECO92), was a major United Nations conference held in Rio de Janeiro from 3 to 14 June 1992.)
+
+Table:
+
+Question: The place where the he first international earth summit held has how many photos in its collage?
+Answer: 6
+
+
+Images:
+"coronation street" (a screenshot of the coronation street soundtrack)
+
+Passages:
+"Charlie Stubbs (Coronation Street)" (In 2005, Charlie began a relationship with Tracy Barlow (Kate Ford). He convinced her to move in with him and later in February 2006, manipulated her into having her daughter Amy (Amber Chadwick) move in with her parents. In turn, Tracy began to manipulate Charlie. She pretended to be pregnant and used the money he gave her for an abortion to buy expensive shoes and used her \"grief\" to have him allow Amy to move back in. When Shelley visited before her mother\u2019s marriage to Fred Elliott (John Savident), she and Charlie had a one-night stand. She told Tracy about their night of passion, who accused her of lying. Shelley later revealed that she was pregnant with Charlie\u2019s baby but didn\u2019t allow Charlie to have anything to do with the baby, and left. He and Tracy briefly split but reconciled. Charlie later began an affair with Maria Sutherland (Samia Smith), who was renting his flat. When David Platt (Jack P. Shepherd) discovered the affair he tried to blackmail Charlie, threatening to reveal the affair to Tracy. Charlie retaliated by trying to drown David in the bath. When Tracy eventually found out about the affair, they split once more. Tracy began to plot revenge against Charlie and pretended to make amends with Charlie. She pretended he was abusing her to the point of burning herself with an iron to make it look like Charlie was responsible for her injuries. Charlie eventually realized his partner was seeking revenge and when he was about to tell her their relationship was over, she insisted on performing a lap dance for him. She hit him round the head with a heavy ornament, and he later died in hospital. She claimed she\u2019d killed him in self-defence but the court found her guilty and she was given a life sentence.)
+
+Table:
+
+Question: Oliver Mellor played Dr. Matt Carter on the TV show that had Tracy Barlow kill who?
+Answer: Charlie
+
+
+Images: 
+
+Passages: 
+"Internet café" (The online café phenomenon in the United States was started in July 1991 by Wayne Gregori in San Francisco when he began SFnet Coffeehouse Network. Gregori designed, built and installed 25 coin-operated computer terminals in coffeehouses throughout the San Francisco Bay Area. The café terminals dialed into a 32 line Bulletin Board System that offered an array of electronic services including FIDOnet mail and, in 1992, Internet mail.)
+
+Table FIRST Power Up: 
+Event	Location	Date
+Rocket City	Huntsville, Alabama	March 14–17
+Los Angeles	Pomona, California	March 14–17
+Central Illinois	Peoria, Illinois	March 14–17
+Greater Kansas City	Kansas City, Missouri	March 14–17
+Finger Lakes	Rochester, New York	March 14–17
+New York Tech Valley	Troy, New York	March 14–17
+Lone Star Central	Houston, Texas	March 14–17
+San Francisco	San Francisco, California	March 15–18
+Shanghai	Shanghai, China	March 15–18
+South Pacific	Sydney Olympic Park, Australia	March 16–18
+
+Question: What was the event name during Week 3 of the 1st Power Up in the location of the first US cybercafe?
+Answer: San Francisco
+
+
+Images: 
+
+Passages: 
+"Rosalind (As You Like It)" (She is the beautiful daughter of the exiled Duke Senior and niece to his usurping  brother Duke Frederick. Her father is banished from the kingdom which breaks her heart. She then meets Orlando, one of her father's friends' son and falls in love with him. After angering her uncle, she leaves his court for exile in the Forest of Arden. Disguised as a shepherd named Ganymede, Rosalind lives with her sweet and devoted cousin, Celia (who is disguised as Ganymede's sister, Aliena), and Duke Frederick's fool Touchstone. Eventually, Rosalind is reunited with her father and married to her faithful lover, Orlando.)
+
+Table Vanessa Kirby: 
+Year	Title	Playwright	Role	Venue
+2010	All My Sons	Arthur Miller	Ann Deever	Octagon Theatre
+2010	Ghosts	Henrik Ibsen	Regina Engstrand	Octagon Theatre
+2010	A Midsummer Night's Dream	William Shakespeare	Helena	Octagon Theatre
+2010	As You Like It	William Shakespeare	Rosalind	West Yorkshire Playhouse
+2011	Women Beware Women	Thomas Middleton	Isabella	Royal National Theatre
+2011	The Acid Test	Anya Reiss	Dana	Royal Court Theatre
+2012	Three Sisters	Anton Chekhov	Maria "Masha" Kulygina	Young Vic
+2013	Edward II	Christopher Marlowe	Isabella of France	Royal National Theatre
+2014	A Streetcar Named Desire	Tennessee Williams	Stella Kowalski	Young Vic
+2016	Uncle Vanya	Anton Chekhov	Helena Serebryakova	Almeida Theatre
+2016	A Streetcar Named Desire	Tennessee Williams	Stella Kowalski	St. Ann's Warehouse
+2018	Julie	Polly Stenham	Julie	Royal National Theatre
+
+Question: What is the alter ego adopted by Rosalind in the Vanessa Kirby Theater title at the West Yorkshire Playhouse?
+Answer: a shepherd named Ganymede
+
+
+Images: 
+
+Passages: 
+"Corn flakes" (There have been many mascots of Kellogg's Cornflakes. The most popular one is a green rooster named Cornelius "Corny" Rooster, which has been the mascot since his debut. In early commercials, he would speak the catch phrase "Wake up, up, up to Kellogg's Cornflakes!" Dallas McKennon and Andy Devine voiced him. Later, he stopped talking and simply crowed.[citation needed] The concept of using a stylized cockerel originated from a suggestion by family friend Nansi Richards, a harpist from Wales and a Welsh language proponent. The Welsh word for cockerel is ceiliog (pronounced keyeleeog or in some dialects keelog).)
+
+Table 1980 in Michigan: 
+Fortune 500 Rank (1981) (sales and net earnings figures come from the 1981 Fortune 500 list based on 1955 sales and earnings, unless another source is provided.)	Company	1980 sales (millions)	1980 net earnings (millions)	Headquarters	Nature of business
+3	General Motors	57,728.5	-762.5	Detroit	One of the "Big Three" automobile manufacturers
+6	Ford Motor Company	37,085.5	-1,543.3	Dearborn	One of the "Big Three" automobile manufacturers
+na	Kmart	14,200.0	260.5	Troy	Retail stores
+25	Dow Chemical Co.	10,626.0	805.0	Midland	Chemicals
+32	Chrysler	9,225.3	-1,709.7	Detroit	One of the "Big Three" automobile manufacturers
+87	Bendix Corporation	4,270.4	191.6	Southfield	Auto parts, aerospace and electronic equipment and machine tools
+115	Eaton Corporation	3,176.5	115.8	Cleveland, OH	Automobile parts
+137	Burroughs	2,857.2	82.0	Detroit	Computers and data processing machines (later became Unisys)
+155	American Motors	2,552.6	-197.5	Southfield	Automobiles
+na	Consumers Power	2,300.0	224.0	Jackson	Electric and natural gas utility
+170	Whirlpool Corporation	2,243.2	101.7	Benton Harbor	Washers, dryers, appliances
+176	Kellogg's	2,150.9	184.8	Battle Creek	Cereal
+180	Fruehauf Trailer Co.	2,081.7	32.2	Detroit	Truck trailers
+na	Upjohn	1,800.0	170.1	Kalamazoo	Pharmaceuticals
+na	Detroit Edison	1,800.0	137.5	Detroit	Electric utility
+226	Clark Equipment Co.	1,533.7	53.5	Buchanan	Industrial and construction machinery
+297	Ex-Cell-O	1,020.7	50.4	Troy	Industrial equipment
+377	Federal-Mogul	721.2	36.7	Detroit	Bearings and replacement parts for autos, trucks, and aircraft
+427	McLouth Steel	614.0	-56.6	Detroit	Steel producer for auto industry
+434	Gerber Products	602.0	29.7	Fremont	Baby food
+
+Question: The 1980 top Battle Creek Michigan company had what kind of rooster?
+Answer: cockerel
+
+
+Images:
+"Billy Joel" (The image features a happy older man with a gray beard and mustache, wearing a black suit and a white shirt. He is smiling and appears to be in a good mood. The man is standing under an awning, surrounded by several other people who are also standing under the same awning, possibly at an event or gathering. The awning provides shelter from the elements, creating a shared space for the individuals to enjoy.)
+
+Passages: 
+
+Table PNC Park: 
+Date	Artist	Opening act(s)	Tour / Concert name	Attendance	Revenue	Notes
+August 6, 2003	Bruce Springsteen & The E Street Band	—	The Rising Tour	42,301 / 48,074	$3,137,575	(null)
+June 26, 2005	Jimmy Buffett	—	A Salty Piece of Land Tour	—	—	Sonny Landreth and Jake Shimabukuro were special guests http://www.buffettworld.com/archives/2005-a-salty-piece-of-land/06-26/
+September 28, 2005	The Rolling Stones	Pearl Jam	A Bigger Bang	—	—	(null)
+August 24, 2006	Me First and the Gimme Gimmes	—	—	32,000	—	Originally scheduled to play three dates at the ballpark after Pirates games, but after the band got booed on the first night, the next two nights were cancelled.
+July 10, 2010	Dave Matthews Band	Zac Brown Band	—	30,964 / 38,365	$2,173,667	(null)
+July 7, 2012	Daughtry	Mike Sanchez SafetySuit	Break the Spell Tour	—	—	(null)
+July 26, 2014	Jason Aldean	Miranda Lambert Florida Georgia Line Tyler Farr	Burn It Down Tour	38,985 / 39,548	$2,898,350	(null)
+July 1, 2016	Billy Joel	Charlie Puth	Billy Joel in Concert	39,500 / 39,500	$4,627,472	(null)
+September 29, 2018	Ed Sheeran	Snow Patrol Anne-Marie	÷ Tour	41,014 / 41,104	$4,169,874	Originally scheduled for September 30 but moved due to the Steelers-Ravens game that night at nearby Heinz Field resulting in the concert being moved to the 29th.
+August 15, 2020	Green Day Fall Out Boy Weezer	The Interrupters	Hella Mega Tour	(null)	(null)	(null)
+
+Table:
+
+Question: The musician who performed at PNC Park, making $4,627,472, has what color hair?
+Answer: gray
+
+
+Images: 
+"Saving Hope" (The image depicts a bright light shining down a hallway, creating a sense of hope and salvation. The hallway leads to an open door, symbolizing a welcoming and uplifting atmosphere. The scene conveys a positive and inspiring vibe, possibly associated with the theme "saving hope.")
+
+Passages: 
+
+Table John Bregar: 
+Year	Title	Role	Notes
+2003–2007	Degrassi: The Next Generation	Dylan Michalchuk	Recurring role (seasons 3–6)
+2005	Darcy's Wild Life	Troy	"Cuz in Trouble"
+2006	Canada Russia '72	Bobby Clarke	"1.1", "1.2"
+2007	Jane Show	Jimmy Whitton	"Voices from the Past"
+2008	Dead at 17	Cody Masterson	TV film
+2009	Being Erica	Barrett	"What I Am Is What I Am"
+2009	Taking a Chance on Love	David	TV film
+2009	Best Years	Lou	"Dangerous Liaisons"
+2009	Flashpoint	Scott Mink	"Perfect Storm"
+2009	Family Biz	Cody Flowers	Recurring role (14 episodes)
+2011	Jack of Diamonds	Campbell Lassiter	TV film
+2011	Rookie Blue	Aaron Samuels	"Brotherhood"
+2011	Desperately Seeking Santa	Neal McCormick	TV film
+2013	Being Human	Trent Harris	"(Dead) Girls Just Wanna Have Fun", "The Teens, They Are a Changin"
+2013	Murdoch Mysteries	Alvin Storey	"Twisted Sisters"
+2013	Satisfaction	Quinn	"Confrontations"
+2013	Mentalist	FBI Agent Mullins	"Red John"
+2013	Fir Crazy	Lance	TV film
+2014	Chop Shop	Porter	Recurring role
+2015	Saving Hope	Adam Hart	"Shattered", "Emotional Rescue"
+2018	iZombie	Max Roberts	"Dont Hate the Player, Hate the Brain"
+
+Question: What color is the hallway in the 2015 John Bregar TV show advert?
+Answer: blue

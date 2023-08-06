@@ -1,0 +1,228 @@
+Args info:
+dataset: mmqa
+dataset_split: train
+api_keys_file: key.txt
+prompt_file: templates/prompt.json
+save_dir: results/
+save_file_name: None
+n_processes: 1
+n_shots: 10
+seed: 42
+limit: 500
+start_eid: 800
+resume: False
+oracle_retriever: True
+oracle_classifier: True
+engine: text-davinci-003
+worker_address: http://localhost:40000
+n_parallel_prompts: 1
+max_generation_tokens: 200
+max_api_total_tokens: 4200
+temperature: 0.1
+sampling_n: 10
+top_p: 1.0
+stop_tokens: ['\n\n']
+verbose: False
+
+******* End To End QA *******
+begin annotate begin_eid:  800 end_eid:  1300 total:  23817
+Process#0: eid#840, qid#aeb4f2d4a44fa030b7edfd46c031fb2b generation error: 'dfcd921d54971e95264bb669f3a3fa9a'
+Process#0: eid#905, qid#0410c2fcd6a23cec9d24d8834f17ed3f generation error: '86e1639e790ade8e6bfebad90d015174'
+Process#0: eid#909, qid#979fe24217fc7bc9ec2d5c680e230680 generation error: '86e1639e790ade8e6bfebad90d015174'
+Process#0: eid#935, qid#b4f43726b90f493fbe3d0145997412f1 generation error: 'af0abc68a36192cf0ce973a136d2e7e9'
+Process#0: eid#936, qid#7314dce986dae34b439dd6d1820e20a2 generation error: 'af0abc68a36192cf0ce973a136d2e7e9'
+Process#0: eid#937, qid#76f53e2d4fe014b6cf91f43a1cf2d6e1 generation error: 'af0abc68a36192cf0ce973a136d2e7e9'
+Process#0: eid#983, qid#0c49b3bbc88ef268f4cf71890ae5e009 generation error: '0fa000530623d110c221c652a42b0308'
+Process#0: eid#1023, qid#2a45de50da80b958eef4025eccb8953c generation error: 'e22beb7b154a66837caf309186aec40f'
+Process#0: eid#1024, qid#862ee6285b568b191e869b196eafb8b2 generation error: '08f3a8eb12378a9d90d7c567afe3e3c3'
+Process#0: eid#1026, qid#a565c8057be92c0fa409cddfee6f6582 generation error: '08f3a8eb12378a9d90d7c567afe3e3c3'
+Process#0: eid#1054, qid#dabb228da943f0c0f0f39d752e144f87 generation error: '96c7af79fdd893a44fabf2799070879f'
+Process#0: eid#1056, qid#5c6733bf2f3197c3557e8d0dfdbb0fdd generation error: '96c7af79fdd893a44fabf2799070879f'
+Images: 
+"Saving Hope" (The image depicts a bright light shining down a hallway, creating a sense of hope and salvation. The hallway leads to an open door, symbolizing a welcoming and uplifting atmosphere. The scene conveys a positive and inspiring vibe, possibly associated with the theme "saving hope.")
+
+Passages: 
+
+Table John Bregar: 
+Year	Title	Role	Notes
+2003–2007	Degrassi: The Next Generation	Dylan Michalchuk	Recurring role (seasons 3–6)
+2005	Darcy's Wild Life	Troy	"Cuz in Trouble"
+2006	Canada Russia '72	Bobby Clarke	"1.1", "1.2"
+2007	Jane Show	Jimmy Whitton	"Voices from the Past"
+2008	Dead at 17	Cody Masterson	TV film
+2009	Being Erica	Barrett	"What I Am Is What I Am"
+2009	Taking a Chance on Love	David	TV film
+2009	Best Years	Lou	"Dangerous Liaisons"
+2009	Flashpoint	Scott Mink	"Perfect Storm"
+2009	Family Biz	Cody Flowers	Recurring role (14 episodes)
+2011	Jack of Diamonds	Campbell Lassiter	TV film
+2011	Rookie Blue	Aaron Samuels	"Brotherhood"
+2011	Desperately Seeking Santa	Neal McCormick	TV film
+2013	Being Human	Trent Harris	"(Dead) Girls Just Wanna Have Fun", "The Teens, They Are a Changin"
+2013	Murdoch Mysteries	Alvin Storey	"Twisted Sisters"
+2013	Satisfaction	Quinn	"Confrontations"
+2013	Mentalist	FBI Agent Mullins	"Red John"
+2013	Fir Crazy	Lance	TV film
+2014	Chop Shop	Porter	Recurring role
+2015	Saving Hope	Adam Hart	"Shattered", "Emotional Rescue"
+2018	iZombie	Max Roberts	"Dont Hate the Player, Hate the Brain"
+
+Question: What color is the hallway in the advertisement for the TV show where John Bregar played Adam Hart?
+Answer: 
+Answer: blue
+
+
+Images: 
+"Saving Hope" (The image depicts a bright light shining down a hallway, creating a sense of hope and salvation. The hallway leads to an open door, symbolizing a welcoming and uplifting atmosphere. The scene conveys a positive and inspiring vibe, possibly associated with the theme "saving hope.")
+
+Passages: 
+
+Table John Bregar: 
+Year	Title	Role	Notes
+2003–2007	Degrassi: The Next Generation	Dylan Michalchuk	Recurring role (seasons 3–6)
+2005	Darcy's Wild Life	Troy	"Cuz in Trouble"
+2006	Canada Russia '72	Bobby Clarke	"1.1", "1.2"
+2007	Jane Show	Jimmy Whitton	"Voices from the Past"
+2008	Dead at 17	Cody Masterson	TV film
+2009	Being Erica	Barrett	"What I Am Is What I Am"
+2009	Taking a Chance on Love	David	TV film
+2009	Best Years	Lou	"Dangerous Liaisons"
+2009	Flashpoint	Scott Mink	"Perfect Storm"
+2009	Family Biz	Cody Flowers	Recurring role (14 episodes)
+2011	Jack of Diamonds	Campbell Lassiter	TV film
+2011	Rookie Blue	Aaron Samuels	"Brotherhood"
+2011	Desperately Seeking Santa	Neal McCormick	TV film
+2013	Being Human	Trent Harris	"(Dead) Girls Just Wanna Have Fun", "The Teens, They Are a Changin"
+2013	Murdoch Mysteries	Alvin Storey	"Twisted Sisters"
+2013	Satisfaction	Quinn	"Confrontations"
+2013	Mentalist	FBI Agent Mullins	"Red John"
+2013	Fir Crazy	Lance	TV film
+2014	Chop Shop	Porter	Recurring role
+2015	Saving Hope	Adam Hart	"Shattered", "Emotional Rescue"
+2018	iZombie	Max Roberts	"Dont Hate the Player, Hate the Brain"
+
+Question: What color is the hallway in the 2015 John Bregar TV show advert?
+Answer: 
+Answer: blue
+
+
+Process#0: eid#1073, qid#c2aa27dd2edfe9abfcf4f09669bc468d generation error: '53afd16158b60f0d1f75d18f3fd9126e'
+Process#0: eid#1076, qid#2a77d2c3768f3a30724ae5c1119f8487 generation error: '249441d6e674fccd70a1fa78a22dae9d'
+Process#0: eid#1077, qid#d92918d30daeae74b036f83692b0c14f generation error: '249441d6e674fccd70a1fa78a22dae9d'
+Process#0: eid#1079, qid#abb8fa2f804e96049183a47b140d201d generation error: '249441d6e674fccd70a1fa78a22dae9d'
+Process#0: eid#1084, qid#13f23163bd41352352368aa5f2ba42f4 generation error: '50f06e164a4e643dfc2ac8f45265a87e'
+Process#0: eid#1085, qid#4fb73188a16d86724da0201ad63f49f4 generation error: '50f06e164a4e643dfc2ac8f45265a87e'
+Process#0: eid#1087, qid#18b03c2cdeb8d1e5daaef5dabe92fb80 generation error: '50f06e164a4e643dfc2ac8f45265a87e'
+Process#0: eid#1094, qid#1bc4c75b8ce57a68390eb3ff21ac9c40 generation error: '6c6f3c3d204c5a06cc812fce214734b1'
+Process#0: eid#1095, qid#192f0fcbdf21c539d487c07e502568b3 generation error: '6c6f3c3d204c5a06cc812fce214734b1'
+Images: 
+"Home and Away" (The image captures a picturesque beach scene with a person walking along the shore near the water, leaving footprints in the sand. The individual appears to be enjoying a leisurely stroll, taking in the beautiful surroundings. The beach seems to be a popular spot, as there are several other footprints scattered across the sand, indicating the presence of more visitors. The ocean serves as a beautiful background, completing the serene atmosphere of the scene.)
+
+Passages: 
+
+Table Sonja Tallis: 
+Year	Title	Role	Notes	Ref.
+1981	The Young Doctors	Barbara Webber	TV series: 1 episode	(null)
+1982	The Best of Friends	Pammie	Film	(null)
+1983	Who Killed Baby Azaria	Mrs Kuhl	TV movie	(null)
+1984	Sons and Daughters	Shirley Ryan	TV series: season three, 5 episodes	(null)
+1985	Prisoner	Nora Flynn	TV series: season seven, regular character (52 episodes)	(null)
+1986	Prime Time	Georgina Jones	TV series: regular character	(null)
+1987	A Country Practice	Heather Gordon	TV series: season five, two-part episode, "Someone to Listen"	(null)
+2000	Home and Away	Margaret Bradley	2 episodes	(null)
+2005	McLeod's Daughters	Alessa Manfredi	TV series: season five, 1 episode, "Make Believe"	(null)
+2010	The Nothing Men	Maggie	Film	(null)
+
+Question: The poster of the movie starring Sonja Tallis as Margaret Bradley shows what sandy landscape?
+Answer: 
+Answer: beach
+
+
+Images: 
+"Home and Away" (The image captures a picturesque beach scene with a person walking along the shore near the water, leaving footprints in the sand. The individual appears to be enjoying a leisurely stroll, taking in the beautiful surroundings. The beach seems to be a popular spot, as there are several other footprints scattered across the sand, indicating the presence of more visitors. The ocean serves as a beautiful background, completing the serene atmosphere of the scene.)
+
+Passages: 
+
+Table Sonja Tallis: 
+Year	Title	Role	Notes	Ref.
+1981	The Young Doctors	Barbara Webber	TV series: 1 episode	(null)
+1982	The Best of Friends	Pammie	Film	(null)
+1983	Who Killed Baby Azaria	Mrs Kuhl	TV movie	(null)
+1984	Sons and Daughters	Shirley Ryan	TV series: season three, 5 episodes	(null)
+1985	Prisoner	Nora Flynn	TV series: season seven, regular character (52 episodes)	(null)
+1986	Prime Time	Georgina Jones	TV series: regular character	(null)
+1987	A Country Practice	Heather Gordon	TV series: season five, two-part episode, "Someone to Listen"	(null)
+2000	Home and Away	Margaret Bradley	2 episodes	(null)
+2005	McLeod's Daughters	Alessa Manfredi	TV series: season five, 1 episode, "Make Believe"	(null)
+2010	The Nothing Men	Maggie	Film	(null)
+
+Question: Sonja Tallis starred in a film in 2000 with what type of scenery on the title screen?
+Answer: 
+Answer: beach
+
+
+Process#0: eid#1194, qid#8974a58b31c62eb2878bbfcfc6263bd9 generation error: 'b78df266d185cefbd7f4ae8e6f17fabc'
+Process#0: eid#1218, qid#db929515582b2eb1371831281b22d465 generation error: '3d1608d6b3eb89709d8f97dbe248e7ef'
+Images: 
+"Comedy Bang! Bang! (TV series)" (The image features a comical green motorcycle with a rider on it, shooting a bang out of the exhaust. The motorcycle is positioned in the center of the scene, and the rider is sitting on it, appearing to be in motion. Surrounding the motorcycle, there are several small cartoon characters, possibly indicating a humorous or lighthearted theme related to the motorcycle.)
+
+Passages: 
+
+Table Armen Weitzman: 
+Year	Title	Role	Notes
+2005	Trollz	Jasper Trollhound	Voice; credited as "Armen"; 17 episodes
+2006	Cheap Seats without Ron Parker	Canadian Violent Hugger	Episode: "Amazing Games: International Toughmen"
+2007	The Very Funny Show	Guy at Party	Episode: "Future Me"
+2007–08	The Sarah Silverman Program	Armen / Clerk / Store Clerk	6 episodes
+2009	The Quest for the Golden Hot Dog	Ron Wilton, Jr.	(null)
+2009	The Midnight Show	(null)	2 episodes
+2010	Remember When	Tomás	(null)
+2010	Childrens Hospital	Dr. Fantastic / Dr. Frantastic	2 episodes
+2010–12	The Back Room	Cuddle Bear	Main; 25 episodes
+2011	Greek	Jim Carnes	3 episodes
+2012	Suburgatory	Troy	Episode: "The Great Compromise"
+2013	Burning Love	Hathwell Crisping	13 episodes
+2013	Zach Stone Is Gonna Be Famous	Greg LeBlanc	Main; 12 episodes
+2013	NTSF:SD:SUV	Raj	Episode: "TGI Murder"
+2013–15	Comedy Bang! Bang!	Thénardier / Tombstone Maker	2 episodes
+2013–18	Another Period	Garfield	Main; 32 episodes; Walter in unaired pilot
+2014	Newsreaders	Oz Foss	Episode: "Band Names-R-Us; Put Me in Coach"
+2016–18	Love	Ruby	9 episodes
+2017	I'm Dying Up Here	Rob Cheevers	Episode: "Pilot"
+2018	Silicon Valley	Jeff	4 episodes
+2019	Veep	Male Sensitivity Trainer	Episode: "Pledge"
+2019	GLOW	Jonathan	2 episodes
+
+Question: What type of vehicle is the creature riding in the 2013-15 Armen Weitzman TV series?
+Answer: 
+Answer: motorcycle
+
+
+Images: 
+"Pittsburgh" (The image features a collage of three city skylines, showcasing the beauty of urban architecture. In one picture, a tall tower stands prominently next to a river, while in another, a large building with a dome and a bell tower can be seen. The third image displays a cityscape with a baseball stadium, emphasizing the presence of sports facilities within the city.Various boats are scattered across the river, adding life and activity to the scene. There are also several people visible in the image, enjoying the city's atmosphere and engaging in different activities. The color palette of the scene is enhanced by the presence of multiple sports balls, emphasizing the vibrancy and energy of the city.)
+
+Passages: 
+
+Table Marcella Mesker: 
+Outcome	No.	Date	Tournament	Surface	Partner	Opponents	Score
+Runner-up	1.	2 January 1980	Australian Open	grass	Leanne Harrison	Judy Chaloner    Diane Evers	2–6, 6–1, 0–6
+Winner	1.	15 May 1983	Lugano, Switzerland	Clay	Christiane Jolissaint	Petra Delhees    Patricia Medrado	6–2, 3–6, 7–5
+Winner	2.	23 January 1984	Denver, USA	Hard (i)	Anne Hobbs	Sherry Acker    Candy Reynolds	6–2, 6–3
+Winner	3.	30 January 1984	Pittsburgh, USA	Carpet (i)	Christiane Jolissaint	Anna-Maria Fernandez    Trey Lewis	7–6, 6–4
+Winner	4.	13 May 1984	Lugano, Switzerland	Hard (i)	Christiane Jolissaint	Iva Budařová    Marcela Skuherská	6–4, 6–3
+Runner-up	2.	6 January 1985	Port St. Lucie, USA	Hard	Christiane Jolissaint	Betsy Nagelsen    Paula Smith	3–6, 4–6
+Runner-up	3.	11 March 1985	US Indoors	Carpet (i)	Elizabeth Smylie	Martina Navratilova    Pam Shriver	5–7, 2–6
+Runner-up	4.	17 March 1985	Dallas, USA	Carpet (i)	Pascale Paradis	Barbara Potter    Sharon Walsh	7–5, 4–6, 6–7
+Runner-up	5.	12 August 1985	Canadian Open	Hard	Pascale Paradis	Gigi Fernández    Martina Navratilova	4–6, 0–6
+Winner	5.	11 November 1985	Hilversum, Netherlands	Carpet (i)	Catherine Tanvier	Sandra Cecchini    Sabrina Goleš	6–2, 6–2
+Runner-up	6.	15 December 1985	Tokyo Indoor, Japan	Carpet (i)	Elizabeth Smylie	Claudia Kohde-Kilsch    Helena Suková	0–6, 4–6
+Winner	6.	2 March 1986	Oklahoma City, USA	Carpet (i)	Pascale Paradis	Lori McNeil    Catherine Suire	2–6, 7–6, 6–1
+Runner-up	7.	24 May 1987	Strasbourg, France	Clay	Kathy Horvath	Jana Novotná    Catherine Suire	0–6, 2–6
+Runner-up	8.	12 July 1987	Belgian Open	Clay	Kathy Horvath	Bettina Bunge    Manuela Maleeva	6–4, 4–6, 4–6
+
+Question: In the photo in this collage of the tournament in doubles 14 (6-8) for Marcella Mesker with a score of 7-6,6-4, what sport is being played?
+Answer: 
+Answer: baseball
+
+
+Elapsed time: 45.42821407318115

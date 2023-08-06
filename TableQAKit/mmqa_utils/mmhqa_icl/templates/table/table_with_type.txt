@@ -1,0 +1,178 @@
+Give you a table with multirows, answer questiones in text or python program:
+
+Table Term:
+row_id	Term
+0	1859\u20131864
+1	1864\u20131869
+2	1869\u20131880
+3	Term
+4	1894\u20131895
+5	1895\u20131901
+6	1901\u20131904
+7	1904\u20131913
+8	1913\u20131917
+
+Question: What is the max time span?
+Answer type: python
+Answer: max([1864-1859, 1869-1864, 1880-1869, 1895-1894, 1901-1895, 1904-1901, 1913-1904, 1917-1913])
+
+
+Table Rude (song): 
+Chart (2014)	Position
+Australia (ARIA)	40
+Canada (Canadian Hot 100)	5
+Denmark (Tracklisten)	13
+Germany (Official German Charts)	54
+Italy (FIMI)	31
+Japan (Japan Hot 100)	39
+Netherlands (Dutch Top 40)	15
+Netherlands (Single Top 100)	19
+New Zealand (Recorded Music NZ)	10
+Poland (ZPAV)	17
+Slovenia (SloTop50)	25
+Sweden (Sverigetopplistan)	17
+Switzerland (Schweizer Hitparade)	58
+UK Singles (Official Charts Company)	12
+US Billboard Hot 100	7
+US Adult Contemporary (Billboard)	13
+US Adult Top 40 (Billboard)	5
+US Dance/Mix Show Airplay (Billboard)	28
+US Mainstream Top 40 (Billboard)	6
+US Rhythmic (Billboard)	24
+
+Question: Which Rude Song Chart location has a lower 2014 rank in the Year in chart on the table, Germany (official German Charts) or Sweden (Sveringetopplistan)?
+Answer type: text
+Answer: Sweden (Sverigetopplistan)
+
+
+Table FIRST Power Up: 
+Event	Location	Date
+Rocket City	Huntsville, Alabama	March 14–17
+Los Angeles	Pomona, California	March 14–17
+Central Illinois	Peoria, Illinois	March 14–17
+Greater Kansas City	Kansas City, Missouri	March 14–17
+Finger Lakes	Rochester, New York	March 14–17
+New York Tech Valley	Troy, New York	March 14–17
+Lone Star Central	Houston, Texas	March 14–17
+San Francisco	San Francisco, California	March 15–18
+Shanghai	Shanghai, China	March 15–18
+South Pacific	Sydney Olympic Park, Australia	March 16–18
+
+Question: What were the locations of events in week 3 of FIRST Power Up on the same dates as the event in Central Illinois
+Answer type: text
+Answer: Peoria, Illinois | Houston, Texas | Kansas City, Missouri | Pomona, California | Rochester, New York | Troy, New York | Huntsville, Alabama
+
+
+Table 1970 1000km of Brands Hatch: 
+Class	No	Team	Drivers	Chassis	Engine	Laps
+P 2.0	72	Mark Konig	Tony Lanfranchi  Mark Konig	Nomad Mk.2	BRM 2.0L V8	185
+P 3.0	58	Ecurie Evergreen	Alain de Cadenet  Jorge Omar del Rio	Porsche 908/02	Porsche 3.0L Flat-8	179
+S 5.0	9	John Wyer Automotive Engineering	Jo Siffert  Brian Redman	Porsche 917K	Porsche 4.5L Flat-12	176
+P 3.0	52	Equipe Matra-Simca	Henri Pescarolo  Johnny Servoz-Gavin	Matra-Simca MS650	Matra 3.0L V12	161
+S 2.0	21	Worcestershire Racing Association	John Bamford  Peter Creasey  James Tangye	Chevron B8	BMW 1.8L I4	112
+P 2.0	77	Worcestershire Racing Association	Mike Walker  John Burton	Chevron B16	Ford-Cosworth FVC 1.8L I4	101
+S 2.0	24	Lec Refrigeration	David Purley  Chris Skeaping	Chevron B8	BMW 1.8L I4	88
+S 2.0	22	Paul Watson Race Organisation	Trevor Twaites  Peter Smith	Chevron B8	BMW 1.8L I4	73
+S 2.0	26	Road & Racing Accessories (Holborn) Ltd.	Paul Vestey  Roy Pike	Porsche 910	Porsche 1.9L Flat-6	73
+P 2.0	76	Digby Martland	Charles Lucas  Digby Martland	Chevron B16	Ford-Cosworth FVC 1.8L I4	69
+S 2.0	71	Hans-Dieter Blatzheim	Hans-Dieter Blatzheim  Ernst Kraus	Porsche 907	Porsche 1.9L Flat-6	56
+P 3.0	60	Autodelta SpA	Piers Courage  Andrea de Adamich	Alfa Romeo T33/3	Alfa Romeo 3.0L V8	54
+S 5.0	7	Grand Bahama Racing Team	Mike De Udy  Frank Gardner	Lola T70 Mk.3B	Chevrolet 5.0L V8	26
+P 3.0	59	Ecurie Evergreen	Chris Craft  Trevor Taylor	McLaren M8C	Ford-Cosworth DFV 3.0L V8	25
+S 5.0	82	Daren Cars Ltd.	Jeremy Richardson  Peter Brown	Daren Mk.2	Ford-Cosworth FVC 1.8L I4	12
+P 2.0	75	Chevron Racing Team	John Hine  Ian Skailes	Chevron B16	Ford-Cosworth FVC 1.8L I4	9
+S 5.0	7	Grand Bahama Racing Team	Barrie Smith  Howden Ganley	Lola T70 Mk.3B	Chevrolet 5.0L V8	0
+
+Question: In the class of P 2.0 of the 1970 1000km of Brands Hatch, which drivers of Chevron B16 did not finish?
+Answer type: text
+Answer: Charles Lucas  Digby Martland | Mike Walker  John Burton | John Hine  Ian Skailes
+
+
+Table Vanessa Kirby: 
+Year	Title	Playwright	Role	Venue
+2010	All My Sons	Arthur Miller	Ann Deever	Octagon Theatre
+2010	Ghosts	Henrik Ibsen	Regina Engstrand	Octagon Theatre
+2010	A Midsummer Night's Dream	William Shakespeare	Helena	Octagon Theatre
+2010	As You Like It	William Shakespeare	Rosalind	West Yorkshire Playhouse
+2011	Women Beware Women	Thomas Middleton	Isabella	Royal National Theatre
+2011	The Acid Test	Anya Reiss	Dana	Royal Court Theatre
+2012	Three Sisters	Anton Chekhov	Maria "Masha" Kulygina	Young Vic
+2013	Edward II	Christopher Marlowe	Isabella of France	Royal National Theatre
+2014	A Streetcar Named Desire	Tennessee Williams	Stella Kowalski	Young Vic
+2016	Uncle Vanya	Anton Chekhov	Helena Serebryakova	Almeida Theatre
+2016	A Streetcar Named Desire	Tennessee Williams	Stella Kowalski	St. Ann's Warehouse
+2018	Julie	Polly Stenham	Julie	Royal National Theatre
+
+Question: What character did Vanessa Kirby play in Anton Chekov's play at the Young Vic theatre?
+Answer type: text
+Answer: Maria "Masha" Kulygina
+
+
+Table Vanessa Kirby: 
+Year	Title	Playwright	Role	Venue
+2010	All My Sons	Arthur Miller	Ann Deever	Octagon Theatre
+2010	Ghosts	Henrik Ibsen	Regina Engstrand	Octagon Theatre
+2010	A Midsummer Night's Dream	William Shakespeare	Helena	Octagon Theatre
+2010	As You Like It	William Shakespeare	Rosalind	West Yorkshire Playhouse
+2011	Women Beware Women	Thomas Middleton	Isabella	Royal National Theatre
+2011	The Acid Test	Anya Reiss	Dana	Royal Court Theatre
+2012	Three Sisters	Anton Chekhov	Maria "Masha" Kulygina	Young Vic
+2013	Edward II	Christopher Marlowe	Isabella of France	Royal National Theatre
+2014	A Streetcar Named Desire	Tennessee Williams	Stella Kowalski	Young Vic
+2016	Uncle Vanya	Anton Chekhov	Helena Serebryakova	Almeida Theatre
+2016	A Streetcar Named Desire	Tennessee Williams	Stella Kowalski	St. Ann's Warehouse
+2018	Julie	Polly Stenham	Julie	Royal National Theatre
+
+Question: What role did Vanessa Kirby have in 2016 at the Young Vic venue
+Answer type: text
+Answer: Stella Kowalski
+
+
+Table 2018 Allsvenskan: 
+Team	Head coach 1	Captain	Kit manufacturer	Main shirt sponsor
+AIK	Norling	Goitom	Nike	Notar
+BK Häcken	Alm	Lindgren	Nike	BRA Bygg
+Dalkurd FF	Sandahl	Azizi	Adidas	Min Stora Dag
+Djurgårdens IF	Melkemichel	footballer, born 1983	Adidas	Prioritet Finans
+GIF Sundsvall	Cedergren	Naurin	Adidas	SCA
+Hammarby IF	Stefan Billborn	Bakircioglu	Puma	Jobman
+IF Brommapojkarna	Björknesjö	Sandberg Magnusson	Nike	Bauhaus
+IF Elfsborg	Thelin	Stuhr Ellegaard	Umbro	Pulsen
+IFK Göteborg	Asbaghi	Boo Wiklander	Kappa	Prioritet Finans
+IFK Norrköping	Gustafsson	Andreas Johansson (footballer, born 1982)	Nike	Holmen
+IK Sirius	Bergstrand	Ogbu	Nike	Various
+Kalmar FF	Bergstrand	Elm	Hummel	Hjältevadshus
+Malmö FF	Rösler	Rosenberg	Puma	Volkswagen
+Trelleborgs FF	Winqvist	Camara Jönsson	Nike	Mellby Gård
+Örebro SK	Kjäll	Gerzić	Puma	Ambitiös
+Östersunds FK	Ian Burchnall	Pettersson	Adidas	Various
+
+Question: Who was the head coach when the captain was Rosenberg in personnel and sponsoring for 2018 Allsvenskan?
+Answer type: text
+Answer: Rösler
+
+
+Table Azadegan League: 
+Team	Location	Stadium	Capacity
+Aluminium Arak	Arak	Imam Khomeini	15,000
+Arman Gohar Sirjan	Sirjan	TBA	TBA
+Baadraan Tehran	Tehran	Kargaran	5,000
+Damash	Rasht	Shahid Dr. Azodi	11,000
+Elmoadab Tabriz	Tabriz	Marzdaran Stadium	5,000
+Esteghlal Khuzestan	Ahvaz	Ghadir	38,900
+Fajr Sepasi	Shiraz	Hafezieh	15,000
+Gol Reyhan Alborz	Karaj	Enghelab	15,000
+Khooshe Talaei Saveh	Saveh	Shahid Chamran	3,000
+Malavan	Bandar-e Anzali	Takhti Anzali	8,000
+Mes Kerman	Kerman	Shahid Bahonar	15,430
+Mes Rafsanjan	Rafsanjan	Shohadaye Noushabad	5,000
+Navad Urmia	Urmia	Shahid Bakeri	15,000
+Nirooye Zamini	Tehran	TBA	TBA
+Qashqai	Shiraz	Hafezieh	15,000
+Rayka Babol	Babol	Haft-e Tir	6,000
+Sepidrood	Rasht	Sardar Jangal	15,000
+Sorkhpooshan Pakdasht	Pakdasht	Shahid Dastgerdi	8,250
+
+Question: What team in the Azadegan league plays in Rasht with a capacity of 15000
+Answer type: text
+Answer: Sepidrood

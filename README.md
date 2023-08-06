@@ -18,11 +18,11 @@
 
 # 🔥 Updates
 
-- [**2023-8-7**]: We released our [code](https://github.com/lfy79001/TableQAKit) [datasets](https://huggingface.co/TableQAKit)and [PyPI Package](https://www.baidu.com). Check it out!
+- [**2023-8-7**]: We released our [code](https://github.com/lfy79001/TableQAKit), [datasets](https://huggingface.co/TableQAKit) and [PyPI Package](https://www.baidu.com). Check it out!
 
 # ✨ Features
 TableQAKit is a unified platform for TableQA (especially in the LLM era). Its main features includes:
-- **Extensible disign**: You can use the interfaces defined by the toolkit, extend methods and models, and implement your own new models based on your own data.
+- **Extensible design**: You can use the interfaces defined by the toolkit, extend methods and models, and implement your own new models based on your own data.
 - **Equipped with LLM**: TableQAKit supports LLM-based methods, including LLM-prompting methods and LLM-finetuning methods.
 - **Comprehensive datasets**: We design a unified data interface to process data and store them in Huggingface datasets.
 - **Powerful methods**: Using our toolkit, you can reproduce most of the SOTA methods for TableQA tasks.
@@ -39,10 +39,145 @@ pip install -r requirements.txt
 ```
 
 
+<!-- # Folder
+The TableQAKit repository is structured as follows:
+
+```bash
+├── icl/ # LLM-prompting toolkit
+│   ├── dataset.py  
+│   ├── infer.py
+│   ├── model.py
+│   └── utils.py
+├── llama/ # LLM-finetuning toolkit
+│   ├── data_collator.py 
+│   ├── dataset.py 
+│   ├── model.py
+│   ├── peft_trainer.py
+│   ├── seq2seq.py
+│   ├── template.py
+│   ├── Trainer.py
+│   └── utils.py
+├── mmqa_utils/ # EncyclopediaQA toolkit
+│   ├── classifier_module/ # The package for classifier
+│   │   ├── dataset.py
+│   │   ├── model.py
+│   │   ├── train.py
+│   │   ├── trainer.py
+│   │   └── utils.py
+│   ├── retriever_module/ # The package for encyclopedia retrieval
+│   │   ├── dataset.py
+│   │   ├── model.py
+│   │   ├── train.py
+│   │   ├── trainer.py
+│   │   └── utils.py
+├── structuredqa/ # Read model TaLMs
+│   ├── builder/
+│   │   ├── hybridqa.py
+│   │   ├── msr_sqa.py
+│   │   ├── wikisql_tapas.py
+│   │   ├── wikisql.py
+│   │   ├── wikitq_tapas.py
+│   │   └── wikitq.py
+│   ├── utils/
+│   │   ├── common.py
+│   │   ├── configure.py
+│   │   ├── dataset.py
+│   │   ├── tapas_utils.py
+│   │   ├── tapas_wikisql_utils.py
+│   │   └── tapex_wikisql_utils.py
+├── retriever/ # TableQA's general retriever （SpreadSheet examples）
+│   ├── dataset.py
+│   ├── model.py
+│   ├── trainer.py
+│   └── utils.py
+├── multihop/ # Readers for encyclopediaQA
+│   ├── Retrieval/
+│   └── Read/
+├── numerical/ # Readers for some TableQA datasets
+├── TableQAEval/ # The proposed new LLM-Long-Table Benchmark
+│   ├── Baselines/ # Add your LLMs
+│   │   ├── turbo16k-table.py
+│   │   ├── llama2-chat-table.py
+│   │   └── ...
+│   ├── Evaluation/ # metrics
+│   └── TableQAEval.json  
+├── outputs/ # the results of some models
+├── loaders/ 
+│   ├── WikiSQL.py
+│   └── ...
+├── structs/ 
+│   ├── data.py
+├── static/ 
+├── LICENSE
+└── README.md
+``` -->
+
+
+# 📁 Folder
+The TableQAKit repository is structured as follows:
+
+```bash
+├── icl/ # LLM-prompting toolkit
+├── llama/ # LLM-finetuning toolkit
+├── mmqa_utils/ # EncyclopediaQA toolkit
+│   ├── classifier_module/ # The package for classifier
+│   ├── retriever_module/ # The package for encyclopedia retrieval
+├── structuredqa/ # Read model TaLMs
+│   ├── builder/
+│   ├── utils/
+├── retriever/ # TableQA's general retriever （SpreadSheet examples）
+├── multihop/ # Readers for encyclopediaQA
+│   ├── Retrieval/
+│   └── Read/
+├── numerical/ # Readers for some TableQA datasets
+├── TableQAEval/ # The proposed new LLM-Long-Table Benchmark
+│   ├── Baselines/ # Add your LLMs
+│   │   ├── turbo16k-table.py
+│   │   ├── llama2-chat-table.py
+│   │   └── ...
+│   ├── Evaluation/ # metrics
+│   └── TableQAEval.json  
+├── outputs/ # the results of some models
+├── loaders/ 
+│   ├── WikiSQL.py
+│   └── ...
+├── structs/ 
+│   ├── data.py
+├── static/ 
+├── LICENSE
+└── README.md
+```
+
+
+# 🗃️ Dataset
+According to our taxonomy, we classify the TableQA task into three categories of tasks, as shown in the following figure:
+
+<p align="center">
+<img src="figs/dataset_examples.png" width="512">
+</p>
+
+
+<p align="center">
+<img src="figs/table.png" width="512">
+</p>
+
+
+
+
 
 # 🔧 Get started
 
-## Retrieval-then-Read Methods
+## LLM-Prompting Methods
+
+Check [hear](https://github.com/lfy79001/TableQAKit/tree/main/TableQAKit/icl) for more details.
+
+## LLM-Finetuning Methods
+
+Check [hear](https://github.com/lfy79001/TableQAKit/tree/main/TableQAKit/llama) for more details.
+
+## Reading Modules
+
+Check [hear](https://github.com/lfy79001/TableQAKit/tree/main/TableQAKit/structuredqa) for more details.
 
 ### Retriever
 
@@ -160,51 +295,6 @@ class NewTrainer(RT):
 
 
 
-
-# 🗃️ Dataset
-According to our taxonomy, we classify the TableQA task into three categories of tasks, as shown in the following figure:
-
-<p align="center">
-<img src="figs/dataset_examples.png" width="512">
-</p>
-
-
-<p align="center">
-<img src="figs/table.png" width="512">
-</p>
-
-
-
-
-# Folder
-The TableQAKit repository is structured as follows:
-
-```bash
-├── Baselines/ # scripts to generate the prediction files with baseline models
-├── Evaluation/ # evaluation scripts
-├── Leaderboard/ # csv files of results
-├── LEval-data/ # test samples
-│   ├── Exam/ # exact match tasks (like multiple-choice)
-│   │   ├── test_file.jsonl 
-│   │   └── ...
-│   ├── Generation/ # generation tasks
-│   │   ├── test_file.jsonl
-│   │   └── ...
-├── Predictions/ # output of models
-│   ├── exam_eval/trubo-16k-0613
-│   │              ├── <task_name>.pred.jsonl
-│   │              └── ... 
-│   ├── llm_gpt4_eval  
-│   │             ├──<model_name>.pred.jsonl
-│   ├── ...
-├── Tools/ # useful scripts
-├── figs/ # figures
-├── LICENSE
-└── README.md
-```
-
-
-
 # TableQAEval
 
 <p align="center">
@@ -227,54 +317,6 @@ TableQAEval is a benchmark to evaluate the performance of LLM for TableQA. It ev
 | LongLLaMA-7b-2k | 7B | 0.0 | 4.3 | 1.7 | 2.0 |
 
 
-
-
-
-## QuickStart
-```
-pip install gunicorn
-
-# 运行在210.75.240.136:18889,访问：http://210.75.240.136:18889
-gunicorn -c gunicorn_config.py app:app --daemon
-
-# 想要停止运行？
-在gunicorn_error.log找到最新的记录Listening记录，如"Listening at: http://210.75.240.136:18889 (2609966)"
-使用 kill 2609966 可实现停止运行
-
-```
-
-
-
-
-
-
-## 如何往PyPI上提交
-0. 安装必要的工具
-   ```bash
-   pip install setuptools wheel twine
-1. 先修改setup.py这个文件
-2. 生成分发文件。在命令行中运行以下命令以生成源代码压缩包和轮子（wheel）分发文件：
-   ```bash
-    python setup.py sdist bdist_wheel
-3. 使用twine上传到测试 PyPI。运行以下命令以将您的分发文件上传到测试 PyPI：
-    ```bash 
-    twine upload --repository-url https://test.pypi.org/legacy/dist/*
-    ```
-    UserName: lfy79001
-
-    PassWord: 20010213lfyLFY!
-4. 访问 https://test.pypi.org/project/ttqakit
-5. 上传到正式的
-    ```bash
-    twine upload dist/*
-    ```
-    访问 https://pypi.org/project/ttqakit
-6. 完毕后可以安装
-    ```bash
-    # 正式版
-    pip install ttqakit
-    # test版
-    pip install --index-url https://test.pypi.org/simple/ttqakit
 
 
 

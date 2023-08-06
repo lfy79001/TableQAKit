@@ -1,0 +1,157 @@
+Give you some images with format like "tittle" (description), answer questions step by step:
+
+Images:
+"alice" (a 18 years old girl)
+
+Question: Is Alice a 18 years old boy?
+Please answer the question step by step, you can make reasonable inference to give a definite answer.
+Step 1: Examine the given image description: "alice" (a 18 years old girl)
+Based on the description, we have an image of a person named Alice. The description states that Alice is a girl and she is 18 years old.
+
+Step 2: Analyze the question: Is Alice a 18 years old boy?
+The question asks whether Alice is an 18-year-old boy. We need to compare the information provided in the image description with the question being asked.
+
+Step 3: Refer to the image description: "alice" (a 18 years old girl)
+The image description clearly states that Alice is a girl. It does not mention anything about Alice being a boy.
+
+Step 4: Answer the question based on the information:
+No, Alice is not an 18-year-old boy. According to the image description, Alice is an 18-year-old girl.
+Answer: no
+
+
+Images:
+"sethu" ( a naked man and a beautiful woman )
+"nandha" ( two men are staring at someone )
+"pithamagan" ( a man is reaching the hand out )
+"maayavi" ( a man is smiling and a woman is shocked )
+"naan kadavul" ( a man is running in the sea )
+
+Question: Which film poster with a male reaching his hand out?
+Please answer the question step by step, you can make reasonable inference to give a definite answer.
+Step 1: Analyze the question: Which film poster with a male reaching his hand out?
+The question asks for a film poster that features a male reaching his hand out. We need to compare the information provided in the image descriptions with the question being asked.
+
+Step 2: Refer to the image descriptions:
+
+"sethu": This description does not provide information about a male reaching his hand out.
+"nandha": This description does not provide information about a male reaching his hand out.
+"pithamagan": This description mentions a man reaching his hand out, matching the criteria of the question.
+"maayavi": This description does not provide information about a male reaching his hand out.
+"naan kadavul": This description does not provide information about a male reaching his hand out.
+Step 4: Answer the question based on the information:
+The film poster that matches the description of a male reaching his hand out is "pithamagan."
+Answer: pithamagan
+
+
+Images:
+"tina turner" ( a singer is singing on the stage )
+"soundgarden" ( a band is playing the song )
+"live" ( a band is playing with a naked lead singer )
+"r.e.m." ( a bald singer is singing in the dark )
+"tom petty" ( a man is playing the guitar )
+"bruce springsteen" ( a man is playing the guitar )
+"tracy bonham" ( a woman is playing the violin )
+
+Question: Who is not playing the violin?
+Please answer the question step by step, you can make reasonable inference to give a definite answer.
+Step 1: Analyze the question: Who is not playing the violin?
+The question asks for the person who is not playing the violin. We need to compare the information provided in the image descriptions with the question being asked.
+
+Step 2: Refer to the image descriptions:
+
+"tina turner": This description mentions a singer singing on the stage, but it does not mention anything about playing the violin. Therefore, Tina Turner is not playing the violin.
+"soundgarden": This description mentions a band playing a song, but it does not mention anything about playing the violin. Therefore, Soundgarden is not playing the violin.
+"live": This description mentions a band playing, but it does not mention anything about playing the violin. Therefore, Live is not playing the violin.
+"r.e.m.": This description mentions a bald singer singing in the dark, but it does not mention anything about playing the violin. Therefore, R.E.M. is not playing the violin.
+"tom petty": This description mentions a man playing the guitar, and it does not mention anything about playing the violin. Therefore, Tom Petty is not playing the violin.
+"bruce springsteen": This description mentions a man playing the guitar, and it does not mention anything about playing the violin. Therefore, Bruce Springsteen is not playing the violin.
+"tracy bonham": This description mentions a woman playing the violin, indicating that Tracy Bonham is the one playing the violin.
+
+Step 4: Answer the question based on the information:
+The individuals who are not playing the violin among the given options are Tina Turner, Soundgarden, Live, R.E.M., Tom Petty, and Bruce Springsteen.
+Answer: tina turner | soundgarden | live | r.e.m. | tom petty | bruce springsteen
+
+
+Images: 
+"William Shakespeare" (The image is a portrait of a man, possibly a famous playwright or an actor, dressed in a black doublet and wearing a large gold chain. He has a mustache and is looking directly at the viewer with a serious expression. The portrait is set against a brown background, and the man appears to be well-dressed and well-presented, exuding a sense of professionalism and dignity.)
+
+Question: Is the collar William Shakespeare is wearing popped or unpopped?
+Please answer the question step by step, you can make reasonable inference to give a definite answer.
+Step 1: Examine the given image description of William Shakespeare.
+The description provides details about the image of William Shakespeare. It mentions that he is dressed in a black doublet, wearing a large gold chain, and has a mustache. The description also states that he is looking directly at the viewer with a serious expression, appearing well-dressed and well-presented.
+
+Step 2: Analyze the question: Is the collar William Shakespeare is wearing popped or unpopped?
+To answer this question, we can make a reasonable inference based on historical fashion norms and the overall presentation of William Shakespeare in the image.
+
+Step 3: Reasonable inference based on historical context and appearance.
+During the time period when William Shakespeare lived, it was more common for collars to be ruffled or turned down rather than popped up. Additionally, the description mentions that Shakespeare appears well-dressed and well-presented, exuding a sense of professionalism and dignity. In historical portraits, individuals typically wore their collars in a neat and tidy manner, which would suggest that the collar is likely to be unpopped (turned down).
+
+Step 4: Answer the question based on the inference.
+Based on the historical context and the overall presentation of William Shakespeare in the image, it is reasonable to infer that the collar he is wearing is unpopped (turned down).
+Answer: unpopped
+
+
+Images: 
+"Storm of the Century" (The image depicts a scene from the movie "The Perfect Storm," featuring a house on a hill with a lightning rod on top. A bolt of lightning is striking the house, creating a dramatic visual effect. In the scene, there are also several cars and a truck in the vicinity of the house, likely indicating the intensity of the storm.)
+
+Question: What is coming out of the eye of the man on the Storm of the Century movie poster?
+Please answer the question step by step, you can make reasonable inference to give a definite answer.
+Step 1: Examine the given image description of "Storm of the Century."
+The description provides details about the movie poster for "Storm of the Century." It mentions that the image depicts a scene from the movie "The Perfect Storm" with a house on a hill, a lightning rod, and a bolt of lightning striking the house. The description also mentions the presence of cars and a truck, indicating the intensity of the storm.
+
+Step 2: Analyze the question: What is coming out of the eye of the man on the "Storm of the Century" movie poster?
+The question asks about something coming out of the eye of the man on the movie poster. We need to determine what this element is based on the information provided in the image description.
+
+Step 3: Refer to the image description of "Storm of the Century."
+The image description mentions a lightning bolt striking the house on the movie poster. Given that the question is about the man's eye, we can make a reasonable inference based on the context of the storm and the visual effects of lightning.
+
+Step 4: Reasonable inference based on the context and visual effects of lightning.
+Considering that the movie is titled "Storm of the Century" and the image description mentions a lightning bolt striking the house, it is reasonable to infer that the lightning depicted on the movie poster is also coming out of the eye of the man. The artistic representation may intend to show a connection between the intensity of the storm and the man's eye, possibly symbolizing the power and impact of the storm.
+
+Step 5: Answer the question based on the inference.
+Based on the inference that the lightning depicted on the movie poster is coming out of the eye of the man, we can conclude that lightning is what is coming out of the eye of the man on the "Storm of the Century" movie poster.
+Answer: lightening
+
+
+Images: 
+"Colombo" (The image features a skyline of several tall buildings in a city, with a hazy sky above them. The buildings are of various colors, and the scene is reminiscent of a downtown area. There are no people visible in the picture, giving the city a deserted appearance. The buildings are spread across the frame, creating a sense of depth and space in the urban landscape.)
+
+Question: Do all the buildings in Colombo appear to stand straight up?
+Please answer the question step by step, you can make reasonable inference to give a definite answer.
+Step 1: Examine the given image description of "Colombo."
+The description provides details about the image of Colombo. It mentions a skyline with several tall buildings in a city, a hazy sky above them, and a deserted appearance with no visible people. The description also mentions that the buildings are of various colors and spread across the frame, creating a sense of depth and space in the urban landscape.
+
+Step 2: Analyze the question: Do all the buildings in Colombo appear to stand straight up?
+The question asks whether all the buildings in Colombo appear to be upright or standing straight. We need to determine this based on the information provided in the image description.
+
+Step 3: Refer to the image description of "Colombo."
+The image description does not provide specific information about the alignment or tilt of the buildings in Colombo. However, it does mention that the buildings are spread across the frame, creating a sense of depth and space. This suggests that the buildings may have different perspectives and angles, and they might not all appear to be standing straight up.
+
+Step 4: Reasonable inference based on the description and visual cues.
+Considering the description mentioning buildings of various colors, spread across the frame, and creating a sense of depth and space, it is reasonable to infer that the buildings in Colombo may have different perspectives and angles. It is possible that some buildings could appear to lean or tilt, depending on their position and the photographer's perspective.
+
+Step 5: Answer the question based on the inference.
+Based on the inference that the buildings in Colombo may have different perspectives and angles, it can be concluded that not all the buildings in Colombo appear to stand straight up.
+Answer: no
+
+
+Images: 
+"Durban" (The image depicts a lively beach scene with a group of people enjoying their time near the ocean. Some people are standing or walking on the beach, while others are sitting on chairs scattered across the sand. There are at least 13 people visible in the scene, engaging in various beach activities.A few surfboards can be seen as well, with one located near the left side of the beach and another closer to the center. The beach is situated near a city, as evidenced by the presence of tall buildings in the background. The atmosphere appears to be sunny and inviting, making it a perfect day for beachgoers to relax and have fun.)
+
+Question: Is it clear or rainy in durban?
+Please answer the question step by step, you can make reasonable inference to give a definite answer.
+Step 1: Examine the given image description of "Durban."
+The description provides details about the image of Durban. It mentions a lively beach scene with people enjoying their time near the ocean. The presence of surfboards, chairs, and beach activities indicates a sunny and inviting atmosphere. The description also mentions tall buildings in the background, suggesting the beach is situated near a city.
+
+Step 2: Analyze the question: Is it clear or rainy in Durban?
+The question asks about the weather conditions in Durban. We need to determine this based on the information provided in the image description.
+
+Step 3: Refer to the image description of "Durban."
+The image description does not explicitly mention whether it is clear or rainy in Durban. However, it does describe a lively beach scene with people engaging in various activities, indicating a pleasant and sunny weather condition.
+
+Step 4: Reasonable inference based on the visual cues.
+Based on the image description that highlights a sunny and inviting atmosphere, along with people enjoying beach activities, it is reasonable to infer that it is clear or sunny in Durban. There are no indications of rain or adverse weather conditions in the description or visible in the image.
+
+Step 5: Answer the question based on the inference.
+Based on the inference that the atmosphere appears to be sunny and inviting, we can conclude that it is clear in Durban.
+Answer: clear

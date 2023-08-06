@@ -1,0 +1,125 @@
+Give you some images with format like "tittle" (description), answer questions:
+
+Images:
+"alice" (a 18 years old girl)
+
+Question: Is Alice a 18 years old boy?
+Answer: no
+
+
+Images:
+"Aldershot" ()
+"Barrow" (the logo of the barrow afc and the bee logo, with flower and football and submarine on the shield)
+"Bradford" City (the logo of the bcaf afc announces its new logo, a rooster on a sheild)
+"Brentford" (the logo for the brentford football club, a bee in the red circle)
+"Chester" (a crest of a lion wearing a crown and a laurel wreath)
+"Crewe Alexandra" (the logo of the glen alexandra football club, a red dragon among golden ears of wheat)
+"Darlington" (the logo for the quakers, an orange and white shield, unfolding a tractor and a top hat)
+"Halifax Town" (the logo of the shaymen football club, a blue striped and white shield with a floral pattern, the uppercase ntfc letters nesting a football)
+
+Question: How many logos have flowers on them?
+Answer: 2
+
+
+Images: 
+"High Jump" ( person competes in the high jump.)
+"Long Jump" ( person, competes in the long jump.)
+
+Question: Which event shows a competitor in the 2003 Girls U-17 Leeward Islands Junior Athletics Championships jumping?
+Answer: Long Jump | High Jump
+
+
+Images: 
+"Joseph Medill (1908)" (The image features a large red and white boat docked in a harbor near an industrial area. The boat occupies most of the scene, extending from the left side to the right side of the image. There are two people visible on the boat, likely enjoying the view or attending to their duties.In the background, there is a factory with a large smokestack spewing out smoke, indicating that it might be an industrial facility, such as a steel mill. The combination of the boat and the industrial area creates a scene that showcases both maritime and industrial aspects of the location.)
+"Fred A. Busse (ship, 1937)" (The image features a large red and black boat floating on a body of water. The boat occupies most of the scene, stretching from the left side to the right side of the water. There are no people visible on the boat or in the immediate vicinity. The boat appears to be stationary, waiting in the water, possibly for passengers or to embark on a journey.)
+"Victor L. Schlaeger (fireboat)" (The image features a large red boat docked at a pier next to a bridge. The boat is the main focus of the scene, occupying a significant portion of the image. There are several people on the boat, with two individuals standing closer to the front and a few others scattered around the middle and rear sections. These people are likely enjoying their time on the boat or preparing for a journey. The dock and the bridge in the background provide a picturesque setting for this red vessel.)
+"Chicago fireboat 6-8-8" (The image features a red and black fire department boat docked at a pier. The boat is large and prominently occupies the majority of the scene. There are a few people visible on the boat, likely members of the fire department. The boat is stationed next to the dock, and the water around it appears calm. There are no other notable objects or boats in the immediate vicinity, making the fire department boat the focal point of the image.)
+
+Question: when looking at the images of Fireboats that operate in Chicago, which ones are obviously docked?
+Answer: Fred A. Busse (ship, 1937) | Joseph Medill (1908) | Chicago fireboat 6-8-8 | Victor L. Schlaeger (fireboat)
+
+
+Images: 
+"Step by Step (TV series)" (The image features a group of people, including children and adults, walking together on grass. They are following a yellow brick road, which appears to be a pathway in a park. The group is holding balloons, suggesting a celebration or a fun outing. There are at least 11 people visible in the scene, with some closer to the foreground and others further in the background. The setting appears to be a pleasant outdoor environment, perfect for a community gathering or a family event.)
+
+Question: What are some of the people holding in the air on Step by Step (TV series)?
+Answer: balloons
+
+
+Images: 
+"Orenburg" (The image is a collage of several pictures showcasing various outdoor scenes. In one of the pictures, there is a horse statue located in a city setting. Another picture features a long bridge spanning across a river, with a person visible in the distance. A church with a steeple can be seen in one of the scenes, and a large building is present in another part of the collage. The image also includes a picture of a person, possibly enjoying the outdoor scenery or engaging in an activity. The overall composition displays a diverse range of city life and architectural elements.)
+"Ufa" (The image is a collage of pictures showcasing a city with a mix of architectural and natural elements. In the scene, there are several buildings, including a large church with a clock and a statue of a horse rider. The city landscape also features a water fountain, adding a touch of nature to the urban setting.There are multiple people scattered throughout the collage, walking and enjoying the city's attractions. Some of them are close to the buildings, while others are near the water fountain or the horse statue. The combination of these images captures the essence of the city and its blend of architecture and natural beauty.)
+"Saint Petersburg" (The image is a collage of various buildings and statues, showcasing a mix of architectural styles and cityscapes. In the scene, there are multiple cars parked or driving around, and several people walking or standing near the buildings. The colors of the image are predominantly white, blue, and green, which can be seen on the buildings and in the surrounding environment. The presence of cars and people adds a lively atmosphere to the picture, highlighting the dynamic nature of the urban setting.)
+
+Question: What venue has a statue of a horseback riding rider in workers and funding of 2016–17 Russia's Premier League?
+Answer: Saint Petersburg | Orenburg | Ufa
+
+
+Images: 
+"Fall Out Boy" (The image captures a lively concert scene with a man in a black shirt playing a white guitar on stage, surrounded by drums and a bass. The musician is in the spotlight, performing for the audience. There are several other people in the scene, some of them wearing glasses, likely fellow band members or attendees enjoying the show. The stage is filled with energy as the band delivers an electrifying performance.)
+
+Question: What instrument is the man in the very back playing in Fall Out Boy
+Answer: drums
+
+
+Images: 
+"2018 K League 1" (The image features a large white building with a unique design, possibly an indoor ski slope, located near a wooded area. A train is passing by the building, creating a dynamic scene where the building's architecture contrasts with the natural surroundings. There are two trains visible, one closer to the left side of the image and another towards the right side. The train on the right appears to be going faster than the one on the left. Additionally, there is a bus visible in the scene, suggesting that this area is well-connected by public transportation.)
+
+Question: What color is the 2018 K League 1 stadium?
+Answer: white
+
+
+Images: 
+"Crawley Town F.C." (The image features a red and white shield with the words "Crawley Town" written on it, representing a soccer team. In the center of the shield, there is a soccer ball, emphasizing the team's sporty nature. There are no people visible in the image, but the presence of the soccer ball and the shield suggests a strong connection to the sport of soccer.)
+
+Question: What is the sport is this logo of Crawley Town F.C. for?
+Answer: soccer
+
+
+Images: 
+"William Shakespeare" (The image is a portrait of a man, possibly a famous playwright or an actor, dressed in a black doublet and wearing a large gold chain. He has a mustache and is looking directly at the viewer with a serious expression. The portrait is set against a brown background, and the man appears to be well-dressed and well-presented, exuding a sense of professionalism and dignity.)
+
+Question: Is the collar William Shakespeare is wearing popped or unpopped?
+Answer: unpopped
+
+
+Images: 
+"Rony Seikaly" (The image captures an intense moment during an basketball game. Three men are on the court, with one player in a white jersey jumping up in the air, trying to get a basketball through the hoop. Another player, wearing a blue jersey, is blocking the shot, while the third person is also involved in the action. The basketball can be seen near the hoop, and the players' positions indicate that they are all competing fiercely for the ball. The scene showcases the athleticism and skill involved in the sport of basketball.)
+
+Question: Who is the caucasian player in Regular season of Miami Heat all-time roster Free throws?
+Answer: Rony Seikaly
+
+
+Images: 
+"Storm of the Century" (The image depicts a scene from the movie "The Perfect Storm," featuring a house on a hill with a lightning rod on top. A bolt of lightning is striking the house, creating a dramatic visual effect. In the scene, there are also several cars and a truck in the vicinity of the house, likely indicating the intensity of the storm.)
+
+Question: What is coming out of the eye of the man on the Storm of the Century movie poster?
+Answer: lightening
+
+
+Images: 
+"Canada" (The image features a close-up view of a red and white flag, presumably the Canadian flag, set against a white background. The flag consists of two red bars and a white square in the center, which displays a red maple leaf, symbolizing Canada. There are no people or additional objects visible in the image.)
+
+Question: How many red rectangles are on the flag for Canada?
+Answer: two
+
+
+Images: 
+"Hell on Wheels (TV series)" (The image features a man dressed in a black coat and a black hat, standing next to train tracks. He is holding a gun in his hand, giving off an intense and mysterious vibe. The man appears to be looking at the camera, capturing the viewer's attention. There are no other people or objects visible in the scene, and the focus remains on the man and his surroundings.)
+
+Question: What type of tracks is the guy walking on in Hell on Wheels (TV series)?
+Answer: railroad
+
+
+Images: 
+"Judge John Deed" (The image is a poster advertisement for a movie featuring a man in a judge's outfit. The man is depicted looking down towards a woman, who is wearing a red dress. The scene suggests a dramatic or intense interaction between the two characters. The poster design also includes the title "Judge Dredd" in the top left corner, along with a logo for the movie. The image conveys a sense of justice, drama, and possibly a thrilling storyline.)
+
+Question: How many men are present on this advertisement for Judge John Deed?
+Answer: one
+
+
+Images: 
+"Bristol" (The image captures a beautiful sunset over a city skyline, with the warm hues of the sky setting the scene. In the foreground, a large clock tower stands prominently against the fading sky, serving as a striking focal point. The city's buildings and numerous clock faces create a sense of depth and scale, while the presence of a few people in the scene adds a touch of life to the urban landscape. The combination of the sunset, cityscape, and the clock tower creates a visually appealing and memorable image.)
+
+Question: What color is the sky in bristol?
+Answer: orange
