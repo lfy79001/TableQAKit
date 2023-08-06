@@ -1514,3 +1514,9 @@ Pipeline Error: [Errno 2] No such file or directory: 'datasets/finqa/dev.json'
 Pipeline Error: [Errno 2] No such file or directory: 'datasets/finqa/dev.json'
 Pipeline Error: [Errno 2] No such file or directory: 'datasets/finqa/dev.json'
 Fetch Table Error: [Errno 2] No such file or directory: 'outputs/finqa'
+Fetch Table Error: datasets finqa not found
+Fetch Table Error: datasets finqa not found
+Fetch Table Error: datasets finqa not found
+Fetch Table Error: datasets finqa not found
+Fetch Table Error: datasets finqa not found
+Fetch Table Error: datasets finqa not found
