@@ -22,7 +22,7 @@
 
 # ✨ Features
 TableQAKit is a unified platform for TableQA (especially in the LLM era). Its main features includes:
-- **Extensible disign**: You can use the interfaces defined by the toolkit, extend methods and models, and implement your own new models based on your own data.
+- **Extensible design**: You can use the interfaces defined by the toolkit, extend methods and models, and implement your own new models based on your own data.
 - **Equipped with LLM**: TableQAKit supports LLM-based methods, including LLM-prompting methods and LLM-finetuning methods.
 - **Comprehensive datasets**: We design a unified data interface to process data and store them in Huggingface datasets.
 - **Powerful methods**: Using our toolkit, you can reproduce most of the SOTA methods for TableQA tasks.

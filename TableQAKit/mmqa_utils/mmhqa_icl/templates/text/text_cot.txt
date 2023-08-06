@@ -1,0 +1,193 @@
+Give you some passages with format like "tittle" (content), answer questiones step by step:
+
+Passages:
+"alice" (alice is an 18 years old girl)
+
+Question: Is Alice an 18 years old girl?
+Please answer the question step by step.
+
+Step 1: Identify the subject of the passage.
+The subject of the passage is "alice."
+
+Step 2: Look for additional information about Alice.
+The additional information provided is that Alice is "an 18 years old girl."
+
+Step 3: Extract the relevant information.
+Based on the provided information, we can conclude that Alice is an 18-year-old girl.
+
+Step 4: Answer the question.
+Yes, Alice is an 18-year-old girl, as stated in the passage.
+Answer: yes
+
+
+Passages:
+"alice" (alice is an 18 years old girl)
+"bob" (bob is a 20 years old man)
+
+Question: Is Bob a 18 years old man?
+Please answer the question step by step.
+Step 1: Identify the subject of the passage.
+The subject of the passage is "bob."
+
+Step 2: Look for additional information about Bob.
+The additional information provided is that Bob is "a 20 years old man."
+
+Step 3: Extract the relevant information.
+Based on the provided information, we can conclude that Bob is a 20-year-old man.
+
+Step 4: Answer the question.
+No, Bob is not an 18-year-old man. He is a 20-year-old man, as stated in the passage.
+Answer: no
+
+
+Passages:
+"St. Louis Blues" (The team is named after the famous W.C. Handy song "Saint Louis Blues." The franchise was founded in 1967 as an expansion team during the league's 1967 NHL Expansion, which expanded the league from six teams to twelve. The Blues are the oldest active NHL team never to have won the Stanley Cup, although they played in the Stanley Cup Finals three times in 1968, 1969 and 1970.St. Louis Blues. The logo has wings on it.)
+
+Question: Did the team that has a logo shaped like a quarter note with wings and is listed in the leading goaltenders in the 2008-09 National Hockey League season make the playoffs for the Stanley Cup?
+Please answer the question step by step.
+
+Step 1: Identify the subject of the passage.
+The subject of the passage is the "St. Louis Blues" hockey team.
+
+Step 2: Look for additional information about the St. Louis Blues.
+The additional information provided includes:
+
+The team is named after the famous W.C. Handy song "Saint Louis Blues."
+The franchise was founded in 1967 as an expansion team during the league's 1967 NHL Expansion.
+The team is the oldest active NHL team never to have won the Stanley Cup.
+They played in the Stanley Cup Finals three times in 1968, 1969, and 1970.
+The team's logo has wings on it, shaped like a quarter note.
+Step 3: Extract the relevant information.
+The relevant information is that the St. Louis Blues have never won the Stanley Cup, and their logo has wings shaped like a quarter note.
+
+Step 4: Answer the question.
+The question asks about the team with a logo shaped like a quarter note with wings and their playoff performance for the Stanley Cup in the 2008-09 NHL season. The passage does not provide specific information about the team's performance in that particular season. Therefore, we cannot determine whether they made the playoffs for the Stanley Cup in the 2008-09 season based on the given passage.
+Answer: no
+
+
+Passages:
+"Young Artist Award" (The Young Artist Award (originally known as the Youth in Film Award) is an accolade presented by the Young Artist Association, a non-profit organization founded in 1978 to honor excellence of youth performers, and to provide scholarships for young artists who may be physically disabled or financially unstable.The award is a gold sculpture holding a star.)
+
+Question: What color is the Young Artist Award?
+Please answer the question step by step.
+
+Step 1: Identify the subject of the passage.
+The subject of the passage is the "Young Artist Award."
+
+Step 2: Look for additional information about the Young Artist Award.
+The additional information provided includes:
+
+The Young Artist Award is an accolade presented by the Young Artist Association.
+The Young Artist Association is a non-profit organization founded in 1978.
+The award honors excellence of youth performers.
+The award provides scholarships for young artists who may be physically disabled or financially unstable.
+The award is described as a gold sculpture holding a star.
+Step 3: Extract the relevant information.
+The relevant information is that the Young Artist Award is described as a gold sculpture holding a star.
+
+Step 4: Answer the question.
+The color of the Young Artist Award is not explicitly mentioned in the passage. However, based on the description of the award as a "gold sculpture," we can infer that the color of the award is gold.
+Answer: gold
+
+
+Passages:
+"Uptown Girl": ("Uptown Girl" is a song written and performed by American musician Billy Joel. It was released on September 29, 1983, on his ninth studio album An Innocent Man (1983). The lyrics describe a working-class "downtown man" attempting to woo a wealthy "uptown girl.")
+"Can't Stop Won't Stop": ("Can't Stop Won't Stop" is a song recorded by American recording artist Usher for his seventh studio album Looking 4 Myself (2012). Written and produced by Will "will.i.am" Adams and Keith Harris, the song contains an interpolation of the bridge to Billy Joel's 1983 hit single "Uptown Girl". Musically, "Can't Stop Won't Stop" is a eurodance and dance-pop song that incorporates elements of dubstep.")
+
+Question: This song released on September 29, 1983 and inspired a hit song by Usher was written by who?
+Please answer the question step by step.
+
+Step 1: Identify the subject of the passage.
+The subject of the passage is a song released on September 29, 1983, that inspired a hit song by Usher.
+
+Step 2: Look for additional information about the song.
+The additional information provided includes:
+
+The song is titled "Uptown Girl."
+It was written and performed by American musician Billy Joel.
+It was released on his ninth studio album, "An Innocent Man" (1983).
+The lyrics describe a working-class "downtown man" wooing a wealthy "uptown girl."
+The song inspired a hit song by Usher.
+Step 3: Extract the relevant information.
+The relevant information is that the song released on September 29, 1983, titled "Uptown Girl" and inspiring a hit song by Usher, was written by Billy Joel.
+
+Step 4: Answer the question.
+The song released on September 29, 1983, and inspiring a hit song by Usher, titled "Uptown Girl," was written by Billy Joel.
+Answer: Billy Joel
+
+
+Passages:
+"Wampanoag" (Traditionally Wampanoag people have been semi-sedentary, with seasonal movements between fixed sites in present-day southern New England. The men often traveled far north and south along the Eastern seaboard for seasonal fishing expeditions, and sometimes stayed in those distant locations for weeks and months at a time. The women cultivated varieties of the "three sisters" (the intercropping of maize, climbing beans, and squash) as the staples of their diet, supplemented by fish and game caught by the men. Each community had authority over a well-defined territory from which the people derived their livelihood through a seasonal round of fishing, planting, harvesting, and hunting. Because southern New England was thickly populated by indigenous peoples, hunting grounds had strictly defined boundaries.)
+Question: corn beans and squash the three most important crops of the wampanoag were also known as?
+Please answer the question step by step.
+
+Step 1: Identify the subject of the passage.
+The subject of the passage is the Wampanoag people.
+
+Step 2: Look for additional information about the Wampanoag people.
+The additional information provided includes:
+
+The Wampanoag people have traditionally been semi-sedentary, with seasonal movements.
+The men of the Wampanoag often traveled for seasonal fishing expeditions.
+The women cultivated varieties of the "three sisters" as the staples of their diet.
+The "three sisters" refers to the intercropping of maize (corn), climbing beans, and squash.
+The Wampanoag people derived their livelihood from a seasonal round of fishing, planting, harvesting, and hunting.
+Hunting grounds had strictly defined boundaries due to the dense population of indigenous peoples in southern New England.
+Step 3: Extract the relevant information.
+The relevant information is that the Wampanoag people cultivated varieties of maize (corn), climbing beans, and squash, which were known as the "three sisters."
+
+Step 4: Answer the question.
+The three most important crops of the Wampanoag people, also known as the "three sisters," were corn, beans, and squash.
+Answer: three sisters
+
+
+Passages:
+"Imperial fora" (The Imperial Fora ("Fori Imperiali " in Italian) are a series of monumental "fora" (public squares), constructed in Rome over a period of one and a half centuries, between 46 BC and 113 AD. The forums were the center of the Roman Republic and of the Roman Empire.)
+
+Question: What is the city that was the center of imperial life in the roman empire in the early fifth century?
+Please answer the question step by step.
+
+Step 1: Identify the subject of the passage.
+The subject of the passage is the Imperial Fora, a series of monumental public squares constructed in Rome.
+
+Step 2: Look for additional information about the Imperial Fora.
+The additional information provided includes:
+
+The Imperial Fora were constructed in Rome over a period of one and a half centuries.
+The construction took place between 46 BC and 113 AD.
+The forums were the center of the Roman Republic and the Roman Empire.
+Step 3: Extract the relevant information.
+The relevant information is that the Imperial Fora were located in Rome and were the center of the Roman Republic and the Roman Empire.
+
+Step 4: Answer the question.
+The question asks for the city that was the center of imperial life in the Roman Empire in the early fifth century. Based on the information provided, the city that was the center of imperial life in the Roman Empire during that time would still be Rome.
+Answer: Rome
+
+
+Passages:
+"Call Me Maybe" (The video begins with Jepsen spying on her attractive tattooed neighbour (Holden Nowell) as he is working on his lawn. As he takes his shirt off and notices she is staring at him, Jepsen slips on her high heels and falls below her window. She is reading the books Love at First Sight (Men In Uniform) by B.J. Daniels and Skylar's Outlaw by Linda Warren. The scene then cuts to her garage, where she is rehearsing the track with her band. Following the rehearsals, her bandmates push her to go and wash her car, where she tries to gain her neighbour's attention with various provocative poses only to fall from the hood of the car. She is briefly knocked out from the fall, during which she dreams of a romance novel-type encounter with her crush against the backdrop of Peggys Cove. As she comes to, the neighbour then helps her get up, and watches the band rehearse the track again. After turning and writing down her telephone number, Jepsen sees her neighbour pass one of her male bandmates (Tavish Crowe) his own number, indicating he doesn't like women at all and is gay, where the very end shows that Jepsen is taken aback by this. The video received three nominations on the 2012 MuchMusic Video Awards in the categories of UR Fave Video, Pop Video of the Year, and Video of the Year. wallpaper with a well dressed girl titled pop artist)
+
+Question: Who is the guy in call me maybe video?
+Please answer the question step by step.
+
+Step 1: Identify the subject of the passage.
+The subject of the passage is the "Call Me Maybe" video.
+
+Step 2: Look for additional information about the video.
+The additional information provided includes:
+
+The video features Carly Rae Jepsen as the main character.
+In the video, Jepsen is spying on her attractive tattooed neighbor (Holden Nowell).
+Jepsen slips and falls below her window while trying to get the neighbor's attention.
+Jepsen is reading romance novels, including Love at First Sight (Men In Uniform) by B.J. Daniels and Skylar's Outlaw by Linda Warren.
+The video shows Jepsen rehearsing the track with her band in the garage.
+Jepsen tries to gain her neighbor's attention with provocative poses while washing her car.
+She dreams of a romance novel-type encounter with her crush against the backdrop of Peggys Cove.
+The neighbor helps Jepsen after she falls, and he watches the band rehearse the track.
+At the end of the video, the neighbor passes his own number to one of Jepsen's male bandmates, indicating that he is not interested in women and is gay.
+Step 3: Extract the relevant information.
+The relevant information is that the guy in the "Call Me Maybe" video, referred to as Jepsen's attractive tattooed neighbor, is named Holden Nowell.
+
+Step 4: Answer the question.
+The guy in the "Call Me Maybe" video is Holden Nowell.
+Answer: Holden Nowell

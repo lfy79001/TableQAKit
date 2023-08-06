@@ -1,0 +1,65 @@
+Give you some passages with format like "tittle" (content), answer questiones:
+
+Passages:
+"alice" (alice is 18 years old)
+
+Question: Is Alice a 18 years old girl?
+Answer: yes
+
+
+Passages:
+"alice" (alice is 18 years old)
+"bob" (bob is 20 years old)
+
+Question: Is Bob a 18 years old boy?
+Answer: no
+
+
+Passages: 
+"Six Flags AstroWorld" (Six Flags AstroWorld was a seasonally operated theme park located on approximately 57 acres (23 ha) of land (later expanded to over 75 acres (30 ha)) between Kirby Drive and Fannin Avenue, directly south of Loop 610 in Houston, Texas. Opening on June 1, 1968, it was originally developed and constructed as part of the Astrodomain, the brainchild of local philanthropist and former Houston mayor Judge Roy Hofheinz, who intended it to complement The Astrodome.)
+
+Question: is there a six flags in houston tx
+Answer: yes
+
+
+Passages:
+"Young Artist Award" (The Young Artist Award (originally known as the Youth in Film Award) is an accolade presented by the Young Artist Association, a non-profit organization founded in 1978 to honor excellence of youth performers, and to provide scholarships for young artists who may be physically disabled or financially unstable. a gold sculpture holding a star.)
+
+Question: What color is the Young Artist Award?
+Answer: gold
+
+
+Passages:
+"Uptown Girl": ("Uptown Girl" is a song written and performed by American musician Billy Joel. It was released on September 29, 1983, on his ninth studio album An Innocent Man (1983). The lyrics describe a working-class "downtown man" attempting to woo a wealthy "uptown girl.")
+"Can't Stop Won't Stop": ("Can't Stop Won't Stop" is a song recorded by American recording artist Usher for his seventh studio album Looking 4 Myself (2012). Written and produced by Will "will.i.am" Adams and Keith Harris, the song contains an interpolation of the bridge to Billy Joel's 1983 hit single "Uptown Girl". Musically, "Can't Stop Won't Stop" is a eurodance and dance-pop song that incorporates elements of dubstep.")
+
+Question: This song released on September 29, 1983 and inspired a hit song by Usher was written by who?
+Answer: Billy Joel
+
+
+Passages:
+"Wampanoag" (Traditionally Wampanoag people have been semi-sedentary, with seasonal movements between fixed sites in present-day southern New England. The men often traveled far north and south along the Eastern seaboard for seasonal fishing expeditions, and sometimes stayed in those distant locations for weeks and months at a time. The women cultivated varieties of the "three sisters" (the intercropping of maize, climbing beans, and squash) as the staples of their diet, supplemented by fish and game caught by the men. Each community had authority over a well-defined territory from which the people derived their livelihood through a seasonal round of fishing, planting, harvesting, and hunting. Because southern New England was thickly populated by indigenous peoples, hunting grounds had strictly defined boundaries.)
+Question: corn beans and squash the three most important crops of the wampanoag were also known as?
+Answer: three sisters
+
+
+Passages:
+"Imperial fora" (The Imperial Fora ("Fori Imperiali " in Italian) are a series of monumental "fora" (public squares), constructed in Rome over a period of one and a half centuries, between 46 BC and 113 AD. The forums were the center of the Roman Republic and of the Roman Empire.)
+
+Question: What is the city that was the center of imperial life in the roman empire in the early fifth century?
+Answer: Rome
+
+
+Passages:
+"Call Me Maybe" (The video begins with Jepsen spying on her attractive tattooed neighbour (Holden Nowell) as he is working on his lawn. As he takes his shirt off and notices she is staring at him, Jepsen slips on her high heels and falls below her window. She is reading the books Love at First Sight (Men In Uniform) by B.J. Daniels and Skylar's Outlaw by Linda Warren. The scene then cuts to her garage, where she is rehearsing the track with her band. Following the rehearsals, her bandmates push her to go and wash her car, where she tries to gain her neighbour's attention with various provocative poses only to fall from the hood of the car. She is briefly knocked out from the fall, during which she dreams of a romance novel-type encounter with her crush against the backdrop of Peggys Cove. As she comes to, the neighbour then helps her get up, and watches the band rehearse the track again. After turning and writing down her telephone number, Jepsen sees her neighbour pass one of her male bandmates (Tavish Crowe) his own number, indicating he doesn't like women at all and is gay, where the very end shows that Jepsen is taken aback by this. The video received three nominations on the 2012 MuchMusic Video Awards in the categories of UR Fave Video, Pop Video of the Year, and Video of the Year. wallpaper with a well dressed girl titled pop artist)
+
+Question: Who is the guy in call me maybe video?
+Answer: Holden Nowell
+
+
+Passages: 
+"The Opposite Sex and How to Live with Them" (The Opposite Sex and How to Live with Them is a 1993 American comedy film directed by Matthew Meshekoff and written by Noah Stern. The film stars Arye Gross, Courteney Cox, Kevin Pollak, Julie Brown, Mitchell Ryan and Mitzi McCall. The film was released on March 26, 1993, by Miramax Films.)
+"Mitchell Ryan" (Mitchell Ryan (born January 11, 1928) is an American film, television, and stage actor, who in his six decades of television is known for playing Burke Devlin in the 1960s gothic soap opera Dark Shadows, and later for his co-starring role as Thomas Gibson's free-spirited father Edward Montgomery on Dharma & Greg. He also played the villainous General Peter McAllister in the 1987 buddy cop action film, Lethal Weapon.)
+
+Question: What  year did the actor who  Edward Montgomery on "Dharma & Greg" work on a film directed by Matthew Meshekoff and written by Noah Stern?
+Answer: 1993

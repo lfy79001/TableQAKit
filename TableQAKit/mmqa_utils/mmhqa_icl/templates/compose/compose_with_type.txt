@@ -1,0 +1,66 @@
+Give you some images, passages and at most one table, answer questions:
+
+Images:
+"Rio de Janeiro" (six views of city rio de janeiro, brazil)
+
+Passages:
+"Earth Summit" (The United Nations Conference on Environment and Development (UNCED), also known as the Rio de Janeiro Earth Summit, the Rio Summit, the Rio Conference, and the Earth Summit (Portuguese: ECO92), was a major United Nations conference held in Rio de Janeiro from 3 to 14 June 1992.)
+
+Table:
+
+Question: The place where the he first international earth summit held has how many photos in its collage?
+Answer type: text
+Answer: six
+
+
+Images:
+"coronation street" (a screenshot of the coronation street soundtrack)
+
+Passages:
+"Charlie Stubbs (Coronation Street)" (In 2005, Charlie began a relationship with Tracy Barlow (Kate Ford). He convinced her to move in with him and later in February 2006, manipulated her into having her daughter Amy (Amber Chadwick) move in with her parents. In turn, Tracy began to manipulate Charlie. She pretended to be pregnant and used the money he gave her for an abortion to buy expensive shoes and used her \"grief\" to have him allow Amy to move back in. When Shelley visited before her mother\u2019s marriage to Fred Elliott (John Savident), she and Charlie had a one-night stand. She told Tracy about their night of passion, who accused her of lying. Shelley later revealed that she was pregnant with Charlie\u2019s baby but didn\u2019t allow Charlie to have anything to do with the baby, and left. He and Tracy briefly split but reconciled. Charlie later began an affair with Maria Sutherland (Samia Smith), who was renting his flat. When David Platt (Jack P. Shepherd) discovered the affair he tried to blackmail Charlie, threatening to reveal the affair to Tracy. Charlie retaliated by trying to drown David in the bath. When Tracy eventually found out about the affair, they split once more. Tracy began to plot revenge against Charlie and pretended to make amends with Charlie. She pretended he was abusing her to the point of burning herself with an iron to make it look like Charlie was responsible for her injuries. Charlie eventually realized his partner was seeking revenge and when he was about to tell her their relationship was over, she insisted on performing a lap dance for him. She hit him round the head with a heavy ornament, and he later died in hospital. She claimed she\u2019d killed him in self-defence but the court found her guilty and she was given a life sentence.)
+
+Table:
+
+Question: Oliver Mellor played Dr. Matt Carter on the TV show that had Tracy Barlow kill who?
+Answer type: text
+Answer: Charlie
+
+
+Images:
+"Philadelphia Eagles" (the logo with an eagle on it)
+
+Passages:
+"History of the Philadelphia Eagles" (The history of the Philadelphia Eagles begins in 1933. In their history, the Eagles have appeared in the Super Bowl three times, losing in their first two appearances but winning the third, in 2018. They won three NFL Championships, the precursor to the Super Bowl, in four appearances.)
+
+Table:
+
+Question: How many times did the opponent that have a bird on their logo, been in the super bowl?
+Answer type: text
+Answer: 3
+
+
+Images:
+"alice" (a girl)
+"bob" (a boy)
+"frank" (a boy)
+"white" (a girl)
+"helen" (a girl)
+
+Passages:
+"alice" (alice is 18 years old)
+"bob" (bob is 20 years old)
+"frank" (frank is 24 years old)
+"white" (white is 16 years old)
+"helen" (helen is 18 years old)
+
+Table students:
+row_id	name	country
+0	alice	America
+1	frank	China
+2	white	America
+3	bob	The UK
+4	helen	The UK
+
+Question: What is the average age of girls who is from America?
+Answer type: python
+Answer: (18+16)/2

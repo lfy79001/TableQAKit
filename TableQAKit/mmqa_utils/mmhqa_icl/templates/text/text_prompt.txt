@@ -1,0 +1,1173 @@
+Args info:
+dataset: mmqa
+dataset_split: train
+api_keys_file: key.txt
+prompt_file: templates/prompt.json
+save_dir: results/
+save_file_name: None
+n_processes: 1
+n_shots: 18
+seed: 42
+limit: 500
+start_eid: 100
+resume: False
+oracle_retriever: True
+oracle_classifier: True
+engine: text-davinci-003
+worker_address: http://localhost:40000
+n_parallel_prompts: 1
+max_generation_tokens: 200
+max_api_total_tokens: 4000
+temperature: 0.1
+sampling_n: 10
+top_p: 1.0
+stop_tokens: ['\n\n']
+verbose: False
+
+******* End To End QA *******
+begin annotate begin_eid:  100 end_eid:  600 total:  23817
+Passages: 
+"Salford Red Devils" (Salford Red Devils R.L.F.C. is a professional rugby league club in Salford, Greater Manchester, England, who play in the Super League. Formed in 1873, they have won six Championships and one Challenge Cup. Their home ground since 2012 has been the AJ Bell Stadium in Barton-upon-Irwell, before which they played at the Willows in Weaste. Before 1995, the club was known simply as Salford, from 1995-98 Salford Reds and from 1999-2013 Salford City Reds.)
+"AJ Bell Stadium" (The Salford City Stadium (referred to as the AJ Bell Stadium for sponsorship purposes) is a rugby stadium in Barton-upon-Irwell, Eccles, Salford, England. It was built to replace Salford rugby league club's ground the Willows for the 2012 season. Sale Sharks rugby union club have also played at the stadium since the 2012–13 season.)
+
+Question: In what city is the Salford City Stadium, home to the Salford Red Devils professional rugby club?
+Answer: Barton-upon-Irwell
+
+
+Passages: 
+"Six Flags AstroWorld" (Six Flags AstroWorld was a seasonally operated theme park located on approximately 57 acres (23 ha) of land (later expanded to over 75 acres (30 ha)) between Kirby Drive and Fannin Avenue, directly south of Loop 610 in Houston, Texas. Opening on June 1, 1968, it was originally developed and constructed as part of the Astrodomain, the brainchild of local philanthropist and former Houston mayor Judge Roy Hofheinz, who intended it to complement The Astrodome.)
+
+Question: is there a six flags in houston tx
+Answer: yes
+
+
+Passages: 
+"Richard Dalton (editor)" (Richard Dalton is a former editor of the Whole Earth Software Review. He is currently president of Keep/Track Corporation (Falmouth, Massachusetts). For nine years he was a research affiliate of the Institute for the Future in Menlo Park, California specializing in emerging technologies and their business and social implications. He was a featured columnist for InformationWeek and Windows Magazine, and also wrote a column for Byte.com. He has recently spoken at Comdex, the Groupware Users Exchange, the InterClass European Conference and the Federal Government Group Decision Technology Conference.)
+"InformationWeek" (InformationWeek is a digital magazine which conducts corresponding face-to-face events, virtual events, and research. It is headquartered in San Francisco, California and was first published in 1985 by CMP Media, later called CMP Technology.)
+
+Question: Richard Dalton is a former editor of the Whole Earth Software Review, he was a featured columnist for InformationWeek, a digital magazine which conducts corresponding face-to-face events, virtual events, and research, and is headquartered in which city, in California?
+Answer: San Francisco
+
+
+Passages: 
+"Richmond, Texas" (Richmond is located near the center of Fort Bend County.  Most of the city is situated on the southwest side of the Brazos River, with a small portion (Richmond Landing) on the northeast side, connected by US Highway 90A. Richmond is bordered to the southwest by the city of Rosenberg. US 90A leads east 8 miles (13 km) to Sugar Land and west through Rosenberg 19 miles (31 km) to East Bernard. Downtown Houston is 30 miles (48 km) to the northeast.)
+
+Question: how far is richmond tx from houston tx
+Answer: 30 miles (48 km)
+
+
+Passages: 
+"Mazda" (On September 30, 2015, when Ford's shares had sunk to a little over 2% due to stock dilution, Ford sold its remaining shares in Mazda.)
+
+Question: does ford still have a stake in mazda
+Answer: no
+
+
+Passages: 
+"Automotive industry in the United Kingdom" (The origins of the UK automotive industry date back to the final years of the 19th century. By the 1950s the UK was the second-largest manufacturer of cars in the world (after the United States) and the largest exporter. However, in subsequent decades the industry experienced considerably lower growth than competitor nations such as France, Germany and Japan and by 2008 the UK was the 12th-largest producer of cars measured by volume. Since the early 1990s many British car marques have been acquired by foreign companies including BMW (Mini and Rolls-Royce), SAIC (MG), TATA (Jaguar and Land Rover) and Volkswagen Group (Bentley). Rights to many currently dormant marques, including Austin, Riley, Rover and Triumph, are also owned by foreign companies.)
+
+Question: which non-british company owns both the famous british rolls- royce and mini brands
+Answer: BMW
+
+
+Passages: 
+"Ophelia" (Ophelia is a character in William Shakespeare's play Hamlet. She is a young noblewoman of Denmark, the daughter of Polonius, sister of Laertes, and potential wife of Prince Hamlet. She is one of only two female characters in the play.)
+"Stella Gonet" (Stella Gonet (born 8 May 1960) is a Scottish theatre, film and television actress. She is known for her roles in the BBC dramas The House of Eliott (1991–94) and Holby City (2007–09). Her stage credits include playing Ophelia in the 1989 National Theatre revival of Hamlet, opposite both Daniel Day-Lewis and Ian Charleston as Hamlet, and playing Margaret Thatcher in the original West End production of Handbagged (2014).)
+
+Question: Stella Gonet, is a Scottish theatre, film and television actress, her stage credits include playing which character in William Shakespeare's play "Hamlet", a young noblewoman of Denmark, the daughter of Polonius, sister of Laertes, and potential wife of Prince Hamlet?
+Answer: Ophelia
+
+
+Passages: 
+"Paul Klee" (Paul Klee (German: [paʊ̯l ˈkleː]; 18 December 1879 – 29 June 1940) was a Swiss-German artist. His highly individual style was influenced by movements in art that included Expressionism, Cubism, and Surrealism. Klee was a natural draftsman who experimented with and eventually deeply explored color theory, writing about it extensively; his lectures Writings on Form and Design Theory (Schriften zur Form und Gestaltungslehre), published in English as the Paul Klee Notebooks, are held to be as important for modern art as Leonardo da Vinci's A Treatise on Painting for the Renaissance. He and his colleague, Russian painter Wassily Kandinsky, both taught at the Bauhaus school of art, design and architecture. His works reflect his dry humor and his sometimes childlike perspective, his personal moods and beliefs, and his musicality.)
+
+Question: swiss artist was an illustrator at the bauhaus
+Answer: Paul Klee
+
+
+Passages: 
+"2003–04 SV Werder Bremen season" (SV Werder Bremen won its first ever German double, clinching both Bundesliga and the DFB-Pokal. Following a club record-breaking league season, Werder won the title six points clear of Bayern Munich, with Aílton hitting 28 goals, the most ever from a Werder Bremen player. The cup victory was clinched following a 3–2 win against Alemannia Aachen, with defensive midfielder Tim Borowski the unexpected hero, hitting Alemannia with a brace. The title successes were Thomas Schaaf's first in his managerial career. However, Werder lost both Aílton and defensive senior talisman Mladen Krstajić to Schalke 04, since both refused to sign new contracts with the club.)
+"Mladen Krstajić" (Mladen Krstajić (Serbian Cyrillic: Младен Крстајић; born 4 March 1974) is a former Serbian footballer who played as a centre back. He was known for his composure, leadership and defensive ability. He represented Serbia and Montenegro at the 2006 FIFA World Cup.)
+
+Question: SV Werder Bremen won its first ever German double, clinching both Bundesliga and the DFB-Pokal, Werder lost both Aílton and defensive senior talisman Mladen Krstajić to Schalke 04, Krstajić is a former Serbian footballer who played as a centre back, born on which date?
+Answer: 4 March 1974
+
+
+Passages: 
+"The Librarians (2014 TV series)" (The Librarians is an American fantasy-adventure television series developed by John Rogers that is broadcast on TNT, and premiered on December 7, 2014. It is a direct spin-off of The Librarian film series, sharing continuity with the films. On January 24, 2017, TNT renewed the series for a fourth season, which is set to premiere on December 20, 2017.)
+"John Rogers (writer)" (John Rogers is a screenwriter, television producer, television director, comedian, and comic book writer. He is best known as the creator of the television series Leverage (2008–2012), The Librarians (2014–present), and The Player (2015). )
+
+Question: John Rogers was the creator of what TNT fantasy-adventure series?
+Answer: The Librarians
+
+
+Passages: 
+"Camino Palmero" (Camino Palmero is the debut album by American alternative band The Calling, released on July 10, 2001. It contains their hit single "Wherever You Will Go". The title of the album comes from a Los Angeles street where band members Alex Band and Aaron Kamin first met. The record has many grunge influences and also has a lot of guitar solos.)
+"Wherever You Will Go" ("Wherever You Will Go" is the debut single by American band The Calling. The song was released in June 2001 as the first single from their debut album Camino Palmero. It remains their most renowned and their most successful hit, peaking at number 5 on the Billboard Hot 100 and topping the Adult Top 40 for 23 weeks, the second longest running number one in the chart's history, behind "Smooth" by Santana and Rob Thomas. It was named the number 1 song of the decade of 2000's on the Adult Pop Charts by Billboard magazine.)
+
+Question: Which song, named the number 1 song of the decade of 2000's on the Adult Pop Charts by "Billboard" magazine, was on The Calling's debut album, Camino Palmero?
+Answer: Wherever You Will Go
+
+
+Passages: 
+"Minnesota Golden Gophers football" (The Minnesota Golden Gophers football program represents the University of Minnesota in college football at the NCAA Division I Football Bowl Subdivision (FBS) level. Founded in 1882, the program is one of the oldest in college football. Minnesota has been a member of the Big Ten Conference since its inception in 1896 as the Western Conference. The Golden Gophers claim seven national championships: 1904, 1934, 1935, 1936, 1940, 1941, and 1960.  Since 2009, the Gophers have played all their home games at TCF Bank Stadium in Minneapolis, Minnesota. In January 2017, the Gophers fired head coach Tracy Claeys and hired former Western Michigan head coach P. J. Fleck as the new head coach.)
+"Dominique Barber" (Dominique J. Barber (born August 2, 1986) is a former American football safety. He was drafted by the Houston Texans in the sixth round of the 2008 NFL Draft. He played college football at Minnesota.)
+
+Question: Drafted by what team in the sixth round of the 2008 NFL Draft, did the American football safety  who played college football at the college founded in 1882, the program is one of the oldest in college football?
+Answer: Houston Texans
+
+
+Passages: 
+"University of Lahore" (The University of Lahore (Urdu: جامعہ لاہور‬‎) or UOL is a private university located in Lahore, Punjab, Pakistan. It was founded at collegiate level in 1999 under the IBADAT Educational Trust and was granted full degree awarding status in 2002. It is one of the Largest Private universities in Pakistan. Subjects include Medicine, Engineering, Arts and Social Sciences. All programs are recognized by the Higher Education Commission (HEC) and government regulatory bodies in Pakistan. It is accredited by the Pakistan Engineering Council (PEC), Pakistan Bar Council, Pakistan Medical and Dental Council (PMDC), Pakistan Nursing Council, Pharmacy Council of Pakistan etc.)
+
+Question: is university of lahore islamabad campus recognized by hec
+Answer: yes
+
+
+Passages: 
+"Victoria Justice" (Victoria Dawn Justice (born February 19, 1993) is an American actress and singer. She rose to fame on Nickelodeon in the 2000s, starring as Lola Martinez on Zoey 101 (2005–2008) and later Tori Vega on Victorious (2010–2013). Justice has also appeared in the films The Boy Who Cried Werewolf (2010), Fun Size (2012), The First Time (2012) and Naomi and Ely's No Kiss List (2015). In 2015, she starred in the lead role as Lindy Sampson on the MTV television series Eye Candy. In music, Justice has recorded several songs for the soundtracks of her acting projects, including Victorious and the Nickelodeon musical Spectacular!.)
+
+Question: who does victoria justice play in zoey 101
+Answer: Lola Martinez
+
+
+Passages: 
+"John Carpenter (game show contestant)" (John Carpenter (born c. 1968) is an American game show contestant and IRS agent. He is best known for becoming the first top prize winner on the United States version of Who Wants to Be a Millionaire. He held the record for the largest single win in United States game show history, until it was broken by Rahim Oberholtzer who won $1.12 million on another U.S. quiz show, Twenty One. Carpenter was also the first top prize winner among all international versions of the Who Wants to Be a Millionaire? series.)
+
+Question: who wants to be a millionaire winner america
+Answer: John Carpenter
+
+
+Passages: 
+"The Bomb Factory" (The Bomb Factory is a live music venue and event space located in the Deep Ellum district of downtown Dallas, Texas. Since its reopening in March 2015, the venue has hosted acts including Erykah Badu, Sturgill Simpson, Robert Plant of Led Zeppelin, Disclosure, Don Henley of The Eagles, Future, D'Angelo, Brand New, Hardwell, Chvrches., Kraftwerk, Hatsune Miku, and Ludacris.[citation needed])
+"Sturgill Simpson" (John Sturgill Simpson (born June 8, 1978) is an American Grammy Award-winning country music and roots rock singer-songwriter. As of August 2017, he has released three albums as a solo artist. He released two albums independently, High Top Mountain in 2013 and Metamodern Sounds in Country Music in 2014. His second album is notable for being nominated for a Grammy Award for Best Americana Album, being listed 18th on Rolling Stone's "50 Best Albums of 2014," and also being named among "NPR's 50 Favorite Albums of 2014." His third studio album, A Sailor's Guide to Earth, was released on Atlantic Records and was Simpson's first major-label release, later earning him Best Country Album at the 59th Grammy Awards while also being nominated for Album of the Year.)
+
+Question: When was the Americn Grammy Award-winning country music and rock singer-songwriter born, who was one of the acts that performed in "The Bomb Factory" since its reopening in 2015?
+Answer: June 8, 1978
+
+
+Passages: 
+"Pam Beesly" (Pamela Morgan Halpert (née Beesly) is a fictional character on the U.S. television sitcom The Office, played by Jenna Fischer. Her counterpart in the original UK series of The Office is Dawn Tinsley. Her character is initially the receptionist at the paper distribution company Dunder Mifflin, before becoming a saleswoman and eventually office administrator until her termination in the series finale. Her character is shy, growing assertive but amiable, and artistically inclined, and shares romantic interest with Jim Halpert, whom she begins dating in the fourth season and marries and starts a family with as the series continues.)
+
+Question: do jim and pam ever get together in the office
+Answer: yes
+
+
+Passages: 
+"Georgia Engel" (Georgia Bright Engel (born July 28, 1948) is an American actress who is best known for her role as Georgette Franklin Baxter on The Mary Tyler Moore Show.)
+"Last Day in Florida" ("Last Day in Florida" is the eighteenth episode of the eighth season of the American comedy television series The Office and the show's 170th episode overall. The episode originally aired on NBC in the United States on March 8, 2012. "Last Day in Florida" was written by Robert Padnick and directed by Matt Sohn. The episode features the final appearance of Lindsey Broad and guest stars Georgia Engel.)
+
+Question: "Last Day in Florida" is the eighteenth episode of the eighth season of the American comedy television series "The Office" and the show's 170th episode overall, the episode features the final appearance of Lindsey Broad and guest stars Georgia Bright Engel, an American actress who is best known for her role as Georgette Franklin Baxter, on which tv series?
+Answer: The Mary Tyler Moore Show
+
+
+Passages: 
+"Finale (The Office)" (Jim Halpert (John Krasinski) has been appointed best man at the wedding and proceeds to plan a series of "good surprises" ("Guten Pranken") for Dwight during his bachelor party, which consists of most of the current and former male employees. At the bachelor party, the group has Dwight fire a bazooka and receive a lap dance from Elizabeth the Stripper (Jackie Debatin), though Dwight thinks she is their waitress and remains oblivious. At the bachelorette party, with the current and former female employees plus Angela's sister Rachael (Rachael Harris), the group is shocked to see that the stripper hired for entertainment is Meredith Palmer's (Kate Flannery) son Jake (Spencer Daniels). Angela is then kidnapped by Dwight's cousin Mose (Michael Schur). After hearing about Angela's kidnapping, Dwight and the male employees visit the bar that Kevin owns, where Dwight, at Jim's insistence to bury the hatchet, is forced to apologize to Kevin and confirm that his firing was not personal but based solely on his job performance, which cheers him up. The two decide to make amends. Mose then leads Dwight and Jim out to his car where Angela is stuck in the trunk and finally let out.)
+
+Question: who plays meredith's son on the office
+Answer: Spencer Daniels
+
+
+Passages: 
+"Fordson" (Fordson was a brand name of tractors and trucks. It was used on a range of mass-produced general-purpose tractors manufactured by Henry Ford & Son Inc from 1917 to 1920, by Ford Motor Company (U.S.) and Ford Motor Company Ltd (U.K.) from 1920 to 1928, and by Ford Motor Company Ltd (U.K.) from 1929 to 1964. The latter (Ford of Britain) also later built trucks under the Fordson brand.)
+
+Question: are ford tractors made by ford motor company
+Answer: yes
+
+
+Passages: 
+"Toledo War" (The Toledo War (1835–36), also known as the Michigan–Ohio War, was an almost bloodless boundary dispute between the U.S. state of Ohio and the adjoining territory of Michigan.)
+"Michigan Territory" (The Territory of Michigan was an organized incorporated territory of the United States that existed from June 30, 1805, until January 26, 1837, when the final extent of the territory was admitted to the Union as the State of Michigan. Detroit was the territorial capital.)
+
+Question: What was the territorial capital of the territory opposing Ohio in the Toledo War?
+Answer: Detroit
+
+
+Passages: 
+"25 (Adele album)" (Prior to the album's release, 25 was listed as one of the most anticipated albums of 2015. Billboard, Fuse, The Sydney Morning Herald and numerous others placed the album at number one on their most anticipated list, with the latter stating "if Adele releases her third album in 2015, she could dominate the year." Prior to the album's official announcement, music journalists and fans speculated that the album would be titled 25 continuing the age theme from Adele's previous releases 19 and 21. On the eve of her 26th birthday in May 2014, Adele posted a message via her Twitter account which prompted media discussion about her next album. The message, "Bye bye 25 ... See you again later in the year", was interpreted by outlets including Billboard and Capital FM as meaning that her next album would be titled 25 and released later in the year.)
+
+Question: who had albums called 19 21 and 25
+Answer: Adele
+
+
+Passages: 
+"Robin Thicke" (Robin Charles Thicke (born March 10, 1977) is an American singer, songwriter and record producer.)
+"Get Her Back" ("Get Her Back" is a song by American recording artist Robin Thicke. The song was released on May 19, 2014 via Star Trak Entertainment and Interscope Records as the lead single from the album Paula. The song was written as an attempt to reconcile with his wife, actress Paula Patton, whom he had separated from in February 2014. Thicke performed and premiered the song live at the 2014 Billboard Music Awards, which generated attention before and after the awards ceremony. The single peaked at #82 on the Billboard Hot 100.)
+
+Question: Which American singer, songwriter and record producer born in 1977 sang at the 2014 Billboard Music Awards?
+Answer: Robin Thicke
+
+
+Passages: 
+"Marshmello" (Marshmello (stylized marshmello) is an electronic dance music producer and DJ. He first gained international recognition by remixing songs by Jack Ü and Zedd, and later collaborated with artists including Omar LinX, Ookay, Jauz and Slushii. In January 2017, his song "Alone" appeared on the US Billboard Hot 100 chart.)
+"Chasing Colors" ("Chasing Colors" is a song recorded by electronic DJs Marshmello and Ookay featuring the vocals of American singer Noah Cyrus. It was written by Marshmello, Ookay, Skyler Stonestreet and Chase Duddy and released on 24 February 2017 via Marshmello's label Joytime Collective.)
+
+Question: In what year did the song "Chasing Colors" get recorded and the song "Alone" hit US "Billboard" Hot 100 chart? 
+Answer: 2017
+
+
+Passages: 
+"Deepwater Horizon oil spill" (In 2012, "We Just Decided To", the pilot of the HBO series The Newsroom, featured its characters covering the Deepwater Horizon story. The 2015 film The Runner, directed by Austin Stark and starring Nicolas Cage, is a fictional story of a politician and his family set in the aftermath of the Deepwater Horizon disaster. Deepwater Horizon is a 2016 film based on the explosion, directed by Peter Berg and starring Mark Wahlberg.)
+
+Question: when did deep water horizon movie come out
+Answer: 2016
+
+
+Passages: 
+"Uptown Girl" ("Uptown Girl" is a song written and performed by American musician Billy Joel. It was released on September 29, 1983, on his ninth studio album An Innocent Man (1983). The lyrics describe a working-class "downtown man" attempting to woo a wealthy "uptown girl.")
+"Can't Stop Won't Stop (Usher song)" ("Can't Stop Won't Stop" is a song recorded by American recording artist Usher for his seventh studio album Looking 4 Myself (2012). Written and produced by Will "will.i.am" Adams and Keith Harris, the song contains an interpolation of the bridge to Billy Joel's 1983 hit single "Uptown Girl". Musically, "Can't Stop Won't Stop" is a eurodance and dance-pop song that incorporates elements of dubstep.)
+
+Question: This song released on September 29, 1983 and inspired a hit song by Usher was written by who?
+Answer: Billy Joel
+
+
+Passages: 
+"Gun laws in Missouri" (In September 2016, another Senate bill coincidentally numbered SB 656 was passed allowing permitless concealed carry by anyone 19 years of age or older who may lawfully own a gun. This bill was also vetoed by Governor Nixon, on June 27, 2016. After the Missouri legislature reconvened for the veto-override session on September 14, 2016, the Senate voted to override the veto with a 24 - 6 vote (23 required) and the House followed through shortly thereafter with a 112 - 41 vote (109 required). The permitless carry provision of the bill went into effect on January 1, 2017.)
+
+Question: do you need a license to carry a concealed weapon in missouri
+Answer: no
+
+
+Passages: 
+"Louis Otho Williams" (Louis Otho (Otto) Williams (1908-1991) was a botanist from Wyoming. He received his BA and MA from the University of Wyoming then a PhD from Washington University in St. Louis. He went on to be editor of the American Orchid Society Bulletin and during the war worked in Brazil on the rubber procurement project. For much of the 1950s he lived in Honduras and started the journal Ceiba there. After returning to the US he worked for the Field Museum of Natural History starting in 1960 and from 1964 to 1973 served as departmental chair.)
+"Field Museum of Natural History" (The Field Museum of Natural History, also known as The Field Museum, is a natural history museum in Chicago, and is one of the largest such museums in the world. The museum maintains its status as a premier natural history museum through the size and quality of its educational and scientific programs, as well as due to its extensive scientific specimen and artifact collections. The diverse, high quality permanent exhibitions, which attract up to two million visitors annually, range from the earliest fossils to past and current cultures from around the world to interactive programming demonstrating today's urgent conservation needs.)
+
+Question: In what city is this museum located that is a natural history museum, one of the largest such museums in the world, and for which Louis Otho Williams worked?
+Answer: Chicago
+
+
+Passages: 
+"Wisconsin gubernatorial election, 2018" (The 2018 Wisconsin gubernatorial election will take place on November 6, 2018, to determine the governor and lieutenant governor of the U.S. state of Wisconsin. It will occur concurrently with the election of Wisconsin's Class I U.S. Senate seat, as well as other elections to the United States Senate in other states and elections to the United States House of Representatives and various state and local elections.)
+
+Question: when do we vote for governor in wisconsin
+Answer: November 6, 2018
+
+
+Passages: 
+"Sue Perkins" (Susan Elizabeth "Sue" Perkins (born 22 September 1969) is an English comedian, broadcaster, actress and writer, born in East Dulwich, south London. Originally coming to prominence through her comedy partnership with Mel Giedroyc in Mel and Sue, she has since become best known as a radio broadcaster and television presenter, notably of The Great British Bake Off (2010–2016) and Insert Name Here (2016–present).)
+"The Now Show" (The Now Show is a British radio comedy broadcast on BBC Radio 4, which satirises the week's news. The show is a mixture of stand-up, sketches and songs presented by Steve Punt and Hugh Dennis. The show also features skits from Jon Holmes, Laura Shavin (earlier series had Emma Kennedy, or occasionally Sue Perkins, for the female voices), a monologue by Marcus Brigstocke, and music by Mitch Benn, Pippa Evans or Adam Kay. )
+
+Question: A radio comedy broadcast on BBC Radio 4 that satirizes the week's news, in its early days featured the voice of an English comedian born in what city in 1969?
+Answer: East Dulwich
+
+
+Passages: 
+"History of the Dallas Cowboys" (The team was first known as the Dallas Steers, then the Dallas Rangers. On March 19, 1960, the organization announced that it would be called the Cowboys to avoid confusion with the American Association Dallas Rangers baseball team. The founding investors of the Dallas Cowboys were Clint Murchison, Jr. (45%), John D. Murchison (45%), along with minority shareholders, Toddie Lee and Bedford Wynne (Director and Secretary) (5%) and William R. Hawn (5%). The new owners subsequently hired Tex Schramm as general manager, Gil Brandt as player personnel director, and Tom Landry as head coach.)
+
+Question: when did the dallas cowboys come into the nfl
+Answer: March 19, 1960
+
+
+Passages: 
+"List of centuries in Twenty20 International cricket" (India's Rohit Sharma and New Zealand's Colin Munro lead the list with three T20I centuries, followed by Munro's compatriots Martin Guptill and Brendon McCullum, West Indians Chris Gayle and Evin Lewis, India's K. L. Rahul and Australia's Glenn Maxwell and Aaron Finch with two each. Lewis' first century came during the 2016 series against India at the Central Broward Regional Park in Lauderhill, Florida. In reply, India's Rahul finished on 110 not out, the only occasion where two T20I centuries were scored in the same match. Rahul's innings was one of the ten instances where a batsman scored a century in the second innings of a T20I match. In July 2018, Finch posted 172 from 76 balls against Zimbabwe during the 2018 Zimbabwe Tri-Nation Series to break his own record for the highest score in a T20I match, elipsing the 156 he set in August 2013. Rohit Sharma and David Miller of South Africa share the record for the fastest century, both reaching the milestone from 35 deliveries. Miller was also the first player to score a T20I century batting at number five or lower.)
+
+Question: who scored the fastest century in international t20 cricket
+Answer: Rohit Sharma | David Miller
+
+
+Passages: 
+"Formula One drivers from Germany" (Since the first season in 1950 Germany has produced three F1 World Drivers' Champions. The first title did not come until 1994 when Michael Schumacher claimed his first of seven championship victories. Sebastian Vettel is the second German drivers' champion, winning back-to-back titles in 2010, 2011, 2012 and 2013. Nico Rosberg is the third German drivers' champion, winning the title in 2016. Wolfgang von Trips was leading the championship in 1961 at the time of his fatal accident, and finished 2nd in the standings, just 1 point behind eventual champion Phill Hill.)
+
+Question: german winner of the formula 1 world championships 2010 to 2013
+Answer: Sebastian Vettel
+
+
+Passages: 
+"Ariana Afghan Airlines" (Ariana Afghan Airlines Co. Ltd. (Persian: هواپیمایی آریانا‎, Pashto: آريانا افغان هوايي شرکت‎), also known as Ariana, is the largest airline of Afghanistan and serves as the country's national carrier. Founded in 1955, Ariana is the oldest airline of Afghanistan.[citation needed] The company has its main base at Kabul International Airport, from where it operates domestically, and also provides international connections that link Afghanistan with China, Germany, India, Iran, Kuwait, Pakistan, Russia, Saudi Arabia, Tajikistan and Turkey. The carrier is headquartered in Shāre Naw, Kabul, and it is wholly owned by the Afghan government.[citation needed] Ariana Afghan Airlines has been on the list of air carriers banned in the European Union since October 2006 (2006-10)[update].)
+"United Nations Security Council Resolution 1388" (United Nations Security Council resolution 1388, adopted unanimously on 15 January 2002, after recalling resolutions 1267 (1999) and 1333 (2000) on the situation in Afghanistan, the Council, acting under Chapter VII of the United Nations Charter, lifted sanctions against Ariana Afghan Airlines as the airline was no longer controlled by or on behalf of the Taliban.)
+
+Question: United Nations Security Council resolution 1388, adopted unanimously on which date, after recalling two resolutions, on the situation in Afghanistan, the Council, acting under Chapter VII of the United Nations Charter, lifted sanctions against Ariana Afghan Airlines Co. Ltd, as the airline was no longer controlled by or on behalf of the Taliban?
+Answer: 15 January 2002
+
+
+Passages: 
+"Soviet–Afghan War" (That operation began at 19:00 hr., when the KGB-led Soviet Zenith Group destroyed Kabul's communications hub, paralyzing Afghan military command. At 19:15, the assault on Tajbeg Palace began; as planned, president Hafizullah Amin was killed. Simultaneously, other objectives were occupied (e.g., the Ministry of Interior at 19:15). The operation was fully complete by the morning of December 28, 1979.)
+
+Question: when did the soviet union take over afghanistan
+Answer: December 28, 1979
+
+
+Passages: 
+"Grand Union Canal" (The Grand Union Canal in England is part of the British canal system. Its main line starts in London and ends in Birmingham, stretching for 137 miles (220 km) with 166 locks. It has arms to places including Leicester, Slough, Aylesbury, Wendover and Northampton.)
+
+Question: is there a canal from birmingham to london
+Answer: yes
+
+
+Passages: 
+"Mauricio Pellegrino" (Mauricio Pellegrino Luna (born 5 October 1971) is a retired Argentinian footballer who played as a central defender, and is the current manager of English club Southampton.)
+"2017–18 Southampton F.C. season" (The 2017–18 Southampton F.C. season is the club's 19th season in the Premier League and 41st in the top division of English football. In addition to the Premier League, the club will also compete in the FA Cup and competed in the EFL Cup. The season is the club's first with manager Mauricio Pellegrino, who replaced the departed Claude Puel after one season in charge on 23 June 2017. As of 29 October 2017, Southampton are ninth in the Premier League table having won three, drawn four and lost three of their first ten matches of the season. They were knocked out of the EFL Cup in the second round by Wolverhampton Wanderers.)
+
+Question: The 2017–18 Southampton F.C. season is the club's 19th season in which organization, and 41st in the top division of English football, the season is the club's first with manager Mauricio Pellegrino, a retired Argentinian footballer who played as a central defender, and is the current manager of English club Southampton? 
+Answer: Premier League
+
+
+Passages: 
+"List of Fulham F.C. seasons" (The club competed in the Southern Football League between 1898 and 1907, when they were accepted into the Football League Second Division. Having spent much of their history outside the top division, the team gained promotion to the Premier League in 2001.)
+
+Question: when were fulham promoted to the premier league
+Answer: 2001
+
+
+Passages: 
+"Broad City" (Broad City is an American television sitcom, created by and starring Ilana Glazer and Abbi Jacobson. It was developed from their web series of the same name, which was independently produced from 2009 to 2011. The creation of the web series began after Glazer received poor feedback on a project she and a partner had been working on. After expressing her frustration to Jacobson, the two decided to work on a project together, eventually creating the web series Broad City. The series is based on Glazer and Jacobson's real life friendship, and their attempt to "make it" in New York. Amy Poehler is one of Broad City's executive producers, and appeared in the webseries finale. The series premiered on Comedy Central on January 22, 2014.)
+
+Question: where do abbi and ilana live in broad city
+Answer: New York
+
+
+Passages: 
+"A113" (A113 (sometimes A-113 or A1-13) is an inside joke, an Easter egg in media created by alumni of California Institute of the Arts, referring to the classroom used by graphic design and character animation students including John Lasseter, Tim Burton and Brad Bird. Bird first used it for a license plate number in the  "Family Dog" episode of Amazing Stories. It has appeared in other Disney movies and every Pixar movie.)
+"John Lasseter" (John Alan Lasseter (born January 12, 1957) is an American animator, film director, screenwriter and film producer. He currently is the chief creative officer of Pixar Animation Studios, Walt Disney Animation Studios and DisneyToon Studios. He is also the Principal Creative Advisor for Walt Disney Imagineering.)
+
+Question: Who was the Principal Creative Advisor for Walt Disney Imagineering who helped design the A113 Easter Egg in media?
+Answer: John Lasseter
+
+
+Passages: 
+"Easter egg" (In 1873 J.S. Fry & Sons of England introduced the first chocolate Easter egg in Britain.)
+
+Question: who made the first chocolate easter egg in england
+Answer: J.S. Fry & Sons of England
+
+
+Passages: 
+"Latin America" (Latin America consists of 13 dependencies and 20 countries which cover an area that stretches from the northern border of Mexico to the southern tip of South America, including the Caribbean. It has an area of approximately 19,197,000 km (7,412,000 sq mi), almost 13% of the Earth's land surface area. As of 2016, its population was estimated at more than 639 million and in 2014, Latin America had a combined nominal GDP of 5,573,397 million USD and a GDP PPP of 7,531,585 million USD.)
+
+Question: is the caribbean considered part of latin america
+Answer: yes
+
+
+Passages: 
+"Population density" (Cities with high population densities are, by some, considered to be overpopulated, though this will depend on factors like quality of housing and infrastructure and access to resources. Most of the most densely populated cities are in Southeast Asia, though Cairo and Lagos in Africa also fall into this category.)
+
+Question: where do population densities on earth tend to be highest
+Answer: Southeast Asia
+
+
+Passages: 
+"Chevrolet Camaro (third generation)" (The third-generation Chevrolet Camaro was introduced for the 1982 model year by Chevrolet. It continued to use General Motors' F-body platform and produced a "20th Anniversary Commemorative Edition" for 1987 and "25th Anniversary Heritage Edition" for 1992. These were also the first Camaros with factory fuel injection, four-speed automatic transmissions, five-speed manual transmissions, four-cylinder engines, 16-inch wheels, and hatchback bodies. For 1987 a convertible Camaro was reintroduced, converted by ASC in relatively small numbers. In 1989 Chevrolet introduced a IROC Z28 WS9 collectors edition in relative small numbers as well. The third-generation Camaro continued through the 1992 model year.)
+"Pontiac Firebird (third generation)" (The third generation Pontiac Firebird was introduced in late 1981 by Pontiac alongside its corporate cousin, the Chevrolet Camaro for the 1982 model year. These were also the first Firebirds with factory fuel injection, four-speed automatic transmissions, five-speed manual transmissions, four-cylinder engines, 16-inch wheels, and hatchback bodies.)
+
+Question: What is the brand name and model of the car that uses General Motors' F-body platform and that was introduced in 1982 alongside Pontiac?
+Answer: Chevrolet Camaro
+
+
+Passages: 
+"Firing order" (In most Audi and Ford V8 engines cylinders 1-2-3-4 are on the right hand side of the car, with 5-6-7-8 are on the left.)
+
+Question: where is the number 6 cylinder on a ford v8
+Answer: on the left
+
+
+Passages: 
+"Charlotte metropolitan area" (The Charlotte metropolitan area (also Metrolina, Charlotte Metro, or Charlotte USA ) is a metropolitan area/region of North and South Carolina within and surrounding the city of Charlotte. Located in the Piedmont, it is the largest in the Carolinas, and the fourth largest metropolitan area in the Southeastern region of the United States behind, Miami, Atlanta, and Tampa.)
+
+Question: is there a charlotte north and south carolina
+Answer: yes
+
+
+Passages: 
+"Sword Art Online The Movie: Ordinal Scale" (Sword Art Online The Movie: Ordinal Scale (Japanese: 劇場版 ソードアート・オンライン -オーディナル・スケール-, Hepburn: Gekijō-ban Sōdo Āto Onrain -Ōdinaru Sukēru-) is a 2017 Japanese animated fantasy adventure film based on the Sword Art Online light novel series written by Reki Kawahara and illustrated by abec. The film is produced by A-1 Pictures and directed by Tomohiko Itō, featuring an original story by Kawahara, character designs by Shingo Adachi and music by Yuki Kajiura. It was released in Japan, Southeast Asia, and Germany on February 18, 2017, in Mexico on March 4, 2017, and in the United States on March 9, 2017.)
+
+Question: when is sword art online ordinal scale coming out
+Answer: March 9, 2017
+
+
+Passages: 
+"The Things My Father Never Taught Me" (The Things My Father Never Taught Me is a 2012 short comedy film written and directed by Burleigh Smith.  It features Smith, Aiden Papamihail and Bridie Carter.  The film has the distinction of being accepted into over one hundred and thirty film festivals across nineteen countries.)
+"Bridie Carter" (Bridie Carter (born 18 December 1970) is an Australian actress best known for her role as the main character of Tess Silverman McLeod on the television drama series McLeod's Daughters.)
+
+Question: The Things My Father Never Taught Me is a 2012 short comedy film that featurd Burleigh Smith along side which Australian actress best known on "McLeod's Daughters"?
+Answer: Bridie Carter
+
+
+Passages: 
+"FA Cup Final" (After the 1873 final was held at Lillie Bridge, the event was held at the Oval until 1892. The 1893 and 1894 finals were respectively held at Fallowfield Stadium in Manchester and Goodison Park in Liverpool, before the event returned to London in 1895, being held at Crystal Palace until the outbreak of World War I. After the war, the event was held at Stamford Bridge, before Wembley Stadium opened in 1923. The first final at Wembley, in which Bolton Wanderers beat West Ham United 2–0, had an official attendance of 126,047, although the actual figure is believed to be as much as 300,000.)
+
+Question: where was the fa cup final played before wembley
+Answer: Stamford Bridge
+
+
+Passages: 
+"Seltana Aït Hammou" (Seltana Aït Hammou (born 21 May 1980) is a Moroccan middle-distance runner who specialises in the 800 metres. She represented her country at the 2004 Summer Olympics and has also competed at the World Championships in Athletics and the IAAF World Indoor Championships. She has also been the gold medallist at number of major events including the 2001 Mediterranean Games, the 2003 Military World Games, the 2007 Pan Arab Games and the 2009 Jeux de la Francophonie.)
+"2009 Jeux de la Francophonie" (The 2009 Jeux de la Francophonie, also known as VIèmes Jeux de la Francophonie (French for 6th Francophone Games), were held from September 27 to October 6 in Beirut, Lebanon.)
+
+Question: Seltana Aït Hammou (born 21 May 1980) is a Moroccan middle-distance runner who specialises in the 800 metres, she has also been the gold medallist at number of major events including the 2009 Jeux de la Francophonie, also known as VIèmes Jeux de la Francophonie, were held from September 27 to October 6 in Beirut, in which country?
+Answer: Lebanon
+
+
+Passages: 
+"Milkha Singh" (The race for which Singh is best remembered is his fourth-place finish in the 400 metres final at the 1960 Olympic Games, which he had entered as one of the favourites. He led the race till the 200m mark before easing off, allowing others to pass him. Various records were broken in the race, which required a photo-finish and saw American Otis Davis being declared the winner by one-hundredth of a second over German Carl Kaufmann. Singh's fourth-place time of 45.73 became the Indian national record and held for almost 40 years.)
+
+Question: in which year did milkha singh win the first national title in the 400 metre race
+Answer: 1960
+
+
+Passages: 
+"Time in France" (Metropolitan France uses Central European Time (heure d'Europe centrale, HEC: UTC+01:00) and Central European Summer Time (heure d'été d'Europe centrale: UTC+02:00). Daylight saving time is observed in Metropolitan France from the last Sunday in March (02:00 CET) to the last Sunday in October (03:00 CEST). With its overseas territories, France uses 12 different time zones, more than any other country in the world.)
+
+Question: is all of france in one time zone
+Answer: yes
+
+
+Passages: 
+"Aquarium (Aqua album)" (Aquarium is the debut studio album by Danish-Norwegian band Aqua. The album was released in Scandinavia on 26 March 1997 and in the United States on 9 September 1997. Although the group had been together for three years under their original name Joyspeed, their only release under that name was a single called "Itzy Bitsy Spider". The album is best known for including the successful singles "Barbie Girl", "Doctor Jones" and "Turn Back Time", the first of those being a huge hit across the globe. (The album was preceded by the two singles "Roses Are Red" and "My Oh My", with the latter re-released in 1998.))
+"Barbie Girl" ("Barbie Girl" is a song by the Danish-Norwegian dance-pop group Aqua. It was released in May 1997 as their third single overall, and the first United Kingdom release, it is included on the album Aquarium. The song was written by Søren Rasted, Claus Norreen, René Dif, and Lene Nystrøm, and it was produced by Johnny Jam, Delgado, Rasted, and Norreen. It was written after Rasted saw an exhibit on kitsch culture in Denmark which featured Barbie dolls.)
+
+Question: The album "Aquarium" consisted of the hit single "Barbie Girl" which was written by Søren Rasted after seeing an exhibit on kitsch culture in what country?
+Answer: Denmark
+
+
+Passages: 
+"French Third Republic" (The French Third Republic (French: La Troisième République, sometimes written as La IIIe République) was the system of government adopted in France from 1870, when the Second French Empire collapsed, until 1940, when France's defeat by Nazi Germany in World War II led to the formation of the Vichy government in France. It came to an end on 10 July 1940.)
+
+Question: when did the third republic of france began
+Answer: 1870
+
+
+Passages: 
+"The Opposite Sex and How to Live with Them" (The Opposite Sex and How to Live with Them is a 1993 American comedy film directed by Matthew Meshekoff and written by Noah Stern. The film stars Arye Gross, Courteney Cox, Kevin Pollak, Julie Brown, Mitchell Ryan and Mitzi McCall. The film was released on March 26, 1993, by Miramax Films.)
+"Mitchell Ryan" (Mitchell Ryan (born January 11, 1928) is an American film, television, and stage actor, who in his six decades of television is known for playing Burke Devlin in the 1960s gothic soap opera Dark Shadows, and later for his co-starring role as Thomas Gibson's free-spirited father Edward Montgomery on Dharma & Greg. He also played the villainous General Peter McAllister in the 1987 buddy cop action film, Lethal Weapon.)
+
+Question: What  year did the actor who  Edward Montgomery on "Dharma & Greg" work on a film directed by Matthew Meshekoff and written by Noah Stern?
+Answer: 1993
+
+
+Passages: 
+"Beauty and the Beast (1991 film)" (Beauty and the Beast is a 1991 American animated musical romantic fantasy film produced by Walt Disney Feature Animation and released by Walt Disney Pictures. The 30th Disney animated feature film and the third released during the Disney Renaissance period, it is based on the French fairy tale of the same name by Jeanne-Marie Leprince de Beaumont who was uncredited in the English version but credited in the French version, and ideas from the 1946 French film of the same name directed by Jean Cocteau. Beauty and the Beast focuses on the relationship between the Beast (voice of Robby Benson), a prince who is magically transformed into a monster and his servants into household objects as punishment for his arrogance, and Belle (voice of Paige O'Hara), a young woman whom he imprisons in his castle. To become a prince again, Beast must learn to love Belle and earn her love in return before the last petal from the enchanted rose that the enchantress who cursed the Beast had offered falls, or else the Beast will remain a monster forever. The film also features the voices of Richard White, Jerry Orbach, David Ogden Stiers, and Angela Lansbury.)
+
+Question: when did beauty and the beast cartoon come out
+Answer: 1991
+
+
+Passages: 
+"The Lovely Bones (film)" (The Lovely Bones is a 2009 supernatural drama film directed by Peter Jackson and starring Mark Wahlberg, Rachel Weisz, Susan Sarandon, Stanley Tucci, Michael Imperioli, and Saoirse Ronan. The screenplay by Fran Walsh, Philippa Boyens and Jackson was based on the award-winning and bestselling 2002 novel The Lovely Bones by Alice Sebold. It follows a girl who is murdered and watches over her family from the in-between, and is torn between seeking vengeance on her killer and allowing her family to heal. An international co-production between the United States, the United Kingdom, and New Zealand, the film was produced by Carolynne Cunningham, Walsh, Jackson, and Aimee Peyronnet, with Steven Spielberg, Tessa Ross, Ken Kamins, and James Wilson as executive producers. Principal photography began in October 2007 in New Zealand and Pennsylvania, United States. The film's score was composed by Brian Eno.)
+"Nancy Steiner" (Nancy Steiner is an American costume designer.  Her credits include Little Miss Sunshine, Lost in Translation, The Lovely Bones, The Good Girl and The Virgin Suicides.)
+
+Question: Nancy Steiner developed costumes for a 2009 supernatural drama film directed by whom?
+Answer: Peter Jackson
+
+
+Passages: 
+"The Lovely Bones" (On December 6, 1973, 14-year-old Susie Salmon takes her usual shortcut home from her school through a cornfield in Norristown, Pennsylvania. George Harvey, her 36-year-old neighbor who lives alone and builds doll houses for a living, persuades her to have a look at an underground den he has recently dug in the field. Once she enters, he rapes and murders her, then dismembers her body, putting her remains in a safe that he dumps in a sinkhole. Susie's spirit flees toward her personal heaven, and in doing so, rushes past one of her classmates, social outcast Ruth Connors.)
+
+Question: what did the killer do to susie in the lovely bones
+Answer: dismembers her body | murders | rapes
+
+
+Passages: 
+"Monterrey" (Monterrey is located in northeast Mexico, at the foothills of the Sierra Madre Oriental. The uninterrupted settlement of Monterrey began in 1596, with its founding by Diego de Montemayor. In the years after the Mexican War of Independence, Monterrey became an important business center. With the establishment of Fundidora Monterrey, the city has experienced great industrial growth.)
+
+Question: where is monterrey mexico located on a map
+Answer: in northeast Mexico, at the foothills of the Sierra Madre Oriental
+
+
+Passages: 
+"Midnight in Paris" (Midnight in Paris is a 2011 fantasy comedy film written and directed by Woody Allen. Set in Paris, the film follows Gil Pender, a screenwriter, who is forced to confront the shortcomings of his relationship with his materialistic fiancée and their divergent goals, which become increasingly exaggerated as he travels back in time each night at midnight. The movie explores themes of nostalgia and modernism.)
+
+Question: what is the theme of midnight in paris
+Answer: nostalgia | modernism
+
+
+Passages: 
+"Tanya Branning" (Tanya Lauren Branning (also Cross and Jessop) is a fictional character from the BBC soap opera EastEnders, played by Jo Joyner. She made her first appearance on 27 June 2006. She left the show temporarily on 25 December 2009 for maternity leave and returned for one episode on 23 June 2010. She made her full-time return on 27 September 2010. Tanya's storylines have included opening her own salon, giving birth to her third child, divorcing and then burying Max Branning (Jake Wood) alive, marrying Greg Jessop (Stefan Booth), starting an affair with Max, dealing with her cervical cancer and discovering that Max has a secret wife, Kirsty Branning (Kierston Wareing). On 1 May 2012, it was announced Joyner would take another break from the series in 2013, however, on 1 April 2013, it was announced her departure would be indefinite. On 15 May 2013, Joyner filmed her final scenes and departed on 28 June 2013. Tanya returned in February 2015 for two episodes as part of the show's 30th anniversary celebrations.)
+
+Question: who plays max branning's wife in eastenders
+Answer: Jo Joyner
+
+
+Passages: 
+"Lima" (Lima (/ˈliːmə/, Spanish pronunciation: [ˈlima], Quechua: [ˈlɪma], Aymara: [ˈlima]) is the capital and the largest city of Peru. It is located in the valleys of the Chillón, Rímac and Lurín rivers, in the central coastal part of the country, overlooking the Pacific Ocean. Together with the seaport of Callao, it forms a contiguous urban area known as the Lima Metropolitan Area. With a population of more than 10 million, Lima is the most populous metropolitan area of Peru and the second-largest city in the Americas (as defined by "city proper"), behind São Paulo.)
+
+Question: where is lima peru located on a map
+Answer: in the valleys of the Chillón, Rímac and Lurín rivers, in the central coastal part of the country, overlooking the Pacific Ocean
+
+
+Passages: 
+"Death of a Gentleman" (Death of a Gentleman is a 2015 documentary about the takeover of the governance of cricket by ICC's 'Big Three'. It was directed by Sam Collins, Jarrod Kimber and Johnny Blank, and features interviews with takeover architects Giles Clarke and N Srinivasan (the other was Wally Edwards), alongside Ed Cowan, Tony Greig,  Gideon Haigh, Michael Holding, Jonathan Agnew, Chris Gayle, Rev. Andrew Wingfield Digby, Haroon Lorgat, Lalit Modi, and Kevin Pietersen.)
+"Kevin Pietersen" (Kevin Peter Pietersen MBE (born 27 June 1980) is a former England international cricketer, who played all formats of the game. He is a right-handed batsman and occasional off spin bowler who currently plays for Melbourne Stars in the Big Bash League, the Quetta Gladiators in the Pakistan Super League as well as the Hollywoodbets Dolphins in the CSA T20 Challenge. He had also been signed by the Rising Pune Supergiants for the 2016 season of the Indian Premier League.)
+
+Question: Death of a Gentleman is a documentary, released in which year, about the takeover of the governance of cricket by ICC's 'Big Three', it features interviews with which takeover architect, and former England international cricketer, a right-handed batsman and occasional off spin bowler, who currently plays for Melbourne Stars?
+Answer: 2015
+
+
+Passages: 
+"Subclavian artery" (In human anatomy, the subclavian arteries are paired major arteries of the upper thorax, below the clavicle. They receive blood from the aortic arch. The left subclavian artery supplies blood to the left arm and the right subclavian artery supplies blood to the right arm, with some branches supplying the head and thorax. On the left side of the body, the subclavian comes directly off the aortic arch, while on the right side it arises from the relatively short brachiocephalic artery when it bifurcates into the subclavian and the right common carotid artery.)
+
+Question: where does the right subclavian artery supply blood to
+Answer: right arm
+
+
+Passages: 
+"List of Sesame Street Muppets" (The Muppets are a group of puppet characters created by Jim Henson, many for the purpose of appearing on the children's television program Sesame Street. Henson's involvement in Sesame Street began when he and Joan Ganz Cooney, one of the creators of the show, met in the summer of 1968, at one of the show's five three-day curriculum planning seminars in Boston. Author Christopher Finch reported that director Jon Stone, who had worked with Henson previously, felt that if they could not bring him on board, they should "make do without puppets".)
+
+Question: are the muppets the same as sesame street
+Answer: no
+
+
+Passages: 
+"Grown Ups (film)" (Grown Ups is a 2010 American comedy film directed by Dennis Dugan and stars Adam Sandler, Kevin James, Chris Rock, David Spade and Rob Schneider. It depicts five friends of a high school basketball team reuniting for a holiday weekend after learning of the passing of their coach.)
+"David Spade" (David Wayne Spade (born July 22, 1964) is an American stand-up comedian, actor, writer and television personality. He rose to fame in the 1990s as a cast member on Saturday Night Live, then began a successful acting career in both film and television. He also starred and co-starred in the films Tommy Boy, Black Sheep, Joe Dirt, Joe Dirt 2: Beautiful Loser, Grown Ups, and Grown Ups 2, among others.)
+
+Question: What is the name of a 2010 comedy film about five friends reuniting for a holiday weekend that stared at least one previous cast member from "Saturday Night Live"?
+Answer: "Grown Ups"
+
+
+Passages: 
+"Joey Mazzarino" (Joseph "Joey" Mazzarino is an American puppeteer, writer, director and actor. He is best known for his roles on Sesame Street as Murray Monster, Stinky the Stinkweed and other Muppets. Mazzarino was also the head writer for the show from 2009 to 2015.)
+
+Question: who does the voice of murray on sesame street
+Answer: Joseph "Joey" Mazzarino
+
+
+Passages: 
+"Sexual Healing (South Park)" ("Sexual Healing" is the fourteenth season premiere of the American animated television series South Park, and the 196th overall episode of the series. It originally aired on Comedy Central in the United States on March 17, 2010, and on Comedy Central UK on March 19, 2010. The title of the episode is derived from the song of the same name by soul singer Marvin Gaye. In the episode, the sex scandal of golf pro Tiger Woods has the media and public frantic to determine why rich and successful men would suddenly crave sex with multiple partners. Meanwhile, schools are screened for the condition and Kyle, Kenny and Butters are diagnosed with sexual addiction.)
+"South Park (season 14)" (The fourteenth season of the American animated television series South Park began airing in the United States on Comedy Central between March 17, 2010 and November 17, 2010. The season was headed by the series creators Trey Parker and Matt Stone, who served as executive producers along with Anne Garefino. The season continued to focus on the exploits of protagonists Stan, Kyle, Cartman and Kenny in the fictional Colorado mountain town of South Park.)
+
+Question: The premiere of fourteenth season animated television series created by Trey Parker and Matt Stone, who served as excutive producers along with Anne Garefino is about which golf pro sex scandal?
+Answer: Tiger Woods
+
+
+Passages: 
+"Tommy Cooper" (Thomas Frederick "Tommy" Cooper (19 March 1921 – 15 April 1984) was a British prop comedian and magician. Cooper was a member of the Magic Circle, and respected by traditional magicians. He was famed for his red tarboosh, and his appearance was large and lumbering, at 6 feet 4 inches (1.93 m) and more than 15 stone (210 lb; 95 kg) in weight. On 15 April 1984, Cooper collapsed with  a heart attack on live national television, and died soon afterwards.)
+"Roger Kitter" (Roger Kitter (20 October 1949 – 3 January 2015) was an English actor best known for playing Captain Alberto Bertorelli in series 7 of the British sitcom TV series 'Allo 'Allo!. He had previously appeared weekly with Lulu throughout the 10-week run of her 1973 BBC1 series It's Lulu. With Kaplan Kaye he also recorded a song "Chalk Dust – the Umpire Strikes Back" using the moniker 'The Brat'. Released on the Hansa label, it entered the UK Singles Chart on 10 July 1982; it reached a peak of number 19, and remained in the chart for 8 weeks. The song was a Top 10 hit in the Netherlands, Belgium and South Africa, and lampooned John McEnroe complaining about line calls in tennis ("The ball's in, everyone can see that the ball's in!").[citation needed] He was also an impressionist, who provided the voice of Tommy Cooper in the Lego 'Kipper' advertisement.)
+
+Question: What year did the man, who was impersonated by Roger Kitter in the Lego advertisement, die of a heart attack?
+Answer: 1984
+
+
+Passages: 
+"Hero (Enrique Iglesias song)" ("Hero" is a song by Spanish singer-songwriter Enrique Iglesias from his second English-language studio album Escape (2001). It was written by Iglesias, Paul Barry and Mark Taylor. Iglesias released the song to radio on August 13, 2001 to a positive critical and commercial reception. To the date the single has sold 8 million copies worldwide.)
+
+Question: i can be your hero baby original singer
+Answer: Enrique Iglesias
+
+
+Passages: 
+"Montauk Highway" (Montauk Highway is an east–west road extending for 95 miles (153 km) across the southern shore of Long Island in Suffolk County, New York, in the United States. It extends from the Nassau County line in Amityville, where it connects to Merrick Road, to Montauk Point State Park at the very eastern end of Long Island in Montauk. The highway is known by several designations along its routing, primarily New York State Route 27A (NY 27A) from the county line to Oakdale and NY 27 east of Southampton. The portion of Montauk Highway between Oakdale and Southampton is mostly county-maintained as County Route 80 and County Route 85 (CR 80 and CR 85, respectively).)
+"Copiague Harbor, New York" (Copiague Harbor is an incorporated community in the hamlet of Copiague.  It is located south of Merrick Road (or Montauk Highway), off of South Great Neck Road in Suffolk County, New York, USA, on the South Shore of Long Island.  It is sometimes referred to as Great Neck Landing; )
+
+Question: What is an incorporated community in the hamlet of Copiague located south of an east–west road extending for 95 mi across the southern shore of Long Island in Suffolk County, New York, sometimes referred to as?
+Answer: Great Neck Landing
+
+
+Passages: 
+"Sherman's March to the Sea" (Sherman's March to the Sea (also known as the Savannah Campaign) was a military campaign of the American Civil War conducted through Georgia from November 15 until December 21, 1864, by Maj. Gen. William Tecumseh Sherman of the Union Army. The campaign began with Sherman's troops leaving the captured city of Atlanta on November 15 and ended with the capture of the port of Savannah on December 21. His forces followed a "scorched earth" policy, destroying military targets as well as industry, infrastructure, and civilian property and disrupting the Confederacy's economy and its transportation networks. The operation broke the back of the Confederacy and helped lead to its eventual surrender. Sherman's bold move of operating deep within enemy territory and without supply lines is considered to be one of the major achievements of the war.)
+
+Question: union general that marched from atlanta to savannah
+Answer: Maj. Gen. William Tecumseh Sherman
+
+
+Passages: 
+"Lawrence of Arabia (film)" (Lawrence of Arabia is a 1962 epic historical drama film based on the life of T. E. Lawrence. It was directed by David Lean and produced by Sam Spiegel through his British company Horizon Pictures, with the screenplay by Robert Bolt and Michael Wilson. The film stars Peter O'Toole in the title role. It is widely considered one of the greatest and most influential films in the history of cinema. The dramatic score by Maurice Jarre and the Super Panavision 70 cinematography by Freddie Young are also highly acclaimed.)
+"T. E. Lawrence" (Thomas Edward Lawrence, CB, DSO (16 August 1888 – 19 May 1935) was a British archaeologist, military officer, diplomat, and writer. He was renowned for his liaison role during the Sinai and Palestine Campaign and the Arab Revolt against the Ottoman Empire during the First World War. The breadth and variety of his activities and associations, and his ability to describe them vividly in writing, earned him international fame as Lawrence of Arabia—a title used for the 1962 film based on his wartime activities.)
+
+Question: homas Edward Lawrence, was a British archaeologist, military officer, diplomat, and writer, the breadth and variety of his activities and associations, and his ability to describe them vividly in writing, earned him international fame as Lawrence of Arabia, the film was released in which year?
+Answer: 1962
+
+
+Passages: 
+"To Kill a Mockingbird" (After the "Watchman" title was rejected, it was re-titled Atticus but Lee renamed it To Kill a Mockingbird to reflect that the story went beyond a character portrait. The book was published on July 11, 1960. The editorial team at Lippincott warned Lee that she would probably sell only several thousand copies. In 1964, Lee recalled her hopes for the book when she said, "I never expected any sort of success with 'Mockingbird.' ... I was hoping for a quick and merciful death at the hands of the reviewers but, at the same time, I sort of hoped someone would like it enough to give me encouragement. Public encouragement. I hoped for a little, as I said, but I got rather a whole lot, and in some ways this was just about as frightening as the quick, merciful death I'd expected." Instead of a "quick and merciful death", Reader's Digest Condensed Books chose the book for reprinting in part, which gave it a wide readership immediately. Since the original publication, the book has never been out of print.)
+
+Question: when was the book to kill a mockingbird published
+Answer: on July 11, 1960
+
+
+Passages: 
+"Hudson's Bay Company" (On 16 July 2008, the company was sold to NRDC Equity Partners, a private equity firm based in Purchase, New York, which already owned Lord & Taylor, the oldest luxury department store chain in the United States. The Canadian and U.S. holdings were transferred to NRDC Equity Partners' holding company, Hudson's Bay Trading Company, as of fall 2008.)
+
+Question: is the hudson bay company the oldest company
+Answer: no
+
+
+Passages: 
+"Hudson Bay" (Hudson Bay (Inuktitut: Kangiqsualuk ilua, French: baie d'Hudson) (sometimes called Hudson's Bay, usually historically) is a large body of saltwater in northeastern Canada with a surface area of 1,230,000 km2 (470,000 sq mi). It drains a very large area, about 3,861,400 km2 (1,490,900 sq mi), that includes parts of southeastern Nunavut, Saskatchewan, Alberta, most of Manitoba, Ontario, Quebec and parts of North Dakota, South Dakota, Minnesota, and Montana. Hudson Bay's southern arm is called James Bay.)
+
+Question: is hudson bay fresh water or salt water
+Answer: saltwater
+
+
+Passages: 
+"List of current Premier League and English Football League managers" (There are 92 association football teams in the top four tiers of English football, all of which have a manager, or pair of joint managers, sometimes given the alternative title of head coach. The Premier League and Football Leagues are the only fully professional football leagues in England. The Premier League consists of 20 clubs at the top of the English football league system. The remaining 72 clubs are split into the three divisions of the Football League: the Championship, League One, and League Two.)
+
+Question: are there any english managers in the premier league
+Answer: yes
+
+
+Passages: 
+"Dele Alli" (Bamidele Jermaine Alli (born 11 April 1996) is an English professional footballer who plays as a midfielder for Premier League club Tottenham Hotspur and the England national team.)
+"PFA Young Player of the Year" (The Professional Footballers' Association Young Player of the Year (often called the PFA Young Player of the Year, or simply the Young Player of the Year) is an annual award given to the player aged 23 or under at the start of the season who is adjudged to have been the best of the season in English football. The award has been presented since the 1973–74 season and the winner is chosen by a vote amongst the members of the players' trade union, the Professional Footballers' Association (PFA). The first winner of the award was Ipswich Town defender Kevin Beattie.  The current holder is Dele Alli, who won the award for his performances throughout the 2016–17 campaign for Tottenham Hotspur.)
+
+Question: The Professional Footballers' Association Young Player of the Year, is an annual award given to the player aged 23 or under at the start of the season who is adjudged to have been the best of the season in English football, the current holder is which English professional footballer who plays as a midfielder for Premier League club Tottenham Hotspur and the England national team, known commonly as?
+Answer: Dele Alli
+
+
+Passages: 
+"Goal-line technology" (The Football Association announced that Hawk-Eye would be used in the 2013–14 Premier League season. On 16 December 2013, it was announced that Hawk-Eye would be used in three of the four quarter-finals and any subsequent matches in the League Cup. The system was used when, on the very next day, in the Sunderland – Chelsea quarter-final, a goal from Frank Lampard was allowed. The first goal to be decisively awarded using goal-line technology in the English Premier League was Edin Džeko's goal for Manchester City against Cardiff City on 18 January 2014.)
+
+Question: when was goal line technology first introduced in the premier league
+Answer: the 2013–14 Premier League season
+
+
+Passages: 
+"Vicia faba" (Vicia faba, also known as the broad bean, fava bean, faba bean, field bean, bell bean, or tic bean, is a species of flowering plant in the pea and bean family Fabaceae. It is of uncertain origin and widely cultivated as a crop. Horse bean, Vicia faba var. equina Pers., is a variety recognized as an accepted name.)
+
+Question: are fava beans and broad beans the same thing
+Answer: yes
+
+
+Passages: 
+"Dana Fox" (Dana Fox (born July 16, 1976) is an American screenwriter best known as the writer of The Wedding Date (2005), What Happens in Vegas (2008) and the television comedy series Ben and Kate.)
+"The Wedding Date" (The Wedding Date is a 2005 American romantic comedy film directed by Clare Kilner and starring Debra Messing, Dermot Mulroney, and Amy Adams. Based on the novel Asking for Trouble by Elizabeth Young, the film is about a single woman who hires a male escort to pose as her boyfriend at her sister's wedding in order to dupe her ex-fiancé, who dumped her a few years prior. The release was successful, achieving $47 million worldwide at the box office against a budget of $15 million, despite being panned by critics. It was remade in Bollywood as Aap Ki Khatir which also performed well at box office.)
+
+Question: Name the 2005 romantic comedy written by the writer of "What Happens In Vegas" and based on a novel by Elizabeth Young titled "Asking For Trouble".
+Answer: The Wedding Date
+
+
+Passages: 
+"Wampanoag" (Traditionally Wampanoag people have been semi-sedentary, with seasonal movements between fixed sites in present-day southern New England. The men often traveled far north and south along the Eastern seaboard for seasonal fishing expeditions, and sometimes stayed in those distant locations for weeks and months at a time. The women cultivated varieties of the "three sisters" (the intercropping of maize, climbing beans, and squash) as the staples of their diet, supplemented by fish and game caught by the men. Each community had authority over a well-defined territory from which the people derived their livelihood through a seasonal round of fishing, planting, harvesting, and hunting. Because southern New England was thickly populated by indigenous peoples, hunting grounds had strictly defined boundaries.)
+
+Question: corn beans and squash the three most important crops of the wampanoag were also known as
+Answer: three sisters
+
+
+Passages: 
+"Patrik Laine" (Patrik Laine (Finnish pronunciation: [ˈlɑine]; born 19 April 1998 in Tampere, Finland) is a Finnish professional ice hockey winger who currently plays for the Winnipeg Jets in the National Hockey League (NHL). Laine formerly played in his native Finland with Tappara in the Finnish Liiga before he was taken with the second overall pick in the 2016 NHL Entry Draft by the Jets.)
+"2016 NHL Entry Draft" (The 2016 NHL Entry Draft was the 54th NHL Entry Draft. The draft was held from June 24–25, 2016 at the First Niagara Center in Buffalo, New York. The first three selections were Auston Matthews, Patrik Laine and Pierre-Luc Dubois.)
+
+Question: In the 2016 NHL Entry Draft, the second overall pick was selected by which team?
+Answer: Winnipeg Jets
+
+
+Passages: 
+"List of Philadelphia Flyers seasons" (The Flyers were founded in 1967 and won consecutive Stanley Cup championships in 1974 and 1975, the first expansion team to do so. The team has since lost in six return trips to the Stanley Cup Finals in 1976, 1980, 1985, 1987, 1997 and 2010. The Flyers have never won the Presidents' Trophy, although they led the NHL in regular-season points in 1974–75, 1979–80 and 1984–85, before the league began awarding the trophy. The Flyers last qualified for the playoffs in 2015–16; their most recent playoff series victory was the 2012 Eastern Conference Quarterfinals.)
+
+Question: when was the last time the philadelphia flyers won the stanley cup
+Answer: 1975
+
+
+Passages: 
+"Cross Sound Ferry" (Cross Sound Ferry is a passenger and road vehicle ferry service operating between New London, Connecticut and Orient, Long Island, New York. The service is privately owned and operated by Cross Sound Ferry Services, headquartered in New London.)
+"New York State Route 25" (New York State Route 25 (NY 25) is an east–west state highway in downstate New York in the United States. The route extends for just over 105 miles (169 km) from east midtown Manhattan in New York City to the Cross Sound Ferry terminal at Orient Point on the end of Long Island's North Fork. NY 25 is carried from Manhattan to Queens by way of the double-decked Queensboro Bridge over the East River.)
+
+Question: New York State Route 25 (NY 25) is an east–west state highway in downstate region of New York, the route extends for just over 105 mi from east midtown Manhattan in New York City to the Cross Sound Ferry, a passenger and road vehicle ferry service, and are located in which country?
+Answer: United States
+
+
+Passages: 
+"History of sociology" (Herbert Spencer (1820–1903), the English philosopher, was one of the most popular and influential 19th-century sociologists. The early sociology of Spencer came about broadly as a reaction to Comte and Marx; writing before and after the Darwinian revolution in biology, Spencer attempted to reformulate the discipline in what we might now describe as socially Darwinistic terms. In fact, his early writings show a coherent theory of general evolution several years before Darwin published anything on the subject. Encouraged by his friend and follower Edward L. Youmans, Spencer published The Study of Sociology in 1874, which was the first book with the term "sociology" in the title. In the 1900 edition of the journal International Monthly, Franklin H. Giddings (1855–1931), the first professor of sociology at Columbia University, described it as the book that "first awakened in England, America, France, Italy and Russia a wide interest general interest" in the then fledgling discipline of sociology. In the United States, Charles Horton Cooley, stated in a 1920 article that The Study of Sociology "probably did more to arouse interest in the subject than any other publication before or since." It is estimated that he sold one million books in his lifetime, far more than any other sociologist at the time. So strong was his influence that many other 19th century thinkers, including Émile Durkheim, defined their ideas in relation to his. Durkheim’s Division of Labour in Society is to a large extent an extended debate with Spencer from whose sociology Durkheim borrowed extensively. Also a notable biologist, Spencer coined the term "survival of the fittest" as a basic mechanism by which more effective socio-cultural forms progressed. Whilst many intellectuals of his day were proponents of socialism as a scientifically informed manner of steering society, Spencer was a critic of socialism and an advocate for a laissez-faire style of government. His ideas were highly observed by conservative political circles, especially in the United States and England. Although Spencer's work is rarely discussed in contemporary sociological theory, his work has been adapted and changed, and resurfaces in various contemporary forms.)
+
+Question: when did sociology first took root in the united states
+Answer: 1874
+
+
+Passages: 
+"Vinnie Jones" (Vincent Peter "Vinnie" Jones (born 5 January 1965) is a British actor and former professional footballer  who played as a Midfielder from 1984 to 1999 notably for Wimbledon,  Leeds United, Sheffield United, Chelsea and Wales.)
+"The Condemned" (The Condemned is a 2007 American action film written and directed by Scott Wiper. The film stars Steve Austin, Vinnie Jones, Robert Mammone, Tory Mussett, Madeleine West and Rick Hoffman.)
+
+Question: The Condemned is a 2007 American action film written and directed by Scott Wiper, the film stars Vincent Peter "Vinnie" Jones, a British actor and former professional footballer who played as a midfielder from 1984 to 1999 notably for Wimbledon, Leeds United, Sheffield United, Chelsea and Wales, born on which date?
+Answer: 5 January 1965
+
+
+Passages: 
+"Luka Modrić" (Born in Zadar, Modrić's childhood coincided with the Croatian War of Independence which displaced his family. In 2002, he was signed by Dinamo Zagreb at age 16, after showing promise with his hometown club's youth team. He continued his development in Zagreb before spells on loan to Zrinjski Mostar and Inter Zaprešić. He made his debut for Dinamo in 2005 and won three consecutive league titles and domestic cups, being named the Prva HNL Player of the Year in 2007. In 2008, he moved to Premier League club Tottenham Hotspur for a club-record transfer fee of £16.5 million, where he led Spurs to their first UEFA Champions League appearance in almost 50 years, reaching the quarter-finals of the 2010–11 tournament.)
+
+Question: who did modric play for in the premier league
+Answer: Tottenham Hotspur
+
+
+Passages: 
+"Meg Griffin" (Meg made her first appearance on television when Family Guy debuted on Fox on January 31, 1999, with the episode "Death Has a Shadow". Originally voiced by Lacey Chabert during the first season, she has been voiced by Mila Kunis since season 2, although Chabert returned to voice Meg in Yug Ylimaf and Back to the Pilot.)
+
+Question: who played meg on family guy in 1999
+Answer: Lacey Chabert
+
+
+Passages: 
+"Samuel Kuffour" (Samuel Osei Kuffour (born 3 September 1976) is a Ghanaian retired professional footballer who played as a defender.)
+"2001 Intercontinental Cup" (The 2001 Intercontinental Cup was a football match played on 27 November 2001 between Bayern Munich, winners of the 2000–01 UEFA Champions League, and defending champions Boca Juniors, winners of the 2001 Copa Libertadores. The match was played at the neutral venue of the National Stadium in Tokyo in front of 51,360 fans. Samuel Kuffour was named as man of the match.)
+
+Question: Famed Ghanaian footballer Samuel Kuffour was named "man of the match" at an Intercontinental Cup played at this stadium.
+Answer: National Stadium
+
+
+Passages: 
+"Pontiac Silverdome" (The Pontiac Silverdome, formerly known as the  Silverdome, is a stadium in Pontiac, Michigan, United States, which is a suburb of Detroit. It opened in 1975 and sits on 127 acres (51 ha) of land. When the stadium opened, it featured a fiberglass fabric roof held up by air pressure, the first use of the technique in a major athletic facility. The roof has since been destroyed. With a seating capacity of 82,000, it was the largest stadium in the National Football League (NFL) until FedExField (91,000 capacity) in suburban Washington, D.C., opened in 1997.)
+"2012 American Ultimate Disc League season" (The 2012 American Ultimate Disc League season was the first season for the league. Each team was scheduled to play a 16-game schedule. The Philadelphia Spinners won the AUDL Championship over the Indianapolis AlleyCats at the Pontiac Silverdome. After the season all but three teams (Detroit Mechanix, Indianapolis AlleyCats, and the Bluegrass Revolution) left or folded.)
+
+Question:  The Philadelphia Spinners won the AUDL Championship over the Indianapolis AlleyCats at a stadium located in which US state ?
+Answer: Michigan
+
+
+Passages: 
+"Lata Sabharwal" (Lata Sabharwal Seth (born 4th December 1975) is an Indian film and TV actress, who also worked in Bollywood films. She has played supporting role in Bollywood films like Vivah and Ishq Vishq. Lata is best known for her current role Rajshri eri Maheshwari in Star Plus' Yeh Rishta Kya Kehlata Hai, that is ranked at #1 among Best Shows of the channel.)
+"Vivah" (Vivah ([Marriage] error: {{lang-xx}}: text has italic markup (help)) is a 2006 Indian romantic drama film, written and directed by Sooraj R. Barjatya. Starring Amrita Rao and Shahid Kapoor, it was produced and distributed by Rajshri Productions. Vivah tells the story of two individuals, and relates their journey from engagement to marriage and aftermath.)
+
+Question: In what 2006 Indian romantic drama film did Lata Sabharwal play a supporting role?
+Answer: Vivah
+
+
+Passages: 
+"Ring My Bell" ("Ring My Bell" is a 1979 disco song written by Frederick Knight. The song was originally written for then eleven-year-old Stacy Lattisaw, as a teenybopper song about kids talking on the telephone. When Lattisaw signed with a different label, Anita Ward was asked to sing it instead, and it became her only major hit.)
+
+Question: when did the song you can ring my bell come out
+Answer: 1979
+
+
+Passages: 
+"Ninety Years Without Slumbering" ("Ninety Years Without Slumbering" is episode 132 of the American television anthology series The Twilight Zone. The title comes from the lyrics of the song "My Grandfather's Clock", which is sung or played throughout the episode as a recurring motif. As in the song, main character Sam Forstmann (played by Ed Wynn) believes his life is tied to his clock's ticking.)
+"Ed Wynn" (Isaiah Edwin Leopold (November 9, 1886 – June 19, 1966), better known as Ed Wynn, was an American actor and comedian noted for his Perfect Fool comedy character, his pioneering radio show of the 1930s, and his later career as a dramatic actor.)
+
+Question: Which American television series stars, as its main character, the American Actor and Comedian noted for his "Perfect Fool" comedy character?
+Answer: The Twilight Zone
+
+
+Passages: 
+"The Magnificent Seven" (The Magnificent Seven is a 1960 American Western film directed by John Sturges and starring Yul Brynner, Eli Wallach, Horst Buchholz, James Coburn, Brad Dexter, Steve McQueen, Robert Vaughn, and Charles Bronson. The film is an Old West-style remake of Akira Kurosawa's 1954 Japanese film Seven Samurai. Brynner, McQueen, Buchholz, Bronson, Vaughn, Coburn, and Dexter portray the title characters, a group of seven gunfighters hired to protect a small village in Mexico from a group of marauding bandits and their leader (Wallach). The film's musical score was composed by Elmer Bernstein. In 2013, the film was selected for preservation in the United States National Film Registry by the Library of Congress as being "culturally, historically, or aesthetically significant".)
+
+Question: when did the movie magnificent seven come out
+Answer: 1960
+
+
+Passages: 
+"Ugo Ehiogu" (Ugochuku Ehiogu (/ˈɛhiɒɡ/; 3 November 1972 – 21 April 2017) was an English professional footballer who played as a centre back from 1989 to 2009. He was the coach of the Tottenham Hotspur U23 team until his death in April 2017.)
+"Dirty Hit" (Dirty Hit is a British record label, formed in 2009. The label was set up by Jamie Oborne, Brian Smith, and former England footballer, Ugo Ehiogu. Dirty Hit is distributed by Universal Music Group. It is  based in West London, England. )
+
+Question: Dirty Hit is a British record label, formed in 2009, the label was set up by Jamie Oborne, Brian Smith, and former English professional footballer who played as a centre back from 1989 to 2009, Ugochuku Ehiogu, was the coach of which team until his death in April 2017?
+Answer: Tottenham Hotspur U23
+
+
+Passages: 
+"The Legend of Tarzan (film)" (The Legend of Tarzan is a 2016 American adventure film based on the fictional character created by Edgar Rice Burroughs. Directed by David Yates, with a screenplay by Adam Cozad and Craig Brewer, the film stars Alexander Skarsgård as the title character, with Samuel L. Jackson, Margot Robbie, Djimon Hounsou, Jim Broadbent and Christoph Waltz in supporting roles. Principal photography began on June 21, 2014, at Warner Bros. Leavesden Studios in the United Kingdom, and wrapped four months later on October 3.)
+"Warner Bros. Studios, Leavesden" (Warner Bros. Studios, Leavesden is an 80-hectare studio complex in Leavesden in Hertfordshire, in southeast England. Formerly known as Leavesden Film Studios and still colloquially known Leavesden Studios or simply Leavesden, it is a film and media complex owned by Warner Bros. The studios and backlot were all retrofitted as the site's original purpose was as an aircraft factory and airfield called Leavesden Aerodrome, a centre of British aircraft production during World War II. It is situated in Abbots Langley, near Watford, in southwest Hertfordshire.)
+
+Question: What former aircraft factory and airfield was used to film the 2016 movie The Legend of Tarzan?
+Answer: Leavesden Studios
+
+
+Passages: 
+"The Legend of Tarzan (film)" (The Legend of Tarzan is a 2016 American adventure film based on the fictional character created by Edgar Rice Burroughs. Directed by David Yates, with a screenplay by Adam Cozad and Craig Brewer, the film stars Alexander Skarsgård as the title character, with Samuel L. Jackson, Margot Robbie, Djimon Hounsou, Jim Broadbent and Christoph Waltz in supporting roles. Principal photography began on June 21, 2014, at Warner Bros. Leavesden Studios in the United Kingdom, and wrapped four months later on October 3.)
+
+Question: who plays tarzan in the legend of tarzan
+Answer: Alexander Skarsgård
+
+
+Passages: 
+"Friuli-Venezia Giulia" (Friuli-Venezia Giulia ([friˈuːli veˈnɛttsja ˈdʒuːlja];[a] Friulian: Friûl–Vignesie Julie, Slovene: Furlanija–Julijska krajina, German: Friaul–Julisch Venetien) is one of the 20 regions of Italy, and one of five autonomous regions with special statute. The regional capital is Trieste. Note that Venezia, i.e. Venice, is not in this region, despite the name.)
+
+Question: a port in north east italy the capital of the friuli-venezia giulia region
+Answer: Trieste
+
+
+Passages: 
+"Tricia Dickson" (Tricia Dickson (born January 3, 1982) is an American voice actress. For a brief time, she was also a cast member of the Nickelodeon sketch comedy series, All That (where she replaced Katrina Johnson and was later fired and replaced by Danny Tamberelli, and Leon Frierson in 1997).)
+"Danny Tamberelli" (Daniel Paul "Danny" Tamberelli (born February 8, 1982) is an American actor, comedian and musician. He is best known for his roles as Arnold Perlstein in The Magic School Bus, Little Pete in The Adventures of Pete and Pete and Jimmy De Santa in Grand Theft Auto V.)
+
+Question: Tricia Dickson and Danny Tamberelli are both veterans of Nickelodeon sketch comedy series "All That" and were both born in what year?
+Answer: 1982
+
+
+Passages: 
+"Rafael Nadal" (Rafael "Rafa" Nadal Parera (Catalan: [rəfəˈɛɫ nəˈðaɫ pəˈɾeɾə], Spanish: [rafaˈel naˈðal paˈɾeɾa]; born 3 June 1986) is a Spanish professional tennis player, currently ranked world No. 1 in men's singles. Known as "The King of Clay",[a] he is widely regarded as the greatest clay-court player in history.[b] His evolution into an all-court threat has established him as one of the greatest tennis players ever.[c])
+"Bartolomé Salvá Vidal" (Bartolomé "Tomeu" Salvá Vidal (born November 20, 1986 in Majorca, Balearic Islands) is a Spanish tennis player. While he plays singles, he is also a doubles player, who partners with friend Rafael Nadal. In 2007 at the Open Seat Open in Barcelona, Spain, Salvá and Nadal made it to the final (on red clay, the surface that Nadal excels on), defeating Jonathan Erlich and Andy Ram (both ranked 13) and Mark Knowles and Daniel Nestor (both ranked fifth) in straight sets on both occasions. They made it to the finals, but Alexander Waske and Andrei Pavel defeated them 6–3, 7–6 (1).)
+
+Question: Bartolomé "Tomeu" Salvá Vidal, is a Spanish tennis player, while he plays singles, he is also a doubles player, who partners with Rafael Nadal, a Spanish professional tennis player, currently ranked World No. what in men's singles?
+Answer: 1
+
+
+Passages: 
+"Tennis Masters Series records and statistics" (Ivan Lendl and Novak Djokovic are the only players to win all nine events during their careers. However, since the creation of the "Masters 1000" in 2009, Novak Djokovic is the only player to claim all nine ATP Masters 1000 events. Winning all nine events during a career has been called a "Career 'Golden Masters'". Rafael Nadal has won the most number of ATP Masters 1000 singles titles. He has won 33 titles to date. Bob Bryan and Mike Bryan have won the most doubles titles of all-time with 38.)
+
+Question: who has won the most tennis masters titles
+Answer: Rafael Nadal
+
+
+Passages: 
+"Bolshoi Theatre" (The Bolshoi Theatre (Russian: Большо́й теа́тр, tr. Bol'shoy Teatr, Big Theatre, IPA: [bɐlʲˈʂoj tʲɪˈatər]) is a historic theatre in Moscow, Russia, designed by architect Joseph Bové, which holds ballet and opera performances. Before the October Revolution it was a part of the Imperial Theatres of the Russian Empire along with Maly Theatre (Small Theatre) in Moscow and a few theatres in Saint Petersburg (Hermitage Theatre, Bolshoi (Kamenny) Theatre, later Mariinsky Theatre and others).)
+"Boris Gusman" (Boris Yevseyevich Gusman (1892–1944) was a Soviet author, screenplay writer, theater director, and columnist for Pravda. As deputy director for the Bolshoi Theatre and later director of the Soviet Radio Committee Arts Division, Gusman played an important role in promoting Sergei Prokofiev's music in the USSR and internationally. Gusman was arrested during the Great Purges of the late 1930s, and died in a labor camp in 1944.)
+
+Question: What  historic theatre in Moscow, Russia, designed by architect Joseph Bové, who's deputy director was a Soviet author, screenplay writer, theater director, and columnist for "Pravda"?
+Answer: Bolshoi Theatre
+
+
+Passages: 
+"Moscow" (Moscow (/ˈmɒskoʊ/ or /ˈmɒskaʊ/; Russian: Москва́, tr. Moskva, IPA: [mɐˈskva] ( listen)) is the capital and most populous city of Russia, with 12.2 million residents within the city limits and 17.1 million within the urban area. Moscow has the status of a Russian federal city.)
+
+Question: moscow is the capital city of which country
+Answer: Russia
+
+
+Passages: 
+"Cowardly Lion" (The Cowardly Lion makes his first appearance in the book The Wonderful Wizard of Oz. He is the last of the companions Dorothy befriends on her way to the Emerald City where he ambushes her, Toto, Scarecrow, and Tin Woodman. When he tries to bite Toto, Dorothy slaps him for trying to attack Toto where she discovers that the Lion is actually a coward which he admits that he is. The Cowardly Lion joins her so that he can ask The Wizard for courage, being ashamed that, in his cultural role as the King of the Beasts, he is not indeed brave. Despite outward evidence that he is unreasonably fearful, The Cowardly Lion displays great bravery along the way. During the journey, he leaps across a chasm on the road of yellow brick multiple times, each time with a companion on his back, and the leap back to get the next one. When they come into another, wider chasm, the Cowardly Lion holds off two Kalidahs while the Tin Woodman cuts a tall tree to cross it. In spite of his fears, he still goes off to hunt for his food, and he even offers to kill a deer for Dorothy to eat, but the idea makes her uncomfortable.)
+
+Question: in the wizard of oz what was the lion lacking
+Answer: courage
+
+
+Passages: 
+"Frank Fetter" (Frank Albert Fetter (/ˈfɛtər/; March 8, 1863 – March 21, 1949) was an American economist of the Austrian School. Fetter's treatise, The Principles of Economics, contributed to an increased American interest in the Austrian School, including the theories of Eugen von Böhm-Bawerk, Friedrich von Wieser, Ludwig von Mises and Friedrich Hayek.)
+"Friedrich Hayek" (Friedrich Hayek, CH (/ˈhaɪək/; German: [ˈfʁiːdʁɪç ˈaʊ̯ɡʊst ˈhaɪɛk]; 8 May 1899 – 23 March 1992), born in Austria-Hungary as Friedrich August von Hayek and frequently referred to as F. A. Hayek, was an Austrian-British economist and philosopher best known for his defense of classical liberalism. Hayek shared the 1974 Nobel Memorial Prize in Economic Sciences with Gunnar Myrdal for his "pioneering work in the theory of money and economic fluctuations and ... penetrating analysis of the interdependence of economic, social and institutional phenomena".)
+
+Question: Frank Albert Fetter, was an American economist of the Austrian School, Fetter's treatise, "The Principles of Economics", contributed to an increased American interest in the Austrian School, including the theories of Friedrich Hayek, was an Austrian-British economist and philosopher best known for his defense, of classical what?
+Answer: liberalism
+
+
+Passages: 
+"Jazz of the City Atlanta portrait" (The Jazz of the City Atlanta is an historic, color portrait of over 100 jazz musicians surrounding Mayor Shirley Franklin created in the Atlanta City Hall Atrium. Similar to the iconic, black and white, jazz portrait A Great Day in Harlem taken by Art Kane in 1958 — THE JAZZ OF THE CITY ATLANTA 2007 photograph marked a great day in Atlanta jazz history and the 30th anniversary of the Atlanta Jazz Festival.)
+"Shirley Franklin" (Shirley Clarke Franklin (born May 10, 1945) is an American politician, a member of the Democratic Party who served as the 58th mayor of Atlanta, Georgia, from 2002 to 2010. She currently serves as a member on the board of directors for both Delta Air Lines and Mueller Water Products.)
+
+Question: Which mayor featured in The Jazz of the City Atlanta currently serves as a member of the board of directors for Delta Air Lines?
+Answer: Shirley Franklin
+
+
+Passages: 
+"New Delhi" (New Delhi (/ˌnjuː ˈdɛli/ ( listen)) is the capital of India and one of Delhi city's 11 districts. Although colloquially Delhi and New Delhi are used interchangeably to refer to the National Capital Territory of Delhi, these are two distinct entities, with New Delhi forming a small part of Delhi. The National Capital Region is a much larger entity comprising the entire National Capital Territory of Delhi along with adjoining districts. It is surrounded by Haryana on three sides and Uttar Pradesh on the east.)
+
+Question: what is the name of capital city of india
+Answer: New Delhi
+
+
+Passages: 
+"Forgot About Dre" ("Forgot About Dre" is a Grammy Award-winning single from rapper Dr. Dre's 2001, featuring vocals from rapper Eminem. The track reached No. 25 on the Billboard Hot 100, No. 14 on the U.S. R&B chart, No. 32 on the U.S. Pop chart, and No. 7 on the UK Singles Chart. Released as the album's second single on January 29, 2000, like "Still D.R.E.", the song addresses Dre's critics in a defiant manner, as Dre announces his return to the hip-hop scene and reminds listeners of his significant influence on the genre. "Forgot About Dre" won Best Rap Performance by a Duo or Group at the 2001 Grammy Awards.)
+"Still D.R.E." ("Still D.R.E." is a song by American rapper Dr. Dre, featuring fellow American rapper Snoop Dogg. It was released on October 13, 1999 as the lead single from Dre's multi-platinum second studio album, 2001 (1999). )
+
+Question: Which artist collaborated with the artist who recorded "Forgot About Dre"?
+Answer: Snoop Dogg
+
+
+Passages: 
+"Indo-Pakistani War of 1971" (The Indian government repeatedly appealed to the international community, but failing to elicit any response despite the External Affairs minister Swaran Singh meeting with foreign ministers of other countries. Prime Minister Indira Gandhi on 27 March 1971 expressed full support of her government for the independence struggle of the people of East Pakistan and concluded that instead of taking in millions of refugees, it was economical to go to war against Pakistan. On 28 April 1971, the Gandhi cabinet had ordered the Chief of the Army Staff General Sam Manekshaw to "Go into East Pakistan". Defected East Pakistan military's officers and the elements of Indian Research and Analysis Wing (RAW) immediately started using the Indian refugee camps for recruitment and training of Mukti Bahini guerrillas that were to be trained against Pakistan. In 1971, there was a strong wave of Indian-supported Bangladeshi nationalism in the East. The situation became violent and the systematic targeted killings of unarmed multi-ethic Pakistanis living in East started.:164 Vehicle bombings on government secretariats became a normal narrative in east with high-profile assassinations of number of those Bengali politicians who were loyal to Pakistan became common in the East.:164 According to Jussi Hanhimäki, Finnish historian of terrorism, the Bengali terrorism in East is somewhat "a forgotten episode of annals of terrorism.":164 The Hamoodur Rahman Commission endorsed the claims of Bengali terrorism when it critically penned that the ill-treatment of families of multi-ethnic Pakistanis led to the Pakistani military soldiers reacted violently in order to restore the writ of the government.)
+
+Question: who was heading the indian army during bangladesh war of 1971
+Answer: General Sam Manekshaw
+
+
+Passages: 
+"2008 UAW-Dodge 400" (The 2008 UAW-Dodge 400 was the third stock car race of the 2008 NASCAR Sprint Cup Series. It was held on March 2, 2008, before a crowd of 153,000 in Las Vegas, Nevada, at Las Vegas Motor Speedway, one of ten intermediate tracks to hold NASCAR races. The 267-lap race was won by Carl Edwards of the Roush Fenway Racing team who started from second position. Dale Earnhardt Jr. finished second and Edwards' teammate Greg Biffle came in third.)
+"Carl Edwards" (Carl Michael Edwards II (born August 15, 1979) is a retired American professional stock car racing driver. He competed in the NASCAR Sprint Cup Series, driving the No. 19 Toyota Camry for Joe Gibbs Racing. Prior to that, he drove the No. 99 Ford Fusion for Roush Fenway Racing. He won the 2007 NASCAR Busch Series championship and nearly won the 2011 NASCAR Sprint Cup Series title, but lost by a tiebreaker to Tony Stewart. Edwards is well known for doing a backflip off of his car to celebrate a victory, which was a result of saving himself from a potential fall when he had his first win.)
+
+Question: What is the year of the event which occured first, the UAW Dodge 400 was the third stock car race of the NASCAR Spring Cup Series, or Carl Edwards II was born?
+Answer: 1979
+
+
+Passages: 
+"2017 Daytona 500" (The 2017 Daytona 500, the 59th running of the event, was held on February 26, 2017, and was won by Kurt Busch. This was Busch's 1st Daytona 500 win. Ryan Blaney finished 2nd, and A. J. Allmendinger finished 3rd. This race was contested for 200 laps on the 2.5-mile (4.0 km) asphalt superspeedway. It was the first race of the 2017 Monster Energy NASCAR Cup Series season, and also marked the 1st race for Monster Energy as the new title sponsor for NASCAR's top series, replacing Sprint. Jeffrey Earnhardt made NASCAR history when he became the 1st ever 4th generation driver to compete in the Daytona 500.)
+
+Question: who won the daytona 500 last year 2017
+Answer: Kurt Busch
+
+
+Passages: 
+"Rockefeller Center Christmas Tree" (The Rockefeller Center Christmas Tree is a large Christmas tree placed annually in Rockefeller Center, in Midtown Manhattan. The tree is erected in mid November and lit in a public ceremony in late November or early December. Since 1997, the lighting has been broadcast live, to hundreds of millions, on NBC's Christmas in Rockefeller Center telecast on a Wednesday after Thanksgiving. The tree lighting ceremony is aired at the end of every broadcast, following live entertainment and the tree is lit by the current Mayor of New York City and special guests. An estimated 125 million people visit the attraction each year.)
+
+Question: when do they light the new york christmas tree
+Answer: Wednesday after Thanksgiving
+
+
+Passages: 
+"Carol Ferris" (Caroline "Carol" Ferris is a fictional character appearing in the DC Comics Universe. She is one of many characters who has used the name Star Sapphire, and was the long-time love interest of Hal Jordan, the Silver Age Green Lantern. In her role as Star Sapphire, Ferris has been active as both a supervillain and, more recently, as a superhero. Her original design was based on Elizabeth Taylor. In the 2011 feature film Green Lantern, actress Blake Lively plays the role of Ferris. Carol Ferris was ranked 36th in Comics Buyer's Guide's "100 Sexiest Women in Comics" list.)
+
+Question: who played the character of carol ferris in green lantern movie
+Answer: Blake Lively
+
+
+Passages: 
+"Peter Cronan" (Peter Joseph Cronan (born January 13, 1955) is a former American football linebacker in the National Football League (NFL) for the Washington Redskins and the Seattle Seahawks.  He played college football at Boston College. He has been the color commentator on the Boston College radio broadcasts since 1988.  His broadcast partners have included, Gil Santos, Dale Arnold, Dick Lutsk, Sean McDonough, Sean Grande, John Rooke, and his current partner Jon Meterparel.)
+"Sean McDonough" (Sean McDonough (born May 13, 1962) is an American sportscaster, currently employed by ESPN.)
+
+Question: By whom is employed now Sean McDonough who used to be a broadcaster partner of Peter Joseph Cronan, a former American football linebacker in the National Football League (NFL) for the Washington Redskins and the Seattle Seahawks?
+Answer: ESPN
+
+
+Passages: 
+"Here, There and Everywhere" ("Here, There and Everywhere" is a song written by Paul McCartney (credited to Lennon–McCartney), released on the Beatles' 1966 album Revolver. McCartney includes it among his personal favourites of all the songs he has written. The composition has received similar praise from the Beatles' producer George Martin, and McCartney's former bandmate John Lennon. In 2000, Mojo ranked it 4th in the magazine's list of the greatest songs of all time.)
+
+Question: who sings lead on here there and everywhere
+Answer: the Beatles
+
+
+Passages: 
+"Michael Olowokandi" (Michael Olowokandi (born 3 April 1975) is a retired professional basketball player. Born in Nigeria and raised in London he attended college on a basketball scholarship at University of the Pacific in Stockton, California, and was the number one pick in the 1998 NBA draft, where he was selected as a center by the Los Angeles Clippers. He played professionally until 2007.)
+"1998 NBA draft" (The 1998 NBA draft took place on June 24, 1998, at General Motors Place in Vancouver, British Columbia, Canada. This draft helped turn around three struggling franchises: the Dallas Mavericks, the Sacramento Kings, and the Toronto Raptors.)
+
+Question: Michael Olowokandi, was a professional basketball player, he was the number one pick on June 24, 1998, by the Los Angeles Clippers, by which draft?  
+Answer: 1998 NBA draft
+
+
+Passages: 
+"2006 Football League Trophy Final" (The 2006 Football League Trophy Final was the 23rd final of the domestic football cup competition for teams from Football Leagues One and Two, the Football League Trophy. The final was played at Millennium Stadium in Cardiff on 2 April 2006. The match was contested between Swansea City and Carlisle United. Swansea City won the match 2–1 with goals from Lee Trundle and Adebayo Akinfenwa.)
+"Adebayo Akinfenwa" (Saheed Adebayo Akinfenwa (born 10 May 1982), known as Adebayo Akinfenwa and nicknamed "The Beast", is an English professional footballer who plays as a striker for Wycombe Wanderers.  He is known for his physical strength and heavy build.)
+
+Question: The 2006 Football League Trophy Final was the 23rd final of the domestic football cup competition for teams from Football Leagues One and Two, the Football League Trophy, Swansea City won the match 2–1 with goals from Lee Trundle and Adebayo Akinfenwa, is an English professional footballer, who plays as a striker for which team?
+Answer: Wycombe Wanderers
+
+
+Passages: 
+"Tampa Bay Lightning" (The Tampa Bay Lightning are a professional ice hockey team based in Tampa, Florida. It is a member of the Atlantic Division of the Eastern Conference of the National Hockey League (NHL). The Lightning have one Stanley Cup championship in their history, in 2003–04. The team is often referred to as the Bolts, and the nickname was used on the former third jerseys. The Lightning plays home games in Amalie Arena in Tampa.)
+
+Question: when did tampa win the stanley cup last
+Answer: 2003–04
+
+
+Passages: 
+"Roque Santa Cruz" (Roque Luis Santa Cruz Cantero (locally [ˈroke ˈlwis santa ˈkɾus kanˈteɾo]; born 16 August 1981) is a Paraguayan footballer who  plays as a striker for Primera División Paraguaya club Olimpia Asunción. Santa Cruz represented Paraguay from 1999 to 2016. He is currently the leading scorer of the Albirroja with 32 goals and is also the sixth Paraguay national team player to reach 100 appearances.)
+"2007–08 Blackburn Rovers F.C. season" (Blackburn Rovers F.C. finished in the top half of the Premier League for the third successive season, this time ending up in 7th place, ultimately not enough for European qualification. Manager Mark Hughes departed for Manchester City at the end of the season, while successful winger David Bentley was sold to Tottenham Hotspur for a club record fee. Striker Roque Santa Cruz, a summer signing from Bayern Munich, had the season of his life, scoring 19 league goals, making up for Benni McCarthy's loss of form. Despite interest for richer clubs, Santa Cruz stayed on for another season.)
+
+Question: What is the nationality of the striker who scored 19 league goals for Blackburn Rovers in the 2007-08 season ?
+Answer: Paraguayan
+
+
+Passages: 
+"1982 European Cup Final" (It represented a huge success in his first season as manager for Tony Barton. He had only taken over as Villa boss before the quarter-finals after the shock resignation of Villa boss Ron Saunders.)
+
+Question: who was manager when aston villa won the european cup
+Answer: Tony Barton
+
+
+Passages: 
+"Manchester United F.C. Reserves and Academy" (Manchester United Football Club Under-23s is the most senior of Manchester United's youth teams and the club's former reserve team. They play in the Premier League 2, the highest tier of the Professional Development League. The team is effectively Manchester United's second-string side, but is limited to three outfield players and one goalkeeper over the age of 23 per game following the introduction of new regulations from the 2016–17 season, an increase from the age of 21 which was introduced in 2012–13.)
+"Alan Fettis" (Alan William Fettis (born 1 February 1971) is a Northern Ireland former professional footballer and Academy goalkeeping coach at Premier League side Manchester United.)
+
+Question: Alan William Fettis born when, is a Northern Ireland former professional footballer and Academy goalkeeping coach at Premier League side Manchester United, Manchester United Football Club Under-23s is the most senior of Manchester United's youth teams and the club's former reserve team?
+Answer: 1 February 1971
+
+
+Passages: 
+"European Cup and UEFA Champions League records and statistics" (A total of 22 clubs have won the tournament since its 1955 inception, with Real Madrid being the only team to win it thirteen times, including the first five. Only two other clubs have reached ten or more finals: Milan and Bayern Munich. A total of 12 clubs have won the tournament multiple times: the three forementioned clubs, along with Liverpool, Ajax, Barcelona, Internazionale, Manchester United, Benfica, Nottingham Forest, Juventus, and Porto. A total of 17 clubs have reached the final without ever managing to win the tournament.)
+
+Question: who's won the european cup the most times
+Answer: Real Madrid
+
+
+Passages: 
+"Three Rivers Stadium" (Three Rivers Stadium was a multi-purpose stadium located in Pittsburgh, Pennsylvania, from 1970 to 2000. It was home to the Pittsburgh Pirates of Major League Baseball (MLB) and the Pittsburgh Steelers of the National Football League (NFL).)
+"1989 Pittsburgh Pirates season" (The 1989 Pittsburgh Pirates season was the 108th season of the Pittsburgh Pirates franchise; the 103rd in the National League. This was their 20th season at Three Rivers Stadium. The Pirates finished fifth in the National League East with a record of 74–88.)
+
+Question: The 1989 Pittsburgh Pirates season was the 108th season of the Pittsburgh Pirates franchise; the 103rd in the National League, it was their 20th season at Three Rivers Stadium, Three Rivers Stadium was a multi-purpose stadium located in Pittsburgh, in which state?
+Answer: Pennsylvania
+
+
+Passages: 
+"Scorpion" (The cephalothorax, also called the prosoma, comprises the carapace, eyes, chelicerae (mouth parts), pedipalps (the pedipalps of scorpions have chelae, commonly called claws or pincers) and four pairs of walking legs. The scorpion's exoskeleton is thick and durable, providing good protection from predators. Scorpions have two eyes on the top of the cephalothorax, and usually two to five pairs of eyes along the front corners of the cephalothorax. While unable to form sharp images, their central eyes are amongst the most light sensitive in the animal kingdom, especially in dim light, and makes it possible for nocturnal species to use star light to navigate at night. Some species also have light receptions in their tail. The position of the eyes on the cephalothorax depends in part on the hardness or softness of the soil upon which they spend their lives.)
+
+Question: are the claws on the scorpion considered to be walking legs
+Answer: no
+
+
+Passages: 
+"Justin Hartley" (Justin Scott Hartley (born January 29, 1977) is an American actor. He is known for his television roles that include Fox Crane on the NBC daytime soap opera Passions (2002–2006), Oliver Queen on The CW's superhero drama series Smallville (2006–2011), and Adam Newman on the CBS daytime soap opera The Young and the Restless (2014–2016) which earned him an Emmy nomination. Hartley appeared in the recurring role of Patrick Osbourne in the third season of the television series Revenge. Since 2016, he has starred in the NBC drama series This Is Us.)
+"This Is Us (TV series)" (This Is Us is an American television series created by Dan Fogelman that premiered on NBC on September 20, 2016. The series stars an ensemble cast featuring Milo Ventimiglia, Mandy Moore, Sterling K. Brown, Chrissy Metz, Justin Hartley, Susan Kelechi Watson, Chris Sullivan, Ron Cephas Jones, Jon Huertas, Alexandra Breckenridge, Niles Fitch, Logan Shroyer, Hannah Zeile, Mackenzie Hancsicsak, Parker Bates, Eris Baker, and Faithe Herman. It is about the family lives and connections of several people who all share the same birthday and the ways in which they are similar and different.)
+
+Question: When was the American actor born who has roles in "Smallville" (2006–2011) and "This Is Us"?
+Answer: January 29, 1977
+
+
+Passages: 
+"Cuba Libre" (The Cuba Libre (/ˈkjuːbə ˈliːbreɪ/; Spanish pronunciation: [ˈkuβa ˈliβɾe], "Free Cuba") is a caffeinated alcoholic cocktail made of cola, lime, and dark or light rum. This cocktail is often referred to as a Rum and Coke in the United States, Canada, the UK, Ireland, India, Singapore, Australia and New Zealand where the lime juice may or may not be included.)
+
+Question: how to order a rum and coke in spanish
+Answer: Cuba Libre
+
+
+Passages: 
+"Matthew Gray Gubler" (Matthew Gray Gubler (/ˈɡuːblər/; born March 9, 1980) is an American actor, filmmaker, fashion model and painter. He is best known for his role as criminal profiler Dr. Spencer Reid in the CBS television show Criminal Minds (2005–present), of which he has also directed eleven episodes, including episode 17 of season 13, which has been claimed to be 'the spookiest episode of season 13'. Gubler has appeared in The Life Aquatic with Steve Zissou, (500) Days of Summer, Life After Beth, Suburban Gothic, and as the voice of Simon in Alvin and the Chipmunks and its three sequels.)
+
+Question: who plays dr. spencer reid on criminal minds
+Answer: Matthew Gray Gubler
+
+
+Passages: 
+"Off Season (novel)" (Off Season is a horror novel written by Jack Ketchum and initially published by Ballantine Books in 1980. It was Ketchum's first novel and was partially based upon the legend of Sawney Bean, which also inspired Wes Craven's 1977 cult classic horror film The Hills Have Eyes.)
+"The Hills Have Eyes (1977 film)" (The Hills Have Eyes is a 1977 American exploitation-horror film written, directed, and edited by Wes Craven and starring Susan Lanier, Michael Berryman and Dee Wallace. It is about a family that is targeted by a family of savages after being stranded in the Nevada desert. The film was released in cinemas on 22 July 1977 and has since become a cult classic. It was followed by The Hills Have Eyes Part II.)
+
+Question: Off Season is a horror novel written by Jack Ketchum, was partially based upon the legend of Sawney Bean, which also inspired, Wes Craven's 1977 American exploitation-horror film?
+Answer: The Hills Have Eyes
+
+
+Passages: 
+"Measure for Measure" (Measure for Measure is a play by William Shakespeare, believed to have been written in 1603 or 1604. Originally published in the First Folio of 1623, where it was listed as a comedy, the play's first recorded performance occurred in 1604. The play's main themes include justice, "mortality and mercy in Vienna," and the dichotomy between corruption and purity: "some rise by sin, and some by virtue fall." Mercy and virtue prevail, as the play does not end tragically, with virtues such as compassion and forgiveness being exercised at the end of the production. While the play focuses on justice overall, the final scene illustrates that Shakespeare intended for moral justice to temper strict civil justice: a number of the characters receive understanding and leniency, instead of the harsh punishment to which they, according to the law, could have been sentenced.)
+
+Question: what type of play is measure for measure
+Answer: comedy
+
+
+Passages: 
+"Caroline Amalie of Augustenburg" (Caroline Amalie of Schleswig-Holstein-Sonderburg-Augustenburg (28 June 1796 – 9 March 1881) was queen consort of Denmark as the second spouse of King Christian VIII between 1839 and 1848.)
+"Christian VIII of Denmark" (Christian VIII (18 September 1786 – 20 January 1848) was the King of Denmark from 1839 to 1848 and, as Christian Frederick, King of Norway in 1814.)
+
+Question: What other country was Caroline Amalie's spouse king of besides Denmark?
+Answer: Norway
+
+
+Passages: 
+"Developed country" (Since 1990, Norway (2001–2006, 2009–2013), Japan (1990–1991 and 1993), Canada (1992 and 1994–2000) and Iceland (2007–2008) have had the highest HDI score. The top 47 countries have scores ranging from 0.793 in Barbados to 0.955 in Norway.)
+
+Question: the most economically developed country in the world
+Answer: Norway
+
+
+Passages: 
+"Tomáš Šmíd" (Tomáš Šmíd (born May 20, 1956 in Plzeň) is a former tennis player from Czechoslovakia, who won nine singles titles during his career. In doubles, he won fifty-four titles and was World No. 1 in doubles from December 17, 1984 to August 11, 1985. The right-hander reached his highest ATP singles ranking of  World No. 11 in July 1984.  Šmíd participated in 31 Davis Cup ties for Czechoslovakia from 1977–1989, posting a 20-10 record in doubles and a 22-15 record in singles.)
+"Ross Case" (Ross Case (born 1 November 1951) is an Australian former tennis player. His career-high singles ranking was world no. 14.)
+
+Question: Who had the highest singles ranking Tomáš Šmíd or Ross Case?
+Answer: Tomáš Šmíd
+
+
+Passages: 
+"General Motors 60° V6 engine" (The General Motors 60° V6 engine family is a series of 60° V6 engines which were produced for both longitudinal and transverse applications. All of these engines are 12-valve cam-in-block or overhead valve (OHV) engines, except for the LQ1; which uses 24-valves driven by dual overhead cams (DOHC) instead. These engines vary in displacement between 2.5 and 3.4 liters and have a cast iron block and either cast iron or aluminum heads. Production of these engines began in 1980 and ended in 2005 in the U.S., with production continued in China until 2010. This engine family was the basis for the GM High Value engine family. Some refer to these engines as X engines due to first usage in the X-body cars.)
+"General Motors 122 engine" (The 122 engine was designed by Chevrolet and was used in wide-array of General Motors vehicles. The 122 was similar to the first two generations of the General Motors 60° V6 engine; sharing cylinder bore diameters and some parts[citation needed]. The 122 was available in the US beginning in 1982 for the GM J platform compact cars and S-series trucks.)
+
+Question: Designed by Chevrolet, this engine shared bore diameter and some parts with General Motors X engine.
+Answer: 122
+
+
+Passages: 
+"List of NASCAR Manufacturers' champions" (In the 60 seasons the Championship has been awarded, only nine different manufacturers have won it. Chevrolet has been the most successful, with 39 titles. The second most successful is Ford, with 15 titles.)
+
+Question: what car company has the most nascar wins
+Answer: Chevrolet
+
+
+Passages: 
+"Liam James" (Liam James (born August 7, 1996) is a Canadian actor, known for his role as Noah Curtis in the 2009 film 2012, young Shawn Spencer on the USA Network television series Psych, and the lead character, Duncan, in 2013's The Way, Way Back. He also starred as Jack Linden in AMC's The Killing and Adam Warren in ABC's The Family, playing the son of main characters, Sarah Linden and Claire Warren, respectively. )
+"2012 (film)" (2012 is a 2009 American epic disaster film directed by Roland Emmerich, and stars John Cusack, Chiwetel Ejiofor, Amanda Peet, Oliver Platt, Thandie Newton, Danny Glover and Woody Harrelson. The film was produced by Centropolis Entertainment and distributed by Columbia Pictures.)
+
+Question: What is a 2009 American epic disaster film directed by Roland Emmerich that stars a a Canadian actor, known for his role as Noah Curtis?
+Answer: 2012
+
+
+Passages: 
+"Occupation of the Baltic states" (Most Western governments maintained that Baltic sovereignty had not been legitimately overridden and thus continued to recognize the Baltic states as sovereign political entities represented by the legations appointed by the pre-1940 Baltic states which functioned in Washington and elsewhere. De facto independence was restored to the Baltic states in 1991 during the dissolution of the Soviet Union. Russia started to withdraw its troops from the Baltics (starting from Lithuania) in August 1993. The full withdrawal of troops deployed by Moscow was completed in August 1994. Russia officially ended its military presence in the Baltics in August 1998 by decommissioning the Skrunda-1 radar station in Latvia. The dismantled installations were repatriated to Russia and the site returned to Latvian control, with the last Russian soldier leaving Baltic soil in October 1999.)
+
+Question: when did the baltic states break away from russia
+Answer: 1991 during the dissolution of the Soviet Union
+
+
+Passages: 
+"Cleopatra Mathis" (Cleopatra Mathis (born 1947 in Ruston, Louisiana) is an American poet who since 1982 has been the Frederick Sessions Beebe Professor in the English department at Dartmouth College, where she is also director of the Creative Writing Program. Her most recent book is White Sea (Sarabande Books, 2005). She is a faculty member at The Frost Place Poetry Seminar.)
+"The Frost Place" (The Frost Place is a museum and nonprofit educational center for poetry located at Robert Frost's former home in Franconia, New Hampshire, United States.)
+
+Question: Cleopatra Mathis, is an American poet who since 1982 has been the Frederick Sessions Beebe Professor in the English department at Dartmouth College, and is a faculty member at The Frost Place, a museum and nonprofit educational center for poetry located at Robert Frost's former home in Franconia, New Hampshire, in which country?
+Answer: United States
+
+
+Passages: 
+"Deindustrialisation by country" (In the United States, deindustrialisation is mostly a regional phenomenon, centred on the Rust Belt of the original industrial centres from New England to the Great Lakes. While many Americans put the timing of industrial crisis as 1979 to 1984, in fact the most massive loss of US manufacturing jobs occurred in the 21st century: one third of US manufacturing jobs disappeared between 2001 and 2009, according to the US Bureau of Labor Statistics https://data.bls.gov/timeseries/CES3000000001.)
+
+Question: an example of deindustrialization in the united states economy is apparent in this area
+Answer: the Rust Belt of the original industrial centres from New England to the Great Lakes
+
+
+Passages: 
+"Lone Ranger" (Tonto was played throughout the run by actor John Todd (although there were a few isolated occasions when he was replaced by Roland Parker, better known as Kato for much of the run of sister series The Green Hornet). Other supporting players were selected from Detroit area actors and studio staff. These included Jay Michael (who also played the lead on Challenge of the Yukon, a.k.a. Sgt. Preston of the Yukon), Bill Saunders (as various villains, including Butch Cavendish), Paul Hughes (as the Ranger's friend Thunder Martin and as various army colonels and badmen), future movie star John Hodiak, Janka Fasciszewska (under the name Jane Fae), and Rube and Liz Weiss (a married couple, both actors in several radio and television programs in Detroit, Rube usually taking on villain roles on the "Ranger", and Liz playing damsels in distress). The part of nephew Dan Reid was played by various child actors, including Bob Martin, James Lipton and Dick Beals.)
+
+Question: who played dan reid on the lone ranger
+Answer: Dick Beals | Bob Martin | James Lipton
+
+
+Passages: 
+"Martiño Rivas" (Martiño Rivas López (born 10 January 1985 in Vimianzo, A Coruña, Galicia, Spain), also known as  Martín Rivas, is a Galician - Spanish actor. He is probably best known for his performance as Marcos Novoa Pazos in the Antena 3 series The Boarding School (Spanish: El internado) and for his role in The Blind Sunflowers (Los girasoles ciegos), which earned him a nomination for Goya Award for Best New Actor. Currently, he stars in the Netflix original series Las Chicas del Cable as Carlos Cifuentes.)
+"Las chicas del cable" (Las chicas del cable (Cable Girls) is a Spanish period drama web television series. It stars Ana Fernández, Nadia de Santiago, Blanca Suárez and Maggie Civantos. The first season of sixteen episodes will be released in two batches of eight episodes each; the first eight episodes premiered on Netflix worldwide on April 28, 2017. The second season will air in December of 2017 and a third is ordered for a 2018 release.)
+
+Question: Martiño Rivas stars with who in Las chicas del cable
+Answer: Ana Fernández
+
+
+Passages: 
+"Dartford Crossing" (The crossing had always been tolled, and from 1 April 2003 this became a charge, though since 2008 it has been free from 10 pm to 6 am. An automatic number plate recognition charging scheme (Dart Charge) began in November 2014. As a result, the charge can no longer be paid in cash and the old toll booths have been removed. A residents' scheme is available, offering further discounts for people living near the crossing.)
+
+Question: do you have to pay for the dartford bridge
+Answer: yes
+
+
+Passages: 
+"Jumanji: Welcome to the Jungle" (Principal photography began on September 19, 2016, in Honolulu, Hawaii, primarily taking place in the Kualoa Ranch private nature reserve. The film was then wrapped on December 8, 2016, in Atlanta, Georgia.)
+
+Question: where was the new jumanji movie filmed at
+Answer: Atlanta, Georgia | Honolulu, Hawaii
+
+
+Passages: 
+"Hummel International" (hummel International is a sportswear company based in Denmark. The firm was started in 1923 by the German Messmer family in the city of Hamburg. It was taken over in 1956 by Bernhard Weckenbrock, who moved its base to Kevelaer, North Rhine-Westphalia. In 1975, the company was bought by its Danish importer. Hummel currently manufactures apparel for football, futsal, handball, basketball, shinty and volleyball.  The company also produces footwear for football and handball.)
+"Christian Stadil" (Christian Nicholas Stadil is a Danish executive and chairman. He owns the sports brand Hummel International, is CEO of Thornico Group and co-author of Company Karma. In 2014 he was appointed honorary professor of creative leadership at the Centre for Business Development and Management at Copenhagen Business School.)
+
+Question: Christian Nicholas Stadil is a Danish executive and chairman of Hummel International, based in what country?
+Answer: Denmark
+
+
+Passages: 
+"Lindisfarne" (In 793, a Viking raid on Lindisfarne[d] caused much consternation throughout the Christian west and is now often taken as the beginning of the Viking Age. The D and E versions of the Anglo-Saxon Chronicle record:)
+
+Question: when did the vikings attack the monastery at lindisfarne
+Answer: 793
+
+
+Passages: 
+"Best Footballer in Asia 2014" (The 2014 Best Footballer in Asia, given to the best football player in Asia as judged by a panel of sports journalists, was awarded to Son Heung-min on 28th. November, 2014.)
+"Son Heung-min" (Son Heung-min (Hangul: 손흥민; Hanja: 孫興慜; [son.ɦɯŋ.min]; born 8 July 1992) is a South Korean professional footballer who plays as a winger or a forward for Premier League club Tottenham Hotspur and the South Korea national team.)
+
+Question: When was the footballer who played forward for Premier League club Tottenham Hotspur awarded Best Footballer in Asia?
+Answer: November, 2014
+
+
+Passages: 
+"History of the New York City Subway" (The first underground line opened on October 27, 1904, almost 35 years after the opening of the first elevated line in New York City, which became the IRT Ninth Avenue Line. By the time the first subway opened, the lines had been consolidated into two privately owned systems, the Brooklyn Rapid Transit Company (BRT, later Brooklyn–Manhattan Transit Corporation, BMT) and the Interborough Rapid Transit Company (IRT). Many present lines were built under the Dual Contracts, and after 1913, all lines built for the IRT and most other lines built or improved for the BRT were built by the city and leased to the companies. The first line of the city-owned and operated Independent Subway System (IND) opened in 1932; this system was intended to compete with the private systems and allow some of the elevated railways to be torn down. However, it was kept within the core of the city because of the low amount of startup capital provided to the municipal Board of Transportation by the state. This required it to be run "at cost", necessitating fares up to double the five-cent fare popular at the time.)
+
+Question: when was the first subway built in new york city
+Answer: October 27, 1904
+
+
+Passages: 
+"University of Colorado Boulder" (The University of Colorado Boulder (commonly referred to as CU or Colorado) is a public research university located in Boulder, Colorado, United States. It is the flagship university of the University of Colorado system and was founded five months before Colorado was admitted to the Union in 1876.)
+"Mars Society" (The Mars Society is an American worldwide volunteer-driven space-advocacy non-profit organization dedicated to promoting the human exploration and settlement of the planet Mars. Inspired by "The Case for Mars" conferences which were hosted by The Mars Underground at the University of Colorado Boulder, the Mars Society was established by Dr. Robert Zubrin and others in 1998 with the goal of educating the public, the media and government on the benefits of exploring Mars, the importance of planning for a humans-to-Mars mission in the coming decades and the need to create a permanent human presence on the Red Planet.)
+
+Question: The Mars Society is an American worldwide volunteer-driven space-advocacy non-profit organization, inspired by "The Case for Mars" conferences which were hosted by The Mars Underground at the University of Colorado Boulder, a public research university located in Boulder, Colorado, in which country?
+Answer: United States
+
+
+Passages: 
+"Memphis Tigers football" (Memphis State University changed its name to the University of Memphis in 1994. That year, the Tigers finished 6–5 for the third consecutive year. On September 3, Stobart's squad lost to Mississippi State by a margin of 17–6. Memphis won its first game of the season the following week with a 42–18 thrashing of Tulsa. After a 20–3 loss to Southern Miss, Memphis won their next four games; topping Arkansas in a 16–15 nail biter, Tulane in a 13–0 shutout, Arkansas State by a margin of 15–6 and Cincinnati in a 26–3 blowout. On October 29, Memphis lost to Louisville by a score of 10–6. That was followed by a 17–16 win over Ole Miss. In the season's final two games, the Tigers lost to Tennessee by a margin of 24–13 and East Carolina by a count of 30–6. On January 13, 1995, Stobart was fired as head coach of the Tigers. His Tigers compiled a 29–36–1 record in his five seasons.)
+
+Question: when did memphis state become university of memphis
+Answer: 1994
+
+
+Passages: 
+"Persian language" (Persian (/ˈpɜːrʒən/ or /ˈpɜːrʃən/), also known by its endonym Farsi (فارسی fārsi [fɒːɾˈsiː] (listen)), is one of the Western Iranian languages within the Indo-Iranian branch of the Indo-European language family. It is primarily spoken in Iran, Afghanistan (officially known as Dari since 1958), and Tajikistan (officially known as Tajiki since the Soviet era), and some other regions which historically were Persianate societies and considered part of Greater Iran. It is written in the Persian alphabet, a modified variant of the Arabic script.)
+"Ehsan Pahlavan" (Ehsan Pahlevan (Persian: احسان پهلوان‎, born 25 July 1993) is an Iranian footballer who currently plays for Zob Ahan in Iran Pro League.)
+
+Question: Ehsan Pahlevan, احسان پهلوان‎ ‎is his name in Persian, he's an Iranian footballer who currently plays for Zob Ahan in Iran Pro League, which language, also known by its endonym Farsi, is one of the Western Iranian languages within the Indo-Iranian branch of the Indo-European language family?
+Answer: Persian
+
+
+Passages: 
+"Ottawa Senators" (In 2006–07, the Senators reached the Stanley Cup Finals after qualifying for the playoffs in nine consecutive seasons. The Senators had a high turn-over of personnel and the disappointment of 2006 to overcome and started the season poorly. Trade rumours swirled around Daniel Alfredsson for most of the last months of 2006. The team lifted itself out of last place in the division to nearly catch the Buffalo Sabres by season's end, placing fourth in the Eastern Conference. The team finished with 105 points, their fourth straight 100-point season and sixth in the last eight. In the playoffs, Ottawa continued its good play. Led by the 'CASH' line, goaltender Ray Emery, and the strong defence of Chris Phillips and Anton Volchenkov, the club defeated the Pittsburgh Penguins, the second-ranked New Jersey Devils and the top-ranked Buffalo Sabres to advance to the Stanley Cup Finals.)
+
+Question: when was the last time ottawa made the finals
+Answer: 2006–07
+
+
+Passages: 
+"John Owusu Gyapong" (Professor John Owusu Gyapong is a Ghanaian Professor of Epidemiology. He is currently the Vice Chancellor of the University of Health and Allied Sciences, Ho Ghana.)
+"University of Health and Allied Sciences" (The University of Health and Allied Sciences (UHAS) is one of the youngest public universities in Ghana. It is located at Ho in the Volta Region of Ghana. Its operation started in September 2012, when the first batch of 154 students were admitted.)
+
+Question: Professor John Owusu Gyapong is currently the Vice Chancellor of the University of Health and Allied Sciences, a public university in Ghana that started operation in what year?
+Answer: 2012
+
+
+Passages: 
+"Carolina Panthers" (The Panthers were announced as the league's 29th franchise in 1993, and began play in 1995. The Panthers played well in their first two years, finishing 7–9 in 1995 (an all-time best for an NFL expansion team's first season) and 12–4 the following year, winning the NFC West before ultimately losing to the eventual Super Bowl champion Green Bay Packers in the NFC Championship Game. They did not have another winning season until 2003, when they won the NFC Championship Game and reached Super Bowl XXXVIII, losing 32–29 to the New England Patriots. After recording playoff appearances in 2005 and 2008, the team failed to record another playoff appearance until 2013, the first of three consecutive NFC South titles. After losing in the divisional round to the San Francisco 49ers in 2013 and the Seattle Seahawks in 2014, the Panthers returned to the Super Bowl in 2015, but lost to the Denver Broncos. The Panthers have reached the playoffs seven times, advancing to four NFC Championship Games and two Super Bowls. They have won six division titles, one in the NFC West and five in the NFC South.)
+
+Question: when's the last time the panthers went to the superbowl
+Answer: 2015
+
+
+Passages: 
+"Serena van der Woodsen" (Serena's enrollment in Columbia has her face Juliet's many attempts at getting rid of her, ranging from excluding her from an exclusive society along with driving Blair against her, exposing her relationship with her professor, Colin Forrester (Sam Page), who happens to be Juliet's cousin to get her kicked out, and spreading various rumors about Serena, who manages to evade these attempts. Juliet then recruits Jenny and Vanessa and succeed in gaslighting her into toying with Dan and Nate's feelings, attempting to take a foundation position from Blair, and returning to her old partying habits. Serena is rehabilitated while Dan and Blair subsequently discover Juliet's reasons for ruining Serena. Serena was supposedly in an illicit, but not ever consummated, relationship with Juliet's half-brother and Serena's boarding school English teacher, Ben Donovan (David Call) and was arrested when Lily forged an affidavit that falsely accused Ben of statutory rape, out of concern for Serena.)
+
+Question: where did serena van der woodsen go to college
+Answer: Columbia
+
+

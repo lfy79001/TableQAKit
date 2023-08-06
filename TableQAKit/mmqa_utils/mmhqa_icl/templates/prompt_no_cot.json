@@ -1,0 +1,30 @@
+{
+    "image": {
+        "file": "image/image.txt",
+        "n-shot": 16,
+        "cot": false,
+        "n-samples": 8,
+        "max_generation_tokens": 100
+    },
+    "text": {
+        "file": "text/text.txt",
+        "n-shot": 10,
+        "cot": false,
+        "n-samples": 8,
+        "max_generation_tokens": 100
+    },
+    "table": {
+        "file": "table/table.txt",
+        "n-shot": 9,
+        "cot": false,
+        "n-samples": 8,
+        "max_generation_tokens": 100
+    },
+    "compose": {
+        "file": "compose/compose.txt",
+        "n-shot": 8,
+        "cot": false,
+        "n-samples": 8,
+        "max_generation_tokens": 100
+    }
+}
