@@ -135,9 +135,7 @@ def fetch_default_table_data():
         dataset_name = content.get("dataset_name")
         split = content.get("split")
         table_idx = content.get("table_idx")
-    # dataset_name = "MultiHiertt"
-    # split = "train"
-    # table_idx = 0
+
         propertie_name_list = []
         data = statistics_default_table_information(dataset_name, split, table_idx, propertie_name_list)
         return jsonify(data),200
@@ -165,8 +163,8 @@ def fetch_generated_outputs(dataset_name, split, table_idx):
         outputs_file_path = f'outputs/{dataset_name}/{valid_model_name}/{split}.txt'
         with open(outputs_file_path, 'r', encoding='utf-8') as file:
             lines = file.readlines()
-            outputs[valid_model_name] = lines[table_idx].strip()        
-
+            if table_idx < len(lines):
+                outputs[valid_model_name] = lines[table_idx].strip()        
     return outputs
 
 # done
@@ -265,6 +263,7 @@ def fetch_default_pipeline_result():
         
     except Exception as e:
         logger.error(f"Pipeline Error: {e}")
+        traceback.print_exc()
         data = {"success": False}
         return jsonify(data),400
 

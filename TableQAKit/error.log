@@ -1523,3 +1523,219 @@ Fetch Table Error: datasets finqa not found
 Fetch Table Error: datasets finqa not found
 Fetch Table Error: datasets finqa not found
 Fetch Table Error: datasets finqa not found
+Fetch Table Error: datasets finqa not found
+Fetch Table Error: datasets finqa not found
+Fetch Table Error: datasets Hitab not found
+Remove Table Error: delete non-existent tables in session
+Upload Table Error: add duplicate names to tables in session
+Upload Table Error: negative seek value -45980095
+Upload Table Error: add duplicate names to tables in session
+Fetch Table Error: datasets TAT-QA not found
+Pipeline Error: 
+Pipeline Error: 
+Pipeline Error: 
+Fetch Table Error: datasets Hitab not found
+Fetch Table Error: datasets TAT-QA not found
+Fetch Table Error: datasets TAT-QA not found
+Fetch Table Error: datasets TAT-QA not found
+Fetch Table Error: list index out of range
+Fetch Table Error: list index out of range
+Fetch Table Error: list index out of range
+Fetch Table Error: list index out of range
+Fetch Table Error: list index out of range
+Fetch Table Error: list index out of range
+Fetch Table Error: list index out of range
+Fetch Table Error: list index out of range
+Fetch Table Error: list index out of range
+Fetch Table Error: list index out of range
+Fetch Table Error: list index out of range
+Fetch Table Error: list index out of range
+Fetch Table Error: list index out of range
+Fetch Table Error: list index out of range
+Fetch Table Error: list index out of range
+Fetch Table Error: list index out of range
+Fetch Table Error: list index out of range
+Fetch Table Error: list index out of range
+Fetch Table Error: list index out of range
+Fetch Table Error: list index out of range
+Fetch Table Error: list index out of range
+Fetch Table Error: list index out of range
+Fetch Table Error: list index out of range
+Pipeline Error: 
+Pipeline Error: 
+Pipeline Error: 
+Pipeline Error: 
+Fetch Table Error: list index out of range
+Fetch Table Error: list index out of range
+Pipeline Error: 
+Pipeline Error: 
+Pipeline Error: 
+Fetch Table Error: list index out of range
+Fetch Table Error: list index out of range
+Fetch Table Error: list index out of range
+Exception on /default/table [POST]
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py", line 140, in fetch_default_table_data
+    data = statistics_default_table_information(dataset_name, split, table_idx, propertie_name_list)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py", line 106, in statistics_default_table_information
+    generated_results = fetch_generated_outputs(dataset_name, split, table_idx)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py", line 166, in fetch_generated_outputs
+    outputs[valid_model_name] = lines[table_idx].strip()
+IndexError: list index out of range
+Exception on /default/table [POST]
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py", line 140, in fetch_default_table_data
+    data = statistics_default_table_information(dataset_name, split, table_idx, propertie_name_list)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py", line 106, in statistics_default_table_information
+    generated_results = fetch_generated_outputs(dataset_name, split, table_idx)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py", line 166, in fetch_generated_outputs
+    outputs[valid_model_name] = lines[table_idx].strip()
+IndexError: list index out of range
+Exception on /default/pipeline [POST]
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py", line 257, in fetch_default_pipeline_result
+    answer = app.pipeline.try_table_qa_kit_by_id(data=dataset_name, dataset_type=split, index=table_idx, question=question)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/try_table_qa_kit.py", line 143, in try_table_qa_kit_by_id
+    raise NotImplementedError
+NotImplementedError
+Exception on /default/table [POST]
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py", line 140, in fetch_default_table_data
+    data = statistics_default_table_information(dataset_name, split, table_idx, propertie_name_list)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py", line 99, in statistics_default_table_information
+    raise Exception(f"datasets {dataset_name} not found")
+Exception: datasets Hitab not found
+Exception on /default/pipeline [POST]
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py", line 257, in fetch_default_pipeline_result
+    answer = app.pipeline.try_table_qa_kit_by_id(data=dataset_name, dataset_type=split, index=table_idx, question=question)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/try_table_qa_kit.py", line 143, in try_table_qa_kit_by_id
+    raise NotImplementedError
+NotImplementedError
+Exception on /default/pipeline [POST]
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py", line 257, in fetch_default_pipeline_result
+    answer = app.pipeline.try_table_qa_kit_by_id(data=dataset_name, dataset_type=split, index=table_idx, question=question)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/try_table_qa_kit.py", line 143, in try_table_qa_kit_by_id
+    raise NotImplementedError
+NotImplementedError
+Exception on /default/table [POST]
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask_cors/extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/flask/app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py", line 140, in fetch_default_table_data
+    data = statistics_default_table_information(dataset_name, split, table_idx, propertie_name_list)
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py", line 99, in statistics_default_table_information
+    raise Exception(f"datasets {dataset_name} not found")
+Exception: datasets Hitab not found
+Upload Table Error: add duplicate names to tables in session
+Upload Table Error: negative seek value -45980095
+Remove Table Error: delete non-existent tables in session
+Upload Table Error: add duplicate names to tables in session
+Upload Table Error: add duplicate names to tables in session
+Remove Table Error: delete non-existent tables in session
+Upload Table Error: negative seek value -45980095
+Upload Table Error: negative seek value -45980095
+Upload Table Error: negative seek value -45980095
+Fetch Table Error: fetch non-existent tables in session
+Fetch Table Error: fetch non-existent tables in session
+Fetch Table Error: fetch non-existent tables in session
+Remove Table Error: delete non-existent tables in session
+Fetch Table Error: fetch non-existent tables in session
+Fetch Table Error: fetch non-existent tables in session
+Fetch Table Error: fetch non-existent tables in session
+Fetch Table Error: fetch non-existent tables in session
+Fetch Table Error: fetch non-existent tables in session
+Fetch Table Error: fetch non-existent tables in session
+Upload Table Error: negative seek value -45980095
+Fetch Table Error: fetch non-existent tables in session
+Fetch Table Error: fetch non-existent tables in session
+Fetch Table Error: fetch non-existent tables in session
+Fetch Table Error: fetch non-existent tables in session
+Fetch Table Error: fetch non-existent tables in session
+Fetch Table Error: fetch non-existent tables in session
+Fetch Table Error: fetch non-existent tables in session
+Fetch Table Error: fetch non-existent tables in session
+Remove Table Error: delete non-existent tables in session
+Fetch Table Error: fetch non-existent tables in session
+Fetch Table Error: fetch non-existent tables in session
+Fetch Table Error: fetch non-existent tables in session
+Fetch Table Error: fetch non-existent tables in session
+Fetch Table Error: fetch non-existent tables in session
+Fetch Table Error: fetch non-existent tables in session
+Fetch Table Error: fetch non-existent tables in session
+Remove Table Error: delete non-existent tables in session
+Fetch Table Error: fetch non-existent tables in session
+Fetch Table Error: fetch non-existent tables in session
+Remove Table Error: delete non-existent tables in session
+Fetch Table Error: fetch non-existent tables in session
+Remove Table Error: delete non-existent tables in session
+Remove Table Error: delete non-existent tables in session

@@ -2,44 +2,44 @@ from typing import List, Optional, Union, Dict
 from icl import turbo, text_davinci_003, FinQA, Wikisql, Wikitq, TAT_QA
 
 DATA_PATH = {
-    "finqa": {
-        "train": "datasets/finqa/train.json",
-        "dev": "datasets/finqa/dev.json",
+    "FinQA": {
+        "train": "datasets/FinQA/train.json",
+        "dev": "datasets/FinQA/dev.json",
         "eval": None,
         "test": None
     },
-    "tatqa": {
-        "train": "datasets/tatqa/train.json",
-        "dev": "datasets/tatqa/dev.json",
+    "TATQA": {
+        "train": "datasets/TATQA/train.json",
+        "dev": "datasets/TATQA/dev.json",
         "eval": None,
-        "test": "datasets/tatqa/test.json"
+        "test": "datasets/TATQA/test.json"
     },
-    "wikisql": {
-        "train": "datasets/wikisql/train.json",
-        "dev": "datasets/wikisql/dev.json",
+    "WikiSQL": {
+        "train": "datasets/WikiSQL/train.json",
+        "dev": "datasets/WikiSQL/dev.json",
         "eval": None,
-        "test": "datasets/wikisql/test.json"
+        "test": "datasets/WikiSQL/test.json"
     },
-    "wikitq": {
-        "train": "datasets/wikitq/train.json",
-        "dev": "datasets/wikitq/dev.json",
+    "WikiTableQuestions": {
+        "train": "datasets/WikiTableQuestions/train.json",
+        "dev": "datasets/WikiTableQuestions/dev.json",
         "eval": None,
-        "test": "datasets/wikitq/test.json"
+        "test": "datasets/WikiTableQuestions/test.json"
     },
-    "spreadsheetqa": {
-        "train": "datasets/spreadsheetqa/train.json",
-        "dev": "datasets/spreadsheetqa/dev.json",
+    "SpreadSheetQA": {
+        "train": "datasets/SpreadSheetQA/train.json",
+        "dev": "datasets/SpreadSheetQA/dev.json",
         "eval": None,
-        "test": "datasets/spreadsheetqa/test.json"
+        "test": "datasets/SpreadSheetQA/test.json"
     }
 }
 
 DATA_CLASS = {
-    "finqa": FinQA,
-    "tatqa": TAT_QA,
-    "wikisql": Wikisql,
-    "wikitq": Wikitq,
-    "spreadsheetqa": FinQA
+    "FinQA": FinQA,
+    "TATQA": TAT_QA,
+    "WikiSQL": Wikisql,
+    "WikiTableQuestions": Wikitq,
+    "SpreadSheetQA": FinQA
 }
 
 
@@ -66,30 +66,30 @@ class TableQAKitDemo:
     @staticmethod
     def get_demo_by_data(data: str) -> Dict:
         demo_dict = {
-            "finqa": {
+            "FinQA": {
                 "question": "table:\n| company | payments volume ( billions ) | total volume ( billions ) | total transactions ( billions ) | cards ( millions ) |\n| visa inc. ( 1 ) | $ 2457 | $ 3822 | 50.3 | 1592 |\n| mastercard | 1697 | 2276 | 27.0 | 916 |\n| american express | 637 | 647 | 5.0 | 86 |\n| discover | 102 | 119 | 1.6 | 57 |\n| jcb | 55 | 61 | 0.6 | 58 |\n| diners club | 29 | 30 | 0.2 | 7 |\nquestion:\nwhat is the average payment volume per transaction for american express?",
                 "rationale": "To find the average payment volume per transaction for American Express, we need to divide the total payment volume by the total number of transactions. From the table, we can see that the payment volume for American Express is $637 billion and the total number of transactions is 5.0 billion. To find the average payment volume per transaction, we divide $637 billion by 5.0 billion: Average payment volume per transaction = $637 billion / 5.0 billion = $127.4.",
                 "answer": "127.4"
             },
-            "tatqa":
+            "TATQA":
                 {
                     "question": "Texts:\nThe following table provides the weighted average actuarial assumptions used to determine net periodic benefit costfor years ended:\nFor domestic plans, the discount rate was determined by comparison against the FTSE pension liability index for AA rated corporate instruments. The Company monitors other indices to assure that the pension obligations are fairly reported on a consistent basis. The international discount rates were determined by comparison against country specific AA corporate indices, adjusted for duration of the obligation.\nThe periodic benefit cost and the actuarial present value of projected benefit obligations are based on actuarial assumptions that are reviewed on an annual basis. The Company revises these assumptions based on an annual evaluation of longterm trends, as well as market conditions that may have an impact on the cost of providing retirement benefits.\ntable:\n| - | Domestic | - | International | - |\n| - | September 30, | - | September 30, | - |\n| - | 2019 | 2018 | 2019 | 2018 |\n| Discount rate | 4.00% | 3.75% | 1.90% | 2.80% |\n| Expected return on plan assets | - | - | 3.40% | 3.70% |\n| Rate of compensation increase | - | - | - - % | - - % |\nquestion:\nWhat is the year on year percentage change in domestic discount rate between 2018 and 2019?",
                     "rationale": "The domestic discount rate for 2018 was 3.75%, and the domestic discount rate for 2019 was 4.00%. To calculate the year on year percentage change, we need to subtract the 2018 rate from the 2019 rate and divide by the 2018 rate. ",
                     "answer": "6.67%"
                 },
-            "wikisql":
+            "WikiSQL":
                 {
                     "question": "table:\n| Overall Pick # | AFL Team | Player | Position | College |\n| 4 | Miami Dolphins | Bob Griese | Quarterback | Purdue |\n| 5 | Houston Oilers | George Webster 1 | Linebacker | Michigan State |\n| 6 | Denver Broncos | Floyd Little | Running Back | Syracuse |\n| 12 | New York Jets | Paul Seiler | Offensive Guard | Notre Dame |\n| 14 | San Diego Chargers | Ron Billingsley | Defensive Tackle | Wyoming |\n| 17 | Oakland Raiders | Gene Upshaw | Offensive Guard | Texas A&I |\n| 21 | Boston Patriots | John Charles | Defensive Back | Purdue |\n| 22 | Buffalo Bills | George Daney | Offensive Guard | Arizona State |\n| 23 | Houston Oilers | Tom Regner | Offensive Guard | Notre Dame |\nquestion:\nWhat is the position of john charles?",
                     "rationale": "The table provided contains information about the overall pick number, AFL team, player, position, and college of each player. To answer the question, we need to look for the row that contains information about John Charles. We can see that the row with Overall Pick # 21 contains information about John Charles. ",
                     "answer": "Defensive Back"
                 },
-            "wikitq":
+            "WikiTableQuestions":
                 {
                     "question": "table:\n| # | Player | Goals | Caps | Career |\n| 1 | Landon Donovan | 57 | 155 | 2000–present |\n| 2 | Clint Dempsey | 36 | 103 | 2004–present |\n| 3 | Eric Wynalda | 34 | 106 | 1990–2000 |\n| 4 | Brian McBride | 30 | 95 | 1993–2006 |\n| 5 | Joe-Max Moore | 24 | 100 | 1992–2002 |\n| 6T | Jozy Altidore | 21 | 67 | 2007–present |\n| 6T | Bruce Murray | 21 | 86 | 1985–1993 |\n| 8 | Eddie Johnson | 19 | 62 | 2004–present |\n| 9T | Earnie Stewart | 17 | 101 | 1990–2004 |\n| 9T | DaMarcus Beasley | 17 | 114 | 2001–present |\nquestion:\nwho scored more goals: clint dempsey or eric wynalda?",
                     "rationale": "According to the table, Clint Dempsey scored 36 goals and Eric Wynalda scored 34 goals. Therefore, Clint Dempsey scored more goals than Eric Wynalda. ",
                     "answer": "Clint Dempsey"
                 },
-            "spreadsheetqa": {
+            "SpreadSheetQA": {
                 "question": "table:\n| company | payments volume ( billions ) | total volume ( billions ) | total transactions ( billions ) | cards ( millions ) |\n| visa inc. ( 1 ) | $ 2457 | $ 3822 | 50.3 | 1592 |\n| mastercard | 1697 | 2276 | 27.0 | 916 |\n| american express | 637 | 647 | 5.0 | 86 |\n| discover | 102 | 119 | 1.6 | 57 |\n| jcb | 55 | 61 | 0.6 | 58 |\n| diners club | 29 | 30 | 0.2 | 7 |\nquestion:\nwhat is the average payment volume per transaction for american express?",
                 "rationale": "To find the average payment volume per transaction for American Express, we need to divide the total payment volume by the total number of transactions. From the table, we can see that the payment volume for American Express is $637 billion and the total number of transactions is 5.0 billion. To find the average payment volume per transaction, we divide $637 billion by 5.0 billion: Average payment volume per transaction = $637 billion / 5.0 billion = $127.4.",
                 "answer": "127.4"
@@ -139,7 +139,7 @@ class TableQAKitDemo:
             answer_trigger: str = "Therefore, the answer to the question is ",
             demo_prefix: str = "Reading the texts and tables and try your best to answer the question."
     ):
-        if data not in ["finqa", "tatqa", "wikisql", "wikitq", "spreadsheetqa"]:
+        if data not in ["FinQA", "TATQA", "WikiSQL", "WikiTableQuestions", "SpreadSheetQA"]:
             raise NotImplementedError
         if dataset_type not in ["train", "dev", "eval", "test"]:
             raise NotImplementedError
@@ -252,13 +252,13 @@ if __name__ == "__main__":
     
     kit = TableQAKitDemo(model_type="text_davinci_003", key="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")
     
-    for dataset_name in ["tatqa","wikisql","wikitq","spreadsheetqa"]:
-        for split in ["train","dev","test"]:
-            t1 = time.time()
+    # for dataset_name in ["tatqa","wikisql","wikitq","spreadsheetqa"]:
+    #     for split in ["train","dev","test"]:
+    #         t1 = time.time()
 
 
 
-            out = kit.try_table_qa_kit_by_id(data=dataset_name, dataset_type=split, index=1, question="Summarize the table?")
+            # out = kit.try_table_qa_kit_by_id(data=dataset_name, dataset_type=split, index=1, question="Summarize the table?")
     # print(out)
     
     # table = [
@@ -336,7 +336,7 @@ if __name__ == "__main__":
     #     ]
     # ]
     # out = kit.try_table_qa_kit(table=table, texts=None, question="Summarize the table?")
-            print(f"{dataset_name},{split}:",out)
-            t2 = time.time()
-            print("t2-t1",t2-t1)
+            # print(f"{dataset_name},{split}:",out)
+            # t2 = time.time()
+            # print("t2-t1",t2-t1)
    

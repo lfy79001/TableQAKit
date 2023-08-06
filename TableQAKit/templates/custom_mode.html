@@ -158,11 +158,12 @@
                                  
                                     <div class="d-flex justify-content-end">
                                         <button id="get-question-button" type="button" class="btn btn-success btn-rounded btn-fw my-2">Run</button>
+                                        <code id="loading"><b>Inference in progress... Estimated total wait time: 15 seconds.</b></code>
                                     </div>
 
                                     <div class="alert alert-success mt-4 d-flex align-items-center" role="alert">
                                         <i class="ti-info-alt me-4"></i>
-                                        <p></p>
+                                        <p id="answer"></p>
                                     </div>
 
                                     <div id="total-sales-chart-legend"></div>
@@ -248,7 +249,7 @@
             <div class="modal-content" style="width:600px;">
                 <div class="modal-header">
                     <h5 class="modal-title" id="upload-table-modal-label">Upload Table</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" id="update-close-btn" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div class="card">
@@ -276,7 +277,7 @@
                                             <div class="dropdown-menu" aria-labelledby="messageDropdown-uploaded_table" >
 
                                                 <p class="drop-txt">
-                                                    <b>Previously uploaded table name:</b> myTable01; myTable02; myTable03
+                                                    <b>Previously uploaded table name:</b>
                                                 </p>
 
                                             </div>
@@ -286,7 +287,7 @@
                                 <div class="form-group">
                                     <label>Table File</label>
                                     <span style="margin-left:10px;">
-                            <a class="" id="download-example" href="/example">
+                            <a class="" id="download-example" href="/custom/example">
                                 <i class="mdi mdi-download mx-0"></i>
                                 <span>Download File Example</span>
                                     </a>

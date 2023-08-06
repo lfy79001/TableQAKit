@@ -1,7 +1,5 @@
 var split = 'dev';
-var dataset = 'finqa';
-var default_model = 'T5-small';
-var model = 'T5-small';
+var dataset = 'FinQA';
 var table_idx = 0;
 var total_examples = 0;
 var default_result = {};
@@ -11,17 +9,17 @@ var table_html = '';
 var pictures = {};
 var text = {};
 var host = '210.75.240.136';
-var port = '18890';
+var port = '18888';
 var url = '';
 var textIsHided = false;
 var picturesIsHided = false;
 var pipelineTask = null;
 var pipelineSupport = {
-    "finqa": ["train","dev"],
-    "tatqa": ["train", "dev", "test"],
-    "wikisql": ["train", "dev", "test"],
-    "wikitq": ["train","dev","test"],
-    "spreadsheetqa": ["train","dev","test"]
+    "FinQA": ["train","dev"],
+    "TATQA": ["train", "dev", "test"],
+    "WikiSQL": ["train", "dev", "test"],
+    "WikiTableQuestions": ["train","dev","test"],
+    "SpreadSheetQA": ["train","dev","test"]
 };
 
 function mod(n, m) {
@@ -29,24 +27,28 @@ function mod(n, m) {
 }
 
 function splitChanged() {
+    hideAll(1);
     abortPipelineTask();
     split = $('#split-select').val();
     table_idx = 0;
+    $("#page-input").val(0);
     getData()
     checkPipelineSupport();
 }
 
 function datasetChanged() {
+    hideAll(1);
     abortPipelineTask();
     dataset = $('#dataset-select').val();
     table_idx = 0;
+    $("#page-input").val(0);
     getData();
     checkPipelineSupport();
     checkFormatSupport();
 }
 
 function defaultModelChanged() {
-    default_model = $('#default-model-select').val();
+    var default_model = $('#default-model-select').val();
     console.log('default_model:'+default_model);
     if (default_model in default_result) {
         $('#default-model-answer').html(default_result[default_model]);
@@ -120,7 +122,7 @@ function changeDefaultQuestionModelHtml() {
 }
 
 function checkFormatSupport() {
-    if (dataset == 'multihiertt') {
+    if (dataset == 'MultiHiertt') {
         $('#download-format-select').html('<option val="html" selected>html</option>');
     } else {
         $('#download-format-select').html('<option val="xlsx" selected>xlsx</option><option val="txt">txt</option><option val="json">json</option><option val="csv">csv</option><option val="html">html</option>');
@@ -146,24 +148,22 @@ function changeTextWidth(val) {
 }
 
 function changeTableqaDefaultAnswerHtml() {
-    default_answer_html = '';
     for (var eachModel in default_result) {
-        default_answer_html += '<div> \
-        <div class="row"> \
-            <div class="col-md-12 p-0"> \
-                <div class="row align-items-center"> \
-                    <label class="col-sm-2 mx-4 col-form-label"><b>Model</b></label> \
-                    <label class="col-sm-8 col-form-label">' + eachModel + '</label> \
+        var default_answer_html = ' \
+        <div> \
+            <div class="row"> \
+                <div class="col-md-12 p-0"> \
+                    <div class="row align-items-center"> \
+                        <h5 class="mx-3 mt-2">' + eachModel + '</h5></div> \
                 </div> \
             </div> \
-        </div> \
-        <div class="alert alert-warning d-flex align-items-center" role="alert"> \
-            <i class="ti-info-alt me-4"></i> \
-            <p> ' + default_result[eachModel] + '</p> \
-        </div> \
-    </div>';
+            <div class="alert alert-warning d-flex align-items-center" role="alert"> \
+                <i class="ti-info-alt me-4"></i> \
+                <p id="default-model-answer"><h5>' + default_result[eachModel] + '</h5></p> \
+            </div> \
+        </div>';
+        $('#default-answer').append(default_answer_html);
     }
-    $('#default-answer').html(default_answer_html);
 }
 
 function hidePipline(val) {
@@ -207,7 +207,20 @@ function hideTableqa(val) {
     }
 }
 
+function hideAll(val) {
+    if (val == 0) {
+        $('#table-main').show();
+        $('#picture-text-main').show();
+        $('#tableqa-main').show();
+    } else {
+        $('#table-main').hide();
+        $('#picture-text-main').hide();
+        $('#tableqa-main').hide();
+    }
+}
+
 function getData() {
+    clearDefaultAnswer();
     var dataJson = { 'dataset_name': dataset, 'split': split, 'table_idx': table_idx };
     $.ajax({
         type: 'POST',
@@ -236,9 +249,10 @@ function getData() {
             changePictureHtml();
             // changeDefaultQuestionModelHtml();
             changeTableqaDefaultAnswerHtml();
+            hideAll(0);
         },
         error: (XMLHttpRequest, textStatus, errorThrown) => {
-            alert('fetch table error!');
+            alert('fetch table error! Please check your network state and refresh this page.');
             console.log(XMLHttpRequest.status);
             console.log(XMLHttpRequest.readyState);
             console.log(textStatus);
@@ -250,7 +264,7 @@ function getPipelineAnswer() {
     abortPipelineTask();
     var dataJson = { 'dataset_name': dataset, 'split': split, 'table_idx': table_idx, 'question': $('#input-question').val()};
     console.log(dataJson);
-    getPiplineAnswerTask = $.ajax({
+    pipelineTask = $.ajax({
         type: 'POST',
         url: url + '/default/pipeline',
         chche: false,
@@ -325,6 +339,10 @@ function downloadTable() {
     window.location.href = download_url;
 }
 
+function clearDefaultAnswer() {
+    $('#default-answer').html('');
+}
+
 function abortPipelineTask() {
     if (pipelineTask != null) {
         pipelineTask.abort();
@@ -348,8 +366,6 @@ $(document).ready(() => {
     initPage();
     $('#dataset-select').val(dataset);
     $('#splite-select').val(split);
-    $('#default-model-select').val(default_model);
-    $('#model-select').val(model);
     $("#dataset-select").change(datasetChanged);
     $("#split-select").change(splitChanged);
     // $('#default-model-select').change(defaultModelChanged);

@@ -105,15 +105,15 @@
                                                 <label class="col-sm-3 mx-4 col-form-label"><b>Dataset</b></label>
                                                 <div class="col-sm-7">
                                                     <select id="dataset-select" class="form-control text-dark">
-                                                      <option val="FinQA" selected>FinQA</option>
-                                                      <option val="Hitab">Hitab</option>
-                                                      <option val="HybridQA">HybridQA</option>
-                                                      <option val="MultimodalQA">MultimodalQA</option>
-                                                      <option val="TAT-QA">TAT-QA</option>
-                                                      <option val="WikiSQL">WikiSQL</option>
-                                                      <option val="WikiTableQuestions">WikiTableQuestions</option> 
-                                                      <option val="MultiHiertt">MultiHiertt</option> 
-                                                      <option val="SpreadSheetQA">SpreadSheetQA</option> 
+                                                      <option value="FinQA" selected>FinQA</option>
+                                                      <option value="HiTab">HiTab</option>
+                                                      <option value="HybridQA">HybridQA</option>
+                                                      <option value="MultimodalQA">MultimodalQA</option>
+                                                      <option value="TATQA">TAT-QA</option>
+                                                      <option value="WikiSQL">WikiSQL</option>
+                                                      <option value="WikiTableQuestions">WikiTableQuestions</option> 
+                                                      <option value="MultiHiertt">MultiHiertt</option> 
+                                                      <option value="SpreadSheetQA">SpreadSheetQA</option> 
                                                     </select>
                                                 </div>
                     
@@ -139,7 +139,7 @@
 
                         </div>
                     </div>
-                    <div class="row">
+                    <div id="table-main" class="row">
 
                         <div class="col-md-12 stretch-card grid-margin">
                             <div class="card">
@@ -220,7 +220,7 @@
                     </div>
 
 
-                    <div class="row">
+                    <div id="picture-text-main" class="row">
                         <div id="pictures" class="col-md-6 stretch-card grid-margin">
                             <div class="card">
                                 <div class="card-body">
@@ -266,7 +266,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="row">
+                    <div id="tableqa-main" class="row">
                         <div id="tableqa" class="col-md-12 stretch-card grid-margin">
                             <div class="card">
                                 <div class="card-body">
@@ -346,7 +346,7 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="about-modal-label">Guide - How to Use the Tool</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <button type="button" id="update-close-btn" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
                     <div id="aboutarea" class="tab-pane sidepanel-panel" role="tabpanel" tabindex="0">
