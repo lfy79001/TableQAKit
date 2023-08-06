@@ -11,6 +11,7 @@ if __name__ == '__main__':
     parser.add_argument('--is_train', type=int, default=1)
     parser.add_argument('--output_path', type=str, default='./try')
     parser.add_argument('--mode', choices=['mrc', 'generate'])
+    parser.add_argument('--plm', type=str, default='/home/lfy/S3HQA1/PTM/bart-large')
 
     args = parser.parse_args()
 

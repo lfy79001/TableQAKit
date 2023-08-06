@@ -1,0 +1,8 @@
+{
+    "train_bs": 1, 
+    "dev_bs": 1, 
+    "epoch_num": 5, 
+    "max_len": 512, 
+    "lr": 7e-06, 
+    "eps": 1e-08
+}

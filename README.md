@@ -113,7 +113,7 @@ The TableQAKit repository is structured as follows:
 ``` -->
 
 
-# Folder
+# 📁 Folder
 The TableQAKit repository is structured as follows:
 
 ```bash
@@ -167,10 +167,17 @@ According to our taxonomy, we classify the TableQA task into three categories of
 
 # 🔧 Get started
 
-# LLM-Prompting Methods
+## LLM-Prompting Methods
 
+Check [hear](https://github.com/lfy79001/TableQAKit/tree/main/TableQAKit/icl) for more details.
 
-## Retrieval-then-Read Methods
+## LLM-Finetuning Methods
+
+Check [hear](https://github.com/lfy79001/TableQAKit/tree/main/TableQAKit/llama) for more details.
+
+## Reading Modules
+
+Check [hear](https://github.com/lfy79001/TableQAKit/tree/main/TableQAKit/structuredqa) for more details.
 
 ### Retriever
 
