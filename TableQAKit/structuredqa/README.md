@@ -6,7 +6,7 @@
 
 This is a toolkit of StructuredQA for datasets like wikisql, wikitq, sqa and so on.
 
-目录结构：
+Folder Structure：
 
 ```
 └─stucturedqa
@@ -139,5 +139,4 @@ Tips：
 | SQA     | *tapex-large-finetuned-wtq*                                  | 0.3775                                               |
 | SQA     | *reastap-large-finetuned-wtq*                                | 0.3854                                               |
 | SQA     | ***omnitab-large-finetuned-wtq***                            | **0.4146**                                           |
-
 

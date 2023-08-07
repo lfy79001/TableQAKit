@@ -4,7 +4,7 @@
 
 ### Introduction
 
-Directory Structure：
+Folder Structure：
 
 ```
 └─mmqa_utils
