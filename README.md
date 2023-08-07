@@ -277,7 +277,7 @@ Check [hear](https://github.com/lfy79001/TableQAKit/tree/main/TableQAKit/icl) fo
 
 
 <p align="center">
-<img src="figs/llm_finetuing.jpg" width="512">
+<img src="figs/llm_finetuning.jpg" width="512">
 </p>
 
 Check [hear](https://github.com/lfy79001/TableQAKit/tree/main/TableQAKit/llama) for more details.
