@@ -12,7 +12,7 @@ data_path = "path to your data"
 demo_path = "path to your demonstration or None"
 
 dataset = MultiHiertt(data_path=data_path, demo_path=demo_path)
-model = turbo(key="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")
+model = turbo(key="your openai key")
 infer = turboICL(model=model, dataset=dataset)
 infer.infer(demo_prefix=None, cot_trigger=None, answer_trigger="Therefore, the answer is ")
 ```
@@ -28,7 +28,7 @@ demo_path = "path to your demonstration or None"
 
 
 dataset = MultiHiertt(data_path=data_path, demo_path=demo_path)
-model = text_davinci_003(key="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")
+model = text_davinci_003(key="your openai key")
 infer = davinciICL(model=model, dataset=dataset)
 infer.infer(demo_prefix=None, cot_trigger=None, answer_trigger="Therefore, the answer is ")
 ```
@@ -45,7 +45,7 @@ demo_path = "path to your demonstration or None"
 
 dataset = MultiHiertt(data_path=data_path, demo_path=demo_path)
 demo_prefix = "Reading the texts and tables and try your best to answer the question."
-model = turbo(key="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")
+model = turbo(key="your openai key")
 infer = turboICL(model=model, dataset=dataset)
 infer.infer(demo_prefix=demo_prefix, cot_trigger="Let's think step by step.", answer_trigger="Therefore, the answer is ")
 ```
@@ -62,7 +62,7 @@ demo_path = "path to your demonstration or None"
 
 dataset = MultiHiertt(data_path=data_path, demo_path=demo_path)
 demo_prefix = "Reading the texts and tables and try your best to answer the question."
-model = text_davinci_003(key="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")
+model = text_davinci_003(key="your openai key")
 infer = davinciICL(model=model, dataset=dataset)
 infer.infer(demo_prefix=demo_prefix, cot_trigger="Let's think step by step.", answer_trigger="Therefore, the answer is ")
 ```
@@ -79,7 +79,7 @@ demo_path = "path to your demonstration or None"
 
 dataset = MultiHiertt(data_path=data_path, demo_path=demo_path)
 demo_prefix = "Read the following text and table, and then write code to answer a question:"
-model = turbo(key="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")
+model = turbo(key="your openai key")
 infer = turboICL(model=model, dataset=dataset)
 infer.infer(demo_prefix=demo_prefix, cot_trigger=None, answer_trigger="#Python\n")
 ```
@@ -96,7 +96,7 @@ demo_path = "path to your demonstration or None"
 
 dataset = MultiHiertt(data_path=data_path, demo_path=demo_path)
 demo_prefix = "Read the following text and table, and then write code to answer a question:"
-model = text_davinci_003(key="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")
+model = text_davinci_003(key="your openai key")
 infer = davinciICL(model=model, dataset=dataset)
 infer.infer(demo_prefix=demo_prefix, cot_trigger=None, answer_trigger="#Python\n")
 ```
