@@ -325,7 +325,7 @@ More details are shown in [TableQAEval](https://github.com/lfy79001/TableQAKit/t
 We will continue to optimize the toolkit.
 
 ## Acknowledge
-Primary contributors: Fangyu Lei, Tongxu Luo, Pengqi Yang, Weihao Liu, Hanwen Liu, Jiahe Lei, Shizhu He and Kang Liu.
+Primary contributors: Fangyu Lei, Tongxu Luo, Pengqi Yang, Weihao Liu, Hanwen Liu, Jiahe Lei, Yifan Wei, Shizhu He and Kang Liu.
 
 Thank you very much to Yilun Zhao（Yale University）and Yongwei Zhou (HIT) for their assistance.
 
