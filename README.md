@@ -186,22 +186,18 @@ Check [hear](https://github.com/lfy79001/TableQAKit/tree/main/TableQAKit/structu
 
 MultiHiertt Dataset as a demonstration
 ```
-from typing import Dict, List
-import json
-from retriever import MultiHierttTrainer
+from TableQAKit.retriever import CompAQTTrainer
 
+trainer = CompAQTTrainer()
 
-trainer = MultiHierttTrainer()
-trainer.train()
-
-
-args = get_training_args()
-trainer = Trainer(training_args=args)
-if args.train_path is not None:
+if trainer.train_set is not None:
     trainer.train()
-if args.test_path is not None:
+if trainer.val_set is not None:
+    trainer.eval()
+if trainer.test_set is not None:
     for pred in trainer.test_iterator():
-        # saving the predctions
+        print(pred)
+
 ```
 
 #### Train
@@ -218,6 +214,7 @@ python main.py \
 --logging_steps 20 \
 --learning_rate 0.00001 \
 --top_n_for_eval 10 \
+--encoder_path ./PLM/bert-base-uncased/
 ```
 
 #### Inference
@@ -229,12 +226,12 @@ python infer.py \
 --test_path ./data/test-dev_out.json \
 --ckpt_for_test ./ckpt/epoch3_step53000.pt \
 --top_n_for_test 10 \
---encoder_path bert-base-uncased/
+--encoder_path ./PLM/bert-base-uncased/
 ```
 
 ### Create Trainer for New Dataset
 ```
-from retriever import RetrieverTrainer as RT
+from TableQAKit.retriever import RetrieverTrainer as RT
 
 class NewTrainer(RT):
     def read_data(self, data_path: str) -> List[Dict]:
