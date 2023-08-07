@@ -37,6 +37,8 @@ pip install tableqakit
 or
 git clone git@github.com:lfy79001/TableQAKit.git
 pip install -r requirements.txt
+
+pip install ttqakit
 ```
 
 
