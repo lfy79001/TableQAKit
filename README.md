@@ -289,7 +289,9 @@ Check [hear](https://github.com/lfy79001/TableQAKit/tree/main/TableQAKit/llama) 
 
 Check [hear](https://github.com/lfy79001/TableQAKit/tree/main/TableQAKit/structuredqa) for more details.
 
+### Multimodal Reasoner
 
+Check [hear](https://github.com/lfy79001/TableQAKit/tree/main/TableQAKit/mmqa_utils) for more details.
 
 
 # TableQAEval
