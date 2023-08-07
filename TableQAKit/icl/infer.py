@@ -2,7 +2,7 @@ import json
 import os
 import sys
 from abc import ABC, abstractmethod
-from typing import List, Union, Dict
+from typing import List, Union, Dict, Optional
 from transformers import HfArgumentParser
 from icl import GPT, fix_seed, Logger, print_time, ICLArguments
 from icl import GPTDataSet
@@ -15,7 +15,7 @@ class ICL(ABC):
         self.dataset = dataset
         fix_seed(self.args.random_seed)
 
-    def infer(self, demo_prefix: str, cot_trigger: str, answer_trigger: str):
+    def infer(self, demo_prefix: Optional[str], cot_trigger: Optional[str], answer_trigger: str):
         print('-' * 20)
         print(self.args)
         print('-' * 20)
@@ -86,8 +86,8 @@ class ICL(ABC):
     def create_demo_input(
             self,
             demos: List[Dict[str, str]],
-            demo_prefix: str,
-            cot_trigger: str,
+            demo_prefix: Optional[str],
+            cot_trigger: Optional[str],
             answer_trigger: str,
     ) -> Union[str, List[Dict[str, str]]]:
         """
@@ -114,7 +114,7 @@ class ICL(ABC):
     def create_data_input(
             self,
             data: Dict[str, str],
-            cot_trigger: str,
+            cot_trigger: Optional[str],
             answer_trigger: str,
             truncation: int
     ) -> str:
@@ -159,21 +159,29 @@ class ICL(ABC):
 
 
 class turboICL(ICL):
-    def create_demo_input(self, demos: List[dict], demo_prefix: str, cot_trigger: str, answer_trigger: str) -> Union[str, List[Dict[str, str]]]:
-        demo_input = [
-            {"role": "user", "content": demo_prefix}]
+    def create_demo_input(self, demos: List[dict], demo_prefix: Optional[str], cot_trigger: Optional[str], answer_trigger: str) -> Union[str, List[Dict[str, str]]]:
+        if demo_prefix is not None:
+            demo_input = [{"role": "user", "content": demo_prefix}]
+        else:
+            demo_input = []
         for demo in demos:
             demo_input.append({
                 "role": "user",
                 "content": demo["question"]
             })
-            demo_input.append({
-                "role": "assistant",
-                "content": cot_trigger + demo["rationale"] + answer_trigger + demo["answer"]
-            })
+            if cot_trigger is not None:
+                demo_input.append({
+                    "role": "assistant",
+                    "content": cot_trigger + demo["rationale"] + answer_trigger + demo["answer"]
+                })
+            else:
+                demo_input.append({
+                    "role": "assistant",
+                    "content": answer_trigger + demo["answer"]
+                })
         return demo_input
 
-    def create_data_input(self, data: dict, cot_trigger: str, answer_trigger: str, truncation: int) -> str:
+    def create_data_input(self, data: dict, cot_trigger: Optional[str], answer_trigger: Optional[str], truncation: int) -> str:
         heads = []
         content = ""
         if data["texts"] is not None and len(data["texts"]):
@@ -192,7 +200,10 @@ class turboICL(ICL):
                         content += (self.table_flatten(heads, row) + "\n")
                 else:
                     raise NotImplementedError
-        question = "question:\n" + data["question"] + "\n" + cot_trigger
+        if cot_trigger is not None:
+            question = "question:\n" + data["question"] + "\n" + cot_trigger
+        else:
+            question = "question:\n" + data["question"]
         if len(content) > truncation - len(question):
             content = content[:truncation - len(question) - 1] + '\n'
         content += question
@@ -218,15 +229,22 @@ class turboICL(ICL):
 
 
 class davinciICL(ICL):
-    def create_demo_input(self, demos: List[dict], demo_prefix: str, cot_trigger: str, answer_trigger: str) -> Union[str, List[Dict[str, str]]]:
-        demo_input = demo_prefix + "\n"
+    def create_demo_input(self, demos: List[dict], demo_prefix: Optional[str], cot_trigger: Optional[str], answer_trigger: str) -> Union[str, List[Dict[str, str]]]:
+        if demo_prefix is not None:
+            demo_input = demo_prefix + "\n"
+        else:
+            demo_input = ""
         for demo in demos:
-            demo_input += ("Q: " + demo["question"] + "\n" +
-                           "A: " + cot_trigger + demo["rationale"] +
-                           answer_trigger + demo["answer"] + "\n\n")
+            if cot_trigger is not None:
+                demo_input += ("Q: " + demo["question"] + "\n" +
+                               "A: " + cot_trigger + demo["rationale"] +
+                               answer_trigger + demo["answer"] + "\n\n")
+            else:
+                demo_input += ("Q: " + demo["question"] + "\n" +
+                               "A: " + answer_trigger + demo["answer"] + "\n\n")
         return demo_input
 
-    def create_data_input(self, data: dict, cot_trigger: str, answer_trigger: str, truncation: int) -> str:
+    def create_data_input(self, data: dict, cot_trigger: Optional[str], answer_trigger: str, truncation: int) -> str:
         heads = []
         content = "Q: \n"
         if data["texts"] is not None and len(data["texts"]):
@@ -245,7 +263,10 @@ class davinciICL(ICL):
                         content += (self.table_flatten(heads, row) + "\n")
                 else:
                     raise NotImplementedError
-        question = "question:\n" + data["question"] + "\n" + "A: " + cot_trigger
+        if cot_trigger is not None:
+            question = "question:\n" + data["question"] + "\n" + "A: " + cot_trigger
+        else:
+            question = "question:\n" + data["question"] + "\n" + "A: "
         if len(content) > truncation - len(question):
             content = content[:truncation - len(question) - 1] + '\n'
         content += question

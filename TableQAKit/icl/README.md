@@ -2,34 +2,103 @@
 
 ## QuickStart
 
-### Using turbo for MultiHiertt
+### Using turbo directly
 ```
 import json
 import os
 from typing import List, Union, Dict
 from icl import turbo, MultiHiertt, turboICL
+data_path = "path to your data"
+demo_path = "path to your demonstration or None"
 
-
-dataset = MultiHiertt(data_path="./data/val.json", demo_path=None)
-demo_prefix = "Reading the texts and tables and try your best to answer the question."
+dataset = MultiHiertt(data_path=data_path, demo_path=demo_path)
 model = turbo(key="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")
-infer = turbo(model=model, dataset=dataset)
-infer.infer(demo_prefix=demo_prefix, cot_trigger="Let's think step by step.", answer_trigger="Therefore, the answer is ")
+infer = turboICL(model=model, dataset=dataset)
+infer.infer(demo_prefix=None, cot_trigger=None, answer_trigger="Therefore, the answer is ")
 ```
 
-### using davinci_003 for MultiHiertt
+### using davinci_003 directly
 ```
 import json
 import os
 from typing import List, Union, Dict
 from icl import text_davinci_003, MultiHiertt, davinciICL
+data_path = "path to your data"
+demo_path = "path to your demonstration or None"
 
 
-dataset = MultiHiertt(data_path="./data/val.json", demo_path=None)
+dataset = MultiHiertt(data_path=data_path, demo_path=demo_path)
+model = text_davinci_003(key="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")
+infer = davinciICL(model=model, dataset=dataset)
+infer.infer(demo_prefix=None, cot_trigger=None, answer_trigger="Therefore, the answer is ")
+```
+
+### Using turbo for CoT
+```
+import json
+import os
+from typing import List, Union, Dict
+from icl import turbo, MultiHiertt, turboICL
+data_path = "path to your data"
+demo_path = "path to your demonstration or None"
+
+
+dataset = MultiHiertt(data_path=data_path, demo_path=demo_path)
+demo_prefix = "Reading the texts and tables and try your best to answer the question."
+model = turbo(key="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")
+infer = turboICL(model=model, dataset=dataset)
+infer.infer(demo_prefix=demo_prefix, cot_trigger="Let's think step by step.", answer_trigger="Therefore, the answer is ")
+```
+
+### using davinci_003 for CoT
+```
+import json
+import os
+from typing import List, Union, Dict
+from icl import text_davinci_003, MultiHiertt, davinciICL
+data_path = "path to your data"
+demo_path = "path to your demonstration or None"
+
+
+dataset = MultiHiertt(data_path=data_path, demo_path=demo_path)
 demo_prefix = "Reading the texts and tables and try your best to answer the question."
 model = text_davinci_003(key="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")
-infer = davinci(model=model, dataset=dataset)
+infer = davinciICL(model=model, dataset=dataset)
 infer.infer(demo_prefix=demo_prefix, cot_trigger="Let's think step by step.", answer_trigger="Therefore, the answer is ")
+```
+
+### Using turbo for PoT
+```
+import json
+import os
+from typing import List, Union, Dict
+from icl import turbo, MultiHiertt, turboICL
+data_path = "path to your data"
+demo_path = "path to your demonstration or None"
+
+
+dataset = MultiHiertt(data_path=data_path, demo_path=demo_path)
+demo_prefix = "Read the following text and table, and then write code to answer a question:"
+model = turbo(key="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")
+infer = turboICL(model=model, dataset=dataset)
+infer.infer(demo_prefix=demo_prefix, cot_trigger=None, answer_trigger="#Python\n")
+```
+
+### using davinci_003 for PoT
+```
+import json
+import os
+from typing import List, Union, Dict
+from icl import text_davinci_003, MultiHiertt, davinciICL
+data_path = "path to your data"
+demo_path = "path to your demonstration or None"
+
+
+dataset = MultiHiertt(data_path=data_path, demo_path=demo_path)
+demo_prefix = "Read the following text and table, and then write code to answer a question:"
+model = text_davinci_003(key="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")
+infer = davinciICL(model=model, dataset=dataset)
+infer.infer(demo_prefix=demo_prefix, cot_trigger=None, answer_trigger="#Python\n")
 ```
 
 ### Create New Dataset
