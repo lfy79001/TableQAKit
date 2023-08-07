@@ -1,0 +1,1 @@
+PYTHONPATH=$PYTHONPATH:tag_op python3 tag_op/validator.py --bart_name plm/bart-large --model_path  checkpoint/bart-large/batch_size_128_lr_0.0001_blr_0.0001_wd_0.01_bwd_0.01_beams_4_epoch_30_maxlength_50_add_structure_1/best_SequenceGeneratorModel_global_f1_2022-06-22-10-11-42-650583 --num_beams 4  --max_length 50 --max_len_a 0 --batch_size 16 --add_structure 1

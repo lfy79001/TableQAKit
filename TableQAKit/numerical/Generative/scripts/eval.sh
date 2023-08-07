@@ -1,0 +1,12 @@
+#python3 tatqa_eval.py --gold_path dataset_raw/tatqa_dataset_dev.json --pred_path checkpoint/bart-base/batch_size_128_lr_0.0001_blr_0.0001_wd_0.01_bwd_0.01_beams_4_epoch_30_maxlength_50_add_structure_0_loss_0.3/pred_result_on_dev.json
+#python3 tatqa_eval.py --gold_path dataset_raw/tatqa_dataset_dev.json --pred_path checkpoint/bart-base/batch_size_128_lr_0.0001_blr_0.0001_wd_0.01_bwd_0.01_beams_4_epoch_30_maxlength_50_add_structure_1_loss_0.3/pred_result_on_dev.json
+#python3 tatqa_eval.py --gold_path dataset_raw/tatqa_dataset_dev.json --pred_path checkpoint/bart-base/batch_size_128_lr_0.0001_blr_0.0001_wd_0.01_bwd_0.01_beams_4_epoch_30_maxlength_50_add_structure_2_loss_0.3/pred_result_on_dev.json
+#python3 tatqa_eval.py --gold_path dataset_raw/tatqa_dataset_dev.json --pred_path checkpoint/bart-base/batch_size_128_lr_0.0001_blr_0.0001_wd_0.01_bwd_0.01_beams_4_epoch_30_maxlength_50_add_structure_3_loss_0.3/pred_result_on_dev.json
+#python3 tatqa_eval.py --gold_path dataset_raw/tatqa_dataset_dev.json --pred_path checkpoint/bart-base/batch_size_8_lr_5e-05_blr_5e-05_wd_0.01_bwd_0.01_beams_4_epoch_30_maxlength_50_add_structure_0/pred_result_on_dev.json
+# python3 tatqa_eval.py --gold_path dataset_raw/tatqa_dataset_dev.json --pred_path checkpoint/bart-base/batch_size_128_lr_0.0001_blr_0.0001_wd_0.01_bwd_0.01_beams_4_epoch_30_maxlength_50_add_structure_1/pred_result_on_dev.json
+python3 tatqa_eval.py --gold_path dataset_raw/tatqa_dataset_dev.json --pred_path checkpoint/bart-large/batch_size_128_lr_0.0001_blr_0.0001_wd_0.01_bwd_0.01_beams_4_epoch_30_maxlength_50_add_structure_1/pred_result_on_dev.json
+#python3 tatqa_eval.py --gold_path dataset_raw/tatqa_dataset_dev.json --pred_path checkpoint/bart-large/batch_size_128_lr_0.0001_blr_0.0001_wd_0.01_bwd_0.01_beams_4_epoch_30_maxlength_50_add_structure_2/pred_result_on_dev.json
+#python3 tatqa_eval.py --gold_path dataset_raw/tatqa_dataset_dev.json --pred_path checkpoint/bart-large/batch_size_128_lr_0.0001_blr_0.0001_wd_0.01_bwd_0.01_beams_4_epoch_30_maxlength_50_add_structure_3/pred_result_on_dev.json
+
+
+# python3 tatqa_eval.py --gold_path dataset_raw/tatqa_dataset_dev.json --pred_path checkpoint/bart-large/ensemble/pred_result_on_dev.json

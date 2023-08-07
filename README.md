@@ -168,19 +168,7 @@ According to our taxonomy, we classify the TableQA task into three categories of
 
 # 🔧 Get started
 
-## LLM-Prompting Methods
-
-Check [hear](https://github.com/lfy79001/TableQAKit/tree/main/TableQAKit/icl) for more details.
-
-## LLM-Finetuning Methods
-
-Check [hear](https://github.com/lfy79001/TableQAKit/tree/main/TableQAKit/llama) for more details.
-
-## Reading Modules
-
-Check [hear](https://github.com/lfy79001/TableQAKit/tree/main/TableQAKit/structuredqa) for more details.
-
-### Retriever
+## Retrieval Modules
 
 #### QuickStart
 
@@ -277,18 +265,29 @@ class NewTrainer(RT):
         }
 ```
 
-### TaLM Reasoner
+## LLM-Prompting Methods
 
+<p align="center">
+<img src="figs/llm_prompting.jpg" width="512">
+</p>
 
+Check [hear](https://github.com/lfy79001/TableQAKit/tree/main/TableQAKit/icl) for more details.
 
 ## LLM-Finetuning Methods
 
 
+<p align="center">
+<img src="figs/llm_finetuing.jpg" width="512">
+</p>
+
+Check [hear](https://github.com/lfy79001/TableQAKit/tree/main/TableQAKit/llama) for more details.
+
+## Reading Modules
 
 
+### TaLM Reasoner
 
-## LLM-Prompting Methods
-
+Check [hear](https://github.com/lfy79001/TableQAKit/tree/main/TableQAKit/structuredqa) for more details.
 
 
 

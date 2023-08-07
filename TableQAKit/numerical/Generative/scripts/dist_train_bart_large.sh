@@ -1,0 +1,2 @@
+CUDA_VISIBLE_DEVICES=0,1,2,3 PYTHONPATH=$PYTHONPATH:tag_op python3 -m torch.distributed.launch --nproc_per_node=4 tag_op/dist_trainer.py --bart_name plm/bart-large --save_model_path checkpoint/bart-large --n_epochs 15 --batch_size 4 --max_length 50 --max_len_a 0 --num_beams 4 --lr 5e-5 --weight_decay 1e-2 --blr 5e-5 --b_weight_decay 1e-2 --seed 345
+# PYTHONPATH=$PYTHONPATH:tag_op
