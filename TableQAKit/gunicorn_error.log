@@ -8273,3 +8273,77 @@ NameError: name 'fetc' is not defined
 [2023-08-06 15:05:56 +0000] [1745496] [INFO] Using worker: sync
 [2023-08-06 15:05:56 +0000] [1745498] [INFO] Booting worker with pid: 1745498
 [2023-08-06 15:05:56 +0000] [1745503] [INFO] Booting worker with pid: 1745503
+[2023-08-07 01:23:11 +0000] [1745496] [INFO] Handling signal: term
+[2023-08-07 01:23:11 +0000] [1745498] [INFO] Worker exiting (pid: 1745498)
+[2023-08-07 01:23:11 +0000] [1745503] [INFO] Worker exiting (pid: 1745503)
+[2023-08-07 01:23:25 +0000] [1745496] [INFO] Shutting down: Master
+[2023-08-07 01:23:39 +0000] [2037519] [INFO] Starting gunicorn 21.2.0
+[2023-08-07 01:23:39 +0000] [2037519] [INFO] Listening at: http://210.75.240.136:18888 (2037519)
+[2023-08-07 01:23:39 +0000] [2037519] [INFO] Using worker: sync
+[2023-08-07 01:23:39 +0000] [2037521] [INFO] Booting worker with pid: 2037521
+[2023-08-07 01:23:39 +0000] [2037522] [INFO] Booting worker with pid: 2037522
+[2023-08-07 01:23:40 +0000] [2037521] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py", line 20, in <module>
+    from try_table_qa_kit import TableQAKitDemo
+ModuleNotFoundError: No module named 'try_table_qa_kit'
+[2023-08-07 01:23:40 +0000] [2037521] [INFO] Worker exiting (pid: 2037521)
+[2023-08-07 01:23:40 +0000] [2037522] [ERROR] Exception in worker process
+Traceback (most recent call last):
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/arbiter.py", line 609, in spawn_worker
+    worker.init_process()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 134, in init_process
+    self.load_wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/workers/base.py", line 146, in load_wsgi
+    self.wsgi = self.app.wsgi()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/base.py", line 67, in wsgi
+    self.callable = self.load()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 58, in load
+    return self.load_wsgiapp()
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/app/wsgiapp.py", line 48, in load_wsgiapp
+    return util.import_app(self.app_uri)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/site-packages/gunicorn/util.py", line 371, in import_app
+    mod = importlib.import_module(module)
+  File "/home/lfy/anaconda3/envs/ypq/lib/python3.8/importlib/__init__.py", line 127, in import_module
+    return _bootstrap._gcd_import(name[level:], package, level)
+  File "<frozen importlib._bootstrap>", line 1014, in _gcd_import
+  File "<frozen importlib._bootstrap>", line 991, in _find_and_load
+  File "<frozen importlib._bootstrap>", line 975, in _find_and_load_unlocked
+  File "<frozen importlib._bootstrap>", line 671, in _load_unlocked
+  File "<frozen importlib._bootstrap_external>", line 843, in exec_module
+  File "<frozen importlib._bootstrap>", line 219, in _call_with_frames_removed
+  File "/home/lfy/ypq/project_ttqakit/TextTableQAKit/TableQAKit/app.py", line 20, in <module>
+    from try_table_qa_kit import TableQAKitDemo
+ModuleNotFoundError: No module named 'try_table_qa_kit'
+[2023-08-07 01:23:40 +0000] [2037522] [INFO] Worker exiting (pid: 2037522)
+[2023-08-07 01:23:40 +0000] [2037519] [ERROR] Worker (pid:2037521) exited with code 3
+[2023-08-07 01:23:40 +0000] [2037519] [ERROR] Worker (pid:2037522) was sent SIGTERM!
+[2023-08-07 01:23:40 +0000] [2037519] [ERROR] Shutting down: Master
+[2023-08-07 01:23:40 +0000] [2037519] [ERROR] Reason: Worker failed to boot.
+[2023-08-07 01:27:52 +0000] [2040967] [INFO] Starting gunicorn 21.2.0
+[2023-08-07 01:27:52 +0000] [2040967] [INFO] Listening at: http://210.75.240.136:18888 (2040967)
+[2023-08-07 01:27:52 +0000] [2040967] [INFO] Using worker: sync
+[2023-08-07 01:27:52 +0000] [2040972] [INFO] Booting worker with pid: 2040972
+[2023-08-07 01:27:52 +0000] [2040973] [INFO] Booting worker with pid: 2040973
