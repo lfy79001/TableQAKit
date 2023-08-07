@@ -6,7 +6,7 @@
 
 [🌐Website](http://210.75.240.136:18888) |
 [🎥Video](https://youtu.be/6Ty6z9qlKlk) |
-[📦PyPI](https://www.baidu.com/)  |
+[📦PyPI](https://pypi.org/project/ttqakit/) |
 [🤗Huggingface Datasets](https://huggingface.co/TableQAKit)
 
 <!-- [📘Documentation](https://opencompass.readthedocs.io/en/latest/) |
@@ -37,6 +37,8 @@ pip install tableqakit
 or
 git clone git@github.com:lfy79001/TableQAKit.git
 pip install -r requirements.txt
+
+pip install ttqakit
 ```
 
 
@@ -289,7 +291,9 @@ Check [hear](https://github.com/lfy79001/TableQAKit/tree/main/TableQAKit/llama) 
 
 Check [hear](https://github.com/lfy79001/TableQAKit/tree/main/TableQAKit/structuredqa) for more details.
 
+### Multimodal Reasoner
 
+Check [hear](https://github.com/lfy79001/TableQAKit/tree/main/TableQAKit/mmqa_utils) for more details.
 
 
 # TableQAEval
@@ -317,6 +321,8 @@ TableQAEval is a benchmark to evaluate the performance of LLM for TableQA. It ev
 More details are shown in [TableQAEval](https://github.com/lfy79001/TableQAKit/tree/main/TableQAKit/TableQAEval).
 
 
+## ✅ TODO
+We will continue to optimize the toolkit.
 
 
 
