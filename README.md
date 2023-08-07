@@ -5,6 +5,7 @@
 
 
 [🌐Website](http://210.75.240.136:18888) |
+[🎥Video](https://youtu.be/6Ty6z9qlKlk) |
 [📦PyPI](https://www.baidu.com/)  |
 [🤗Huggingface Datasets](https://huggingface.co/TableQAKit)
 
