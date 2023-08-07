@@ -6,7 +6,7 @@
 
 [🌐Website](http://210.75.240.136:18888) |
 [🎥Video](https://youtu.be/6Ty6z9qlKlk) |
-[📦PyPI](https://www.baidu.com/)  |
+[📦PyPI](https://pypi.org/project/ttqakit/) |
 [🤗Huggingface Datasets](https://huggingface.co/TableQAKit)
 
 <!-- [📘Documentation](https://opencompass.readthedocs.io/en/latest/) |
