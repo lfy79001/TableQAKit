@@ -4,17 +4,7 @@
 
 ### Introduction
 
-
-
-以 `ReasTAP` 的代码为基础改写。部分代码改写自 `tapas_utils`  与 `UnifiedSKG`
-
-
-
-- 新增 `BaseStructuredQADataset` 等类，使用时需要继承该类，需要用户实现 get_example 方法，用于返回 (问题，表格，答案) 三元组
-- 一些预置 Dataset，用户可自己编写额外的数据集类
-- 根据需要调用基于 Bert (Tapas) 或 Bart 的模型
-
-
+This is a toolkit of StructuredQA for datasets like wikisql, wikitq, sqa and so on.
 
 目录结构：
 
@@ -39,7 +29,7 @@
 
 
 
-### Model List
+#### Model List
 
 
 
@@ -52,7 +42,7 @@
 
 
 
-### Dataset List
+#### Dataset List
 
 
 
@@ -69,7 +59,7 @@
 
 
 
-使用示例：
+Demo Code：
 
 ```python
 from structuredqakit import ToolBaseForStructuredQA, BartForStructuredQA, BertForStructuredQA
@@ -121,42 +111,33 @@ WANDB_DISABLED="true", CUDA_VISIBLE_DEVICES=3 python test.py
 
 
 
+Tips：
+
+- `BaseStructuredQADataset` is used to build the dataset, which needs to be inherited when using it, and implement the `get_example` method to return (question, form, answer) triplet
+- Bert (Tapas) or Bart based models can be invoked as needed
+
+
+
 ### Metrics Result
 
 
 
-| Dataset  | Model                                                        | Denotation Acc                                       |
-| -------- | ------------------------------------------------------------ | ---------------------------------------------------- |
-| HybridQA | reastap-large                                                | 0.002                                                |
-| HybridQA | reastap-large-finetuned-wtq                                  | 0.0063                                               |
-|          |                                                              |                                                      |
-| WikiSQL  | tapas-large-finetuned-wikisql-supervised                     | 0.7028   **(cell selection accuracy)**               |
-| WikiSQL  | tapex-large-finetuned-wikisql                                | 0.8947                                               |
-| WikiSQL  | **reastap-large-finetuned-wikisql**                          | **0.8956**                                           |
-| WikiSQL  | [omnitab-large-finetuned-wikisql](https://huggingface.co/yilunzhao/omnitab-large-finetuned-wikisql) | 0.8874                                               |
-|          |                                                              |                                                      |
-| Wikitq   | tapas-large-finetuned-wtq                                    | 0.4771   **(cell selection accuracy, 1855 samples)** |
-| Wikitq   | tapex-large-finetuned-wtq                                    | 0.5722                                               |
-| Wikitq   | reastap-large-finetuned-wtq                                  | 0.5973                                               |
-| Wikitq   | **omnitab-large-finetuned-wtq**                              | **0.6097**                                           |
-|          |                                                              |                                                      |
-| SQA      | tapas-large-finetuned-sqa                                    | 0.521    **(cell selection accuracy)**               |
-| SQA      | tapex-large-finetuned-sqa                                    | 0.3987                                               |
-| SQA      | *tapex-large-finetuned-wtq*                                  | 0.3775                                               |
-| SQA      | *reastap-large-finetuned-wtq*                                | 0.3854                                               |
-| SQA      | ***omnitab-large-finetuned-wtq***                            | **0.4146**                                           |
+| Dataset | Model                                                        | Denotation Acc                                       |
+| ------- | ------------------------------------------------------------ | ---------------------------------------------------- |
+| WikiSQL | tapas-large-finetuned-wikisql-supervised                     | 0.7028   **(cell selection accuracy)**               |
+| WikiSQL | tapex-large-finetuned-wikisql                                | 0.8947                                               |
+| WikiSQL | **reastap-large-finetuned-wikisql**                          | **0.8956**                                           |
+| WikiSQL | [omnitab-large-finetuned-wikisql](https://huggingface.co/yilunzhao/omnitab-large-finetuned-wikisql) | 0.8874                                               |
+|         |                                                              |                                                      |
+| Wikitq  | tapas-large-finetuned-wtq                                    | 0.4771   **(cell selection accuracy, 1855 samples)** |
+| Wikitq  | tapex-large-finetuned-wtq                                    | 0.5722                                               |
+| Wikitq  | reastap-large-finetuned-wtq                                  | 0.5973                                               |
+| Wikitq  | **omnitab-large-finetuned-wtq**                              | **0.6097**                                           |
+|         |                                                              |                                                      |
+| SQA     | tapas-large-finetuned-sqa                                    | 0.521    **(cell selection accuracy)**               |
+| SQA     | tapex-large-finetuned-sqa                                    | 0.3987                                               |
+| SQA     | *tapex-large-finetuned-wtq*                                  | 0.3775                                               |
+| SQA     | *reastap-large-finetuned-wtq*                                | 0.3854                                               |
+| SQA     | ***omnitab-large-finetuned-wtq***                            | **0.4146**                                           |
 
-
-
-**P.S.: HybridQA 之后删掉**
-
-
-
-### Weakness & Future work
-
-
-
-- 目前均为 end-to-end-qa 的方式，没有生成 text-to-sql 过程
-- tapas 模型需要过滤较多会出错的数据，且暂不支持聚合函数标签，只有单元格选择标签
-- 由于 tapas 模型一次只能 tokenize 一个表格，故其数据预处理较慢
 
