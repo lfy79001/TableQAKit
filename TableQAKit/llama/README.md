@@ -4,9 +4,9 @@
 
 ### MultiHiertt Dataset as a demonstration
 ```
-from llama import LLaMaTrainer
-from llama import MultiHiertt
-from llama import defaultTemplate
+from TableQAKit.llama import LLaMaTrainer
+from TableQAKit.llama import MultiHiertt
+from TableQAKit.llama import defaultTemplate
 
 template = defaultTemplate()
 datasets = MultiHiertt("path of your dataset")
@@ -17,7 +17,7 @@ trainer.train()
 ### start train
 ```
 python main.py \
---model_name_or_path ./ckpt/llama-7b-hf \ # path
+--model_name_or_path ./ckpt/llama-7b-hf \ # path of LLaMA weight
 --do_train \ 
 --finetuning_type lora \
 --output_dir ./ckpt/lora \ # path to store lora weight
@@ -41,9 +41,9 @@ python main.py \
 ```
 import json
 from datasets import Dataset
-from llama import LLaMaTrainer
-from llama import LLaMaDataset
-from llama import Template
+from TableQAKit.llama import LLaMaTrainer
+from TableQAKit.llama import LLaMaDataset
+from TableQAKit.llama import Template
 
 
 class NewDataset(LLaMaDataset):
@@ -86,7 +86,7 @@ class NewTemplate(Template):
 
 newtemplate = NewTemplate()
 datasets = NewDataset()
-trainer = Trainer([datasets], newtemplate)
+trainer = LLaMaTrainer([datasets], newtemplate)
 trainer.train()
 ```
 
@@ -96,6 +96,6 @@ dataset1 = Dataset1("path1")
 dataset2 = Dataset1("path2")
 ...
 
-trainer = Trainer([dataset1, dataset2, ...], template)
+trainer = LLaMaTrainer([dataset1, dataset2, ...], template)
 trainer.train()
 ```
