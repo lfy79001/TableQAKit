@@ -454,22 +454,28 @@ class FinQATrainer(RetrieverTrainer):
         return data
 
     def data_proc(self, instance) -> Dict:
-        gold_inds = instance["qa"]["gold_inds"]
         pre_text = instance["pre_text"]
         post_text = instance["post_text"]
         rows = pre_text + post_text  # 所有备选文本  序号是0-index的和
-        labels = [0] * (len(rows))
-        for key in gold_inds:  # match the text
-            if "text_" in key:
-                text_id = int(key.replace("text_", ""))
-                labels[text_id] = 1
+        if 'gold_inds' in instance["qa"]:
+            labels = [0] * (len(rows))
+            gold_inds = instance["qa"]["gold_inds"]
+            for key in gold_inds:  # match the text
+                if "text_" in key:
+                    text_id = int(key.replace("text_", ""))
+                    if text_id < len(labels):
+                        labels[text_id] = 1
+        else:
+            labels = None
+            gold_inds = None
 
         table = instance["table"]  # finqa只有一个表格 对每行进行table_discr的操作
         for idx, row in enumerate(table):  # match the row of table
             row_description = self.table_row_to_text(table[0], table[idx])
             rows.append(row_description)
-            label_key = "table_" + str(idx)
-            labels.append(1 if label_key in gold_inds else 0)
+            if labels is not None:
+                label_key = "table_" + str(idx)
+                labels.append(1 if label_key in gold_inds else 0)
         return {
             "id": instance["id"],
             "question": instance["qa"]["question"],
@@ -480,6 +486,7 @@ class FinQATrainer(RetrieverTrainer):
     def infer(self):
         test_data = self.read_data(self.training_args.test_path)
         for one, pred in zip(test_data, self.test_iterator()):
+            one["qa"]["gold_inds"] = {}
             texts = one["pre_text"] + one["post_text"]
             text_pred = pred[:len(texts)]
             table_pred = pred[len(texts):]
