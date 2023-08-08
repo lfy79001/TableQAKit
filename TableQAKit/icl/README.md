@@ -7,7 +7,7 @@
 import json
 import os
 from typing import List, Union, Dict
-from icl import turbo, MultiHiertt, turboICL
+from TableQAKit.icl import turbo, MultiHiertt, turboICL
 data_path = "path to your data"
 demo_path = "path to your demonstration or None"
 
@@ -22,7 +22,7 @@ infer.infer(demo_prefix=None, cot_trigger=None, answer_trigger="Therefore, the a
 import json
 import os
 from typing import List, Union, Dict
-from icl import text_davinci_003, MultiHiertt, davinciICL
+from TableQAKit.icl import text_davinci_003, MultiHiertt, davinciICL
 data_path = "path to your data"
 demo_path = "path to your demonstration or None"
 
@@ -38,7 +38,7 @@ infer.infer(demo_prefix=None, cot_trigger=None, answer_trigger="Therefore, the a
 import json
 import os
 from typing import List, Union, Dict
-from icl import turbo, MultiHiertt, turboICL
+from TableQAKit.icl import turbo, MultiHiertt, turboICL
 data_path = "path to your data"
 demo_path = "path to your demonstration or None"
 
@@ -55,7 +55,7 @@ infer.infer(demo_prefix=demo_prefix, cot_trigger="Let's think step by step.", an
 import json
 import os
 from typing import List, Union, Dict
-from icl import text_davinci_003, MultiHiertt, davinciICL
+from TableQAKit.icl import text_davinci_003, MultiHiertt, davinciICL
 data_path = "path to your data"
 demo_path = "path to your demonstration or None"
 
@@ -72,7 +72,7 @@ infer.infer(demo_prefix=demo_prefix, cot_trigger="Let's think step by step.", an
 import json
 import os
 from typing import List, Union, Dict
-from icl import turbo, MultiHiertt, turboICL
+from TableQAKit.icl import turbo, MultiHiertt, turboICL
 data_path = "path to your data"
 demo_path = "path to your demonstration or None"
 
@@ -89,7 +89,7 @@ infer.infer(demo_prefix=demo_prefix, cot_trigger=None, answer_trigger="#Python\n
 import json
 import os
 from typing import List, Union, Dict
-from icl import text_davinci_003, MultiHiertt, davinciICL
+from TableQAKit.icl import text_davinci_003, MultiHiertt, davinciICL
 data_path = "path to your data"
 demo_path = "path to your demonstration or None"
 
@@ -103,7 +103,7 @@ infer.infer(demo_prefix=demo_prefix, cot_trigger=None, answer_trigger="#Python\n
 
 ### Create New Dataset
 ```
-from icl import GPTDataSet
+from TableQAKit.icl import GPTDataSet
 
 
 class NewDataset(GPTDataSet):

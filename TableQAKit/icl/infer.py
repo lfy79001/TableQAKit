@@ -4,8 +4,9 @@ import sys
 from abc import ABC, abstractmethod
 from typing import List, Union, Dict, Optional
 from transformers import HfArgumentParser
-from icl import GPT, fix_seed, Logger, print_time, ICLArguments
-from icl import GPTDataSet
+from model import GPT
+from utils import fix_seed, Logger, print_time, ICLArguments
+from dataset import GPTDataSet
 
 
 class ICL(ABC):
