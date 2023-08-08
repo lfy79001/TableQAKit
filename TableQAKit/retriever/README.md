@@ -4,21 +4,18 @@
 
 MultiHiertt Dataset as a demonstration
 ```
-from typing import Dict, List
-import json
 from retriever import MultiHierttTrainer
 
 
 trainer = MultiHierttTrainer()
+```
+```
+# train stage:
 trainer.train()
-
-
-args = get_training_args()
-trainer = Trainer(training_args=args)
-if args.train_path is not None:
-    trainer.train()
-if args.test_path is not None:
-    trainer.infer()
+```
+```
+# infer stage:
+trainer.infer()
 ```
 
 ### Train

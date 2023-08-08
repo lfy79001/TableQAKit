@@ -63,7 +63,8 @@ class RetrieverTrainer(ABC):
         self.scheduler = None
 
     def get_scheduler(self):
-        total_steps = len(self.train_set) * self.training_args.num_train_epochs / self.training_args.per_device_train_batch_size
+        total_steps = len(
+            self.train_set) * self.training_args.num_train_epochs / self.training_args.per_device_train_batch_size
         if self.training_args.lr_scheduler_type == "linear":
             return get_linear_schedule_with_warmup(
                 self.optimizer,
@@ -146,8 +147,8 @@ class RetrieverTrainer(ABC):
                 _, index = torch.sort(output, dim=0, descending=True)
                 output[index[:self.training_args.top_n_for_test]] = 1
                 output[index[self.training_args.top_n_for_test:]] = 0
-                evidence = torch.nonzero(output.reshape(-1) == 1).reshape(-1).long().tolist()
-                yield evidence
+                # evidence = torch.nonzero(output.reshape(-1) == 1).reshape(-1).long().tolist()
+                yield output.tolist()
 
     def eval(self, epoch: int = 0, eval_wandb: bool = False):
         if self.val_set is None:
@@ -388,12 +389,15 @@ class MultiHierttTrainer(RetrieverTrainer):
     def data_proc(self, instance) -> Dict:
         rows = instance["paragraphs"]
         labels = [0] * len(instance["paragraphs"])
-        if len(instance["qa"]["text_evidence"]):
+        if 'text_evidence' in instance["qa"] and len(instance["qa"]["text_evidence"]):
             for text_evidence in instance["qa"]["text_evidence"]:
                 labels[text_evidence] = 1
         for k, v in instance["table_description"].items():
             rows.append(v)
-            labels.append(1 if k in instance["qa"]["table_evidence"] else 0)
+            if 'table_evidence' in instance["qa"]:
+                labels.append(1 if k in instance["qa"]["table_evidence"] else 0)
+            else:
+                labels = None
         return {
             "id": instance["uid"],
             "question": instance["qa"]["question"],
@@ -408,7 +412,7 @@ class MultiHierttTrainer(RetrieverTrainer):
             table_pred = pred[len(one["paragraphs"]):]
             one["qa"]["text_evidence"] = [i for i, x in enumerate(text_pred) if x == 1]
             keys = list(one["table_description"].keys())
-            one["qa"]["text_evidence"] = [key for i, key in enumerate(keys) if table_pred[i] == 1]
+            one["qa"]["table_evidence"] = [key for i, key in enumerate(keys) if table_pred[i] == 1]
 
             if not os.path.isfile(self.training_args.test_out_path):
                 with open(self.training_args.test_out_path, 'w') as file:
@@ -451,77 +455,27 @@ class FinQATrainer(RetrieverTrainer):
 
     def data_proc(self, instance) -> Dict:
         gold_inds = instance["qa"]["gold_inds"]
-        pre_text = instance["pre_text2"]
-        post_text = instance["post_text2"]
-        rows = pre_text + post_text
-        labels = [0] * (len(rows))
-        for key in gold_inds:
-            if "text_" in key:
-                text_id = int(key.replace("text_", ""))
-                if text_id < len(labels):
-                    labels[text_id] = 1
-
-        table = instance["table"]
-        for idx, row in enumerate(table):
-            row_description = self.table_row_to_text(table[0], table[idx])
-            rows.append(row_description)
-            label_key = "table_" + str(idx)
-            labels.append(1 if label_key in gold_inds else 0)
-        return {
-                "id": instance["id"],
-                "question": instance["qa"]["question"],
-                "rows": rows,
-                "labels": labels
-            }
-
-    def infer(self):
-        test_data = self.read_data(self.training_args.test_path)
-        for one, pred in zip(test_data, self.test_iterator()):
-            texts = one["pre_text2"] + one["post_text2"]
-            text_pred = pred[:len(texts)]
-            table_pred = pred[len(texts):]
-            one["qa"]["ann_text_rows"] = [i for i, x in enumerate(text_pred) if x == 1]
-            one["qa"]["ann_table_rows"] = [i for i, x in enumerate(table_pred) if x == 1]
-            for i in one["qa"]["ann_text_rows"]:
-                one["qa"]["gold_inds"][f"text_{i}"] = texts[i]
-
-            for i in one["qa"]["ann_table_rows"]:
-                one["qa"]["gold_inds"][f"table_{i}"] = self.table_row_to_text(one["table"][0], one["table"][i])
-
-            if not os.path.isfile(self.training_args.test_out_path):
-                with open(self.training_args.test_out_path, 'w') as file:
-                    json.dump([], file)
-            with open(self.training_args.test_out_path, 'r+') as file:
-                file_data = json.load(file)
-                file_data.append(one)
-                file.seek(0)
-                json.dump(file_data, file, indent=4)
-
-
-class CompAQTTrainer(FinQATrainer):
-    def data_proc(self, instance) -> Dict:
-        gold_inds = instance["qa"]["gold_inds"]
         pre_text = instance["pre_text"]
         post_text = instance["post_text"]
-        rows = pre_text + post_text # evidences are in all text
+        rows = pre_text + post_text  # 所有备选文本  序号是0-index的和
         labels = [0] * (len(rows))
         for key in gold_inds:  # match the text
             if "text_" in key:
                 text_id = int(key.replace("text_", ""))
                 labels[text_id] = 1
 
-        table = instance["table"]  # CompAQT only have one table, extract row_description for every row
+        table = instance["table"]  # finqa只有一个表格 对每行进行table_discr的操作
         for idx, row in enumerate(table):  # match the row of table
             row_description = self.table_row_to_text(table[0], table[idx])
             rows.append(row_description)
             label_key = "table_" + str(idx)
             labels.append(1 if label_key in gold_inds else 0)
         return {
-                "id": instance["id"],
-                "question": instance["qa"]["question"],
-                "rows": rows,
-                "labels": labels
-            }
+            "id": instance["id"],
+            "question": instance["qa"]["question"],
+            "rows": rows,
+            "labels": labels
+        }
 
     def infer(self):
         test_data = self.read_data(self.training_args.test_path)
