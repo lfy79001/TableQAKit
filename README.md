@@ -176,18 +176,18 @@ According to our taxonomy, we classify the TableQA task into three categories of
 
 MultiHiertt Dataset as a demonstration
 ```
-from TableQAKit.retriever import CompAQTTrainer
+from TableQAKit.retriever import MultiHierttTrainer
 
-trainer = CompAQTTrainer()
 
-if trainer.train_set is not None:
-    trainer.train()
-if trainer.val_set is not None:
-    trainer.eval()
-if trainer.test_set is not None:
-    for pred in trainer.test_iterator():
-        print(pred)
-
+trainer = MultiHierttTrainer()
+```
+```
+# train stage:
+trainer.train()
+```
+```
+# infer stage:
+trainer.infer()
 ```
 
 #### Train
@@ -210,13 +210,13 @@ python main.py \
 #### Inference
 ```
 python infer.py \
---train_mode row \
---dataloader_pin_memory False \
 --output_dir ./ckpt \
---test_path ./data/test-dev_out.json \
---ckpt_for_test ./ckpt/epoch3_step53000.pt \
---top_n_for_test 10 \
---encoder_path ./PLM/bert-base-uncased/
+--encoder_path ./ckpt/encoder/deberta-large \
+--dataloader_pin_memory False \
+--ckpt_for_test ./ckpt/retriever/deberta/epoch1_step30000.pt \
+--test_path ./data/MultiHiertt/test.json \
+--test_out_path ./prediction.json \
+--top_n_for_test 10
 ```
 
 ### Create Trainer for New Dataset

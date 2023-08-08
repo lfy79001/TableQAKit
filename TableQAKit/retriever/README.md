@@ -4,7 +4,7 @@
 
 MultiHiertt Dataset as a demonstration
 ```
-from retriever import MultiHierttTrainer
+from TableQAKit.retriever import MultiHierttTrainer
 
 
 trainer = MultiHierttTrainer()
@@ -37,13 +37,13 @@ python main.py \
 ### Inference
 ```
 python infer.py \
---train_mode row \
---dataloader_pin_memory False \
 --output_dir ./ckpt \
---test_path ./data/test-dev_out.json \
---ckpt_for_test ./ckpt/epoch3_step53000.pt \
---top_n_for_test 10 \
---encoder_path bert-base-uncased/
+--encoder_path ./ckpt/encoder/deberta-large \
+--dataloader_pin_memory False \
+--ckpt_for_test ./ckpt/retriever/deberta/epoch1_step30000.pt \
+--test_path ./data/MultiHiertt/test.json \
+--test_out_path ./prediction.json \
+--top_n_for_test 10
 ```
 
 ## Create Trainer for New Dataset
