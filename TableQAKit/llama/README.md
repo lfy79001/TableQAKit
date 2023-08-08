@@ -10,17 +10,17 @@ from llama import defaultTemplate
 
 template = defaultTemplate()
 datasets = MultiHiertt("path of your dataset")
-trainer = Trainer([datasets], defaultTemplate)
+trainer = Trainer([datasets], template)
 trainer.train()
 ```
 
 ### start train
 ```
 python main.py \
---model_name_or_path ./ckpt/llama-7b-hf \
---do_train \
+--model_name_or_path ./ckpt/llama-7b-hf \ # path
+--do_train \ 
 --finetuning_type lora \
---output_dir ./ckpt/lora \
+--output_dir ./ckpt/lora \ # path to store lora weight
 --max_source_length 1536 \
 --overwrite_cache \
 --per_device_train_batch_size 4 \
@@ -32,7 +32,8 @@ python main.py \
 --num_train_epochs 2 \
 --plot_loss \
 --lora_rank 32 \
---fp16
+--fp16 \
+--quantization_bit 8 # optimal, using QloRA  
 ```
 
 

@@ -503,14 +503,14 @@ class CompAQTTrainer(FinQATrainer):
         gold_inds = instance["qa"]["gold_inds"]
         pre_text = instance["pre_text"]
         post_text = instance["post_text"]
-        rows = pre_text + post_text
+        rows = pre_text + post_text # evidences are in all text
         labels = [0] * (len(rows))
         for key in gold_inds:  # match the text
             if "text_" in key:
                 text_id = int(key.replace("text_", ""))
                 labels[text_id] = 1
 
-        table = instance["table"]  # table_discr for only one table
+        table = instance["table"]  # CompAQT only have one table, extract row_description for every row
         for idx, row in enumerate(table):  # match the row of table
             row_description = self.table_row_to_text(table[0], table[idx])
             rows.append(row_description)
