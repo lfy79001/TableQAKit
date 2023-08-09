@@ -124,9 +124,11 @@ def majority_vote(
 
 
 def load_data_split(dataset_to_load, split, data_dir=os.path.join(ROOT_DIR, 'datasets/')):
+    if split == 'dev':
+        split = 'validation'
     dataset_split_loaded = load_dataset(
         path=os.path.join(data_dir, "{}.py".format(dataset_to_load)), # specify a python builder to create a dataset
-        cache_dir=os.path.join(data_dir, "data"),streaming=True)[split]
+        streaming=True)[split]
     if dataset_to_load == 'mmqa': # DOING
         new_dataset_split_loaded = []
         for data_item in dataset_split_loaded:

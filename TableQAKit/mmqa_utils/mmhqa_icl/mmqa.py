@@ -29,7 +29,7 @@ _TABLES_FILE = "MMQA_tables.jsonl.gz"
 _PASSAGE_FILE = "MMQA_texts.jsonl.gz"
 _IMAGES_INFO_FILE = "MMQA_images.jsonl.gz"
 _IMAGES_FILE = "final_dataset_images"
-# _DATA_PATH = "<Path-to-Local-Dataset>"
+_DATA_PATH = "<Path-to-Local-Dataset>"
 
 class Images(object): # 存所有的图片信息
     def __init__(self, images_info_path, pictures_path):

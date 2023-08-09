@@ -131,7 +131,7 @@ runner.predict()
 
 **Tips:**
 
-- **You need to set `_DATA_PATH` in `mmqa.py` to your local dataset** 
+- **You need to set `_DATA_PATH` in `mmqa.py` downloaded from [Huggingface](https://huggingface.co/datasets/TableQAKit/MMQA/tree/main) to your local dataset** 
 
 - set `--top_n` to select different number of retrieved images or passages
 - set `--template_path` to path to local icl demos file
