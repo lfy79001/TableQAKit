@@ -6,8 +6,8 @@ from transformers import HfArgumentParser
 from datasets import load_dataset
 from typing import Tuple, List, Optional
 import pandas as pd
-from utils.tapex_wikisql_utils import _TYPE_CONVERTER, retrieve_wikisql_query_answer_tapas
-from utils.common import convert_table_types
+from .tapex_wikisql_utils import _TYPE_CONVERTER, retrieve_wikisql_query_answer_tapas
+from .common import convert_table_types
 
 INTRINSIC_DATASETS = ['wikisql','wikitablequestions']
 ROOT_DIR = os.path.join(os.path.dirname(__file__), "../")

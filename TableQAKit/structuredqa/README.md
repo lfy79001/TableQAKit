@@ -62,8 +62,18 @@ Folder Structure：
 Demo Code：
 
 ```python
-from structuredqakit import ToolBaseForStructuredQA, BartForStructuredQA, BertForStructuredQA
-from utils.dataset import WikisqlDataset, WikitablequestionsDataset, MSR_SQADataset, StructuredQADatasetFromBuilder_Tapas, StructuredQADatasetFromBuilder
+from TableQAKit.structuredqa import (
+    ToolBaseForStructuredQA,
+    BartForStructuredQA,
+    BertForStructuredQA
+    )
+from TableQAKit.structuredqa.utils.dataset import (
+    WikisqlDataset, 
+    WikitablequestionsDataset, 
+    MSR_SQADataset,
+    StructuredQADatasetFromBuilder_Tapas,
+    StructuredQADatasetFromBuilder
+    )
 
 #### BART-based model ####
 # tool = BartForStructuredQA(model_name_or_path = '/home/lfy/PTM/reastap-large')
