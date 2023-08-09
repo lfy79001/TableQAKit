@@ -6,7 +6,6 @@ from torch.utils.data import Dataset, DataLoader
 from tqdm import tqdm
 from transformers import AutoTokenizer
 import torch
-from utils.image_stuff import get_caption_map
 
 MAX_LEN = 512
 

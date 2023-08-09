@@ -46,7 +46,7 @@ download MultimodalQA dataset and caption files from our [Huggingface](https://h
 
 run  `ClassifierTrainer` 
 
-```python
+```bash
 CUDA_VISIBLE_DEVICES=0 python test_classifier.py \
 --output_dir ./output \
 --bert_model <path-to-bert_model> \
@@ -60,7 +60,7 @@ Demo code:
 
 ```python
 # test_classifier.py
-from classifier_module import ClassifierTrainer
+from TableQAKit.mmqa_utils.classifier_module import ClassifierTrainer
 trainer = ClassifierTrainer()
 trainer.train()
 ```
@@ -71,13 +71,13 @@ trainer.train()
 
 run  `RetrieverTrainer` 
 
-```python
+```bash
 CUDA_VISIBLE_DEVICES=0,1,2 python test_retriever.py \
 --output_dir ./output \
---bert_model /home/lfy/PTM/deberta-v3-large \
+--bert_model <path-to-bert_model> \
 --data_path <path-to-data-folder> \
 --n_gpu 3 \
---image_or_text image \
+--image_or_text image
 ```
 
 
@@ -86,7 +86,7 @@ Demo Code:
 
 ```python
 # test_retriever.py
-from retriever_module import RetrieverTrainer
+from TableQAKit.mmqa_utils.retriever_module import RetrieverTrainer
 trainer = RetrieverTrainer()
 trainer.train()
 ```

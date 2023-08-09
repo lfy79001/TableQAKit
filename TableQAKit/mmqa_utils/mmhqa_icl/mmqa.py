@@ -29,13 +29,8 @@ _TABLES_FILE = "MMQA_tables.jsonl.gz"
 _PASSAGE_FILE = "MMQA_texts.jsonl.gz"
 _IMAGES_INFO_FILE = "MMQA_images.jsonl.gz"
 _IMAGES_FILE = "final_dataset_images"
-_DATA_PATH = "/home/lfy/lwh/data/mmqa"
+_DATA_PATH = "./"
 # _DATA_PATH = ROOT_DIR
-def test():
-    with open(_DATA_PATH + "/MMQA_images.jsonl.gz", "r") as f:
-        images_info = [json.loads(_line) for _line in f.readlines()]
-        print(images_info[0])
-
 
 class Images(object): # 存所有的图片信息
     def __init__(self, images_info_path, pictures_path):

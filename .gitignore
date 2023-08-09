@@ -10,3 +10,4 @@ TableQAKit/static/img/mmqa
 TableQAKit/try_table_qa_kit.py
 /dist
 /ttqakit.egg-info
+/build

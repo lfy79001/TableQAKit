@@ -15,8 +15,8 @@ install_requires = [
 
 setup(
     name="ttqakit",
-    version="0.0.1",
-    python_requires=">=3.8",
+    version="0.1.0",
+    python_requires=">=3.7",
     description="TTQAKit: A toolkit for Text-Table Hybrid Question Answering.",
     author="Fangyu Lei",
     author_email="leifangyu@qq.com",

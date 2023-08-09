@@ -1,5 +1,9 @@
 import os
 import json
+
+from ..utils.retriever import Retriever
+# from TableQAKit.mmqa_utils.utils.retriever import Retriever
+
 from .args import RunnningArguments, get_running_args
 from transformers import HfArgumentParser
 import time
@@ -15,7 +19,6 @@ import multiprocessing
 from .qa import openai_qa
 from .qa.openai_qa import Generator
 from .utils import load_data_split, parse_ans, get_type
-from utils.retriever import Retriever
 
 class MMQA_Runner:
     def __init__(self, api_keys=None) -> None:
