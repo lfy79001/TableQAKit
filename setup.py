@@ -1,7 +1,6 @@
 from pathlib import Path
 from setuptools import find_packages, setup
 
-
 project_root = Path(__file__).parent
 install_requires = [
     "Flask>=2.2.2",
@@ -49,6 +48,7 @@ setup(
     },
     classifiers=[
         "Development Status :: 3 - Alpha",
+        "Programming Language :: Python :: 3.7",
         "Programming Language :: Python :: 3.8",
         "Programming Language :: Python :: 3.9",
         "Programming Language :: Python :: 3.10",

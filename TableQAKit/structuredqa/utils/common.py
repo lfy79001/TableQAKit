@@ -8,7 +8,7 @@ from copy import deepcopy
 from collections import defaultdict
 import numpy as np
 import pandas as pd
-from utils.tapex_wikisql_utils import _TYPE_CONVERTER
+from .tapex_wikisql_utils import _TYPE_CONVERTER
 from transformers import Seq2SeqTrainingArguments
 import torch
 

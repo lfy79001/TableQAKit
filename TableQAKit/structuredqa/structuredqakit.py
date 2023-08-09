@@ -31,8 +31,8 @@ from transformers import (
 from transformers.file_utils import is_offline_mode
 from transformers.trainer_utils import get_last_checkpoint, is_main_process
 from transformers.utils import check_min_version
-from utils.dataset import BaseStructuredQADataset
-from utils.common import *
+from .utils.dataset import BaseStructuredQADataset
+from .utils.common import *
 
 check_min_version("4.17.0.dev0")
 
