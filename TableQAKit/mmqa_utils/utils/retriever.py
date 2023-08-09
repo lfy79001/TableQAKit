@@ -24,6 +24,13 @@ class Retriever:
         self.qim_dict = json.load(open(qim_file, 'r'))
         self.qpm_dict = json.load(open(qpm_file, 'r'))
     
+    @classmethod
+    def from_args(cls, args):
+        type_file = os.path.join(args.retriever_files_path, f"question_type_{args.split}.json")
+        qim_file = os.path.join(args.retriever_files_path, f"question_image_match_scores_{args.split}.json")
+        qpm_file = os.path.join(args.retriever_files_path, f"question_passage_match_scores_{args.split}.json")
+        return cls(type_file, qim_file, qpm_file)
+
     def retrieve(self, g_data_item, eid = None, qid = None):
         if eid is None or qid is None:
             raise ValueError("eid or qid is None")

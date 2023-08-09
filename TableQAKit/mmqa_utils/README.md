@@ -111,7 +111,9 @@ run `MMHQA-ICL`
 
 ```
 python test_mmhqa_icl.py \
---data_path <path-to-data-folder>
+--data_path <path-to-data-folder> \
+--retriever-files-path <path-to-retriever_files-folder> \
+--template_path <path-to-templates-folder>
 ```
 
 
@@ -128,6 +130,8 @@ runner.predict()
 
 
 **Tips:**
+
+- **You need to set `_DATA_PATH` in `mmqa.py` to your local dataset** 
 
 - set `--top_n` to select different number of retrieved images or passages
 - set `--template_path` to path to local icl demos file

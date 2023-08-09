@@ -29,8 +29,7 @@ _TABLES_FILE = "MMQA_tables.jsonl.gz"
 _PASSAGE_FILE = "MMQA_texts.jsonl.gz"
 _IMAGES_INFO_FILE = "MMQA_images.jsonl.gz"
 _IMAGES_FILE = "final_dataset_images"
-_DATA_PATH = "./"
-# _DATA_PATH = ROOT_DIR
+# _DATA_PATH = "<Path-to-Local-Dataset>"
 
 class Images(object): # 存所有的图片信息
     def __init__(self, images_info_path, pictures_path):
@@ -143,7 +142,7 @@ class MMQA(datasets.GeneratorBasedBuilder):
             datasets.SplitGenerator(
                 name=datasets.Split.VALIDATION,
                 gen_kwargs={
-                    "split": "validation",
+                    "split": "dev",
                     "file_path": local_files["dev"],
                     "table_path": local_files["tables"],
                     "images_path": os.path.join(local_files["images"], _IMAGES_FILE),
@@ -222,7 +221,7 @@ class MMQA(datasets.GeneratorBasedBuilder):
                     # }
                     example_texts.append(texts[text_doc_id])
 
-                if split in ['train', 'validation']:
+                if split in ['train', 'dev']:
                     yield count, {
                         "id": example["qid"],
                         "question": example["question"],

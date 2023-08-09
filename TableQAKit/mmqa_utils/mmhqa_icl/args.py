@@ -16,9 +16,9 @@ class RunnningArguments:
         metadata={"help": "Caption file name"}
     )
     split: str=field(
-        default='validation',
+        default='dev',
         metadata= {
-            "help": "run on which set, choices = ['train', 'validation', 'test']"
+            "help": "run on which set, choices = ['train', 'dev', 'test']"
         }
     )
     retriever_files_path: str=field(

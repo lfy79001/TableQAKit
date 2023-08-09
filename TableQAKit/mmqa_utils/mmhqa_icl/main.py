@@ -51,7 +51,7 @@ class MMQA_Runner:
         """
         A worker process for end to end qa.
         """
-        retriever = Retriever(args)
+        retriever = Retriever.from_args(args)
         g_dict = dict()
         built_few_shot_prompts = []
         with open(os.path.join(args.template_path, args.prompt_file), 'r') as f:

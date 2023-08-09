@@ -115,7 +115,7 @@ if __name__ == '__main__':
     parser.add_argument('--dataset', type=str, default='mmqa',
                         choices=['mmqa'])
     parser.add_argument('--dataset_split', type=str,
-                        default='validation', choices=['train', 'validation', 'test'])
+                        default='dev', choices=['train', 'dev', 'test'])
     parser.add_argument('--retriever', type=str,default='bd',choices=['dpmlb', 'bd'])
 
     # debug options
