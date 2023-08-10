@@ -28,7 +28,7 @@ TableQAKit is a unified platform for TableQA (especially in the LLM era). Its ma
 - **Comprehensive datasets**: We design a unified data interface to process data and store them in Huggingface datasets.
 - **Powerful methods**: Using our toolkit, you can reproduce most of the SOTA methods for TableQA tasks.
 - **Efficient LLM benchmark**: TableQAEval, a benchmark to evaluate the performance of LLM for TableQA. It evaluates LLM's modeling ability of long tables (context) and comprehension capabilities (numerical reasoning, multi-hop reasoning).
-- **Comprehensive Survey**: We are about to release a systematic TableQA Survey, this project is a pre-work.
+- **Comprehensive Survey**: We are about to release a systematic TableQA Survey, this project is a pre-work. [Paper List](https://github.com/lfy79001/Awesome-Table-QA)
 
 
 # ⚙️ Install
