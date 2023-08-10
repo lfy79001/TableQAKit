@@ -17,7 +17,6 @@ import pickle
 from loaders import DATASET_CLASSES
 from structs.data import Table, Cell
 from utils import export
-from try_table_qa_kit import TableQAKitDemo
 
 def init_app():
     flask_app = Flask(
@@ -32,7 +31,6 @@ def init_app():
     with open(os.path.join(os.path.dirname(os.path.abspath(__file__)), "config.yml")) as f:
         config = yaml.safe_load(f)
     flask_app.config.update(config)
-    flask_app.pipeline = TableQAKitDemo(model_type="text_davinci_003", key="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")
 
     
     return flask_app
@@ -298,23 +296,12 @@ def fetch_custom_pipeline_result():
 # done
 @app.route("/custom/upload", methods=["GET", "POST"])
 def upload_custom_table():
-    # 上传的表格名不能重复,前端校验+后端校验 限制文件大小
-    #############################################################
     try:
         if 'excel_file' in request.files:
             file = request.files['excel_file']
         else:
             raise Exception("no excel file")
-        # json_file = request.json
-        # table_name = json_file.get('table_name')
-    
-        table_name, file_extension = os.path.splitext(file.filename)
 
-        # file = 'test.xlsx'
-        properties = {}
-        # properties = {"title": "List of Governors of South Carolina", "overlap_subset": "True"}
-
-        # table_name = "我的自定义表格1"
 
         custom_tables = session.get("custom_tables", {})
         if table_name in custom_tables:
@@ -496,21 +483,11 @@ def download_file_example():
 @app.route("/", methods=["GET", "POST"])
 def index():
 
-    # try:
-    #     dataset_name = app.config['default_dataset']
-    #     split = "train"
-    #     table_idx = 0
-    #     propertie_name_list = []
-    #     logger.info(f"Page loaded")
-    #     data = statistics_default_table_information(dataset_name, split, table_idx, propertie_name_list)
-    # except Exception as e:
-    #     logger.error(f"Fetch initial Table Error: {e}")
-    #     data = {"success": False}
+
 
 
     return render_template(
         "index.html"
-        # table_data = data  #--这样传没有jsonfiy应该是可以的--
     )
 
 with app.app_context():
@@ -519,45 +496,4 @@ with app.app_context():
         for split in app.config['split']:
             check_data_integrity(dataset_name, split, 0)
     print("done")
-#     import psutil
-#     # 获取内存使用情况
-#     memory_info = psutil.virtual_memory()
 
-#     # 打印内存总量、使用量、可用量等信息
-#     print(f"1Total Memory: {memory_info.total} bytes")
-#     print(f"1Used Memory: {memory_info.used} bytes")
-#     print(f"1Available Memory: {memory_info.available} bytes")
-#     print(f"1Percentage Used: {memory_info.percent}%")
-#     print("load start")
-#     for dataset_name in app.config['datasets']:
-#         for split in app.config['split']:
-#             check_data_integrity(dataset_name, split, 0)
-#     print("load over")
-#     # 获取内存使用情况
-#     memory_info = psutil.virtual_memory()
-
-#     # 打印内存总量、使用量、可用量等信息
-#     print(f"2Total Memory: {memory_info.total} bytes")
-#     print(f"2Used Memory: {memory_info.used} bytes")
-#     print(f"2Available Memory: {memory_info.available} bytes")
-#     print(f"2Percentage Used: {memory_info.percent}%")
-
-
-
-    # print(fetch_generated_outputs("spreadsheetqa","dev",10))
-
-
-
-#     fetch_table_data()
-#     dataset_obj = app.database['dataset']["wikisql"]
-#     print(dataset_obj.tables)
-#     session1 = {}
-#     upload_custom_table()
-#     fetch_custom_table_data()
-#     session["custom_tables"] = {}
-#     fetch_default_table_data()
-#     pass
-#     download_default_table()
-#     upload_custom_table()
-# if __name__ == '__main__':
-#     app.run(host = "210.75.240.136", port = 18888)
