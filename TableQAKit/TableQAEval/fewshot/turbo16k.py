@@ -103,7 +103,7 @@ def main(args):
     
 
 if __name__ == '__main__':
-    openai.api_key = "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"
+    openai.api_key = ""
     parser = argparse.ArgumentParser()
 
     parser.add_argument('--task', choices=["qa", "sql"],  required=True)
