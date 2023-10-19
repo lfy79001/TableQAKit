@@ -19,7 +19,7 @@
 
 # 🔥 Updates
 
-- [**2023-8-7**]: We released our [code](https://github.com/lfy79001/TableQAKit), [datasets](https://huggingface.co/TableQAKit) and [PyPI Package](https://www.baidu.com). Check it out!
+- [**2023-8-7**]: We released our [code](https://github.com/lfy79001/TableQAKit), [datasets](https://huggingface.co/TableQAKit) and [PyPI Package](https://pypi.org/project/ttqakit/). Check it out!
 
 # ✨ Features
 TableQAKit is a unified platform for TableQA (especially in the LLM era). Its main features includes:
